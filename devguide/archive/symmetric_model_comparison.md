@@ -1,9 +1,9 @@
 ---
 summary: Define a symmetric comparison alongside the legacy ordered greedy score.
 issue: uibcdf/pharmacophoremt#205
-status: active
+status: resolved
 opened: 2026-11-12
-closed:
+closed: 2026-11-13
 verification: measured
 area: [modeling]
 guard: tests/test_symmetric_comparison.py
@@ -60,3 +60,23 @@ assignment, tie/count invariance and genuine optional-attribution receiving now
 have executable controls. Source receiving passes237 selected cases (56new),
 including1296 independently enumerated two-site workloads. Exact-owned and
 public-provider receiving follow a committed freeze before closure.
+
+## Executed resolution — 2026-11-13
+
+The [combined receipt](../evidence/symmetric_model_comparison_20261113.json)
+receives237 selected cases per source/owned context (56new),56 actual public-
+ArgDigest cases per context, public PUW0.28.1/Pytest Receptor1.2.2 and18 guide
+blocks. Exact source6e409d8 has242 verified payloads/187 equal runtime bodies/
+169 target-only observed modules, actual SDK staging and unchanged tests.
+Four contexts retain all1296 expected/observed finite-family outcomes each.
+The API/numerical/shape/frame/budget/attribution contract is implemented for its
+explicit positive Point/Sphere profile; the legacy default remains unchanged.
+
+The initial four failures concern an incorrect new args-only diagnostic-state
+expectation; SMonitor's documented args/code/text guard passes without provider
+change. The older owned pose group first exhausts512MiB DATA and passes unchanged
+14/14 at1GiB, with original incomplete output retained. The scientific guard
+protects independently optimal cardinality, swap/order count invariance, native
+scope/units/budgets and real optional-provider outcomes. This closes the bounded
+#205 proposal; wider shape comparison and biological/scale/full public gates are
+not claimed. Broader#6/#108 and #9/#10/#23 remain separately owned.

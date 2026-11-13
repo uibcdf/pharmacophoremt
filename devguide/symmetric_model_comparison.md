@@ -124,3 +124,29 @@ are recorded. The bounded inventory has151 callables/40 explicit controls/124
 plans; it does not certify complete API adoption. Exact-owned/public-provider
 receiving follows a committed freeze. Initial diagnostic/collector/formatting
 harness corrections stay separate from scientific/provider defects.
+
+## Exact-owned/public-provider receiving — 2026-11-13
+
+The [combined receipt](evidence/symmetric_model_comparison_20261113.json)
+receives source6e409d843945586f7729de030c475a1cbb9bf438 and its unchanged
+committed tests in private wheel0.5.0+36.g6e409d8. All237 cases pass per source/
+owned context;56 new public-ArgDigest0.17.1 cases pass per context. Public
+PUW0.28.1/Pytest Receptor1.2.2,18 guide-block executions and actual SDK support
+staging pass. All242 payloads/187 equal runtime bodies and169 target-only observed
+modules verify, with no test overlay or source-runtime fallback.
+
+Four retained executions of the same1296-case independent family record all
+expected/observed counts and scores across source/owned argument-provider
+contexts. This is1296 distinct workloads, not5184 distinct scientific cases.
+The original48pass/4fail new diagnostic assertion and API-absence probe remain.
+An older owned pose regression reaches its512MiB DATA cap after5/14 cases;
+the same unchanged artifact/assertions pass14/14 at1GiB. Earlier passed groups
+are reused and all remaining groups pass. No runtime/provider workaround or
+shared memory pressure follows. Raw limits, incomplete output and recovery stay
+recorded. SciPy/NumPy native hashes are explicitly post-receiving snapshots,
+not falsely labelled before/after proof.
+
+This receives#205's declared first profile. Broader#6/full supported source/
+installed/public-platform, biological and scale gates remain independent.
+Review retained task/artifact logs on2026-11-26. No remote CI dispatch, tag,
+publication or shared-prefix/native/provider change is selected.

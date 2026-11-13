@@ -1,5 +1,18 @@
 # Strategic roadmap
 
+## Symmetric positive-center comparison received — 2026-11-13
+
+[#205](symmetric_model_comparison.md) is received with [237 source/owned cases](evidence/symmetric_model_comparison_20261113.json)
+each (56new),56 public-ArgDigest cases per context, public PUW0.28.1/
+Pytest Receptor1.2.2,18 guide blocks and242 payloads/187 equal runtime bodies.
+Four contexts preserve all outputs of the same1296 independent finite workloads.
+Explicit new maximum-cardinality overlap preserves the legacy default/loop.
+Original diagnostic-oracle and owned-resource-cap attempts remain; unchanged
+pose regressions pass14/14 at1GiB. No test overlay/provider workaround follows.
+Next consolidate accumulated0.6 scope and exact-head source/installed/public
+qualification;#108's public workflow drives remaining user/API acceptance.
+Broader#6/full gates and stopped#148/#165 stay separate.
+
 ## Symmetric positive-center comparison in source — 2026-11-13
 
 [#205](symmetric_model_comparison.md) adds the reusable report tool and explicit
@@ -32,7 +45,7 @@ native model/center/threshold guards and consistent empty-table columns.
 [Source evidence](evidence/cached_inspection_controls_source_20261112.json)
 passes234 cases (65new), six nm/pm guide blocks and13 quality operations. The
 original distance/greedy loops and table object cells retain their meanings.
-[#205](pending_proposals/symmetric_model_comparison.md) separately owns the
+[#205](archive/symmetric_model_comparison.md) separately owns the
 executed asymmetric-score limitation and a future symmetric-method/compatibility
 decision. Next freeze/receive the exact owned artifact/public providers, then
 review that scientific contract. Broader#6/full gates and stopped#148/#165 stay

@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (143)
+### Resolved (144)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -144,6 +144,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`stream_historical_esr1_metadata.md`](stream_historical_esr1_metadata.md) — [#152](https://github.com/uibcdf/pharmacophoremt/issues/152) — Stream complete historical ESR1 CSVs while preserving frozen cohort and exclusion semantics. *(resolved, measured)*
 - [`study_pmapper_signatures.md`](study_pmapper_signatures.md) — [#174](https://github.com/uibcdf/pharmacophoremt/issues/174) — Study exact pmapper signatures, matching and screening-asset implications. *(resolved, inspected)*
 - [`summarize_saved_screening_run.md`](summarize_saved_screening_run.md) — [#146](https://github.com/uibcdf/pharmacophoremt/issues/146) — Analyze labelled cohorts directly from verified saved screening work. *(resolved, reproduced)*
+- [`symmetric_model_comparison.md`](symmetric_model_comparison.md) — [#205](https://github.com/uibcdf/pharmacophoremt/issues/205) — Define a symmetric comparison alongside the legacy ordered greedy score. *(resolved, measured)*
 - [`translated_coincident_feature_centers.md`](translated_coincident_feature_centers.md) — [#31](https://github.com/uibcdf/pharmacophoremt/issues/31) — Centroid roundoff admitted co-located feature centers as non-collinear rigid anchors. *(resolved, measured)*
 - [`tyr_cardinality.md`](tyr_cardinality.md) — [#91](https://github.com/uibcdf/pharmacophoremt/issues/91) — Qualify native dual-donor N/O receptor constraints on prepared TYR regions. *(resolved, measured)*
 - [`validation_benchmark_publication.md`](validation_benchmark_publication.md) — [#20](https://github.com/uibcdf/pharmacophoremt/issues/20) — Decide how to collect and publish scientific validation and benchmark evidence. *(resolved, measured)*

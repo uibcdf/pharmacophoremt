@@ -6,24 +6,27 @@ and [capability inventory](capability_inventory.md). The preceding checkpoint is
 preserved in [dated history](checkpoint_history_20261113_before_symmetric_comparison.md);
 earlier receipts and run identities remain unchanged.
 
-## Symmetric positive-center comparison received in source — #205
+## Symmetric positive-center comparison received — #205
 
 The [comparison contract](symmetric_model_comparison.md) supplies public
 compare_pharmacophores() and explicit similarity(method='maximum_cardinality').
-The old ordered_greedy default/numerical loop remain unchanged. The first profile
-admits positive Point/Sphere center/feature overlap, refuses other shapes/volumes
-and exposes finite quotas with public ComparisonLimitError. Reports retain
-original-index mappings, explicit-unit axes/distances and actual attribution.
+The ordered_greedy default/numerical loop remain unchanged. Positive Point/
+Sphere overlap has finite quotas, public ComparisonLimitError, original-index
+maps, explicit-unit snapshots/distances and actual optional attribution. Other
+shapes/volumes are refused; radius/weight/essential do not weight this score.
 
-[Source receiving](evidence/symmetric_model_comparison_source_20261113.json)
-passes237 selected cases (56new), six nm/pm guide blocks and13 quality operations,
-including strict docs and27 distribution tests. All1296 declared two-site
-workloads have independent exhaustive expected values and retained measured
-outputs. Actual attribution reuse/enclosing/empty/absence/failure and fresh-reader
-controls pass. The initial48pass/4fail result was an incorrect new args-only
-structured-field assertion; the documented args/code/text invariant now passes.
-Original baseline, failed attempt and prior source receipts remain intact.
-The bounded inventory observes151 callables/40 controls/124 plans; #6 is partial.
+[Combined receiving](evidence/symmetric_model_comparison_20261113.json) passes
+237 source/owned cases each (56new),56 actual public-ArgDigest cases per context,
+public PUW0.28.1/Pytest Receptor1.2.2 and18 nm/pm guide blocks. All242 payloads/
+187 equal runtime bodies and169 target-only observed modules verify with actual
+SDK support and unchanged source6e409d8 tests. Four contexts retain every output
+for the same1296 independently enumerated workloads. No test overlay is used.
+
+Original diagnostic-oracle/collector/formatting corrections and the owned pose
+process's512MiB cap failure stay explicit; its unchanged14-case group passes
+at1GiB while other groups keep512MiB. No provider defect/workaround is inferred.
+Native solver hashes are post-receiving snapshots. The bounded inventory has
+151 callables/40 controls/124 plans; broader#6 remains partial.
 
 ## Accumulated source gate and separate delivery boundaries
 
@@ -44,11 +47,10 @@ public delivery remains0.4.0.
 
 ## Next concrete action and limits
 
-Freeze the committed#205 source and receive one exact owned wheel with its
-unchanged tests and public argument/quantity providers/examples. Then review the
-accumulated0.6.0 scope and exact-head qualification debt, using#108's public
-library workflow to drive remaining user/API acceptance. Public/API adoption
-is not complete.
+Review accumulated0.6.0 scope/release notes and exact-head qualification debt.
+Choose a coherent source candidate and recovery checkpoint under#9/#23; use
+#108's public chemical-library-to-model-to-screening workflow to drive remaining
+user/API acceptance. Public/API adoption is not complete.
 #108, MolSysMT#624, human/biological/scale and full installed/public/platform gates
 remain independent. Receive BindingMT I0/H/I1 later through its supplied package.
 #148/#165 remain stopped.

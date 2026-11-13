@@ -26,7 +26,7 @@ unused same-feature counterparts in stored order and counts every input site in
 the denominator. The label is corrected to ordered, greedy Dice-style score;
 no symmetry, maximum matching, alignment, orientation/radius/weight/essential/
 exclusion or biological interpretation is claimed. The independently owned
-[#205 proposal](pending_proposals/symmetric_model_comparison.md) retains the
+[#205 proposal](archive/symmetric_model_comparison.md) retains the
 observed 0.5 versus 1.0 counterexample and future compatibility decision.
 
 The distance matrix's existing internal `get(..., skip_digestion=True)` remains:
