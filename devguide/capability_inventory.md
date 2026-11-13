@@ -1,5 +1,10 @@
 # Current capability inventory
 
+The [complete interaction-control receiving](evidence/interaction_argument_controls_20261112.json)
+adds267 exact-owned cases, actual public-provider controls and the producer
+oracle correction#201 to the source slice below. This remains bounded API/support
+receiving, with broader public adoption still partial under#6.
+
 The [interaction argument-control increment](interaction_query_argument_controls.md)
 adds explicit controls to three existing tools with267 source cases and nm/pm
 recipes. Child scientific guards and definitions remain unchanged; the collection

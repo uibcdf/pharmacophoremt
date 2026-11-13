@@ -91,3 +91,15 @@ body, dependency pin, provider worktree/prefix, source gate, shared schema or
 scientific method. Full source/installed/public receiving and actual BindingMT
 integration remain separate. Review retained task logs on2026-11-26; the original
 published inputs/receipts are durable and are never regenerated in ordinary tests.
+
+## Later producer-oracle correction — #201 (2026-11-12)
+
+The [producer-oracle contract](native_handoff_producer_oracle.md) and
+[receiving](evidence/interaction_argument_controls_20261112.json) distinguish
+fresh reconstruction from original saved reading. New root/component PHMT
+producer declarations follow the executing version; stored declarations retain
+the frozen manifest's original version. Every other field, site/contribution,
+quantity, original native software/attribution and correspondence keeps its
+exact comparison. Original inputs/receipts are unchanged. The first older-wheel
+1failed/11passed oracle result and corrected12/12 on the same artifact remain
+separate; source and the new isolated artifact also pass the corrected oracle.

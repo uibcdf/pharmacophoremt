@@ -67,6 +67,11 @@ constraint, persistence or provider changes; append a distinct measurement.
 Saved reading with molecular detection/recognition blocked must preserve
 metadata and essential/weight/exclusion semantics without new originating credit.
 Evaluation and explicit reconstruction are separate scientific operations.
+When reconstruction executes with a later PHMT version, its new root/component
+producer declarations identify that version; reading the stored model keeps the
+original producer. The [producer-oracle correction](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/native_handoff_producer_oracle.md)
+checks both declarations explicitly and retains exact comparison of every other
+metadata/site/contribution field, original reference and frozen input byte.
 Native attribution records software actually used; no literature-derived method
 or external dataset is claimed for these authored controls.
 

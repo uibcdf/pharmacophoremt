@@ -1,12 +1,12 @@
 ---
 summary: Complete explicit argument controls for native interactions and composition.
 issue: uibcdf/pharmacophoremt#200
-status: active
+status: resolved
 opened: 2026-11-12
-closed:
+closed: 2026-11-12
 verification: measured
 area: [api, modeling]
-guard:
+guard: tests/test_interaction_argument_controls.py
 normative: devguide/interaction_query_argument_controls.md
 blocked_by: []
 supersedes: []
@@ -37,3 +37,13 @@ original failed attempt and separate supported source/installed/public gates.
 No scientific algorithm, molecular implementation, native schema, dependency,
 prefix or performance claim changes. Broader #6 and merge/curation facades remain
 partial; #148/#165 remain stopped.
+
+## Executed resolution — 2026-11-12 local date
+
+The [combined receipt](../evidence/interaction_argument_controls_20261112.json)
+receives source148f3ba and its exact isolated wheel with267 selected source/owned
+cases each,51 public-ArgDigest controls per context, public PUW0.28.1 and24
+guide-block executions. The old artifact receives all12 corrected oracle cases
+while its original1failed/11passed result stays unchanged. Native inputs and
+scientific bodies retain their scope; broader#6/full supported/public gates remain
+independent. All initial failed probes/harnesses remain recorded.

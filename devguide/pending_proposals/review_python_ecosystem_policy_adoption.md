@@ -14,6 +14,17 @@ supersedes: []
 
 # Review Python ecosystem policy adoption
 
+## Interaction/producer-oracle receiving — 2026-11-12
+
+[#200](../interaction_query_argument_controls.md) receives three explicit public
+controls and canonical internal child calls with native science retained.
+[#201](../native_handoff_producer_oracle.md) corrects the H0/H1 producer-version
+oracle without modifying runtime or original inputs. [Measured receiving](../evidence/interaction_argument_controls_20261112.json)
+passes267 source/owned cases each,51 public-ArgDigest cases per context, public
+PUW0.28.1,24 guide-block executions and240 verified payloads/185 equal bodies.
+The old artifact's failure and corrected-test proof remain distinct. #6 remains
+partial for public object/curation facades and broader support/qualification.
+
 ## Interaction/composition source controls — 2026-11-12
 
 [#200](../interaction_query_argument_controls.md) implements the next three-entry

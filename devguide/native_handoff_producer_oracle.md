@@ -39,3 +39,15 @@ comparison, and only the four existing root/component producer declarations
 receive explicit version checks. That failed attempt remains recorded too.
 All162 distribution/reporting/index/lint/format controls pass in their scopes.
 The new#200 exact-source artifact remains the next receiving step.
+
+## Exact new artifact receiving — 2026-11-12 local date
+
+[Combined receiving](evidence/interaction_argument_controls_20261112.json)
+passes all twelve corrected guards on source148f3ba and its private wheel
+`0.5.0+30.g148f3ba`, alongside267 scoped source/owned cases, public provider
+controls and original frozen-byte checks. The executing version differs from
+the historical producer and is checked explicitly at the four intended paths;
+every site/contribution and other provenance field keeps exact comparison.
+Independent saved reading retains original metadata and no new originating uses.
+This resolves the oracle defect without changing science, runtime, inputs or
+old verdicts. Full supported source/installed/public gates remain separate.

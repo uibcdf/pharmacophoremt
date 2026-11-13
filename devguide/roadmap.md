@@ -1,5 +1,21 @@
 # Strategic roadmap
 
+## Interaction controls and producer oracle received — 2026-11-12
+
+[#200](interaction_query_argument_controls.md) and
+[#201](native_handoff_producer_oracle.md) receive source148f3ba and its exact
+private wheel:267 source/owned cases each,51 public-ArgDigest cases per context,
+public PUW0.28.1,24 public guide-block executions and240 verified payloads/185
+equal runtime bodies. [Complete evidence](evidence/interaction_argument_controls_20261112.json)
+retains original probes and the producer-oracle failure/correction on one
+unchanged prior artifact. Native scientific bodies/defaults and frozen input
+bytes retain their ownership; no speed or biological claim follows.
+
+Next continue public object/curation facades, starting with merge, under#6.
+The bounded inventory150callables/32explicit controls/119observed plans is not
+complete API or effective-delegation qualification. Full supported/public,
+provider#624, human/biological/scale and stopped#148/#165 remain separate.
+
 ## Native interaction argument controls — 2026-11-12 local date
 
 [#200](interaction_query_argument_controls.md) extends the explicit control to

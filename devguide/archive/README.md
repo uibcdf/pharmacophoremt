@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (139)
+### Resolved (141)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -25,6 +25,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`compare_pmapper_screening_stages.md`](compare_pmapper_screening_stages.md) — [#175](https://github.com/uibcdf/pharmacophoremt/issues/175) — Execute source-pinned pmapper and PHMT analytical screening-stage controls. *(resolved, measured)*
 - [`compare_saved_screening_runs.md`](compare_saved_screening_runs.md) — [#147](https://github.com/uibcdf/pharmacophoremt/issues/147) — Compare original labelled cohorts directly across verified saved screening runs. *(resolved, reproduced)*
 - [`compare_typed_distance_retrieval.md`](compare_typed_distance_retrieval.md) — [#178](https://github.com/uibcdf/pharmacophoremt/issues/178) — Compare bounded typed-distance retrieval with exhaustive full-query proposals. *(resolved, measured)*
+- [`complete_interaction_argument_controls.md`](complete_interaction_argument_controls.md) — [#200](https://github.com/uibcdf/pharmacophoremt/issues/200) — Complete explicit argument controls for native interactions and composition. *(resolved, measured)*
 - [`complete_reference_argument_controls.md`](complete_reference_argument_controls.md) — [#198](https://github.com/uibcdf/pharmacophoremt/issues/198) — Complete explicit argument controls for native reference-query construction. *(resolved, measured)*
 - [`complex_pdb_feature_recovery.md`](complex_pdb_feature_recovery.md) — [#5](https://github.com/uibcdf/pharmacophoremt/issues/5) — Recover chemical features from PDB complex during pharmacophore extraction. *(resolved, reproduced)*
 - [`consensus_support_review.md`](consensus_support_review.md) — [#80](https://github.com/uibcdf/pharmacophoremt/issues/80) — Qualify native consensus support, typed occurrence reuse and controlled input multiplicity. *(resolved, measured)*
@@ -68,6 +69,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`native_conformer_screening.md`](native_conformer_screening.md) — [#17](https://github.com/uibcdf/pharmacophoremt/issues/17) — Screen prepared conformations with native rigid search and explicit molecule-level score resolution. *(resolved, measured)*
 - [`native_constraint_semantics.md`](native_constraint_semantics.md) — [#79](https://github.com/uibcdf/pharmacophoremt/issues/79) — Qualify alternative-feature sites, typed participant capacity and hypothesis decisions. *(resolved, measured)*
 - [`native_feature_reconstruction.md`](native_feature_reconstruction.md) — [#193](https://github.com/uibcdf/pharmacophoremt/issues/193) — Qualify explicit native reconstruction from saved feature archives for 0.6.0. *(resolved, measured)*
+- [`native_handoff_producer_oracle.md`](native_handoff_producer_oracle.md) — [#201](https://github.com/uibcdf/pharmacophoremt/issues/201) — Separate rebuilt and historical producer versions in H0/H1 acceptance. *(resolved, measured)*
 - [`native_interaction_composition.md`](native_interaction_composition.md) — [#36](https://github.com/uibcdf/pharmacophoremt/issues/36) — Compose named pharmacophore hypotheses and native interaction analyses with explicit participant reuse. *(resolved, measured)*
 - [`native_io_argdigest_admission.md`](native_io_argdigest_admission.md) — [#82](https://github.com/uibcdf/pharmacophoremt/issues/82) — Gate native I/O ArgDigest receiving on preserved call shape and exception families. *(resolved, measured)*
 - [`native_io_catalog_diagnostics.md`](native_io_catalog_diagnostics.md) — [#81](https://github.com/uibcdf/pharmacophoremt/issues/81) — Give PHMT-owned native I/O refusals catalog codes while retaining error families. *(resolved, measured)*

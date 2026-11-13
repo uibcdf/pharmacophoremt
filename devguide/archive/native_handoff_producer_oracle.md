@@ -1,9 +1,9 @@
 ---
 summary: Separate rebuilt and historical producer versions in H0/H1 acceptance.
 issue: uibcdf/pharmacophoremt#201
-status: active
+status: resolved
 opened: 2026-11-12
-closed:
+closed: 2026-11-12
 severity: low
 verification: measured
 area: [tests, provenance]
@@ -27,3 +27,13 @@ paths; compare every other field unchanged. Preserve original input hashes,
 saved-read/no-credit guards and original failed test/artifact identity. Receive
 the corrected oracle on the same old artifact and the new #200 artifact. Full
 supported/public/platform gates remain independent.
+
+## Executed resolution — 2026-11-12 local date
+
+The [combined receipt](../evidence/interaction_argument_controls_20261112.json)
+receives source148f3ba and its exact isolated wheel with267 selected source/owned
+cases each,51 public-ArgDigest controls per context, public PUW0.28.1 and24
+guide-block executions. The old artifact receives all12 corrected oracle cases
+while its original1failed/11passed result stays unchanged. Native inputs and
+scientific bodies retain their scope; broader#6/full supported/public gates remain
+independent. All initial failed probes/harnesses remain recorded.

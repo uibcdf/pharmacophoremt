@@ -1,5 +1,15 @@
 # Decisions and active workstreams
 
+## Interaction/public controls received — 2026-11-12
+
+The [#200/#201 receipt](evidence/interaction_argument_controls_20261112.json)
+receives267 cases per source/owned context,51 actual public-ArgDigest controls
+per context, public PUW0.28.1,24 guide blocks and240 payloads/185 equal runtime
+bodies. #201 separates newly executed versus historical PHMT producers while
+preserving exact other metadata and source inputs. First failure and intermediate
+oracle attempts remain explicit. Continue object/curation controls under#6;
+broader API/public/scientific qualification stays partial and separately owned.
+
 ## Native interaction argument adoption — 2026-11-12
 
 [#200's contract](interaction_query_argument_controls.md) adds three explicit

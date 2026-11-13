@@ -62,3 +62,25 @@ collection body differs only in its declared internal True keywords. The bounded
 seven-namespace audit now observes150 callables/32 explicit controls/119 digestion
 plans; this is not complete API/effective-delegation qualification. Exact-owned
 and public-provider receiving follow a committed source freeze.
+
+## Exact-owned/public-provider receiving — 2026-11-12 local date
+
+The [combined receipt](evidence/interaction_argument_controls_20261112.json)
+receives source148f3ba508f6f0ed55326340d765147006f05f6c and one private wheel
+`0.5.0+30.g148f3ba`:240 verified payloads/185 source-equal runtime bodies.
+The same267 selected source/owned cases pass, including51 new controls. Both
+source/owned public-ArgDigest0.17.1 contexts pass51 cases; owned groups use
+public PUW0.28.1 with93 original files rechecked and actual SDK helper staging.
+Twenty-four guide blocks pass across source development/source floor/owned floor
+× nm/pm, retaining actual attribution and the original source evidence.
+
+[#201](native_handoff_producer_oracle.md) corrects a preexisting H0/H1 oracle
+that confused rebuilt and historical producer versions. The same old artifact
+first fails1/12 original tests and passes12/12 corrected tests; the new artifact
+passes the same twelve. No original input/runtime changes or blanket version-field
+omission follows. All first probes,43 failed/6 passed red controls and the
+intermediate nonexistent-contribution-producer harness error remain retained.
+
+This receives the selected#200 slice. Broader#6 remains partial; full supported
+source/installed/public qualification, source collection, human/biological/scale,
+stopped#148/#165 and any tag/publication keep their separate boundaries.
