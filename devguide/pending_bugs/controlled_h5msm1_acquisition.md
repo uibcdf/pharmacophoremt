@@ -67,3 +67,17 @@ must remain failed. Selected receiving or collection never clears that gate.
 Public/installed package closure, #206 and any0.6.0 tag/publication stay separate.
 The [consolidation receipt](../evidence/controlled_h5msm1_receiving_20261113.json)
 records exact local inputs, original attempts and the resource envelope.
+
+## Frozen recovery requested — 2026-11-13
+
+Commit91eed32c55cbb53b2ba5f4a36d63add62c006798 is pushed with [skip ci].
+[Prospective #9 notice](https://github.com/uibcdf/pharmacophoremt/issues/9#issuecomment-6860078462)
+precedes complete all-page exact-head discovery and three single manual requests.
+[Initial receiving](../evidence/source_060_h5msm1_pending_20261113.json) verifies
+source43472677149, policy43472685859 and publication controls43472695075,
+attempt1 and exact source. Policy/publication/reporting pass. Five scientific
+cells execute and three macOS cells wait; four Linux cells reach Run tests.
+The native run-level queued status is preserved separately from job progress.
+No complete source/XML acceptance follows. Observe the same handles; do not
+rerun/cancel originals or duplicate requests. #208 is closed with local guards;
+this theme remains partial until full corrected source receiving succeeds.

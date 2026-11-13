@@ -1,5 +1,15 @@
 # Strategic roadmap
 
+## Frozen corrected source requested — 2026-11-13
+
+[Pending receiving](evidence/source_060_h5msm1_pending_20261113.json) retains
+91eed32 / source43472677149 / policy43472685859 / publication43472695075,
+all attempt1. Policy/publication/reporting pass; five scientific cells execute,
+three macOS cells wait and full XML is pending. Preserve the original source
+status, job states and handles; no duplicate request or accepted source/tag follows.
+Next receive the same full matrix under#207/#9/#23. #208 is locally resolved;
+#206 and stopped#148/#165 remain separate.
+
 ## Controlled H5MSM1.0 source recovery — 2026-11-13
 
 The scheduled exact-head run43459510556/attempt1 at9b50fde fails: four Linux

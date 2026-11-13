@@ -1,0 +1,261 @@
+{
+  "schema": "pharmacophoremt.source-060.h5msm1-pending@1",
+  "recorded_at_utc": "2026-11-13T17:32:32.041164+00:00",
+  "source": "91eed32c55cbb53b2ba5f4a36d63add62c006798",
+  "issues": [
+    207,
+    208,
+    9,
+    23,
+    95
+  ],
+  "prospective_comment": "https://github.com/uibcdf/pharmacophoremt/issues/9#issuecomment-6860078462",
+  "requests": {
+    "CI": {
+      "status": "accepted",
+      "request_file_identity": {
+        "bytes": 1483,
+        "sha256": "6512ae1cd14fe9c3b17e65383612a2752a22f1971205f3e80e000f54e31b8c5d"
+      }
+    },
+    "policy": {
+      "status": "accepted",
+      "request_file_identity": {
+        "bytes": 1468,
+        "sha256": "de9879599e21cbfd592d30e5855d30a3566896c418c33d9ec05a7c011d00a52c"
+      }
+    },
+    "publication-governance": {
+      "status": "accepted",
+      "request_file_identity": {
+        "bytes": 1506,
+        "sha256": "e44233afb698505684775f2c3d0a798d8b7ae2e8a76d57ee636ece3260483938"
+      }
+    }
+  },
+  "discovery": "complete all-event exact-head native listing through all pages before every request, then independent three-run readback; each absent workflow requested once",
+  "runs": {
+    "source": {
+      "run": {
+        "id": 43472677149,
+        "head_sha": "91eed32c55cbb53b2ba5f4a36d63add62c006798",
+        "run_attempt": 1,
+        "event": "workflow_dispatch",
+        "status": "queued",
+        "conclusion": null,
+        "updated_at": "2026-11-13T17:25:36Z",
+        "html_url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/43472677149"
+      },
+      "jobs": [
+        {
+          "id": 132048361799,
+          "name": "Reporting governance",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 132048362762,
+          "name": "Test on ubuntu-latest, Python 3.11",
+          "status": "in_progress",
+          "conclusion": null
+        },
+        {
+          "id": 132048362776,
+          "name": "Test on ubuntu-latest, Python 3.12",
+          "status": "in_progress",
+          "conclusion": null
+        },
+        {
+          "id": 132048362804,
+          "name": "Test on ubuntu-latest, Python 3.14",
+          "status": "in_progress",
+          "conclusion": null
+        },
+        {
+          "id": 132048362813,
+          "name": "Test on macos-15, Python 3.11",
+          "status": "in_progress",
+          "conclusion": null
+        },
+        {
+          "id": 132048362865,
+          "name": "Test on ubuntu-latest, Python 3.13",
+          "status": "in_progress",
+          "conclusion": null
+        },
+        {
+          "id": 132048362876,
+          "name": "Test on macos-15, Python 3.12",
+          "status": "queued",
+          "conclusion": null
+        },
+        {
+          "id": 132048362888,
+          "name": "Test on macos-15, Python 3.13",
+          "status": "queued",
+          "conclusion": null
+        },
+        {
+          "id": 132048363088,
+          "name": "Test on macos-15, Python 3.14",
+          "status": "queued",
+          "conclusion": null
+        },
+        {
+          "id": 132048364179,
+          "name": "Check skipped-commit backlog",
+          "status": "completed",
+          "conclusion": "skipped"
+        }
+      ],
+      "active_steps": {
+        "132048361799": [],
+        "132048362762": [
+          "Run tests"
+        ],
+        "132048362776": [
+          "Run tests"
+        ],
+        "132048362804": [
+          "Run tests"
+        ],
+        "132048362813": [
+          "Install pinned suite dependencies"
+        ],
+        "132048362865": [
+          "Run tests"
+        ],
+        "132048362876": [],
+        "132048362888": [],
+        "132048363088": [],
+        "132048364179": []
+      },
+      "manifest": {
+        "bytes": 1659,
+        "sha256": "9de18948c154f70f829474b0800c703ee358a5c8852249f04477c450981166fb"
+      },
+      "metadata_only": true
+    },
+    "policy": {
+      "run": {
+        "id": 43472685859,
+        "head_sha": "91eed32c55cbb53b2ba5f4a36d63add62c006798",
+        "run_attempt": 1,
+        "event": "workflow_dispatch",
+        "status": "completed",
+        "conclusion": "success",
+        "updated_at": "2026-11-13T17:26:06Z",
+        "html_url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/43472685859"
+      },
+      "jobs": [
+        {
+          "id": 132048397574,
+          "name": "policy / conformance",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ],
+      "active_steps": {
+        "132048397574": []
+      },
+      "manifest": {
+        "bytes": 1657,
+        "sha256": "374308f51998ef31024ef265e1b03aef42d37ad72345477795d5bc1e37fb272e"
+      },
+      "metadata_only": true
+    },
+    "publication": {
+      "run": {
+        "id": 43472695075,
+        "head_sha": "91eed32c55cbb53b2ba5f4a36d63add62c006798",
+        "run_attempt": 1,
+        "event": "workflow_dispatch",
+        "status": "completed",
+        "conclusion": "success",
+        "updated_at": "2026-11-13T17:26:02Z",
+        "html_url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/43472695075"
+      },
+      "jobs": [
+        {
+          "id": 132048431054,
+          "name": "publication / check",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ],
+      "active_steps": {
+        "132048431054": []
+      },
+      "manifest": {
+        "bytes": 1657,
+        "sha256": "8429b1a404e72ebecb5081c675b534aefd9e1dc01b3fcff13d0db36819addf40"
+      },
+      "metadata_only": true
+    }
+  },
+  "source_checkpoint_accepted": false,
+  "expected_cases_per_cell": 3700,
+  "expected_qualified_coverage_paths": 128,
+  "frozen_inputs": {
+    ".github/workflows/CI.yaml": {
+      "sha256": "25e86c29846199f622eed8eaad320b39813845ca84b3ee5953939cb5edb5f324",
+      "bytes": 7818
+    },
+    ".github/workflows/molsyssuite-policy.yml": {
+      "sha256": "6cc62208156f765ca0456e3bc5f398934263e03afc7063c69afa692c5dafdffd",
+      "bytes": 250
+    },
+    ".github/workflows/conda_publication_governance.yaml": {
+      "sha256": "353f4080e59d509f922f7e18b426100f523c62f9958044fc9623ce4e30c37d85",
+      "bytes": 273
+    },
+    "devtools/dependency_routes.toml": {
+      "sha256": "f73abcaa217c2a2f466e9dd6a971d23140c71127f3e2f0b0b45eae6e68b0820b",
+      "bytes": 16464
+    },
+    "devtools/requirements/controlled_suite_dependencies.txt": {
+      "sha256": "01da67a8850a436385022063e3ce81cefe82b652b4066ebb0c2039e6cf0d537a",
+      "bytes": 740
+    },
+    "devtools/requirements/controlled_suite_dependencies_py314.txt": {
+      "sha256": "01da67a8850a436385022063e3ce81cefe82b652b4066ebb0c2039e6cf0d537a",
+      "bytes": 740
+    },
+    ".coveragerc": {
+      "sha256": "74604d7528ee3f50fe2332ee671853d41e845c66ae81f69f2f83639603b14b45",
+      "bytes": 196
+    },
+    "tests/test_binding_interface_handoff.py": {
+      "sha256": "5e0d50886d91d3a00a3d86b00787653f04c359e45f24bf80411e358dce9464b1",
+      "bytes": 12829
+    },
+    "devtools/tests/test_feature_reuse_native_qualification.py": {
+      "sha256": "f5468d8ae70fe0d055fba50123c2c840ecb6585aefd141f9267712fe6c53c80a",
+      "bytes": 17651
+    },
+    "MOLSYSSUITE_GUIDE.md": {
+      "sha256": "0188fee9330856bb1d40bdd5739c275a73471b602df20ba3a3f0ac8476677678",
+      "bytes": 72127
+    },
+    "AGENTS.md": {
+      "sha256": "32d32a3365b972f350ec34bb6e0a6b8bb021a29788c95572bbbc8be1e9116d2d",
+      "bytes": 4809
+    },
+    "devguide/AGENTS.md": {
+      "sha256": "df82b455ffdd802442c778c770b0ce04b59894dcc6a2f3041b3a15cda4313370",
+      "bytes": 866
+    }
+  },
+  "original_failed_run": 43459510556,
+  "original_failed_head": "9b50fdeb552d89470f61be74c0b4a65dfb39f0cb",
+  "first_published_receptor": "GH Run Receptor1.5.0, released tag54a21ddb2d7488fef823cd490ca7d274fd4c6f54",
+  "interpretation": "Source run native status remains queued while its independent job snapshot reports five executing and three queued scientific cells; both facts retained. Four Linux cells have reached Run tests. Policy/publication and reporting success do not clear missing scientific cells/XML.",
+  "recovery": "Observe source43472677149/attempt1 and its original eight jobs; after terminal success capture complete logs through the published receptor and verify every native step,3700passes/no skips and exact128-path XML per cell. Never redispatch/cancel/rerun automatically. If capacity remains unavailable, retain pending evidence.",
+  "tag_or_publication_selected": false,
+  "later_documentation_head_not_qualified": true,
+  "stopped": [
+    148,
+    165
+  ],
+  "raw_remote_logs_published": false
+}

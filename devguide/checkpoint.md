@@ -43,11 +43,22 @@ zero skips, 48 warnings and 127 qualified XML paths. The failed newer head is
 not accepted. Immutable 0.5.0 remains 2bff5dcf454bc5230f473237a49939215a60aab2;
 public delivery remains 0.4.0. No 0.6.0 tag/package/publication is selected.
 
+## Frozen checkpoint in progress
+
+Corrected source **91eed32c55cbb53b2ba5f4a36d63add62c006798** is pushed.
+[Pending receiving](evidence/source_060_h5msm1_pending_20261113.json) independently
+verifies source run **43472677149**, policy **43472685859** and publication
+controls **43472695075**, all attempt 1 at that exact source. Policy/publication
+and reporting pass. The source snapshot has five executing scientific cells
+(four Linux in tests, macOS 3.11 acquiring dependencies) and three queued macOS
+cells; native run status remains queued. Complete science/XML is still pending.
+The later documentation head is not relabelled as the frozen tested source.
+
 ## Next concrete action and limits
 
-Freeze the locally checked corrected source and record one deliberate exact-head
-recovery under #9/#23. Verify prior executions before any request; observe the
-same handles and require every supported source cell and control workflow.
+Observe the same source run 43472677149 and require every supported scientific
+cell and its complete XML. Preserve the already completed control workflows.
+No duplicate request, automatic rerun or cancellation is authorized by waiting.
 Keep pending capacity/coverage explicit and preserve originals. #108/MolSysMT#624,
 human/biological/scale, independent installed/public delivery and BindingMT I0/H/I1
 admission remain separate.
