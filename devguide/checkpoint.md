@@ -44,12 +44,21 @@ qualified XML set remains 128 paths. Collection is not executed science.
 Immutable 0.5.0 remains 2bff5dcf454bc5230f473237a49939215a60aab2;
 public delivery remains 0.4.0. No 0.6.0 tag/package/publication is selected.
 
+## Corrected frozen checkpoint executing
+
+Source **e7d3e4914dc7113ed9468c4a9c19eb3c5840bf6f** is pushed with [skip ci].
+[Pending receiving](evidence/source_060_eralpha_pending_20261113.json) verifies
+source **43520902352**, policy **43520910099** and publication controls
+**43520918803**, attempt 1 at that exact source. Policy/publication/reporting
+pass; all eight scientific jobs have runners and execute their required stages.
+No scientific terminal result or complete XML is accepted yet. This later
+receipt/documentation head is not relabelled as the tested source.
+
 ## Next concrete action and limits
 
-Freeze the locally checked correction and request one deliberate exact-source
-checkpoint after complete prior-run discovery. Require every supported native
-cell, complete qualified XML and control workflows; preserve failed originals
-and reuse existing handles without automatic duplicate requests or reruns.
+Observe the same source run 43520902352 and its original eight jobs. Require
+every supported native cell and complete qualified XML; retain the successful
+control workflows and failed originals. No automatic duplicate request or rerun.
 GH Run Receptor #86 records the bounded multi-cause visibility suggestion.
 
 Broader #6/#108, Pandas ownership #206, MolSysMT #624, BindingMT admission,

@@ -99,3 +99,15 @@ and source fixtures stay unchanged. This resolves the bounded oracles, not the
 complete supported-source gate. Freeze one corrected source, discover existing
 runs before requesting each absent checkpoint once, and retain original failed
 runs. Expected scope is 3,703 cases and the same 128 qualified XML paths per cell.
+
+## Corrected ERalpha source requested — 2026-11-13
+
+[Prospective notice](https://github.com/uibcdf/pharmacophoremt/issues/9#issuecomment-6866660765)
+records frozen e7d3e4914dc7113ed9468c4a9c19eb3c5840bf6f before complete
+all-page prior discovery and each of three single workflow requests. [Pending
+receiving](../evidence/source_060_eralpha_pending_20261113.json) independently
+verifies source43520902352, policy43520910099 and publication43520918803,
+attempt 1. Policy/publication/reporting pass; all eight scientific jobs have
+runners. Full terminal science and XML are still pending. #209 closes only its
+case-oracle correction. Observe the same source execution; preserve all failed
+originals and do not automatically duplicate, rerun or cancel jobs.

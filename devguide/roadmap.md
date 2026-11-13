@@ -1,5 +1,14 @@
 # Strategic roadmap
 
+## ERalpha-corrected source checkpoint executing — 2026-11-13
+
+[Pending receiving](evidence/source_060_eralpha_pending_20261113.json) verifies
+source e7d3e49 / CI43520902352 / policy43520910099 / publication43520918803,
+attempt 1. Policy/publication/reporting pass and all eight scientific jobs have
+runners. Complete results/XML remain pending. Observe the same handles and keep
+original failures; no duplicate dispatch, accepted source or version/tag follows.
+#209 is resolved for its bounded case; #207/#9/#23 retain full-source recovery.
+
 ## ERalpha controlled-provider receiving — 2026-11-13
 
 [#209](archive/eralpha_controlled_provider_receiving.md) receives preserved
