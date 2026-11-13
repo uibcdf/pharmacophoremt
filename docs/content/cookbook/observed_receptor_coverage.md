@@ -112,8 +112,11 @@ with ackredit.session('1QKU receptor coverage'), phmt.attribution(True):
         credit_inputs(roles=('observed',))
     evidence = {'audit': report, 'attribution': capture.attribution.to_dict()}
 assert report['source_unchanged']
-assert len(evidence['attribution']['items']) == 1
-assert evidence['attribution']['items'][0]['type'] == 'dataset'
+assert len(evidence['attribution']['items']) == 12
+assert all(item['type'] == 'dataset' for item in evidence['attribution']['items'])
+assert {tuple(use['roles']) for use in evidence['attribution']['uses']} == {
+    ('input_data',), ('chemical_reference_data',),
+}
 serialized = json.dumps(evidence, allow_nan=False)
 bibliography = ackredit.Attribution.from_dict(
     evidence['attribution']
@@ -121,9 +124,12 @@ bibliography = ackredit.Attribution.from_dict(
 assert '1QKU' in bibliography
 ```
 
-The application credits the observed entry. No chemical template or H-generation
-method runs here. Portable attribution stays beside the original provider reports;
-loading or rendering it does not execute another calculation.
+The application credits the observed entry as `input_data`. MolSysMT also
+credits eleven packaged reference catalogues inspected during the residue
+comparison as `chemical_reference_data`. These data uses do not claim template
+application, H generation or successful interaction detection. Portable
+attribution stays beside the original provider reports; loading or rendering it
+does not execute another calculation.
 
 The case driver retains the receptor and three shell reports, source mappings,
 actual diagnostics, source preservation checks, dependency/source/extension

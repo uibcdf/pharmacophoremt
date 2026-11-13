@@ -52,7 +52,13 @@ def test_declared_inventory_becomes_atoms_with_old_and_parent_maps(prepared):
     assert report["prepared_atom_ids"][:20] == report["original_atom_ids"]
     assert len(set(addition["generated_atom_ids"])) == 24
     assert report["source_atom_indices"] == list(range(5940, 5960))
-    assert addition["dropped_attributes"] == ["b_factor"]
+    assert addition["dropped_attributes"] == ["b_factor", "occupancy"]
+    # Deposited occupancy belongs to the original heavy atoms. Generated H
+    # atoms have no observed occupancy; intersection policy must report its
+    # loss without inventing values or altering the original annotations.
+    heavy = prepared["heavy_case"]["molecular_system"]
+    np.testing.assert_array_equal(msm.get(heavy, occupancy=True), np.ones((1, 20)))
+    assert msm.get(prepared["molecular_system"], occupancy=True) is None
     json.dumps(report, allow_nan=False)
 
 
@@ -173,6 +179,7 @@ def test_strict_annotation_policy_rejects_without_changing_heavy_source(prepared
     before_bfactor = puw.get_value(
         msm.get(source, b_factor=True), to_unit="nm**2"
     ).copy()
+    before_occupancy = msm.get(source, occupancy=True).copy()
     with pytest.raises(msm.StructuralInconsistencyError):
         msm.build.add_missing_hydrogens(
             source,
@@ -189,6 +196,7 @@ def test_strict_annotation_policy_rejects_without_changing_heavy_source(prepared
     np.testing.assert_array_equal(
         before_bfactor, puw.get_value(msm.get(source, b_factor=True), to_unit="nm**2")
     )
+    np.testing.assert_array_equal(before_occupancy, msm.get(source, occupancy=True))
 
 
 def test_nondefault_units_do_not_change_declared_state_or_observed_pose(prepared):

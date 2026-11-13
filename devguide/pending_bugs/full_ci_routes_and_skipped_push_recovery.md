@@ -15,6 +15,18 @@ supersedes: []
 
 # Full-CI contributor routes and skipped-push recovery
 
+## Rejected recovery; ERalpha consumer guards corrected — 2026-11-13
+
+[Terminal/local receiving](../evidence/eralpha_controlled_receiving_20261113.json)
+rejects source91eed32/run43472677149: all five executed cells each pass 3,698
+cases and fail the same two consumer expectations; three macOS cells cancel
+without scientific qualification. [#209](../archive/eralpha_controlled_provider_receiving.md)
+receives deposited-occupancy custody and actual chemical-reference credit with
+76 cases, three new negative controls and 16 recipe blocks under nm/pm. No runtime,
+provider pin, workflow or original fixture changes. #207 stays partial until a
+new frozen full checkpoint passes every supported native cell and qualified XML.
+Original failed runs and completed control workflows retain their own identities.
+
 ## Failed accumulated source and H5MSM1.0 correction — 2026-11-13
 
 Scheduled43459510556/attempt1 at9b50fde is terminal failure: four Linux test

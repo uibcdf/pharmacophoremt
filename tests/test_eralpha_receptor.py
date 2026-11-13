@@ -1,6 +1,9 @@
 """Keep measured receptor coverage distinct from successful interaction science."""
 
+import hashlib
 import json
+from copy import deepcopy
+from importlib.resources import files
 
 import ackredit
 import molsysmt as msm
@@ -10,7 +13,11 @@ import pytest
 import pharmacophoremt as phmt
 from pharmacophoremt import pyunitwizard as puw
 from phmt_test_support.audit_eralpha_receptor import audit
-from phmt_test_support.prepare_eralpha_ligand import SOURCES, credit_inputs
+from phmt_test_support.prepare_eralpha_ligand import (
+    SOURCES,
+    credit_inputs,
+    load_manifest,
+)
 from phmt_test_support.prepared_ccd_ligands import state_payload
 from phmt_test_support.validate_eralpha_template import portable
 from phmt_test_support.validate_prepared_ccd_ligands import scientific_projection
@@ -161,7 +168,8 @@ def test_audit_preserves_original_coordinates_and_chemical_payload(audited):
     assert state_payload(source) == state
 
 
-def test_actual_credit_only_names_used_observed_data_and_preserves_science(audited):
+@pytest.fixture(scope="module")
+def audited_with_credit(audited):
     source, original, _, _ = audited
     with ackredit.session("receptor gate consumer control"), phmt.attribution(True):
         with ackredit.capture(
@@ -170,14 +178,91 @@ def test_actual_credit_only_names_used_observed_data_and_preserves_science(audit
             result = portable(audit(source))
             credit_inputs(roles=("observed",))
         references = capture.attribution.to_dict()
+    return original, result, references
+
+
+def _assert_used_audit_datasets(report, references):
+    """Check this frozen case's actual reference inputs, not completed engines."""
+    manifest = load_manifest()
+    observed = "pharmacophoremt:dataset:eralpha:observed:" + manifest["source_sha256"]
+    expected = {
+        observed: dict(
+            id=observed,
+            type="dataset",
+            title="RCSB PDB 1QKU deposited asymmetric unit",
+            url=manifest["source_uri"],
+            version=manifest["source_revision"],
+        )
+    }
+    resources = set()
+    for group in report["receptor_coverage"]["groups"]:
+        template = group["template"]
+        basename = group["group_name"][0] + ".pkl.gz"
+        assert template["resource"] == (
+            "molsysmt.data.databases.amino_acids/" + basename
+        )
+        resources.add(basename)
+        raw = files("molsysmt.data.databases.amino_acids").joinpath(basename)
+        digest = hashlib.sha256(raw.read_bytes()).hexdigest()
+        assert template["provenance"]["packaged_sha256"] == digest
+        item_id = "dataset:molsysmt-amino-acid-catalogue:" + digest
+        expected[item_id] = dict(
+            id=item_id,
+            type="dataset",
+            title="Historical MolSysMT amino-acid atom/bond catalogue",
+            url="https://github.com/uibcdf/molsysmt/blob/main/"
+            "molsysmt/data/databases/amino_acids/" + basename,
+        )
+    assert resources == {letter + ".pkl.gz" for letter in "ACGHILMPSTV"}
+    actual = {item["id"]: item for item in references["items"]}
+    assert len(actual) == len(references["items"]) == 12
+    assert actual == expected
+    assert {use["item_id"] for use in references["uses"]} == set(expected)
+    for use in references["uses"]:
+        if use["item_id"] == observed:
+            assert use["roles"] == ["input_data"]
+            assert use["used_by"] == "pharmacophoremt.fixture.eralpha_inputs"
+            assert use["context"]["input_role"] == "observed"
+            assert use["context"]["sha256"] == manifest["source_sha256"]
+        else:
+            assert use["roles"] == ["chemical_reference_data"]
+            assert use["used_by"] == (
+                "molsysmt.element.group.amino_acid.get_expected_heavy_atoms"
+            )
+            assert use["context"]["relationship"] == ["chemical_reference_data"]
+
+
+def test_actual_credit_only_names_used_observed_data_and_preserves_science(
+    audited_with_credit,
+):
+    original, result, references = audited_with_credit
     assert scientific_projection(original) == scientific_projection(result)
-    assert len(references["items"]) == 1
-    assert references["items"][0]["type"] == "dataset"
-    assert "deposited asymmetric unit" in references["items"][0]["title"]
-    assert all(use["roles"] == ["input_data"] for use in references["uses"])
+    _assert_used_audit_datasets(result, references)
     assert "1QKU" in ackredit.Attribution.from_dict(references).report(format="bibtex")
     with pytest.raises(ValueError, match="Unknown ERalpha input role"):
         credit_inputs(roles=("unexecuted",))
+
+
+@pytest.mark.parametrize("change", ["missing", "extra", "role"])
+def test_audit_reference_oracle_rejects_missing_extra_or_misclassified_credit(
+    audited_with_credit, change
+):
+    _, result, references = audited_with_credit
+    changed = deepcopy(references)
+    if change == "missing":
+        catalogue = next(
+            item for item in changed["items"] if item["id"].startswith("dataset:")
+        )
+        changed["items"].remove(catalogue)
+    elif change == "extra":
+        changed["items"].append(dict(id="unexecuted-dataset", type="dataset"))
+    else:
+        use = next(
+            use for use in changed["uses"] if use["item_id"].startswith("dataset:")
+        )
+        use["roles"] = ["input_data"]
+    with pytest.raises(AssertionError):
+        _assert_used_audit_datasets(result, changed)
 
 
 def test_explicit_nm_shells_preserve_scope_under_nondefault_units(audited):

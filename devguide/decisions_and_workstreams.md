@@ -1,5 +1,20 @@
 # Decisions and active workstreams
 
+## ERalpha controlled-provider receiving — 2026-11-13
+
+[#209](archive/eralpha_controlled_provider_receiving.md) receives preserved
+occupancy and actual chemical-reference credit without changing scientific
+algorithms, pins, workflows or original fixtures. Two public recipes now agree
+with the owner. [Receiving](evidence/eralpha_controlled_receiving_20261113.json)
+passes 76 cases and 16 nm/pm blocks with all seven controlled provider revisions;
+three negative controls protect credit completeness and roles. Source 91eed32 /
+43472677149 remains rejected: five cells each pass 3,698 cases and fail the same
+two stale expectations; three macOS cells cancel without scientific qualification.
+Next freeze one corrected source and require a complete checkpoint under
+#207/#9/#23 (3,703 collected cases; 128 expected XML paths, neither executed).
+GH Run Receptor #86 owns the nonblocking multiple-cause visibility proposal.
+No 0.6.0 tag/publication; #206, broader #6/#108 and stopped #148/#165 stay separate.
+
 ## Frozen corrected source requested — 2026-11-13
 
 [Pending receiving](evidence/source_060_h5msm1_pending_20261113.json) retains

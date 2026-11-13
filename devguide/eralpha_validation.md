@@ -560,3 +560,27 @@ The missing public rejected-candidate geometry surface is reported in
 [MolSysMT #350](https://github.com/uibcdf/molsysmt/issues/350), with measured
 consumer evidence. No provider implementation, geometry relaxation, alternative
 chemical state, cutoff optimization or biological acceptance is inferred.
+
+## Controlled molecular-provider receiving — 2026-11-13
+
+The [#209 case correction](archive/eralpha_controlled_provider_receiving.md)
+receives the later controlled molecular provider without changing original
+geometry, preparation policy, sources or historical receipts above. Deposited
+occupancy is now preserved by the CIF reader. Intersection H addition reports
+both B-factor and occupancy loss on its expanded copy while retaining all
+original heavy-atom annotations; strict refusal preserves them too.
+
+Actual read-only receptor auditing credits eleven packaged chemical-reference
+catalogues plus the observed PDB entry. These are reference-data uses, not
+completed interaction detection, template application or H generation. The
+current oracle checks complete records against public coverage declarations,
+actual resource hashes and the original observed manifest; three negative
+controls reject missing, extra or misclassified evidence. Historical one-dataset
+and B-factor-only observations retain their original provider/run identities.
+
+The [new receiving receipt](evidence/eralpha_controlled_receiving_20261113.json)
+passes 76 focused cases and 16 recipe blocks under nm/pm using all seven
+controlled provider revisions. The original two-failure baseline and rejected
+five-cell full run remain retained. Full eight-cell source/XML recovery is
+still owned by #207/#9/#23; biological, installed/public and scale gates remain
+separate. No shared provider, native binary, runtime API or source fixture changes.

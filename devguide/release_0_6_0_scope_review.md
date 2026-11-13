@@ -20,6 +20,19 @@ below and frozen4766946's matrix. The original no-signature-change result remain
 valid for its stated f722b45 endpoint, not for this later intentionally extended
 API. No version/tag/publication decision follows.
 
+## Controlled ERalpha receiving — 2026-11-13
+
+[The #209 correction](archive/eralpha_controlled_provider_receiving.md) receives
+additional annotation/provenance behavior from the already selected molecular
+provider, with no runtime, pin, workflow or original fixture change. Two cookbook
+pages now expose exact losses and actual dataset roles. All seven controlled
+source revisions receive 76 cases and 16 nm/pm blocks; original baseline failures
+remain. The rejected 91eed32 checkpoint reports the same two failures in all five
+executed cells; three macOS cells cancel without scientific results. Collecting
+3,703 cases and expecting 128 qualified paths does not execute them. One new
+frozen complete source checkpoint remains required under #207/#9/#23. No version,
+tag, public artifact or biological/scale/installed claim follows.
+
 ## Consolidation and source recovery — 2026-11-13
 
 The [new static review](evidence/controlled_h5msm1_receiving_20261113.json)

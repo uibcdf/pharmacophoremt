@@ -1,0 +1,428 @@
+{
+  "schema": "pharmacophoremt.eralpha-controlled-receiving@1",
+  "recorded_at_utc": "2026-11-13T22:34:37.924845+00:00",
+  "issues": [
+    209,
+    207,
+    9,
+    23,
+    95
+  ],
+  "original_rejected_source": {
+    "run": {
+      "id": 43472677149,
+      "head_sha": "91eed32c55cbb53b2ba5f4a36d63add62c006798",
+      "run_attempt": 1,
+      "event": "workflow_dispatch",
+      "status": "completed",
+      "conclusion": "failure",
+      "updated_at": "2026-11-13T18:18:00Z"
+    },
+    "jobs": [
+      {
+        "id": 132048361799,
+        "name": "Reporting governance",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 132048362762,
+        "name": "Test on ubuntu-latest, Python 3.11",
+        "status": "completed",
+        "conclusion": "failure"
+      },
+      {
+        "id": 132048362776,
+        "name": "Test on ubuntu-latest, Python 3.12",
+        "status": "completed",
+        "conclusion": "failure"
+      },
+      {
+        "id": 132048362804,
+        "name": "Test on ubuntu-latest, Python 3.14",
+        "status": "completed",
+        "conclusion": "failure"
+      },
+      {
+        "id": 132048362813,
+        "name": "Test on macos-15, Python 3.11",
+        "status": "completed",
+        "conclusion": "failure"
+      },
+      {
+        "id": 132048362865,
+        "name": "Test on ubuntu-latest, Python 3.13",
+        "status": "completed",
+        "conclusion": "failure"
+      },
+      {
+        "id": 132048362876,
+        "name": "Test on macos-15, Python 3.12",
+        "status": "completed",
+        "conclusion": "cancelled"
+      },
+      {
+        "id": 132048362888,
+        "name": "Test on macos-15, Python 3.13",
+        "status": "completed",
+        "conclusion": "cancelled"
+      },
+      {
+        "id": 132048363088,
+        "name": "Test on macos-15, Python 3.14",
+        "status": "completed",
+        "conclusion": "cancelled"
+      },
+      {
+        "id": 132048364179,
+        "name": "Check skipped-commit backlog",
+        "status": "completed",
+        "conclusion": "skipped"
+      }
+    ],
+    "all_five_executed_native_cells": [
+      {
+        "job_log_member": "2_Test on ubuntu-latest, Python 3.14.txt",
+        "failed": 2,
+        "passed": 3698,
+        "warnings": 48
+      },
+      {
+        "job_log_member": "3_Test on ubuntu-latest, Python 3.13.txt",
+        "failed": 2,
+        "passed": 3698,
+        "warnings": 48
+      },
+      {
+        "job_log_member": "5_Test on macos-15, Python 3.11.txt",
+        "failed": 2,
+        "passed": 3698,
+        "warnings": 48
+      },
+      {
+        "job_log_member": "6_Test on ubuntu-latest, Python 3.11.txt",
+        "failed": 2,
+        "passed": 3698,
+        "warnings": 48
+      },
+      {
+        "job_log_member": "7_Test on ubuntu-latest, Python 3.12.txt",
+        "failed": 2,
+        "passed": 3698,
+        "warnings": 48
+      }
+    ],
+    "cancelled_macos": "3.12/3.13/3.14 have no scientific qualification; original linked acquisition/capacity hints are unverified",
+    "full_capture_manifest": {
+      "bytes": 1853,
+      "sha256": "0f9102ddb8334a00f52e13c0938e5fda37420a2a9b661e37833ffed2459c7083"
+    },
+    "full_attempt_log_archive": {
+      "bytes": 253645,
+      "sha256": "d5fa59c9cd212a73e4ff5a502c3a7fd7943066594466d7951457cf4b29301fdb"
+    },
+    "first_inspection": "published GH Run Receptor1.5.0 released tag54a21ddb2d7488fef823cd490ca7d274fd4c6f54; native complete logs retain both independent failure groups",
+    "raw_remote_logs_published": false
+  },
+  "correction": {
+    "runtime_scientific_bodies_dependency_pins_workflow_and_original_fixtures": "unchanged from5751085a587da4d8a5f8a23b5bb3e14099745576 (runtime also equal to rejected91eed32)",
+    "occupancy": "twenty original1.0 values retained; intersection declares b_factor/occupancy loss, output occupancyNone; strict refusal preserves original values",
+    "reference_oracle": "one observed PDB dataset and eleven actually used catalogue dataset records; exact public report/resource hash association, complete records and correct roles/callers; no completed blocked detector credit",
+    "new_negative_cases": [
+      "missing catalogue",
+      "unexecuted extra dataset",
+      "misclassified catalogue role"
+    ],
+    "recipes_corrected": [
+      "observed_est_hydrogens",
+      "observed_receptor_coverage"
+    ]
+  },
+  "local": {
+    "original_baseline": {
+      "unique_cases": 2,
+      "failures": 2,
+      "errors": 0,
+      "skipped": 0,
+      "xml_identity": {
+        "bytes": 4161,
+        "sha256": "44106b1587fc890e846abd2f13524cbf90e3fbcb072e1e2e077494a5543fb5c6"
+      }
+    },
+    "focused": {
+      "unique_cases": 76,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "xml_identity": {
+        "bytes": 11533,
+        "sha256": "726d6677657a043047fba7d54860fe505e1c13e7cc0ea2d11cf0611429529592"
+      }
+    },
+    "public_recipe_blocks": [
+      {
+        "page": "observed_est_hydrogens",
+        "block": 1,
+        "unit": "nm"
+      },
+      {
+        "page": "observed_est_hydrogens",
+        "block": 2,
+        "unit": "nm"
+      },
+      {
+        "page": "observed_est_hydrogens",
+        "block": 3,
+        "unit": "nm"
+      },
+      {
+        "page": "observed_est_hydrogens",
+        "block": 4,
+        "unit": "nm"
+      },
+      {
+        "page": "observed_est_hydrogens",
+        "block": 5,
+        "unit": "nm"
+      },
+      {
+        "page": "observed_receptor_coverage",
+        "block": 1,
+        "unit": "nm"
+      },
+      {
+        "page": "observed_receptor_coverage",
+        "block": 2,
+        "unit": "nm"
+      },
+      {
+        "page": "observed_receptor_coverage",
+        "block": 3,
+        "unit": "nm"
+      },
+      {
+        "page": "observed_est_hydrogens",
+        "block": 1,
+        "unit": "pm"
+      },
+      {
+        "page": "observed_est_hydrogens",
+        "block": 2,
+        "unit": "pm"
+      },
+      {
+        "page": "observed_est_hydrogens",
+        "block": 3,
+        "unit": "pm"
+      },
+      {
+        "page": "observed_est_hydrogens",
+        "block": 4,
+        "unit": "pm"
+      },
+      {
+        "page": "observed_est_hydrogens",
+        "block": 5,
+        "unit": "pm"
+      },
+      {
+        "page": "observed_receptor_coverage",
+        "block": 1,
+        "unit": "pm"
+      },
+      {
+        "page": "observed_receptor_coverage",
+        "block": 2,
+        "unit": "pm"
+      },
+      {
+        "page": "observed_receptor_coverage",
+        "block": 3,
+        "unit": "pm"
+      }
+    ],
+    "full_collection_only": {
+      "count": 3703,
+      "executed": 0,
+      "inventory": {
+        "bytes": 435471,
+        "sha256": "cf69ffb6ba4b72f8da68b9ee2d259c050b8227ee8e9e8cdc27537ee2c354d369"
+      }
+    },
+    "strict_whole_site_docs": {
+      "exit_code": 0,
+      "notebook_execution": "off",
+      "workers": 1,
+      "limits": "inherited optional-beartype diagnostics retained; Sphinx-W gate passes; displayed docs version0.5.0 remains development configuration, not published0.6.0"
+    },
+    "quality": [
+      {
+        "name": "index",
+        "exit_code": 0
+      },
+      {
+        "name": "reporting",
+        "exit_code": 0
+      },
+      {
+        "name": "archives",
+        "exit_code": 0
+      },
+      {
+        "name": "environments",
+        "exit_code": 0
+      },
+      {
+        "name": "lint",
+        "exit_code": 0
+      },
+      {
+        "name": "format-final",
+        "exit_code": 0
+      },
+      {
+        "name": "whitespace",
+        "exit_code": 0
+      }
+    ]
+  },
+  "providers": {
+    "molsysmt_source": "05865fbb3ba499d4117d6ba3e1cf55d98a9e239e",
+    "molsysmt_observed_version": "0+unknown",
+    "molsysmt_native": "original inherited extension; matching tracked Rust/toolchain source recorded in prior controlled_h5msm1_receiving_20261113.json; no new native build/install qualification",
+    "observed_versions": {
+      "molsysmt": "0+unknown",
+      "ackredit": "0.11.0+3.g71f7f19",
+      "depdigest": "0.15.1",
+      "molsysviewer": "0.24.0+238.gca7ebea6",
+      "smonitor": "0.22.1",
+      "argdigest": "0.17.1",
+      "pyunitwizard": "0.28.1"
+    },
+    "three_public_provider_Python_bodies_equal_to_CI_pins": [
+      {
+        "name": "smonitor",
+        "source": "2147c7c641b7cba8a974b193207f686ee3ebe855",
+        "equal_python_files": 40
+      },
+      {
+        "name": "argdigest",
+        "source": "c9c9ee623dab5331fdfa4227bd784dd38620e18b",
+        "equal_python_files": 38
+      },
+      {
+        "name": "pyunitwizard",
+        "source": "2ab37a525ce99728ad8aee846b4a4f7acc4f1b65",
+        "equal_python_files": 83
+      }
+    ],
+    "three_task_owned_source_wheels": [
+      {
+        "name": "ackredit",
+        "git_source": "71f7f1984de1a3925c32d29074784bb553e89bfc",
+        "wheel": "ackredit-0.11.0+3.g71f7f19-py3-none-any.whl",
+        "sha256": "02c4b4df73984e4e25b8752ee00a0e8854effb1794fc97f78d4a3519ad08d06c"
+      },
+      {
+        "name": "depdigest",
+        "git_source": "13cc73780a7cb645546ae3f396177f98b86a8792",
+        "wheel": "depdigest-0.15.1-py3-none-any.whl",
+        "sha256": "062263051f1be9892902807e879695b5043ef593bb7353c73883dfcf90a15e5d"
+      },
+      {
+        "name": "molsysviewer",
+        "git_source": "ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352",
+        "wheel": "molsysviewer-0.24.0+238.gca7ebea6-py3-none-any.whl",
+        "sha256": "28c23bfc8aa4b4b0d14952e92c8d3840dd031331e0511f8a75242659a04b1ed2"
+      }
+    ],
+    "public_payload_receiving": "existing authored #205 cached public contexts reused; equality of161 Python files, not a new full public artifact/platform gate",
+    "origins": "all seven observed package origins asserted under their respective task-owned or authenticated cached receiving roots before execution",
+    "shared_prefix_modified": false
+  },
+  "resources": {
+    "cpu_affinity": [
+      19
+    ],
+    "backend_threads": 1,
+    "nice": 19,
+    "IO": "idle",
+    "DATA_bytes": 1073741824,
+    "CPU_seconds": 120,
+    "wall_seconds": 180,
+    "own_family_RSS_stop_bytes": 1073741824,
+    "physical_reserve_fraction": 0.2,
+    "additional_margin_bytes": 1610612736,
+    "actual_runs": {
+      "baseline": {
+        "exit_code": 1,
+        "interruption": null,
+        "seconds": 9.198934325948358,
+        "maximum_observed_own_family_RSS_bytes": 369303552
+      },
+      "focused": {
+        "exit_code": 0,
+        "interruption": null,
+        "seconds": 87.90658376005013,
+        "maximum_observed_own_family_RSS_bytes": 618446848
+      },
+      "recipes-nm": {
+        "exit_code": 0,
+        "interruption": null,
+        "seconds": 16.588529244996607,
+        "maximum_observed_own_family_RSS_bytes": 556482560
+      },
+      "recipes-pm": {
+        "exit_code": 0,
+        "interruption": null,
+        "seconds": 16.18053771997802,
+        "maximum_observed_own_family_RSS_bytes": 556277760
+      },
+      "collection": {
+        "exit_code": 0,
+        "interruption": null,
+        "seconds": 7.882999730994925,
+        "maximum_observed_own_family_RSS_bytes": 267972608
+      },
+      "docs": {
+        "exit_code": 0,
+        "interruption": null,
+        "seconds": 11.723800115985796,
+        "maximum_observed_own_family_RSS_bytes": 313733120
+      }
+    },
+    "aggregate_cgroup_enforced": false,
+    "capacity_reserved": false,
+    "Slurm": "no usable allocation established; conservative direct execution"
+  },
+  "provider_feedback": {
+    "issue": "https://github.com/uibcdf/gh-run-receptor/issues/86",
+    "classification": "nonblocking proposal for bounded independent pytest-group visibility; current one-best-cause-per-job behavior is intentional, not a claimed regression",
+    "component_labels": "molsysmt relation applied to PHMT207/208/209; pharmacophoremt applied upstream; frozen central-label SDK reports newer BindingMT suffix as unknown, so it was preserved and no registry/label renaming was attempted"
+  },
+  "changed_source_file_identities": {
+    "tests/test_eralpha_hydrogens.py": {
+      "bytes": 12336,
+      "sha256": "67b4e314e245a96014f8bef0d6e47bf9edebd5009e08800d1270ccf528bd7bdc"
+    },
+    "tests/test_eralpha_receptor.py": {
+      "bytes": 11400,
+      "sha256": "6eecf25225da86458d2651f1753552c3c21c89a7a4d2bef40ffa64ac4163196c"
+    },
+    "docs/content/cookbook/observed_est_hydrogens.md": {
+      "bytes": 8784,
+      "sha256": "9c6f4e62256efc02255e2d614de14d09772270ef2183afdf5713286c3de622c0"
+    },
+    "docs/content/cookbook/observed_receptor_coverage.md": {
+      "bytes": 7349,
+      "sha256": "da734b153b273a4643d2a30b939b109c974d06acaae108b9342eb47ea5a68a2b"
+    }
+  },
+  "next": "Freeze one corrected source; all-page prior-run discovery, request each absent exact-source checkpoint once and verify all native cells and complete XML. Expected3703cases/128paths remain prospective.",
+  "complete_source_checkpoint_accepted": false,
+  "tag_or_publication_selected": false,
+  "stopped": [
+    148,
+    165
+  ]
+}

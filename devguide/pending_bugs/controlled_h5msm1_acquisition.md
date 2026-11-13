@@ -81,3 +81,21 @@ The native run-level queued status is preserved separately from job progress.
 No complete source/XML acceptance follows. Observe the same handles; do not
 rerun/cancel originals or duplicate requests. #208 is closed with local guards;
 this theme remains partial until full corrected source receiving succeeds.
+
+## Terminal rejected source and ERalpha correction — 2026-11-13
+
+Full attempt capture verifies 43472677149 / source 91eed32 / attempt 1 is
+terminal failure. All five executed scientific jobs report 3,698 passes, two
+failures and 48 warnings. The three other macOS jobs cancel without scientific
+execution; annotations supply unverified capacity hints only. The two failures
+are identical across those five jobs. H5MSM1.0 read failures are absent.
+
+[#209](../archive/eralpha_controlled_provider_receiving.md) corrects the ERalpha
+case's annotation-loss and reference-credit expectations, adds three negative
+controls and receives both public recipes. [Local controlled receiving](../evidence/eralpha_controlled_receiving_20261113.json)
+passes 76 cases and 16 nm/pm blocks with every selected provider revision, while
+retaining the original inherited-native limitation. Runtime, pins, workflow bytes
+and source fixtures stay unchanged. This resolves the bounded oracles, not the
+complete supported-source gate. Freeze one corrected source, discover existing
+runs before requesting each absent checkpoint once, and retain original failed
+runs. Expected scope is 3,703 cases and the same 128 qualified XML paths per cell.

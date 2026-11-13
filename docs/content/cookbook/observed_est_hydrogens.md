@@ -38,7 +38,11 @@ with ackredit.session('observed EST preparation and self-placement'), phmt.attri
     preparation_references = ackredit.get_attribution().to_dict()
 
 assert hydrogenation['report']['n_added_hydrogens'] == 24
-assert hydrogenation['report']['dropped_attributes'] == ['b_factor']
+assert hydrogenation['report']['dropped_attributes'] == ['b_factor', 'occupancy']
+np.testing.assert_array_equal(
+    msm.get(heavy_case['molecular_system'], occupancy=True), np.ones((1, 20)),
+)
+assert msm.get(prepared, occupancy=True) is None
 assert len(inventory['features']) == query.n_interaction_sites == 5
 assert positive['status'] == 'matched' and positive['fit_value'] == 1
 np.testing.assert_array_equal(
@@ -53,10 +57,11 @@ hydrophobicity deliberately. Donor pairs are O3/H22 and O17/H40 in the local
 expanded atom domain; the H indices refer to generated atoms, not deposited
 source indices. The original 20 atoms retain their identity and map to the complex.
 
-The explicit intersection policy drops the expanded copy's B-factor domain,
-because generated H have no experimental B factors. MolSysMT emits a diagnostic
-and names this in its report. The original ligand and retained deposition keep
-their annotations; `attribute_policy='strict'` rejects this input instead.
+The explicit intersection policy drops the expanded copy's B-factor and
+occupancy domains, because generated H have neither experimental B factors nor
+deposited occupancy. MolSysMT emits a diagnostic and names both losses in its
+report. The original ligand and retained deposition keep their annotations;
+`attribute_policy='strict'` rejects this input instead.
 No values for the new atoms are fabricated. The builder also checks the selected
 chemical state, coordinate stereo and hydrogen inventory before adding atoms.
 
@@ -86,8 +91,8 @@ assert wrong_position['status'] == 'not_matched' and wrong_position['fit_value']
 ```
 
 Save the native molecular values and query through their public codecs. Retain
-template/H preparation reports and their original citations separately. H5MSM
-does not automatically embed a preparation-history report.
+template/H preparation reports and their original citations in the explicit
+case file shown below.
 
 ```python
 import json
