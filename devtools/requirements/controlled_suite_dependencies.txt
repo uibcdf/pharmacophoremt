@@ -6,4 +6,4 @@ git+https://github.com/uibcdf/pyunitwizard@2ab37a525ce99728ad8aee846b4a4f7acc4f1
 git+https://github.com/uibcdf/argdigest@c9c9ee623dab5331fdfa4227bd784dd38620e18b
 git+https://github.com/uibcdf/molsysviewer@ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352
 git+https://github.com/uibcdf/ackredit@71f7f1984de1a3925c32d29074784bb553e89bfc
-git+https://github.com/uibcdf/molsysmt@0faf1584d05ac47ddcebfc20d9c9978b7f4f230e
+git+https://github.com/uibcdf/molsysmt@05865fbb3ba499d4117d6ba3e1cf55d98a9e239e

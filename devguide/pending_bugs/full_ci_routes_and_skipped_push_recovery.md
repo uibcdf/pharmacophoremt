@@ -15,6 +15,19 @@ supersedes: []
 
 # Full-CI contributor routes and skipped-push recovery
 
+## Failed accumulated source and H5MSM1.0 correction — 2026-11-13
+
+Scheduled43459510556/attempt1 at9b50fde is terminal failure: four Linux test
+failures, four macOS cancellations and two administrative successes. Native
+Linux3.14 reports3655pass/41setup errors/1failure/48warnings; the old molecular
+reader cannot read the original1.0 handoff inputs. [#207](controlled_h5msm1_acquisition.md)
+owns corrected acquisition and a separate exact-source checkpoint. [#208](../archive/recognition_producer_oracle.md)
+corrects only fresh/historical recognition-producer expectations with three
+negative controls. Selected52-case receiving and52 administrative controls do
+not qualify the complete source. Preserve the original failed/cancelled run and
+require all eight supported cells plus control workflows at the corrected head.
+#148/#165 remain stopped; #206 dependency ownership remains separate.
+
 ## Complete corrected-source receiving — 2026-11-11 UTC
 
 [Terminal receiving](../evidence/source_060_recovery_checkpoint_qualification_20261111.json)

@@ -2,6 +2,7 @@
 
 import json
 import shutil
+import sys
 from copy import deepcopy
 from pathlib import Path
 
@@ -99,6 +100,18 @@ def test_rebuilt_primary_preserves_labeled_evidence_and_saved_native_semantics(p
         stored_component["metadata"] = _without_checked_query_producer(
             stored_component["metadata"], historical_version
         )
+        if fresh_component["label"] in ("ionic_031", "ionic_035"):
+            # Construction performs fresh charge recognition. Its declaration
+            # belongs to the current provider, independently of saved native
+            # interaction software and the historical recognition producer.
+            for component, version in (
+                (fresh_component, msm.__version__),
+                (stored_component, manifest["producer"]["molsysmt"]),
+            ):
+                charge = component["metadata"]["ionic_feature_inventory"][
+                    "recognition"
+                ]["formal_charge"]
+                assert charge.pop("software") == {"molsysmt": version}
     assert fresh_metadata == stored_metadata
     # Site/contribution evidence has no newly generated model producer field.
     # Compare it exactly, including all original native software/attribution.
@@ -124,6 +137,32 @@ def test_rebuilt_primary_preserves_labeled_evidence_and_saved_native_semantics(p
     np.testing.assert_array_equal(
         puw.get_value(msm.get(source, coordinates=True), to_unit="nm"), before
     )
+
+
+@pytest.mark.parametrize("change", ["producer_version", "producer_extra", "charge"])
+def test_reconstruction_oracle_rejects_changed_recognition_evidence(
+    package, monkeypatch, change
+):
+    original = construct
+
+    def changed(source):
+        query = original(source)
+        charge = query.metadata["components"][0]["metadata"]["ionic_feature_inventory"][
+            "recognition"
+        ]["formal_charge"]
+        if change == "producer_version":
+            charge["software"]["molsysmt"] = "unexpected-producer"
+        elif change == "producer_extra":
+            charge["software"]["unexpected-provider"] = "1.0"
+        else:
+            charge["charges"]["values"][0] = 2.0
+        return query
+
+    monkeypatch.setattr(sys.modules[__name__], "construct", changed)
+    with pytest.raises(AssertionError):
+        test_rebuilt_primary_preserves_labeled_evidence_and_saved_native_semantics(
+            package
+        )
 
 
 def test_alternatives_and_hard_constraints_have_independent_expected_decisions():

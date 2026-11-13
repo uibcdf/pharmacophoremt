@@ -1,0 +1,69 @@
+---
+summary: Align controlled MolSysMT acquisition with immutable H5MSM 1.0 inputs.
+issue: uibcdf/pharmacophoremt#207
+status: partial
+opened: 2026-11-13
+closed:
+severity: medium
+verification: measured
+area: [ci, integration]
+guard: tests/test_binding_interface_handoff.py::test_native_full_context_and_strict_group_scope_preserve_original_ids
+normative:
+blocked_by: []
+supersedes: []
+---
+
+# Controlled H5MSM 1.0 acquisition
+
+Scheduled source run43459510556/attempt1 at9b50fdeb552d89470f61be74c0b4a65dfb39f0cb
+is terminal failure: four Linux test failures, four macOS cancellations and two
+successful administrative jobs. The macOS acquisition/capacity annotations are
+unverified hints; no scientific outcome is inferred for those cancelled cells.
+Public GH Run Receptor1.5.0 retains native facts and a job-only Linux3.14 log.
+That job132002544754 reports3655passes,41setup errors,1failure and48warnings.
+Both grouped causes reach the old MolSysMT H5MSM0.5-only reader.
+
+Both controlled manifests pinned0faf1584d05ac47ddcebfc20d9c9978b7f4f230e,
+while the unchanged handoff fixtures explicitly use public H5MSM1.0. Local
+receiving through a newer editable provider did not qualify this older context.
+This is consumer acquisition debt, not a demonstrated molecular-provider defect.
+
+## Correction and bounded receiving
+
+Select published source05865fbb3ba499d4117d6ba3e1cf55d98a9e239e, the first explicit
+H5MSM1.0 owner reader. The remote h5msm.py Git blob27e665f2b0ec6afa8d013979f8175b66b0352641
+matches the inspected local object. Its metadata requires PUW>=0.28.1,
+ArgDigest>=0.14.0 and SMonitor>=0.16.0, compatible with the existing controlled
+support pins. It adds Jinja2>=3.1.2 to the provider's required surface; actual
+installed closure remains a mandatory hosted SDK check. This source choice
+avoids requiring the newer editable provider's PUW>=0.29.2 floor.
+
+Advance only MolSysMT in both manifests and re-review their route checksums.
+Keep all six other provider pins, workflow bytes, scientific commands, eight
+supported cells, fixture bytes/hashes and runtime code unchanged. The existing
+distribution guard refuses unreviewed manifest changes; native handoff guards
+read the original artifacts and assert independent geometry, maps and decisions.
+
+The selected-source interoperability probe passes52 cases with public PUW0.28.1,
+ArgDigest0.17.1 and Pytest Receptor1.2.2 after the separate #208 oracle correction.
+It stages original Git source and inherits the workstation Rust extension;
+tracked Rust/toolchain bytes match the current local source. It does not build
+or qualify a MolSysMT wheel, complete controlled closure or supported platform.
+Its unstamped source truthfully reports0+unknown, not a manufactured version.
+Original plugin-registration failure and48pass/1oracle-failure attempts remain.
+
+#148's frozen client and SOURCE_SHA remain unchanged. Its real admission now
+refuses the changed current manifest before installation; the unit guard asserts
+that refusal. The downstream guard unit control supplies only a synthetic frozen
+fingerprint to reach its own branch. Neither permits execution or reopens
+#148/#165. A future restart needs separately reviewed inputs/context and limits.
+
+## Acceptance still pending
+
+Record and inspect a separate immutable corrected-source checkpoint under#9/#23.
+Require every supported full scientific cell and its qualified coverage, reporting,
+frozen policy and publication-governance checks. The original failed/cancelled run
+must remain failed. Selected receiving or collection never clears that gate.
+Public/installed package closure, #206 and any0.6.0 tag/publication stay separate.
+The [consolidation receipt](../evidence/controlled_h5msm1_receiving_20261113.json)
+records exact local inputs, original attempts and the resource envelope.

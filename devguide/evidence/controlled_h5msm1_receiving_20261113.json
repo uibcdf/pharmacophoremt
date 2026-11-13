@@ -1,0 +1,657 @@
+{
+  "schema": "pharmacophoremt.controlled-h5msm1-receiving@1",
+  "recorded_at_utc": "2026-11-13T17:20:37.652682+00:00",
+  "issues": [
+    207,
+    208,
+    206,
+    9,
+    23,
+    95
+  ],
+  "original_ci": {
+    "run": {
+      "id": 43459510556,
+      "head_sha": "9b50fdeb552d89470f61be74c0b4a65dfb39f0cb",
+      "run_attempt": 1,
+      "event": "schedule",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    "jobs": [
+      {
+        "id": 132002356033,
+        "name": "Reporting governance",
+        "conclusion": "success"
+      },
+      {
+        "id": 132002357621,
+        "name": "Check skipped-commit backlog",
+        "conclusion": "success"
+      },
+      {
+        "id": 132002544619,
+        "name": "Test on macos-15, Python 3.14",
+        "conclusion": "cancelled"
+      },
+      {
+        "id": 132002544676,
+        "name": "Test on ubuntu-latest, Python 3.11",
+        "conclusion": "failure"
+      },
+      {
+        "id": 132002544701,
+        "name": "Test on macos-15, Python 3.12",
+        "conclusion": "cancelled"
+      },
+      {
+        "id": 132002544733,
+        "name": "Test on ubuntu-latest, Python 3.12",
+        "conclusion": "failure"
+      },
+      {
+        "id": 132002544754,
+        "name": "Test on ubuntu-latest, Python 3.14",
+        "conclusion": "failure"
+      },
+      {
+        "id": 132002544765,
+        "name": "Test on macos-15, Python 3.13",
+        "conclusion": "cancelled"
+      },
+      {
+        "id": 132002544767,
+        "name": "Test on macos-15, Python 3.11",
+        "conclusion": "cancelled"
+      },
+      {
+        "id": 132002544856,
+        "name": "Test on ubuntu-latest, Python 3.13",
+        "conclusion": "failure"
+      }
+    ],
+    "linux314_observed": {
+      "job": 132002544754,
+      "passed": 3655,
+      "failed": 1,
+      "setup_errors": 41,
+      "warnings": 48,
+      "grouped_exception": "ValueError: Expected an H5MSM 0.5 modular file."
+    },
+    "cancelled_macos": "no scientific qualification; acquisition/capacity annotations are unverified hints",
+    "first_receptor": {
+      "version": "1.5.0",
+      "published_tag_commit": "54a21ddb2d7488fef823cd490ca7d274fd4c6f54",
+      "scope": "metadata plus job-only logs; no complete attempt log archive",
+      "manifest": {
+        "bytes": 2019,
+        "sha256": "b7e7f04f29d73fb639fed85d2e2f59a1615d94c755bba92b44e807ac8284731e"
+      }
+    },
+    "raw_remote_logs_published": false
+  },
+  "change": {
+    "old_molsysmt": "0faf1584d05ac47ddcebfc20d9c9978b7f4f230e",
+    "selected_molsysmt": "05865fbb3ba499d4117d6ba3e1cf55d98a9e239e",
+    "reviewed_remote_h5msm_blob": "27e665f2b0ec6afa8d013979f8175b66b0352641",
+    "runtime_and_original_fixture_bytes_equal_to_head": "9b50fdeb552d89470f61be74c0b4a65dfb39f0cb",
+    "other_six_pins_and_workflow_bytes": "unchanged",
+    "source_stamp_observed": "0+unknown; exact Git source recorded independently",
+    "local_probe": "Git-archive source interoperability with inherited native extension; not an installed MolSysMT artifact or full controlled closure",
+    "inherited_native_sha256": "2dbcf13d148cb3ae13a5908707fcdd61c75a2de5027e50c566ce07de81bdb038",
+    "tracked_rust_and_toolchain_bytes_equal_to_local_head": true,
+    "shared_prefix_or_provider_modified": false,
+    "fixture_hashes": {
+      "alternative.json": {
+        "bytes": 63775,
+        "sha256": "6e34cc243a2aa4025ecdd27a46a5cafac2e310cdfef4e08302dd0f029f787643"
+      },
+      "alternative.h5msm": {
+        "bytes": 278248,
+        "sha256": "388e141d11e67f498d00736dab08d3f0ad385f8a3c3faa949c883e8fbb4384f5"
+      },
+      "README.md": {
+        "bytes": 4141,
+        "sha256": "d01c2e4176f7a60d890f296fde3f3a13cf4db9cf92706a17ded121fa7799f7c2"
+      },
+      "manifest.json": {
+        "bytes": 2613,
+        "sha256": "3921ab7c124466ab537855d7eb82d91e4861eabbce8e1d3fa9c09524c5e6f595"
+      },
+      "excluded.json": {
+        "bytes": 64191,
+        "sha256": "fe41c7ecd0857de357141246ad6ca7e19fe1d7e154f342d8e4094c3816f2caab"
+      },
+      "primary.json": {
+        "bytes": 63784,
+        "sha256": "16eb2005df6e4b3f1323eee21f72ddf339ca9148dcbdb3fa40b319dadd8fcbb7"
+      },
+      "source.h5msm": {
+        "bytes": 278248,
+        "sha256": "75ed110abb15515ed33806cdd03d9958eb231b3fbe2427dec0ffbc70aa287d1b"
+      },
+      "zero_essential.json": {
+        "bytes": 105264,
+        "sha256": "10c219e2edb0755b4c14c50958191564b8e55529701f894b984c01858792edd5"
+      }
+    }
+  },
+  "local_receiving": {
+    "native_reference": {
+      "unique_testcase_elements": 52,
+      "suite_attributes": {
+        "tests": 52,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    },
+    "administrative_acquisition": {
+      "unique_testcase_elements": 52,
+      "suite_attributes": {
+        "tests": 99,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    },
+    "public_puw": "0.28.1",
+    "public_argdigest": "0.17.1",
+    "public_pytest_receptor": "1.2.2",
+    "new_negative_cases": 3,
+    "formatting": "one formatting-only correction after receiving; full test-module AST verified identical",
+    "first_attempt": "both files read; explicit pytest plugin registration conflicted with automatic discovery, exit3; original retained",
+    "second_attempt": {
+      "passed": 48,
+      "failed": 1,
+      "cause": "fresh charge-recognition producer incorrectly compared to the historical build"
+    },
+    "final_native_warnings": {
+      "count": 2,
+      "category": "PytestAssertRewriteWarning",
+      "scope": "probe imports receptor for origin/version verification before pytest registration"
+    },
+    "admin_count_interpretation": "52 unique testcase elements and receptor52pass; native XML suite tests=99 retained, not relabelled as99 unique cases. Unit controls include subtests; no zero-failure output is suppressed.",
+    "collection": {
+      "count": 3700,
+      "executed": 0,
+      "node_ids_file_identity": {
+        "bytes": 435110,
+        "sha256": "83e2cad8c9dae4ead4e7b98ec1e80eafdca40e3c79f6900d2fbe42741ec989a0"
+      }
+    },
+    "scientific_peak_process_rss_kib": 283132,
+    "routes": "shared SDK --declared-only passed; installed qualification not asserted",
+    "initial_preflight": "missing mode selector refused installed @3 qualification without explicit context; retained; --declared-only passed",
+    "first_receipt_collection": "refused assuming JUnit suite tests counted unique nodes; corrected collector checks52 distinct testcase elements and preserves original suite attributes"
+  },
+  "limits": {
+    "cpu_affinity": [
+      19
+    ],
+    "numerical_threads": 1,
+    "nice": 19,
+    "io": "idle",
+    "native_DATA_bytes": 1073741824,
+    "native_CPU_seconds": 120,
+    "native_wall_seconds": 180,
+    "admin_DATA_bytes": 536870912,
+    "admin_CPU_seconds": 120,
+    "admin_wall_seconds": 180,
+    "collection_DATA_bytes": 1073741824,
+    "monitored_admin_and_collection": true,
+    "physical_RAM_reserve_fraction": 0.2,
+    "additional_margin_bytes": 1610612736,
+    "aggregate_cgroup_enforced": false,
+    "capacity_reserved": false,
+    "Slurm": "srun available; no usable allocation established"
+  },
+  "stopped_routes": {
+    "148": "original client/SOURCE_SHA unchanged; real changed manifest admission refuses before installation",
+    "165": "stopped"
+  },
+  "tests_and_routes": {
+    "tests/test_binding_interface_handoff.py": {
+      "bytes": 12829,
+      "sha256": "5e0d50886d91d3a00a3d86b00787653f04c359e45f24bf80411e358dce9464b1"
+    },
+    "devtools/tests/test_feature_reuse_native_qualification.py": {
+      "bytes": 17651,
+      "sha256": "f5468d8ae70fe0d055fba50123c2c840ecb6585aefd141f9267712fe6c53c80a"
+    },
+    "devtools/dependency_routes.toml": {
+      "bytes": 16464,
+      "sha256": "f73abcaa217c2a2f466e9dd6a971d23140c71127f3e2f0b0b45eae6e68b0820b"
+    },
+    "devtools/requirements/controlled_suite_dependencies.txt": {
+      "bytes": 740,
+      "sha256": "01da67a8850a436385022063e3ce81cefe82b652b4066ebb0c2039e6cf0d537a"
+    },
+    "devtools/requirements/controlled_suite_dependencies_py314.txt": {
+      "bytes": 740,
+      "sha256": "01da67a8850a436385022063e3ce81cefe82b652b4066ebb0c2039e6cf0d537a"
+    }
+  },
+  "scope_review": {
+    "base": "2bff5dcf454bc5230f473237a49939215a60aab2",
+    "runtime_source": "9b50fdeb552d89470f61be74c0b4a65dfb39f0cb",
+    "removed_nonprivate_declarations": [],
+    "changed_existing_signatures": [
+      {
+        "path": "pharmacophoremt/modeler/composition.py",
+        "declaration": "compose_pharmacophores",
+        "before": "pharmacophores, *, duplicate_policy='keep', name=None",
+        "after": "pharmacophores, *, duplicate_policy='keep', name=None, skip_digestion=False",
+        "additions": [
+          "skip_digestion"
+        ]
+      },
+      {
+        "path": "pharmacophoremt/modeler/curation.py",
+        "declaration": "get_interaction_site_indices",
+        "before": "pharmacophore, *, site_indices='all', feature_names=None, shape_names=None",
+        "after": "pharmacophore, *, site_indices='all', feature_names=None, shape_names=None, skip_digestion=False",
+        "additions": [
+          "skip_digestion"
+        ]
+      },
+      {
+        "path": "pharmacophoremt/modeler/curation.py",
+        "declaration": "copy_pharmacophore",
+        "before": "pharmacophore, *, name=None",
+        "after": "pharmacophore, *, name=None, skip_digestion=False",
+        "additions": [
+          "skip_digestion"
+        ]
+      },
+      {
+        "path": "pharmacophoremt/modeler/curation.py",
+        "declaration": "extract_pharmacophore",
+        "before": "pharmacophore, *, site_indices='all', name=None, reason=None",
+        "after": "pharmacophore, *, site_indices='all', name=None, reason=None, skip_digestion=False",
+        "additions": [
+          "skip_digestion"
+        ]
+      },
+      {
+        "path": "pharmacophoremt/modeler/features.py",
+        "declaration": "get_features",
+        "before": "molecular_system, *, selection='all', structure_index=0, chemical_state='reference', features=CLASSICAL_FEATURES",
+        "after": "molecular_system, *, selection='all', structure_index=0, chemical_state='reference', features=CLASSICAL_FEATURES, skip_digestion=False",
+        "additions": [
+          "skip_digestion"
+        ]
+      },
+      {
+        "path": "pharmacophoremt/modeler/interaction_based.py",
+        "declaration": "from_interactions",
+        "before": "molecular_system, interactions, ligand_selection, *, structure_index=0, radius='0.15 nm', name=None, cation_mapping='exact'",
+        "after": "molecular_system, interactions, ligand_selection, *, structure_index=0, radius='0.15 nm', name=None, cation_mapping='exact', skip_digestion=False",
+        "additions": [
+          "skip_digestion"
+        ]
+      },
+      {
+        "path": "pharmacophoremt/modeler/interaction_collection.py",
+        "declaration": "from_interaction_collection",
+        "before": "molecular_system, interaction_collection, ligand_selection, *, structure_index=0, radius='0.15 nm', name=None, cation_mapping='exact', duplicate_policy='same_participant'",
+        "after": "molecular_system, interaction_collection, ligand_selection, *, structure_index=0, radius='0.15 nm', name=None, cation_mapping='exact', duplicate_policy='same_participant', skip_digestion=False",
+        "additions": [
+          "skip_digestion"
+        ]
+      },
+      {
+        "path": "pharmacophoremt/modeler/reference_ligand.py",
+        "declaration": "from_ligand",
+        "before": "molecular_system, *, selection='all', structure_index=0, chemical_state='reference', features=CLASSICAL_FEATURES, radius='0.15 nm', name=None",
+        "after": "molecular_system, *, selection='all', structure_index=0, chemical_state='reference', features=CLASSICAL_FEATURES, radius='0.15 nm', name=None, skip_digestion=False",
+        "additions": [
+          "skip_digestion"
+        ]
+      },
+      {
+        "path": "pharmacophoremt/modeler/reference_ligand.py",
+        "declaration": "from_feature_inventory",
+        "before": "feature_inventory, *, radius='0.15 nm', name=None",
+        "after": "feature_inventory, *, radius='0.15 nm', name=None, skip_digestion=False",
+        "additions": [
+          "skip_digestion"
+        ]
+      },
+      {
+        "path": "pharmacophoremt/pharmacophore.py",
+        "declaration": "Pharmacophore.similarity",
+        "before": "self, other, tolerance_nm=0.15",
+        "after": "self, other, tolerance_nm=0.15, *, method='ordered_greedy', skip_digestion=False",
+        "additions": [
+          "method",
+          "skip_digestion"
+        ]
+      },
+      {
+        "path": "pharmacophoremt/pharmacophore.py",
+        "declaration": "Pharmacophore.get_distance_matrix",
+        "before": "self",
+        "after": "self, *, skip_digestion=False",
+        "additions": [
+          "skip_digestion"
+        ]
+      },
+      {
+        "path": "pharmacophoremt/pharmacophore.py",
+        "declaration": "Pharmacophore.to_dataframe",
+        "before": "self",
+        "after": "self, *, skip_digestion=False",
+        "additions": [
+          "skip_digestion"
+        ]
+      },
+      {
+        "path": "pharmacophoremt/pharmacophore.py",
+        "declaration": "Pharmacophore.merge",
+        "before": "self, other",
+        "after": "self, other, *, skip_digestion=False",
+        "additions": [
+          "skip_digestion"
+        ]
+      }
+    ],
+    "new_nonprivate_implementation_declarations": [
+      "pharmacophoremt/_private/arg_digestion/comparison.py:distance_tolerance",
+      "pharmacophoremt/_private/arg_digestion/comparison.py:max_matrix_entries",
+      "pharmacophoremt/_private/arg_digestion/comparison.py:max_sites",
+      "pharmacophoremt/_private/arg_digestion/comparison.py:model_type",
+      "pharmacophoremt/_private/arg_digestion/curation.py:centers",
+      "pharmacophoremt/_private/arg_digestion/curation.py:comparison_method",
+      "pharmacophoremt/_private/arg_digestion/curation.py:tolerance_nm",
+      "pharmacophoremt/_private/feature_capture.py:binding",
+      "pharmacophoremt/_private/feature_capture.py:families",
+      "pharmacophoremt/_private/feature_capture.py:require",
+      "pharmacophoremt/_private/feature_capture.py:validate",
+      "pharmacophoremt/_private/feature_snapshot_v1.py:decode_snapshot",
+      "pharmacophoremt/_private/native_feature_payload.py:decode",
+      "pharmacophoremt/_private/native_feature_payload.py:encode",
+      "pharmacophoremt/comparison.py:compare_pharmacophores",
+      "pharmacophoremt/modeler/feature_capture.py:capture_features",
+      "pharmacophoremt/screening/feature_reuse.py:reuse_feature_inventories",
+      "pharmacophoremt_features/_api.py:FeatureAssetView.payload_info",
+      "pharmacophoremt_features/_native_archive_schema.py:generation",
+      "pharmacophoremt_features/_native_archive_schema.py:require",
+      "pharmacophoremt_features/_native_archive_schema.py:validate_record",
+      "pharmacophoremt_features/_payload.py:FeatureInventoryPayload.describe",
+      "pharmacophoremt_features/_payload.py:FeatureInventoryPayload.from_bytes",
+      "pharmacophoremt_features/_payload.py:FeatureInventoryPayload.from_capture",
+      "pharmacophoremt_features/_payload.py:FeatureInventoryPayload.from_inventory",
+      "pharmacophoremt_features/_payload.py:FeatureInventoryPayload.to_bytes",
+      "pharmacophoremt_features/_payload.py:FeatureInventoryPayload.to_inventory",
+      "pharmacophoremt_features/_payload_digestion.py:config",
+      "pharmacophoremt_features/_payload_schema.py:declared_families",
+      "pharmacophoremt_features/_payload_schema.py:document",
+      "pharmacophoremt_features/_payload_schema.py:inventory_layout",
+      "pharmacophoremt_features/_payload_schema.py:layout",
+      "pharmacophoremt_features/_payload_schema.py:provenance",
+      "pharmacophoremt_features/_payload_schema.py:require",
+      "pharmacophoremt_features/_payload_schema.py:require_profile",
+      "pharmacophoremt_features/_record.py:FeatureAssetRecord.describe",
+      "pharmacophoremt_features/_record.py:FeatureAssetRecord.from_payload",
+      "pharmacophoremt_features/_record.py:FeatureAssetRecord.from_view",
+      "pharmacophoremt_features/_record.py:FeatureAssetRecord.incomplete",
+      "pharmacophoremt_features/_record.py:FeatureAssetRecord.payload_bytes",
+      "pharmacophoremt_features/_record_digestion.py:config",
+      "pharmacophoremt_features/_schema.py:decode_originals",
+      "pharmacophoremt_features/_schema.py:marker",
+      "pharmacophoremt_features/_storage.py:layout",
+      "pharmacophoremt_features/_writer.py:FeatureAssetStore.attempts",
+      "pharmacophoremt_features/_writer.py:FeatureAssetStore.close",
+      "pharmacophoremt_features/_writer.py:FeatureAssetStore.create",
+      "pharmacophoremt_features/_writer.py:FeatureAssetStore.current",
+      "pharmacophoremt_features/_writer.py:FeatureAssetStore.inspect_recovery",
+      "pharmacophoremt_features/_writer.py:FeatureAssetStore.open",
+      "pharmacophoremt_features/_writer.py:FeatureAssetStore.publish",
+      "pharmacophoremt_features/_writer.py:FeatureAssetStore.retry_publication",
+      "pharmacophoremt_features/_writer.py:FeatureAssetStore.stage",
+      "pharmacophoremt_features/_writer.py:FeatureAssetStore.stage_records",
+      "pharmacophoremt_features/_writer.py:FeatureAssetStore.view",
+      "pharmacophoremt_features/_writer_digestion.py:config",
+      "pharmacophoremt_features/_writer_schema.py:attempt_id",
+      "pharmacophoremt_features/_writer_schema.py:attempt_schema",
+      "pharmacophoremt_features/_writer_schema.py:descriptor",
+      "pharmacophoremt_features/_writer_schema.py:limits",
+      "pharmacophoremt_features/_writer_schema.py:validate_native"
+    ],
+    "runtime_change_paths": [
+      [
+        "M",
+        "pharmacophoremt/__init__.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt/_ackredit.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt/_private/arg_digestion/comparison.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt/_private/arg_digestion/curation.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt/_private/arg_digestion/feature_capture.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt/_private/arg_digestion/feature_reuse.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt/_private/arg_digestion/interaction_queries.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt/_private/arg_digestion/reference_queries.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt/_private/feature_capture.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt/_private/feature_snapshot_v1.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt/_private/native_feature_payload.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt/_private/smonitor/catalog.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt/_private/smonitor/exceptions.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt/comparison.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt/modeler/__init__.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt/modeler/composition.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt/modeler/curation.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt/modeler/feature_capture.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt/modeler/features.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt/modeler/interaction_based.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt/modeler/interaction_collection.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt/modeler/reference_ligand.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt/pharmacophore.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt/screening/__init__.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt/screening/feature_reuse.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt_features/__init__.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt_features/_api.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt_features/_depdigest.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt_features/_diagnostics.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt_features/_digestion.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt_features/_native_archive_schema.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt_features/_payload.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt_features/_payload_digestion.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt_features/_payload_schema.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt_features/_record.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt_features/_record_digestion.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt_features/_schema.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt_features/_storage.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt_features/_writer.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt_features/_writer_digestion.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt_features/_writer_schema.py"
+      ]
+    ],
+    "unchanged_scientific_owners": {
+      "pharmacophoremt/screening/pose_evaluation.py": "b88cc31da9136843bc60954d7e457fe21ff566f797ef274cfcd0239ab8de6f9b",
+      "pharmacophoremt/validation/metrics.py": "07c65ba2a881d6437f1389c407d996067d40f5662c4aa35125089e72d6a41d50"
+    },
+    "limit": "Static signature/body observations only. Nonprivate declarations are not independently qualified public API counts or semantic compatibility proof. No version/tag/publication decision."
+  },
+  "full_source_checkpoint_accepted": false,
+  "version_tag_publication_selected": false,
+  "recovery": "freeze corrected source, verify complete prior workflow inventory, request each absent required checkpoint only once; qualify all eight native cells plus reporting/policy/publication controls",
+  "quality": {
+    "results": [
+      {
+        "name": "index",
+        "exit_code": 0
+      },
+      {
+        "name": "reporting",
+        "exit_code": 0
+      },
+      {
+        "name": "archives",
+        "exit_code": 0
+      },
+      {
+        "name": "ci-recovery",
+        "exit_code": 0
+      },
+      {
+        "name": "environments",
+        "exit_code": 0
+      },
+      {
+        "name": "format-final",
+        "exit_code": 0
+      },
+      {
+        "name": "whitespace",
+        "exit_code": 0
+      }
+    ],
+    "lint": "ruff check . passed",
+    "reporting_tests": 3,
+    "archive_tests": 18,
+    "CI_routes_and_backlog_tests": 9,
+    "administrative_testcase_elements": 52,
+    "full_Ruff_format": "533 files formatted; initial formatting-only finding corrected, identical full test-module AST"
+  },
+  "current_guide_instruction_audit": {
+    "live_canonical_MolSysSuite_guide_git_blob": "c3ba41977e5dcf880d6379ab500fed66d5df65fc",
+    "component_MolSysSuite_guide_git_blob": "c3ba41977e5dcf880d6379ab500fed66d5df65fc",
+    "comparison": "live GitHub main file byte identity; local central checkout is older and preserved",
+    "frozen_policy_caller": "policy-v1.5.4; unchanged and separate from current guide audit",
+    "local_files": {
+      "AGENTS.md": "32d32a3365b972f350ec34bb6e0a6b8bb021a29788c95572bbbc8be1e9116d2d",
+      "devguide/AGENTS.md": "df82b455ffdd802442c778c770b0ce04b59894dcc6a2f3041b3a15cda4313370",
+      "MOLSYSSUITE_GUIDE.md": "0188fee9330856bb1d40bdd5739c275a73471b602df20ba3a3f0ac8476677678",
+      "GH_RUN_RECEPTOR_GUIDE.md": "38cd0b08b8739196df5db0aecd8fd4ec1e8cec2d59f194b10c55a7847330c740",
+      "ACKREDIT_GUIDE.md": "b7206aa1d8627a53f57f816cf99359f31de203b1d49fe9195785695ce8411464",
+      "ARGDIGEST_GUIDE.md": "1bb69c596cabd5d504416534ea952bea5fc7f23e74dea118cee47a4d196b965c",
+      "SMONITOR_GUIDE.md": "f7e94a70c4f4344f018925587a4dc5f481822ce312c791300927e62dd794576b",
+      "DEPDIGEST_GUIDE.md": "fa2d1af5dc9a7bc5e583fce0920ef988b08edff884e709b1629a977e4230624c",
+      "PYUNITWIZARD_GUIDE.md": "2bebdab26b9f5ac70bafd35bc48522e1a07535953e2a1b8939e0a3feb6d5b860"
+    }
+  },
+  "prospective_coverage": {
+    "expected_qualified_paths": 128,
+    "basis": "Retain all127 original c5e952c qualified files and add comparison.py, the only new covered runtime module since that source; actual XML equality must be verified in every cell. A filesystem glob incorrectly included unexecuted nonpackage data/zinc.py; coverage package discovery excludes both data files but the original actually executed data/smarts.py remains required.",
+    "executed_coverage": false
+  }
+}

@@ -66,10 +66,10 @@ id = "molsysmt-base"
 name = "molsysmt"
 role = "required-runtime"
 url = "https://github.com/uibcdf/molsysmt"
-commit = "0faf1584d05ac47ddcebfc20d9c9978b7f4f230e"
+commit = "05865fbb3ba499d4117d6ba3e1cf55d98a9e239e"
 install = "pip-no-deps-git"
 input = "devtools/requirements/controlled_suite_dependencies.txt"
-reason = "Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification."
+reason = "Reviewed #207: first explicit H5MSM1.0 reader revision for unchanged native handoff fixtures. Declared PUW floor remains0.28.1; all other controlled provider pins and scientific commands are preserved. Selected interoperability is separate from complete supported-source receiving and public/installed qualification."
 
 [[source_routes]]
 id = "smonitor-3.14"
@@ -136,20 +136,20 @@ id = "molsysmt-3.14"
 name = "molsysmt"
 role = "required-runtime"
 url = "https://github.com/uibcdf/molsysmt"
-commit = "0faf1584d05ac47ddcebfc20d9c9978b7f4f230e"
+commit = "05865fbb3ba499d4117d6ba3e1cf55d98a9e239e"
 install = "pip-no-deps-git"
 input = "devtools/requirements/controlled_suite_dependencies_py314.txt"
-reason = "Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification."
+reason = "Reviewed #207: first explicit H5MSM1.0 reader revision for unchanged native handoff fixtures. Declared PUW floor remains0.28.1; all other controlled provider pins and scientific commands are preserved. Selected interoperability is separate from complete supported-source receiving and public/installed qualification."
 
 [[source_inputs]]
 path = "devtools/requirements/controlled_suite_dependencies.txt"
-sha256 = "380a0d5f758ab7cd375eed70da34f00768f2a0ea6d3f9eb20009ec40997f01ab"
-reason = "Reviewed pip --no-deps manifest: published SMonitor0.22.1 correction received under #108/#6; ArgDigest0.17.1 and all other pins/scientific workflow commands preserved. Full exact pinned-source receiving remains separate."
+sha256 = "01da67a8850a436385022063e3ce81cefe82b652b4066ebb0c2039e6cf0d537a"
+reason = "Reviewed #207 pip --no-deps manifest: advance only MolSysMT to the explicit H5MSM1.0 reader revision; preserve six other pins and all scientific workflow commands. Frozen #148 admission must refuse this changed input until separately reviewed; #148/#165 remain stopped. Full exact pinned-source receiving remains separate."
 
 [[source_inputs]]
 path = "devtools/requirements/controlled_suite_dependencies_py314.txt"
-sha256 = "380a0d5f758ab7cd375eed70da34f00768f2a0ea6d3f9eb20009ec40997f01ab"
-reason = "Reviewed pip --no-deps manifest: published SMonitor0.22.1 correction received under #108/#6; ArgDigest0.17.1 and all other pins/scientific workflow commands preserved. Full exact pinned-source receiving remains separate."
+sha256 = "01da67a8850a436385022063e3ce81cefe82b652b4066ebb0c2039e6cf0d537a"
+reason = "Reviewed #207 pip --no-deps manifest: advance only MolSysMT to the explicit H5MSM1.0 reader revision; preserve six other pins and all scientific workflow commands. Frozen #148 admission must refuse this changed input until separately reviewed; #148/#165 remain stopped. Full exact pinned-source receiving remains separate."
 
 [[contexts]]
 name = "ci-3.11"

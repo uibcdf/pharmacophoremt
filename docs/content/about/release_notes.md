@@ -9,6 +9,17 @@
   route; the existing `ordered_greedy` default remains compatible. The first
   profile admits positive Point/Sphere sites and refuses unsupported shapes or
   volumes. Public `ComparisonLimitError` reports exhausted declared dimensions.
+- Extend explicit argument controls to reference-model construction, native
+  interaction collections/composition, cached curation/merge and model inspection.
+  These public operations use ArgDigest and expose `skip_digestion=False`;
+  scientific invariants and nested public admission remain active under bypass.
+  The broader public-API migration remains incomplete. Cached table inspection
+  now retains the same five columns for empty and nonempty models.
+- Align controlled CI with the immutable H5MSM 1.0 handoff inputs by advancing
+  only the reviewed MolSysMT source revision. Preserve original fixtures and
+  scientific assertions; reconstruction checks current recognition producers
+  separately from original saved evidence. This is a source-test acquisition
+  change, with complete supported qualification tracked independently.
 - Document the complete [prepared-library feature workflow](../user/prepared_library_features.md):
   capture prepared records once, preserve their full native inventories in an
   archive, reconstruct them explicitly and build reference hypotheses. The

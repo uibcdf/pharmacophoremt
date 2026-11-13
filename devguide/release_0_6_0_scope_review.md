@@ -20,6 +20,28 @@ below and frozen4766946's matrix. The original no-signature-change result remain
 valid for its stated f722b45 endpoint, not for this later intentionally extended
 API. No version/tag/publication decision follows.
 
+## Consolidation and source recovery — 2026-11-13
+
+The [new static review](evidence/controlled_h5msm1_receiving_20261113.json)
+compares0.5.0 with runtime source9b50fde: no nonprivate declaration removal,
+13 existing signatures with only optional keyword-only controls (and the explicit
+ordered_greedy method default for similarity), and61 new nonprivate implementation
+declarations. These are not61 independently qualified public APIs. Pose-evaluation
+and metric-owner bytes remain identical to0.5.0. This is static evidence,
+independent of the existing scoped scientific/source-owned receipts.
+
+Unreleased notes now include later reference/interaction/curation/inspection
+controls and the symmetric method. Broader#6 adoption remains partial. Scheduled
+run43459510556 at9b50fde is rejected: four Linux failures and four cancelled
+macOS cells. [#207](pending_bugs/controlled_h5msm1_acquisition.md) corrects the
+old0.5-only molecular reader acquisition for unchanged1.0 fixtures;
+[#208](archive/recognition_producer_oracle.md) separates explicitly checked fresh
+recognition declarations from original producers. Local52-case native/reference
+receiving,52 administrative controls and3700 collected nodes are not complete
+scientific execution. Freeze and observe one corrected immutable checkpoint
+under#9/#23. #206 Pandas ownership remains independently tracked. No0.6.0 tag,
+public artifact, stopped#148/#165 execution or shared-prefix change follows.
+
 ## Current accumulated source — 2026-11-11 UTC
 
 Corrected controlled-source checkpoint c5e952cd3a1fe5b452be6fccbf85d2fb64c3f1eb

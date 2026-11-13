@@ -156,14 +156,20 @@ class NativeQualificationTests(unittest.TestCase):
                 declarations.assert_not_called()
                 scope.assert_not_called()
 
-    def test_original_inputs_are_current_without_scientific_imports(self):
+    def test_stopped_route_refuses_revised_dependencies_without_scientific_imports(
+        self,
+    ):
         import sys
 
         before = set(sys.modules)
-        result = client.fixed_inputs()
-        self.assertEqual(
-            set(result), {client.PROBE, client.SOURCE_INPUT, *client.SELECTORS}
+        # #207 advances the main CI reader. The frozen #148 client retains its
+        # original dependency fingerprint and must refuse before installation.
+        self.assertNotEqual(
+            client.identity(client.ROOT / client.SOURCE_INPUT)["sha256"],
+            client.SOURCE_SHA,
         )
+        with self.assertRaisesRegex(ValueError, "pinned dependency input"):
+            client.fixed_inputs()
         added = set(sys.modules) - before
         self.assertFalse(
             any(
@@ -177,6 +183,10 @@ class NativeQualificationTests(unittest.TestCase):
 
         def changed(path):
             result = original(path)
+            if str(path).endswith(client.SOURCE_INPUT):
+                # Reach the downstream guard in this unit control using the
+                # frozen admitted fingerprint, without changing real inputs.
+                result = {**result, "sha256": client.SOURCE_SHA}
             if str(path).endswith(client.SELECTORS[0]):
                 result = {**result, "sha256": "0" * 64}
             return result

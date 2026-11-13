@@ -1,5 +1,20 @@
 # Decisions and active workstreams
 
+## Controlled H5MSM1.0 source recovery — 2026-11-13
+
+The scheduled exact-head run43459510556/attempt1 at9b50fde fails: four Linux
+scientific failures, four macOS cancellations and two administrative successes.
+[#207](pending_bugs/controlled_h5msm1_acquisition.md) advances only the molecular
+reader pin to the first explicit1.0 source, preserving original fixtures and
+all science/workflow commands. [#208](archive/recognition_producer_oracle.md)
+checks current recognition declarations separately from archived producers,
+with three negative controls. Local receiving passes52 native/reference and
+52 administrative/acquisition cases; it does not clear the full-source gate.
+Next freeze/observe one corrected immutable checkpoint under#9/#23. #206 tracks
+Pandas ownership separately; broader#6/#108/full installed/public gates remain.
+The old c5e952c accepted matrix and original failed/cancelled runs retain their
+identities. No0.6.0 tag/publication; #148/#165 stay stopped.
+
 ## Symmetric comparison and compatibility received — 2026-11-13
 
 [#205](symmetric_model_comparison.md) is received with [237 source/owned cases](evidence/symmetric_model_comparison_20261113.json)

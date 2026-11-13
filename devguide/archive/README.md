@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (144)
+### Resolved (145)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -133,6 +133,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`receptor_generation_exclusions.md`](receptor_generation_exclusions.md) — [#88](https://github.com/uibcdf/pharmacophoremt/issues/88) — Compose optional native receptor exclusions into bounded generated hypotheses. *(resolved, measured)*
 - [`receptor_hypothesis_pilot.md`](receptor_hypothesis_pilot.md) — [#86](https://github.com/uibcdf/pharmacophoremt/issues/86) — Qualify bounded receptor hypotheses from cached native donor and ring geometry. *(resolved, measured)*
 - [`receptor_projection_sensitivity.md`](receptor_projection_sensitivity.md) — [#83](https://github.com/uibcdf/pharmacophoremt/issues/83) — Qualify the first prespecified analytical receptor projection sensitivity matrix. *(resolved, measured)*
+- [`recognition_producer_oracle.md`](recognition_producer_oracle.md) — [#208](https://github.com/uibcdf/pharmacophoremt/issues/208) — Separate fresh molecular recognition producers from frozen native evidence. *(resolved, measured)*
 - [`repeated_hydrogen_history_is_not_chemical_mutation.md`](repeated_hydrogen_history_is_not_chemical_mutation.md) — [#39](https://github.com/uibcdf/pharmacophoremt/issues/39) — Separate repeat-H chemical invariance from appended operation history. *(resolved, measured)*
 - [`retire_orphaned_molecular_utilities.md`](retire_orphaned_molecular_utilities.md) — [#46](https://github.com/uibcdf/pharmacophoremt/issues/46) — Retire unused molecular utilities and the name-grouped archival SDF reader. *(resolved, measured)*
 - [`retrospective_metric_key_collision.md`](retrospective_metric_key_collision.md) — [#100](https://github.com/uibcdf/pharmacophoremt/issues/100) — Retrospective EF settings must not overwrite colliding reported metric keys. *(resolved, measured)*
