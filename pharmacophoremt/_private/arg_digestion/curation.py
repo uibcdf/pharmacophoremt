@@ -7,7 +7,9 @@ from collections.abc import Sequence
 from numbers import Real
 
 import numpy as np
+from argdigest import DigestConfig, FunctionContract
 
+from pharmacophoremt import _argdigest
 from pharmacophoremt._private.arg_digestion.argument import _contracts
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 
@@ -124,6 +126,7 @@ def optional_sigma(obj):
 
 ARGUMENT_DIGESTERS = dict(
     pharmacophore=model,
+    other=model,
     site_indices=indices,
     index=indices,
     feature_names=names,
@@ -136,4 +139,29 @@ ARGUMENT_DIGESTERS = dict(
     sigma=optional_sigma,
     in_place=_contracts.digest_essential,
     skip_digestion=_contracts.digest_essential,
+)
+
+CONTRACTS = [
+    FunctionContract(
+        caller=f"pharmacophoremt.modeler.curation.{name}", admits="signature"
+    )
+    for name in (
+        "get_interaction_site_indices",
+        "copy_pharmacophore",
+        "extract_pharmacophore",
+        "edit_pharmacophore",
+    )
+]
+CONTRACTS.append(
+    FunctionContract(caller="pharmacophoremt.pharmacophore.merge", admits="signature")
+)
+
+CONFIG = DigestConfig(
+    digestion_source=__name__,
+    digestion_style="registry",
+    standardizer=_argdigest.STANDARDIZER,
+    strictness=_argdigest.STRICTNESS,
+    skip_param=_argdigest.SKIP_PARAM,
+    function_source=__name__,
+    contract_owner="definition",
 )

@@ -3,35 +3,29 @@
 Maintained 2026-11-12 local date; owners LMMV/dprada. Follow the accepted
 [mature pre-1.0 staircase](roadmap.md), [workstreams](decisions_and_workstreams.md)
 and [capability inventory](capability_inventory.md). The preceding checkpoint is
-preserved in [dated history](checkpoint_history_20261112_before_interaction_controls.md);
+preserved in [dated history](checkpoint_history_20261112_before_curation_controls.md);
 earlier receipts and run identities remain unchanged.
 
-## Interaction controls and producer oracle received — #200/#201
+## Cached curation controls received in source — #203
 
-The [argument contract](interaction_query_argument_controls.md) adds explicit
-keyword-only controls/defining-owner contracts to three public tools, with all
-native scientific guards retained. The collection explicitly bypasses child
-argument processing for established canonical calls. Adapter/composer scientific
-bodies remain identical; collection differs only in those internal keywords.
+The [curation contract](curation_argument_controls.md) supplies explicit controls
+for cached selection/copy/extraction/merge and defining closed contracts for all
+four curation functions and merge. Existing scientific bodies are identical,
+excluding docstrings. Nested public tools retain admission because the callers
+have not established their entire canonical contracts in both modes.
 
-[Combined receiving](evidence/interaction_argument_controls_20261112.json)
-passes267 selected source/owned cases each,51 actual public-ArgDigest cases per
-context, public PUW0.28.1,24 public guide blocks,240 verified payloads/185
-equal runtime bodies and167 target-only observed runtime module origins.
-Original red/probe results stay preserved. Broader public adoption remains#6-owned.
+[Source receiving](evidence/curation_argument_controls_source_20261112.json)
+passes319 selected cases, including56 new controls, six nm/pm public recipe blocks
+and13 quality operations (27 distribution, three reporting and18 archive tests;
+strict whole-site documentation). Final source pytest uses authenticated cached
+public Pytest Receptor1.2.2. Original red/harness/resource-cap and earlier
+inherited-source-receptor attempts remain explicit. The bounded inventory now
+observes150 callables/36 explicit controls/120 plans; broader#6 stays partial.
 
-The [producer oracle](native_handoff_producer_oracle.md) explicitly checks fresh
-and historical PHMT versions at root/component paths while comparing every other
-field/site/contribution exactly. The unchanged old wheel first fails1/12 original
-controls and passes12/12 corrected controls; the new wheel passes12/12 too.
-Frozen inputs, original software/attribution and old verdicts remain intact.
-The intermediate incorrect contribution-producer assumption is retained. Both
-bounded reports are resolved/archived with no runtime/provider workaround.
-
-The bounded seven-namespace audit observes150 callables/32 explicit controls/
-119 digestion plans, without complete API/effective-delegation qualification.
-Earlier#198/#199 and native H0/H1 receiving remain original; actual BindingMT
-I0/H/I1 adoption remains owner work.
+Prior [#200/#201 receiving](evidence/interaction_argument_controls_20261112.json)
+retains its267 source/owned cases, original input/producer identities and limits.
+Actual BindingMT I0/H/I1 adoption remains owner work. No provider/native/prefix,
+scientific algorithm, performance, tag or publication change occurs.
 
 ## Accumulated source gate and separate delivery boundaries
 
@@ -52,9 +46,9 @@ public delivery remains0.4.0.
 
 ## Next concrete action and limits
 
-Continue public object/curation facades, starting with merge, under#6. Review
-defining contracts, established canonical internal calls, native scientific
-guards and the bounded reexport inventory. Public/API adoption is not complete.
+Freeze the committed#203 source, then receive one exact-owned wheel with actual
+SDK-staged support, public ArgDigest0.17.1/PUW0.28.1 and both unit-policy recipes.
+Then review remaining public object/comparison boundaries under#6. Public/API adoption is not complete.
 #108, MolSysMT#624, human/biological/scale and full installed/public/platform gates
 remain independent. Receive BindingMT I0/H/I1 later through its supplied package.
 #148/#165 remain stopped.

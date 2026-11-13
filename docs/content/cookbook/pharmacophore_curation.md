@@ -15,7 +15,7 @@ ligand–receptor complex. In an application, supply your existing native model.
 import molsysmt as msm
 import numpy as np
 import pharmacophoremt as phmt
-from devtools.interaction_collection_cases import build_case, observe
+from phmt_test_support.interaction_collection_cases import build_case, observe
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt.modeler import (
     copy_pharmacophore, edit_pharmacophore, extract_pharmacophore,
@@ -134,6 +134,13 @@ Copying preserves score and bibliography. Extraction and editing invalidate scor
 and retain the complete original native model in `metadata['source_model']`, with
 local source/output mapping and before/after values. Repeated edits nest this
 history. Original observation indices remain scoped to their own analyses.
+
+Selection, copy, extraction, editing and `query.merge(other)` expose keyword-only
+`skip_digestion=False`. Keep the default for user inputs. An expert may request
+`True` with canonical inputs to bypass that call's argument preprocessing;
+scientific checks remain active. The flag does not propagate into nested public
+tools, which retain their own validation. It does not disable model/index checks,
+atomic edit refusals or common-frame composition checks.
 
 ```python
 import ackredit as ack

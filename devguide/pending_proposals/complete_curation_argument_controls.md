@@ -1,0 +1,43 @@
+---
+summary: Complete explicit argument controls for cached curation and merge.
+issue: uibcdf/pharmacophoremt#203
+status: active
+opened: 2026-11-12
+closed:
+verification: measured
+area: [api, modeling]
+guard: tests/test_curation_argument_controls.py
+normative: devguide/curation_argument_controls.md
+blocked_by: []
+supersedes: []
+---
+
+# Cached curation and merge argument controls
+
+## What and why
+
+At a50c16f, merge has no ArgDigest wrapper/control; cached selection/copy/
+extraction already have the curation registry but omit the explicit parameter.
+Editing already exposes it. Complete this bounded #6 slice with existing
+validators and defining closed contracts; preserve native scientific bodies.
+This is PHMT adoption rather than a demonstrated ArgDigest/provider defect.
+
+## Acceptance and exclusions
+
+Follow the [owning contract](../curation_argument_controls.md): explicit controls,
+nm/pm default/False/True, inherited merge, native refusal/atomic ownership and
+provenance, relevant existing cases, public recipes and source/exact-owned/
+public-provider receiving. Record original failed attempts. Nested public tools
+retain admission where their canonical contract is not yet established.
+
+No scientific/molecular algorithm, wire schema, dependency, shared prefix,
+performance claim or release change. Broader #6 and exact-head full #9/#10/#23
+qualification stay independent; stopped #148/#165 remain stopped.
+
+## Current evidence
+
+The initial new guards produce 47 failures/9 passes before implementation,
+including an incorrect iterable assumption in the test itself. The corrected
+source guard passes 56 cases. Final serial [source receiving](../evidence/curation_argument_controls_source_20261112.json)
+passes319 cases and13 quality operations. Exact-owned/public-provider receiving
+follows committed freeze; original raw attempts remain retained.

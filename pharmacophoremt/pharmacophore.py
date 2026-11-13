@@ -4,6 +4,7 @@ from argdigest import arg_digest
 from smonitor import signal
 
 from pharmacophoremt import pyunitwizard as puw
+from pharmacophoremt._private.arg_digestion.curation import CONFIG as _CURATION_CONFIG
 from pharmacophoremt._private.smonitor import InvalidInteractionSiteError
 
 _CURATION_DIGEST = dict(
@@ -342,7 +343,9 @@ class Pharmacophore:
 
         edit_pharmacophore(self, site_indices=index, sigma=sigma, in_place=True)
 
-    def merge(self, other):
+    @signal(tags=["core", "pharmacophore", "merge"])
+    @arg_digest(config=_CURATION_CONFIG)
+    def merge(self, other, *, skip_digestion=False):
         """Compose independent constraints from self followed by other.
 
         Delegate to compose_pharmacophores with duplicate_policy='keep' and
@@ -364,6 +367,9 @@ class Pharmacophore:
         ----------
         other : Pharmacophore
             Second hypothesis in the caller-declared common frame.
+        skip_digestion : bool, default=False
+            Skip this call's argument preprocessing for canonical inputs.
+            Composition retains its own admission and scientific checks.
 
         Returns
         -------

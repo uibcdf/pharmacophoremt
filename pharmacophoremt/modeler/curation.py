@@ -14,16 +14,17 @@ from pharmacophoremt.io.phmt import _to_dict
 from pharmacophoremt.pharmacophore import Pharmacophore
 
 METHOD = "explicit_pharmacophore_curation@1"
-_DIGEST = dict(
-    digestion_source="pharmacophoremt._private.arg_digestion.curation",
-    digestion_style="registry",
-)
 
 
 @signal(tags=["modeling", "curation", "selection"])
-@arg_digest(**_DIGEST)
+@arg_digest(config=contracts.CONFIG)
 def get_interaction_site_indices(
-    pharmacophore, *, site_indices="all", feature_names=None, shape_names=None
+    pharmacophore,
+    *,
+    site_indices="all",
+    feature_names=None,
+    shape_names=None,
+    skip_digestion=False,
 ):
     """Select cached site indices in requested order, without molecular access.
 
@@ -37,6 +38,9 @@ def get_interaction_site_indices(
     feature_names, shape_names : str or sequence of str, optional
         Exact cached names. Any selected feature may match; feature and shape
         filters combine with AND. Unknown names raise instead of hiding a typo.
+    skip_digestion : bool, default=False
+        Skip argument preprocessing for canonical inputs. Native model, index
+        and cached-name checks remain active.
 
     Returns
     -------
@@ -88,8 +92,8 @@ def get_interaction_site_indices(
 
 
 @signal(tags=["modeling", "curation", "copy"])
-@arg_digest(**_DIGEST)
-def copy_pharmacophore(pharmacophore, *, name=None):
+@arg_digest(config=contracts.CONFIG)
+def copy_pharmacophore(pharmacophore, *, name=None, skip_digestion=False):
     """Copy all native sites, geometry and metadata independently.
 
     Parameters
@@ -99,6 +103,9 @@ def copy_pharmacophore(pharmacophore, *, name=None):
         is neither copied nor queried. Use MolSysMT to copy molecular systems.
     name : str, optional
         Override the copied name; None preserves it.
+    skip_digestion : bool, default=False
+        Skip argument preprocessing for canonical inputs. Native model and name
+        validation remain active.
 
     Returns
     -------
@@ -143,8 +150,10 @@ def _history(source, operation, site_map, parameters, reason, changes):
 
 
 @signal(tags=["modeling", "curation", "extract"])
-@arg_digest(**_DIGEST)
-def extract_pharmacophore(pharmacophore, *, site_indices="all", name=None, reason=None):
+@arg_digest(config=contracts.CONFIG)
+def extract_pharmacophore(
+    pharmacophore, *, site_indices="all", name=None, reason=None, skip_digestion=False
+):
     """Make an independent subset with explicit source-to-output correspondence.
 
     Parameters
@@ -156,6 +165,9 @@ def extract_pharmacophore(pharmacophore, *, site_indices="all", name=None, reaso
         get_interaction_site_indices(). Empty extraction remains an empty model.
     name, reason : str, optional
         Output name and caller's explanation for the selection.
+    skip_digestion : bool, default=False
+        Skip this call's argument preprocessing for canonical inputs. Nested
+        selection/copy admission and native provenance checks remain active.
 
     Returns
     -------
@@ -188,7 +200,7 @@ def extract_pharmacophore(pharmacophore, *, site_indices="all", name=None, reaso
 
 
 @signal(tags=["modeling", "curation", "edit"])
-@arg_digest(**_DIGEST)
+@arg_digest(config=contracts.CONFIG)
 @attributed()
 def edit_pharmacophore(
     pharmacophore,

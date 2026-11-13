@@ -1,5 +1,17 @@
 # Strategic roadmap
 
+## Cached curation argument controls in source — 2026-11-12 local date
+
+[#203](curation_argument_controls.md) receives explicit selection/copy/extraction/
+merge controls and five defining closed contracts, preserving every scientific
+function body and nested public admission. [Source evidence](evidence/curation_argument_controls_source_20261112.json)
+passes319 cases (56 new), six nm/pm public recipe blocks and13 quality operations,
+including strict docs and27 distribution controls. Initial failed/harness/resource
+and inherited-receptor attempts remain retained; final source pytest uses public
+Pytest Receptor1.2.2. The150-callable inventory has36 explicit controls/120 plans.
+Next freeze and receive the exact owned artifact/public providers. Broader#6,
+full supported source/installed/public and stopped#148/#165 stay independent.
+
 ## Interaction controls and producer oracle received — 2026-11-12
 
 [#200](interaction_query_argument_controls.md) and
