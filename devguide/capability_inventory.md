@@ -1,5 +1,10 @@
 # Current capability inventory
 
+The [final reference-control receiving](evidence/reference_argument_controls_20261112.json)
+adds the same272-case exact-owned evidence, actual public-provider controls and
+the real staged fixture-data correction#199 to the source slice below. This
+remains bounded API/support receiving, with broader#6 adoption pending.
+
 The [reference-query control increment](reference_query_argument_controls.md)
 adds explicit keyword-only skip controls to `from_feature_inventory`/`from_ligand`,
 retaining native semantics.272 selected source cases and nm/pm composition pass;

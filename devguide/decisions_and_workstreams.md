@@ -1,5 +1,17 @@
 # Decisions and active workstreams
 
+## Reference controls and real installed staging received — 2026-11-12
+
+[#198](reference_query_argument_controls.md) and
+[#199](installed_snapshot_test_support.md) are received in their bounded scopes:
+272 cases per source/owned context,37 public-ArgDigest controls per context,
+public PUW0.28.1, twelve recipe blocks and162 distribution controls. The
+[receipt](evidence/reference_argument_controls_20261112.json) preserves the first
+artifact's real missing-data failure and corrected source/wheel identities.
+No runtime body changes in the staging correction or provider workarounds occur.
+Continue public interaction/composition controls under#6 using the accepted
+public/internal rule, without claiming complete migration from this slice.
+
 ## Public argument control rule and reference constructors — 2026-11-12
 
 Liliana requires ArgDigest plus an explicit skip control on public callable APIs;

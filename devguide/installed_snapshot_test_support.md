@@ -37,3 +37,18 @@ indexes, lint/format, declared dependency routes, generated environments and
 strict docs. Runtime bodies and original fixture files are unchanged. Exact
 new-source artifact receiving is the next action; these local checks do not
 replace the original failed isolated scientific receiving.
+
+## Corrected-source scientific receiving — 2026-11-12 local date
+
+Source9158c7140288b4c4dcb468182e2997f186e94395 builds one new private wheel
+`0.5.0+27.g9158c71`. [Actual receiving](evidence/reference_argument_controls_20261112.json)
+passes all272 scoped owned cases, including the affected31 and capture40 cases,
+through the accepted SDK stage. Public-ArgDigest37-case source/owned controls,
+public-PUW0.28.1, twelve guide-block executions and162 distribution controls pass.
+All239 payloads verify;184 runtime bodies remain source-equal and equal to the
+initial artifact's bodies. The five native input/manifest hashes are unchanged.
+
+The old artifact and23 failures retain their original identities. This resolves
+the PHMT declaration defect, without claiming a corrected provider implementation,
+source fallback, full installed/public/platform qualification or new scientific
+method. The owning guard remains the real staged helper/file-graph check.

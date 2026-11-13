@@ -14,6 +14,18 @@ supersedes: []
 
 # Review Python ecosystem policy adoption
 
+## Reference constructor and support-staging receiving — 2026-11-12
+
+[#198](../reference_query_argument_controls.md) receives both explicit reference
+constructor controls; [#199](../installed_snapshot_test_support.md) fixes the
+missing five-file test-support graph exposed by actual owned staging. The
+[combined receipt](../evidence/reference_argument_controls_20261112.json) passes
+272 source/owned cases each,37 public-ArgDigest cases per context, public
+PUW0.28.1, twelve guide blocks,239 verified payloads/184 equal runtime bodies
+and162 distribution controls. All original failures remain distinct. No new
+ArgDigest/provider defect was established. #6 remains partial; next review the
+public observed-interaction/composition family and the remaining inventory.
+
 ## Reference construction and public-control rule — 2026-11-12
 
 Liliana's explicit instruction requires ArgDigest and an exposed skip control on

@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (137)
+### Resolved (139)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -25,6 +25,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`compare_pmapper_screening_stages.md`](compare_pmapper_screening_stages.md) — [#175](https://github.com/uibcdf/pharmacophoremt/issues/175) — Execute source-pinned pmapper and PHMT analytical screening-stage controls. *(resolved, measured)*
 - [`compare_saved_screening_runs.md`](compare_saved_screening_runs.md) — [#147](https://github.com/uibcdf/pharmacophoremt/issues/147) — Compare original labelled cohorts directly across verified saved screening runs. *(resolved, reproduced)*
 - [`compare_typed_distance_retrieval.md`](compare_typed_distance_retrieval.md) — [#178](https://github.com/uibcdf/pharmacophoremt/issues/178) — Compare bounded typed-distance retrieval with exhaustive full-query proposals. *(resolved, measured)*
+- [`complete_reference_argument_controls.md`](complete_reference_argument_controls.md) — [#198](https://github.com/uibcdf/pharmacophoremt/issues/198) — Complete explicit argument controls for native reference-query construction. *(resolved, measured)*
 - [`complex_pdb_feature_recovery.md`](complex_pdb_feature_recovery.md) — [#5](https://github.com/uibcdf/pharmacophoremt/issues/5) — Recover chemical features from PDB complex during pharmacophore extraction. *(resolved, reproduced)*
 - [`consensus_support_review.md`](consensus_support_review.md) — [#80](https://github.com/uibcdf/pharmacophoremt/issues/80) — Qualify native consensus support, typed occurrence reuse and controlled input multiplicity. *(resolved, measured)*
 - [`coverage_xml_namespace_identity.md`](coverage_xml_namespace_identity.md) — [#141](https://github.com/uibcdf/pharmacophoremt/issues/141) — Preserve package-qualified coverage XML identities for both runtime namespaces. *(resolved, reproduced)*
@@ -50,6 +51,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`installed_qualification_step_contract.md`](installed_qualification_step_contract.md) — [#54](https://github.com/uibcdf/pharmacophoremt/issues/54) — Align installed qualification evidence with the actual frozen provider workflow. *(resolved, measured)*
 - [`installed_receptor_study_support.md`](installed_receptor_study_support.md) — [#96](https://github.com/uibcdf/pharmacophoremt/issues/96) — Declare selected receptor-study helpers and frozen plans for installed tests. *(resolved, measured)*
 - [`installed_scientific_test_dependencies.md`](installed_scientific_test_dependencies.md) — [#55](https://github.com/uibcdf/pharmacophoremt/issues/55) — Declare public inputs needed by the complete installed scientific test selection. *(resolved, measured)*
+- [`installed_snapshot_test_support.md`](installed_snapshot_test_support.md) — [#199](https://github.com/uibcdf/pharmacophoremt/issues/199) — Declare feature-snapshot input assets required by installed test helpers. *(resolved, measured)*
 - [`interruption_process_isolation.md`](interruption_process_isolation.md) — [#192](https://github.com/uibcdf/pharmacophoremt/issues/192) — Qualify interruption guards without forking from a threaded test parent. *(resolved, measured)*
 - [`keep_source_matrix_cancellable.md`](keep_source_matrix_cancellable.md) — [#169](https://github.com/uibcdf/pharmacophoremt/issues/169) — Keep the scientific matrix stoppable while retaining skipped-needs recovery. *(resolved, measured)*
 - [`legacy_clique_consensus.md`](legacy_clique_consensus.md) — [#18](https://github.com/uibcdf/pharmacophoremt/issues/18) — Legacy distance partitioning and clique support disagree with the matching criterion. *(resolved, measured)*

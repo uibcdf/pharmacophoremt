@@ -1,12 +1,12 @@
 ---
 summary: Complete explicit argument controls for native reference-query construction.
 issue: uibcdf/pharmacophoremt#198
-status: active
+status: resolved
 opened: 2026-11-12
-closed:
+closed: 2026-11-12
 verification: measured
 area: [api, modeling]
-guard:
+guard: tests/test_reference_argument_controls.py
 normative: devguide/reference_query_argument_controls.md
 blocked_by: []
 supersedes: []
@@ -40,3 +40,12 @@ source custody and nested public admission, source and exact-owned receiving,
 documented public composition and appropriate local checks. Scientific methods,
 molecular ownership, native formats, dependencies and full supported/public gates
 retain their independent scope. #6/#108 remain partial; #148/#165 remain stopped.
+
+## Executed resolution — 2026-11-12 local date
+
+The [combined receipt](../evidence/reference_argument_controls_20261112.json)
+receives corrected source9158c71 and its exact isolated wheel:272 source/owned
+cases each,37 public-ArgDigest cases per context, public PUW0.28.1, twelve
+guide-block executions and162 distribution controls. Original failed hypotheses,
+controllers/artifact and input identities are retained. No full supported/public
+qualification or completion of umbrella#6 is inferred.

@@ -1,9 +1,9 @@
 ---
 summary: Declare feature-snapshot input assets required by installed test helpers.
 issue: uibcdf/pharmacophoremt#199
-status: active
+status: resolved
 opened: 2026-11-12
-closed:
+closed: 2026-11-12
 severity: medium
 verification: measured
 area: [tests, packaging]
@@ -27,3 +27,12 @@ the actual staged helper. Do not copy undeclared data or add source fallbacks.
 The [owning contract](../installed_snapshot_test_support.md) records the recovery
 and its old/new source/artifact identities. Full installed/public gates remain
 independent from this bounded correction.
+
+## Executed resolution — 2026-11-12 local date
+
+The [combined receipt](../evidence/reference_argument_controls_20261112.json)
+receives corrected source9158c71 and its exact isolated wheel:272 source/owned
+cases each,37 public-ArgDigest cases per context, public PUW0.28.1, twelve
+guide-block executions and162 distribution controls. Original failed hypotheses,
+controllers/artifact and input identities are retained. No full supported/public
+qualification or completion of umbrella#6 is inferred.

@@ -1,5 +1,22 @@
 # Strategic roadmap
 
+## Reference controls and installed support received — 2026-11-12
+
+[#198](reference_query_argument_controls.md) and
+[#199](installed_snapshot_test_support.md) receive source9158c71 and its exact
+private wheel with272 source/owned cases each,37 actual public-ArgDigest cases
+per context, public PUW0.28.1, twelve guide-block executions and162 distribution
+controls. [Original failures and complete receiving](evidence/reference_argument_controls_20261112.json)
+remain distinct. The staging correction leaves all184 runtime bodies unchanged; its
+correction declares existing input bytes rather than copying a source fallback.
+
+Next continue explicit controls on the public observed-interaction/composition
+family under#6, reviewing its actual contracts, nested canonical calls and
+scientific guards before each migration. The150-callable bounded reexport audit
+is orientation; repository-wide adoption is not complete. Full supported source,
+installed/public, provider#624, human/biological/scale and stopped#148/#165 retain
+separate gates. No0.6 tag or remote checkpoint is selected here.
+
 ## Reference-query argument contract — 2026-11-12 local date
 
 [#198](reference_query_argument_controls.md) completes explicit controls on the

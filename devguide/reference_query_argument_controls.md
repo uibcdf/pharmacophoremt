@@ -76,3 +76,29 @@ Those are independent observations, not full conformance classifications:
 delegation/inheritance and submodules/generated constructors require review.
 Remaining adoption stays visible under#6. Exact-owned/public-provider receiving
 follows one committed source freeze and is not inferred from this source slice.
+
+## Exact-owned and public-provider receiving — 2026-11-12 local date
+
+The [combined receipt](evidence/reference_argument_controls_20261112.json) accepts
+corrected source9158c7140288b4c4dcb468182e2997f186e94395 and one isolated wheel
+`0.5.0+27.g9158c71`:239 verified payloads/184 source-equal runtime bodies. The
+same272 selected cases pass from source and outside the checkout. Each source/
+owned public-ArgDigest0.17.1 context passes the same37 new cases. Every owned
+group receives real unshipped helpers through the accepted SDK staging tool;
+all use actual public PUW0.28.1, rechecking its93 original files. Twelve guide
+blocks pass across original-source and source/owned nm/pm contexts, retaining
+actual attribution. Loaded runtime origins remain target-only.
+
+The initial d86f637 wheel remains failed in its support-staging scope: it exposed
+[#199](installed_snapshot_test_support.md), not an argument-provider failure.
+The corrected source declares five unchanged fixture assets and passes162 actual
+distribution controls. Its184 runtime bodies equal the original artifact's bodies.
+The first source-public controller also correctly met SDK refusal of a resolvable
+source helper namespace; source receiving uses ordinary source helpers, while
+owned receiving retains mandatory provider staging. Both original attempts remain
+in the complete output. No science assertions, input identities, prefix/native
+files or support-library ownership were weakened.
+
+This bounded #198 slice is received. #6 remains partial for broader public API
+adoption and support closure. Neither private wheel is a full supported-platform,
+public installation, performance/scientific validation or0.6.0 publication gate.

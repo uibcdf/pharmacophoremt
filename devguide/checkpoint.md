@@ -6,33 +6,29 @@ and [capability inventory](capability_inventory.md). The preceding checkpoint is
 preserved in [dated history](checkpoint_history_20261112_before_reference_controls.md);
 earlier receipts and run identities remain unchanged.
 
-## Reference-query argument controls — #198/#6
+## Reference-query controls and installed test support received — #198/#199
 
-The [contract](reference_query_argument_controls.md) adds explicit keyword-only
-`skip_digestion=False` to `from_feature_inventory` and `from_ligand`. Default
-admission remains; deliberate bypass retains native semantic checks and does not
-propagate into nested public tools. The existing shared validator is used without
-repeating ordinary validation. No molecular recognition/shape algorithm changes.
+The [argument contract](reference_query_argument_controls.md) adds explicit
+keyword-only `skip_digestion=False` to `from_feature_inventory`/`from_ligand`,
+with existing native semantics retained during bypass. Ordinary admission does
+not repeat its shared validation. The [support correction](installed_snapshot_test_support.md)
+declares five original assets required by the provider-owned helper stage.
+The first d86f637 artifact remains a failed staged receiving; source9158c71
+and its one new private wheel have their own measured identity.
 
-[Source receiving](evidence/reference_argument_controls_source_20261112.json)
-passes37 new/235 existing cases, nm/pm public composition and strict docs. The
-first suspected default-validation defect was refuted. Original red controls,
-two pm-policy harness corrections and the reporting-inventory correction remain
-recorded. The first d86f637 wheel builds and verifies184 source-equal runtime
-bodies but its provider-owned support stage exposes#199: five original snapshot
-files are absent from the declaration. Its first104 owned cases pass, then23/31
-argument cases fail on missing fixture data. The administrative guard reproduces
-the missing graph. [#199's correction](installed_snapshot_test_support.md)
-declares unchanged inputs; freeze a corrected source before owned recovery.
+The [combined receipt](evidence/reference_argument_controls_20261112.json)
+passes272 selected cases in each source/owned context,37 actual public-ArgDigest
+cases per context, public PUW0.28.1, twelve public guide-block executions,
+239 verified payloads/184 source-equal runtime bodies and162 distribution controls.
+All176 observed owned runtime modules are target-only. Original normal-validation
+and pm-harness hypotheses, report/receiver corrections and missing-data failures
+remain retained. Both bounded reports are resolved/archived; #6 stays partial.
 
-Liliana's explicit public ArgDigest/skip-control and selective internal-digestion
-rule is now durable in root `AGENTS.md`. The bounded150-callable reexport audit
-observes29 explicit controls/119 digestion plans, without claiming complete API
-or effective delegation coverage. Remaining adoption is owned by#6.
-
-The [native H0/H1 handoff](binding_interface_native_handoff.md) remains delivered
-with its original117-case receiving and published BindingMT#112 contribution.
-Actual BindingMT I0/H/I1 implementation/adoption remains provider-owned.
+Liliana's public ArgDigest/explicit-skip and selective internal-digestion rule
+remains durable in root `AGENTS.md`. The bounded150-callable reexport audit
+observes29 explicit controls/119 digestion plans, with effective delegation and
+full export coverage still unqualified. The H0/H1 handoff remains delivered;
+actual BindingMT I0/H/I1 adoption remains owner work.
 
 ## Accumulated source gate and separate delivery boundaries
 
@@ -53,14 +49,12 @@ public delivery remains0.4.0.
 
 ## Next concrete action and limits
 
-Receive this committed reference-construction slice from one exact owned wheel
-and the actual public ArgDigest provider, then close#198 with its measured scope.
-Continue the remaining public-modeling controls under#6 using the reexport
-inventory and the current public-workflow requirements. Receive BindingMT's actual I0/H/I1 later using
-this package, without claiming an implemented adapter now. MolSysMT#624 remains
-open/unreceived; no provider-owned collection is recreated. Human, biological,
-scale and full installed/public/platform gates remain independent. #148/#165
-remain stopped.
+Continue the public observed-interaction/composition controls under#6. Review
+actual defining contracts, nested canonical calls, scientific invariants and the
+bounded reexport inventory before migrating that family. Public/API adoption is
+not complete. #108 broader collection/product acceptance, MolSysMT#624, human,
+biological, scale and full installed/public/platform gates remain independent.
+Receive BindingMT I0/H/I1 later using its supplied package. #148/#165 stay stopped.
 
 Preserve shared-prefix/migration pauses, original native/data identities and
 one-CPU/thread low-priority execution. No usable Slurm allocation was established;
