@@ -14,6 +14,18 @@ supersedes: []
 
 # Public-library acquisition and screening
 
+## Native interface consumer inputs — 2026-11-12 local date
+
+The [H0/H1 handoff](../binding_interface_native_handoff.md) delivers the small
+native source/analysis/expectation case offered to BindingMT#112, as a consumer
+continuation. [Receiving](../evidence/binding_interface_native_handoff_20261112.json)
+passes12 new/105 existing cases, fresh nm/pm production, four selected native
+contexts and two cold saved readers. Exact labels/occurrences, complete source
+context and constraint decisions are preserved. Authored synthetic inputs are
+public under the repository license. No new molecular collection, public runtime
+API, BindingMT adapter or cross-component adoption is claimed. This umbrella
+remains active for its broader collection/product/scientific/human/scale scope.
+
 ## Retained-query screening continuation — 2026-11-12 UTC
 
 The [bounded contract](../prepared_feature_screening_journey.md) and extended

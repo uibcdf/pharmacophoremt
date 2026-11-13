@@ -907,3 +907,50 @@ sha256 = "0cdd3640d676ba2c0ca4dbc75b003f264d5d63513341f36cc40ce31bf1d62d0c"
 source = "tests/data/typed_retrieval/source/old/nm-empty.json"
 target = "tests/data/typed_retrieval/source/old/nm-empty.json"
 sha256 = "925885bccf9505bdb359799e9c467138facf3b27d121229e28ea452beea135ea"
+
+# Native analytical owner inputs for BindingMT H0/H1; unshipped test support.
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/binding_interface_handoff.py"
+target = "phmt_test_support/binding_interface_handoff.py"
+sha256 = "0867e83fd41f3f66bfdd593dae2fad9389b84db30f4952cd28fdf770a20888c8"
+
+[[installed_tests.support.files]]
+source = "tests/data/binding_interface_handoff/README.md"
+target = "tests/data/binding_interface_handoff/README.md"
+sha256 = "d01c2e4176f7a60d890f296fde3f3a13cf4db9cf92706a17ded121fa7799f7c2"
+
+[[installed_tests.support.files]]
+source = "tests/data/binding_interface_handoff/alternative.h5msm"
+target = "tests/data/binding_interface_handoff/alternative.h5msm"
+sha256 = "388e141d11e67f498d00736dab08d3f0ad385f8a3c3faa949c883e8fbb4384f5"
+
+[[installed_tests.support.files]]
+source = "tests/data/binding_interface_handoff/alternative.json"
+target = "tests/data/binding_interface_handoff/alternative.json"
+sha256 = "6e34cc243a2aa4025ecdd27a46a5cafac2e310cdfef4e08302dd0f029f787643"
+
+[[installed_tests.support.files]]
+source = "tests/data/binding_interface_handoff/excluded.json"
+target = "tests/data/binding_interface_handoff/excluded.json"
+sha256 = "fe41c7ecd0857de357141246ad6ca7e19fe1d7e154f342d8e4094c3816f2caab"
+
+[[installed_tests.support.files]]
+source = "tests/data/binding_interface_handoff/manifest.json"
+target = "tests/data/binding_interface_handoff/manifest.json"
+sha256 = "3921ab7c124466ab537855d7eb82d91e4861eabbce8e1d3fa9c09524c5e6f595"
+
+[[installed_tests.support.files]]
+source = "tests/data/binding_interface_handoff/primary.json"
+target = "tests/data/binding_interface_handoff/primary.json"
+sha256 = "16eb2005df6e4b3f1323eee21f72ddf339ca9148dcbdb3fa40b319dadd8fcbb7"
+
+[[installed_tests.support.files]]
+source = "tests/data/binding_interface_handoff/source.h5msm"
+target = "tests/data/binding_interface_handoff/source.h5msm"
+sha256 = "75ed110abb15515ed33806cdd03d9958eb231b3fbe2427dec0ffbc70aa287d1b"
+
+[[installed_tests.support.files]]
+source = "tests/data/binding_interface_handoff/zero_essential.json"
+target = "tests/data/binding_interface_handoff/zero_essential.json"
+sha256 = "10c219e2edb0755b4c14c50958191564b8e55529701f894b984c01858792edd5"

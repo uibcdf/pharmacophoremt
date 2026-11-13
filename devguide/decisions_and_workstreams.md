@@ -1,5 +1,21 @@
 # Decisions and active workstreams
 
+## Native interface consumer handoff — 2026-11-12 local date
+
+The [H0/H1 contract](binding_interface_native_handoff.md) and frozen authored
+inputs now deliver the small consumer case offered to BindingMT#112. Native
+MolSysMT observation scope/custody and PHMT hypothesis semantics stay in their
+owners. [Measured source receiving](evidence/binding_interface_native_handoff_20261112.json)
+passes117 scoped cases, nm/pm production/receiving and two cold saved readers;
+all initial controller/resource failures remain recorded. Actual BindingMT
+integration/adoption remains unexecuted, and no runtime/shared schema changes.
+
+Return next to the remaining #6/#108 public workflow/API acceptance. Supplied
+inputs are ready for BindingMT's later I0/H/I1 tests; no new PISA, provider run,
+benchmark, environment update, source matrix or release is selected. Broader
+MolSysMT#624, scientific/human/scale, installed/public and stopped#148/#165 keep
+their original owners and gates.
+
 ## Retained-query screening workflow — 2026-11-12 UTC
 
 [#108's bounded journey](prepared_feature_screening_journey.md) connects current

@@ -45,6 +45,7 @@ receptor_contribution
 tyr_cardinality
 carbonyl_acceptor_receiving
 public_carbonyl_generation
+binding_interface_handoff
 cached_generation_scaling
 saved_run_scaling
 esr1_activity_pilot

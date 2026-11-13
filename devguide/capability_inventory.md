@@ -1,5 +1,10 @@
 # Current capability inventory
 
+The [2026-11-12 H0/H1 analytical handoff](binding_interface_native_handoff.md)
+adds native consumer inputs and117 scoped receiving cases for the existing
+observed-interaction/composition/constraint tools. It changes no runtime API and
+does not establish a BindingMT adapter or executed cross-component integration.
+
 Reviewed 2026-11-04 against source base `1c6a03479bd0514a5d5988a8134b8359bca837b9`
 and the scoped dispatcher contract overlay recorded in
 [the receiving receipt](evidence/model_dispatch_contract_20261104_summary.json).

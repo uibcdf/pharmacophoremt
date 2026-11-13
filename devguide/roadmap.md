@@ -1,5 +1,21 @@
 # Strategic roadmap
 
+## Native H0/H1 consumer inputs delivered — 2026-11-12 local date
+
+The [bounded handoff](binding_interface_native_handoff.md) supplies authored
+four-ion native sources/analyses, separate hypotheses, exact correspondence and
+independent positive/negative expectations for BindingMT#112. Its
+[receipt](evidence/binding_interface_native_handoff_20261112.json) receives twelve
+new and105 existing cases, fresh nm/pm production, four native contexts and two
+independent saved readers without originating calculation/credit. No BindingMT
+adapter or cross-component execution is certified. Runtime bodies stay unchanged.
+
+Next return to #6/#108's remaining user/API acceptance against the current
+0.6 scope review and select the next bounded implementation gap. BindingMT owns
+actual I0/H/I1 receiving when its implementation is available; the supplied
+package needs no repeated provider run while waiting. Full later-head source and
+installed/public gates, MolSysMT#624 and stopped#148/#165 remain separate.
+
 ## Retained-query screening continuation — 2026-11-12 UTC
 
 The [public feature recipe](../docs/content/user/prepared_library_features.md)
