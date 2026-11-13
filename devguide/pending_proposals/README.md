@@ -6,10 +6,11 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Active (2)
+### Active (3)
 
 - [`qualify_public_library_workflow.md`](qualify_public_library_workflow.md) — [#108](https://github.com/uibcdf/pharmacophoremt/issues/108) — Qualify reproducible public-library acquisition, preparation and pharmacophore screening. *(active, measured)*
 - [`study_pharmacophore_tools.md`](study_pharmacophore_tools.md) — [#128](https://github.com/uibcdf/pharmacophoremt/issues/128) — Establish a pharmacophore-tool registry and an evidence-based comparison protocol. *(active, measured)*
+- [`symmetric_model_comparison.md`](symmetric_model_comparison.md) — [#205](https://github.com/uibcdf/pharmacophoremt/issues/205) — Define a symmetric comparison alongside the legacy ordered greedy score. *(active, measured)*
 
 ### Partial (12)
 
@@ -29,9 +30,5 @@ See the [local reporting protocol](../reporting_protocol.md).
 ### Blocked (1)
 
 - [`delegate_sdf_container_to_molsysmt.md`](delegate_sdf_container_to_molsysmt.md) — [#74](https://github.com/uibcdf/pharmacophoremt/issues/74) — Delegate annotated pharmacophore SDF container handling to MolSysMT. *(blocked, inspected)*
-
-### Open (1)
-
-- [`symmetric_model_comparison.md`](symmetric_model_comparison.md) — [#205](https://github.com/uibcdf/pharmacophoremt/issues/205) — Define a symmetric comparison alongside the legacy ordered greedy score. *(open, measured)*
 
 <!-- /generated -->

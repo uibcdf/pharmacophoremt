@@ -418,8 +418,10 @@ class Pharmacophore:
 
     @signal(tags=["core", "pharmacophore", "compare"])
     @arg_digest(config=_cached_contracts.CONFIG)
-    def similarity(self, other, tolerance_nm=0.15, *, skip_digestion=False):
-        """Compute the legacy ordered, greedy Dice-style center/feature score.
+    def similarity(
+        self, other, tolerance_nm=0.15, *, method="ordered_greedy", skip_digestion=False
+    ):
+        """Compute an explicitly selected center/feature similarity score.
 
         For each site in self, the best-matching site in other (same feature,
         minimum distance) is found. A pair is counted as matched when the
@@ -433,6 +435,11 @@ class Pharmacophore:
         tolerance_nm : float
             Finite nonnegative numeric distance in nm (default 0.15 nm = 1.5 Å).
             This fixed-unit scalar does not follow application standard units.
+        method : {'ordered_greedy', 'maximum_cardinality'}, default='ordered_greedy'
+            Preserve the legacy score, or explicitly request symmetric positive
+            Point/Sphere center overlap. The symmetric route uses the public
+            compare_pharmacophores() tool's default quotas. Use that tool for
+            correspondence, criteria, attribution and expert budget control.
         skip_digestion : bool, default=False
             Bypass argument preprocessing for canonical inputs. Native model,
             numeric threshold and present-center validation remain active.
@@ -440,7 +447,7 @@ class Pharmacophore:
         Returns
         -------
         float
-            Ordered score in [0, 1]; two empty models score zero. Missing centers
+            Score in [0, 1]; two empty models score zero. In ordered_greedy, missing centers
             remain unmatched and count in the denominator. Feature lists match
             on any shared name; each counterpart is used at most once.
 
@@ -450,8 +457,16 @@ class Pharmacophore:
         are swapped. This is not maximum-matching symmetric Dice similarity.
         Coordinates must already share a caller-declared frame; no alignment,
         orientation, radius, weight, essential or exclusion logic is applied.
-        The separate symmetric-method proposal is PharmacophoreMT #205.
+        These legacy limitations apply to method='ordered_greedy'.
         """
+        method = _cached_contracts.comparison_method(method)
+        if method == "maximum_cardinality":
+            from pharmacophoremt.comparison import compare_pharmacophores
+
+            tolerance = _cached_contracts.tolerance_nm(tolerance_nm)
+            return compare_pharmacophores(
+                self, other, distance_tolerance=puw.quantity(tolerance, "nm")
+            )["similarity"]
         _cached_contracts.model(self)
         _cached_contracts.model(other)
         tolerance_nm = _cached_contracts.tolerance_nm(tolerance_nm)

@@ -23,6 +23,8 @@ Historical timings from different environments do not isolate an improvement.
 ```{toctree}
 :maxdepth: 1
 
+symmetric_model_comparison
+
 prepared_ccd
 rdkit_bounds_comparison
 pmapper_controls

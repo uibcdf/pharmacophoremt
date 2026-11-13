@@ -1,0 +1,586 @@
+{
+  "bounded_public_inventory": {
+    "explicit_control": 40,
+    "observed_digestion_plan": 124,
+    "unique_declared_callables": 151
+  },
+  "existing_cases": 181,
+  "final_failures": 0,
+  "final_skips": 0,
+  "full_evidence": {
+    "compressed_bytes": 92747,
+    "compressed_sha256": "8aa22748340d1165303d4be92ea0d9806da09c9ee583a4515b9441f9cf2ee8b4",
+    "path": "symmetric_model_comparison_source_20261113.json.gz",
+    "uncompressed_bytes": 865402,
+    "uncompressed_sha256": "9ea94b99793f7517f37b6f5812d18e398b5bc7f1758fbcf4fd9ffbd47d012a62"
+  },
+  "independent_oracle_experiments": [
+    {
+      "case_count": 1296,
+      "log": "test_symmetric_comparison-source.log"
+    }
+  ],
+  "issues": [
+    "uibcdf/pharmacophoremt#205"
+  ],
+  "legacy_probe": {
+    "legacy_forward": 0.5,
+    "legacy_reverse": 1.0,
+    "new_method_refusal": "UnknownArgumentError",
+    "public_tool_present": false
+  },
+  "limits": [
+    "New bounded positive-center scientific profile; broader#6 remains partial.",
+    "Legacy default and numerical loop remain unchanged; explicit new method uses SciPy maximum cardinality.",
+    "Linux/Python3.14 legacy source/isolated-wheel scope; inherited other dependencies, not complete public closure or full supported source/installed/platform qualification.",
+    "No provider/native/prefix/dependency/performance/tag/publication change; additive versioned comparison report only. Full#9/#10/#23 and stopped#148/#165 stay separate."
+  ],
+  "mode": "source",
+  "new_cases": 56,
+  "original_attempt": {
+    "cause": "New test incorrectly required structured extra preservation from args-only exception reconstruction; corrected to documented args/code/text invariant; original extra checked on raised instance.",
+    "failed": 4,
+    "passed": 48
+  },
+  "public_receptor": {
+    "sha256": "c0b075286f45e8fce5ab5852947611bfba82b7d509115fc5dadf1a9572b9dd74",
+    "verified_payloads": 15,
+    "version": "1.2.2"
+  },
+  "public_recipe_blocks": 6,
+  "quality_source": [
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-symmetric-comparison-20261113-r1rmfzkx/recipe-nm-quality-source.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "/tmp/phmt-symmetric-comparison-20261113-r1rmfzkx/recipe.py",
+        "nm",
+        "source-development"
+      ],
+      "exit_code": 0,
+      "name": "recipe-nm"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-symmetric-comparison-20261113-r1rmfzkx/recipe-pm-quality-source.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "/tmp/phmt-symmetric-comparison-20261113-r1rmfzkx/recipe.py",
+        "pm",
+        "source-development"
+      ],
+      "exit_code": 0,
+      "name": "recipe-pm"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-symmetric-comparison-20261113-r1rmfzkx/audit-quality-source.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "/tmp/phmt-symmetric-comparison-20261113-r1rmfzkx/audit.py"
+      ],
+      "exit_code": 0,
+      "name": "audit"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-symmetric-comparison-20261113-r1rmfzkx/index-quality-source.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "name": "index"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-symmetric-comparison-20261113-r1rmfzkx/reporting-quality-source.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "name": "reporting"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-symmetric-comparison-20261113-r1rmfzkx/archives-quality-source.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "name": "archives"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-symmetric-comparison-20261113-r1rmfzkx/ruff-quality-source.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "name": "ruff"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-symmetric-comparison-20261113-r1rmfzkx/format-quality-source.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0,
+      "name": "format"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-symmetric-comparison-20261113-r1rmfzkx/declarations-quality-source.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/check_dependency_routes.py",
+        "--declared-only"
+      ],
+      "exit_code": 0,
+      "name": "declarations"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-symmetric-comparison-20261113-r1rmfzkx/environment-quality-source.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/conda_environment.py",
+        "generate",
+        "--check"
+      ],
+      "exit_code": 0,
+      "name": "environment"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-symmetric-comparison-20261113-r1rmfzkx/distribution-quality-source.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "devtools.tests.test_distribution_contract"
+      ],
+      "exit_code": 0,
+      "name": "distribution"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-symmetric-comparison-20261113-r1rmfzkx/docs-quality-source.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "sphinx",
+        "-b",
+        "html",
+        "-j",
+        "1",
+        "-W",
+        "--keep-going",
+        "-E",
+        "-a",
+        "-q",
+        "-D",
+        "nb_execution_mode=off",
+        "docs",
+        "/tmp/phmt-symmetric-comparison-20261113-r1rmfzkx/html"
+      ],
+      "exit_code": 0,
+      "name": "docs"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-symmetric-comparison-20261113-r1rmfzkx/whitespace-quality-source.resources",
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "name": "whitespace"
+    }
+  ],
+  "recorded_at_utc": "2026-11-13T06:42:55.273385+00:00",
+  "resource_preflight": {
+    "MemAvailable_kib": 54843904,
+    "MemTotal_kib": 63455508,
+    "active_swap_si_so": [
+      0,
+      0
+    ],
+    "cpus_allowed": "0-19",
+    "host": "ixtlilton",
+    "limits": "serial CPU19, one backend thread, nice19/idleIO,512MiB DATA/120CPU/180wall seconds, finite larger administrative limits; reserve20%physical+1.5GiB",
+    "load": [
+      1.76,
+      1.97,
+      2.26
+    ],
+    "local_date": "2026-11-13",
+    "memory_PSI_avg10": 0,
+    "scheduler": "srun present; no active allocation established; direct execution does not reserve resources",
+    "swap_used_kib": 455716
+  },
+  "resources": {
+    "CPU_typical_seconds": 120,
+    "DATA_per_process_bytes": 536870912,
+    "affinity": [
+      19
+    ],
+    "aggregate_cgroup_memory_enforced": false,
+    "build_quality_CPU_wall_seconds": [
+      180,
+      240
+    ],
+    "ionice": "idle",
+    "nice": 19,
+    "not_reserved": true,
+    "numerical_threads": 1,
+    "peak_process_RSS_KiB": 345272,
+    "reserve": "20%physical RAM plus1.5GiB margin; actual raw limits and per-process output retained, no performance comparison",
+    "wall_typical_seconds": 180
+  },
+  "schema": "pharmacophoremt.symmetric-comparison.receiving@1",
+  "source_cases": 237,
+  "source_counts": {
+    "test_cached_inspection_controls.py": 65,
+    "test_contracts.py": 18,
+    "test_curation_argument_controls.py": 56,
+    "test_pharmacophore_merge.py": 28,
+    "test_pose_evaluation.py": 14,
+    "test_symmetric_comparison.py": 52,
+    "test_symmetric_comparison_attribution.py": 4
+  },
+  "source_overlay_sha256": {
+    "docs/content/cookbook/symmetric_model_comparison.md": "10442ec814b835d5b52303115445c12219b7cef7d419cfc1da036b6447bd2de0",
+    "pharmacophoremt/__init__.py": "c74ca9f81936c6bdbe29fbb0f08d6231aa73cf704221b87e0ada097912112fec",
+    "pharmacophoremt/_private/arg_digestion/comparison.py": "353aa105f6494ef885799213242108198087b97b36b6fcd603ff71fa57e233db",
+    "pharmacophoremt/_private/arg_digestion/curation.py": "68df37c4d31c12f53165872323c3ec33e0c1ec7c339298dfd051885161ba9b65",
+    "pharmacophoremt/_private/smonitor/catalog.py": "d2cfda66a704d7c37cfd175a9ab615a24d0a9510fb8e347345b94e97b3422506",
+    "pharmacophoremt/_private/smonitor/exceptions.py": "f2a1256a125e81b75b54a58de4f67a029120c23e072217155a59c4629558d2d7",
+    "pharmacophoremt/comparison.py": "4ad4daa7831b8b481412d2a634b50e1b4ed7a729cd03b167f49f4a5353c2df18",
+    "pharmacophoremt/pharmacophore.py": "5e7af41832a0ab3834632b3b25e9e6393fbc911b9e405f68b0572c39de0d6e46",
+    "tests/test_symmetric_comparison.py": "98e1466608a813ac8497affa2cacdb0bae3fc7988a4105a7d16fc9685beb11e9",
+    "tests/test_symmetric_comparison_attribution.py": "110f44564a32b221a653160e51b460133cb402f3ae21a1f0cefd1fbeb6c501a3"
+  },
+  "source_providers": {
+    "ackredit": {
+      "distribution_version": "0.12.2+2.g0bb26ec",
+      "origin": "/fast_data/home/liliana/repos@uibcdf/ackredit/ackredit/__init__.py",
+      "runtime_version": "0.12.2+2.g0bb26ec"
+    },
+    "argdigest": {
+      "distribution_version": "0.17.1+6.g7be790b",
+      "origin": "/fast_data/home/liliana/repos@uibcdf/argdigest/argdigest/__init__.py",
+      "runtime_version": "0.17.1+6.g7be790b"
+    },
+    "depdigest": {
+      "distribution_version": "0.15.2+3.g5e93eaf",
+      "origin": "/fast_data/home/liliana/repos@uibcdf/depdigest/depdigest/__init__.py",
+      "runtime_version": "0.15.2+3.g5e93eaf"
+    },
+    "molsysmt": {
+      "distribution_version": "0.23.0+904.gff25f1202",
+      "origin": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/__init__.py",
+      "runtime_version": "0.23.0+904.gff25f1202"
+    },
+    "numpy": {
+      "distribution_version": "2.5.4",
+      "origin": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/numpy/__init__.py",
+      "runtime_version": "2.5.4"
+    },
+    "pharmacophoremt": {
+      "distribution_version": "0.4.0+120.g0925d97",
+      "origin": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/__init__.py",
+      "runtime_version": "0.5.0+7.g35559b3"
+    },
+    "pint": {
+      "distribution_version": "0.26.2",
+      "origin": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/pint/__init__.py",
+      "runtime_version": "0.26.2"
+    },
+    "pytest_receptor": {
+      "distribution_version": "1.2.2",
+      "origin": "/tmp/phmt-symmetric-comparison-20261113-r1rmfzkx/public-receptor/site-packages/pytest_receptor/__init__.py",
+      "runtime_version": "1.2.2"
+    },
+    "pyunitwizard": {
+      "distribution_version": "0.29.5+2.gcc51c8e",
+      "origin": "/fast_data/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard/__init__.py",
+      "runtime_version": "0.29.5+2.gcc51c8e"
+    },
+    "scipy": {
+      "distribution_version": "1.18.1",
+      "origin": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/__init__.py",
+      "runtime_version": "1.18.1"
+    },
+    "smonitor": {
+      "distribution_version": "0.23.0+3.g4a4cd1e",
+      "origin": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/__init__.py",
+      "runtime_version": "0.23.0+3.g4a4cd1e"
+    }
+  },
+  "static_preservation": {
+    "legacy_class_bodies": "All old scientific bodies identical after removing only new method selection/explicit delegation; docs/signatures separately reviewed.",
+    "new_profile": "Point/Sphere positives only; other shapes/volumes refused",
+    "new_solver": "SciPy rectangular maximum-weight assignment on binary benefits; no local solver copy",
+    "unchanged_default": "ordered_greedy; original0.5/1counterexample retained"
+  }
+}

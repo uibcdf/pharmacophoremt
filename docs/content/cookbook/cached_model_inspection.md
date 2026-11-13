@@ -62,7 +62,9 @@ the total number of sites. Missing centers stay unmatched and remain in the
 denominator. This ordered score can change when models are swapped; it is not a
 symmetric maximum-matching Dice coefficient. The separately owned
 [symmetric-method proposal](https://github.com/uibcdf/pharmacophoremt/issues/205)
-tracks that scientific extension and its compatibility decision.
+tracks that scientific extension and its compatibility decision. The explicit
+[symmetric comparison](symmetric_model_comparison.md) now implements its bounded
+positive Point/Sphere profile while preserving this legacy default.
 
 The finite nonnegative numeric tolerance always means **nm**, including when the
 application uses pm. It is not a quantity/string parameter. Radius, orientation,

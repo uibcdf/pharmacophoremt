@@ -43,6 +43,10 @@ CATALOG = {
         },
     },
     "exceptions": {
+        "ComparisonLimitError": {
+            "code": "PHMT-E111",
+            "message": "Model comparison requires {observed} {resource}, exceeding limit {limit}; no complete comparison was computed.",
+        },
         "ProjectionLossError": {
             "code": "PHMT-E110",
             "message": "Strict pharmacophore projection {operation} refuses omitted fields {fields}.",

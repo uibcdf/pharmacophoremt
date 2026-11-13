@@ -2,6 +2,13 @@
 
 ## Unreleased — toward 0.6.0
 
+- Add explicit [symmetric positive-center comparison](../cookbook/symmetric_model_comparison.md):
+  `compare_pharmacophores()` returns bounded maximum-cardinality correspondence,
+  normalized overlap, quantity-preserving input axes and optional attribution.
+  `similarity(method='maximum_cardinality')` supplies the scalar convenience
+  route; the existing `ordered_greedy` default remains compatible. The first
+  profile admits positive Point/Sphere sites and refuses unsupported shapes or
+  volumes. Public `ComparisonLimitError` reports exhausted declared dimensions.
 - Document the complete [prepared-library feature workflow](../user/prepared_library_features.md):
   capture prepared records once, preserve their full native inventories in an
   archive, reconstruct them explicitly and build reference hypotheses. The

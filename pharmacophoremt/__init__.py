@@ -30,6 +30,8 @@ from . import config as config
 from ._pyunitwizard import puw as pyunitwizard
 from . import interaction_site as interaction_site
 from .pharmacophore import Pharmacophore as Pharmacophore
+from .comparison import compare_pharmacophores as compare_pharmacophores
+from ._private.smonitor.exceptions import ComparisonLimitError as ComparisonLimitError
 from .modeler.dispatcher import model as model
 from . import io as io
 from . import viewer as viewer
@@ -46,6 +48,8 @@ __all__ = [
     "pyunitwizard",
     "model",
     "Pharmacophore",
+    "compare_pharmacophores",
+    "ComparisonLimitError",
     "__version__",
     "__print_version__",
     "attribution",

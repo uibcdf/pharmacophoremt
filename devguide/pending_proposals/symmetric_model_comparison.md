@@ -1,13 +1,13 @@
 ---
 summary: Define a symmetric comparison alongside the legacy ordered greedy score.
 issue: uibcdf/pharmacophoremt#205
-status: open
+status: active
 opened: 2026-11-12
 closed:
 verification: measured
 area: [modeling]
-guard:
-normative:
+guard: tests/test_symmetric_comparison.py
+normative: devguide/symmetric_model_comparison.md
 blocked_by: []
 supersedes: []
 ---
@@ -49,3 +49,14 @@ Existing SciPy assignment consumers are `screening.pose_evaluation` and
 `screening.feature_neighborhoods`; inspect their actual contracts before reuse.
 This adds reproduction evidence, not implementation or acceptance of a new
 similarity method. The proposal remains open.
+
+## Selected implementation — 2026-11-13
+
+The [owning contract](../symmetric_model_comparison.md) selects an explicit new
+public report tool and scalar method option, preserving the old default. The
+original proposal/reproduction above stays historical. Point/Sphere positive
+center overlap, finite dimensions, quantity/feature semantics, SciPy binary
+assignment, tie/count invariance and genuine optional-attribution receiving now
+have executable controls. Source receiving passes237 selected cases (56new),
+including1296 independently enumerated two-site workloads. Exact-owned and
+public-provider receiving follow a committed freeze before closure.

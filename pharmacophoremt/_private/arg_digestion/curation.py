@@ -155,6 +155,14 @@ def centers(sites, *, allow_missing=False):
         _contracts.digest_center(site.center)
 
 
+def comparison_method(obj):
+    if not isinstance(obj, str) or obj not in {"ordered_greedy", "maximum_cardinality"}:
+        raise ArgumentError(
+            argument="method", reason="expected ordered_greedy or maximum_cardinality"
+        )
+    return obj
+
+
 ARGUMENT_DIGESTERS = dict(
     pharmacophore=model,
     other=model,
@@ -171,6 +179,7 @@ ARGUMENT_DIGESTERS = dict(
     in_place=_contracts.digest_essential,
     skip_digestion=_contracts.digest_essential,
     tolerance_nm=tolerance_nm,
+    method=comparison_method,
 )
 
 CONTRACTS = [

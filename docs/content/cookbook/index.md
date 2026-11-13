@@ -31,6 +31,7 @@ structure_based_modeler
 ccd_interactions
 pharmacophore_curation
 cached_model_inspection
+symmetric_model_comparison
 prepared_workflow
 prepared_search_workflow
 prepared_consensus_workflow

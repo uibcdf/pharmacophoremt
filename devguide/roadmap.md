@@ -1,5 +1,17 @@
 # Strategic roadmap
 
+## Symmetric positive-center comparison in source — 2026-11-13
+
+[#205](symmetric_model_comparison.md) adds the reusable report tool and explicit
+scalar method, retaining the old default/loop. Positive Point/Sphere overlap has
+finite quotas, original-index maps, declared numerical policy and actual optional
+attribution. [Source proof](evidence/symmetric_model_comparison_source_20261113.json)
+passes237 cases (56new), all1296 independently enumerated two-site workloads,
+six guide blocks and13 quality operations. Original first-attempt oracle mistakes
+remain recorded. Next freeze and receive the exact-owned/public-provider routes,
+then consolidate0.6 scope/qualification and#108's public workflow. Broader#6/full
+supported/public/scientific/scale and stopped#148/#165 stay separate.
+
 ## Cached inspection and public receiving complete — 2026-11-13 local date
 
 [#204](cached_inspection_argument_controls.md) is received in its bounded scope:

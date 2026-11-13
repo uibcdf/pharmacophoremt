@@ -3,29 +3,27 @@
 Maintained 2026-11-13 local date; owners LMMV/dprada. Follow the accepted
 [mature pre-1.0 staircase](roadmap.md), [workstreams](decisions_and_workstreams.md)
 and [capability inventory](capability_inventory.md). The preceding checkpoint is
-preserved in [dated history](checkpoint_history_20261112_before_inspection_controls.md);
+preserved in [dated history](checkpoint_history_20261113_before_symmetric_comparison.md);
 earlier receipts and run identities remain unchanged.
 
-## Cached inspection contracts received — #204/#205
+## Symmetric positive-center comparison received in source — #205
 
-The [inspection contract](cached_inspection_argument_controls.md) adds explicit
-controls/defining contracts for distance matrices, tables and the legacy ordered
-comparison. Native model/required-center/finite fixed-nm threshold checks stay
-active under bypass. Empty tables keep five columns; nonempty object-cell
-ownership and the distance/greedy numerical loops remain unchanged.
+The [comparison contract](symmetric_model_comparison.md) supplies public
+compare_pharmacophores() and explicit similarity(method='maximum_cardinality').
+The old ordered_greedy default/numerical loop remain unchanged. The first profile
+admits positive Point/Sphere center/feature overlap, refuses other shapes/volumes
+and exposes finite quotas with public ComparisonLimitError. Reports retain
+original-index mappings, explicit-unit axes/distances and actual attribution.
 
-[Combined receiving](evidence/cached_inspection_controls_20261112.json) passes
-234 source/owned cases each (65 new), 65 public-ArgDigest cases per context,
-public PUW0.28.1/Pytest Receptor1.2.2 and18 nm/pm guide blocks. The exact f44e41b
-wheel has240 verified payloads/185 equal runtime bodies; all167 observed runtime
-origins are target-only with actual SDK staging and unchanged committed tests.
-Original57 red failures/probe and visible optional-provider messages remain.
-The bounded inventory is150 callables/39 controls/123 plans; #6 remains partial.
-Earlier#203 receipts retain their separate original artifact/test-overlay scope.
-
-[#205](pending_proposals/symmetric_model_comparison.md) records the measured
-0.5 versus1.0 swapped-model counterexample. The legacy score is labelled
-accurately; the symmetric method and compatibility decision remain unimplemented.
+[Source receiving](evidence/symmetric_model_comparison_source_20261113.json)
+passes237 selected cases (56new), six nm/pm guide blocks and13 quality operations,
+including strict docs and27 distribution tests. All1296 declared two-site
+workloads have independent exhaustive expected values and retained measured
+outputs. Actual attribution reuse/enclosing/empty/absence/failure and fresh-reader
+controls pass. The initial48pass/4fail result was an incorrect new args-only
+structured-field assertion; the documented args/code/text invariant now passes.
+Original baseline, failed attempt and prior source receipts remain intact.
+The bounded inventory observes151 callables/40 controls/124 plans; #6 is partial.
 
 ## Accumulated source gate and separate delivery boundaries
 
@@ -46,10 +44,11 @@ public delivery remains0.4.0.
 
 ## Next concrete action and limits
 
-Freeze#205's explicit symmetric-method and legacy compatibility contract,
-reviewing existing owned SciPy assignment uses before choosing reusable tools.
-Declare independent exhaustive small oracles, common-frame/shape/threshold scope
-and finite workload budgets before implementation. Public/API adoption is not complete.
+Freeze the committed#205 source and receive one exact owned wheel with its
+unchanged tests and public argument/quantity providers/examples. Then review the
+accumulated0.6.0 scope and exact-head qualification debt, using#108's public
+library workflow to drive remaining user/API acceptance. Public/API adoption
+is not complete.
 #108, MolSysMT#624, human/biological/scale and full installed/public/platform gates
 remain independent. Receive BindingMT I0/H/I1 later through its supplied package.
 #148/#165 remain stopped.

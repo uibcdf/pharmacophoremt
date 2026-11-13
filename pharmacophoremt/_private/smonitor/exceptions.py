@@ -79,3 +79,9 @@ class ProjectionLossError(PharmacophoreMTException, ValueError):
     """An explicit strict projection cannot preserve all declared input fields."""
 
     catalog_key = "ProjectionLossError"
+
+
+class ComparisonLimitError(PharmacophoreMTException, RuntimeError):
+    """The requested comparison cannot be completed within its declared budget."""
+
+    catalog_key = "ComparisonLimitError"
