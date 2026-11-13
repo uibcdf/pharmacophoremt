@@ -1,5 +1,16 @@
 # Decisions and active workstreams
 
+## Retained-query screening workflow — 2026-11-12 UTC
+
+[#108's bounded journey](prepared_feature_screening_journey.md) connects current
+native feature reconstruction/query construction with prepared fixed-frame
+screening, stop/resume and independent saved export. Four original work positions
+remain three molecules; candidate recognition still executes. Fourteen nm/pm
+blocks, four cold Python/CLI readers and 39 existing scoped tests pass. No runtime
+API/provider change, full cached evaluator or broad scientific qualification is
+claimed. Next prepare the promised BindingMT H0/H1 native input/expectation
+handoff; broader#6/#108, provider#624 and stopped#148/#165 retain their scope.
+
 ## Corrected controlled-source gate complete — 2026-11-11 UTC
 
 The [terminal native receipt](evidence/source_060_recovery_checkpoint_qualification_20261111.json)

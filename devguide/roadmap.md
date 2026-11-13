@@ -1,5 +1,17 @@
 # Strategic roadmap
 
+## Retained-query screening continuation — 2026-11-12 UTC
+
+The [public feature recipe](../docs/content/user/prepared_library_features.md)
+now reaches fixed-frame screening, stop/resume and complete saved export through
+existing public APIs. The [bounded receiving](prepared_feature_screening_journey.md)
+retains fourteen nm/pm blocks, four scientific-import-blocked readers and 39 scoped
+tests; original molecules/maps/bytes and repeated-occurrence meaning survive.
+This closes a documentation/workflow connection under#108, not entirely cached
+candidate screening or broader scientific/public delivery. Next supply the small
+BindingMT H0/H1 native handoff; #6/#108 and provider#624 retain separate remaining
+work. Source matrices, stopped#148/#165 and mature0.x gates below stay unchanged.
+
 ## Complete corrected-source checkpoint accepted — 2026-11-11 UTC
 
 [Terminal receiving](evidence/source_060_recovery_checkpoint_qualification_20261111.json)

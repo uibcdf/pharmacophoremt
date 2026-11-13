@@ -1,0 +1,746 @@
+{
+  "schema": "pharmacophoremt.prepared-feature-screening.receiving@1",
+  "recorded_at_utc": "2026-11-13T01:39:09.032823+00:00",
+  "issue": 108,
+  "source_base": "85a5475c3751a23ff8a803cf9f0ed41c012b95bf",
+  "scope": "Existing public APIs; retained query and fresh fixed-frame candidate evaluation; documentation/workflow increment",
+  "guide": "docs/content/user/prepared_library_features.md",
+  "guide_sha256": "2a9daf9d1afd6505254c4bc4835a52439b1b5f9af371297cce2ac470a9ecf677",
+  "contract": "devguide/prepared_feature_screening_journey.md",
+  "controller_sources": {
+    "exercise.py": "import ast\nimport functools\nimport hashlib\nimport io\nimport json\nimport os\nimport re\nimport resource\nimport sys\nfrom contextlib import redirect_stdout\nfrom pathlib import Path\n\nROOT = Path(\"/fast_data/home/liliana/repos@uibcdf/pharmacophoremt\")\nCASE = Path(__file__).resolve().parent\nlabel = sys.argv[1]\nwork = CASE / label\nwork.mkdir()\nos.chdir(work)\noriginal_table = ROOT / \"build/phmt-prepared-library-features-20261111-nqdnmeti/source-nm-private/prepared-records.json\"\ninputs = json.loads(original_table.read_text())\nfor row in inputs:\n    row[\"path\"] = str((ROOT / row[\"path\"]).resolve())\n    assert hashlib.sha256(Path(row[\"path\"]).read_bytes()).hexdigest() == row[\"sha256\"]\n(work / \"prepared-records.json\").write_text(json.dumps(inputs))\n\nimport molsysmt as msm\nimport pharmacophoremt as phmt\nfrom pharmacophoremt import pyunitwizard as puw\n\nif label == \"probe\":\n    row = inputs[0]\n    source = msm.h5msm.read(row[\"path\"])\n    captured = phmt.modeler.capture_features(source, chemical_state=0)\n    result = {\"atoms\": row[\"n_atoms\"], \"features\": len(captured[\"inventory\"][\"features\"])}\nelse:\n    if label == \"pm\":\n        puw.configure.set_standard_units(\n            [\"pm\", \"fs\", \"K\", \"mole\", \"dalton\", \"e\", \"kJ/mol\", \"radians\"],\n            provenance=\"phmt-screening-application\",\n        )\n    source_doc = ROOT / \"docs/content/user/prepared_library_features.md\"\n    blocks = re.findall(r\"```python\\n(.*?)```\", source_doc.read_text(), re.S)\n    assert len(blocks) == 7, len(blocks)\n    calls = []\n    evaluator = phmt.screening.PoseEvaluator\n    original_evaluate = evaluator.evaluate\n\n    @functools.wraps(original_evaluate)\n    def observed_evaluate(self, *args, **kwargs):\n        calls.append(kwargs.get(\"pose_id\"))\n        return original_evaluate(self, *args, **kwargs)\n\n    evaluator.evaluate = observed_evaluate\n    namespace = {\"__name__\": \"__recipe__\"}\n    block_receipts = []\n    for number, block in enumerate(blocks):\n        compile(block, f\"guide:block:{number}\", \"exec\")\n        if number == 6:\n            with namespace[\"ScreeningRunView\"].open(str(namespace[\"run_path\"])) as view:\n                initial = view.progress()\n            assert initial[\"counts\"][\"committed_work\"] == 1 and initial[\"counts\"][\"pending_work\"] == 3, initial\n            before_calls = list(calls)\n            namespace[\"screening_records\"][1][\"sha256\"] = \"0\" * 64\n            try:\n                with namespace[\"PreparedScreeningRun\"].open(\n                    str(namespace[\"run_path\"]), plan=namespace[\"plan\"],\n                    manifest_path=str(namespace[\"manifest_path\"]),\n                ) as run:\n                    with namespace[\"closing\"](namespace[\"screening_entries\"](namespace[\"screening_records\"])) as entries:\n                        with namespace[\"closing\"](run.resume(entries)) as outcomes:\n                            list(outcomes)\n            except ValueError as error:\n                assert str(error) == \"Prepared input differs from its receiving record\"\n            else:\n                raise AssertionError(\"Tampered hash was accepted\")\n            namespace[\"screening_records\"][1][\"sha256\"] = inputs[1][\"sha256\"]\n            assert calls == before_calls\n            with namespace[\"ScreeningRunView\"].open(str(namespace[\"run_path\"])) as view:\n                assert view.progress() == initial\n        with redirect_stdout(io.StringIO()):\n            exec(compile(block, f\"guide:block:{number}\", \"exec\"), namespace)\n        block_receipts.append({\"block\": number, \"sha256\": hashlib.sha256(block.encode()).hexdigest()})\n    assert len(namespace[\"newly_confirmed\"]) == 3\n    with namespace[\"ScreeningRunView\"].open(str(namespace[\"run_path\"])) as view:\n        outcomes = list(view.results())\n        progress = view.progress()\n    assert progress[\"counts\"][\"committed_work\"] == 4 and progress[\"counts\"][\"pending_work\"] == 0, progress\n    assert len(outcomes) == 4 and len(calls) == 4\n    for item in outcomes[-2:]:\n        assert item[\"native_result\"][\"status\"] == \"matched\", item[\"native_result\"][\"status\"]\n        assert item[\"ranking_score\"] == 1\n    with namespace[\"PreparedScreeningRun\"].open(\n        str(namespace[\"run_path\"]), plan=namespace[\"plan\"],\n        manifest_path=str(namespace[\"manifest_path\"]),\n    ) as run:\n        with namespace[\"closing\"](namespace[\"screening_entries\"](namespace[\"screening_records\"])) as entries:\n            with namespace[\"closing\"](run.resume(entries)) as pending:\n                assert list(pending) == []\n    assert len(calls) == 4\n    for row in inputs:\n        assert hashlib.sha256(Path(row[\"path\"]).read_bytes()).hexdigest() == row[\"sha256\"]\n    result = {\n        \"blocks\": block_receipts, \"initial\": initial, \"final\": progress,\n        \"tampered_input_refused_before_evaluation\": True, \"completed_replay_new_evaluations\": 0,\n        \"evaluated_work_keys\": calls,\n        \"outcomes\": [{\"work_key\": o[\"work_key\"], \"source_key\": o[\"source_key\"],\n                      \"occurrence_key\": o[\"occurrence_key\"], \"score\": o[\"ranking_score\"],\n                      \"status\": o[\"native_result\"][\"status\"]} for o in outcomes],\n        \"input_bytes_unchanged\": True,\n        \"exports\": {f: hashlib.sha256((work / f).read_bytes()).hexdigest()\n                    for f in (\"screening-outcomes.jsonl\", \"screening-outcomes.csv\")},\n        \"guide_sha256\": hashlib.sha256(source_doc.read_bytes()).hexdigest(),\n    }\nresult.update({\n    \"label\": label, \"python\": sys.version, \"phmt_runtime_version\": phmt.__version__,\n    \"molsysmt_runtime_version\": msm.__version__, \"puw_runtime_version\": puw.__version__,\n    \"imports\": {m: sys.modules[m].__file__ for m in (\"pharmacophoremt\", \"molsysmt\", \"pyunitwizard\")},\n    \"unit_policy\": puw.configure.report(),\n    \"native_modules\": {n: {\"path\": str(Path(m.__file__).resolve()),\n                           \"sha256\": hashlib.sha256(Path(m.__file__).read_bytes()).hexdigest()}\n                       for n, m in list(sys.modules.items())\n                       if n.startswith(\"molsysmt\") and str(getattr(m, \"__file__\", \"\")).endswith(\".so\")},\n    \"peak_RSS_KiB\": resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,\n    \"limits\": {\"DATA\": list(resource.getrlimit(resource.RLIMIT_DATA)),\n               \"CPU\": list(resource.getrlimit(resource.RLIMIT_CPU)),\n               \"affinity\": list(os.sched_getaffinity(0))},\n})\n(CASE / (label + \".json\")).write_text(json.dumps(result, indent=2) + \"\\n\")\nprint(json.dumps({\"label\": label, \"passed\": True, \"peak_RSS_KiB\": result[\"peak_RSS_KiB\"]}))\n",
+    "exercise-nm-success-pm-attempt1.py": "import ast\nimport functools\nimport hashlib\nimport io\nimport json\nimport os\nimport re\nimport resource\nimport sys\nfrom contextlib import redirect_stdout\nfrom pathlib import Path\n\nROOT = Path(\"/fast_data/home/liliana/repos@uibcdf/pharmacophoremt\")\nCASE = Path(__file__).resolve().parent\nlabel = sys.argv[1]\nwork = CASE / label\nwork.mkdir()\nos.chdir(work)\noriginal_table = ROOT / \"build/phmt-prepared-library-features-20261111-nqdnmeti/source-nm-private/prepared-records.json\"\ninputs = json.loads(original_table.read_text())\nfor row in inputs:\n    row[\"path\"] = str((ROOT / row[\"path\"]).resolve())\n    assert hashlib.sha256(Path(row[\"path\"]).read_bytes()).hexdigest() == row[\"sha256\"]\n(work / \"prepared-records.json\").write_text(json.dumps(inputs))\n\nimport molsysmt as msm\nimport pharmacophoremt as phmt\nfrom pharmacophoremt import pyunitwizard as puw\n\nif label == \"probe\":\n    row = inputs[0]\n    source = msm.h5msm.read(row[\"path\"])\n    captured = phmt.modeler.capture_features(source, chemical_state=0)\n    result = {\"atoms\": row[\"n_atoms\"], \"features\": len(captured[\"inventory\"][\"features\"])}\nelse:\n    if label == \"pm\":\n        puw.configure(defaults={\"length\": \"pm\", \"time\": \"fs\", \"charge\": \"e\"})\n    source_doc = ROOT / \"docs/content/user/prepared_library_features.md\"\n    blocks = re.findall(r\"```python\\n(.*?)```\", source_doc.read_text(), re.S)\n    assert len(blocks) == 7, len(blocks)\n    calls = []\n    evaluator = phmt.screening.PoseEvaluator\n    original_evaluate = evaluator.evaluate\n\n    @functools.wraps(original_evaluate)\n    def observed_evaluate(self, *args, **kwargs):\n        calls.append(kwargs.get(\"pose_id\"))\n        return original_evaluate(self, *args, **kwargs)\n\n    evaluator.evaluate = observed_evaluate\n    namespace = {\"__name__\": \"__recipe__\"}\n    block_receipts = []\n    for number, block in enumerate(blocks):\n        compile(block, f\"guide:block:{number}\", \"exec\")\n        if number == 6:\n            with namespace[\"ScreeningRunView\"].open(str(namespace[\"run_path\"])) as view:\n                initial = view.progress()\n            assert initial[\"counts\"][\"committed_work\"] == 1 and initial[\"counts\"][\"pending_work\"] == 3, initial\n            before_calls = list(calls)\n            namespace[\"screening_records\"][1][\"sha256\"] = \"0\" * 64\n            try:\n                with namespace[\"PreparedScreeningRun\"].open(\n                    str(namespace[\"run_path\"]), plan=namespace[\"plan\"],\n                    manifest_path=str(namespace[\"manifest_path\"]),\n                ) as run:\n                    with namespace[\"closing\"](namespace[\"screening_entries\"](namespace[\"screening_records\"])) as entries:\n                        with namespace[\"closing\"](run.resume(entries)) as outcomes:\n                            list(outcomes)\n            except ValueError as error:\n                assert str(error) == \"Prepared input differs from its receiving record\"\n            else:\n                raise AssertionError(\"Tampered hash was accepted\")\n            namespace[\"screening_records\"][1][\"sha256\"] = inputs[1][\"sha256\"]\n            assert calls == before_calls\n            with namespace[\"ScreeningRunView\"].open(str(namespace[\"run_path\"])) as view:\n                assert view.progress() == initial\n        with redirect_stdout(io.StringIO()):\n            exec(compile(block, f\"guide:block:{number}\", \"exec\"), namespace)\n        block_receipts.append({\"block\": number, \"sha256\": hashlib.sha256(block.encode()).hexdigest()})\n    assert len(namespace[\"newly_confirmed\"]) == 3\n    with namespace[\"ScreeningRunView\"].open(str(namespace[\"run_path\"])) as view:\n        outcomes = list(view.results())\n        progress = view.progress()\n    assert progress[\"counts\"][\"committed_work\"] == 4 and progress[\"counts\"][\"pending_work\"] == 0, progress\n    assert len(outcomes) == 4 and len(calls) == 4\n    for item in outcomes[-2:]:\n        assert item[\"native_result\"][\"status\"] == \"matched\", item[\"native_result\"][\"status\"]\n        assert item[\"ranking_score\"] == 1\n    with namespace[\"PreparedScreeningRun\"].open(\n        str(namespace[\"run_path\"]), plan=namespace[\"plan\"],\n        manifest_path=str(namespace[\"manifest_path\"]),\n    ) as run:\n        with namespace[\"closing\"](namespace[\"screening_entries\"](namespace[\"screening_records\"])) as entries:\n            with namespace[\"closing\"](run.resume(entries)) as pending:\n                assert list(pending) == []\n    assert len(calls) == 4\n    for row in inputs:\n        assert hashlib.sha256(Path(row[\"path\"]).read_bytes()).hexdigest() == row[\"sha256\"]\n    result = {\n        \"blocks\": block_receipts, \"initial\": initial, \"final\": progress,\n        \"tampered_input_refused_before_evaluation\": True, \"completed_replay_new_evaluations\": 0,\n        \"evaluated_work_keys\": calls,\n        \"outcomes\": [{\"work_key\": o[\"work_key\"], \"source_key\": o[\"source_key\"],\n                      \"occurrence_key\": o[\"occurrence_key\"], \"score\": o[\"ranking_score\"],\n                      \"status\": o[\"native_result\"][\"status\"]} for o in outcomes],\n        \"input_bytes_unchanged\": True,\n        \"exports\": {f: hashlib.sha256((work / f).read_bytes()).hexdigest()\n                    for f in (\"screening-outcomes.jsonl\", \"screening-outcomes.csv\")},\n        \"guide_sha256\": hashlib.sha256(source_doc.read_bytes()).hexdigest(),\n    }\nresult.update({\n    \"label\": label, \"python\": sys.version, \"phmt_runtime_version\": phmt.__version__,\n    \"molsysmt_runtime_version\": msm.__version__, \"puw_runtime_version\": puw.__version__,\n    \"imports\": {m: sys.modules[m].__file__ for m in (\"pharmacophoremt\", \"molsysmt\", \"pyunitwizard\")},\n    \"native_modules\": {n: {\"path\": str(Path(m.__file__).resolve()),\n                           \"sha256\": hashlib.sha256(Path(m.__file__).read_bytes()).hexdigest()}\n                       for n, m in list(sys.modules.items())\n                       if n.startswith(\"molsysmt\") and str(getattr(m, \"__file__\", \"\")).endswith(\".so\")},\n    \"peak_RSS_KiB\": resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,\n    \"limits\": {\"DATA\": list(resource.getrlimit(resource.RLIMIT_DATA)),\n               \"CPU\": list(resource.getrlimit(resource.RLIMIT_CPU)),\n               \"affinity\": list(os.sched_getaffinity(0))},\n})\n(CASE / (label + \".json\")).write_text(json.dumps(result, indent=2) + \"\\n\")\nprint(json.dumps({\"label\": label, \"passed\": True, \"peak_RSS_KiB\": result[\"peak_RSS_KiB\"]}))\n",
+    "cold_read.py": "import hashlib\nimport importlib.abc\nimport io\nimport json\nimport pathlib\nimport runpy\nimport sys\nfrom contextlib import redirect_stdout\n\ncase = pathlib.Path(__file__).resolve().parent\nlabel, mode = sys.argv[1:]\nwork = case / label\nblocked = {\"pharmacophoremt\", \"pharmacophoremt_features\", \"molsysmt\",\n           \"numpy\", \"scipy\", \"pyunitwizard\", \"pint\", \"ackredit\"}\n\nclass RefuseScience(importlib.abc.MetaPathFinder):\n    def find_spec(self, fullname, path=None, target=None):\n        if fullname.split(\".\")[0] in blocked:\n            raise ModuleNotFoundError(\"Scientific imports unavailable: \" + fullname)\n\nsys.meta_path.insert(0, RefuseScience())\nforbidden_inputs = json.loads((work / \"prepared-records.json\").read_text())\nforbidden_paths = {row[\"path\"] for row in forbidden_inputs}\nattempts = []\ndef prevent_input_access(event, args):\n    if event == \"open\" and isinstance(args[0], (str, bytes)):\n        name = str(args[0])\n        if name in forbidden_paths or \"prepared-library-features/\" in name:\n            attempts.append(name)\n            raise PermissionError(\"Original input/feature asset unavailable\")\nsys.addaudithook(prevent_input_access)\nif mode == \"cli\":\n    sys.argv = [\"pharmacophoremt_results\", str(work / \"screening.sqlite3\"), \"--summary\"]\n    with redirect_stdout(io.StringIO()) as output:\n        try:\n            runpy.run_module(\"pharmacophoremt_results\", run_name=\"__main__\")\n        except SystemExit as error:\n            assert error.code == 0, error.code\n    result = json.loads(output.getvalue())\nelse:\n    from pharmacophoremt_results import ScreeningRunView\n    with ScreeningRunView.open(str(work / \"screening.sqlite3\")) as view:\n        assert view.query_bytes == (work / \"retained-query.json\").read_bytes()\n        result = view.progress()\n        rows = list(view.results())\n        assert len(rows) == 4\n        view.to_jsonl(str(work / \"cold-outcomes.jsonl\"))\n        view.to_csv(str(work / \"cold-outcomes.csv\"))\n    for first, second in ((\"screening-outcomes.jsonl\", \"cold-outcomes.jsonl\"),\n                          (\"screening-outcomes.csv\", \"cold-outcomes.csv\")):\n        assert (work / first).read_bytes() == (work / second).read_bytes()\nassert result[\"counts\"][\"committed_work\"] == 4 and result[\"counts\"][\"pending_work\"] == 0\nassert not attempts\nassert not (blocked & set(sys.modules))\n(case / (label + \"-cold-\" + mode + \".json\")).write_text(\n    json.dumps({\"mode\": mode, \"label\": label, \"progress\": result,\n                \"scientific_imports\": [], \"forbidden_asset_access\": attempts,\n                \"query_bytes_verified\": mode == \"python\",\n                \"export_bytes_equal\": mode == \"python\"}, indent=2) + \"\\n\")\nprint(json.dumps({\"label\": label, \"mode\": mode, \"passed\": True}))\n"
+  },
+  "probe": {
+    "atoms": 20,
+    "features": 9,
+    "label": "probe",
+    "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+    "phmt_runtime_version": "0.5.0+7.g35559b3",
+    "molsysmt_runtime_version": "0.23.0+904.gff25f1202",
+    "puw_runtime_version": "0.29.5+2.gcc51c8e",
+    "imports": {
+      "pharmacophoremt": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/__init__.py",
+      "molsysmt": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/__init__.py",
+      "pyunitwizard": "/fast_data/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard/__init__.py"
+    },
+    "native_modules": {
+      "molsysmt._rust": {
+        "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+        "sha256": "2dbcf13d148cb3ae13a5908707fcdd61c75a2de5027e50c566ce07de81bdb038"
+      }
+    },
+    "peak_RSS_KiB": 344872,
+    "limits": {
+      "DATA": [
+        536870912,
+        536870912
+      ],
+      "CPU": [
+        120,
+        120
+      ],
+      "affinity": [
+        19
+      ]
+    }
+  },
+  "contexts": {
+    "nm": {
+      "blocks": [
+        {
+          "block": 0,
+          "sha256": "8ba8e4207a509764d09427525276a4076d319f2d16a413131f3abb0d30b968a4"
+        },
+        {
+          "block": 1,
+          "sha256": "d76669652752b2df7a3cdc9d172f9c224c6940b8cf6790ae20f3969a0c6adde6"
+        },
+        {
+          "block": 2,
+          "sha256": "abd39990e63f257df4c3953d97518fcb077ebe217edb9125e165ad76f41392b1"
+        },
+        {
+          "block": 3,
+          "sha256": "ec35b3219d2026baf16b81d8d4fb624c421159f667a136b7ec37db96da19b131"
+        },
+        {
+          "block": 4,
+          "sha256": "e9118ce61c326f19f9bb75ffce0b981ccbab8017e5ef5befcdbabde60044b16d"
+        },
+        {
+          "block": 5,
+          "sha256": "530f8ddbba20ed10cf78fee91f310cb9804786e1d79e5cd2825bfaaabf6798af"
+        },
+        {
+          "block": 6,
+          "sha256": "76d22f4ff84092ee560be620f80c396b0fbc9df4147ba5932bae65cee29267c9"
+        }
+      ],
+      "initial": {
+        "run_id": "retained-query:placed:1",
+        "parent_run_id": null,
+        "counts": {
+          "committed_work": 1,
+          "scored_work": 1,
+          "matched_work": 0,
+          "not_matched_work": 1,
+          "failed_work": 0,
+          "declared_work": 4,
+          "pending_work": 3
+        },
+        "attempts": {
+          "started": 1,
+          "staged": 1,
+          "committed": 1
+        },
+        "manifest_work_complete": false
+      },
+      "final": {
+        "run_id": "retained-query:placed:1",
+        "parent_run_id": null,
+        "counts": {
+          "committed_work": 4,
+          "scored_work": 4,
+          "matched_work": 2,
+          "not_matched_work": 2,
+          "failed_work": 0,
+          "declared_work": 4,
+          "pending_work": 0
+        },
+        "attempts": {
+          "started": 4,
+          "staged": 4,
+          "committed": 4
+        },
+        "manifest_work_complete": true
+      },
+      "tampered_input_refused_before_evaluation": true,
+      "completed_replay_new_evaluations": 0,
+      "evaluated_work_keys": [
+        "pubchem:1983:conformer:000007BF00000001:structure:0",
+        "pubchem:2244:conformer:000008C400000001:structure:0",
+        "pubchem:2519:conformer:000009D700000001:structure:0",
+        "repeat:last"
+      ],
+      "outcomes": [
+        {
+          "work_key": "pubchem:1983:conformer:000007BF00000001:structure:0",
+          "source_key": "PubChemCID:1983",
+          "occurrence_key": "selected:0",
+          "score": 0.2,
+          "status": "not_matched"
+        },
+        {
+          "work_key": "pubchem:2244:conformer:000008C400000001:structure:0",
+          "source_key": "PubChemCID:2244",
+          "occurrence_key": "selected:1",
+          "score": 0.4,
+          "status": "not_matched"
+        },
+        {
+          "work_key": "pubchem:2519:conformer:000009D700000001:structure:0",
+          "source_key": "PubChemCID:2519",
+          "occurrence_key": "selected:2",
+          "score": 1.0,
+          "status": "matched"
+        },
+        {
+          "work_key": "repeat:last",
+          "source_key": "PubChemCID:2519",
+          "occurrence_key": "selected:2",
+          "score": 1.0,
+          "status": "matched"
+        }
+      ],
+      "input_bytes_unchanged": true,
+      "exports": {
+        "screening-outcomes.jsonl": "2548b466fa8ffee11236a154c170477b80af9c1df615ccad71b9b551960926c8",
+        "screening-outcomes.csv": "b13344fcacd3dcaf09cd9d72c41cbdb3281261d85c68f352ea8ff154bdf00ccc"
+      },
+      "guide_sha256": "2a9daf9d1afd6505254c4bc4835a52439b1b5f9af371297cce2ac470a9ecf677",
+      "label": "nm",
+      "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+      "phmt_runtime_version": "0.5.0+7.g35559b3",
+      "molsysmt_runtime_version": "0.23.0+904.gff25f1202",
+      "puw_runtime_version": "0.29.5+2.gcc51c8e",
+      "imports": {
+        "pharmacophoremt": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/__init__.py",
+        "molsysmt": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/__init__.py",
+        "pyunitwizard": "/fast_data/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard/__init__.py"
+      },
+      "native_modules": {
+        "molsysmt._rust": {
+          "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+          "sha256": "2dbcf13d148cb3ae13a5908707fcdd61c75a2de5027e50c566ce07de81bdb038"
+        }
+      },
+      "peak_RSS_KiB": 351896,
+      "limits": {
+        "DATA": [
+          536870912,
+          536870912
+        ],
+        "CPU": [
+          120,
+          120
+        ],
+        "affinity": [
+          19
+        ]
+      }
+    },
+    "pm": {
+      "blocks": [
+        {
+          "block": 0,
+          "sha256": "8ba8e4207a509764d09427525276a4076d319f2d16a413131f3abb0d30b968a4"
+        },
+        {
+          "block": 1,
+          "sha256": "d76669652752b2df7a3cdc9d172f9c224c6940b8cf6790ae20f3969a0c6adde6"
+        },
+        {
+          "block": 2,
+          "sha256": "abd39990e63f257df4c3953d97518fcb077ebe217edb9125e165ad76f41392b1"
+        },
+        {
+          "block": 3,
+          "sha256": "ec35b3219d2026baf16b81d8d4fb624c421159f667a136b7ec37db96da19b131"
+        },
+        {
+          "block": 4,
+          "sha256": "e9118ce61c326f19f9bb75ffce0b981ccbab8017e5ef5befcdbabde60044b16d"
+        },
+        {
+          "block": 5,
+          "sha256": "530f8ddbba20ed10cf78fee91f310cb9804786e1d79e5cd2825bfaaabf6798af"
+        },
+        {
+          "block": 6,
+          "sha256": "76d22f4ff84092ee560be620f80c396b0fbc9df4147ba5932bae65cee29267c9"
+        }
+      ],
+      "initial": {
+        "run_id": "retained-query:placed:1",
+        "parent_run_id": null,
+        "counts": {
+          "committed_work": 1,
+          "scored_work": 1,
+          "matched_work": 0,
+          "not_matched_work": 1,
+          "failed_work": 0,
+          "declared_work": 4,
+          "pending_work": 3
+        },
+        "attempts": {
+          "started": 1,
+          "staged": 1,
+          "committed": 1
+        },
+        "manifest_work_complete": false
+      },
+      "final": {
+        "run_id": "retained-query:placed:1",
+        "parent_run_id": null,
+        "counts": {
+          "committed_work": 4,
+          "scored_work": 4,
+          "matched_work": 2,
+          "not_matched_work": 2,
+          "failed_work": 0,
+          "declared_work": 4,
+          "pending_work": 0
+        },
+        "attempts": {
+          "started": 4,
+          "staged": 4,
+          "committed": 4
+        },
+        "manifest_work_complete": true
+      },
+      "tampered_input_refused_before_evaluation": true,
+      "completed_replay_new_evaluations": 0,
+      "evaluated_work_keys": [
+        "pubchem:1983:conformer:000007BF00000001:structure:0",
+        "pubchem:2244:conformer:000008C400000001:structure:0",
+        "pubchem:2519:conformer:000009D700000001:structure:0",
+        "repeat:last"
+      ],
+      "outcomes": [
+        {
+          "work_key": "pubchem:1983:conformer:000007BF00000001:structure:0",
+          "source_key": "PubChemCID:1983",
+          "occurrence_key": "selected:0",
+          "score": 0.2,
+          "status": "not_matched"
+        },
+        {
+          "work_key": "pubchem:2244:conformer:000008C400000001:structure:0",
+          "source_key": "PubChemCID:2244",
+          "occurrence_key": "selected:1",
+          "score": 0.4,
+          "status": "not_matched"
+        },
+        {
+          "work_key": "pubchem:2519:conformer:000009D700000001:structure:0",
+          "source_key": "PubChemCID:2519",
+          "occurrence_key": "selected:2",
+          "score": 1.0,
+          "status": "matched"
+        },
+        {
+          "work_key": "repeat:last",
+          "source_key": "PubChemCID:2519",
+          "occurrence_key": "selected:2",
+          "score": 1.0,
+          "status": "matched"
+        }
+      ],
+      "input_bytes_unchanged": true,
+      "exports": {
+        "screening-outcomes.jsonl": "590fc1a4037469abd6ae279ee814c5b5fbfcadfe370fe03df885aa2c26cbf9ff",
+        "screening-outcomes.csv": "b13344fcacd3dcaf09cd9d72c41cbdb3281261d85c68f352ea8ff154bdf00ccc"
+      },
+      "guide_sha256": "2a9daf9d1afd6505254c4bc4835a52439b1b5f9af371297cce2ac470a9ecf677",
+      "label": "pm",
+      "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+      "phmt_runtime_version": "0.5.0+7.g35559b3",
+      "molsysmt_runtime_version": "0.23.0+904.gff25f1202",
+      "puw_runtime_version": "0.29.5+2.gcc51c8e",
+      "imports": {
+        "pharmacophoremt": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/__init__.py",
+        "molsysmt": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/__init__.py",
+        "pyunitwizard": "/fast_data/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard/__init__.py"
+      },
+      "unit_policy": {
+        "default_form": "pint",
+        "default_parser": "pint",
+        "standard_units": [
+          "pm",
+          "fs",
+          "K",
+          "mole",
+          "dalton",
+          "e",
+          "kJ/mol",
+          "radians"
+        ],
+        "provenance": "phmt-screening-application",
+        "loaded_libraries": [
+          "pint"
+        ],
+        "loaded_parsers": [
+          "pint"
+        ],
+        "fast_tracks": [
+          "angstroms",
+          "kelvin",
+          "nanometers",
+          "picoseconds"
+        ]
+      },
+      "native_modules": {
+        "molsysmt._rust": {
+          "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+          "sha256": "2dbcf13d148cb3ae13a5908707fcdd61c75a2de5027e50c566ce07de81bdb038"
+        }
+      },
+      "peak_RSS_KiB": 351824,
+      "limits": {
+        "DATA": [
+          536870912,
+          536870912
+        ],
+        "CPU": [
+          120,
+          120
+        ],
+        "affinity": [
+          19
+        ]
+      }
+    }
+  },
+  "guide_block_executions": 14,
+  "scientifically_cold_readers": [
+    {
+      "mode": "cli",
+      "label": "nm",
+      "progress": {
+        "run_id": "retained-query:placed:1",
+        "parent_run_id": null,
+        "counts": {
+          "committed_work": 4,
+          "scored_work": 4,
+          "matched_work": 2,
+          "not_matched_work": 2,
+          "failed_work": 0,
+          "declared_work": 4,
+          "pending_work": 0
+        },
+        "attempts": {
+          "started": 4,
+          "staged": 4,
+          "committed": 4
+        },
+        "manifest_work_complete": true
+      },
+      "scientific_imports": [],
+      "forbidden_asset_access": [],
+      "query_bytes_verified": false,
+      "export_bytes_equal": false
+    },
+    {
+      "mode": "python",
+      "label": "nm",
+      "progress": {
+        "run_id": "retained-query:placed:1",
+        "parent_run_id": null,
+        "counts": {
+          "committed_work": 4,
+          "scored_work": 4,
+          "matched_work": 2,
+          "not_matched_work": 2,
+          "failed_work": 0,
+          "declared_work": 4,
+          "pending_work": 0
+        },
+        "attempts": {
+          "started": 4,
+          "staged": 4,
+          "committed": 4
+        },
+        "manifest_work_complete": true
+      },
+      "scientific_imports": [],
+      "forbidden_asset_access": [],
+      "query_bytes_verified": true,
+      "export_bytes_equal": true
+    },
+    {
+      "mode": "cli",
+      "label": "pm",
+      "progress": {
+        "run_id": "retained-query:placed:1",
+        "parent_run_id": null,
+        "counts": {
+          "committed_work": 4,
+          "scored_work": 4,
+          "matched_work": 2,
+          "not_matched_work": 2,
+          "failed_work": 0,
+          "declared_work": 4,
+          "pending_work": 0
+        },
+        "attempts": {
+          "started": 4,
+          "staged": 4,
+          "committed": 4
+        },
+        "manifest_work_complete": true
+      },
+      "scientific_imports": [],
+      "forbidden_asset_access": [],
+      "query_bytes_verified": false,
+      "export_bytes_equal": false
+    },
+    {
+      "mode": "python",
+      "label": "pm",
+      "progress": {
+        "run_id": "retained-query:placed:1",
+        "parent_run_id": null,
+        "counts": {
+          "committed_work": 4,
+          "scored_work": 4,
+          "matched_work": 2,
+          "not_matched_work": 2,
+          "failed_work": 0,
+          "declared_work": 4,
+          "pending_work": 0
+        },
+        "attempts": {
+          "started": 4,
+          "staged": 4,
+          "committed": 4
+        },
+        "manifest_work_complete": true
+      },
+      "scientific_imports": [],
+      "forbidden_asset_access": [],
+      "query_bytes_verified": true,
+      "export_bytes_equal": true
+    }
+  ],
+  "selected_tests": {
+    "selectors": [
+      "tests/test_public_prepared_runs.py",
+      "tests/test_public_run_progress.py",
+      "tests/test_public_run_exports.py"
+    ],
+    "cases": 39,
+    "failures": 0,
+    "skips": 0
+  },
+  "strict_docs": {
+    "exit_code": 0,
+    "notebook_execution": "off",
+    "workers": 1,
+    "output_scope": "local source HTML; no publication"
+  },
+  "independent_original_molecules": 3,
+  "work_items": 4,
+  "candidate_evaluations_per_context": 4,
+  "completed_replay_new_evaluations": 0,
+  "original_inputs_byte_identical": true,
+  "new_runtime_or_provider_implementation": false,
+  "initial_controller_failures": [
+    {
+      "context": "nm-attempt1",
+      "cause": "Controller read progress counts at the top level instead of counts mapping",
+      "product_change": false
+    },
+    {
+      "context": "pm-attempt1",
+      "cause": "Controller called configure module; corrected to documented configure.set_standard_units",
+      "product_change": false
+    }
+  ],
+  "resource_policy": {
+    "cpu_affinity": [
+      19
+    ],
+    "backend_threads": 1,
+    "DATA_MiB": 512,
+    "CPU_seconds": 120,
+    "wall_timeout_seconds": 180,
+    "nice": 19,
+    "io_class": "idle",
+    "maximum_native_RSS_KiB": 351896,
+    "group_memory_cap_enforced": false,
+    "reserved": false,
+    "scheduler": "Slurm CLI reachable outside sandbox; nodes invalid/unknown; no allocation. Direct bounded execution.",
+    "observed_available_RAM_MiB_before_full": 55493,
+    "observed_memory_PSI_avg10": 0,
+    "physical_reserve_fraction": 0.2,
+    "shared_prefix_changed": false
+  },
+  "known_diagnostics": "Optional beartype unavailable messages retained; no local suppression or installation",
+  "private_evidence": {
+    "path": "/tmp/phmt-feature-screening-20261112.9uHGKC",
+    "review_utc": "2026-11-26",
+    "owner": "LMMV/dprada",
+    "geometry_or_native_results_published": false,
+    "artifacts": [
+      {
+        "name": "cold_read.py",
+        "sha256": "ca9f889f4192c2beae8bf7ea92e1e5dbd3aec47449b8e3745bc24808c0558a4b",
+        "bytes": 2733
+      },
+      {
+        "name": "docs.log",
+        "sha256": "cff16beb3cb0f7ba20256a6e5c230eedebc6a5de7aad7da936175dd397ddc539",
+        "bytes": 4059
+      },
+      {
+        "name": "docs.resources",
+        "sha256": "06e6a41e7537aa6aa326d88163b00fe9fde377382b825e6597cfbea487f66606",
+        "bytes": 923
+      },
+      {
+        "name": "exercise-nm-success-pm-attempt1.py",
+        "sha256": "c9159db69aa11fddff02bfd9d775b8e6e4cb5c2d8e1300c6346f8186040bb6be",
+        "bytes": 6350
+      },
+      {
+        "name": "exercise.py",
+        "sha256": "87c910b2745044deb13ad6361555976b03cf4fef089d7914e763ad1987903feb",
+        "bytes": 6495
+      },
+      {
+        "name": "nm-attempt1.log",
+        "sha256": "da6ee4c9fa78307bba2af358fb2cf93a6a9897e9f63ed9ef39753248d0a15ed3",
+        "bytes": 4300
+      },
+      {
+        "name": "nm-attempt1.resources",
+        "sha256": "a9d024f6a8af632d5a25d3c0c140ba646155d56836c8d21d1a60f2fd928fb191",
+        "bytes": 895
+      },
+      {
+        "name": "nm-cold-cli.json",
+        "sha256": "6775e0e1a89049fb60d8f7d1eab61608e224c4507126c595932f456c094dfc8f",
+        "bytes": 572
+      },
+      {
+        "name": "nm-cold-cli.log",
+        "sha256": "85dacffe1a4b09c13975c99a4d864e5a4aba11f6c85779e85149d416520dbb82",
+        "bytes": 47
+      },
+      {
+        "name": "nm-cold-python.json",
+        "sha256": "07bf7525f0089b1ac90772673443a62df784fdef4276afe6c98279b01e2d26c6",
+        "bytes": 573
+      },
+      {
+        "name": "nm-cold-python.log",
+        "sha256": "b675def1f1009bb40e49fdbd30a5c7522558bddea9d2540fd633acbcb3872b54",
+        "bytes": 50
+      },
+      {
+        "name": "nm.json",
+        "sha256": "061700d4865ef11715867518c775009ba2c68aaee73c12337e2688271949bba5",
+        "bytes": 4085
+      },
+      {
+        "name": "nm.log",
+        "sha256": "ad6bfa13f0dc436d6d7874d53c08081bf9166257b909a66260893da53c72f8ab",
+        "bytes": 4086
+      },
+      {
+        "name": "nm.resources",
+        "sha256": "de45faf2146d946cd87e1e1e883393498c5eaa3e1fe6224cb59f673d045d0888",
+        "bytes": 857
+      },
+      {
+        "name": "pm-attempt1.log",
+        "sha256": "ca5d3ea63522646ee7faf033a09368cf79b3fd11ab7cbafaece3ca5d1c5bafab",
+        "bytes": 4343
+      },
+      {
+        "name": "pm-attempt1.resources",
+        "sha256": "7affcb80adf7326423b1ad1581c852efb9ce47c1f6629daf7ac7e88e1dff71ad",
+        "bytes": 891
+      },
+      {
+        "name": "pm-cold-cli.json",
+        "sha256": "94e46aa1e75026f71e0ba7db4f787774766d89d9a743484832b64c731e0c0b45",
+        "bytes": 572
+      },
+      {
+        "name": "pm-cold-cli.log",
+        "sha256": "cf28e1d6df9ef20b900870acf61461e3fd37c0309ec44a3264b0de0d9f66fc04",
+        "bytes": 47
+      },
+      {
+        "name": "pm-cold-python.json",
+        "sha256": "0509bd4aeacb6da39afa23dcf7d6da349d4536cd93b1572a6225be62e63db770",
+        "bytes": 573
+      },
+      {
+        "name": "pm-cold-python.log",
+        "sha256": "b05579c67290ce2a84501143d159c92ed08d1ce5759ef602740e6877162055ca",
+        "bytes": 50
+      },
+      {
+        "name": "pm.json",
+        "sha256": "df4b11f714aa7081f38215f20c5e2b87a45bf747953cce186bb93bd2cf611062",
+        "bytes": 4546
+      },
+      {
+        "name": "pm.log",
+        "sha256": "d540c01d84a71e64231494f67173e0f102d98b9f97e886b38ea7d452ba778c4b",
+        "bytes": 4086
+      },
+      {
+        "name": "pm.resources",
+        "sha256": "c8cbf110d4bc77e63a0eeefb65403892f593924d1a985d9cd902812df73bbfff",
+        "bytes": 856
+      },
+      {
+        "name": "probe.json",
+        "sha256": "99399e35f1c9690c910401a983c75fcfcf6fb1a99c05fc94ebfcf62190fcc51a",
+        "bytes": 1005
+      },
+      {
+        "name": "probe.log",
+        "sha256": "02fe0c7f13022b2cc76ec54d49631bc3cc03e21bd13152d3a08a5900d9b8177b",
+        "bytes": 4089
+      },
+      {
+        "name": "probe.resources",
+        "sha256": "d355f37a425d8e686e6300793d95811d3b3b1a8a661f7122a30c438ffa260c57",
+        "bytes": 858
+      },
+      {
+        "name": "selected-tests.log",
+        "sha256": "7342e68f5303ec5f317203f0669cdf1893f516388df768fcb227764781c55c9f",
+        "bytes": 33
+      },
+      {
+        "name": "selected-tests.resources",
+        "sha256": "9173752a7805d60089a6ad1d2f726dc79658c2c7921fbf57aa19305d280ca03b",
+        "bytes": 1004
+      },
+      {
+        "name": "selected-tests.xml",
+        "sha256": "98d781bdbd719f5a5afd5d202d75f3ca706ec04ae987bd3db2e7162b8c982c67",
+        "bytes": 6313
+      },
+      {
+        "name": "quality.json",
+        "bytes": 19731,
+        "sha256": "4be292b2060a487ceac462e0f84e095af8690b7b955a74b82dd60346e32b47f4"
+      },
+      {
+        "name": "quality.log",
+        "bytes": 95,
+        "sha256": "47a77feeb1ab2e79c848c4403463eedad02150edc7780fc8836da3b3c9103d6a"
+      }
+    ]
+  },
+  "limitations": [
+    "Current editable source/providers only; no new installed/public-floor/platform qualification",
+    "Fixed-frame consistency, not biological validation, affinity, full rigid/flexible search or performance comparison",
+    "Query features reused; candidate reading and recognition still execute",
+    "No general molecular collection or new connector; MolSysMT#624 remains separate",
+    "No new optional-attribution integration/receiving or independent human usability claim",
+    "Full source/CI/tag/publication and stopped#148/#165 retain their own gates"
+  ],
+  "quality_checks": [
+    {
+      "name": "indexes",
+      "code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "reporting",
+      "code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.346s\n\nOK\n"
+    },
+    {
+      "name": "archives",
+      "code": 0,
+      "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 3.951s\n\nOK\n"
+    },
+    {
+      "name": "ruff",
+      "code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "name": "format",
+      "code": 0,
+      "output": "519 files already formatted\n"
+    },
+    {
+      "name": "declared-routes",
+      "code": 0,
+      "output": "{\"contexts\": [{\"bootstrap_selectors\": [\"python>=3.14,<3.15\", \"setuptools\", \"pytest\", \"pip\", \"pytest-cov\", \"codecov\", \"jupyterlab\", \"sphinx\", \"pydata-sphinx-theme\", \"sphinxcontrib-bibtex\", \"sphinx-remove-toctrees\", \"sphinx-copybutton\", \"sphinx-design\", \"sphinx-favicon\", \"sphinx-tabs\", \"myst-nb\", \"mamba\", \"numpy\", \"scipy\", \"nglview\", \"molsysmt\", \"pyunitwizard>=0.28.1\", \"argdigest>=0.17.1\", \"smonitor>=0.22.1\", \"depdigest\", \"rdkit\", \"networkx\", \"PyYAML>=5.1\"], \"environment\": \"devtools/conda-envs/development_env.yaml\", \"final_constraints\": {\"argdigest\": \">=0.17.1\", \"depdigest\": \"\", \"molsysmt\": \"\", \"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.14\", \"pyunitwizard\": \">=0.28.1\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\", \"smonitor\": \">=0.22.1\"}, \"name\": \"development-3.14\", \"narrowed\": [\"python\"], \"overlays\": [], \"python_minor\": \"3.14\", \"sources\": []}, {\"bootstrap_selectors\": [\"python>=3.11,<3.15\", \"setuptools\", \"jupyterlab\", \"sphinx\", \"pydata-sphinx-theme\", \"sphinxcontrib-bibtex\", \"sphinx-remove-toctrees\", \"sphinx-copybutton\", \"sphinx-design\", \"sphinx-favicon\", \"sphinx-tabs\", \"myst-nb\", \"numpy\", \"scipy\", \"nglview\", \"molsysmt\", \"pyunitwizard>=0.28.1\", \"argdigest>=0.17.1\", \"smonitor>=0.22.1\", \"depdigest\", \"rdkit\", \"networkx\", \"PyYAML>=5.1\"], \"environment\": \"devtools/conda-envs/docs_env.yaml\", \"final_constraints\": {\"argdigest\": \">=0.17.1\", \"depdigest\": \"\", \"molsysmt\": \"\", \"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.11\", \"pyunitwizard\": \">=0.28.1\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\", \"smonitor\": \">=0.22.1\"}, \"name\": \"docs-3.12\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.12\", \"sources\": []}, {\"bootstrap_selectors\": [\"python>=3.11,<3.15\", \"setuptools\", \"numpy\", \"scipy\", \"nglview\", \"molsysmt\", \"pyunitwizard>=0.28.1\", \"argdigest>=0.17.1\", \"smonitor>=0.22.1\", \"depdigest\", \"rdkit\", \"networkx\", \"PyYAML>=5.1\"], \"environment\": \"devtools/conda-envs/production_env.yaml\", \"final_constraints\": {\"argdigest\": \">=0.17.1\", \"depdigest\": \"\", \"molsysmt\": \"\", \"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.11\", \"pyunitwizard\": \">=0.28.1\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\", \"smonitor\": \">=0.22.1\"}, \"name\": \"production-3.14\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.14\", \"sources\": []}, {\"bootstrap_selectors\": [\"python >=3.14,<3.15\", \"pip\", \"setuptools >=77.0.3\", \"versioningit >=2,<3\", \"pytest >=8\", \"pytest-receptor=1.1.0\", \"packaging\", \"numpy\", \"scipy\", \"nglview\", \"molsysmt\", \"pyunitwizard>=0.28.1\", \"argdigest >=0.17.1\", \"smonitor >=0.22.1\", \"depdigest\", \"rdkit\", \"networkx\", \"pyyaml >=5.1\", \"molsysviewer ==0.24.0\", \"ackredit ==0.12.0\", \"beartype ==0.22.9\", \"openmm ==8.6.1\"], \"environment\": \"devtools/conda-envs/public_test_env_py314.yaml\", \"final_constraints\": {\"argdigest\": \">=0.17.1\", \"depdigest\": \"\", \"molsysmt\": \"\", \"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.14\", \"pyunitwizard\": \">=0.28.1\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\", \"smonitor\": \">=0.22.1\"}, \"name\": \"public-test-3.14\", \"narrowed\": [\"python\"], \"overlays\": [], \"python_minor\": \"3.14\", \"sources\": []}, {\"bootstrap_selectors\": [\"python >=3.11,<3.15\", \"pip\", \"setuptools >=68.0\", \"versioningit>=3.0\", \"h5py\", \"numpy\", \"pandas\", \"networkx\", \"tqdm\", \"matplotlib\", \"openmm\", \"pdbfixer\", \"ambertools\", \"openff-toolkit-base >=0.17.1\", \"openff-units >=0.3.0\", \"mdtraj\", \"mdanalysis\", \"rdkit\", \"parmed\", \"biopython\", \"ipywidgets\", \"py-mmcif >=1.1.1\", \"plotly\", \"anywidget\", \"aiohttp\", \"scikit-learn\", \"beartype\", \"packaging >=23\", \"pint\", \"pydantic\", \"pyyaml>=5.1\", \"scipy\", \"traitlets >=5\", \"nglview\", \"pytest\", \"pytest-receptor=0.6.0\", \"pytest-cov\", \"codecov\", \"pytest-xdist\", \"ruff=0.16.5\"], \"environment\": \"devtools/conda-envs/test_env.yaml\", \"final_constraints\": {\"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.11\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\"}, \"name\": \"ci-3.11\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.11\", \"sources\": [\"smonitor-base\", \"depdigest-base\", \"pyunitwizard-base\", \"argdigest-base\", \"molsysviewer-base\", \"ackredit-base\", \"molsysmt-base\"]}, {\"bootstrap_selectors\": [\"python >=3.11,<3.15\", \"pip\", \"setuptools >=68.0\", \"versioningit>=3.0\", \"h5py\", \"numpy\", \"pandas\", \"networkx\", \"tqdm\", \"matplotlib\", \"openmm\", \"pdbfixer\", \"ambertools\", \"openff-toolkit-base >=0.17.1\", \"openff-units >=0.3.0\", \"mdtraj\", \"mdanalysis\", \"rdkit\", \"parmed\", \"biopython\", \"ipywidgets\", \"py-mmcif >=1.1.1\", \"plotly\", \"anywidget\", \"aiohttp\", \"scikit-learn\", \"beartype\", \"packaging >=23\", \"pint\", \"pydantic\", \"pyyaml>=5.1\", \"scipy\", \"traitlets >=5\", \"nglview\", \"pytest\", \"pytest-receptor=0.6.0\", \"pytest-cov\", \"codecov\", \"pytest-xdist\", \"ruff=0.16.5\"], \"environment\": \"devtools/conda-envs/test_env.yaml\", \"final_constraints\": {\"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.11\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\"}, \"name\": \"ci-3.12\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.12\", \"sources\": [\"smonitor-base\", \"depdigest-base\", \"pyunitwizard-base\", \"argdigest-base\", \"molsysviewer-base\", \"ackredit-base\", \"molsysmt-base\"]}, {\"bootstrap_selectors\": [\"python >=3.11,<3.15\", \"pip\", \"setuptools >=68.0\", \"versioningit>=3.0\", \"h5py\", \"numpy\", \"pandas\", \"networkx\", \"tqdm\", \"matplotlib\", \"openmm\", \"pdbfixer\", \"ambertools\", \"openff-toolkit-base >=0.17.1\", \"openff-units >=0.3.0\", \"mdtraj\", \"mdanalysis\", \"rdkit\", \"parmed\", \"biopython\", \"ipywidgets\", \"py-mmcif >=1.1.1\", \"plotly\", \"anywidget\", \"aiohttp\", \"scikit-learn\", \"beartype\", \"packaging >=23\", \"pint\", \"pydantic\", \"pyyaml>=5.1\", \"scipy\", \"traitlets >=5\", \"nglview\", \"pytest\", \"pytest-receptor=0.6.0\", \"pytest-cov\", \"codecov\", \"pytest-xdist\", \"ruff=0.16.5\"], \"environment\": \"devtools/conda-envs/test_env_py313.yaml\", \"final_constraints\": {\"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.11\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\"}, \"name\": \"ci-3.13\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.13\", \"sources\": [\"smonitor-base\", \"depdigest-base\", \"pyunitwizard-base\", \"argdigest-base\", \"molsysviewer-base\", \"ackredit-base\", \"molsysmt-base\"]}, {\"bootstrap_selectors\": [\"python >=3.14,<3.15\", \"pip\", \"setuptools >=68.0\", \"versioningit>=3.0\", \"h5py\", \"numpy\", \"pandas\", \"networkx\", \"tqdm\", \"matplotlib\", \"openmm\", \"pdbfixer\", \"ambertools\", \"openff-toolkit-base >=0.17.1\", \"openff-units >=0.3.0\", \"mdtraj\", \"mdanalysis\", \"rdkit\", \"parmed\", \"biopython\", \"ipywidgets\", \"py-mmcif >=1.1.1\", \"plotly\", \"anywidget\", \"aiohttp\", \"scikit-learn\", \"beartype\", \"packaging >=23\", \"pint\", \"pydantic\", \"pyyaml>=5.1\", \"scipy\", \"traitlets >=5\", \"nglview\", \"pytest\", \"pytest-receptor=1.1.0\", \"pytest-cov\", \"codecov\", \"pytest-xdist\", \"ruff=0.16.5\"], \"environment\": \"devtools/conda-envs/test_env_py314.yaml\", \"final_constraints\": {\"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.14\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\"}, \"name\": \"ci-3.14\", \"narrowed\": [\"python\"], \"overlays\": [], \"python_minor\": \"3.14\", \"sources\": [\"smonitor-3.14\", \"depdigest-3.14\", \"pyunitwizard-3.14\", \"argdigest-3.14\", \"molsysviewer-3.14\", \"ackredit-3.14\", \"molsysmt-3.14\"]}], \"installed_check_required\": true, \"package\": \"pharmacophoremt\", \"proof_domain\": \"numeric-release-versions\", \"qualification\": \"declared-only\", \"routes\": [{\"kind\": \"shared-noarch\", \"path\": \"devtools/conda-build/meta.yaml\"}, {\"kind\": \"build-only\", \"path\": \"devtools/conda-envs/build_env.yaml\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/development_env.yaml\", \"purpose\": \"development\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/docs_env.yaml\", \"purpose\": \"documentation\"}, {\"kind\": \"resolved-package\", \"path\": \"devtools/conda-envs/importable_env.yaml\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/production_env.yaml\", \"purpose\": \"production\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/public_test_env_py314.yaml\", \"purpose\": \"test\"}, {\"kind\": \"build-only\", \"path\": \"devtools/conda-envs/setup_env.yaml\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/test_env.yaml\", \"purpose\": \"test\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/test_env_py313.yaml\", \"purpose\": \"test\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/test_env_py314.yaml\", \"purpose\": \"test\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/CI.yaml\", \"sha256\": \"25e86c29846199f622eed8eaad320b39813845ca84b3ee5953939cb5edb5f324\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/build_and_upload_conda_packages.yaml\", \"sha256\": \"18369344a3af440b5a8227469d14641b2f6e3fb7b8d5e52b95cf48ed37233f9a\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/conda_publication_governance.yaml\", \"sha256\": \"353f4080e59d509f922f7e18b426100f523c62f9958044fc9623ce4e30c37d85\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/molsyssuite-policy.yml\", \"sha256\": \"6cc62208156f765ca0456e3bc5f398934263e03afc7063c69afa692c5dafdffd\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/promote_conda_package.yaml\", \"sha256\": \"2932f0b180896c7d6d8352fb39aed0f2d1cc15dc4f4ff0b2e997c36320de644e\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/sphinx_docs_to_gh_pages.yaml\", \"sha256\": \"b988063c4cc81fd4532b05ea04724ec8822653b054e101a0da93b0e6702df6f9\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/test_installed_conda_package.yaml\", \"sha256\": \"d6c1713c4241ad3c00128901eab8ce9a4f761398d8e23d4fe863432461c33df0\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/feature_reuse_resource_probe.yaml\", \"sha256\": \"f983e38a0279eaa0511b7134f22cdf122bae394b936709ab7d0fdb1b79c917a0\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/feature_reuse_native_qualification.yaml\", \"sha256\": \"89f52d3982408db82961c73a48cfc8c5e1cc01f85d8efbb696f46914bea5d1e0\"}], \"schema\": \"molsyssuite.dependency-routes@3\", \"selected_context\": null, \"source_dependencies\": [\"ackredit-3.14\", \"ackredit-base\", \"argdigest-3.14\", \"argdigest-base\", \"depdigest-3.14\", \"depdigest-base\", \"molsysmt-3.14\", \"molsysmt-base\", \"molsysviewer-3.14\", \"molsysviewer-base\", \"pyunitwizard-3.14\", \"pyunitwizard-base\", \"smonitor-3.14\", \"smonitor-base\"], \"source_inputs\": [{\"path\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"reason\": \"Reviewed pip --no-deps manifest: published SMonitor0.22.1 correction received under #108/#6; ArgDigest0.17.1 and all other pins/scientific workflow commands preserved. Full exact pinned-source receiving remains separate.\", \"sha256\": \"380a0d5f758ab7cd375eed70da34f00768f2a0ea6d3f9eb20009ec40997f01ab\"}, {\"path\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"reason\": \"Reviewed pip --no-deps manifest: published SMonitor0.22.1 correction received under #108/#6; ArgDigest0.17.1 and all other pins/scientific workflow commands preserved. Full exact pinned-source receiving remains separate.\", \"sha256\": \"380a0d5f758ab7cd375eed70da34f00768f2a0ea6d3f9eb20009ec40997f01ab\"}], \"source_routes\": [{\"commit\": \"2147c7c641b7cba8a974b193207f686ee3ebe855\", \"id\": \"smonitor-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"smonitor\", \"reason\": \"Published SMonitor0.22.1 correction received by the independent reader under #108/#6: preserve visible coded errors when nested observations are filtered or silenced. Public payload receiving is scoped; exact pinned full source/installed gates remain #9/#10/#23.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/smonitor\"}, {\"commit\": \"13cc73780a7cb645546ae3f396177f98b86a8792\", \"id\": \"depdigest-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"depdigest\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/depdigest\"}, {\"commit\": \"2ab37a525ce99728ad8aee846b4a4f7acc4f1b65\", \"id\": \"pyunitwizard-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"pyunitwizard\", \"reason\": \"Retain existing exact source input; no pin or scientific command change\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/pyunitwizard\"}, {\"commit\": \"c9c9ee623dab5331fdfa4227bd784dd38620e18b\", \"id\": \"argdigest-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"argdigest\", \"reason\": \"ArgDigest 0.17.1 published correction received under #82/#6: preserve literal keywords/source identity and TypeError-compatible native I/O admission. Scientific commands unchanged; whole installed/public closure remains #10/#23.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/argdigest\"}, {\"commit\": \"ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352\", \"id\": \"molsysviewer-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"molsysviewer\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"integration\", \"url\": \"https://github.com/uibcdf/molsysviewer\"}, {\"commit\": \"71f7f1984de1a3925c32d29074784bb553e89bfc\", \"id\": \"ackredit-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"ackredit\", \"reason\": \"Retain existing exact source input; no pin or scientific command change\", \"role\": \"integration\", \"url\": \"https://github.com/uibcdf/ackredit\"}, {\"commit\": \"0faf1584d05ac47ddcebfc20d9c9978b7f4f230e\", \"id\": \"molsysmt-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"molsysmt\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/molsysmt\"}, {\"commit\": \"2147c7c641b7cba8a974b193207f686ee3ebe855\", \"id\": \"smonitor-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"smonitor\", \"reason\": \"Published SMonitor0.22.1 correction received by the independent reader under #108/#6: preserve visible coded errors when nested observations are filtered or silenced. Public payload receiving is scoped; exact pinned full source/installed gates remain #9/#10/#23.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/smonitor\"}, {\"commit\": \"13cc73780a7cb645546ae3f396177f98b86a8792\", \"id\": \"depdigest-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"depdigest\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/depdigest\"}, {\"commit\": \"2ab37a525ce99728ad8aee846b4a4f7acc4f1b65\", \"id\": \"pyunitwizard-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"pyunitwizard\", \"reason\": \"Retain existing exact source input; no pin or scientific command change\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/pyunitwizard\"}, {\"commit\": \"c9c9ee623dab5331fdfa4227bd784dd38620e18b\", \"id\": \"argdigest-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"argdigest\", \"reason\": \"ArgDigest 0.17.1 published correction received under #82/#6: preserve literal keywords/source identity and TypeError-compatible native I/O admission. Scientific commands unchanged; whole installed/public closure remains #10/#23.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/argdigest\"}, {\"commit\": \"ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352\", \"id\": \"molsysviewer-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"molsysviewer\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"integration\", \"url\": \"https://github.com/uibcdf/molsysviewer\"}, {\"commit\": \"71f7f1984de1a3925c32d29074784bb553e89bfc\", \"id\": \"ackredit-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"ackredit\", \"reason\": \"Retain existing exact source input; no pin or scientific command change\", \"role\": \"integration\", \"url\": \"https://github.com/uibcdf/ackredit\"}, {\"commit\": \"0faf1584d05ac47ddcebfc20d9c9978b7f4f230e\", \"id\": \"molsysmt-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"molsysmt\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/molsysmt\"}]}\n"
+    },
+    {
+      "name": "environments",
+      "code": 0,
+      "output": "{\n  \"changed\": []\n}\n"
+    },
+    {
+      "name": "whitespace",
+      "code": 0,
+      "output": ""
+    }
+  ],
+  "native_binary_unchanged_after_receiving": true,
+  "runtime_source_changes": []
+}

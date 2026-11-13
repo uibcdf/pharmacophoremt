@@ -14,6 +14,20 @@ supersedes: []
 
 # Public-library acquisition and screening
 
+## Retained-query screening continuation — 2026-11-12 UTC
+
+The [bounded contract](../prepared_feature_screening_journey.md) and extended
+[public recipe](../../docs/content/user/prepared_library_features.md) connect
+archived query features with native fixed-frame screening, stop/resume and saved
+export through existing tools. [Receiving](../evidence/prepared_feature_screening_20261112.json)
+records fourteen nm/pm blocks and four cold Python/CLI readers, one-plus-three
+confirmed work, refused incorrect input hash and zero new evaluations on complete
+replay. Four work items remain three original molecules. Query reuse does not
+remove candidate reading/recognition. Scoped existing tests pass 39 cases and
+strict docs pass; source execution is not new owned/public/platform receiving.
+Original bytes/geometry stay local and the earlier no-scoring receipt is intact.
+#108 stays active for its broader collection/product/scientific/human/scale work.
+
 ## Prepared-library native archive continuation — 2026-11-11 UTC
 
 The [public recipe](../../docs/content/user/prepared_library_features.md) and

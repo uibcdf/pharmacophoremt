@@ -1,89 +1,62 @@
 # Current development checkpoint
 
-Maintained 2026-11-11 UTC; owners LMMV/dprada. Follow the accepted
+Maintained 2026-11-12 UTC; owners LMMV/dprada. Follow the accepted
 [mature pre-1.0 staircase](roadmap.md), [workstreams](decisions_and_workstreams.md)
-and [capability inventory](capability_inventory.md). The prior checkpoint is
-preserved unchanged in [dated history](checkpoint_history_20261111_before_acquisition_recovery.md);
-earlier November 7/10/11 histories and original run identities remain intact.
+and [capability inventory](capability_inventory.md). The preceding checkpoint is
+preserved in [dated history](checkpoint_history_20261112_before_feature_screening.md);
+earlier receipts and run identities remain unchanged.
 
-## Corrected accumulated source checkpoint accepted
+## Retained-query screening journey received — #108
 
-Frozen **c5e952cd3a1fe5b452be6fccbf85d2fb64c3f1eb**, package observation
-0.5.0+17.gc5e952c, passes complete [terminal receiving](evidence/source_060_recovery_checkpoint_qualification_20261111.json):
-all eight Linux x86_64/macOS arm64 × Python3.11–3.14 cells pass **3,420 cases,
-zero skips, 48 retained warnings and 127 qualified XML paths each**. Required
-single-source acquisition, installed Git-context preflight, install/import,
-actual interpreter/architecture, full command and coverage verify. All eight
-warning tables contain no controlled fork deprecation. Reporting3/18/9/161,
-policy43109015680 and publication-controls43109024769 pass their native steps.
-Source43109007084/attempt1 is accepted; later receiving/documentation heads are
-not relabelled as this tested source. Native Linux3.13 upload success does not
-independently establish public Codecov freshness.
+The [public prepared-library recipe](../docs/content/user/prepared_library_features.md)
+now connects reconstructed native features to a saved query, fixed-frame prepared
+screening, a controlled stop/resume and complete saved export. The
+[bounded contract](prepared_feature_screening_journey.md) and
+[receiving](evidence/prepared_feature_screening_20261112.json) retain fourteen
+guide-block executions across nm/pm and four independent scientific-import-blocked
+Python/CLI readers. Four work items retain three original PubChem3D molecules;
+the repeated caffeine occurrence adds no independent sample. One confirmation
+survives an incorrect-input-hash refusal; three resume, and completed replay
+performs zero new evaluations. Native statuses/coverage agree across policies.
 
-[#197 acquisition](archive/duplicate_ci_molsysmt_acquisition.md) and
-[#192 isolation](archive/interruption_process_isolation.md) are resolved in their
-bounded declared scopes. The old4766946/43084105668 remains terminal failure:
-seven science jobs succeed and macOS3.11 fails duplicate acquisition before
-science. Its original [failure receipt](evidence/ci_molsysmt_acquisition_20261111.json),
-pending/three-cell history and [corrected five-cell receiving](evidence/source_060_recovery_partial_20261111.json)
-remain unchanged. No request/job is duplicated, rerun or cancelled. Canonical
-guide equality is refreshed separately from unchanged policy-v1.5.4.
+Candidate evaluation still reads prepared sources and performs recognition;
+only query construction reuses saved features. No new runtime API, algorithm,
+molecular collection or entirely cached candidate screening is introduced.
+Geometry-bearing assets remain local. Source receiving uses the existing editable
+workspace and actual PUW0.29.5 development source; it is separate from the older
+public-floor/owned-artifact receipts. The 512MiB DATA, one-CPU/thread execution
+peaks near 344 MiB RSS. Scoped prepared-run/progress/export tests pass 39 cases;
+strict docs pass. Known optional-Beartype messages and two initial controller
+errors remain recorded, without changing providers or weakening product checks.
 
-**Next concrete action:** review remaining #6 support-library boundaries and
-#108 public workflow acceptance against this qualified source, selecting the next
-bounded implementation gap without recreating MolSysMT-owned collections.
-MolSysMT#624 is rechecked open/unreceived. Full supported installed/public,
-independent human, biological and scale qualification remain separate. Keep the
-same finite one-CPU/thread controls and stopped #148/#165. No new tag/version or
-publisher is selected. Own recovery controls and raw remote captures remain local
-for LMMV/dprada retention review on November25; publish only reviewed own evidence.
+## Accumulated source gate and separate delivery boundaries
 
-## Prepared-library feature lifecycle received — #108
+Frozen **c5e952cd3a1fe5b452be6fccbf85d2fb64c3f1eb** retains its
+[complete terminal source qualification](evidence/source_060_recovery_checkpoint_qualification_20261111.json):
+all eight Linux x86_64/macOS arm64 × Python3.11–3.14 cells pass3420cases,
+zero skips/48retained warnings/127qualified XML paths each. Original failed
+4766946/43084105668 remains failed; #192/#197's bounded corrections stay archived.
+Later guide/documentation heads are not relabelled as that tested source.
 
-The [public recipe](../docs/content/user/prepared_library_features.md) and
-[owning contract](prepared_library_feature_archive.md) compose current public
-capture/payload/archive/reconstruction/model tools over the same three original
-PubChem3D prepared artifacts. [Receiving](evidence/prepared_library_features_20261111.json)
-passes sixteen guide-block executions across source/reused-owned × nm/pm and four
-fresh cold readers. Original feature counts are 9/11/5; a fourth row repeats the
-caffeine occurrence and payload, retaining three unique inputs/payloads. Full
-geometry/maps/references, source coordinates/bytes, explicit evaluated-empty
-coverage, ordinal lineage, pinned views and no-new-extraction credit survive.
-No molecular access/extraction is allowed during saved reuse/model construction.
+The feature capture/payload/archive/reconstruction contracts, original prepared
+artifacts and [0.6 scope review](release_0_6_0_scope_review.md) retain their evidence.
+The four incoming official-guide commits are received by fast-forward at85a5475.
+Runtime bodies remain unchanged in this increment. #9 retains later-head full
+coverage debt; no CI dispatch or tag/publication is selected. Immutable0.5.0
+remains2bff5dcf454bc5230f473237a49939215a60aab2; public delivery remains0.4.0.
 
-All 183 runtime bodies equal source7192041's existing owned artifact; 175 loaded
-modules per context are target-only, actual public PUW0.28.1's 93 files rehash,
-strict source/owned docs and local quality pass. The admission probe and full
-contexts stay within the unchanged 512MiB DATA envelope. The
-[public execution archive](evidence/prepared_library_features_20261111_public.json.gz)
-contains reviewed code/scalars/hashes only; original/new molecular geometry and
-contributor annotations remain local. This is no new acquisition/preparation,
-collection, fitting/search/score, benchmark, biological or human-usability claim.
+## Next concrete action and limits
 
-## Earlier API delivery and separate gates
+Prepare the small source/analysis/expected-outcome handoff offered for BindingMT
+#112 H0/H1, reusing native interaction/composition controls. Keep it separate from
+an implemented BindingMT adapter. Remaining #6 support adoption and #108 broader
+workflow acceptance remain partial. MolSysMT#624 stays open/unreceived; do not
+recreate provider-owned molecular collections. Independent human participants,
+biological validation, scale and full installed/public/platform qualification
+retain their own gates. #148/#165 remain stopped.
 
-The [updated scope review](release_0_6_0_scope_review.md) and
-[static receipt](evidence/release_060_corrected_scope_review_20261111.json) extend
-the original f722b45 comparison to frozen c5e952c. No nonprivate declaration is
-removed; one existing0.5.0 signature gains an optional keyword control. Against
-f722b45, both previously received expert controls are additive. Implementation
-declaration counts are not public API counts. Unreleased notes now describe these
-changes and the prepared-library recipe consistently; historical0.5.0 notes stay
-unchanged. Strict source/reused-owned docs pass; original controller failures
-remain distinct from scientific outcomes.
-
-Source7192041's [two explicit argument controls](feature_argument_controls.md)
-retain [535 selected source and exact-owned passes](evidence/feature_argument_controls_20261111.json),
-31 actual public-ArgDigest cases per context, complete original native/profile
-checks, sixteen guide blocks and strict docs. #6 remains partial. The
-[native feature lifecycle](feature_capture_provenance.md), #193–#196, retains its
-original source/owned receipts and format/compatibility limits.
-
-No 0.6.0 tag/Release/package/hosted-docs publication is selected. Immutable0.5.0
-remains at2bff5dcf454bc5230f473237a49939215a60aab2 with its own eight-cell source
-qualification; public delivery remains0.4.0. Full exact installed/public/platform
-closure stays #10/#23-owned. MolSysMT#624 remains unreceived; the human kit has
-zero participants, and biological validation/scale remain separate workstreams.
-#148/#165 stay stopped. Preserve one CPU/thread, low priority, 20% physical-memory
-reserve plus the task margin and finite own-process limits. No shared prefix,
-sibling, scientific pin or unrelated process is changed.
+Preserve shared-prefix/migration pauses, original native/data identities and
+one-CPU/thread low-priority limits. Slurm commands exist, but no usable allocation
+was established; the bounded direct execution reserved no shared resources.
+Keep at least20% physical RAM plus the task margin available. Retain this case's
+private assets/controller logs until the LMMV/dprada review on2026-11-26.

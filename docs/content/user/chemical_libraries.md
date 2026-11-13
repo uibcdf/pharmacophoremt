@@ -81,7 +81,10 @@ and the changes that require new features or a new saved run.
 The [prepared-library feature example](prepared_library_features.md) captures and
 archives a small received table, inspects evaluated-empty coverage and reconstructs
 complete inventories for model construction. It keeps repeated work distinct from
-independent molecules; screening and its query admission remain separate steps.
+independent molecules. Its continuation saves one retained query, admits an
+explicit fixed-frame screening plan, stops/resumes the run and exports every
+confirmed outcome. Candidate evaluation still reads prepared molecules and runs
+native recognition; query reuse is not candidate screening entirely from cache.
 
 ## Plan, run, resume and inspect
 
