@@ -1,4 +1,4 @@
-"""Scoped argument contracts for cached hypothesis curation.
+"""Scoped argument contracts for cached hypothesis curation and inspection.
 
 Optional edit fields do not weaken required geometry/InteractionSite contracts.
 """
@@ -124,6 +124,37 @@ def optional_sigma(obj):
     return None if obj is None else _contracts.digest_sigma(obj)
 
 
+def tolerance_nm(obj):
+    """Validate the legacy fixed-nm numeric comparison threshold."""
+    if isinstance(obj, (bool, np.bool_)) or not isinstance(obj, Real):
+        raise ArgumentError(
+            argument="tolerance_nm", reason="expected a finite nonnegative real in nm"
+        )
+    try:
+        value = float(obj)
+    except (OverflowError, TypeError, ValueError) as error:
+        raise ArgumentError(
+            argument="tolerance_nm", reason="expected a finite nonnegative real in nm"
+        ) from error
+    if not np.isfinite(value) or value < 0:
+        raise ArgumentError(
+            argument="tolerance_nm", reason="expected a finite nonnegative real in nm"
+        )
+    return value
+
+
+def centers(sites, *, allow_missing=False):
+    """Validate cached centers without inventing geometry or mutating a site."""
+    for site in sites:
+        if site.center is None:
+            if allow_missing:
+                continue
+            raise ArgumentError(
+                argument="center", reason="require a center for every site"
+            )
+        _contracts.digest_center(site.center)
+
+
 ARGUMENT_DIGESTERS = dict(
     pharmacophore=model,
     other=model,
@@ -139,6 +170,7 @@ ARGUMENT_DIGESTERS = dict(
     sigma=optional_sigma,
     in_place=_contracts.digest_essential,
     skip_digestion=_contracts.digest_essential,
+    tolerance_nm=tolerance_nm,
 )
 
 CONTRACTS = [
@@ -152,8 +184,9 @@ CONTRACTS = [
         "edit_pharmacophore",
     )
 ]
-CONTRACTS.append(
-    FunctionContract(caller="pharmacophoremt.pharmacophore.merge", admits="signature")
+CONTRACTS.extend(
+    FunctionContract(caller=f"pharmacophoremt.pharmacophore.{name}", admits="signature")
+    for name in ("merge", "similarity", "get_distance_matrix", "to_dataframe")
 )
 
 CONFIG = DigestConfig(

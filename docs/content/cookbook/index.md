@@ -30,6 +30,7 @@ complex_based_modeler
 structure_based_modeler
 ccd_interactions
 pharmacophore_curation
+cached_model_inspection
 prepared_workflow
 prepared_search_workflow
 prepared_consensus_workflow
@@ -72,6 +73,7 @@ eralpha_input_audit
 | Combine independently observed interaction families | [Joint hypotheses](interaction_composition.md): `from_interaction_collection()`, `compose_pharmacophores()`, labeled evidence and explicit participant reuse |
 | Exercise joint hypotheses on complete traceable molecular graphs | [CCD interactions](ccd_interactions.md): explicit public MolSysMT placements, both participant roles, retained empty families and independent steric veto |
 | Create and evaluate independent hypothesis variants | [Pharmacophore curation](pharmacophore_curation.md): exact cached site selection, copying, extraction and declared radius/sigma/weight/essential edits with original evidence |
+| Inspect native geometry and the existing ordered comparison | [Cached model inspection](cached_model_inspection.md): distance matrices, unit-preserving tables and explicit limits of greedy similarity |
 | Evaluate an existing placement | [Reference ligand](reference_ligand.md): `PoseEvaluator` |
 | Search prepared frames or request an explicitly chosen native hit list | [Prepared conformers](prepared_conformers.md): `RigidPoseSearch`, `ConformerScreening`, `VirtualScreening` |
 | Screen prepared files incrementally and export every source-linked outcome | [Incremental prepared screening](prepared_incremental_screening.md): `PreparedInput`, `screen_prepared`, caller-owned JSONL/CSV exports |

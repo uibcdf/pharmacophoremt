@@ -4,7 +4,7 @@ from argdigest import arg_digest
 from smonitor import signal
 
 from pharmacophoremt import pyunitwizard as puw
-from pharmacophoremt._private.arg_digestion.curation import CONFIG as _CURATION_CONFIG
+from pharmacophoremt._private.arg_digestion import curation as _cached_contracts
 from pharmacophoremt._private.smonitor import InvalidInteractionSiteError
 
 _CURATION_DIGEST = dict(
@@ -226,12 +226,26 @@ class Pharmacophore:
         )
 
     @signal(tags=["core", "pharmacophore", "query"])
-    def get_distance_matrix(self):
-        """Calculate the N x N distance matrix between interaction site centers."""
+    @arg_digest(config=_cached_contracts.CONFIG)
+    def get_distance_matrix(self, *, skip_digestion=False):
+        """Return independent N x N cached center distances as a length quantity.
+
+        Empty and singleton models return zero arrays of the corresponding size.
+        Larger models require finite explicit-unit centers for every site;
+        Cylinder has no inferred center. No molecular data or alignment is used.
+
+        Parameters
+        ----------
+        skip_digestion : bool, default=False
+            Bypass argument preprocessing for canonical inputs. Native model and
+            required center checks remain active.
+        """
+        _cached_contracts.model(self)
         if self.n_interaction_sites < 2:
             return puw.quantity(
                 np.zeros((self.n_interaction_sites, self.n_interaction_sites)), "nm"
             )
+        _cached_contracts.centers(self.interaction_sites)
         centers = self.get(get_center=True, skip_digestion=True)
         coords = puw.get_value(centers, to_unit="nm")
         diff = coords[:, np.newaxis, :] - coords[np.newaxis, :, :]
@@ -239,8 +253,22 @@ class Pharmacophore:
         return puw.quantity(dist, "nm")
 
     @signal(tags=["core", "pharmacophore", "inspect"])
-    def to_dataframe(self):
-        """Convert the set of interaction sites to a Pandas DataFrame."""
+    @arg_digest(config=_cached_contracts.CONFIG)
+    def to_dataframe(self, *, skip_digestion=False):
+        """Inspect cached sites in a new table, including an empty fixed schema.
+
+        Columns are index, features, shape, center and radius. Object cells retain
+        the site's actual feature list and quantities; mutating those objects
+        edits the model. Replacing a cell does not replace the original field.
+        Missing centers/radii stay None. Use native persistence for interchange.
+
+        Parameters
+        ----------
+        skip_digestion : bool, default=False
+            Bypass argument preprocessing for canonical inputs. Native model
+            consistency remains checked. No molecular data is accessed.
+        """
+        _cached_contracts.model(self)
         import pandas as pd
 
         data = []
@@ -254,7 +282,9 @@ class Pharmacophore:
                     "radius": site.radius,
                 }
             )
-        return pd.DataFrame(data)
+        return pd.DataFrame(
+            data, columns=["index", "features", "shape", "center", "radius"]
+        )
 
     # ------------------------------------------------------------------
     # Refinement API
@@ -344,7 +374,7 @@ class Pharmacophore:
         edit_pharmacophore(self, site_indices=index, sigma=sigma, in_place=True)
 
     @signal(tags=["core", "pharmacophore", "merge"])
-    @arg_digest(config=_CURATION_CONFIG)
+    @arg_digest(config=_cached_contracts.CONFIG)
     def merge(self, other, *, skip_digestion=False):
         """Compose independent constraints from self followed by other.
 
@@ -386,8 +416,10 @@ class Pharmacophore:
         merged.description = self.description
         return merged
 
-    def similarity(self, other, tolerance_nm=0.15):
-        """Compute Dice similarity between two pharmacophores.
+    @signal(tags=["core", "pharmacophore", "compare"])
+    @arg_digest(config=_cached_contracts.CONFIG)
+    def similarity(self, other, tolerance_nm=0.15, *, skip_digestion=False):
+        """Compute the legacy ordered, greedy Dice-style center/feature score.
 
         For each site in self, the best-matching site in other (same feature,
         minimum distance) is found. A pair is counted as matched when the
@@ -399,13 +431,32 @@ class Pharmacophore:
         ----------
         other : Pharmacophore
         tolerance_nm : float
-            Maximum centroid distance for a site-match (default 0.15 nm = 1.5 Å).
+            Finite nonnegative numeric distance in nm (default 0.15 nm = 1.5 Å).
+            This fixed-unit scalar does not follow application standard units.
+        skip_digestion : bool, default=False
+            Bypass argument preprocessing for canonical inputs. Native model,
+            numeric threshold and present-center validation remain active.
 
         Returns
         -------
         float
-            Dice similarity in [0, 1].
+            Ordered score in [0, 1]; two empty models score zero. Missing centers
+            remain unmatched and count in the denominator. Feature lists match
+            on any shared name; each counterpart is used at most once.
+
+        Notes
+        -----
+        Greedy assignment depends on site order and can change when the models
+        are swapped. This is not maximum-matching symmetric Dice similarity.
+        Coordinates must already share a caller-declared frame; no alignment,
+        orientation, radius, weight, essential or exclusion logic is applied.
+        The separate symmetric-method proposal is PharmacophoreMT #205.
         """
+        _cached_contracts.model(self)
+        _cached_contracts.model(other)
+        tolerance_nm = _cached_contracts.tolerance_nm(tolerance_nm)
+        _cached_contracts.centers(self.interaction_sites, allow_missing=True)
+        _cached_contracts.centers(other.interaction_sites, allow_missing=True)
         matched = 0
         used_other = set()
 

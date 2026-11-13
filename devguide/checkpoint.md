@@ -1,34 +1,31 @@
 # Current development checkpoint
 
-Maintained 2026-11-12 local date; owners LMMV/dprada. Follow the accepted
+Maintained 2026-11-13 local date; owners LMMV/dprada. Follow the accepted
 [mature pre-1.0 staircase](roadmap.md), [workstreams](decisions_and_workstreams.md)
 and [capability inventory](capability_inventory.md). The preceding checkpoint is
-preserved in [dated history](checkpoint_history_20261112_before_curation_controls.md);
+preserved in [dated history](checkpoint_history_20261112_before_inspection_controls.md);
 earlier receipts and run identities remain unchanged.
 
-## Cached curation and merge received — #203
+## Cached inspection contracts received in source — #204/#205
 
-The [curation contract](curation_argument_controls.md) supplies explicit controls
-for selection/copy/extraction/merge and defining closed contracts for all four
-curation tools and merge. Scientific bodies remain identical, excluding
-docstrings. Nested public tools retain their own admission; the outer bypass is
-not blindly propagated.
+The [inspection contract](cached_inspection_argument_controls.md) adds explicit
+controls/defining contracts for distance matrices, tables and the legacy ordered
+comparison. Native model/required-center/finite fixed-nm threshold checks remain
+active under bypass. Empty tables now keep their five columns; object-cell
+ownership and the numerical distance/greedy loops remain unchanged.
 
-[Combined receiving](evidence/curation_argument_controls_20261112.json) passes
-319 selected source/owned cases each, including 56 new controls and 56 public-
-ArgDigest cases per context. Public PUW 0.28.1, public Pytest Receptor 1.2.2,
-18 nm/pm guide blocks and 240 verified payloads/185 equal runtime bodies pass.
-All 167 observed owned runtime origins are target-only; actual SDK staging
-supplies unshipped support. The same c2ad4e6 wheel first fails four new save/read
-assertions due to ordinary pm roundoff, then passes the corrected explicit-nm
-oracle. Its hashed test overlay is separate from the runtime producer. Exact
-other metadata, original failures, source receipts and warning outputs remain.
+[Source evidence](evidence/cached_inspection_controls_source_20261112.json)
+passes 234 selected cases, including 65 new controls, six nm/pm guide blocks and
+13 quality operations (27 distribution, three reporting and18 archive tests,
+strict docs and repository checks). The original probe/57 red failures remain.
+The bounded inventory is150 callables/39 explicit controls/123 plans; #6 remains
+partial. Prior [#203 receiving](evidence/curation_argument_controls_20261112.json)
+keeps its original runtime/artifact and hashed test-overlay identities.
 
-The bounded inventory observes 150 callables/36 controls/120 plans; broader #6
-stays partial. Prior [#200/#201 evidence](evidence/interaction_argument_controls_20261112.json)
-retains original identities; actual BindingMT I0/H/I1 adoption remains owner work.
-No provider/native/prefix, scientific algorithm, performance, tag or publication
-change occurs.
+[#205](pending_proposals/symmetric_model_comparison.md) records the measured
+0.5 versus1.0 swapped-model counterexample. The existing greedy score is now
+labelled accurately; its symmetric replacement and compatibility decision remain
+separate, unimplemented scientific work.
 
 ## Accumulated source gate and separate delivery boundaries
 
@@ -49,10 +46,10 @@ public delivery remains0.4.0.
 
 ## Next concrete action and limits
 
-Review the remaining public object/comparison boundaries under #6, starting
-with similarity and cached distance/dataframe accessors. Establish their actual
-scientific/input contracts before migration; keep delegated and generated APIs
-separate in the bounded inventory. Public/API adoption is not complete.
+Freeze#204's committed source and receive one exact-owned wheel with the
+unchanged committed tests, actual SDK staging and public providers/examples.
+Then decide#205's symmetric-method and legacy compatibility contract before
+further comparison implementation. Public/API adoption is not complete.
 #108, MolSysMT#624, human/biological/scale and full installed/public/platform gates
 remain independent. Receive BindingMT I0/H/I1 later through its supplied package.
 #148/#165 remain stopped.

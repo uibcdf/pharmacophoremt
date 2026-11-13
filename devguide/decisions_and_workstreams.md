@@ -1,5 +1,18 @@
 # Decisions and active workstreams
 
+## Cached inspection and ordered comparison scope — 2026-11-12 local date
+
+[#204](cached_inspection_argument_controls.md) receives three explicit controls,
+native model/center/threshold guards and consistent empty-table columns.
+[Source evidence](evidence/cached_inspection_controls_source_20261112.json)
+passes234 cases (65new), six nm/pm guide blocks and13 quality operations. The
+original distance/greedy loops and table object cells retain their meanings.
+[#205](pending_proposals/symmetric_model_comparison.md) separately owns the
+executed asymmetric-score limitation and a future symmetric-method/compatibility
+decision. Next freeze/receive the exact owned artifact/public providers, then
+review that scientific contract. Broader#6/full gates and stopped#148/#165 stay
+separate; the bounded150-callable inventory now has39 controls/123 plans.
+
 ## Cached curation receiving and oracle correction — 2026-11-12 local date
 
 [#203](curation_argument_controls.md) is received with [complete evidence](evidence/curation_argument_controls_20261112.json):
