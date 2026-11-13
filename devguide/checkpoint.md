@@ -18,8 +18,12 @@ repeating ordinary validation. No molecular recognition/shape algorithm changes.
 passes37 new/235 existing cases, nm/pm public composition and strict docs. The
 first suspected default-validation defect was refuted. Original red controls,
 two pm-policy harness corrections and the reporting-inventory correction remain
-recorded. The first source freeze is ready for one exact owned artifact and
-public-ArgDigest receiving; that evidence remains pending here.
+recorded. The first d86f637 wheel builds and verifies184 source-equal runtime
+bodies but its provider-owned support stage exposes#199: five original snapshot
+files are absent from the declaration. Its first104 owned cases pass, then23/31
+argument cases fail on missing fixture data. The administrative guard reproduces
+the missing graph. [#199's correction](installed_snapshot_test_support.md)
+declares unchanged inputs; freeze a corrected source before owned recovery.
 
 Liliana's explicit public ArgDigest/skip-control and selective internal-digestion
 rule is now durable in root `AGENTS.md`. The bounded150-callable reexport audit

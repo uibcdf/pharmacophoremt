@@ -955,3 +955,30 @@ sha256 = "75ed110abb15515ed33806cdd03d9958eb231b3fbe2427dec0ffbc70aa287d1b"
 source = "tests/data/binding_interface_handoff/zero_essential.json"
 target = "tests/data/binding_interface_handoff/zero_essential.json"
 sha256 = "10c219e2edb0755b4c14c50958191564b8e55529701f894b984c01858792edd5"
+
+# Feature-snapshot helper input graph required by provider-owned staging; #199.
+
+[[installed_tests.support.files]]
+source = "tests/data/feature_snapshot/declaration.json"
+target = "tests/data/feature_snapshot/declaration.json"
+sha256 = "bdd0d68211d735a1fb3f58a77ded7c518209f7b5ef3e29b6de7b04889f960808"
+
+[[installed_tests.support.files]]
+source = "tests/data/feature_snapshot/ions.h5msm"
+target = "tests/data/feature_snapshot/ions.h5msm"
+sha256 = "791a6e18dcef92cc5fc6ce9df1c60e5e4963fceff4b5c939b1d5086037ff7ed3"
+
+[[installed_tests.support.files]]
+source = "tests/data/feature_snapshot/parents.json"
+target = "tests/data/feature_snapshot/parents.json"
+sha256 = "99e0b7d279746f98f07a310b3bb572247309fa09c73772e60d5f72352b877d4d"
+
+[[installed_tests.support.files]]
+source = "tests/data/feature_snapshot/ring.h5msm"
+target = "tests/data/feature_snapshot/ring.h5msm"
+sha256 = "6525b093b86dfe044d4469c70fe67eef46b8c3b855cbd9ff2d46bddfff65daa8"
+
+[[installed_tests.support.files]]
+source = "tests/data/feature_snapshot/water.h5msm"
+target = "tests/data/feature_snapshot/water.h5msm"
+sha256 = "0e8d133a0a24b5b40c561a1514d7d405d366596c123854268608f10fe49cb1a6"

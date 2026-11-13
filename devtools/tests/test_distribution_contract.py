@@ -321,6 +321,37 @@ class TestDistributionContract(unittest.TestCase):
         self.assertFalse(temporary.exists())
         self.assertNotIn("phmt_test_support", sys.modules)
 
+    def test_snapshot_helper_resolves_all_original_assets_in_provider_staging(self):
+        from devtools.scripts.installed_test_support import staged_support
+
+        isolated_path = [entry for entry in sys.path if Path(entry).resolve() != ROOT]
+        with patch.object(sys, "path", isolated_path):
+            with staged_support(
+                self.root,
+                self.inventory["installed_tests"]["support"],
+                ("pharmacophoremt", "molsysviewer_pharmacophoremt"),
+            ) as stage:
+                helper = importlib.import_module(
+                    "phmt_test_support.feature_snapshot_case"
+                )
+                self.assertTrue(helper.DIRECTORY.is_relative_to(stage.root))
+                self.assertEqual(
+                    {case["key"] for case in helper.declaration()["cases"]},
+                    {"ions", "water", "ring"},
+                )
+                parents = helper.parent_manifest()["parents"]
+                self.assertEqual(
+                    {parent["key"] for parent in parents}, {"ions", "water", "ring"}
+                )
+                for parent in parents:
+                    with self.subTest(parent=parent["key"]):
+                        self.assertEqual(
+                            helper.identity(helper.DIRECTORY / parent["file"]),
+                            {key: parent[key] for key in ("bytes", "sha256")},
+                        )
+                stage.check()
+        self.assertNotIn("phmt_test_support", sys.modules)
+
     def test_receptor_study_helpers_and_frozen_plans_are_privately_staged(self):
         from devtools.scripts.installed_test_support import staged_support
 
