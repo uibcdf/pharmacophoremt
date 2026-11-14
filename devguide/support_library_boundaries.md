@@ -1,12 +1,13 @@
 # Support-library boundaries and receiving limits
 
-## Rigid-search explicit controls — 2026-11-14
+## Rigid-search explicit controls — 2026-11-14 local date
 
-[#215](rigid_argument_controls.md) uses existing definition-owned contracts and
-shared Boolean/reader dependencies for three operation-local controls. Native
-and child bodies, default child admission and budget/ranking meaning remain.
-All 61 new controls pass in the wider 398-case source selection; exact owned
-receiving and strict docs are pending. Broader #6 remains partial.
+[#215](rigid_argument_controls.md) receives 72490a6 through the existing
+definition-owned provider contracts: [398 identical selected source/owned cases](evidence/rigid_argument_controls_20261114.json),
+61 new controls, 244 payloads/189 equal bodies, 171 target-only modules, actual
+SDK retirement and strict owned docs. Default public children, native budget/
+ranking bodies, nm/pm and active attribution remain. No provider floor or local
+argument engine changes. Broader #6 stays partial; ConformerScreening is next.
 
 ## Placed-pose explicit controls — 2026-11-14
 

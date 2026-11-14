@@ -10,21 +10,25 @@ and the [0.6.0 cut record](release_0_6_0_source_cut.md) retain their identities.
 
 ## Current increment — rigid-search public controls toward 0.7.0
 
-[#215](rigid_argument_controls.md) implements three independent keyword-only
-controls on RigidPoseSearch, with the native bodies/decorators unchanged and
-public child admission retained. Forwarded domains and the reader dependency
-remain byte-identical. All 61 new controls pass in the wider **398-case source
-selection**; twelve focused literal-bypass cases and whole-tree Ruff pass.
-The original baseline has 59 failures/two passes. An authored child-count
-correction is retained alongside the original outputs and guard snapshot.
+[#215](rigid_argument_controls.md) receives source
+**72490a636470f8daf06de11e537ffd9aa7a75ed4** and private development wheel
+`0.6.0+10.g72490a6`. The [receipt](evidence/rigid_argument_controls_20261114.json)
+records the same **398 selected source/owned cases passing**, including 61 new
+controls. All 244 payloads/189 source-equal Python bodies verify; all 171 loaded
+PHMT modules are owned-target-only. Actual immutable SDK support verifies and
+retires imports/resources. Strict owned docs and relevant reporting/archive/index/
+generated-environment/declared-route/Ruff checks pass. Unchanged administrative
+tooling retains its original 163-case evidence at 00b21a8, with no new run claim.
 
-Normal/bypass budget validation stays at its owner before enumeration/alignment;
-unproven incomplete searches remain failed/unscored. Real nm/pm checked/seeded
-controls retain attribution, explicit quantities and source custody. Relevant
-reporting/archive/index/generated-environment/declared-route checks pass.
-Unchanged administrative tooling retains its original 163-case evidence at
-00b21a8, with no new execution claim. Exact committed owned receiving and strict
-docs are next before closing this bounded issue. Broader #6 stays partial.
+Three independent keyword-only controls retain the native bodies/decorators and
+public child admission. Normal/bypass budget validation stays at its owner before
+enumeration/alignment; unproven incomplete searches remain failed/unscored.
+Real nm/pm checked/seeded cases retain attribution, explicit quantities and source
+custody. The original baseline, exact guard snapshots and authored child-count
+correction remain hash-bound. No provider floor, scientific method or schema
+changes. This is bounded Linux/Python 3.14.10 with public ArgDigest 0.17.1/PUW
+0.28.1/Pandas 3.1.1 and identified controlled other providers/inherited native
+extension. Broader #6 and later-head #9/full installed/public gates remain partial.
 
 ## Earlier bounded increments
 
@@ -71,10 +75,10 @@ unchanged. Full installed/public artifact, biological/human/scale acceptance,
 
 ## Next concrete action and resources
 
-Receive #215's exact committed owned wheel and strict docs, archive its bounded
-report with addressable guards, and keep later-head full-CI/public debt explicit.
-Then audit ConformerScreening controls with source-frame/failure accounting and
-independent RigidPoseSearch child admission retained. Retired SDF and other public
+Audit ConformerScreening constructor/evaluate/run explicit controls, preserving
+requested source-frame order, per-frame failure/score accounting and independent
+RigidPoseSearch child admission. Receive independent oracles before selecting
+that next bounded implementation. Retired SDF and other public
 APIs remain separate. Package/hosted-doc publishers stay inactive; stopped
 #148/#165 are not restarted.
 
@@ -82,6 +86,7 @@ Preserve shared-prefix/migration pauses and original native/data identities.
 Heavy work stays serial: one CPU/backend thread, low CPU/I/O priority, finite
 limits, pressure/swap/own-family monitoring and 20% physical RAM plus task margin
 available. Capacity is not reserved. Review final-review/tag-delivery,
-screening-export/run and placed-pose task-owned capsules/targets on 2026-11-28;
+screening-export/run, placed-pose and rigid-search task-owned capsules/targets
+on 2026-11-28;
 earlier tasks retain their own owners/dates. SDK test staging has retired its
 imports/resources; original published evidence and scientific inputs remain durable.

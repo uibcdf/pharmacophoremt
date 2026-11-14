@@ -44,6 +44,17 @@ An initial four-case authored count assumed one constructor child; the existing
 body validates both PoseEvaluator and copied Pharmacophore. Preserve that output
 and the exact original/final guard snapshots; production bodies did not change.
 
+The [receiving receipt](evidence/rigid_argument_controls_20261114.json) receives
+source 72490a6 and its private wheel `0.6.0+10.g72490a6`: the same 398 selected
+source/owned cases, zero failures/errors/skips, 244 payloads/189 source-equal
+Python bodies, 171 target-only modules and actual immutable SDK support
+verification/retirement. Strict owned documentation and relevant governance/Ruff
+checks pass. Public ArgDigest 0.17.1/PUW 0.28.1/Pandas 3.1.1 and identified
+controlled other providers/inherited native extension retain their actual scope.
+This is bounded Linux/Python 3.14.10 receiving, with complete supported-source/
+installed/public and later-head CI debt separate. Prior 163-case administrative
+evidence remains bound to its original unchanged-tool source, rather than rerun.
+
 Receive new controls against the original baseline, then a relevant native/facade
 source selection and the same exact committed owned-wheel selection. Use actual
 public ArgDigest 0.17.1/PUW 0.28.1, real nm/pm checked/seeded cases, attribution,

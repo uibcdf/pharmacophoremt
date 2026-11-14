@@ -1,12 +1,14 @@
 # Decisions and active workstreams
 
-## Rigid-search argument controls — 2026-11-14 local date
+## Rigid-search receiving complete — 2026-11-14 local date
 
-[#215](rigid_argument_controls.md) adds three independent controls without
-changing search bodies, default children or budget/ranking semantics. All 61 new
-controls pass in the wider 398-case source selection; relevant governance/Ruff
-checks pass. Exact owned/strict docs remain pending. Preserve original failures
-and separate prior unchanged-tool qualification. #6 and broader gates stay open.
+[#215](rigid_argument_controls.md) receives 72490a6 with the same
+[398 selected source/owned cases](evidence/rigid_argument_controls_20261114.json),
+61 new controls, 244 payloads/189 equal bodies, 171 target-only modules, actual
+SDK retirement and strict owned docs. Native bodies/budgets/checked-seeded meaning
+and independent children retain their contracts. Original failures/snapshots and
+prior unchanged-tool evidence stay distinct. Next audit ConformerScreening with
+frame/failure/score accounting retained. Broader #6 and qualification stay open.
 
 ## Placed-pose receiving complete — 2026-11-14 local date
 

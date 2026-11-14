@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (152)
+### Resolved (153)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -142,6 +142,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`retire_orphaned_molecular_utilities.md`](retire_orphaned_molecular_utilities.md) — [#46](https://github.com/uibcdf/pharmacophoremt/issues/46) — Retire unused molecular utilities and the name-grouped archival SDF reader. *(resolved, measured)*
 - [`retrospective_metric_key_collision.md`](retrospective_metric_key_collision.md) — [#100](https://github.com/uibcdf/pharmacophoremt/issues/100) — Retrospective EF settings must not overwrite colliding reported metric keys. *(resolved, measured)*
 - [`reuse_saved_progress.md`](reuse_saved_progress.md) — [#145](https://github.com/uibcdf/pharmacophoremt/issues/145) — Reuse verified criterion-independent counts within one immutable saved view. *(resolved, reproduced)*
+- [`rigid_argument_controls.md`](rigid_argument_controls.md) — [#215](https://github.com/uibcdf/pharmacophoremt/issues/215) — Expose independent public digestion controls on rigid pharmacophore search. *(resolved, measured)*
 - [`rigid_negative_ranking_contract.md`](rigid_negative_ranking_contract.md) — [#63](https://github.com/uibcdf/pharmacophoremt/issues/63) — Define a frame-independent molecular ranking contract for completed rigid negatives. *(resolved, measured)*
 - [`screening_export_argument_controls.md`](screening_export_argument_controls.md) — [#211](https://github.com/uibcdf/pharmacophoremt/issues/211) — Add explicit public digestion controls to cached screening table and CSV export. *(resolved, measured)*
 - [`screening_run_argument_controls.md`](screening_run_argument_controls.md) — [#213](https://github.com/uibcdf/pharmacophoremt/issues/213) — Validate the screening facade run control while preserving native admission timing. *(resolved, measured)*
