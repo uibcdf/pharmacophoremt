@@ -12,6 +12,10 @@ from pharmacophoremt._private.arg_digestion.screening_exports import (
     CONFIG as EXPORT_CONFIG,
 )
 from pharmacophoremt._private.arg_digestion.screening_facade import CONFIG
+from pharmacophoremt._private.arg_digestion.screening_run import (
+    CONFIG as RUN_CONFIG,
+)
+from pharmacophoremt._private.arg_digestion.screening_run import SKIP_CONTROL
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 from pharmacophoremt.screening.conformer_screening import ConformerScreening
 from pharmacophoremt.screening.pose_evaluation import PoseEvaluator
@@ -93,6 +97,7 @@ class VirtualScreening:
         self.evaluations = []
 
     @signal(tags=["screening", "run"])
+    @arg_digest.map(config=RUN_CONFIG, skip_digestion=SKIP_CONTROL)
     def run(
         self,
         molecular_database,
@@ -106,6 +111,13 @@ class VirtualScreening:
         Inputs are materialized once. Failures raise by default; on_error='record'
         keeps fit_value=None without turning a failed calculation into a negative.
         Source atom/frame/state options follow the explicitly selected native tool.
+
+        skip_digestion validates this facade's boolean control by default. Literal
+        True bypasses that admission only; native child validation remains active.
+        The legacy second positional control remains accepted; prefer the keyword.
+        Invalid controls refuse before entry without clearing previous caches or
+        acquiring inputs. Entered runs retain reset/materialization/native-error
+        ordering, including for invalid native options and failure policies.
         """
         self.matches = []
         self.evaluations = []

@@ -1,5 +1,17 @@
 # Strategic roadmap
 
+## Screening-run control implemented — 2026-11-14 local date
+
+[#213](screening_run_argument_controls.md) adds definition-owned pipeline-only
+ArgDigest admission for the existing facade skip control while preserving its
+legacy signature, run body and native post-reset/materialization admission.
+Invalid facade controls now refuse before entry; public child validation remains
+independent. All 52 new controls pass after 19 original failures/33 preservation
+passes. The wider 230-case source selection also passes. Next receive the exact
+owned cases and strict docs. This
+bounded slice continues toward 0.7.0 under partial #6; no tag/publication/matrix
+or stopped #148/#165 execution follows.
+
 ## Cached screening exports received — 2026-11-14 local date
 
 [#211/#212](screening_export_argument_controls.md) receive the exact 9fe608a

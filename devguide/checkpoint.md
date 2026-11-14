@@ -82,10 +82,17 @@ above; full installed/public artifact acceptance remains independent.
 
 ## Next concrete action
 
-Review `VirtualScreening.run()` under #6 before selecting its bounded admission
-contract: preserve the existing cache reset, instance-dependent native option
-delegation and failure timing. Receive independent oracles before changing that
-boundary. Retired SDF and other public facades remain separate. Do not restart stopped
+[#213](screening_run_argument_controls.md) now implements `VirtualScreening.run()`
+facade-owned skip admission through the public provider's pipeline-only mode.
+The legacy signature and complete execution body retain their ASTs; opaque
+native options still reach their owner after reset/materialization. New invalid
+facade controls refuse before entry with previous caches/borrowed inputs intact.
+The original baseline has 19 failures/33 preservation passes; all 52 new controls
+and a wider 230-case source selection pass with public ArgDigest 0.17.1.
+All 163 administrative controls, relevant governance and whole-tree Ruff checks
+pass. Exact committed owned receiving, strict docs and closeout remain the next
+concrete actions. Retired
+SDF and other public facades remain separate. Do not restart stopped
 measurements or implement a consumer-side molecular collection substitute.
 Package and hosted-doc publishers stay inactive under the delivered source-only
 decision. Immutable 0.6.0 remains the tested source, not a later main head.

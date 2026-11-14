@@ -2,6 +2,12 @@
 
 ## Unreleased — toward 0.7.0
 
+- Validate `VirtualScreening.run()`'s existing `skip_digestion` boolean with
+  ArgDigest. Keep the legacy positional control and native option validation
+  after cache reset/input materialization. Invalid facade controls now refuse
+  before run entry, preserving previous caches and borrowed input. Literal True
+  bypasses only the facade admission; the native child keeps its own checks.
+
 - Add explicit keyword-only `skip_digestion=False` to cached
   `VirtualScreening.to_dataframe()` and `to_csv()`, retaining scalar hit columns,
   empty schema, Pandas destination semantics and existing subclass overrides.

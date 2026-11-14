@@ -1,5 +1,16 @@
 # Support-library boundaries and receiving limits
 
+## Screening-run facade control — 2026-11-14
+
+[#213](screening_run_argument_controls.md) adopts the provider's documented
+pipeline-only mode, a definition-owned deliberately open forwarding contract and
+one registered pipeline delegating to the existing shared skip validator.
+Default/False and NumPy booleans validate; literal True bypasses this facade only.
+No argument binder, native-option union or provider edit is introduced. The 52
+new controls and wider 230-case source selection pass; exact-owned receiving
+remains pending. #6 stays
+partial for native public controls, other facades and broader qualification.
+
 ## Cached screening exports — 2026-11-14
 
 Receiving now closes #211/#212 at 9fe608a: the

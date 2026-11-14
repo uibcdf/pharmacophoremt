@@ -80,6 +80,13 @@ evidence. CSV paths and open file-like objects reach Pandas unchanged, retaining
 its I/O errors. A CSV bypass does not disable the public table call's own
 admission or replace an application's table override.
 
+`screen.run()` also validates its `skip_digestion` boolean. Prefer the keyword;
+the older second positional form remains accepted. Invalid facade controls leave
+previous results and borrowed input untouched. Native option and evaluation
+failures retain the entered-run behavior: both result caches are cleared first.
+An explicit True bypass applies to the facade only; the native evaluator still
+checks its own options and scientific inputs.
+
 For native JSON/YAML, PHMT-owned schema/envelope refusals carry `PHMT-E108`
 and remain `ValueError` instances. The existing nonstring `io.load()` filename
 refusal carries `PHMT-E109` and remains a `TypeError`. Scientific value checks

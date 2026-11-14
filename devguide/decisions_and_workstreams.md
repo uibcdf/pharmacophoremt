@@ -1,5 +1,15 @@
 # Decisions and active workstreams
 
+## Screening-run admission selected — 2026-11-14 local date
+
+[#213](screening_run_argument_controls.md) uses public ArgDigest pipeline-only
+processing for the facade-owned boolean; raw native options retain their owner's
+post-reset admission. Keep the positional control and original execution body.
+The 52 new controls and wider 230-case source selection pass (19 original
+failures/33 preservation passes).
+Exact owned receiving and strict docs follow. Broader #6 and full
+source/installed/public acceptance stay separate; no new tag or publisher.
+
 ## Cached screening export receiving complete — 2026-11-14 local date
 
 [#211/#212](screening_export_argument_controls.md) close their bounded source/

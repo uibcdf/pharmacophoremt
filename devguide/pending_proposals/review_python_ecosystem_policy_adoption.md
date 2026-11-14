@@ -14,6 +14,16 @@ supersedes: []
 
 # Review Python ecosystem policy adoption
 
+## Screening-run control implementation — 2026-11-14
+
+[#213](../screening_run_argument_controls.md) preserves the existing run signature
+and body while adopting public ArgDigest pipeline-only processing for the facade
+skip control. Native admission remains after reset and materialization. Source
+passes all 52 new controls and the wider 230-case selection; the baseline has
+19 failures/33 preservation passes.
+Exact owned receiving and strict docs are pending. #6 remains partial;
+no new provider floor, scientific method, public artifact or remote matrix follows.
+
 ## Cached screening export receiving — 2026-11-14
 
 [#211/#212](../screening_export_argument_controls.md) receive two explicit public
