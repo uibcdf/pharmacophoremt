@@ -15,6 +15,17 @@ supersedes: []
 
 # Full-CI contributor routes and skipped-push recovery
 
+## Actual 0.6.0 tag conformance received — 2026-11-14 local date
+
+[Delivery](../evidence/release_060_tag_delivery_20261114.json) receives immutable
+annotated tag 0.6.0 at qualified 327dcbb and successful actual-tag policy
+43619324161/attempt 1, with all required native steps at ref 0.6.0. One explicit
+policy request follows complete discovery of no automatic tag run; no scientific
+matrix is requested or repeated. [Suite notice #198](https://github.com/uibcdf/molsyssuite/issues/198)
+records the source-only event. Later documentary main heads retain exact-head
+debt here; full installed/public obligations remain #10/#23-owned. Existing
+daily/weekly recovery, immutable older tags and original run identities stay.
+
 ## Final source review and actual daily recovery — 2026-11-14 local date
 
 [Native receiving](../evidence/source_060_final_review_qualification_20261114.json)

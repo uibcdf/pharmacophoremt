@@ -1,0 +1,166 @@
+{
+  "schema": "pharmacophoremt.source-060-tag-delivery@1",
+  "recorded_at_utc": "2026-11-14T17:11:41.483192+00:00",
+  "owner_issue": 95,
+  "version": "0.6.0",
+  "source": "327dcbb1a35bb22bb8e8071c16514c7d1301ce47",
+  "route": "source tag only",
+  "tag": {
+    "annotated": true,
+    "object": "529fb2d01383513d7a21b105b76f51b288acf9fa",
+    "remote_target": "327dcbb1a35bb22bb8e8071c16514c7d1301ce47",
+    "verified": true,
+    "verified_at_utc": "2026-11-14T17:05:44.308704+00:00",
+    "annotation": {
+      "bytes": 1288,
+      "sha256": "67e5c52c1dabd705fde7aca9e92d60b171195f39d8bb86402a0807470704f92d"
+    },
+    "url": "https://github.com/uibcdf/pharmacophoremt/tree/0.6.0",
+    "old_050_unchanged": true
+  },
+  "qualification": {
+    "path": "source_060_final_review_qualification_20261114.json",
+    "bytes": 39253,
+    "sha256": "de8b31cd618cc95a6331b83f2a220f76708f8e4f96a8e4ed1761aab312a828f5"
+  },
+  "pre_tag_decision_issue_comment": 6881119876,
+  "committed_route_decision": "e3e4cf289abd7234516d60835491360bc454995f",
+  "tag_policy": {
+    "id": 43619324161,
+    "head_sha": "327dcbb1a35bb22bb8e8071c16514c7d1301ce47",
+    "head_branch": "0.6.0",
+    "event": "workflow_dispatch",
+    "attempt": 1,
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/43619324161",
+    "required_steps": [
+      {
+        "number": 5,
+        "name": "Check repository conformance",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "number": 7,
+        "name": "Check Python lint and imports",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "number": 8,
+        "name": "Check Python formatting",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ],
+    "capture_manifest": {
+      "bytes": 1850,
+      "sha256": "b64117cc192a0e9cb761bb9a333c13f8a4958fde8da1919a5ebd52a8caf9f41b"
+    },
+    "request": "One explicit exact-tag dispatch after complete native discovery found no automatic tag-policy run."
+  },
+  "source_evidence": {
+    "run": 43607484734,
+    "policy": 43615674988,
+    "publication_controls": 43615679874,
+    "passed_per_cell": 3703,
+    "cells": 8,
+    "skipped": 0,
+    "warnings_per_cell": 48,
+    "qualified_XML_paths_per_cell": 128,
+    "new_scientific_dispatches_for_this_delivery": 0
+  },
+  "private_canonical_probe": {
+    "version": "0.6.0",
+    "verified_payloads": 242,
+    "source_equal_runtime_bodies": 187,
+    "historical_JSON": true,
+    "CLI_help": true,
+    "strict_docs": true,
+    "public_artifact": false,
+    "receipt": "release_060_final_preparation_20261114.json"
+  },
+  "github_release": {
+    "created_by_this_work": false,
+    "fresh_lookup": "HTTP404; no Release at tag lookup"
+  },
+  "package_or_docs_publication": {
+    "publisher_invoked_by_this_work": false,
+    "registry_writes": false,
+    "complete_exact_source_run_inventory_has_no_publisher": true,
+    "observed_source_run_count": 4,
+    "public_artifact_qualified": false,
+    "global_registry_absence_inferred": false
+  },
+  "next_series": "0.7.0 development; exact feature scope remains #95-owned",
+  "separate_pending_gates": [
+    "PHMT#10/#23 complete public/installed dependency and artifact qualification",
+    "Broader #6 argument adoption and #108 product/library acceptance",
+    "MolSysMT#624 molecular collection ownership",
+    "Biological, representative human and scale qualification"
+  ],
+  "stopped148165_retried": false,
+  "shared_prefix_or_live_provider_changed": false,
+  "archival": "Optional primary/incubating review retained; no archival election, deposit or DOI claim.",
+  "central_notice": {
+    "issue": "uibcdf/molsyssuite#198",
+    "url": "https://github.com/uibcdf/molsyssuite/issues/198",
+    "state_at_reporting": "open; owner receiving separately pending"
+  },
+  "publication_review": "Reviewed scalar facts, object/target identities and own hashes only. Raw logs/captures/private wheel/provider paths remain local.",
+  "controls": {
+    "publish_tag.py": {
+      "bytes": 4900,
+      "sha256": "72a0772893a8915b3db56cea37e71c0725e3716abbbc22b2d4a9c19448c24dff"
+    },
+    "observe_or_request_policy.py": {
+      "bytes": 3126,
+      "sha256": "cd6701d71aac8253c724dc7164b9d05d75d03218c0684161afcf16b7ef6918f6"
+    },
+    "qualify_tag.py": {
+      "bytes": 5914,
+      "sha256": "eca47361da0a0c5eb20423197cedb1add6c8f7e2a112f362383692a7190e1034"
+    }
+  },
+  "post_tag_local_checks": {
+    "reporting_tests": 3,
+    "archive_tests": 18,
+    "indexes_current": true,
+    "markdown_targets": 635,
+    "strict_docs": {
+      "exit_code": 0,
+      "version": "0.6.0",
+      "existing_wheel_sha256": "061d322f9efcfba363aff5fd553e2ffc221ca86baf58cba999d231fcefae14bf",
+      "source": "327dcbb1a35bb22bb8e8071c16514c7d1301ce47",
+      "runtime_bodies_equal": 187,
+      "loaded_runtime_modules": 174,
+      "all_origins_owned": true,
+      "strict": true,
+      "notebooks": "off",
+      "publication": false
+    },
+    "quality_log_sha256": "d34927f7269c6282fc4f2e84096d4469f9c0f2dc2fb58367a3c3e67489315b1d",
+    "post_docs_original_payloads_rechecked": 242
+  },
+  "local_resources": {
+    "affinity": [
+      19
+    ],
+    "backend_threads": 1,
+    "nice": 19,
+    "io": "idle",
+    "docs_DATA_bytes_per_process": 1073741824,
+    "CPU_seconds_per_process": 120,
+    "supervised_wall_seconds": 180,
+    "own_family_RSS_stop_bytes": 1073741824,
+    "aggregate_cgroup_or_scheduler_allocation": false,
+    "capacity_reserved": false,
+    "available_physical_RAM_reserve_fraction": 0.2,
+    "additional_margin_bytes": 1610612736,
+    "max_sampled_own_family_RSS_bytes": 314277888,
+    "per_process_address_space": "No AS cap; DATA plus supervised family RSS and pressure controls.",
+    "raw_resource_record_sha256": "62c1000ce7681f52a52657ea60950a08fed2579a9446d3ddcc9ed3b9086ddc0f",
+    "raw_retention_review": "2026-11-28"
+  }
+}

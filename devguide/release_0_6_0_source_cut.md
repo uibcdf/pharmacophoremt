@@ -1,6 +1,33 @@
 # 0.6.0 source-only consolidation
 
-## Selected delivery — 2026-11-14 local date
+## Delivered source checkpoint — 2026-11-14 local date
+
+Immutable annotated [tag 0.6.0](https://github.com/uibcdf/pharmacophoremt/tree/0.6.0)
+now identifies qualified source `327dcbb1a35bb22bb8e8071c16514c7d1301ce47`.
+Annotated object `529fb2d01383513d7a21b105b76f51b288acf9fa` and its peeled
+target are independently verified remotely. The annotation binds the unchanged
+qualification receipt SHA-256 below. The [tag-delivery receipt](evidence/release_060_tag_delivery_20261114.json)
+receives actual delivery without rewriting the earlier preparation records.
+
+[Actual tag conformance 43619324161](https://github.com/uibcdf/pharmacophoremt/actions/runs/43619324161)
+passes at `head_branch=0.6.0`/attempt 1: repository conformance, Python lint/imports
+and formatting all execute successfully. One explicit exact-tag request follows
+complete native discovery with no automatic tag run; no scientific matrix is
+requested or repeated. Source/package versions retain their original pre-tag
+and private canonical identities.
+
+The required source-only notice is [MolSysSuite #198](https://github.com/uibcdf/molsyssuite/issues/198).
+Its owner receiving remains separate. No GitHub Release or package/docs publisher
+is invoked; the exact-tag Release lookup returns HTTP404. The public package
+remains 0.4.0 and source tag 0.5.0 retains its original object/target. Later
+documentary main commits are not the qualified tag source.
+
+Development continues toward the next 0.x increment. The next bounded candidate
+is the remaining prepared-native facade argument controls under #6, starting
+with cached `VirtualScreening` table/CSV operations. Complete installed/public,
+collection, biological/human/scale and stopped-work limits below remain owned.
+
+## Pre-tag selection — 2026-11-14 local date
 
 The maintainer selected the prepared source-only cut by instructing delivery to
 continue. [PHMT#95 selection](https://github.com/uibcdf/pharmacophoremt/issues/95#issuecomment-6881119876)

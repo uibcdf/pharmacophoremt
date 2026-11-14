@@ -1,6 +1,17 @@
 # Release notes
 
-## Unreleased — toward 0.6.0
+## 0.6.0 — source-only feature lifecycle
+
+Delivered 2026-11-14 as immutable [source tag 0.6.0](https://github.com/uibcdf/pharmacophoremt/tree/0.6.0)
+at `327dcbb1a35bb22bb8e8071c16514c7d1301ce47`. All eight Linux x86_64/macOS
+arm64 × Python 3.11–3.14 source cells pass 3,703 cases each, with zero skipped
+cases and 128 qualified coverage paths. Source policy and publication controls
+pass at that exact source. The private canonical 0.6.0 probe also receives
+historical JSON reading, CLI help and strict documentation.
+
+This milestone publishes source only. Public installation instructions continue
+to describe the qualified 0.4.0 package; the source tag does not provide a new
+public package or full supported installed/artifact qualification.
 
 - Declare Pandas >=2.3.3 directly for the existing table and CSV APIs, with
   aligned package, Conda and runtime-profile requirements. This minimum
@@ -93,9 +104,10 @@ Existing `get_features` and `from_inventory` arguments/default behavior are
 preserved; both signatures add optional keyword-only `skip_digestion=False`.
 
 Selected source/exact-owned receiving is recorded under #193–#196. Complete
-supported source qualification, installed/public delivery and the next version/tag
-decision retain their separate evidence. This section describes development;
-the public installation instructions still refer to the qualified 0.4.0 package.
+supported source qualification is received for this source-only milestone;
+installed/public delivery and broader scientific/product acceptance retain
+their separate evidence. Public installation instructions still refer to the
+qualified 0.4.0 package.
 
 ## 0.5.0 — source-only consolidation
 

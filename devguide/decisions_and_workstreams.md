@@ -1,5 +1,16 @@
 # Decisions and active workstreams
 
+## 0.6.0 source-only milestone delivered — 2026-11-14 local date
+
+[Delivery](evidence/release_060_tag_delivery_20261114.json) receives annotated
+0.6.0 object 529fb2d at the qualified 327dcbb source, bound original receipt and
+successful actual-tag policy 43619324161. [Suite notice #198](https://github.com/uibcdf/molsyssuite/issues/198)
+is delivered; central adoption remains separately owned. No package, Release,
+hosted-doc publisher or scientific matrix is requested. The next candidate slice
+is the remaining prepared-native facade argument adoption under #6, first cached
+VirtualScreening table/CSV methods. Broader #108/provider/installed/public and
+biological/human/scale work stays separate; #148/#165 remain stopped.
+
 ## Final 0.6.0 source review complete — 2026-11-14 local date
 
 [Native receiving](evidence/source_060_final_review_qualification_20261114.json)

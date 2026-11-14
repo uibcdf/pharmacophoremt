@@ -1,5 +1,16 @@
 # Current capability inventory
 
+## 0.6.0 source tag delivered — 2026-11-14 local date
+
+[Delivery](evidence/release_060_tag_delivery_20261114.json) records immutable
+annotated 0.6.0 at qualified 327dcbb and successful exact-tag conformance. The
+source release adds the native-feature lifecycle, symmetric comparison and
+further argument controls described in the [source-cut record](release_0_6_0_source_cut.md).
+This is a source-only milestone; public package 0.4.0, complete installed/public,
+broader #6/#108 and biological/human/scale acceptance stay distinct. The next
+candidate increment is prepared-native facade argument controls. The central
+event notice is [MolSysSuite #198](https://github.com/uibcdf/molsyssuite/issues/198).
+
 ## Final accumulated source qualified — 2026-11-14 local date
 
 [Qualification](evidence/source_060_final_review_qualification_20261114.json)

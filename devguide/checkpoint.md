@@ -3,7 +3,22 @@
 Maintained 2026-11-14 local date; owners LMMV/dprada. Follow the
 [mature pre-1.0 roadmap](roadmap.md), [workstreams](decisions_and_workstreams.md)
 and [capability inventory](capability_inventory.md). The preceding state is
-preserved in [dated history](checkpoint_history_20261114_before_final_review.md).
+preserved in [dated history](checkpoint_history_20261114_before_final_review.md)
+and the dated pre-tag decision in [the source-cut record](release_0_6_0_source_cut.md).
+
+## 0.6.0 source tag delivered
+
+[Delivery](evidence/release_060_tag_delivery_20261114.json) verifies immutable
+annotated tag 0.6.0, object **529fb2d01383513d7a21b105b76f51b288acf9fa**, at
+qualified **327dcbb1a35bb22bb8e8071c16514c7d1301ce47**. Actual tag-policy
+**43619324161**, attempt 1 at ref 0.6.0, passes all three required steps. One
+manual request follows complete discovery of no automatic tag run. The original
+qualification digest is bound in the annotation; no source matrix is rerun.
+[MolSysSuite #198](https://github.com/uibcdf/molsyssuite/issues/198) records the
+source-only event, with central receiving separately owned. No Release/package/
+hosted-doc publisher is invoked. The public package stays 0.4.0; source tag 0.5.0
+and earlier evidence retain their identities. Later documentary heads are not
+relabeled as the tested source.
 
 ## Complete final source review accepted — #95/#9/#23
 
@@ -36,37 +51,33 @@ nonprivate implementation declarations; these are not public-API counts or
 semantic proofs. Collection enumerates 3,703 cases without executing them.
 Strict docs pass in source, reused d4550f8 owned and private canonical 0.6.0
 contexts. The private probe preserves 242 wheel payloads/187 source-equal Python
-bodies, reads a historical three-site model and exercises CLI help. No public
-tag or artifact follows from that probe.
+bodies, reads a historical three-site model and exercises CLI help. That private
+wheel is unpublished; actual source-tag delivery is received separately above.
 
 Complete source acceptance is not public/installed-artifact, biological or scale
 qualification. Immutable 0.5.0 remains 2bff5dcf454bc5230f473237a49939215a60aab2;
-public delivery remains 0.4.0. #108, MolSysMT #624, BindingMT admission and stopped
-#148/#165 remain separate. The maintainer has now selected source-only tag 0.6.0
-at qualified 327dcbb; actual tag delivery/conformance remains pending.
+the public package remains 0.4.0. #108, MolSysMT #624, BindingMT admission and
+stopped #148/#165 remain separate. Actual tag delivery/conformance is received
+above; full installed/public artifact acceptance remains independent.
 
 ## Next concrete action
 
-The [selected source-only cut](release_0_6_0_source_cut.md) and
-[PHMT#95 decision](https://github.com/uibcdf/pharmacophoremt/issues/95#issuecomment-6881119876)
-fix qualified 327dcbb as the immutable 0.6.0 target. Next bind the qualification
-receipt in its annotated tag, recheck absence, receive actual tag conformance and
-publish the separate delivery receipt/MolSysSuite notice. Package and hosted-doc
-publishers stay inactive. Do not replace the target with a later untested head.
+Begin the next mature-0.x slice under #95/#6 by auditing the remaining explicit
+argument controls on the prepared-native facade, first cached
+`VirtualScreening.to_dataframe()`/`to_csv()`. Plan one compatible increment with
+default digestion, explicit boolean bypass and preserved native table/export
+semantics. Keep the broader public adoption visible; do not restart stopped
+measurements or implement a consumer-side molecular collection substitute.
+Package and hosted-doc publishers stay inactive under the delivered source-only
+decision. Immutable 0.6.0 remains the tested source, not a later main head.
 
-[#206](archive/pandas_dependency_ownership.md) is resolved by hard direct
-`pandas>=2.3.3` ownership across metadata, recipe, DepDigest and maintained
-runtime/test profiles. [Receiving](evidence/pandas_ownership_receiving_20261113.json)
-binds implementation d4550f8 and its private development wheel: 242 verified
-payloads, 187 source-equal Python bodies and 95 existing cases passing with
-public Pandas 2.3.3 and again with 3.1.1 outside the checkout. The source minimum
-run also passes 95 cases; these repeat the same selection. All 163 administrative
-controls, declared routes, generated environments, Ruff and three reporting
-controls pass. Original preparation/fixture failures and provider limitations
-are retained. Third-party Pandas adds no central member-graph edge.
+Resolved [#206](archive/pandas_dependency_ownership.md) retains hard direct
+`pandas>=2.3.3` ownership and its [source/owned public-version receiving](evidence/pandas_ownership_receiving_20261113.json).
+Third-party Pandas adds no central member-graph edge; original failures and
+provider limitations remain in that owning record.
 
 The [future tabular-engine study #210](pending_proposals/evaluate_tabular_backends.md)
-and MolSysMT#749 remain deferred and do not block this proposed cut. Keep complete
+and MolSysMT#749 remain deferred and did not block this delivered cut. Keep complete
 installed/public dependency closure under #10/#23, broader #6/#108 acceptance and
 the source/tag/public-package decisions distinct. Later documentary-head CI debt
 remains #9-owned; the 327dcbb acceptance above now includes the Pandas metadata.
@@ -75,5 +86,5 @@ Preserve shared-prefix/migration pauses and original native/data identities.
 Local heavy work stays serial, one CPU/backend thread, low CPU/I/O priority,
 finite limits and pressure/own-family monitoring. Reserve no shared capacity;
 keep 20% physical RAM plus task margin available. Review retained task logs on
-2026-11-28 for the final-review task; earlier tasks retain their own review dates.
+2026-11-28 for the final-review and tag-delivery tasks; earlier tasks retain their own dates.
 Original scientific inputs and published evidence remain durable.

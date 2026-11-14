@@ -14,6 +14,16 @@ supersedes: []
 
 # Required Python 3.14 adoption
 
+## 0.6.0 source-only tag delivered — 2026-11-14 local date
+
+[Delivery](../evidence/release_060_tag_delivery_20261114.json) receives annotated
+0.6.0 at qualified 327dcbb and successful actual-tag conformance 43619324161.
+[MolSysSuite #198](https://github.com/uibcdf/molsyssuite/issues/198) records the
+event. The eight supported source cells and original private canonical probe
+retain their precise scope; no full supported installed/public artifact gate or
+new public-support badge is inferred. Public package 0.4.0 remains unchanged,
+and this broader installed/dependency adoption report stays partial.
+
 ## Final accumulated source qualified — 2026-11-14 local date
 
 [Native receiving](../evidence/source_060_final_review_qualification_20261114.json)

@@ -1,5 +1,17 @@
 # Strategic roadmap
 
+## 0.6.0 source milestone delivered — 2026-11-14 local date
+
+[Delivery](evidence/release_060_tag_delivery_20261114.json) receives immutable
+annotated 0.6.0 at qualified 327dcbb and successful exact-tag policy 43619324161.
+[MolSysSuite #198](https://github.com/uibcdf/molsyssuite/issues/198) records the
+source-only event. The 3,703-case eight-cell source matrix is reused; no new
+scientific matrix, package, Release or hosted-doc publisher is invoked. Public
+package 0.4.0 and original 0.5.0 remain unchanged. Next audit the remaining
+prepared-native facade argument controls under #6, beginning with cached
+VirtualScreening tables/CSV, while #108/provider/installed/public/biological/
+human/scale work retains its own gates. #148/#165 remain stopped.
+
 ## Final 0.6.0 source preparation received — 2026-11-14 local date
 
 [Qualification](evidence/source_060_final_review_qualification_20261114.json)
