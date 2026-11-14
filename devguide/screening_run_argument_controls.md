@@ -45,6 +45,18 @@ cases. The implementation passes all 52 new controls and the wider 230-case
 source selection, with zero failures/errors/skips. Source/owned provider context,
 strict documentation and final receiving retain their separate receipts.
 
+The [receiving receipt](evidence/screening_run_controls_20261114.json) qualifies
+the same 230 selected cases in source 3050a78 and its exact private development
+wheel `0.6.0+6.g3050a78`, zero failures/errors/skips. All 244 payloads and 189
+source-equal Python bodies verify; all 171 loaded PHMT modules are target-only.
+Actual immutable SDK support verifies before/after tests and retires its imports/
+resources. Strict owned documentation passes with notebook execution off.
+Public ArgDigest 0.17.1/PUW 0.28.1/Pandas 3.1.1 and the identified controlled
+other providers/inherited native extension retain their actual identities.
+This is Linux/Python 3.14.10 receiving only. Prior minimum-Pandas export evidence
+is reused for its original unchanged-body scope, not relabelled as this receiving.
+All 163 administrative controls and relevant governance/Ruff checks pass.
+
 Receive `tests/test_screening_run_controls.py` against the original baseline,
 then the implementation with actual public ArgDigest 0.17.1 and existing wider
 native/facade/export controls. Freeze one committed source and receive its exact

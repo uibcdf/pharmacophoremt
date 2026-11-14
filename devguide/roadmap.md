@@ -1,5 +1,16 @@
 # Strategic roadmap
 
+## Screening-run facade control received — 2026-11-14 local date
+
+[#213](screening_run_argument_controls.md) closes its bounded scope at 3050a78.
+[Receiving](evidence/screening_run_controls_20261114.json) passes the same 230
+source/owned cases each, including 52 new controls, 244 payloads/189 equal Python
+bodies, actual SDK staging/retirement and strict owned docs. Keep the legacy
+signature, run body and native post-reset admission; invalid facade controls now
+refuse before entry. Next audit the native PoseEvaluator explicit-control family
+under partial #6. Complete source/installed/public and biological/human/scale
+gates remain separate; immutable 0.6.0 and stopped #148/#165 remain unchanged.
+
 ## Screening-run control implemented — 2026-11-14 local date
 
 [#213](screening_run_argument_controls.md) adds definition-owned pipeline-only

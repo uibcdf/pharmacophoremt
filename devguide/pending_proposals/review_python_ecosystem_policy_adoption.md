@@ -14,6 +14,19 @@ supersedes: []
 
 # Review Python ecosystem policy adoption
 
+## Screening-run facade receiving — 2026-11-14
+
+[#213](../screening_run_argument_controls.md) receives source 3050a78 and its
+exact private development wheel: [230 identical selected source/owned cases](../evidence/screening_run_controls_20261114.json)
+each, including 52 new controls, 244 payloads/189 source-equal bodies, 171
+owned-target-only modules and actual SDK staging/retirement. Strict owned docs,
+163 administrative and relevant governance/Ruff checks pass. The public provider's
+pipeline-only contract retains the original positional signature/run body and
+native post-reset admission. Invalid facade controls now refuse before entry.
+Original red outputs remain. #6 stays partial; next audit PoseEvaluator explicit
+controls without weakening scientific guards or native batch ownership. Full
+source/installed/public qualification retains its own debt and provider limits.
+
 ## Screening-run control implementation — 2026-11-14
 
 [#213](../screening_run_argument_controls.md) preserves the existing run signature

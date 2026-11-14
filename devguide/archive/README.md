@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (150)
+### Resolved (151)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -143,6 +143,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`reuse_saved_progress.md`](reuse_saved_progress.md) — [#145](https://github.com/uibcdf/pharmacophoremt/issues/145) — Reuse verified criterion-independent counts within one immutable saved view. *(resolved, reproduced)*
 - [`rigid_negative_ranking_contract.md`](rigid_negative_ranking_contract.md) — [#63](https://github.com/uibcdf/pharmacophoremt/issues/63) — Define a frame-independent molecular ranking contract for completed rigid negatives. *(resolved, measured)*
 - [`screening_export_argument_controls.md`](screening_export_argument_controls.md) — [#211](https://github.com/uibcdf/pharmacophoremt/issues/211) — Add explicit public digestion controls to cached screening table and CSV export. *(resolved, measured)*
+- [`screening_run_argument_controls.md`](screening_run_argument_controls.md) — [#213](https://github.com/uibcdf/pharmacophoremt/issues/213) — Validate the screening facade run control while preserving native admission timing. *(resolved, measured)*
 - [`select_saved_work_by_source.md`](select_saved_work_by_source.md) — [#166](https://github.com/uibcdf/pharmacophoremt/issues/166) — Select saved screening work by its exact original source key. *(resolved, measured)*
 - [`select_saved_work_status.md`](select_saved_work_status.md) — [#158](https://github.com/uibcdf/pharmacophoremt/issues/158) — Select saved work by native or pending status through the public reader. *(resolved, measured)*
 - [`skip_control_argument_label.md`](skip_control_argument_label.md) — [#212](https://github.com/uibcdf/pharmacophoremt/issues/212) — Name skip_digestion in shared boolean-control refusals. *(resolved, measured)*

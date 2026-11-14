@@ -1,5 +1,16 @@
 # Decisions and active workstreams
 
+## Screening-run receiving complete — 2026-11-14 local date
+
+[#213](screening_run_argument_controls.md) receives 3050a78 with the
+[same 230 selected source/owned cases](evidence/screening_run_controls_20261114.json),
+244 payloads/189 equal bodies, 171 owned-target-only modules, actual SDK support
+retirement and strict owned docs. Original 19 failures/33 preservation passes
+remain recorded. Next audit native PoseEvaluator constructor/evaluate/run explicit
+controls, preserving scientific guards and native batch ownership. #6 remains
+partial; later-head full CI/public qualification and stopped measurements stay
+separate. No source tag or publisher is selected.
+
 ## Screening-run admission selected — 2026-11-14 local date
 
 [#213](screening_run_argument_controls.md) uses public ArgDigest pipeline-only

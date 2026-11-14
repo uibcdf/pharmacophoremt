@@ -2,6 +2,14 @@
 
 ## Screening-run facade control — 2026-11-14
 
+Receiving closes bounded #213 at 3050a78: the
+[receipt](evidence/screening_run_controls_20261114.json) records the same 230
+source/owned cases, 52 new controls, 244 payloads/189 source-equal bodies,
+171 owned-target-only modules, actual SDK staging/retirement and strict owned
+docs. Public provider/native limitations remain explicit. #6 stays partial;
+native PoseEvaluator explicit controls are the next audit. The implementation
+phase below retains its original source-only scope.
+
 [#213](screening_run_argument_controls.md) adopts the provider's documented
 pipeline-only mode, a definition-owned deliberately open forwarding contract and
 one registered pipeline delegating to the existing shared skip validator.

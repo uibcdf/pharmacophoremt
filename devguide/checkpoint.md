@@ -6,6 +6,27 @@ and [capability inventory](capability_inventory.md). The preceding state is
 preserved in [dated history](checkpoint_history_20261114_before_final_review.md)
 and the dated pre-tag decision in [the source-cut record](release_0_6_0_source_cut.md).
 
+## Screening-run facade control received — toward 0.7.0
+
+[#213](screening_run_argument_controls.md) receives source
+**3050a7806e2c6bef12378f993bc54c2d147b6881** and its exact private development
+wheel `0.6.0+6.g3050a78`. The [receipt](evidence/screening_run_controls_20261114.json)
+records the same 230 selected cases passing in source and owned contexts, including
+52 new controls. The original baseline has 19 failures/33 preservation passes.
+All 244 payloads/189 source-equal Python bodies verify; all 171 loaded PHMT
+modules are owned-target-only. Actual SDK support verifies and retires. Strict
+owned docs, 163 administrative controls, reporting/archive/index/generated-
+environment/declared-route and whole-tree Ruff checks pass.
+
+The public ArgDigest pipeline validates only the facade skip control, retaining
+the original positional signature and complete execution body. New invalid
+facade controls refuse before entry with previous caches/borrowed input intact;
+native admission still follows reset/materialization even under facade bypass.
+No control is blindly forwarded. This is bounded Linux/Python 3.14 receiving
+with public ArgDigest 0.17.1/PUW 0.28.1/Pandas 3.1.1 and identified controlled
+other providers/inherited native extension, not full source/installed/public
+qualification. Broader #6 and later-head #9 debt remain separate.
+
 ## Cached screening export controls received — toward 0.7.0
 
 [#211/#212](screening_export_argument_controls.md) receive two keyword-only
@@ -82,17 +103,11 @@ above; full installed/public artifact acceptance remains independent.
 
 ## Next concrete action
 
-[#213](screening_run_argument_controls.md) now implements `VirtualScreening.run()`
-facade-owned skip admission through the public provider's pipeline-only mode.
-The legacy signature and complete execution body retain their ASTs; opaque
-native options still reach their owner after reset/materialization. New invalid
-facade controls refuse before entry with previous caches/borrowed inputs intact.
-The original baseline has 19 failures/33 preservation passes; all 52 new controls
-and a wider 230-case source selection pass with public ArgDigest 0.17.1.
-All 163 administrative controls, relevant governance and whole-tree Ruff checks
-pass. Exact committed owned receiving, strict docs and closeout remain the next
-concrete actions. Retired
-SDF and other public facades remain separate. Do not restart stopped
+Audit explicit controls on the native `PoseEvaluator` constructor/evaluate/run
+family under #6 before selecting its next bounded contract. Preserve mandatory
+scientific guards and native batch option ownership; examine hidden provider
+bypass behavior before introducing an explicit public parameter. Retired SDF
+and other public APIs remain separate. Do not restart stopped
 measurements or implement a consumer-side molecular collection substitute.
 Package and hosted-doc publishers stay inactive under the delivered source-only
 decision. Immutable 0.6.0 remains the tested source, not a later main head.
@@ -116,3 +131,5 @@ keep 20% physical RAM plus task margin available. Review retained task logs on
 Original scientific inputs and published evidence remain durable.
 Review the screening-export capsule/owned target on 2026-11-28; its durable
 compressed evidence retains the original outputs and exact controls.
+Review the screening-run capsule/owned target on 2026-11-28; original red/source/
+owned outputs and actual provider/staging receipts are in its durable archive.
