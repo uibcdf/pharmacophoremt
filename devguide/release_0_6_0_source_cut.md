@@ -1,4 +1,20 @@
-# Prepared 0.6.0 source-only cut
+# 0.6.0 source-only consolidation
+
+## Selected delivery — 2026-11-14 local date
+
+The maintainer selected the prepared source-only cut by instructing delivery to
+continue. [PHMT#95 selection](https://github.com/uibcdf/pharmacophoremt/issues/95#issuecomment-6881119876)
+fixes immutable annotated tag `0.6.0` at qualified source
+`327dcbb1a35bb22bb8e8071c16514c7d1301ce47`. No GitHub Release, package
+upload/promotion or hosted-documentation publication is selected. Existing
+source, private canonical-wheel and optional-archival reviews below apply.
+
+Next create and verify that exact tag and receive its actual conformance. Tag
+delivery is pending at this decision checkpoint. A later documentary main commit
+is not the tested tag target. Keep the original qualification receipt immutable;
+the separate delivery receipt will record the actual public object and outcome.
+
+## Earlier prepared proposal
 
 Owners LMMV/dprada; prepared 2026-11-14 local date; tracked in PHMT#95/#9/#23.
 This is a concrete proposal with completed source qualification and a private

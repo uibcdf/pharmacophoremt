@@ -42,16 +42,17 @@ tag or artifact follows from that probe.
 Complete source acceptance is not public/installed-artifact, biological or scale
 qualification. Immutable 0.5.0 remains 2bff5dcf454bc5230f473237a49939215a60aab2;
 public delivery remains 0.4.0. #108, MolSysMT #624, BindingMT admission and stopped
-#148/#165 remain separate. No public 0.6.0 version/tag/publication is selected.
+#148/#165 remain separate. The maintainer has now selected source-only tag 0.6.0
+at qualified 327dcbb; actual tag delivery/conformance remains pending.
 
 ## Next concrete action
 
-The [prepared source-only proposal](release_0_6_0_source_cut.md) names qualified
-327dcbb as the proposed immutable 0.6.0 tag target. Next record the version/route
-selection under #95; if selected, bind the qualification receipt in its annotated
-tag, recheck absence, receive actual tag conformance and publish the separate
-delivery receipt/MolSysSuite notice. Package and hosted-doc publishers stay
-inactive. Do not replace the target with a later untested documentary head.
+The [selected source-only cut](release_0_6_0_source_cut.md) and
+[PHMT#95 decision](https://github.com/uibcdf/pharmacophoremt/issues/95#issuecomment-6881119876)
+fix qualified 327dcbb as the immutable 0.6.0 target. Next bind the qualification
+receipt in its annotated tag, recheck absence, receive actual tag conformance and
+publish the separate delivery receipt/MolSysSuite notice. Package and hosted-doc
+publishers stay inactive. Do not replace the target with a later untested head.
 
 [#206](archive/pandas_dependency_ownership.md) is resolved by hard direct
 `pandas>=2.3.3` ownership across metadata, recipe, DepDigest and maintained
