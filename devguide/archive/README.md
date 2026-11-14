@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (151)
+### Resolved (152)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -101,6 +101,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`pharmer_import_profile.md`](pharmer_import_profile.md) — [#163](https://github.com/uibcdf/pharmacophoremt/issues/163) — Define and enforce an explicit supported Pharmer query import profile. *(resolved, measured)*
 - [`point_center_inspection.md`](point_center_inspection.md) — [#142](https://github.com/uibcdf/pharmacophoremt/issues/142) — Expose Point centers consistently in native geometry inspection. *(resolved, reproduced)*
 - [`portable_developer_handoff.md`](portable_developer_handoff.md) — [#107](https://github.com/uibcdf/pharmacophoremt/issues/107) — Prepare a truthful portable onboarding and machine-migration handoff. *(resolved, measured)*
+- [`pose_argument_controls.md`](pose_argument_controls.md) — [#214](https://github.com/uibcdf/pharmacophoremt/issues/214) — Expose independent public digestion controls on the placed-pose evaluator. *(resolved, measured)*
 - [`pose_radius_boundary_units.md`](pose_radius_boundary_units.md) — [#84](https://github.com/uibcdf/pharmacophoremt/issues/84) — Preserve inclusive positive-site radius decisions across application units. *(resolved, measured)*
 - [`preloaded_pint_bootstrap.md`](preloaded_pint_bootstrap.md) — [#191](https://github.com/uibcdf/pharmacophoremt/issues/191) — Respect an already loaded Pint registry during unit-policy initialization. *(resolved, reproduced)*
 - [`prepare_pharmer_p1.md`](prepare_pharmer_p1.md) — [#161](https://github.com/uibcdf/pharmacophoremt/issues/161) — Freeze the P1 spherical-interior comparison and receive its PHMT arm. *(resolved, measured)*

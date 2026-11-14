@@ -14,6 +14,18 @@ supersedes: []
 
 # Review Python ecosystem policy adoption
 
+## Placed-pose public receiving — 2026-11-14
+
+[#214](../pose_argument_controls.md) receives source 00b21a8 and its exact private
+wheel: [355 identical selected source/owned cases](../evidence/pose_argument_controls_20261114.json)
+each, including 60 new controls, 244 payloads/189 equal bodies, 172 target-only
+modules, actual SDK retirement and strict owned docs. Reader-order dependency,
+local controls and forwarded domains use the published provider without an
+argument-engine fork. Native bodies, child admission, real nm/pm and active
+attribution remain. Original authored/baseline/prototype failures are retained.
+#6 stays partial; next audit RigidPoseSearch. Full supported source/installed/
+public and biological/scale qualification keep their own gates and provider limits.
+
 ## Placed-pose control implementation — 2026-11-14
 
 [#214](../pose_argument_controls.md) adds explicit keyword-only controls to

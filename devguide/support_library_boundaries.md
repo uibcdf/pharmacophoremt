@@ -2,6 +2,14 @@
 
 ## Placed-pose explicit controls — 2026-11-14
 
+Receiving closes bounded #214 at 00b21a8: the
+[receipt](evidence/pose_argument_controls_20261114.json) records 355 identical
+source/owned selected cases each, 60 new controls, 244 payloads/189 equal bodies,
+172 target-only modules, actual SDK retirement, strict owned docs and original
+red/authored/prototype failures. Real nm/pm and active attribution pass. No
+provider defect/floor/change or full public closure is claimed. #6 remains
+partial; next audit RigidPoseSearch. The source phase below remains historical.
+
 [#214](pose_argument_controls.md) adds three explicit controls with the existing
 definition-owned ArgDigest contracts. A canonical-named database digester declares
 its skip dependency, using public provider topological ordering before reader

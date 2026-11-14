@@ -1,5 +1,16 @@
 # Decisions and active workstreams
 
+## Placed-pose receiving complete — 2026-11-14 local date
+
+[#214](pose_argument_controls.md) receives 00b21a8 with the same
+[355 selected source/owned cases](evidence/pose_argument_controls_20261114.json),
+60 new controls, 244 payloads/189 equal bodies, 172 target-only modules, actual
+SDK retirement and strict owned docs. The three public controls remain local;
+reader admission uses the provider's declared dependency ordering. Native
+scientific bodies, nm/pm meaning, active attribution and child admission retain
+their contracts. Next audit RigidPoseSearch explicit controls. Broader #6 and
+full-source/installed/public/biological/scale gates remain separate.
+
 ## Placed-pose argument controls — 2026-11-14 local date
 
 [#214](pose_argument_controls.md) adopts three operation-local controls without

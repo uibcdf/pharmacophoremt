@@ -1,5 +1,17 @@
 # Strategic roadmap
 
+## Placed-pose controls received — 2026-11-14 local date
+
+[#214](pose_argument_controls.md) receives source 00b21a8 and its exact private
+wheel: [355 identical selected source/owned cases](evidence/pose_argument_controls_20261114.json)
+each, including 60 new controls, 244 payloads/189 equal bodies, 172 target-only
+modules, actual SDK retirement and strict owned docs. Three independent controls,
+forwarded-domain separation and reader-order dependency retain native scientific
+bodies, child admission, nm/pm meaning and active attribution. Original failures
+are preserved. Next audit RigidPoseSearch explicit controls under partial #6;
+complete supported/public/biological/human/scale gates and stopped measurements
+remain separate. No tag, publisher or remote matrix is selected.
+
 ## Placed-pose controls implemented — 2026-11-14 local date
 
 [#214](pose_argument_controls.md) adds three explicit keyword-only controls to

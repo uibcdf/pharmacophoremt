@@ -54,6 +54,16 @@ original failure is retained. The six reader-order prototype failures and fiftee
 ambiguous-digester-name refusals remain separate from the passing final controls.
 The canonical dependency uses the published provider without modification.
 
+The [receiving receipt](evidence/pose_argument_controls_20261114.json) receives
+source 00b21a8 and its exact private development wheel `0.6.0+8.g00b21a8`: the
+same 355 selected source/owned cases, zero failures/errors/skips, 244 verified
+payloads/189 source-equal Python bodies and 172 owned-target-only modules. Actual
+immutable SDK support verifies and retires imports/resources. Strict owned docs,
+163 administrative controls and relevant governance/Ruff checks pass. Public
+ArgDigest 0.17.1/PUW 0.28.1/Pandas 3.1.1 and identified controlled other providers/
+inherited native extension retain their actual identities. Linux/Python 3.14.10
+receiving does not establish complete supported source/installed/public closure.
+
 Receive the original red guards, corrected authored assumptions and 60 new
 controls with public ArgDigest 0.17.1/PUW 0.28.1 and real native placed poses under
 nm/pm policies. Wider native/facade regressions and AST body preservation precede
