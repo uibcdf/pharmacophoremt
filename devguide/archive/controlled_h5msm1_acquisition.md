@@ -1,9 +1,9 @@
 ---
 summary: Align controlled MolSysMT acquisition with immutable H5MSM 1.0 inputs.
 issue: uibcdf/pharmacophoremt#207
-status: partial
+status: resolved
 opened: 2026-11-13
-closed:
+closed: 2026-11-13
 severity: medium
 verification: measured
 area: [ci, integration]
@@ -111,3 +111,27 @@ attempt 1. Policy/publication/reporting pass; all eight scientific jobs have
 runners. Full terminal science and XML are still pending. #209 closes only its
 case-oracle correction. Observe the same source execution; preserve all failed
 originals and do not automatically duplicate, rerun or cancel jobs.
+
+## Complete corrected-source qualification — 2026-11-13 local date
+
+[Terminal receiving](../evidence/source_060_recovery_checkpoint_qualification_20261113_eralpha.json)
+accepts frozen e7d3e4914dc7113ed9468c4a9c19eb3c5840bf6f, source run
+43520902352, attempt 1. Every Linux x86_64/macOS arm64 × Python 3.11–3.14
+cell executes the unchanged full command and passes 3,703 cases, with zero skips
+and 128 exact unique qualified XML paths. All 48 warnings per cell remain
+recorded. Mandatory acquisition, installed-context verification, actual import/
+interpreter/architecture and coverage steps pass. Reporting receives 3/18/9/162
+controls. Policy 43520910099 and publication controls 43520918803 pass their
+required native steps at that same source. Original rejected runs remain failed.
+
+The receiver initially retained an obsolete administrative count of 161 and
+refused before acceptance. The actual 162 agrees with an independent AST inventory
+of the exact frozen unittest classes; the original controller/log is retained.
+All three full source/control captures complete before the accepted invocation.
+No scientific assertion, required job or XML scope was weakened.
+
+This resolves the independently scoped acquisition/recovery theme. Later
+receipt/documentation heads are not relabelled as that frozen source. #9/#23
+retain their broader exact-head/installed/public obligations; #206, biological/
+human/scale work and stopped #148/#165 remain separate. No tag/package/publication
+is selected by this source acceptance.

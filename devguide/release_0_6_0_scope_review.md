@@ -1,5 +1,18 @@
 # 0.6.0 accumulated scope review
 
+## Complete controlled-source checkpoint — 2026-11-13 local date
+
+[Terminal receiving](evidence/source_060_recovery_checkpoint_qualification_20261113_eralpha.json)
+accepts e7d3e49 / source43520902352 / attempt1: eight Linux x86_64/macOS arm64 ×
+Python 3.11–3.14 cells pass 3,703 cases, zero skips, 48 retained warnings and
+128 exact qualified XML paths each. Reporting 3/18/9/162, frozen policy and
+publication controls pass at that same source. #207 is resolved and
+[archived](archive/controlled_h5msm1_acquisition.md); original failed runs remain
+failed. Later documentary heads and installed/public/biological/scale gates
+remain separate. Next resolve Pandas ownership #206, then complete the 0.6.0
+scope/install review and prepare one candidate. No tag/publication is selected
+by this receipt; broader #6/#108 and stopped #148/#165 remain independent.
+
 Owners LMMV/dprada; PHMT#95; reviewed 2026-11-11 UTC. This is preparation,
 not a candidate/version/tag/publication decision. The mature 0.x staircase remains
 scope-driven, with later minor versions available before 1.0.
@@ -46,7 +59,7 @@ independent of the existing scoped scientific/source-owned receipts.
 Unreleased notes now include later reference/interaction/curation/inspection
 controls and the symmetric method. Broader#6 adoption remains partial. Scheduled
 run43459510556 at9b50fde is rejected: four Linux failures and four cancelled
-macOS cells. [#207](pending_bugs/controlled_h5msm1_acquisition.md) corrects the
+macOS cells. [#207](archive/controlled_h5msm1_acquisition.md) corrects the
 old0.5-only molecular reader acquisition for unchanged1.0 fixtures;
 [#208](archive/recognition_producer_oracle.md) separates explicitly checked fresh
 recognition declarations from original producers. Local52-case native/reference

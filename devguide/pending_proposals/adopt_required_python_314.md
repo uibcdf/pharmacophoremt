@@ -14,6 +14,17 @@ supersedes: []
 
 # Required Python 3.14 adoption
 
+## Complete corrected-source receiving — 2026-11-13 local date
+
+[Terminal receiving](../evidence/source_060_recovery_checkpoint_qualification_20261113_eralpha.json)
+accepts e7d3e49 / 43520902352 / attempt1 with every supported native cell:
+3,703 passes, zero skips, 48 warnings and 128 exact qualified XML paths each.
+Acquisition/context/import/architecture/coverage and reporting 3/18/9/162 pass;
+policy43520910099 and publication43520918803 verify at that same source. #207
+is resolved and archived. Original failures and prior pending receipts remain
+unchanged. This umbrella retains later-head and installed/public obligations;
+source acceptance alone does not qualify a new public package or tag.
+
 ## Corrected full supported source qualified — 2026-11-11 UTC
 
 [Terminal receiving](../evidence/source_060_recovery_checkpoint_qualification_20261111.json)

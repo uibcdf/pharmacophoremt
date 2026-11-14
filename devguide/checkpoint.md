@@ -2,69 +2,50 @@
 
 Maintained 2026-11-13 local date; owners LMMV/dprada. Follow the
 [mature pre-1.0 roadmap](roadmap.md), [workstreams](decisions_and_workstreams.md)
-and [capability inventory](capability_inventory.md). The preceding checkpoint is
-preserved in [dated history](checkpoint_history_20261113_before_eralpha_receiving.md).
+and [capability inventory](capability_inventory.md). The preceding state is
+preserved in [dated history](checkpoint_history_20261113_before_source_acceptance.md).
 
-## ERalpha controlled-provider contracts received — #209
+## Complete accumulated source accepted — #207/#9/#23
 
-[The owning correction](archive/eralpha_controlled_provider_receiving.md) fixes
-consumer expectations for the reviewed molecular provider. The original heavy
-ligand keeps deposited occupancy; intersection H addition reports B-factor and
-occupancy loss on the expanded copy, without fabricated annotation values.
-Strict refusal preserves the original occupancy too.
+[Terminal receiving](evidence/source_060_recovery_checkpoint_qualification_20261113_eralpha.json)
+qualifies frozen **e7d3e4914dc7113ed9468c4a9c19eb3c5840bf6f**, source
+**43520902352**, attempt 1. All eight Linux x86_64/macOS arm64 × Python 3.11–3.14
+cells pass **3,703 cases each**, zero skips and **128 exact qualified XML paths**.
+The same suite repeats across cells. All 48 warnings per cell remain recorded.
+Required acquisition, installed Git context, import/interpreter/architecture and
+coverage steps pass. Reporting receives 3/18/9/162 controls; policy 43520910099
+and publication controls 43520918803 pass at that exact source.
 
-Read-only receptor auditing retains eleven actually used chemical-reference
-catalogues and the observed PDB entry, with distinct roles and exact identities.
-Three negative controls reject missing, extra or misclassified credit. Blocked
-interaction methods remain uncredited. Runtime/scientific code, dependency pins,
-workflow bytes and original fixtures are unchanged. Both public recipes now
-follow the same contracts; earlier evidence keeps its original provider context.
+The [#207 report](archive/controlled_h5msm1_acquisition.md) is resolved and archived.
+Original rejected runs 43459510556 and 43472677149 remain failed. The receiver's
+first obsolete administrative-count assertion and corrected independent frozen
+inventory stay explicit. Older c5e952c source qualification retains its identity;
+later receipt/documentation heads are not relabelled as e7d3e49.
 
-[Controlled receiving](evidence/eralpha_controlled_receiving_20261113.json)
-passes 76 focused cases and 16 nm/pm recipe blocks. All seven controlled provider
-revisions are observed: 161 Python bodies from three public payloads match their
-CI pins, three Python source wheels are received privately, and MolSysMT retains
-its exact Git-source/inherited-native limitation. It is not a public/installed
-artifact qualification. No shared prefix or provider was changed.
+## Received capabilities and independent limits
 
-## Rejected full source and pending recovery — #207/#9/#23
+[#205 symmetric comparison](symmetric_model_comparison.md), native feature
+capture/archive/reconstruction and the [prepared screening journey](prepared_feature_screening_journey.md)
+retain their original source/owned receipts. [#209 controlled ERalpha receiving](archive/eralpha_controlled_provider_receiving.md)
+passes 76 focused cases and 16 nm/pm recipe blocks, preserving original
+annotations and actual chemical-reference credit. Broader #6 adoption is partial.
 
-Source 91eed32c55cbb53b2ba5f4a36d63add62c006798 / run 43472677149 / attempt 1
-is **failed**. All five executed scientific cells (four Linux minors and macOS
-3.11) report 3,698 passes, two stale-oracle failures and 48 warnings. Three other
-macOS cells were cancelled without scientific results; capacity hints remain
-unverified. Original run 43459510556 remains failed too. Policy 43472685859,
-publication controls 43472695075 and reporting succeeded only in their own scope.
-The [#207 report](pending_bugs/controlled_h5msm1_acquisition.md) retains both runs.
+Complete source acceptance is not public/installed-artifact, biological or scale
+qualification. Immutable 0.5.0 remains 2bff5dcf454bc5230f473237a49939215a60aab2;
+public delivery remains 0.4.0. No 0.6.0 tag/package/publication is selected here.
+#108, MolSysMT #624, BindingMT admission and stopped #148/#165 remain separate.
 
-The last accepted complete source remains c5e952cd3a1fe5b452be6fccbf85d2fb64c3f1eb,
-run 43109007084, attempt 1: eight cells pass 3,420 cases, zero skips, 48 warnings
-and 127 qualified XML paths each. New collection finds 3,703 cases; the expected
-qualified XML set remains 128 paths. Collection is not executed science.
-Immutable 0.5.0 remains 2bff5dcf454bc5230f473237a49939215a60aab2;
-public delivery remains 0.4.0. No 0.6.0 tag/package/publication is selected.
+## Next concrete action
 
-## Corrected frozen checkpoint executing
+At the maintainer's instruction, resolve [Pandas ownership #206](pending_bugs/pandas_dependency_ownership.md):
+choose its dependency boundary and justified supported floor, align metadata,
+recipe/environments/DepDigest and receive actual public tables in an isolated
+installation. Then finish the 0.6.0 scope/compatibility/install review and prepare
+one exact candidate. Keep source, tag and public-package decisions distinct;
+retain any later-head qualification debt under #9/#23.
 
-Source **e7d3e4914dc7113ed9468c4a9c19eb3c5840bf6f** is pushed with [skip ci].
-[Pending receiving](evidence/source_060_eralpha_pending_20261113.json) verifies
-source **43520902352**, policy **43520910099** and publication controls
-**43520918803**, attempt 1 at that exact source. Policy/publication/reporting
-pass; all eight scientific jobs have runners and execute their required stages.
-No scientific terminal result or complete XML is accepted yet. This later
-receipt/documentation head is not relabelled as the tested source.
-
-## Next concrete action and limits
-
-Observe the same source run 43520902352 and its original eight jobs. Require
-every supported native cell and complete qualified XML; retain the successful
-control workflows and failed originals. No automatic duplicate request or rerun.
-GH Run Receptor #86 records the bounded multi-cause visibility suggestion.
-
-Broader #6/#108, Pandas ownership #206, MolSysMT #624, BindingMT admission,
-human/biological/scale and full installed/public gates remain separate.
-#148/#165 remain stopped. Preserve shared-prefix/migration pauses and original
-native/data identities. Local work uses one CPU/backend thread, low CPU/I/O
-priority, finite limits and pressure/own-family monitoring, reserving no capacity.
-Keep 20% physical RAM plus task margin available. Review retained task logs on
-2026-11-26; delivered scientific inputs and original evidence remain durable.
+Preserve shared-prefix/migration pauses and original native/data identities.
+Local heavy work stays serial, one CPU/backend thread, low CPU/I/O priority,
+finite limits and pressure/own-family monitoring. Reserve no shared capacity;
+keep 20% physical RAM plus task margin available. Review retained task logs on
+2026-11-26; original scientific inputs and published evidence remain durable.

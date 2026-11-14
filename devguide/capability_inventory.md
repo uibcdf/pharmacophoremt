@@ -1,5 +1,18 @@
 # Current capability inventory
 
+## Complete controlled-source checkpoint — 2026-11-13 local date
+
+[Terminal receiving](evidence/source_060_recovery_checkpoint_qualification_20261113_eralpha.json)
+accepts e7d3e49 / source43520902352 / attempt1: eight Linux x86_64/macOS arm64 ×
+Python 3.11–3.14 cells pass 3,703 cases, zero skips, 48 retained warnings and
+128 exact qualified XML paths each. Reporting 3/18/9/162, frozen policy and
+publication controls pass at that same source. #207 is resolved and
+[archived](archive/controlled_h5msm1_acquisition.md); original failed runs remain
+failed. Later documentary heads and installed/public/biological/scale gates
+remain separate. Next resolve Pandas ownership #206, then complete the 0.6.0
+scope/install review and prepare one candidate. No tag/publication is selected
+by this receipt; broader #6/#108 and stopped #148/#165 remain independent.
+
 The [complete interaction-control receiving](evidence/interaction_argument_controls_20261112.json)
 adds267 exact-owned cases, actual public-provider controls and the producer
 oracle correction#201 to the source slice below. This remains bounded API/support

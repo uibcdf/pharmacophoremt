@@ -15,6 +15,17 @@ supersedes: []
 
 # Full-CI contributor routes and skipped-push recovery
 
+## Complete corrected-source receiving — 2026-11-13 local date
+
+[Terminal receiving](../evidence/source_060_recovery_checkpoint_qualification_20261113_eralpha.json)
+accepts e7d3e49 / 43520902352 / attempt1 with every supported native cell:
+3,703 passes, zero skips, 48 warnings and 128 exact qualified XML paths each.
+Acquisition/context/import/architecture/coverage and reporting 3/18/9/162 pass;
+policy43520910099 and publication43520918803 verify at that same source. #207
+is resolved and archived. Original failures and prior pending receipts remain
+unchanged. This umbrella retains later-head and installed/public obligations;
+source acceptance alone does not qualify a new public package or tag.
+
 ## Rejected recovery; ERalpha consumer guards corrected — 2026-11-13
 
 [Terminal/local receiving](../evidence/eralpha_controlled_receiving_20261113.json)
@@ -32,7 +43,7 @@ Original failed runs and completed control workflows retain their own identities
 Scheduled43459510556/attempt1 at9b50fde is terminal failure: four Linux test
 failures, four macOS cancellations and two administrative successes. Native
 Linux3.14 reports3655pass/41setup errors/1failure/48warnings; the old molecular
-reader cannot read the original1.0 handoff inputs. [#207](controlled_h5msm1_acquisition.md)
+reader cannot read the original1.0 handoff inputs. [#207](../archive/controlled_h5msm1_acquisition.md)
 owns corrected acquisition and a separate exact-source checkpoint. [#208](../archive/recognition_producer_oracle.md)
 corrects only fresh/historical recognition-producer expectations with three
 negative controls. Selected52-case receiving and52 administrative controls do
