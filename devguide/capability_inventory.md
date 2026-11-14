@@ -1,5 +1,19 @@
 # Current capability inventory
 
+## Final accumulated source qualified — 2026-11-14 local date
+
+[Qualification](evidence/source_060_final_review_qualification_20261114.json)
+accepts 327dcbb at scheduled 43607484734: all eight supported cells pass 3,703
+cases, zero skips, 48 retained warnings and 128 exact qualified XML paths each;
+reporting 3/18/9/163 and both administrative workflows pass. This includes
+resolved Pandas ownership #206 and reuses the scheduled full execution.
+[Preparation](evidence/release_060_final_preparation_20261114.json) receives the
+coherent native-feature/comparison/argument-control scope, strict docs and a
+private canonical 0.6.0 version/reader/CLI probe. The [source-only proposal](release_0_6_0_source_cut.md)
+fixes the qualified target, with public tag/route selection still separate.
+Public delivery remains 0.4.0; complete installed/public, biological/human/scale,
+broader #6/#108 and stopped #148/#165 obligations remain independent.
+
 ## Complete controlled-source checkpoint — 2026-11-13 local date
 
 [Terminal receiving](evidence/source_060_recovery_checkpoint_qualification_20261113_eralpha.json)

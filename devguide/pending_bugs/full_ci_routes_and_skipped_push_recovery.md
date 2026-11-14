@@ -15,6 +15,18 @@ supersedes: []
 
 # Full-CI contributor routes and skipped-push recovery
 
+## Final source review and actual daily recovery — 2026-11-14 local date
+
+[Native receiving](../evidence/source_060_final_review_qualification_20261114.json)
+accepts 327dcbb / scheduled 43607484734 / attempt 1. The actual detector sees five
+skipped commits after e7d3e49 and executes all eight supported cells: 3,703 cases,
+zero skips, 48 warnings and 128 exact qualified XML paths each. Reporting
+3/18/9/163 and policy 43615674988/publication controls 43615679874 pass at the
+same source. This review requests no scientific matrix or rerun. Later documentary
+receiving heads retain exact-head debt here; installed/public obligations stay
+separate. The [prepared 0.6.0 source-only proposal](../release_0_6_0_source_cut.md)
+does not select or publish a public tag. Original identities remain unchanged.
+
 ## Complete corrected-source receiving — 2026-11-13 local date
 
 [Terminal receiving](../evidence/source_060_recovery_checkpoint_qualification_20261113_eralpha.json)

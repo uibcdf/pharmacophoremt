@@ -1,5 +1,19 @@
 # Decisions and active workstreams
 
+## Final 0.6.0 source review complete — 2026-11-14 local date
+
+[Native receiving](evidence/source_060_final_review_qualification_20261114.json)
+accepts 327dcbb at existing scheduled 43607484734: all eight cells pass 3,703 cases
+with zero skips and 128 qualified XML paths; reporting 3/18/9/163 and both policy
+and publication controls pass. No scientific
+matrix request or rerun is made. [Preparation](evidence/release_060_final_preparation_20261114.json)
+receives coherent scope/migration, strict docs and a private canonical 0.6.0
+version/reader/CLI probe. The [proposed source-only cut](release_0_6_0_source_cut.md)
+fixes the tested target; actual version/route selection and tag delivery remain
+separate under #95. #206 is resolved; #210/MolSysMT#749 remain deferred. No public
+artifact, complete installed/public qualification, biological/human/scale claim
+or stopped #148/#165 execution follows.
+
 ## Pandas ownership resolved — 2026-11-13 local date
 
 [#206](archive/pandas_dependency_ownership.md) receives the exact d4550f8

@@ -1,0 +1,631 @@
+{
+  "schema": "pharmacophoremt.release-060.final-preparation@1",
+  "date": "2026-11-14",
+  "source": "327dcbb1a35bb22bb8e8071c16514c7d1301ce47",
+  "base_tag": "0.5.0",
+  "scope_review": {
+    "base": "2bff5dcf454bc5230f473237a49939215a60aab2",
+    "runtime_source": "327dcbb1a35bb22bb8e8071c16514c7d1301ce47",
+    "removed_nonprivate_declarations": [],
+    "changed_existing_signatures": [
+      {
+        "path": "pharmacophoremt/modeler/composition.py",
+        "declaration": "compose_pharmacophores",
+        "before": "pharmacophores, *, duplicate_policy='keep', name=None",
+        "after": "pharmacophores, *, duplicate_policy='keep', name=None, skip_digestion=False",
+        "additions": [
+          "skip_digestion"
+        ]
+      },
+      {
+        "path": "pharmacophoremt/modeler/curation.py",
+        "declaration": "get_interaction_site_indices",
+        "before": "pharmacophore, *, site_indices='all', feature_names=None, shape_names=None",
+        "after": "pharmacophore, *, site_indices='all', feature_names=None, shape_names=None, skip_digestion=False",
+        "additions": [
+          "skip_digestion"
+        ]
+      },
+      {
+        "path": "pharmacophoremt/modeler/curation.py",
+        "declaration": "copy_pharmacophore",
+        "before": "pharmacophore, *, name=None",
+        "after": "pharmacophore, *, name=None, skip_digestion=False",
+        "additions": [
+          "skip_digestion"
+        ]
+      },
+      {
+        "path": "pharmacophoremt/modeler/curation.py",
+        "declaration": "extract_pharmacophore",
+        "before": "pharmacophore, *, site_indices='all', name=None, reason=None",
+        "after": "pharmacophore, *, site_indices='all', name=None, reason=None, skip_digestion=False",
+        "additions": [
+          "skip_digestion"
+        ]
+      },
+      {
+        "path": "pharmacophoremt/modeler/features.py",
+        "declaration": "get_features",
+        "before": "molecular_system, *, selection='all', structure_index=0, chemical_state='reference', features=CLASSICAL_FEATURES",
+        "after": "molecular_system, *, selection='all', structure_index=0, chemical_state='reference', features=CLASSICAL_FEATURES, skip_digestion=False",
+        "additions": [
+          "skip_digestion"
+        ]
+      },
+      {
+        "path": "pharmacophoremt/modeler/interaction_based.py",
+        "declaration": "from_interactions",
+        "before": "molecular_system, interactions, ligand_selection, *, structure_index=0, radius='0.15 nm', name=None, cation_mapping='exact'",
+        "after": "molecular_system, interactions, ligand_selection, *, structure_index=0, radius='0.15 nm', name=None, cation_mapping='exact', skip_digestion=False",
+        "additions": [
+          "skip_digestion"
+        ]
+      },
+      {
+        "path": "pharmacophoremt/modeler/interaction_collection.py",
+        "declaration": "from_interaction_collection",
+        "before": "molecular_system, interaction_collection, ligand_selection, *, structure_index=0, radius='0.15 nm', name=None, cation_mapping='exact', duplicate_policy='same_participant'",
+        "after": "molecular_system, interaction_collection, ligand_selection, *, structure_index=0, radius='0.15 nm', name=None, cation_mapping='exact', duplicate_policy='same_participant', skip_digestion=False",
+        "additions": [
+          "skip_digestion"
+        ]
+      },
+      {
+        "path": "pharmacophoremt/modeler/reference_ligand.py",
+        "declaration": "from_ligand",
+        "before": "molecular_system, *, selection='all', structure_index=0, chemical_state='reference', features=CLASSICAL_FEATURES, radius='0.15 nm', name=None",
+        "after": "molecular_system, *, selection='all', structure_index=0, chemical_state='reference', features=CLASSICAL_FEATURES, radius='0.15 nm', name=None, skip_digestion=False",
+        "additions": [
+          "skip_digestion"
+        ]
+      },
+      {
+        "path": "pharmacophoremt/modeler/reference_ligand.py",
+        "declaration": "from_feature_inventory",
+        "before": "feature_inventory, *, radius='0.15 nm', name=None",
+        "after": "feature_inventory, *, radius='0.15 nm', name=None, skip_digestion=False",
+        "additions": [
+          "skip_digestion"
+        ]
+      },
+      {
+        "path": "pharmacophoremt/pharmacophore.py",
+        "declaration": "Pharmacophore.similarity",
+        "before": "self, other, tolerance_nm=0.15",
+        "after": "self, other, tolerance_nm=0.15, *, method='ordered_greedy', skip_digestion=False",
+        "additions": [
+          "method",
+          "skip_digestion"
+        ]
+      },
+      {
+        "path": "pharmacophoremt/pharmacophore.py",
+        "declaration": "Pharmacophore.merge",
+        "before": "self, other",
+        "after": "self, other, *, skip_digestion=False",
+        "additions": [
+          "skip_digestion"
+        ]
+      },
+      {
+        "path": "pharmacophoremt/pharmacophore.py",
+        "declaration": "Pharmacophore.get_distance_matrix",
+        "before": "self",
+        "after": "self, *, skip_digestion=False",
+        "additions": [
+          "skip_digestion"
+        ]
+      },
+      {
+        "path": "pharmacophoremt/pharmacophore.py",
+        "declaration": "Pharmacophore.to_dataframe",
+        "before": "self",
+        "after": "self, *, skip_digestion=False",
+        "additions": [
+          "skip_digestion"
+        ]
+      }
+    ],
+    "new_nonprivate_implementation_declarations": [
+      "pharmacophoremt/_private/arg_digestion/comparison.py:distance_tolerance",
+      "pharmacophoremt/_private/arg_digestion/comparison.py:max_matrix_entries",
+      "pharmacophoremt/_private/arg_digestion/comparison.py:max_sites",
+      "pharmacophoremt/_private/arg_digestion/comparison.py:model_type",
+      "pharmacophoremt/_private/arg_digestion/curation.py:centers",
+      "pharmacophoremt/_private/arg_digestion/curation.py:comparison_method",
+      "pharmacophoremt/_private/arg_digestion/curation.py:tolerance_nm",
+      "pharmacophoremt/_private/feature_capture.py:binding",
+      "pharmacophoremt/_private/feature_capture.py:families",
+      "pharmacophoremt/_private/feature_capture.py:require",
+      "pharmacophoremt/_private/feature_capture.py:validate",
+      "pharmacophoremt/_private/feature_snapshot_v1.py:decode_snapshot",
+      "pharmacophoremt/_private/native_feature_payload.py:decode",
+      "pharmacophoremt/_private/native_feature_payload.py:encode",
+      "pharmacophoremt/comparison.py:compare_pharmacophores",
+      "pharmacophoremt/modeler/feature_capture.py:capture_features",
+      "pharmacophoremt/screening/feature_reuse.py:reuse_feature_inventories",
+      "pharmacophoremt_features/_api.py:FeatureAssetView.payload_info",
+      "pharmacophoremt_features/_native_archive_schema.py:generation",
+      "pharmacophoremt_features/_native_archive_schema.py:require",
+      "pharmacophoremt_features/_native_archive_schema.py:validate_record",
+      "pharmacophoremt_features/_payload.py:FeatureInventoryPayload.describe",
+      "pharmacophoremt_features/_payload.py:FeatureInventoryPayload.from_bytes",
+      "pharmacophoremt_features/_payload.py:FeatureInventoryPayload.from_capture",
+      "pharmacophoremt_features/_payload.py:FeatureInventoryPayload.from_inventory",
+      "pharmacophoremt_features/_payload.py:FeatureInventoryPayload.to_bytes",
+      "pharmacophoremt_features/_payload.py:FeatureInventoryPayload.to_inventory",
+      "pharmacophoremt_features/_payload_digestion.py:config",
+      "pharmacophoremt_features/_payload_schema.py:declared_families",
+      "pharmacophoremt_features/_payload_schema.py:document",
+      "pharmacophoremt_features/_payload_schema.py:inventory_layout",
+      "pharmacophoremt_features/_payload_schema.py:layout",
+      "pharmacophoremt_features/_payload_schema.py:provenance",
+      "pharmacophoremt_features/_payload_schema.py:require",
+      "pharmacophoremt_features/_payload_schema.py:require_profile",
+      "pharmacophoremt_features/_record.py:FeatureAssetRecord.describe",
+      "pharmacophoremt_features/_record.py:FeatureAssetRecord.from_payload",
+      "pharmacophoremt_features/_record.py:FeatureAssetRecord.from_view",
+      "pharmacophoremt_features/_record.py:FeatureAssetRecord.incomplete",
+      "pharmacophoremt_features/_record.py:FeatureAssetRecord.payload_bytes",
+      "pharmacophoremt_features/_record_digestion.py:config",
+      "pharmacophoremt_features/_schema.py:decode_originals",
+      "pharmacophoremt_features/_schema.py:marker",
+      "pharmacophoremt_features/_storage.py:layout",
+      "pharmacophoremt_features/_writer.py:FeatureAssetStore.attempts",
+      "pharmacophoremt_features/_writer.py:FeatureAssetStore.close",
+      "pharmacophoremt_features/_writer.py:FeatureAssetStore.create",
+      "pharmacophoremt_features/_writer.py:FeatureAssetStore.current",
+      "pharmacophoremt_features/_writer.py:FeatureAssetStore.inspect_recovery",
+      "pharmacophoremt_features/_writer.py:FeatureAssetStore.open",
+      "pharmacophoremt_features/_writer.py:FeatureAssetStore.publish",
+      "pharmacophoremt_features/_writer.py:FeatureAssetStore.retry_publication",
+      "pharmacophoremt_features/_writer.py:FeatureAssetStore.stage",
+      "pharmacophoremt_features/_writer.py:FeatureAssetStore.stage_records",
+      "pharmacophoremt_features/_writer.py:FeatureAssetStore.view",
+      "pharmacophoremt_features/_writer_digestion.py:config",
+      "pharmacophoremt_features/_writer_schema.py:attempt_id",
+      "pharmacophoremt_features/_writer_schema.py:attempt_schema",
+      "pharmacophoremt_features/_writer_schema.py:descriptor",
+      "pharmacophoremt_features/_writer_schema.py:limits",
+      "pharmacophoremt_features/_writer_schema.py:validate_native"
+    ],
+    "runtime_change_paths": [
+      [
+        "M",
+        "pharmacophoremt/__init__.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt/_ackredit.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt/_depdigest.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt/_private/arg_digestion/comparison.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt/_private/arg_digestion/curation.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt/_private/arg_digestion/feature_capture.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt/_private/arg_digestion/feature_reuse.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt/_private/arg_digestion/interaction_queries.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt/_private/arg_digestion/reference_queries.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt/_private/feature_capture.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt/_private/feature_snapshot_v1.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt/_private/native_feature_payload.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt/_private/smonitor/catalog.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt/_private/smonitor/exceptions.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt/comparison.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt/modeler/__init__.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt/modeler/composition.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt/modeler/curation.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt/modeler/feature_capture.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt/modeler/features.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt/modeler/interaction_based.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt/modeler/interaction_collection.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt/modeler/reference_ligand.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt/pharmacophore.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt/screening/__init__.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt/screening/feature_reuse.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt_features/__init__.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt_features/_api.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt_features/_depdigest.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt_features/_diagnostics.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt_features/_digestion.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt_features/_native_archive_schema.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt_features/_payload.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt_features/_payload_digestion.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt_features/_payload_schema.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt_features/_record.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt_features/_record_digestion.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt_features/_schema.py"
+      ],
+      [
+        "M",
+        "pharmacophoremt_features/_storage.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt_features/_writer.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt_features/_writer_digestion.py"
+      ],
+      [
+        "A",
+        "pharmacophoremt_features/_writer_schema.py"
+      ]
+    ],
+    "unchanged_scientific_owners": {
+      "pharmacophoremt/screening/pose_evaluation.py": "b88cc31da9136843bc60954d7e457fe21ff566f797ef274cfcd0239ab8de6f9b",
+      "pharmacophoremt/validation/metrics.py": "07c65ba2a881d6437f1389c407d996067d40f5662c4aa35125089e72d6a41d50"
+    },
+    "limit": "Static signature/body observations only. Nonprivate declarations are not independently qualified public API counts or semantic compatibility proof. No version/tag/publication decision."
+  },
+  "scientific_qualification": "source_060_final_review_qualification_20261114.json",
+  "source_checkpoint_accepted": true,
+  "scientific_matrix_dispatched_by_this_review": false,
+  "collection_only": {
+    "cases": 3703,
+    "executed": 0,
+    "identity": {
+      "bytes": 435472,
+      "sha256": "aa3255de580e4ddc115f5096274314b4c46b6c3bd7b130ea6a60c5378885b0d1"
+    }
+  },
+  "expected_coverage": {
+    "source": "327dcbb1a35bb22bb8e8071c16514c7d1301ce47",
+    "expected_source_baseline": "e7d3e4914dc7113ed9468c4a9c19eb3c5840bf6f",
+    "reused_published_XML": "devguide/evidence/source_060_recovery_ci_linux313_20261113_eralpha_coverage.xml.gz",
+    "reused_XML_sha256": "54922770311e23f146f30fd5dbe6f9050107182d6611a237b8ae2e04e8bed7a5",
+    "unchanged_coverage_config": true,
+    "only_runtime_change": "pharmacophoremt/_depdigest.py: direct Pandas registry declaration",
+    "expected_qualified_XML_paths": 128,
+    "generated_version_included": true,
+    "all_repository_files_claimed": false,
+    "nonpackage_legacy_zinc_stub_not_in_XML": true,
+    "administrative_methods": 163,
+    "initial_inventory_correction": "Naive tracked-file enumeration was refused. Package discovery and actually imported namespace modules differ; reuse prior qualified XML only after verifying unchanged runtime paths/config. Fresh native XML must match the complete preserved set."
+  },
+  "documentation": {
+    "source_strict": true,
+    "reused_d4550f8_owned_strict": true,
+    "private_060_strict": true,
+    "notebooks": "off",
+    "source_bodies_verified": 187,
+    "reused_owned_version": "0.5.0+44.gd4550f8",
+    "private_version": "0.6.0"
+  },
+  "private_tag_probe": {
+    "version": "0.6.0",
+    "wheel_filename": "pharmacophoremt-0.6.0-py3-none-any.whl",
+    "wheel_bytes": 4583624,
+    "wheel_sha256": "061d322f9efcfba363aff5fd553e2ffc221ca86baf58cba999d231fcefae14bf",
+    "verified_original_wheel_payloads": 242,
+    "source_equal_runtime_Python_bodies": 187,
+    "post_probe_payload_bytes_verified": true,
+    "loaded_runtime_modules": 175,
+    "all_runtime_origins_owned": true,
+    "historical_model": {
+      "path": "tests/data/esr1_consensus_comparison/paired_evaluation_20261024/baseline.query.json",
+      "sha256": "c165f3755e1a76603a69f7fd1c24259e8f4706c20407eb3fdf653a4b5f7804f3",
+      "unchanged": true,
+      "n_sites": 3
+    },
+    "CLI_help": true,
+    "runtime_version_not_overridden": true,
+    "public_tag_created": false,
+    "first_probe": "A raw Requires-Python string-order comparison refused normalized equivalent bounds. Corrected to SpecifierSet equality; metadata, wheel and runtime unchanged."
+  },
+  "providers": {
+    "molsysmt": {
+      "version": "0+unknown"
+    },
+    "ackredit": {
+      "version": "0.11.0+3.g71f7f19"
+    },
+    "depdigest": {
+      "version": "0.15.1"
+    },
+    "molsysviewer": {
+      "version": "0.24.0+238.gca7ebea6"
+    },
+    "smonitor": {
+      "version": "0.22.1"
+    },
+    "argdigest": {
+      "version": "0.17.1"
+    },
+    "pyunitwizard": {
+      "version": "0.28.1"
+    }
+  },
+  "provider_limit": "Controlled exact sources/inherited native extension, not a complete new public dependency environment. Optional beartype remains absent; original warnings retained.",
+  "trigger_review": {
+    "source_tag": "Only the policy tag-push caller applies. Canonical 0.6.0 matches the reviewed pattern.",
+    "package_and_documentation": "Require a Release event or explicit dispatch; neither is requested.",
+    "Conda_plan": "Existing prospective staged 0.5.0 plan remains unchanged; no 0.6.0 package route selected."
+  },
+  "public_route_proposal": "Immutable annotated 0.6.0 source tag at qualified 327dcbb, with no GitHub Release, package or hosted documentation publication. Maintainer selection is still separate.",
+  "version_tag_publication_selected": false,
+  "commands": {
+    "collection": {
+      "exit_code": 0,
+      "interruption": null,
+      "wall_seconds": 9.194066317984834,
+      "peak_sampled_own_family_RSS_bytes": 268017664,
+      "min_system_available_bytes": 53756911616,
+      "per_process_DATA_limit_bytes": 1073741824,
+      "record": {
+        "bytes": 55197,
+        "sha256": "193d0fb61c8f2d98cbe01ce3c9a2751a60dc04686423ec067ffffc163aaef25d"
+      },
+      "raw_log": {
+        "bytes": 10315,
+        "sha256": "2c487e47c3f515f4e9ed32837d1854385bbf9215a4cd37aa2ccfc4b372737a06"
+      }
+    },
+    "docs-owned": {
+      "exit_code": 0,
+      "interruption": null,
+      "wall_seconds": 12.528395185014233,
+      "peak_sampled_own_family_RSS_bytes": 347975680,
+      "min_system_available_bytes": 54348173312,
+      "per_process_DATA_limit_bytes": 1073741824,
+      "record": {
+        "bytes": 75263,
+        "sha256": "b163a33aaadbf5f9a0b5a20a3179308ba4e7a9c83b63ae3cb19dff8cc1b2c0b3"
+      },
+      "raw_log": {
+        "bytes": 4603,
+        "sha256": "0e1c00bfa9548649484781f9be01e3a2d007b9f9abae6d67a1370957bf6da456"
+      }
+    },
+    "docs-source": {
+      "exit_code": 0,
+      "interruption": null,
+      "wall_seconds": 12.627885260037147,
+      "peak_sampled_own_family_RSS_bytes": 347439104,
+      "min_system_available_bytes": 53556187136,
+      "per_process_DATA_limit_bytes": 1073741824,
+      "record": {
+        "bytes": 75845,
+        "sha256": "2fe382c45ed945f58bd0c80ee60c53949b01a31a26a47be814a4c26fdf9c55df"
+      },
+      "raw_log": {
+        "bytes": 4603,
+        "sha256": "0e1c00bfa9548649484781f9be01e3a2d007b9f9abae6d67a1370957bf6da456"
+      }
+    },
+    "private-tag-build": {
+      "exit_code": 0,
+      "interruption": null,
+      "wall_seconds": 6.491343155037612,
+      "peak_sampled_own_family_RSS_bytes": 289357824,
+      "min_system_available_bytes": 54099230720,
+      "per_process_DATA_limit_bytes": 536870912,
+      "record": {
+        "bytes": 39459,
+        "sha256": "4a9cba1a863db0808044c826a98f8c0e7c135a6227be367c245f477b6797d284"
+      },
+      "raw_log": {
+        "bytes": 3058,
+        "sha256": "3abd73398df2214a9261cb4d16b8ce7ac6e239bba2327d95bf62b01de2deb87c"
+      }
+    },
+    "private-tag-probe-corrected": {
+      "exit_code": 0,
+      "interruption": null,
+      "wall_seconds": 12.126653156010434,
+      "peak_sampled_own_family_RSS_bytes": 317808640,
+      "min_system_available_bytes": 50781216768,
+      "per_process_DATA_limit_bytes": 1073741824,
+      "record": {
+        "bytes": 72998,
+        "sha256": "fa6e233516147d9e9d15e26bab23b202fa84565e6ee3a461a2e0438d008075ca"
+      },
+      "raw_log": {
+        "bytes": 4707,
+        "sha256": "4c99d977355076bfe62e7c5b5ee3c2f9fc7c649d088a6b598a16f1140e5b3847"
+      }
+    },
+    "private-tag-probe": {
+      "exit_code": 1,
+      "interruption": null,
+      "wall_seconds": 1.6200945320306346,
+      "peak_sampled_own_family_RSS_bytes": 168656896,
+      "min_system_available_bytes": 53900140544,
+      "per_process_DATA_limit_bytes": 1073741824,
+      "record": {
+        "bytes": 11447,
+        "sha256": "b176d8bb5f6feaac9f7fff6b190cf7125674e1f6c2ad09f1a721872533001ddf"
+      },
+      "raw_log": {
+        "bytes": 4883,
+        "sha256": "268ee25d4c4ae14525bd1cafa49706f7c51f19e249d1bcb804eeaf001c9bd77d"
+      }
+    }
+  },
+  "resources": {
+    "affinity": [
+      19
+    ],
+    "backend_threads": 1,
+    "nice": 19,
+    "io": "idle",
+    "cpu_seconds_per_process": 120,
+    "wall_seconds_supervised": 180,
+    "own_family_RSS_stop_bytes": 1073741824,
+    "available_physical_RAM_reserve_fraction": 0.2,
+    "additional_margin_bytes": 1610612736,
+    "allocation_or_aggregate_cgroup": false,
+    "capacity_reserved": false,
+    "shared_prefix_changed": false
+  },
+  "initial_tooling_and_inventory_corrections": [
+    "gh extension not installed; verified published standalone receptor 1.5.0 launcher used. No tool provider defect inferred.",
+    "Tracked-file-only coverage assumptions refused; reuse the prior qualified XML after checking unchanged runtime paths/config and retain generated/imported namespace behavior. Exact fresh native XML must match all128 paths."
+  ],
+  "controls": {
+    "scope.py": {
+      "bytes": 3182,
+      "sha256": "a39fa2ef350924f942784747dfd7cdb03777ad99a9eb848a05f0bcd6f1850ce6"
+    },
+    "prepare.py": {
+      "bytes": 2726,
+      "sha256": "2112282fd53ff03af39314f6f9d3b64b59d86726ce458b53c6f0e44d089858b4"
+    },
+    "qualify_source.py": {
+      "bytes": 11913,
+      "sha256": "94a6dd5c40793b8878f7cbfd9b141add628a706ef04776015274bad074729f59"
+    },
+    "private_probe.py": {
+      "bytes": 3462,
+      "sha256": "dbb8cf641563dfc3f7334d22e0c353171cfdced6806a4582a2a3a68617cc298a"
+    },
+    "build_owned.py": {
+      "bytes": 6548,
+      "sha256": "3e88c59a1c8daa12f5f86031e1faa9ac68eef8282c1c5567c2f510f3034630a9"
+    },
+    "run_bounded.py": {
+      "bytes": 4028,
+      "sha256": "200c71520f89e168776eae897a87491aae2272a16844f3e06cf309347665ab50"
+    }
+  },
+  "limits": [
+    "Static declaration counts are not independently qualified public API counts or semantic compatibility proof.",
+    "Eight cells repeat the same scientific suite; collection is not execution.",
+    "Private canonical wheel is not a public or full supported installed/platform artifact.",
+    "No public tag, Release, package upload/promotion, DOI, biological, independent human or scale claim.",
+    "Original 0.5.0, e7d3e49, failed/cancelled runs and stopped #148/#165 retain their original identities."
+  ],
+  "raw_task": "phmt-060-final-review-20261114-e_smud14",
+  "retention_review": "2026-11-28",
+  "archival_review": {
+    "registry_blob": "7bca3ae2892af174d0cf84212044f199082293f8",
+    "policy_blob": "3db6e75ec63e642093d7593e9359a6505744d683",
+    "membership": "primary",
+    "maturity": "incubating",
+    "mode": "optional",
+    "proposed_route": "Source-only tag, no GitHub Release.",
+    "archival_elected": false,
+    "DOI_or_public_record_claim": false,
+    "not_applicable_exception_claimed": false,
+    "revisit": "Public Release, archival election or membership/maturity change."
+  },
+  "closeout_checks": {
+    "reporting_tests": 3,
+    "archive_tests": 18,
+    "indexes_current": true,
+    "raw_log": {
+      "bytes": 460,
+      "sha256": "4e714a6a5f9595d0b9a194abb4b434887b25a531cf118ed30e9b571346d03153"
+    },
+    "local_Markdown_targets_checked": 648,
+    "final_reporting_after_owning_report_updates": 3
+  }
+}

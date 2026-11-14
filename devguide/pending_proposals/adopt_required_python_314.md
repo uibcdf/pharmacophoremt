@@ -14,6 +14,19 @@ supersedes: []
 
 # Required Python 3.14 adoption
 
+## Final accumulated source qualified — 2026-11-14 local date
+
+[Native receiving](../evidence/source_060_final_review_qualification_20261114.json)
+accepts 327dcbb at scheduled 43607484734/attempt 1: all eight Linux x86_64/macOS
+arm64 × Python 3.11–3.14 cells pass 3,703 cases, zero skips, 48 retained warnings
+and 128 exact XML paths each. Reporting 3/18/9/163 and both policy/publication
+controls verify. The scheduled matrix is reused, with no scientific redispatch.
+[Preparation](../evidence/release_060_final_preparation_20261114.json) additionally
+receives a private canonical 0.6.0 wheel/version/reader/CLI/docs probe. The private
+probe is not public or full supported installed/artifact qualification. Broader
+dependency closure and ordinary installed delivery remain partial here/#10.
+Source/tag/public-package decisions and historical evidence stay distinct.
+
 ## Complete corrected-source receiving — 2026-11-13 local date
 
 [Terminal receiving](../evidence/source_060_recovery_checkpoint_qualification_20261113_eralpha.json)

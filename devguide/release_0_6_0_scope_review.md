@@ -1,5 +1,29 @@
 # 0.6.0 accumulated scope review
 
+## Final scope/source review received — 2026-11-14 local date
+
+Qualified source **327dcbb1a35bb22bb8e8071c16514c7d1301ce47** now includes
+resolved Pandas ownership. [Native receiving](evidence/source_060_final_review_qualification_20261114.json)
+reuses scheduled source 43607484734/attempt 1: all eight supported cells pass
+3,703 cases, zero skips, 48 retained warnings and 128 exact XML paths each.
+Reporting 3/18/9/163, policy 43615674988 and publication controls 43615679874 pass
+at the same source. No scientific matrix is dispatched by this review.
+
+[Preparation](evidence/release_060_final_preparation_20261114.json) independently
+retains the zero-removal/13-additive-signature/61-new-implementation-declaration
+comparison, prospective 3,703-node collection and strict source/reused-owned docs.
+A private 0.6.0 clone/wheel receives canonical version, 242 exact payloads,
+187 source-equal bodies, historical three-site JSON reading, CLI help and strict
+docs. Counts of implementation declarations are not independent public APIs;
+private probe and full source acceptance do not qualify a public artifact.
+
+The [prepared source-only proposal](release_0_6_0_source_cut.md) consolidates the
+reviewed scope, migration, limits, exact target and next delivery actions. Its
+route/version selection remains #95-owned. No public 0.6.0 tag, Release, package
+or hosted-doc publication is selected here. Earlier dated claims below retain
+their own producers; e7d3e49/0.5.0 are not rewritten and later documentary heads
+do not inherit 327dcbb's exact-source qualification.
+
 ## Pandas ownership received — 2026-11-13 local date
 
 Bounded [#206](archive/pandas_dependency_ownership.md) is resolved at d4550f8:

@@ -1,5 +1,18 @@
 # Strategic roadmap
 
+## Final 0.6.0 source preparation received — 2026-11-14 local date
+
+[Qualification](evidence/source_060_final_review_qualification_20261114.json)
+accepts 327dcbb / scheduled 43607484734 / attempt 1: all eight supported cells pass
+3,703 cases, zero skips, 48 retained warnings and 128 exact qualified XML paths
+each; reporting 3/18/9/163 and both administrative workflows pass. The existing
+daily recovery is reused, with no scientific redispatch. [Preparation](evidence/release_060_final_preparation_20261114.json)
+receives accumulated scope/migration/coverage, strict docs and a private canonical
+0.6.0 probe. The [source-only proposal](release_0_6_0_source_cut.md) names the
+exact tested target and remaining tag-decision/conformance/notice actions.
+No public tag/package/Release is selected; #10/#23 full installed/public,
+broader #6/#108, MolSysMT#624 and stopped #148/#165 remain separate.
+
 ## Pandas ownership received — 2026-11-13 local date
 
 [#206](archive/pandas_dependency_ownership.md) is resolved at implementation
