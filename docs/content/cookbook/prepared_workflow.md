@@ -93,6 +93,12 @@ expert bypass applies to that operation; batch evaluation and feature extraction
 keep their own admission and native scientific checks. Invalid batch controls
 are rejected before acquiring the input reader.
 
+`RigidPoseSearch` exposes the same independent controls on construction,
+`evaluate()` and `run()`. Keep normal digestion unless inputs are canonical.
+Its correspondence, alignment and placed-pose children retain their own checks;
+invalid budgets cannot enter enumeration, and incomplete searches retain explicit
+failed/unscored evidence under both ranking methods.
+
 For native JSON/YAML, PHMT-owned schema/envelope refusals carry `PHMT-E108`
 and remain `ValueError` instances. The existing nonstring `io.load()` filename
 refusal carries `PHMT-E109` and remains a `TypeError`. Scientific value checks

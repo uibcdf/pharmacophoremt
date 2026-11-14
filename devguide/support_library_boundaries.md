@@ -1,5 +1,13 @@
 # Support-library boundaries and receiving limits
 
+## Rigid-search explicit controls — 2026-11-14
+
+[#215](rigid_argument_controls.md) uses existing definition-owned contracts and
+shared Boolean/reader dependencies for three operation-local controls. Native
+and child bodies, default child admission and budget/ranking meaning remain.
+All 61 new controls pass in the wider 398-case source selection; exact owned
+receiving and strict docs are pending. Broader #6 remains partial.
+
 ## Placed-pose explicit controls — 2026-11-14
 
 Receiving closes bounded #214 at 00b21a8: the

@@ -49,6 +49,9 @@ class RigidPoseSearch:
         'seeded_hit' tests fitted triplet seeds only and returns a binary
         ranking_score, independent of input placement. Partial fit_value remains
         checked-pose evidence, never the molecular score.
+    skip_digestion : bool, default=False
+        Bypass this operation's argument digestion for canonical inputs.
+        Public scientific children retain their default admission.
 
     Notes
     -----
@@ -80,6 +83,7 @@ class RigidPoseSearch:
         direction_tolerance="30 degrees",
         min_fit_value=0.0,
         search_method="placed_and_triplets",
+        skip_digestion=False,
     ):
         self.search_method = digest_search_method(search_method)
         self.score_method = "seeded_hit" if search_method == "seeded_hit" else None
@@ -108,6 +112,7 @@ class RigidPoseSearch:
         structure_index=0,
         chemical_state="reference",
         pose_id=None,
+        skip_digestion=False,
     ):
         """Return the best checked coverage, alignment and search evidence.
 
@@ -118,6 +123,11 @@ class RigidPoseSearch:
         no assignments or placed coordinates are invented. Other fitted coverage
         remains pose evidence. Incomplete unproven searches and provider failures
         raise PoseEvaluationError retaining their cause.
+
+        skip_digestion defaults to False. Literal True bypasses this operation's
+        argument processing only. Recognition, correspondence, alignment and
+        placed-pose checks retain their own default admission. A noncanonical
+        budget still refuses at its correspondence owner before enumeration.
         """
         stage = "recognition"
         try:
@@ -235,11 +245,22 @@ class RigidPoseSearch:
 
     @signal(tags=["screening", "rigid_search", "batch"])
     @arg_digest(config=CONFIG)
-    def run(self, molecular_database, *, on_error="raise", **evaluation_options):
+    def run(
+        self,
+        molecular_database,
+        *,
+        on_error="raise",
+        skip_digestion=False,
+        **evaluation_options,
+    ):
         """Search each prepared input with stable identity and explicit failures.
 
         With on_error='record', failures have fit_value=None and keep their cause.
         Otherwise the first failed search raises. One source frame is searched
         per input; repeated objects and generators retain independent indices.
+
+        skip_digestion is consumed locally and never forwarded to the public
+        evaluate call, whose default admission remains independent. Native batch
+        failure policy and pose-ID ownership checks remain active during bypass.
         """
         return run_evaluations(self, molecular_database, on_error, evaluation_options)

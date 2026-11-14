@@ -14,6 +14,14 @@ supersedes: []
 
 # Review Python ecosystem policy adoption
 
+## Rigid-search control implementation — 2026-11-14
+
+[#215](../rigid_argument_controls.md) adds explicit construction/evaluate/run
+controls using existing provider contracts. Public children keep default
+admission; native bodies, budget guards and both ranking methods remain. All
+61 new controls pass in the wider 398-case source selection. Exact owned/strict
+docs remain pending. Broader #6 and full supported/public qualification stay open.
+
 ## Placed-pose public receiving — 2026-11-14
 
 [#214](../pose_argument_controls.md) receives source 00b21a8 and its exact private

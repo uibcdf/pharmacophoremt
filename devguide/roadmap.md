@@ -1,5 +1,15 @@
 # Strategic roadmap
 
+## Rigid-search controls implemented — 2026-11-14 local date
+
+[#215](rigid_argument_controls.md) appends three independent public controls,
+preserving scientific bodies, default child admission, budget ownership and
+checked/seeded meanings. All 61 new controls pass in the 398-case source selection;
+focused bypass and relevant governance/Ruff checks pass. Exact committed owned
+receiving and strict docs follow. Unchanged tooling retains the original 163-case
+administrative evidence separately. Broader #6 and full supported/public gates
+remain separate; no tag, publisher, remote matrix or stopped measurement follows.
+
 ## Placed-pose controls received — 2026-11-14 local date
 
 [#214](pose_argument_controls.md) receives source 00b21a8 and its exact private

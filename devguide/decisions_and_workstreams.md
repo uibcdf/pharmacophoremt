@@ -1,5 +1,13 @@
 # Decisions and active workstreams
 
+## Rigid-search argument controls — 2026-11-14 local date
+
+[#215](rigid_argument_controls.md) adds three independent controls without
+changing search bodies, default children or budget/ranking semantics. All 61 new
+controls pass in the wider 398-case source selection; relevant governance/Ruff
+checks pass. Exact owned/strict docs remain pending. Preserve original failures
+and separate prior unchanged-tool qualification. #6 and broader gates stay open.
+
 ## Placed-pose receiving complete — 2026-11-14 local date
 
 [#214](pose_argument_controls.md) receives 00b21a8 with the same

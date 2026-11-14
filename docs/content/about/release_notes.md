@@ -2,6 +2,10 @@
 
 ## Unreleased — toward 0.7.0
 
+- Add independent keyword-only `skip_digestion=False` controls to
+  `RigidPoseSearch` construction, `evaluate()` and `run()`, preserving child
+  admission, search budgets, incomplete-search failures and both ranking methods.
+
 - Add keyword-only `skip_digestion=False` to `PoseEvaluator` construction,
   `evaluate()` and `run()`. Each operation retains independent child admission
   and native scientific checks. Batch controls are consumed locally and excluded
