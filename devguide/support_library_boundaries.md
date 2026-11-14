@@ -2,6 +2,15 @@
 
 ## Cached screening exports — 2026-11-14
 
+Receiving now closes #211/#212 at 9fe608a: the
+[receipt](evidence/screening_export_controls_20261114.json) records 370 identical
+source/owned selected cases each, 41 minimum-Pandas controls, actual SDK staging
+and retirement, strict owned docs and 243 wheel payloads/188 equal Python bodies.
+Public ArgDigest 0.17.1/PUW 0.28.1/Pandas 2.3.3 and 3.1.1 retain separate
+identities. This remains a bounded #6 slice with controlled native/provider
+limitations; `run()` cache/evaluation admission and full public closure are next
+review work. The source implementation phase below retains its original scope.
+
 [#211/#212](screening_export_argument_controls.md) adopt definition-owned public
 ArgDigest controls for cached table/CSV exports and correct the PHMT-owned skip
 validator's diagnostic. Destination objects pass unchanged to Pandas; child

@@ -6,6 +6,26 @@ and [capability inventory](capability_inventory.md). The preceding state is
 preserved in [dated history](checkpoint_history_20261114_before_final_review.md)
 and the dated pre-tag decision in [the source-cut record](release_0_6_0_source_cut.md).
 
+## Cached screening export controls received — toward 0.7.0
+
+[#211/#212](screening_export_argument_controls.md) receive two keyword-only
+public digestion controls and the corrected host skip-control diagnostic at
+**9fe608a2a9463f7632af49f42e3132790a65ffe9**. The
+[receipt](evidence/screening_export_controls_20261114.json) records the same
+370 selected cases passing in source and the exact owned development wheel,
+plus the same 41 new controls with public Pandas 2.3.3. Newer receiving uses
+public Pandas 3.1.1; both use public ArgDigest 0.17.1/PUW 0.28.1. All 243 wheel
+payloads and 188 source-equal Python bodies verify; 175 loaded PHMT modules are
+owned-target-only. Actual SDK staging verifies and retires its imports/resources.
+
+Cached format/export bodies, Pandas destination ownership, independent child
+admission and legacy subclass overrides retain their behavior. Strict owned
+docs, 163 administrative controls, reporting/archive/index/generated-environment/
+declared-route checks and whole-tree Ruff pass. Original red runs remain recorded.
+This is Linux/Python 3.14 receiving with identified controlled providers and an
+inherited native extension, not full source/installed/public qualification.
+#6 remains partial; later-head exact-CI debt remains #9-owned.
+
 ## 0.6.0 source tag delivered
 
 [Delivery](evidence/release_060_tag_delivery_20261114.json) verifies immutable
@@ -62,20 +82,10 @@ above; full installed/public artifact acceptance remains independent.
 
 ## Next concrete action
 
-The next mature-0.x slice toward 0.7.0 implements
-[#211 cached screening export controls](screening_export_argument_controls.md)
-under #95/#6. `VirtualScreening.to_dataframe()`/`to_csv()` now expose explicit
-keyword-only `skip_digestion=False`, with ArgDigest default admission. The cached
-format/export bodies retain their original operations and Pandas ownership;
-CSV keeps independent default child admission and legacy subclass overrides.
-#212 corrects the shared skip-control diagnostic without changing boolean or
-essential-site semantics. Source receiving passes 41 new controls and a wider
-370-case selection; 163 administrative controls and whole-tree Ruff pass.
-Exact committed owned-wheel receiving and strict docs are the next concrete
-action. These source checks do not close either bounded issue yet.
-
-Keep broader public adoption visible: `run()` evaluation/cache admission,
-retired SDF and other public facades remain separate. Do not restart stopped
+Review `VirtualScreening.run()` under #6 before selecting its bounded admission
+contract: preserve the existing cache reset, instance-dependent native option
+delegation and failure timing. Receive independent oracles before changing that
+boundary. Retired SDF and other public facades remain separate. Do not restart stopped
 measurements or implement a consumer-side molecular collection substitute.
 Package and hosted-doc publishers stay inactive under the delivered source-only
 decision. Immutable 0.6.0 remains the tested source, not a later main head.
@@ -97,3 +107,5 @@ finite limits and pressure/own-family monitoring. Reserve no shared capacity;
 keep 20% physical RAM plus task margin available. Review retained task logs on
 2026-11-28 for the final-review and tag-delivery tasks; earlier tasks retain their own dates.
 Original scientific inputs and published evidence remain durable.
+Review the screening-export capsule/owned target on 2026-11-28; its durable
+compressed evidence retains the original outputs and exact controls.

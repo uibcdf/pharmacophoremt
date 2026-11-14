@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (148)
+### Resolved (150)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -142,8 +142,10 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`retrospective_metric_key_collision.md`](retrospective_metric_key_collision.md) — [#100](https://github.com/uibcdf/pharmacophoremt/issues/100) — Retrospective EF settings must not overwrite colliding reported metric keys. *(resolved, measured)*
 - [`reuse_saved_progress.md`](reuse_saved_progress.md) — [#145](https://github.com/uibcdf/pharmacophoremt/issues/145) — Reuse verified criterion-independent counts within one immutable saved view. *(resolved, reproduced)*
 - [`rigid_negative_ranking_contract.md`](rigid_negative_ranking_contract.md) — [#63](https://github.com/uibcdf/pharmacophoremt/issues/63) — Define a frame-independent molecular ranking contract for completed rigid negatives. *(resolved, measured)*
+- [`screening_export_argument_controls.md`](screening_export_argument_controls.md) — [#211](https://github.com/uibcdf/pharmacophoremt/issues/211) — Add explicit public digestion controls to cached screening table and CSV export. *(resolved, measured)*
 - [`select_saved_work_by_source.md`](select_saved_work_by_source.md) — [#166](https://github.com/uibcdf/pharmacophoremt/issues/166) — Select saved screening work by its exact original source key. *(resolved, measured)*
 - [`select_saved_work_status.md`](select_saved_work_status.md) — [#158](https://github.com/uibcdf/pharmacophoremt/issues/158) — Select saved work by native or pending status through the public reader. *(resolved, measured)*
+- [`skip_control_argument_label.md`](skip_control_argument_label.md) — [#212](https://github.com/uibcdf/pharmacophoremt/issues/212) — Name skip_digestion in shared boolean-control refusals. *(resolved, measured)*
 - [`specify_feature_snapshot_compatibility.md`](specify_feature_snapshot_compatibility.md) — [#179](https://github.com/uibcdf/pharmacophoremt/issues/179) — Specify prepared-feature snapshot and predicate compatibility before public retrieval. *(resolved, inspected)*
 - [`stream_historical_esr1_metadata.md`](stream_historical_esr1_metadata.md) — [#152](https://github.com/uibcdf/pharmacophoremt/issues/152) — Stream complete historical ESR1 CSVs while preserving frozen cohort and exclusion semantics. *(resolved, measured)*
 - [`study_pmapper_signatures.md`](study_pmapper_signatures.md) — [#174](https://github.com/uibcdf/pharmacophoremt/issues/174) — Study exact pmapper signatures, matching and screening-asset implications. *(resolved, inspected)*

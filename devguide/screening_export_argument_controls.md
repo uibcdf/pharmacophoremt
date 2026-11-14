@@ -42,8 +42,20 @@ Source receiving passes all 41 new controls and a wider 370-case selection;
 163 administrative controls and whole-tree Ruff pass. The corrected-fixture
 baseline red run has 35 failures among 41 cases. The initial authored-fixture
 run has 41 failures, including the valid native positive-weight refusal.
-Preserve both raw runs; neither is qualification evidence. Exact committed
-owned receiving, strict docs and the bounded closeout receipt are pending.
+Preserve both raw runs; neither is qualification evidence.
+
+The [bounded receipt](evidence/screening_export_controls_20261114.json) receives
+exact source 9fe608a and its private development wheel `0.6.0+4.g9fe608a` with the
+same 370 selected cases and zero failures/skips in each source/owned context.
+The same 41 new controls also pass with minimum public Pandas 2.3.3. Newer
+receiving uses public 3.1.1; both use public ArgDigest 0.17.1/PUW 0.28.1. All
+243 wheel payloads and 188 source-equal Python bodies verify. All 175 loaded
+PHMT modules originate from the owned target. Actual immutable SDK support
+staging verifies before/after tests and retires its imports/resources. Strict
+owned docs pass with notebook execution off. Full supported/source/installed/
+public acceptance is not inferred; inherited molecular-native and controlled
+provider context remain explicit in the receipt. Original 0.6.0 evidence is
+not relabelled as qualifying this later source or its closeout documentation.
 
 `tests/test_screening_export_controls.py` receives closed/inherited contracts,
 default/False/True parity, actual public literal-True bypass, nonboolean refusals,

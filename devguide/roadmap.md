@@ -1,5 +1,17 @@
 # Strategic roadmap
 
+## Cached screening exports received — 2026-11-14 local date
+
+[#211/#212](screening_export_argument_controls.md) receive the exact 9fe608a
+development wheel: [370 source/owned cases each](evidence/screening_export_controls_20261114.json),
+41 minimum-Pandas cases, 243 payloads/188 source-equal Python bodies and actual
+SDK support retirement. Public Pandas 2.3.3/3.1.1, ArgDigest 0.17.1 and PUW
+0.28.1 are identified. Strict owned docs and administrative/governance/Ruff
+checks pass. Both bounded reports are archived. Next review `run()` admission
+with cache reset/delegation/failure timing retained before implementation.
+Broader #6/#108 and full source/installed/public/biological/human/scale gates
+remain separate. No new tag or publisher; immutable 0.6.0 is unchanged.
+
 ## Cached screening export controls implemented — 2026-11-14 local date
 
 The first post-0.6.0 slice toward 0.7.0 implements

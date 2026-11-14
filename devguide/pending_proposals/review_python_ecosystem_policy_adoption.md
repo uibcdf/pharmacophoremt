@@ -14,6 +14,20 @@ supersedes: []
 
 # Review Python ecosystem policy adoption
 
+## Cached screening export receiving — 2026-11-14
+
+[#211/#212](../screening_export_argument_controls.md) receive two explicit public
+controls and the host-owned skip-control diagnostic correction at 9fe608a. The
+[receipt](../evidence/screening_export_controls_20261114.json) records the same
+370 source/owned selected cases each, 41 minimum-Pandas cases, public ArgDigest
+0.17.1/PUW 0.28.1/Pandas 2.3.3 and 3.1.1, actual SDK staging/retirement and strict
+owned docs. Wheel verification receives 243 payloads/188 equal Python bodies and
+175 owned-target-only loaded modules. Original failures and controlled native/
+provider limits remain explicit. #6 stays partial. Next review `run()` admission
+without moving validation ahead of its existing cache reset or inventing a domain
+on a derived method value. Other public APIs/legacy mappings retain separate
+review; full supported source/installed/public and biological/scale stay distinct.
+
 ## Interaction/producer-oracle receiving — 2026-11-12
 
 [#200](../interaction_query_argument_controls.md) receives three explicit public

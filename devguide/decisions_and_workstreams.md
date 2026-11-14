@@ -1,5 +1,15 @@
 # Decisions and active workstreams
 
+## Cached screening export receiving complete — 2026-11-14 local date
+
+[#211/#212](screening_export_argument_controls.md) close their bounded source/
+owned scope at 9fe608a. [Receiving](evidence/screening_export_controls_20261114.json)
+passes 370 identical selected cases per source/owned context, 41 minimum-Pandas
+cases, exact 243-payload/188-body verification, actual SDK staging/retirement and
+strict owned docs. Keep original red runs, controlled native/provider limits
+and broader partial #6 visible. Review `run()` cache-reset/evaluation admission
+next; do not infer a new source/tag/package or scientific scale qualification.
+
 ## Cached screening export admission — 2026-11-14 local date
 
 [#211/#212](screening_export_argument_controls.md) implement two explicit public
