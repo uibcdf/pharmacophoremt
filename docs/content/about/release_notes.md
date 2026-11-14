@@ -1,5 +1,14 @@
 # Release notes
 
+## Unreleased — toward 0.7.0
+
+- Add explicit keyword-only `skip_digestion=False` to cached
+  `VirtualScreening.to_dataframe()` and `to_csv()`, retaining scalar hit columns,
+  empty schema, Pandas destination semantics and existing subclass overrides.
+  Each public call keeps its own admission; the CSV control is not automatically
+  forwarded to the table operation. Invalid controls name `skip_digestion` in
+  the shared diagnostic. Broader public-argument adoption remains incomplete.
+
 ## 0.6.0 — source-only feature lifecycle
 
 Delivered 2026-11-14 as immutable [source tag 0.6.0](https://github.com/uibcdf/pharmacophoremt/tree/0.6.0)

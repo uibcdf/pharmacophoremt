@@ -1,5 +1,15 @@
 # Support-library boundaries and receiving limits
 
+## Cached screening exports — 2026-11-14
+
+[#211/#212](screening_export_argument_controls.md) adopt definition-owned public
+ArgDigest controls for cached table/CSV exports and correct the PHMT-owned skip
+validator's diagnostic. Destination objects pass unchanged to Pandas; child
+table admission remains independent, including existing subclass overrides.
+Source receiving passes 41 new and 370 wider selected cases with authenticated
+public ArgDigest 0.17.1. Exact committed owned receiving remains pending. #6 is
+partial; scientific execution/cache admission and other facades remain separate.
+
 ## Native attribution scope observation — 2026-11-07
 
 The [guided/expert journey](guided_expert_journey_receiving.md) confirms that

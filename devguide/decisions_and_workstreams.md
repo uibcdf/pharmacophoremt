@@ -1,5 +1,15 @@
 # Decisions and active workstreams
 
+## Cached screening export admission — 2026-11-14 local date
+
+[#211/#212](screening_export_argument_controls.md) implement two explicit public
+controls and the host-owned skip diagnostic correction under partial #6. Preserve
+the original formatting/export bodies, backend destination validation, cached
+evidence and subclass delegation. Source 41/370 selected tests, 163 administrative
+controls and Ruff pass; exact committed owned receiving and strict docs are next.
+This is the first bounded slice toward 0.7.0. No tag, remote matrix, publisher or
+stopped measurement is requested. `run()` admission remains separately designed.
+
 ## 0.6.0 source-only milestone delivered — 2026-11-14 local date
 
 [Delivery](evidence/release_060_tag_delivery_20261114.json) receives annotated

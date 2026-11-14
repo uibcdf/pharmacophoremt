@@ -1,5 +1,18 @@
 # Strategic roadmap
 
+## Cached screening export controls implemented — 2026-11-14 local date
+
+The first post-0.6.0 slice toward 0.7.0 implements
+[#211](screening_export_argument_controls.md): two explicit keyword-only public
+digestion controls, unchanged cached table/CSV operations, Pandas destination
+ownership and legacy subclass delegation. #212 corrects the shared skip-control
+argument label and curation alias while preserving accepted booleans. Source
+receiving passes 41 new controls, a wider 370-case selection, 163 administrative
+controls and whole-tree Ruff. Next receive the exact committed wheel with
+authenticated public providers and strict docs. Both bounded issues remain
+active; broader #6/#108, `run()` cache/evaluation admission, biological/human/
+scale and public delivery remain separate. Immutable 0.6.0 is unchanged.
+
 ## 0.6.0 source milestone delivered — 2026-11-14 local date
 
 [Delivery](evidence/release_060_tag_delivery_20261114.json) receives immutable

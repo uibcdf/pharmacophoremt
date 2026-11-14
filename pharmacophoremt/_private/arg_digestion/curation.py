@@ -177,7 +177,7 @@ ARGUMENT_DIGESTERS = dict(
     radius=optional_radius,
     sigma=optional_sigma,
     in_place=_contracts.digest_essential,
-    skip_digestion=_contracts.digest_essential,
+    skip_digestion=_contracts.digest_skip_digestion,
     tolerance_nm=tolerance_nm,
     method=comparison_method,
 )

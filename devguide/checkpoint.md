@@ -62,11 +62,20 @@ above; full installed/public artifact acceptance remains independent.
 
 ## Next concrete action
 
-Begin the next mature-0.x slice under #95/#6 by auditing the remaining explicit
-argument controls on the prepared-native facade, first cached
-`VirtualScreening.to_dataframe()`/`to_csv()`. Plan one compatible increment with
-default digestion, explicit boolean bypass and preserved native table/export
-semantics. Keep the broader public adoption visible; do not restart stopped
+The next mature-0.x slice toward 0.7.0 implements
+[#211 cached screening export controls](screening_export_argument_controls.md)
+under #95/#6. `VirtualScreening.to_dataframe()`/`to_csv()` now expose explicit
+keyword-only `skip_digestion=False`, with ArgDigest default admission. The cached
+format/export bodies retain their original operations and Pandas ownership;
+CSV keeps independent default child admission and legacy subclass overrides.
+#212 corrects the shared skip-control diagnostic without changing boolean or
+essential-site semantics. Source receiving passes 41 new controls and a wider
+370-case selection; 163 administrative controls and whole-tree Ruff pass.
+Exact committed owned-wheel receiving and strict docs are the next concrete
+action. These source checks do not close either bounded issue yet.
+
+Keep broader public adoption visible: `run()` evaluation/cache admission,
+retired SDF and other public facades remain separate. Do not restart stopped
 measurements or implement a consumer-side molecular collection substitute.
 Package and hosted-doc publishers stay inactive under the delivered source-only
 decision. Immutable 0.6.0 remains the tested source, not a later main head.

@@ -8,6 +8,9 @@ from smonitor import signal
 from pharmacophoremt._private.arg_digestion.argument._contracts import (
     digest_screening_method,
 )
+from pharmacophoremt._private.arg_digestion.screening_exports import (
+    CONFIG as EXPORT_CONFIG,
+)
 from pharmacophoremt._private.arg_digestion.screening_facade import CONFIG
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 from pharmacophoremt.screening.conformer_screening import ConformerScreening
@@ -132,8 +135,23 @@ class VirtualScreening:
         self.matches = matches
         return self.matches
 
-    def to_dataframe(self):
-        """Format ranked hit evidence without molecular conversion or H removal."""
+    @signal(tags=["screening", "results", "table"])
+    @arg_digest(config=EXPORT_CONFIG)
+    def to_dataframe(self, *, skip_digestion=False):
+        """Format cached ranked hits without molecular access or re-evaluation.
+
+        Parameters
+        ----------
+        skip_digestion : bool, default=False
+            Bypass argument digestion for canonical inputs. Cached fields and
+            Pandas formatting retain their existing validation and errors.
+
+        Returns
+        -------
+        pandas.DataFrame
+            The seven scalar hit columns, including for an empty result. Use
+            evaluations for the complete input/failure denominator.
+        """
         import pandas as pd
 
         columns = [
@@ -153,8 +171,20 @@ class VirtualScreening:
             columns=columns,
         )
 
-    def to_csv(self, file_name):
-        """Write the same scalar evidence as to_dataframe()."""
+    @signal(tags=["screening", "results", "export"])
+    @arg_digest(config=EXPORT_CONFIG)
+    def to_csv(self, file_name, *, skip_digestion=False):
+        """Write the same scalar hit evidence as to_dataframe().
+
+        Parameters
+        ----------
+        file_name : path-like or file-like
+            Passed unchanged to Pandas, which owns destination admission and
+            I/O errors. Existing overwrite and return behavior are preserved.
+        skip_digestion : bool, default=False
+            Bypass this operation's argument digestion. The public
+            to_dataframe call retains its own default admission or override.
+        """
         self.to_dataframe().to_csv(file_name, index=False)
 
     def to_sdf(self, file_name):

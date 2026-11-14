@@ -73,6 +73,13 @@ payload. Exporting molecular hits is a separate MolSysMT workflow. Use
 `screen.to_dataframe()`/`to_csv()` for ranked scalar hits and `evaluations` for
 the complete input/failure denominator.
 
+Both scalar exports accept keyword-only `skip_digestion=False`. Ordinary calls
+keep that default; expert callers with canonical arguments can use `True` for
+that operation. This does not run screening again or change cached scientific
+evidence. CSV paths and open file-like objects reach Pandas unchanged, retaining
+its I/O errors. A CSV bypass does not disable the public table call's own
+admission or replace an application's table override.
+
 For native JSON/YAML, PHMT-owned schema/envelope refusals carry `PHMT-E108`
 and remain `ValueError` instances. The existing nonstring `io.load()` filename
 refusal carries `PHMT-E109` and remains a `TypeError`. Scientific value checks

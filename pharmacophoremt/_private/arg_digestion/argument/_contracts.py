@@ -225,10 +225,14 @@ def digest_shape(obj):
     return obj
 
 
-def digest_essential(obj):
+def _boolean(obj, argument):
     if not isinstance(obj, (bool, np.bool_)):
-        raise ArgumentError(argument="essential", reason="expected a boolean")
+        raise ArgumentError(argument=argument, reason="expected a boolean")
     return bool(obj)
+
+
+def digest_essential(obj):
+    return _boolean(obj, "essential")
 
 
 def digest_weight(obj):
@@ -288,7 +292,7 @@ def digest_ref_struct(obj):
 
 
 def digest_skip_digestion(obj):
-    return digest_essential(obj)
+    return _boolean(obj, "skip_digestion")
 
 
 def digest_labels(obj):
