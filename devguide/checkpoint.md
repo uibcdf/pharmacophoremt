@@ -46,18 +46,23 @@ independent. This documentation increment does not extend the source receipt
 above to a later head. Exact issue-body/label/cross-link readback, generated
 indexes and all three local reporting controls pass.
 
-[#206](pending_bugs/pandas_dependency_ownership.md) now implements hard direct
+[#206](archive/pandas_dependency_ownership.md) is resolved by hard direct
 `pandas>=2.3.3` ownership across metadata, recipe, DepDigest and maintained
-runtime/test profiles. Source receiving passes 95 existing table/native-facade
-cases with the authenticated public minimum; all 163 administrative controls
-and declared-route preflight pass. Initial preparation/fixture failures retain
-their logs. Third-party Pandas is outside the central member graph's scope.
+runtime/test profiles. [Receiving](evidence/pandas_ownership_receiving_20261113.json)
+binds implementation d4550f8 and its private development wheel: 242 verified
+payloads, 187 source-equal Python bodies and 95 existing cases passing with
+public Pandas 2.3.3 and again with 3.1.1 outside the checkout. The source minimum
+run also passes 95 cases; these repeat the same selection. All 163 administrative
+controls, declared routes, generated environments, Ruff and three reporting
+controls pass. Original preparation/fixture failures and provider limitations
+are retained. Third-party Pandas adds no central member-graph edge.
 
-Next freeze this implementation and receive its exact owned wheel with public
-Pandas 2.3.3 and 3.1.1 outside the checkout. Then finish the 0.6.0
-scope/compatibility/install review and prepare
-one exact candidate. Keep source, tag and public-package decisions distinct;
-retain any later-head qualification debt under #9/#23.
+Next finish the version-specific 0.6.0 scope/migration/coverage review under
+#95, then freeze one source candidate and execute a deliberate complete
+checkpoint under #9/#23. The accepted e7d3e49 matrix does not cover the later
+Pandas metadata. Keep installed/public dependency closure under #10/#23, and
+source/tag/public-package decisions distinct. No candidate or tag is selected
+by the focused wheel receiving.
 
 Preserve shared-prefix/migration pauses and original native/data identities.
 Local heavy work stays serial, one CPU/backend thread, low CPU/I/O priority,

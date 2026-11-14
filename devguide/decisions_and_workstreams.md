@@ -1,8 +1,19 @@
 # Decisions and active workstreams
 
+## Pandas ownership resolved — 2026-11-13 local date
+
+[#206](archive/pandas_dependency_ownership.md) receives the exact d4550f8
+development wheel with direct hard Pandas ownership. [Receiving](evidence/pandas_ownership_receiving_20261113.json)
+checks 242 payloads/187 source-equal bodies after the same 95-case selection with
+public Pandas 2.3.3 and 3.1.1 outside the checkout. Source minimum and 163
+administrative controls also pass. No scientific/API/pin/shared-prefix change,
+full installed/public qualification or 0.6.0 candidate decision follows.
+Next complete #95's candidate review and one deliberate #9/#23 checkpoint;
+#210/MolSysMT#749 remain deferred, and stopped #148/#165 remain stopped.
+
 ## Direct Pandas ownership — 2026-11-13 local date
 
-[#206](pending_bugs/pandas_dependency_ownership.md) implements the required
+[#206](archive/pandas_dependency_ownership.md) implements the required
 `pandas>=2.3.3` boundary across package/Conda/DepDigest/profile declarations.
 Source minimum receiving passes 95 tests; 163 administrative controls and
 declared-route preflight pass. Exact owned-wheel receiving with public 2.3.3

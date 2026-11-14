@@ -1,19 +1,56 @@
 ---
 summary: Declare Pandas ownership for the public table APIs.
 issue: uibcdf/pharmacophoremt#206
-status: active
+status: resolved
 opened: 2026-11-13
-closed:
+closed: 2026-11-13
 severity: medium
 verification: measured
 area: [packaging, dependencies]
-guard:
+guard: devtools/tests/test_dependency_classification.py::TestDependencyClassification::test_public_tables_own_a_python_314_compatible_pandas_dependency
 normative:
 blocked_by: []
 supersedes: []
 ---
 
 # Pandas dependency ownership
+
+## Resolution — 2026-11-13 local date
+
+[Exact owned receiving](../evidence/pandas_ownership_receiving_20261113.json)
+resolves this bounded defect at implementation
+`d4550f82e63164a6829330e23e3ae90a1d020adc`. Its development wheel is
+`0.5.0+44.gd4550f8`, SHA-256
+`5ae2874846e97f21b76855ff6104a3359319e0b2893eaef940ce2371a75e0aa1`.
+All 242 original wheel payloads and 187 source-equal runtime Python bodies
+remain unchanged after science. The installed metadata requires Pandas directly.
+
+The same 95 existing tests pass with authenticated public Pandas 2.3.3 and
+3.1.1, each in a cold process outside the checkout. Every loaded PHMT module
+comes from the owned target; every loaded Pandas module comes from its private
+public-wheel installation. Actual SDK staging verifies unshipped helpers before
+and after the tests, with the private path absent afterward. The recorded stage
+snapshot is explicitly before context cleanup. The preliminary source run also
+passes 95 tests with 2.3.3; these are repeated cases, not 285 distinct tests.
+
+The first owned attempt assumed a nonexistent `tests/__init__.py`; the corrected
+controller preserves the actual namespace package. It failed before science,
+and its output joins the retained preparation/administrative failures below.
+No scientific assertions, native binaries, shared prefixes or controlled pins
+were changed to obtain success.
+
+The durable guard checks required direct ownership, admitted floor/newer versions
+and the hard DepDigest acquisition identity, so a transitive MolSysMT/test-only
+installation cannot conceal the original omission. Existing table tests protect
+actual units, object references, empty schemas and CSV behavior. All 163
+administrative controls, declared routes, generated environments, Ruff and three
+reporting controls pass. Resource limits and retained raw identities are in the
+receipt; these runs are not performance measurements.
+
+Complete public dependency closure, all supported installed/platform cells and
+an exact later-head source checkpoint remain #10/#23/#9-owned. Controlled native
+provider provenance, missing optional beartype warnings and all original failures
+remain explicit. No tag, Conda/publication or public package was changed.
 
 ## Implementation receiving — 2026-11-13 local date
 

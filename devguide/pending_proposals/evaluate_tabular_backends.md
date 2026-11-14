@@ -18,7 +18,7 @@ supersedes: []
 
 At the maintainer's request, retain a deferred investigation into alternatives
 or complements to Pandas. This is independent of current direct-dependency
-ownership [#206](../pending_bugs/pandas_dependency_ownership.md), and does not
+ownership [#206](../archive/pandas_dependency_ownership.md), and does not
 block the 0.6.0 candidate. No migration, engine or new dependency is selected.
 
 Read-only inspection at PHMT source

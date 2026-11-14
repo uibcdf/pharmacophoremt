@@ -1,8 +1,32 @@
 # 0.6.0 accumulated scope review
 
+## Pandas ownership received — 2026-11-13 local date
+
+Bounded [#206](archive/pandas_dependency_ownership.md) is resolved at d4550f8:
+hard `pandas>=2.3.3`, with no table/CSV signature or scientific-body change.
+[Receiving](evidence/pandas_ownership_receiving_20261113.json) checks 242 original
+wheel payloads/187 source-equal Python bodies and the same 95 cases with public
+Pandas 2.3.3 and 3.1.1 in separate source-free PHMT runtime contexts. Other
+providers retain their declared controlled source/inherited native context;
+this is not complete public dependency closure. Source minimum receiving,
+163 administrative controls, routes/generation/Ruff and reporting also pass.
+
+This adds a direct minimum to package resolution: installations selecting
+Pandas below 2.3.3 must upgrade it. Python 3.11–3.14 remains the declared range;
+the minimum is chosen for general 3.14 compatibility. No maximum or optional
+feature transition is introduced. Controlled pins, scientific commands, native
+formats and the existing Pandas return types remain unchanged. Future backend
+evaluation #210 is deferred independently of this version.
+
+Next review the final accumulated release notes, migrations and qualified
+coverage, then freeze one source candidate under #95 and execute its full
+#9/#23 checkpoint. The accepted e7d3e49 matrix predates this metadata change.
+The focused owned wheel does not select a 0.6.0 version/tag/public package or
+waive the separate supported installed/public gates.
+
 ## Pandas ownership receiving — 2026-11-13 local date
 
-[#206](pending_bugs/pandas_dependency_ownership.md) adds direct hard
+[#206](archive/pandas_dependency_ownership.md) adds direct hard
 `pandas>=2.3.3` to metadata, recipe, DepDigest and maintained runtime/test
 profiles, preserving table/CSV APIs and scientific bodies. The minimum is
 chosen for Python 3.14 compatibility. The source-focused 95 cases, 163

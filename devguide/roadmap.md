@@ -1,8 +1,20 @@
 # Strategic roadmap
 
+## Pandas ownership received — 2026-11-13 local date
+
+[#206](archive/pandas_dependency_ownership.md) is resolved at implementation
+d4550f8. [Receiving](evidence/pandas_ownership_receiving_20261113.json) verifies
+242 original wheel payloads/187 source-equal Python bodies and the same 95
+cases with public Pandas 2.3.3 and 3.1.1 in separate installed processes outside
+the checkout. Source minimum receiving passes 95; 163 administrative controls,
+routes/generation/Ruff and reporting pass. Keep original failures/provider limits.
+Next complete the 0.6.0 migration/coverage review and select one complete-source
+checkpoint under #95/#9/#23. The e7d3e49 matrix does not cover this later metadata;
+no tag, public artifact, platform-installed or full dependency closure follows.
+
 ## Pandas ownership implementation — 2026-11-13 local date
 
-[#206](pending_bugs/pandas_dependency_ownership.md) declares hard direct
+[#206](archive/pandas_dependency_ownership.md) declares hard direct
 `pandas>=2.3.3` consistently in metadata, recipe, DepDigest and maintained
 runtime/scientific profiles. Source receiving passes 95 existing controls with
 the public minimum; 163 administrative controls and declared-route preflight
