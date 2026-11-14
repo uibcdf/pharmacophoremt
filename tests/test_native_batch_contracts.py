@@ -63,7 +63,7 @@ def test_inherited_implementation_retains_definition_contract(cls, method):
         expected = {
             name
             for name, parameter in signature(cls.evaluate).parameters.items()
-            if name not in {"self", "molecular_system"}
+            if name not in {"self", "molecular_system", "skip_digestion"}
             and parameter.kind
             in (Parameter.POSITIONAL_OR_KEYWORD, Parameter.KEYWORD_ONLY)
         }

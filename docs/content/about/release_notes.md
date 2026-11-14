@@ -2,6 +2,11 @@
 
 ## Unreleased — toward 0.7.0
 
+- Add keyword-only `skip_digestion=False` to `PoseEvaluator` construction,
+  `evaluate()` and `run()`. Each operation retains independent child admission
+  and native scientific checks. Batch controls are consumed locally and excluded
+  from forwarded option domains; legacy evaluate overrides remain supported.
+
 - Validate `VirtualScreening.run()`'s existing `skip_digestion` boolean with
   ArgDigest. Keep the legacy positional control and native option validation
   after cache reset/input materialization. Invalid facade controls now refuse

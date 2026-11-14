@@ -64,6 +64,10 @@ class PoseEvaluator:
         Maximum donor-H angle or unoriented aromatic-plane angle, including coincident centers.
     min_fit_value : float, default=0.0
         Minimum weighted fraction of matched non-exclusion sites, in [0, 1].
+    skip_digestion : bool, default=False
+        Bypass this operation's argument digestion for canonical inputs.
+        Native scientific checks remain active; public children keep their own
+        default admission.
 
     Notes
     -----
@@ -91,6 +95,7 @@ class PoseEvaluator:
         point_tolerance="0.10 nm",
         direction_tolerance="30 degrees",
         min_fit_value=0.0,
+        skip_digestion=False,
     ):
         from pharmacophoremt.pharmacophore import Pharmacophore
 
@@ -342,6 +347,7 @@ class PoseEvaluator:
         structure_index=0,
         chemical_state="reference",
         pose_id=None,
+        skip_digestion=False,
     ):
         """Return geometric assignments and detached provenance for one pose.
 
@@ -350,6 +356,11 @@ class PoseEvaluator:
         their cause. A valid negative returns ``status='not_matched'``. Distances
         carry explicit units as QuantityRecords. Recognition metadata retains
         the provider's executed versions and detached bibliography.
+
+        skip_digestion defaults to False. Literal True bypasses only argument
+        digestion; native source, coordinate and scientific checks remain active,
+        with their existing stage/cause diagnostics. Child feature extraction
+        retains its own default admission.
         """
         stage = "source"
         try:
@@ -414,10 +425,22 @@ class PoseEvaluator:
 
     @signal(tags=["screening", "pose", "batch"])
     @arg_digest(config=CONFIG)
-    def run(self, molecular_database, *, on_error="raise", **evaluation_options):
+    def run(
+        self,
+        molecular_database,
+        *,
+        on_error="raise",
+        skip_digestion=False,
+        **evaluation_options,
+    ):
         """Evaluate each input once, retaining its zero-based ``input_index``.
 
         With ``on_error='record'``, failures retain their cause and have no fit
         value. Pose IDs are input indices. One frame per input is evaluated.
+
+        skip_digestion controls this batch's argument processing only. It is
+        consumed locally; each public evaluate call retains default admission,
+        including legacy application overrides. Native batch failure-policy and
+        pose-ID ownership checks remain active during bypass.
         """
         return run_evaluations(self, molecular_database, on_error, evaluation_options)

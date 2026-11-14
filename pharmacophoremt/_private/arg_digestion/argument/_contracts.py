@@ -510,20 +510,21 @@ def digest_pose_id(obj):
     raise ArgumentError(argument="pose_id", reason="expected a string, integer or None")
 
 
-def digest_molecular_database(obj):
-    if isinstance(obj, (str, bytes)):
+def digest_molecular_database(molecular_database, skip_digestion=False):
+    # ArgDigest resolves this named dependency before acquiring a borrowed reader.
+    if isinstance(molecular_database, (str, bytes)):
         raise ArgumentError(
             argument="molecular_database",
             reason="expected an iterable of molecular systems",
         )
     try:
-        iter(obj)
+        iter(molecular_database)
     except TypeError as error:
         raise ArgumentError(
             argument="molecular_database",
             reason="expected an iterable of molecular systems",
         ) from error
-    return obj  # Preserve the iterable; materialization belongs to the batch.
+    return molecular_database  # Preserve the iterable; the batch owns materialization.
 
 
 def digest_actives(obj):

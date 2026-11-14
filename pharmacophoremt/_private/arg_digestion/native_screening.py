@@ -25,7 +25,7 @@ def _evaluation_options(module, name):
     return tuple(
         parameter.name
         for parameter in signature(tool.evaluate).parameters.values()
-        if parameter.name not in {"self", "molecular_system"}
+        if parameter.name not in {"self", "molecular_system", "skip_digestion"}
         and parameter.kind in (Parameter.POSITIONAL_OR_KEYWORD, Parameter.KEYWORD_ONLY)
     )
 

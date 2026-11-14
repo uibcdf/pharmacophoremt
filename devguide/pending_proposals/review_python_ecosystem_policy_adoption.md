@@ -14,6 +14,17 @@ supersedes: []
 
 # Review Python ecosystem policy adoption
 
+## Placed-pose control implementation — 2026-11-14
+
+[#214](../pose_argument_controls.md) adds explicit keyword-only controls to
+PoseEvaluator construction/evaluate/run, retaining scientific bodies and child
+admission. A shared database dependency orders the boolean before reader
+acquisition; forwarded domains exclude operation-local controls. All 60 new
+source controls and the wider 355-case selection pass with real nm/pm and active
+attribution. Exact owned receiving and strict docs remain pending. #6 stays
+partial; no provider edit/floor,
+new tag, publisher or remote matrix follows.
+
 ## Screening-run facade receiving — 2026-11-14
 
 [#213](../screening_run_argument_controls.md) receives source 3050a78 and its

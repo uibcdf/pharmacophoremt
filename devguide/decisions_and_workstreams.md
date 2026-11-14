@@ -1,5 +1,15 @@
 # Decisions and active workstreams
 
+## Placed-pose argument controls — 2026-11-14 local date
+
+[#214](pose_argument_controls.md) adopts three operation-local controls without
+changing scientific bodies or forwarding bypass. A shared digester dependency
+orders the control before reader acquisition, and forwarded domains exclude it.
+All 60 new controls and the wider 355-case source selection pass; exact owned
+receiving and strict docs are pending. Preserve original red/prototype outputs
+and partial #6. No new tag,
+public artifact, remote matrix or stopped measurement is selected.
+
 ## Screening-run receiving complete — 2026-11-14 local date
 
 [#213](screening_run_argument_controls.md) receives 3050a78 with the

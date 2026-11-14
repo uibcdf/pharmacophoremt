@@ -1,5 +1,17 @@
 # Strategic roadmap
 
+## Placed-pose controls implemented — 2026-11-14 local date
+
+[#214](pose_argument_controls.md) adds three explicit keyword-only controls to
+PoseEvaluator while retaining scientific bodies and independent child admission.
+Forwarded domains exclude controls; the shared database digester declares control
+ordering before reader acquisition. All 60 new source controls pass, including
+real nm/pm and active attribution. Original authored/prototype failures remain
+recorded. The wider 355-case source selection also passes. Next receive exact
+owned cases and strict docs. Broader
+#6, other native classes and full supported/public gates remain separate; no
+tag, publisher, remote matrix or stopped measurement follows.
+
 ## Screening-run facade control received — 2026-11-14 local date
 
 [#213](screening_run_argument_controls.md) closes its bounded scope at 3050a78.

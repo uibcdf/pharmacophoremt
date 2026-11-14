@@ -16,7 +16,13 @@ def _options(tool):
             name
             for name, parameter in signature(tool.__init__).parameters.items()
             if name
-            not in {"self", "pharmacophore", "point_tolerance", "direction_tolerance"}
+            not in {
+                "self",
+                "pharmacophore",
+                "point_tolerance",
+                "direction_tolerance",
+                "skip_digestion",
+            }
             and parameter.kind
             in (Parameter.POSITIONAL_OR_KEYWORD, Parameter.KEYWORD_ONLY)
         )

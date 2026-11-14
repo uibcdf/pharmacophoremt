@@ -103,11 +103,18 @@ above; full installed/public artifact acceptance remains independent.
 
 ## Next concrete action
 
-Audit explicit controls on the native `PoseEvaluator` constructor/evaluate/run
-family under #6 before selecting its next bounded contract. Preserve mandatory
-scientific guards and native batch option ownership; examine hidden provider
-bypass behavior before introducing an explicit public parameter. Retired SDF
-and other public APIs remain separate. Do not restart stopped
+[#214](pose_argument_controls.md) implements three explicit keyword-only controls
+on native PoseEvaluator, retaining scientific bodies and independent child
+admission. Forwarded domains exclude operation-local controls; the shared database
+digester declares its skip dependency before reader acquisition. All 60 new source
+controls pass under public ArgDigest 0.17.1, including real nm/pm and active-credit
+checks. The corrected baseline has 57 failures/3 preservation passes; the original
+authored quantity-record assumption and two dependency prototypes remain retained.
+The wider 355-case source selection, all 163 administrative controls and
+whole-tree Ruff checks also pass. Next
+receive the exact committed owned wheel and strict docs before closing this
+bounded issue. Retired SDF and other public APIs remain
+separate. Do not restart stopped
 measurements or implement a consumer-side molecular collection substitute.
 Package and hosted-doc publishers stay inactive under the delivered source-only
 decision. Immutable 0.6.0 remains the tested source, not a later main head.

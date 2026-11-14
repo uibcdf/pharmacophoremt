@@ -87,6 +87,12 @@ failures retain the entered-run behavior: both result caches are cleared first.
 An explicit True bypass applies to the facade only; the native evaluator still
 checks its own options and scientific inputs.
 
+Direct `PoseEvaluator` construction, `evaluate()` and `run()` each expose their
+own keyword-only `skip_digestion=False`. Keep the default for normal use. An
+expert bypass applies to that operation; batch evaluation and feature extraction
+keep their own admission and native scientific checks. Invalid batch controls
+are rejected before acquiring the input reader.
+
 For native JSON/YAML, PHMT-owned schema/envelope refusals carry `PHMT-E108`
 and remain `ValueError` instances. The existing nonstring `io.load()` filename
 refusal carries `PHMT-E109` and remains a `TypeError`. Scientific value checks

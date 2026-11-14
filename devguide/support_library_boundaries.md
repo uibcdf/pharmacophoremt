@@ -1,5 +1,15 @@
 # Support-library boundaries and receiving limits
 
+## Placed-pose explicit controls — 2026-11-14
+
+[#214](pose_argument_controls.md) adds three explicit controls with the existing
+definition-owned ArgDigest contracts. A canonical-named database digester declares
+its skip dependency, using public provider topological ordering before reader
+acquisition. Forwarded domains exclude operation-local controls; scientific
+bodies and default child admission remain. All 60 new controls and the wider
+355-case source selection pass; exact owned receiving and strict docs are pending.
+#6 remains partial.
+
 ## Screening-run facade control — 2026-11-14
 
 Receiving closes bounded #213 at 3050a78: the
