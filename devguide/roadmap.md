@@ -1,5 +1,15 @@
 # Strategic roadmap
 
+## Deferred tabular-engine assessment — 2026-11-13 local date
+
+[#210](pending_proposals/evaluate_tabular_backends.md) records the maintainer's
+request to evaluate Pandas alternatives against actual screening-analysis
+workloads. [MolSysMT #749](https://github.com/uibcdf/molsysmt/issues/749) owns the
+distinct molecular-storage assessment. Keep current Pandas contracts; measure
+correctness, complete-workflow time and memory before choosing an optional
+adapter or migration. Neither study blocks 0.6.0 or resolves #206. No benchmark
+or alternative dependency is introduced.
+
 ## Complete controlled-source checkpoint — 2026-11-13 local date
 
 [Terminal receiving](evidence/source_060_recovery_checkpoint_qualification_20261113_eralpha.json)

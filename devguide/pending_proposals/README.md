@@ -30,4 +30,8 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 - [`delegate_sdf_container_to_molsysmt.md`](delegate_sdf_container_to_molsysmt.md) — [#74](https://github.com/uibcdf/pharmacophoremt/issues/74) — Delegate annotated pharmacophore SDF container handling to MolSysMT. *(blocked, inspected)*
 
+### Open (1)
+
+- [`evaluate_tabular_backends.md`](evaluate_tabular_backends.md) — [#210](https://github.com/uibcdf/pharmacophoremt/issues/210) — Evaluate tabular alternatives to Pandas against actual screening-analysis workloads. *(open, inspected)*
+
 <!-- /generated -->

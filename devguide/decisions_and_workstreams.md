@@ -1,5 +1,14 @@
 # Decisions and active workstreams
 
+## Deferred tabular-engine study — 2026-11-13 local date
+
+[#210](pending_proposals/evaluate_tabular_backends.md) retains a future
+Pandas/alternative comparison for PHMT result analysis, cross-linked with the
+provider-owned native-table study [MolSysMT #749](https://github.com/uibcdf/molsysmt/issues/749).
+No backend or migration is selected; preserving existing Pandas behavior and
+measuring representative bounded workflows precede any implementation decision.
+This study is independent of current #206 and the 0.6.0 candidate gates.
+
 ## Complete controlled-source checkpoint — 2026-11-13 local date
 
 [Terminal receiving](evidence/source_060_recovery_checkpoint_qualification_20261113_eralpha.json)

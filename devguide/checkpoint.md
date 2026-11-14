@@ -37,6 +37,15 @@ public delivery remains 0.4.0. No 0.6.0 tag/package/publication is selected here
 
 ## Next concrete action
 
+The maintainer-requested future [tabular-engine study #210](pending_proposals/evaluate_tabular_backends.md)
+is recorded and cross-linked with [MolSysMT #749](https://github.com/uibcdf/molsysmt/issues/749).
+PHMT analysis/output adapters and provider-owned molecular storage have distinct
+evaluation scopes. Both remain deferred; no migration, new engine or benchmark
+is selected. Existing Pandas compatibility and current #206 ownership work stay
+independent. This documentation increment does not extend the source receipt
+above to a later head. Exact issue-body/label/cross-link readback, generated
+indexes and all three local reporting controls pass.
+
 At the maintainer's instruction, resolve [Pandas ownership #206](pending_bugs/pandas_dependency_ownership.md):
 choose its dependency boundary and justified supported floor, align metadata,
 recipe/environments/DepDigest and receive actual public tables in an isolated
