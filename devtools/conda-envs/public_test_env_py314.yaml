@@ -11,6 +11,7 @@ dependencies:
 - pytest-receptor=1.1.0
 - packaging
 - numpy
+- pandas >=2.3.3
 - scipy
 - nglview
 - molsysmt

@@ -582,8 +582,10 @@ class TestDistributionContract(unittest.TestCase):
     def test_actual_editables_cannot_be_mistaken_for_selected_git_origins(self):
         class Editable:
             def __init__(self, name):
-                # Reach provenance validation with an admitted codec version.
-                self.version = "6.0.3" if name.lower() == "pyyaml" else "1.0.0"
+                # Reach provenance validation with admitted codec/table versions.
+                self.version = {"pyyaml": "6.0.3", "pandas": "2.3.3"}.get(
+                    name.lower(), "1.0.0"
+                )
 
             def read_text(self, name):
                 return json.dumps(

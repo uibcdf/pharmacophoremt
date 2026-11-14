@@ -2,6 +2,9 @@
 
 ## Unreleased — toward 0.6.0
 
+- Declare Pandas >=2.3.3 directly for the existing table and CSV APIs, with
+  aligned package, Conda and runtime-profile requirements. This minimum
+  supports Python 3.14; existing table behavior remains unchanged.
 - Add explicit [symmetric positive-center comparison](../cookbook/symmetric_model_comparison.md):
   `compare_pharmacophores()` returns bounded maximum-cardinality correspondence,
   normalized overlap, quantity-preserving input axes and optional attribution.

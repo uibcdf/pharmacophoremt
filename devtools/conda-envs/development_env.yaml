@@ -20,6 +20,7 @@ dependencies:
 - myst-nb
 - mamba
 - numpy
+- pandas>=2.3.3
 - scipy
 - nglview
 - molsysmt

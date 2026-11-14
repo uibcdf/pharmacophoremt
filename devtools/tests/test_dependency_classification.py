@@ -11,6 +11,33 @@ ROOT = Path(__file__).resolve().parents[2]
 
 
 class TestDependencyClassification(unittest.TestCase):
+    def test_public_tables_own_a_python_314_compatible_pandas_dependency(self):
+        metadata = tomllib.loads((ROOT / "pyproject.toml").read_text())
+        requirements = {
+            requirement.name.lower(): requirement
+            for requirement in map(Requirement, metadata["project"]["dependencies"])
+        }
+        # MolSysMT/test-only availability cannot replace this direct contract.
+        self.assertIn("pandas", requirements)
+        self.assertTrue(requirements["pandas"].specifier.contains("2.3.3"))
+        self.assertFalse(requirements["pandas"].specifier.contains("2.3.2"))
+        self.assertTrue(requirements["pandas"].specifier.contains("3.0.0"))
+        tree = ast.parse((ROOT / "pharmacophoremt/_depdigest.py").read_text())
+        declaration = next(
+            node.value
+            for node in tree.body
+            if isinstance(node, ast.Assign)
+            and any(
+                isinstance(target, ast.Name) and target.id == "LIBRARIES"
+                for target in node.targets
+            )
+        )
+        pandas = ast.literal_eval(declaration)["pandas"]
+        self.assertEqual(pandas["type"], "hard")
+        self.assertEqual(pandas["pypi"], "pandas")
+        self.assertEqual(pandas["conda"], "pandas")
+        self.assertEqual(pandas["channel"], "conda-forge")
+
     def test_yaml_runtime_codec_is_declared_directly(self):
         metadata = tomllib.loads((ROOT / "pyproject.toml").read_text())
         required = {

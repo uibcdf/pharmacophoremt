@@ -1,5 +1,16 @@
 # 0.6.0 accumulated scope review
 
+## Pandas ownership receiving — 2026-11-13 local date
+
+[#206](pending_bugs/pandas_dependency_ownership.md) adds direct hard
+`pandas>=2.3.3` to metadata, recipe, DepDigest and maintained runtime/test
+profiles, preserving table/CSV APIs and scientific bodies. The minimum is
+chosen for Python 3.14 compatibility. The source-focused 95 cases, 163
+administrative controls and declared-route preflight pass. Exact owned-wheel
+receiving with public Pandas 2.3.3 and 3.1.1 remains the next bounded action.
+The accepted e7d3e49 matrix below does not qualify this later metadata change.
+No 0.6.0 candidate/tag/package is selected by this increment.
+
 ## Complete controlled-source checkpoint — 2026-11-13 local date
 
 [Terminal receiving](evidence/source_060_recovery_checkpoint_qualification_20261113_eralpha.json)

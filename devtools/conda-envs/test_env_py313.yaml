@@ -11,7 +11,7 @@ dependencies:
 - versioningit>=3.0
 - h5py
 - numpy
-- pandas
+- pandas >=2.3.3
 - networkx
 - tqdm
 - matplotlib

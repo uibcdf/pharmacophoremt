@@ -3,6 +3,12 @@ from pharmacophoremt._private.smonitor.exceptions import LibraryNotFoundError
 
 LIBRARIES = {
     "numpy": {"type": "hard", "pypi": "numpy"},
+    "pandas": {
+        "type": "hard",
+        "pypi": "pandas",
+        "conda": "pandas",
+        "channel": "conda-forge",
+    },
     "scipy": {"type": "hard", "pypi": "scipy"},
     "molsysmt": {"type": "hard", "pypi": "molsysmt"},
     "pyunitwizard": {"type": "hard", "pypi": "pyunitwizard"},

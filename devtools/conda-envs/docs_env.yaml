@@ -15,6 +15,7 @@ dependencies:
 - sphinx-tabs
 - myst-nb
 - numpy
+- pandas>=2.3.3
 - scipy
 - nglview
 - molsysmt

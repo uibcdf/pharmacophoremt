@@ -22,6 +22,7 @@ requires-python = ">=3.11,<3.15"
 # Declare any run-time dependencies that should be installed with the package.
 dependencies = [
     "numpy",
+    "pandas>=2.3.3",
     "scipy",
     "nglview",
     "molsysmt",

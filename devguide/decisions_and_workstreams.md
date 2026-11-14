@@ -1,5 +1,15 @@
 # Decisions and active workstreams
 
+## Direct Pandas ownership — 2026-11-13 local date
+
+[#206](pending_bugs/pandas_dependency_ownership.md) implements the required
+`pandas>=2.3.3` boundary across package/Conda/DepDigest/profile declarations.
+Source minimum receiving passes 95 tests; 163 administrative controls and
+declared-route preflight pass. Exact owned-wheel receiving with public 2.3.3
+and 3.1.1 is next. This third-party provider is outside the central member
+graph. Existing APIs, science, controlled pins and public artifacts retain
+their identities; the bounded ownership issue remains active for receiving.
+
 ## Deferred tabular-engine study — 2026-11-13 local date
 
 [#210](pending_proposals/evaluate_tabular_backends.md) retains a future

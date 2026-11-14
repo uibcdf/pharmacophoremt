@@ -46,10 +46,16 @@ independent. This documentation increment does not extend the source receipt
 above to a later head. Exact issue-body/label/cross-link readback, generated
 indexes and all three local reporting controls pass.
 
-At the maintainer's instruction, resolve [Pandas ownership #206](pending_bugs/pandas_dependency_ownership.md):
-choose its dependency boundary and justified supported floor, align metadata,
-recipe/environments/DepDigest and receive actual public tables in an isolated
-installation. Then finish the 0.6.0 scope/compatibility/install review and prepare
+[#206](pending_bugs/pandas_dependency_ownership.md) now implements hard direct
+`pandas>=2.3.3` ownership across metadata, recipe, DepDigest and maintained
+runtime/test profiles. Source receiving passes 95 existing table/native-facade
+cases with the authenticated public minimum; all 163 administrative controls
+and declared-route preflight pass. Initial preparation/fixture failures retain
+their logs. Third-party Pandas is outside the central member graph's scope.
+
+Next freeze this implementation and receive its exact owned wheel with public
+Pandas 2.3.3 and 3.1.1 outside the checkout. Then finish the 0.6.0
+scope/compatibility/install review and prepare
 one exact candidate. Keep source, tag and public-package decisions distinct;
 retain any later-head qualification debt under #9/#23.
 

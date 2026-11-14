@@ -1,5 +1,15 @@
 # Strategic roadmap
 
+## Pandas ownership implementation — 2026-11-13 local date
+
+[#206](pending_bugs/pandas_dependency_ownership.md) declares hard direct
+`pandas>=2.3.3` consistently in metadata, recipe, DepDigest and maintained
+runtime/scientific profiles. Source receiving passes 95 existing controls with
+the public minimum; 163 administrative controls and declared-route preflight
+pass. Freeze the implementation and receive the exact owned wheel with public
+2.3.3 and 3.1.1 before closing this bounded issue. No API/scientific/provider pin
+change, full installed/public qualification or 0.6.0 candidate decision follows.
+
 ## Deferred tabular-engine assessment — 2026-11-13 local date
 
 [#210](pending_proposals/evaluate_tabular_backends.md) records the maintainer's
