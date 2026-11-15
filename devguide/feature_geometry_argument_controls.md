@@ -63,9 +63,29 @@ DATA/CPU/wall and own-family RSS/physical reserve/swap/PSI monitoring. Capacity 
 not reserved; there is no aggregate allocation/cgroup or AS cap. Retain task-owned
 capsule/target for 2026-11-29 review; earlier staging uncertainty keeps its owner.
 
-The original unsplit integration command terminates with signal9 after119.34 CPU
-seconds under its hard120s limit, without final XML or a monitor pressure stop.
+The original unsplit integration command terminates with signal 9 after 119.34 CPU
+seconds under its hard 120s limit, without final XML or a monitor pressure stop.
 Keep it incomplete and preserve command/output/resource identity. Receive smaller
 aligned/common-contract groups under unchanged limits. The complete receptor-
 hypothesis pilot is unreceived in this bounded task; later-head source recovery
 remains #9-owned without promoting partial results.
+
+## Measured receiving — 2026-11-15
+
+[Receiving](evidence/feature_pair_controls_20261115.json) receives source
+fbb09df1fe9bced30d456c9e57726badd60c5f0c and exact private wheel `0.6.0+22.gfbb09df`:
+identical serial **143/48/17/132-case source/owned groups**, **340 distinct cases
+per context including 83 new controls**, zero failures/errors/skips. All 245
+payloads/190 source-equal Python bodies verify, with 172 target-only PHMT modules
+per group. Actual immutable SDK support has
+pre-work journals, checks and import/resource retirement; file-relative fixture
+links also retire. Strict owned HTML docs and relevant reporting/archive/index/
+generated-environment/declared-route/Ruff checks pass (549 formatted files).
+Earlier unchanged 163-case administrative/27-case distribution evidence retains
+its original producer/scope.
+
+Original baseline/prototype/final guard and runtime snapshots stay in the full
+hash-bound archive. All 83 final controls and the unchanged relevant geometry,
+placement/refinement, common-contract score/correspondence and aligned
+consumers pass in both contexts. This evidence remains bounded; native guards
+are required scientific work and do not establish a speed improvement.

@@ -14,6 +14,19 @@ supersedes: []
 
 # Review Python ecosystem policy adoption
 
+## Feature-pair public receiving — 2026-11-15
+
+[#224](../feature_geometry_argument_controls.md) receives fbb09df and its exact
+private wheel with identical [143/48/17/132-case source/owned groups](../evidence/feature_pair_controls_20261115.json):
+340 distinct cases/context including 83 controls. Closed local admission keeps
+three existing scientific validators mandatory, including evaluated-empty input;
+the remaining geometry/helpers/decorators and public child admission stay intact.
+Payload/body/origin proof, actual SDK retirement, strict docs and relevant quality
+pass. Real cached nm/pm custody and application-owned new-only/reused/empty credit
+pass. Original baseline/prototype evidence retains its identity. #6 remains
+partial; get_rigid_feature_placements admission is next, with full supported/
+source/installed/public/platform/biological/scale gates separately owned.
+
 ## Prepared-conformer public receiving — 2026-11-14 local date
 
 [#216](../conformer_argument_controls.md) receives f39c715 and its exact private

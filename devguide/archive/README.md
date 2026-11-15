@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (161)
+### Resolved (162)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -50,6 +50,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`esr1_consensus_comparison.md`](esr1_consensus_comparison.md) — [#64](https://github.com/uibcdf/pharmacophoremt/issues/64) — Compare training-only rigid consensus against a frozen reference on new assay CIDs. *(resolved, measured)*
 - [`expand_typed_retrieval.md`](expand_typed_retrieval.md) — [#182](https://github.com/uibcdf/pharmacophoremt/issues/182) — Receive six-family native retrieval with full-query cardinality and numerical boundaries. *(resolved, measured)*
 - [`feature_archive_coverage.md`](feature_archive_coverage.md) — [#190](https://github.com/uibcdf/pharmacophoremt/issues/190) — Include the feature-archive namespace in CI coverage before the 0.5.0 cut. *(resolved, reproduced)*
+- [`feature_geometry_argument_controls.md`](feature_geometry_argument_controls.md) — [#224](https://github.com/uibcdf/pharmacophoremt/issues/224) — Expose local pair-evaluation digestion control while retaining mandatory scientific admission. *(resolved, measured)*
 - [`feature_pair_index_bounds.md`](feature_pair_index_bounds.md) — [#221](https://github.com/uibcdf/pharmacophoremt/issues/221) — Unsigned explicit feature-pair indices wrap before shared-frame geometry evaluation. *(resolved, measured)*
 - [`feature_reuse_route_inventory.md`](feature_reuse_route_inventory.md) — [#151](https://github.com/uibcdf/pharmacophoremt/issues/151) — Register the resource and native qualification workflows without bypassing dependency-route review. *(resolved, measured)*
 - [`g3ps_ranked_seed_tools.md`](g3ps_ranked_seed_tools.md) — [#28](https://github.com/uibcdf/pharmacophoremt/issues/28) — Expose G3PS neighborhood and ranked-guess stages as reusable native tools. *(resolved, measured)*

@@ -1,13 +1,18 @@
 # Decisions and active workstreams
 
-## Feature-pair public control selected — 2026-11-15
+## Feature-pair public control received — 2026-11-15
 
-[#224](feature_geometry_argument_controls.md) adds explicit local admission and
-three existing mandatory scientific pair/tolerance validators. The geometry
-remainder, shared helpers and public placement/refinement callers stay unchanged.
-Original baseline/prototype identities are retained; final controls, relevant
-source/exact-owned consumer groups, strict docs and governance precede closure.
-Broader #6 and full supported/public gates remain separate.
+[#224](feature_geometry_argument_controls.md) receives fbb09df and its exact
+private wheel: [143/48/17/132-case source/owned groups](evidence/feature_pair_controls_20261115.json),
+340 distinct cases/context including 83 new controls, 245 payloads/190 equal
+bodies, 172 target-only PHMT modules per group and actual SDK journals/retirement. Strict owned docs and
+relevant governance/Ruff pass. Closed local admission and three reused mandatory
+scientific validators preserve pair identity, physical criteria, units, directed/
+axis geometry, empty completion and actual cached custody/credit. Remaining
+calculation/helpers/decorators and public placement/refinement callers stay
+unchanged. Original baseline/prototype/snapshots keep their identities. Next audit
+get_rigid_feature_placements under partial #6; complete supported/public gates
+remain separate.
 
 ## Score control and prepared-plan repair received — 2026-11-15
 

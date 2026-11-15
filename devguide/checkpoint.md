@@ -8,21 +8,47 @@ checkpoint is preserved at [4f01364](https://github.com/uibcdf/pharmacophoremt/b
 [earlier pre-tag preparation](checkpoint_history_20261114_before_final_review.md)
 and the [0.6.0 cut record](release_0_6_0_source_cut.md) retain their identities.
 
-## Current increment — explicit pair-evaluation control toward 0.7.0
+## Current increment — feature-pair public control received toward 0.7.0
 
-[#224](feature_geometry_argument_controls.md) adds one keyword-only local control
+[#224](feature_geometry_argument_controls.md) adds one local keyword-only control
 and closed definition-owned admission. Three existing pair/physical-tolerance
-validators become mandatory before native geometry; the remaining body and
-inventory/orientation helpers stay AST-equal. Placement/refinement callers retain
-their independent default admission. Original 83-case baseline (79 failures/four
-preservation passes) and 50-case control-only prototype (25 failures/25 passes)
-retain distinct guard/source/XML/output identities. All 83 final controls pass;
-source groups pass 143/48/17/132 cases: 340 distinct including all 83 new
-controls, zero failures/errors/skips. Exact-owned receiving, strict docs and
-governance remain pending. The original unsplit integration attempt stops at
-its hard CPU ceiling without XML; full receptor-pilot receiving stays #9-owned.
-Broader #6 and complete supported/source/installed/public/platform/biological/
-human/scale gates stay separate; prior alignment staging uncertainty keeps its owner.
+validators stay mandatory before native geometry. The remaining calculation,
+inventory/orientation helpers and signal/attribution decorators remain AST-equal;
+public placement/refinement callers retain default admission.
+
+[Receiving](evidence/feature_pair_controls_20261115.json) receives source
+fbb09df1fe9bced30d456c9e57726badd60c5f0c and exact private wheel `0.6.0+22.gfbb09df`:
+identical serial **143/48/17/132-case source/owned groups**, **340 distinct cases
+per context including 83 new controls**, zero failures/errors/skips. All 245
+payloads/190 source-equal Python bodies verify, with 172 target-only PHMT modules
+per group. Actual immutable SDK support has
+pre-work journals, checks and import/resource retirement; file-relative fixture
+links also retire. Strict owned HTML docs and relevant reporting/archive/index/
+generated-environment/declared-route/Ruff checks pass (549 formatted files).
+Earlier unchanged 163-case administrative/27-case distribution evidence retains
+its original producer/scope.
+
+Independent order/boundary/typed-orientation oracles, native overflow/injectivity/
+range/required-orientation guards and invalid physical criteria even for empty
+requests pass. Actual generated cached inventories under nm/pm retain source/
+input/quantity custody and detached results without molecular reads/fits. Real
+application-owned Ackredit sessions/captures credit each reached pair evaluation,
+including reused references and evaluated-empty work, without re-crediting prior
+extraction. Completion remains supplied-pair geometry in a shared frame.
+
+Original 83-case baseline (79 failures/four preservation passes), control-only
+50-case prototype (25 failures/25 passes), guard/source snapshots, XML/logs and
+provider/resource contexts retain their identities. The original unsplit
+integration attempt stops at its hard CPU ceiling without
+final XML; subsequent smaller source/owned groups retain separate identities.
+The complete
+receptor-hypothesis pilot is unreceived in this bounded task and retains later-head
+source recovery under #9. Broader #6 and complete later-head source/policy/
+publication, installed/
+public/platform/biological/human/scale gates stay separate. Bounded Linux/Python
+3.14.10/public ArgDigest 0.17.1/PUW 0.28.1/Pandas 3.1.1 and controlled other-provider/
+inherited-native limitations remain. Prior alignment staging uncertainty keeps
+its original owner/receipt; this work introduces no speed claim.
 
 ## Earlier bounded increments
 
@@ -32,7 +58,6 @@ at 7b01bb5: 464 distinct cases/context including 94 new controls, 245 payloads/1
 equal bodies, 172 target-only modules and actual SDK journals/retirement. Strict
 owned docs pass. Original baselines/guard versions and both installed-harness
 adaptations retain their identities; #6 remains partial.
-
 
 [#220/#221 selection/explicit-pair bounds](selection_index_bounds.md) retain
 [272/177/69-case source/owned receiving](evidence/selection_index_bounds_20261115.json)
@@ -107,11 +132,10 @@ unchanged. Full installed/public artifact, biological/human/scale acceptance,
 
 ## Next concrete action and resources
 
-Receive #224 controls, relevant geometry/placement/refinement source and exact
-owned groups, strict docs and original evidence. Then audit public rigid feature
-proposal/placement/refinement admission, preserving child validation, finite
-search/fit budgets and scientific mapping/geometry ownership. Other public APIs
-remain partial under #6; publisher pauses and stopped #148/#165 remain.
+Audit get_rigid_feature_placements public explicit-control admission next,
+preserving independent child validation, finite fit/assignment budgets and
+scientific mapping/geometry authority. Other public APIs remain partial under
+#6. Publisher pauses and stopped #148/#165 remain.
 
 Preserve shared-prefix/migration pauses and original native/data identities.
 Heavy work stays serial: one CPU/backend thread, low CPU/I/O priority, finite
