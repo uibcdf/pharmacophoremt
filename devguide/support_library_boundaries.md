@@ -1,12 +1,14 @@
 # Support-library boundaries and receiving limits
 
-## Prepared-conformer controls — 2026-11-14
+## Prepared-conformer controls — 2026-11-14 local date
 
-[#216](conformer_argument_controls.md) reuses existing definition-owned ArgDigest,
-Boolean/reader dependencies and a mandatory shared on_error validator before
-frames. Native constructor/run and evaluate remainder retain their bodies and
-default children. All 74 new source controls and 165/307-case groups pass; exact
-owned receiving and strict docs remain pending. Broader #6 stays partial.
+[#216](conformer_argument_controls.md) receives f39c715 with existing definition-
+owned ArgDigest/Boolean/reader contracts and a mandatory shared on_error guard.
+[Serial receiving](evidence/conformer_argument_controls_20261114.json) passes the
+same 165/307-case groups per source/owned context, 472 distinct cases including
+74 new controls, 244 payloads/189 equal bodies, 171 target-only modules, actual
+SDK retirement per group and strict owned docs. No provider edit/floor or local
+argument engine follows. Broader #6 remains partial; correspondence is next.
 
 ## Rigid-search explicit controls — 2026-11-14 local date
 

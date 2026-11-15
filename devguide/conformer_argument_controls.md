@@ -44,6 +44,18 @@ groups pass 165 and 307 cases respectively: 472 distinct cases, zero failures/
 errors/skips. The 74-case original baseline has 72 missing-control/admission
 failures/two passes. Exact initial/final guard snapshots and outputs are retained.
 
+The [receiving receipt](evidence/conformer_argument_controls_20261114.json) receives
+source f39c715 and its private development wheel `0.6.0+12.gf39c715`: the same
+serial 165/307-case source/owned groups, 472 distinct cases per context, zero
+failures/errors/skips. All 244 payloads/189 source-equal Python bodies verify;
+both groups load 171 target-only PHMT modules. Actual immutable SDK support
+verifies and retires imports/resources separately for each group. Strict owned
+docs and relevant governance/Ruff checks pass. Public ArgDigest 0.17.1/PUW 0.28.1/
+Pandas 3.1.1 and controlled other-provider/inherited-native limitations remain
+explicit; Linux/Python 3.14.10 receiving is separate from complete supported
+source/installed/public qualification. Prior 163-case administrative evidence
+retains source 00b21a8 and is not relabelled as a new execution.
+
 Receive original/final guard snapshots and focused source controls, then serial
 native and facade coupling groups with the same selections in one exact committed
 owned wheel. Actual immutable SDK support must stage, verify and retire for each

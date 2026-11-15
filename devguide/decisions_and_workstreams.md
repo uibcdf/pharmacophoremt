@@ -1,12 +1,14 @@
 # Decisions and active workstreams
 
-## Prepared-conformer argument controls — 2026-11-14 local date
+## Prepared-conformer receiving complete — 2026-11-14 local date
 
-[#216](conformer_argument_controls.md) exposes three controls with independent
-search children and mandatory failure-policy admission. The scientific remainder
-is AST-equal after the one guard. Source passes 74 new controls and two disjoint
-165/307-case groups; exact owned/strict docs are pending. Keep original snapshots,
-partial #6 and prior unchanged-tool evidence distinct from new execution.
+[#216](conformer_argument_controls.md) receives f39c715 through the same serial
+[165/307-case source/owned groups](evidence/conformer_argument_controls_20261114.json):
+472 distinct cases including 74 new controls, 244 payloads/189 equal bodies,
+171 target-only modules, actual SDK retirement per group and strict owned docs.
+Independent controls and one native policy guard retain frame/state/failure/score
+accounting. Original snapshots and prior unchanged-tool evidence remain distinct.
+Next audit public correspondence/budget guards under partial #6.
 
 ## Rigid-search receiving complete — 2026-11-14 local date
 

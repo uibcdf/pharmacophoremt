@@ -10,23 +10,29 @@ and the [0.6.0 cut record](release_0_6_0_source_cut.md) retain their identities.
 
 ## Current increment — prepared-conformer controls toward 0.7.0
 
-[#216](conformer_argument_controls.md) implements three independent keyword-only
-controls on ConformerScreening and one mandatory shared failure-policy guard
-before frame acquisition. Constructor/run bodies and decorators are unchanged;
-the evaluate remainder is AST-equal after excluding only that guard. Public
-RigidPoseSearch children retain default admission and native scientific checks.
+[#216](conformer_argument_controls.md) receives source
+**f39c71576d0887f5de367869e21cfa354ab6ba43** and private development wheel
+`0.6.0+12.gf39c715`. The [receipt](evidence/conformer_argument_controls_20261114.json)
+records identical serial **165-case core + 307-case coupling groups**, 472 distinct
+cases per source/owned context, including 74 new controls. All 244 payloads/189
+source-equal Python bodies verify; both groups load only the owned target's
+171 PHMT modules. Actual immutable SDK support verifies and retires separately
+for each group. Strict owned docs and relevant reporting/archive/index/generated-
+environment/declared-route/Ruff checks pass. Prior unchanged administrative-tool
+163-case evidence stays bound to 00b21a8 rather than relabelled as a new run.
 
-All 74 new source controls pass. Serial native/core and facade coupling groups
-pass **165 + 307 = 472 distinct cases**, zero failures/skips; relevant governance
-and whole-tree Ruff checks pass. The original 74-case baseline has 72 failures/
-two passes, and the exact initial/final guard snapshots remain retained.
-Real nm/pm, requested frame order/ties, declared chemical states, criterion-specific
-failure resolution, no-fit negatives, attribution and source custody pass.
+Three independent keyword-only controls retain default search-child admission.
+Failure-policy validation is mandatory before frame acquisition during bypass.
+Constructor/run bodies and decorators are unchanged; the evaluate remainder is
+AST-equal after that one guard. Real nm/pm, requested frame order/ties, declared
+states, criterion-specific failure resolution, no-fit negatives, attribution and
+source custody pass. Original baseline 72 failures/two passes and exact initial/
+final guard snapshots remain hash-bound.
 
-Next receive the same groups in one exact committed owned wheel and strict docs
-before closing the bounded issue. Prior unchanged administrative-tool 163-case
-evidence remains bound to 00b21a8. Broader #6 and full source/installed/public
-qualification remain partial.
+This is bounded Linux/Python 3.14.10 receiving with public ArgDigest 0.17.1/PUW
+0.28.1/Pandas 3.1.1 and identified controlled other providers/inherited native
+extension. Broader #6 and later-head complete scientific/policy/publication plus
+installed/public/biological/scale gates remain separate.
 
 ## Earlier bounded increments
 
@@ -78,18 +84,17 @@ unchanged. Full installed/public artifact, biological/human/scale acceptance,
 
 ## Next concrete action and resources
 
-Receive #216's exact committed owned wheel with both disjoint groups and
-strict docs, archive its bounded guard/evidence and keep later-head qualification
-debt explicit. Then audit public get_correspondences admission and budget guards
-before selecting that next bounded implementation; alignment/scoring and other
-APIs remain separate. Package/hosted-doc publishers stay inactive; stopped
-#148/#165 are not restarted.
+Audit public get_correspondences admission and mandatory budget guards before
+selecting its next bounded explicit-control implementation. Preserve seed
+uniqueness, physical/numerical pruning and bounded enumeration; public alignment,
+scoring and other APIs remain separately tracked under #6. Package/hosted-doc
+publishers stay inactive; stopped #148/#165 are not restarted.
 
 Preserve shared-prefix/migration pauses and original native/data identities.
 Heavy work stays serial: one CPU/backend thread, low CPU/I/O priority, finite
 limits, pressure/swap/own-family monitoring and 20% physical RAM plus task margin
 available. Capacity is not reserved. Review final-review/tag-delivery,
-screening-export/run, placed-pose and rigid-search task-owned capsules/targets
+screening-export/run, placed-pose, rigid-search and conformer-control capsules/targets
 on 2026-11-28;
 earlier tasks retain their own owners/dates. SDK test staging has retired its
 imports/resources; original published evidence and scientific inputs remain durable.

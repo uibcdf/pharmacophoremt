@@ -1,14 +1,16 @@
 # Strategic roadmap
 
-## Prepared-conformer controls implemented — 2026-11-14 local date
+## Prepared-conformer controls received — 2026-11-14 local date
 
-[#216](conformer_argument_controls.md) adds three independent controls and one
-mandatory failure-policy guard before frames. Native scientific remainder,
-frame/state/failure/score accounting and child admission remain. All 74 new
-source controls and disjoint 165/307-case groups pass (472 distinct cases),
-including real nm/pm and attribution. Exact committed owned groups and strict
-docs follow. Prior unchanged-tool evidence stays separate. Broader #6, public
-helpers and full supported/public gates remain open; no tag/publisher/matrix.
+[#216](conformer_argument_controls.md) receives f39c715 and its exact private
+wheel: [165/307-case source/owned groups](evidence/conformer_argument_controls_20261114.json),
+472 distinct cases per context, including 74 new controls, 244 payloads/189 equal
+bodies and 171 owned-target-only modules. Actual SDK support retires per group;
+strict owned docs and relevant governance/Ruff checks pass. The one mandatory
+failure-policy guard preserves the scientific remainder, frame/state/failure/score
+meaning and independent children. Original snapshots/failures and prior unchanged-
+tool evidence stay distinct. Next audit public correspondence admission/budget
+guards. Broader #6 and full supported/public/biological/scale gates remain open.
 
 ## Rigid-search controls received — 2026-11-14 local date
 
