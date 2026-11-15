@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (164)
+### Resolved (166)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -123,6 +123,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`prepared_rigid_search_continuation.md`](prepared_rigid_search_continuation.md) — [#50](https://github.com/uibcdf/pharmacophoremt/issues/50) — Qualify saved prepared queries through rigid recovery, selected negatives and frame-budget accounting. *(resolved, measured)*
 - [`prepared_workflow_schema_oracles.md`](prepared_workflow_schema_oracles.md) — [#102](https://github.com/uibcdf/pharmacophoremt/issues/102) — Compare complete curation payloads separately from the public native schema envelope. *(resolved, measured)*
 - [`profile_saved_run_scaling.md`](profile_saved_run_scaling.md) — [#144](https://github.com/uibcdf/pharmacophoremt/issues/144) — Measure saved-run inspection and export scaling with complete record verification. *(resolved, reproduced)*
+- [`proposal_argument_controls.md`](proposal_argument_controls.md) — [#229](https://github.com/uibcdf/pharmacophoremt/issues/229) — Expose local rigid-proposal digestion control while preserving finite-family scientific semantics. *(resolved, measured)*
 - [`provenance_strings_interpreted_as_quantities.md`](provenance_strings_interpreted_as_quantities.md) — [#25](https://github.com/uibcdf/pharmacophoremt/issues/25) — Provenance serialization interprets literal identifiers as physical quantities. *(resolved, reproduced)*
 - [`public_cached_carbonyl_generation.md`](public_cached_carbonyl_generation.md) — [#94](https://github.com/uibcdf/pharmacophoremt/issues/94) — Qualify explicitly selected public cached-carbonyl receptor generation. *(resolved, measured)*
 - [`public_excluded_volume_sites.md`](public_excluded_volume_sites.md) — [#32](https://github.com/uibcdf/pharmacophoremt/issues/32) — Build reusable exclusion spheres from native heavy-atom inventories without molecular inference. *(resolved, measured)*
@@ -134,6 +135,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`qualify_feature_store_study.md`](qualify_feature_store_study.md) — [#186](https://github.com/uibcdf/pharmacophoremt/issues/186) — Qualify a bounded immutable feature-manifest storage adapter. *(resolved, measured)*
 - [`qualify_feature_store_workflow.md`](qualify_feature_store_workflow.md) — [#187](https://github.com/uibcdf/pharmacophoremt/issues/187) — Qualify guided and expert feature-store inspection, reuse and recovery. *(resolved, measured)*
 - [`qualify_rdkit_projection.md`](qualify_rdkit_projection.md) — [#140](https://github.com/uibcdf/pharmacophoremt/issues/140) — Qualify RDKit pharmacophore projection and explicit constraint translation. *(resolved, reproduced)*
+- [`ranked_seed_installed_support.md`](ranked_seed_installed_support.md) — [#230](https://github.com/uibcdf/pharmacophoremt/issues/230) — Include the unchanged ranked-seed cases in actual installed-test support staging. *(resolved, measured)*
 - [`ranking_and_retrospective_accounting.md`](ranking_and_retrospective_accounting.md) — [#12](https://github.com/uibcdf/pharmacophoremt/issues/12) — Repair ranking metrics and retain explicit retrospective input accounting. *(resolved, measured)*
 - [`receive_aromatic_nitrogen_receptor_directions.md`](receive_aromatic_nitrogen_receptor_directions.md) — [#105](https://github.com/uibcdf/pharmacophoremt/issues/105) — Receive already defined native aromatic-nitrogen acceptor directions in an explicit receptor profile. *(resolved, measured)*
 - [`receive_chemical_domain_separation.md`](receive_chemical_domain_separation.md) — [#69](https://github.com/uibcdf/pharmacophoremt/issues/69) — Receive MolSysMT chemical-domain separation with unchanged scientific profiles. *(resolved, measured)*

@@ -57,7 +57,7 @@ decorators remain AST-equal. Relevant source/exact-owned receiving is in progres
 
 ## Installed-support repair — PHMT#230
 
-The first owned proposal/consensus groups pass at source32f4d2e; ranking fails
+The first owned proposal/consensus groups pass at source 32f4d2e; ranking fails
 collection because the file-relative tests/data link is absent. A distinct retry
 with the actual SDK link still fails because the manifest omits ranked_seed_cases.
 Declare that unchanged SHA256-bound fixture and extend actual-stage distribution
@@ -67,7 +67,31 @@ contexts retire both links. Freeze the repaired source before exact owned receiv
 This changes PHMT support admission only, with no SDK/provider or scientific-body
 repair. Source scientific groups keep their original labels/bytes/cohort identities.
 
-Original owned consensus and failed ranking overlap by6.89seconds through an
+Original owned consensus and failed ranking overlap by 6.89 seconds through an
 operator sequencing error; both retain CPU19/backend1 and bounded monitoring with
 adequate reserve/no pressure. Preserve their timing, do not claim that interval was
 serial, and await definitive predecessor completion for all subsequent heavy work.
+
+## Measured receiving — 2026-11-15
+
+[Receiving](evidence/rigid_proposal_controls_20261115.json) receives source
+140c6d290855da2c0dd216a87df57941ef3370a1 and exact private wheel `0.6.0+29.g140c6d2`:
+identical final serial **149/25/32/113-case source/owned groups**, **319 distinct cases
+per context including 149 new controls**, zero failures/errors/skips. All 245
+payloads/190 source-equal Python bodies verify, with 172 target-only PHMT
+modules across the groups. Actual immutable SDK support has pre-work journals,
+checking and import/resource retirement; file-relative fixture links also retire.
+Strict owned HTML docs and reporting/archive/index/generated-environment/declared-
+route/Ruff checks pass (552 formatted files), plus 27 fresh distribution controls.
+The scientific source groups retain their original 32f4d2e identities: all 197
+runtime/selected-guard files match the repaired source, without claiming another
+source execution. Earlier administrative/distribution evidence retains its
+original producer/scope; changed support metadata uses the fresh controls.
+
+Original baseline and both authored failed implemented attempts retain their
+guards/output identities. The geometry/catalog/numerical-tie test corrections
+do not change production algorithms. Eight mandatory native validators preserve
+empty/unused-option admission; independent rigid/reflected mappings and exact nm
+tie order, pm equivalent valid seeds, finite selection counts and original
+resource/child failures pass. No heavy operation is interrupted here. #6/full
+qualification and earlier resource uncertainties retain their owners.

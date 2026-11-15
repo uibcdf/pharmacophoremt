@@ -1,13 +1,19 @@
 # Decisions and active workstreams
 
-## Rigid-proposal control implemented — 2026-11-15
+## Rigid-proposal public control received — 2026-11-15
 
-[#229](proposal_argument_controls.md) adds explicit local control and eight reused
-mandatory native validators; the scientific remainder/decorators and independent
-children remain unchanged. All 149 final controls pass after separately retained
-authored assertion/geometry/numerical-tie corrections. Source/exact-owned consumer
-receiving and strict docs/quality are in progress. #6 and full supported/public
-gates remain partial; no tag/publisher/full remote matrix or speed claim.
+[#229](proposal_argument_controls.md) receives 140c6d2 and its exact private
+wheel: [149/25/32/113-case source/owned groups](evidence/rigid_proposal_controls_20261115.json),
+319 distinct cases/context including 149 controls, 245 payloads/190 equal
+bodies and 172 target-only modules across the groups. Actual SDK journals/
+retirement, strict owned docs and relevant quality pass. Eight reused mandatory
+native validators preserve the unchanged finite-family scientific body, default
+children, empty/selected/failed distinctions, reflected inputs and source custody.
+[#230](archive/ranked_seed_installed_support.md) also receives the missing-fixture
+repair with 27 fresh actual-stage distribution controls. Original failed attempts
+and the brief preliminary overlap retain their identities. Next
+audit neighborhood comparison/ranking admission under partial #6. Full supported/
+public gates, #227 and earlier resource uncertainties retain their owners.
 
 ## Rigid-refinement public control received — 2026-11-15
 
