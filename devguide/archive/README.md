@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (162)
+### Resolved (163)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -105,6 +105,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`pharmer_conda_payload_inventory.md`](pharmer_conda_payload_inventory.md) — [#168](https://github.com/uibcdf/pharmacophoremt/issues/168) — Require all new Pharmer helper modules in the Conda payload inventory. *(resolved, measured)*
 - [`pharmer_disabled_points.md`](pharmer_disabled_points.md) — [#162](https://github.com/uibcdf/pharmacophoremt/issues/162) — Preserve or explicitly refuse disabled-point meaning during Pharmer JSON import. *(resolved, measured)*
 - [`pharmer_import_profile.md`](pharmer_import_profile.md) — [#163](https://github.com/uibcdf/pharmacophoremt/issues/163) — Define and enforce an explicit supported Pharmer query import profile. *(resolved, measured)*
+- [`placement_argument_controls.md`](placement_argument_controls.md) — [#225](https://github.com/uibcdf/pharmacophoremt/issues/225) — Expose local rigid-placement digestion control with mandatory scientific mapping and capacity admission. *(resolved, measured)*
 - [`point_center_inspection.md`](point_center_inspection.md) — [#142](https://github.com/uibcdf/pharmacophoremt/issues/142) — Expose Point centers consistently in native geometry inspection. *(resolved, reproduced)*
 - [`portable_developer_handoff.md`](portable_developer_handoff.md) — [#107](https://github.com/uibcdf/pharmacophoremt/issues/107) — Prepare a truthful portable onboarding and machine-migration handoff. *(resolved, measured)*
 - [`pose_argument_controls.md`](pose_argument_controls.md) — [#214](https://github.com/uibcdf/pharmacophoremt/issues/214) — Expose independent public digestion controls on the placed-pose evaluator. *(resolved, measured)*

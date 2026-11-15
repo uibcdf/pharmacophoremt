@@ -14,8 +14,9 @@ other argument digester. Unknown keywords and required mappings stay closed.
 Reuse the existing correspondence, min_matches, max_fits, max_matrix_entries,
 distance_tolerance and direction_tolerance validators as mandatory native
 admission. Require valid finite budgets/minimum and physical criteria even when
-the mapping collection is empty. Validate the entire mapping collection before
-starting the first fit. Move the existing scheduled-fit capacity check before
+the mapping collection is empty. Validate every mapping's shape, integer/index
+domain and injectivity before starting the first fit. Per-mapping range, chemistry
+and source-axis semantics remain with the alignment child. Move the existing scheduled-fit capacity check before
 inventory acquisition, preserving its stage/resource/exception meaning. Apart
 from this native prefix and moved bound, preserve the placement body AST-equal.
 Both shared source/fit helpers and signal/attribution decorators stay unchanged.
@@ -73,3 +74,31 @@ Heavy work remains serial on CPU19/one backend thread, nice19/idle I/O, finite
 DATA/CPU/wall and own-family RSS/physical reserve/swap/PSI monitoring. Capacity is
 not reserved; there is no aggregate allocation/cgroup or AS cap. Retain task-owned
 capsule/target for 2026-11-29 review; earlier temporary resources keep their owners.
+
+## Measured receiving — 2026-11-15
+
+[Receiving](evidence/rigid_placement_controls_20261115.json) receives source
+3f873ea6c535eb963d6d58bd6b6f202ba750057d and exact private wheel `0.6.0+24.g3f873ea`:
+identical serial **123/38/131/136-case source/owned groups**, **428 distinct cases
+per context including 113 new controls**, zero failures/errors/skips. All 245
+payloads/190 source-equal Python bodies verify, with 172 target-only PHMT modules
+per group.
+Actual immutable SDK support has pre-work journals, checking and import/resource
+retirement; file-relative fixture links also retire. Strict owned HTML docs and
+relevant reporting/archive/index/generated-environment/declared-route/Ruff checks
+pass (550 formatted files). Earlier unchanged 163-case administrative/27-case
+distribution evidence keeps its original producer/scope.
+
+The nonblocking [#227 capacity preflight proposal](https://github.com/uibcdf/pharmacophoremt/issues/227)
+tracks avoiding a predictably impossible post-fit assignment before molecular
+fitting. Current PHMT-E106 allocation protection stays correct and qualified;
+no speed improvement or provider defect is claimed by this increment.
+
+Original baseline/prototype and initial/corrected/final guard snapshots remain in
+the full hash-bound archive. All 113 controls and relevant existing placement,
+strategy/consensus/refinement, pair geometry and alignment/correspondence callers
+pass in both contexts. Actual nm/pm molecular fits and five child-admission spies
+preserve frame/state/selection/identity, duplicate alternatives, source/cache/
+report custody and real application-owned capture/session semantics. Native
+failures remain owned exceptions. No heavy run is interrupted here; prior #224
+receptor-pilot receiving stays unreceived/#9-owned, not silently retried or promoted.

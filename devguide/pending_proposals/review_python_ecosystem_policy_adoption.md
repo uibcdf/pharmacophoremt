@@ -14,6 +14,20 @@ supersedes: []
 
 # Review Python ecosystem policy adoption
 
+## Rigid-placement public receiving — 2026-11-15
+
+[#225](../placement_argument_controls.md) receives 3f873ea and its exact private
+wheel: [123/38/131/136-case source/owned groups](../evidence/rigid_placement_controls_20261115.json),
+428 distinct cases/context including 113 controls. Closed local admission keeps
+six reused native scientific validators and an earlier scheduled-fit bound;
+remaining body/helpers/decorators and five public child calls retain their own
+admission. Real cached/extraction nm/pm fits and active application credit preserve
+duplicates, selection/frame/state, other atoms/frames, units and detached reports.
+Payload/body/origin proof, actual SDK retirement, strict docs and relevant quality
+pass. Original baseline/prototype/authored guard correction stays distinct. #6
+remains partial; public refinement is next. Full supported/source/installed/public
+and prior receptor-pilot recovery retain their original gates/owners.
+
 ## Feature-pair public receiving — 2026-11-15
 
 [#224](../feature_geometry_argument_controls.md) receives fbb09df and its exact

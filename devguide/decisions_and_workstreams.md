@@ -1,13 +1,18 @@
 # Decisions and active workstreams
 
-## Rigid-placement public control implemented — 2026-11-15
+## Rigid-placement public control received — 2026-11-15
 
-[#225](placement_argument_controls.md) adds local explicit admission with six
-existing scientific validators and an earlier scheduled-fit bound. The remaining
-body, shared helpers and child admission retain their authority. Original
-baseline/prototype and corrected test exception expectation retain their
-identities. Final source/exact-owned receiving, strict docs and governance
-precede closure. Broader #6 and complete supported/public gates stay separate.
+[#225](placement_argument_controls.md) receives 3f873ea and its exact private
+wheel: [123/38/131/136-case source/owned groups](evidence/rigid_placement_controls_20261115.json),
+428 distinct cases/context including 113 controls, 245 payloads/190 equal
+bodies, 172 target-only PHMT modules per group, actual SDK journals/retirement, strict owned docs and
+relevant quality. Six reused scientific validators and earlier scheduled
+capacity preserve the remaining body/helpers/decorators and independent children.
+Actual nm/pm proper fits retain duplicate alternatives, source/cache/report
+custody and fit/rejection/failure meanings. Original baseline/prototype/authored
+exception correction retain their identities. Next audit public refinement under
+partial #6; complete supported/public gates, prior receptor-pilot recovery and
+older staging uncertainty remain separately owned.
 
 ## Feature-pair public control received — 2026-11-15
 
