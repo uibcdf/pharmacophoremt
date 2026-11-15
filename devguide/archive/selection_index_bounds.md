@@ -1,9 +1,9 @@
 ---
 summary: Unsigned ligand and receptor atom selections can wrap to negative int64 indices.
 issue: uibcdf/pharmacophoremt#220
-status: active
+status: resolved
 opened: 2026-11-14
-closed:
+closed: 2026-11-15
 severity: high
 verification: measured
 area: [arguments, selections]
@@ -51,3 +51,22 @@ The 12 real nm/pm ionic modeling cases retain two-site evidence, ordered selecte
 atoms, quantities, attribution, score and source/input custody. All 94 focused
 selection/feature-pair controls pass; wider source/exact-owned groups and strict
 docs precede closure. Related feature-pair conversion has independent #221 scope.
+
+## Resolution — 2026-11-15
+
+[Receiving](../evidence/selection_index_bounds_20261115.json) qualifies fdeb83e86d2f00ea32ada9e207298ee3be1a6363
+and its exact private wheel: identical 272/177/69-case source/owned groups, 518
+distinct cases/context including 96 new controls, 245 payloads/190 equal Python
+bodies, 172 target-only modules per group, actual pre-work SDK journals/checking/
+retirement, strict owned docs and relevant governance/Ruff. Original baseline,
+focused/earlier-main runs and exact guard snapshots retain their identities.
+The guard protects seven public ligand routes against overflow before provider/
+endpoint access, native complex-constructor admission during bypass, actual
+receptor diagnostic ownership, explicit receptor-overflow refusal before native
+route policy, valid signed/unsigned order and representable maximum, literal
+None/string behavior, unsupported-receptor option meaning and real nm/pm two-site
+ionic model/radius/score/attribution/source custody. Value normalization stays
+shared behind both argument wrappers; public scientific bodies stay unchanged.
+Broader #6 and complete supported/public/source qualification remain separate.
+Earlier alignment staging uncertainty is retained with its original owner/receipt;
+this receiving has no interrupted heavy execution and all SDK stages retire.

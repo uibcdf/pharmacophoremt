@@ -59,16 +59,19 @@ the final guards to 96. Final disjoint source groups pass 272/177/69 cases, 518
 distinct cases with zero failures/errors/skips. The earlier 270-case main group
 retains its own snapshot/XML; source-core-final receives the expanded 272 cases.
 
-Relevant reporting/archive/index/generated-environment/declared-route/Ruff checks
-pass (546 formatted files). Receive identical case sets from
-one exact committed private wheel outside checkout. Verify payload/source-body
-identity, owned-only runtime imports and actual immutable SDK support staging,
-checking and retirement for every accepted group. Journal staging before tests,
-use task-owned temporary parents and allow graceful SIGTERM retirement. Preserve
-any failed/interrupted attempts separately. Strict owned docs and relevant
-reporting/archive/index/generated-environment/declared-route/Ruff checks precede
-closure. Reuse unchanged administrative/distribution evidence with its original
-producer/scope rather than relabelling it as a fresh execution.
+The [receiving receipt](evidence/selection_index_bounds_20261115.json) receives
+source fdeb83e86d2f00ea32ada9e207298ee3be1a6363 and exact private wheel
+`0.6.0+18.gfdeb83e`: identical serial 272/177/69-case source/owned
+groups, 518 distinct cases per context including 96 new controls, zero failures/
+errors/skips. All 245 payloads/190 source-equal Python bodies verify; each group
+loads only 172 target PHMT modules. Actual frozen SDK support stages under private
+task-owned parents, journals before work, verifies and retires imports/resources
+per group. Strict owned HTML docs pass with one builder job/notebook execution
+off. Relevant reporting/archive/index/generated-environment/declared-route/Ruff
+checks pass (546 formatted files). No heavy execution is interrupted in this task.
+Prior unchanged 163 administrative and 27 distribution cases retain their original
+source/scope. Original failed baseline and earlier guard/run versions remain in
+the full hash-bound archive. Prior staging uncertainty keeps its original owner.
 
 Use recorded public ArgDigest 0.17.1/PUW 0.28.1/Pandas 3.1.1 and controlled other
 providers/inherited native extension. Bounded Linux/Python 3.14.10 receiving is

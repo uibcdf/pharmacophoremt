@@ -8,31 +8,36 @@ checkpoint is preserved at [945716c](https://github.com/uibcdf/pharmacophoremt/b
 [earlier pre-tag preparation](checkpoint_history_20261114_before_final_review.md)
 and the [0.6.0 cut record](release_0_6_0_source_cut.md) retain their identities.
 
-## Current increment — selection and feature-pair index bounds toward 0.7.0
+## Current increment — selection and explicit-pair indices received toward 0.7.0
 
-[#220](selection_index_bounds.md) fixes unsigned ligand/receptor selection
-conversion before signed indexing. One private shared value helper retains
-ordered valid signed/unsigned indices and None/string/native-option authority;
-malformed receptor diagnostics now name receptor_selection. [#221](pending_bugs/feature_pair_index_bounds.md)
-protects explicit feature-pair conversion without changing geometry, empty-input
-completion or native inventory bounds. Runtime changes are confined to the
-shared argument-contract module; public scientific bodies/signatures/decorators
-and existing bypass ownership remain unchanged. Broader #6 is partial.
+[#220/#221](selection_index_bounds.md) receive source **fdeb83e86d2f00ea32ada9e207298ee3be1a6363**
+and exact private wheel `0.6.0+18.gfdeb83e`. The [receipt](evidence/selection_index_bounds_20261115.json)
+records identical serial **272/177/69-case source/owned groups**, 518 distinct
+cases per context including 96 new controls, zero failures/errors/skips. All 245
+payloads/190 source-equal Python bodies verify; each group loads only 172 owned-
+target PHMT modules. Actual SDK support is journalled before work, verified and
+retired for each group. Strict owned docs and relevant reporting/archive/index/
+generated-environment/declared-route/Ruff checks pass (546 formatted files).
+Unchanged 163-case administrative/27-case distribution evidence retains its own
+producer/scope rather than becoming a new execution.
 
-The original 94-case baseline records 21 failures/73 preservation passes. Two
-additional receptor-overflow controls bring the final guards to 96 cases.
-Disjoint source groups pass 272/177/69 cases, 518 distinct cases with zero
-failures/errors/skips. They cover before-provider/endpoint refusal, constructor
-bypass admission, representable boundary/order/empty semantics and real two-site
-nm/pm ionic modeling with attribution/source custody. Reporting/archive/index/generated-environment/declared-route and whole-tree Ruff
-checks pass (546 formatted files). Exact owned-wheel receiving and strict docs
-remain pending.
+Only the shared value-contract module changes at runtime: ligand/receptor
+selections and explicit feature pairs refuse unsigned overflow before conversion.
+A private helper preserves order, None/string and native option/source-range
+authority while identifying the actual diagnostic argument. Public scientific
+bodies/signatures/decorators and bypass ownership are unchanged. Real nm/pm
+two-site ionic models retain selected order, radius, score, attribution and source/
+input custody; cached geometry retains ordered pairs and completed-empty meaning.
+Original 94-case baseline (21 failures/73 passes), focused/earlier-main runs and
+exact initial/final guards keep their own identities. Two receptor-overflow
+controls extend the final guard set to 96. Broader #6 remains partial.
 
-Preserve original baseline/guard/provider/resource identities, prior unchanged
-administrative/distribution evidence and full supported/public gates. The prior
-alignment run's staging uncertainty remains with its original owner/receipt;
-this task uses owned temporary parents, pre-work stage journals and graceful
-retirement from its first receiving run.
+This bounded Linux/Python 3.14.10 receiving uses public ArgDigest 0.17.1/PUW 0.28.1/
+Pandas 3.1.1 and controlled other providers/inherited native extension. Complete
+later-head source/policy/publication, supported installed/public/platform and
+biological/human/scale gates remain separate. This task has no interrupted heavy
+run; earlier alignment staging uncertainty remains with its original receipt and
+has not been relabelled as cleaned.
 
 ## Earlier bounded increments
 
@@ -103,11 +108,11 @@ unchanged. Full installed/public artifact, biological/human/scale acceptance,
 
 ## Next concrete action and resources
 
-Receive observed/geometry source and exact-owned groups, strict docs and original
-evidence before closing #220/#221. Next audit get_screening_score public admission
-while preserving valid ranking, failed/unscored and molecular-versus-pose meanings.
-Other public controls remain separately tracked under #6; package/hosted-doc
-publishers stay inactive and stopped #148/#165 are not restarted.
+Audit get_screening_score public admission before selecting its explicit-control
+implementation. Preserve criterion ownership, failed/unscored evidence, complete
+negatives and molecular-versus-placed-pose meaning. Other public controls remain
+separately tracked under partial #6. Package/hosted-doc publishers stay inactive;
+stopped #148/#165 are not restarted.
 
 Preserve shared-prefix/migration pauses and original native/data identities.
 Heavy work stays serial: one CPU/backend thread, low CPU/I/O priority, finite

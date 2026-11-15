@@ -1,14 +1,17 @@
 # Strategic roadmap
 
-## Selection and explicit-pair index safety implemented — 2026-11-15
+## Selection and feature-pair bounds received — 2026-11-15
 
-[#220/#221](selection_index_bounds.md) reject unsigned wrap before int64
-conversion and retain the correct selection diagnostic owner. Public scientific
-bodies/signatures/decorators and existing bypass policies are unchanged. Final
-disjoint source groups pass 272/177/69 cases, 518 distinct cases including 96 new
-controls, zero failures/errors/skips. Exact-owned groups, relevant governance/Ruff
-and strict docs follow. Original 21 failures/73 preservation passes remain intact.
-Broader #6, remaining public controls and supported/public gates stay separate.
+[#220/#221](selection_index_bounds.md) receive fdeb83e and its exact private
+wheel: [272/177/69-case source/owned groups](evidence/selection_index_bounds_20261115.json),
+518 distinct cases/context including 96 new controls, 245 payloads/190 equal
+bodies, 172 target-only modules and actual pre-work SDK journals/retirement per
+group. Strict owned docs and relevant governance/Ruff pass. Shared selection and
+feature-pair normalization preserves identity/order/native authority; receptor
+diagnostics name the actual argument. Scientific public bodies/signatures and
+bypass policies remain unchanged. Original failures/snapshots and prior evidence
+retain their identities. Next audit scoring admission under partial #6; complete
+supported/source/installed/public/biological/scale gates remain separate.
 
 ## Alignment and index-bound controls received — 2026-11-14 local date
 
@@ -20,7 +23,7 @@ accepted groups. Strict owned docs and relevant governance/Ruff pass. Native
 mapping/geometry guards preserve the scientific remainder; unsigned correspondence
 indices cannot wrap negative. Original failed/interrupted attempts and the
 original unknown staging retirement remain explicit. Next audit actual selection
-consumers and before-provider signed-conversion refusal under [#220](pending_bugs/selection_index_bounds.md),
+consumers and before-provider signed-conversion refusal under [#220](archive/selection_index_bounds.md),
 then remaining scoring/API adoption. Broader #6 and full supported/public gates
 remain separate.
 
@@ -255,7 +258,7 @@ identities. No0.6.0 tag/publication; #148/#165 stay stopped.
 ## Symmetric positive-center comparison received — 2026-11-13
 
 [#205](symmetric_model_comparison.md) is received with [237 source/owned cases](evidence/symmetric_model_comparison_20261113.json)
-each (56new),56 public-ArgDigest cases per context, public PUW0.28.1/
+each (56new),56 public-ArgDigest cases per context, public PUW 0.28.1/
 Pytest Receptor1.2.2,18 guide blocks and242 payloads/187 equal runtime bodies.
 Four contexts preserve all outputs of the same1296 independent finite workloads.
 Explicit new maximum-cardinality overlap preserves the legacy default/loop.
@@ -281,7 +284,7 @@ supported/public/scientific/scale and stopped#148/#165 stay separate.
 
 [#204](cached_inspection_argument_controls.md) is received in its bounded scope:
 [234 source/owned cases each](evidence/cached_inspection_controls_20261112.json),
-65 public-ArgDigest controls per context, public PUW0.28.1/Pytest Receptor1.2.2,
+65 public-ArgDigest controls per context, public PUW 0.28.1/Pytest Receptor1.2.2,
 18 nm/pm guide blocks and240 payloads/185 equal runtime bodies. Exact f44e41b
 runtime/tests and167 target-only observed modules verify; no test overlay or
 source runtime fallback. Native guards/empty-table schema are improved while
@@ -322,7 +325,7 @@ provider collection/human/biological/scale and stopped #148/#165 stay separate.
 merge controls and five defining closed contracts, preserving every scientific
 function body and nested public admission. [Source evidence](evidence/curation_argument_controls_source_20261112.json)
 passes319 cases (56 new), six nm/pm public recipe blocks and13 quality operations,
-including strict docs and27 distribution controls. Initial failed/harness/resource
+including strict docs and 27 distribution controls. Initial failed/harness/resource
 and inherited-receptor attempts remain retained; final source pytest uses public
 Pytest Receptor1.2.2. The150-callable inventory has36 explicit controls/120 plans.
 Next freeze and receive the exact owned artifact/public providers. Broader#6,
@@ -333,7 +336,7 @@ full supported source/installed/public and stopped#148/#165 stay independent.
 [#200](interaction_query_argument_controls.md) and
 [#201](native_handoff_producer_oracle.md) receive source148f3ba and its exact
 private wheel:267 source/owned cases each,51 public-ArgDigest cases per context,
-public PUW0.28.1,24 public guide-block executions and240 verified payloads/185
+public PUW 0.28.1,24 public guide-block executions and240 verified payloads/185
 equal runtime bodies. [Complete evidence](evidence/interaction_argument_controls_20261112.json)
 retains original probes and the producer-oracle failure/correction on one
 unchanged prior artifact. Native scientific bodies/defaults and frozen input
@@ -361,7 +364,7 @@ provider#624 and stopped#148/#165 keep their independent gates.
 [#198](reference_query_argument_controls.md) and
 [#199](installed_snapshot_test_support.md) receive source9158c71 and its exact
 private wheel with272 source/owned cases each,37 actual public-ArgDigest cases
-per context, public PUW0.28.1, twelve guide-block executions and162 distribution
+per context, public PUW 0.28.1, twelve guide-block executions and162 distribution
 controls. [Original failures and complete receiving](evidence/reference_argument_controls_20261112.json)
 remain distinct. The staging correction leaves all184 runtime bodies unchanged; its
 correction declares existing input bytes rather than copying a source fallback.
@@ -464,7 +467,7 @@ partial receiving below is retained history, not corrected-source evidence.
 After the maintainer resumed development, the [bounded follow-up](feature_argument_controls.md)
 adds two expert keyword-only controls while preserving ordinary normalization and
 mandatory scientific checks. [Source/exact-owned receiving](evidence/feature_argument_controls_20261111.json)
-passes535 distinct cases and31 public-ArgDigest0.17.1 cases per context, sixteen
+passes535 distinct cases and31 public-ArgDigest 0.17.1 cases per context, sixteen
 nm/pm guide blocks, strict docs and ten quality checks. This advances
 classical/API coherence; broader #6, frozen4766946CI, installed/public, molecular
 collections, independent humans, science and scale retain separate gates.
