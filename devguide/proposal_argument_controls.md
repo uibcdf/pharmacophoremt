@@ -54,3 +54,20 @@ triplets. Exact nm ties retain lexicographic order. Original guards and all thre
 failed attempts are retained; no production algorithm change resolved them.
 The complete scientific body after the eight validators and the signal/attribution
 decorators remain AST-equal. Relevant source/exact-owned receiving is in progress.
+
+## Installed-support repair — PHMT#230
+
+The first owned proposal/consensus groups pass at source32f4d2e; ranking fails
+collection because the file-relative tests/data link is absent. A distinct retry
+with the actual SDK link still fails because the manifest omits ranked_seed_cases.
+Declare that unchanged SHA256-bound fixture and extend actual-stage distribution
+receiving. Preserve both failures, prior wheel/source and proven stage retirement.
+The task receiver links both phmt_test_support and tests/data to actual SDK bytes;
+contexts retire both links. Freeze the repaired source before exact owned receiving.
+This changes PHMT support admission only, with no SDK/provider or scientific-body
+repair. Source scientific groups keep their original labels/bytes/cohort identities.
+
+Original owned consensus and failed ranking overlap by6.89seconds through an
+operator sequencing error; both retain CPU19/backend1 and bounded monitoring with
+adequate reserve/no pressure. Preserve their timing, do not claim that interval was
+serial, and await definitive predecessor completion for all subsequent heavy work.

@@ -509,6 +509,11 @@ target = "tests/data/prepared_ccd/manifest.json"
 sha256 = "83d29ba0ca5b86ace6de8a9926ad5b731c50a6e06c8d037c83e18f3bdc74b310"
 
 [[installed_tests.support.files]]
+source = "tests/data/ranked_seed_cases.json"
+target = "tests/data/ranked_seed_cases.json"
+sha256 = "76c030fc10b0399eba2426593ad137d1e03dc3199b95fe30c8a0e9a6d5e31110"
+
+[[installed_tests.support.files]]
 source = "tests/data/rigid_consensus_cases.json"
 target = "tests/data/rigid_consensus_cases.json"
 sha256 = "9cbe182cffe8ae2614383a91dd0575105ab91d1ffeb48e265befba40a69c66b0"

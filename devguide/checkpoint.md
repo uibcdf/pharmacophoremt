@@ -24,6 +24,13 @@ custody and actual application branch credit pass. The disjoint source groups al
 private-wheel receiving, SDK retirement and strict owned docs remain pending.
 This bounded increment does not close #6 or the complete qualification gates.
 
+[#230](pending_bugs/ranked_seed_installed_support.md) repairs a missing ranked-seed
+fixture in the installed-support declaration, exposed by two original owned
+collection failures. The task harness also links tests/data to actual SDK stage
+bytes with context retirement. Freeze this repaired support source and receive
+the exact private artifact. Prior wheel/source, passing preliminary groups and
+the recorded6.89second bounded-operation overlap retain their identities.
+
 The preceding #228 receiving remains at [its original receipt](evidence/rigid_refinement_controls_20261115.json):
 source 79ac7ce and private0.6.0+26.g79ac7ce, 549 distinct cases/context. No previous
 evidence is promoted to this changed head. #227, original #224 pilot recovery and

@@ -269,6 +269,13 @@ class TestDistributionContract(unittest.TestCase):
                     (ROOT / "tests/data/rigid_consensus_cases.json").read_text()
                 )["cases"]
                 self.assertEqual(module.load_cases(), expected)
+                ranked = stage.root / "tests/data/ranked_seed_cases.json"
+                original_ranked = ROOT / "tests/data/ranked_seed_cases.json"
+                self.assertEqual(ranked.read_bytes(), original_ranked.read_bytes())
+                self.assertEqual(
+                    module.load_cases(ranked),
+                    json.loads(original_ranked.read_text())["cases"],
+                )
                 self.assertTrue(Path(module.__file__).is_relative_to(stage.root))
                 self.assertEqual(sys.path, original_path)
                 stage.check()
