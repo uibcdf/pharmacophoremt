@@ -104,6 +104,14 @@ raise/record failure policy and the search child's default checks. Requested fra
 order still breaks ties; recorded frame failures remain visible even when another
 frame proves the maximum score. Partial unresolved evidence remains unscored.
 
+The standalone cached-inventory tool `screening.get_correspondences()` also
+accepts keyword-only `skip_digestion=False`. Keep the default for ordinary calls.
+An expert bypass still requires a positive integer `max_trials` and leaves the
+query evaluator's admission active. The budget counts raw triplet products,
+including rejected products; an empty incomplete result does not prove that no
+correspondence exists. This operation proposes seeds without fitting a pose or
+reading the molecular system again.
+
 For native JSON/YAML, PHMT-owned schema/envelope refusals carry `PHMT-E108`
 and remain `ValueError` instances. The existing nonstring `io.load()` filename
 refusal carries `PHMT-E109` and remains a `TypeError`. Scientific value checks

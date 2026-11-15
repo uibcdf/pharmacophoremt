@@ -1,5 +1,15 @@
 # Decisions and active workstreams
 
+## Correspondence public control — 2026-11-14 local date
+
+[#217](correspondence_argument_controls.md) receives one local skip control with
+default child admission and mandatory budget normalization before native query/
+enumeration. Scientific remainder and geometry helpers stay unchanged. The 65
+focused controls and disjoint 194/266-case source groups pass, 460 distinct cases;
+all 27 affected distribution controls pass. Exact-owned groups and strict docs
+follow. Keep original baseline snapshots and broader #6 partial; alignment/scoring
+are separate increments.
+
 ## Prepared-conformer receiving complete — 2026-11-14 local date
 
 [#216](conformer_argument_controls.md) receives f39c715 through the same serial

@@ -22,6 +22,7 @@ required_paths = [
   "site-packages/pharmacophoremt/_private/arg_digestion/rdkit_io.py",
   "site-packages/pharmacophoremt/_private/arg_digestion/pharmer_io.py",
   "site-packages/pharmacophoremt/_private/arg_digestion/native_screening.py",
+  "site-packages/pharmacophoremt/_private/arg_digestion/native_helpers.py",
   "site-packages/pharmacophoremt/_private/arg_digestion/prepared_screening.py",
   "site-packages/pharmacophoremt/_private/arg_digestion/receptor_generation.py",
   "site-packages/pharmacophoremt/_private/arg_digestion/model_dispatch.py",

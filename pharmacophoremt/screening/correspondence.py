@@ -9,6 +9,8 @@ from smonitor import signal
 
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt._ackredit import attributed
+from pharmacophoremt._private.arg_digestion.argument._contracts import digest_max_trials
+from pharmacophoremt._private.arg_digestion.native_helpers import CONFIG
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 from pharmacophoremt.screening.pose_evaluation import (
     _POSITION_RELATIVE_SLACK,
@@ -68,10 +70,15 @@ def _essential_anchors(evaluator):
 
 
 @signal(tags=["screening", "correspondence"])
-@arg_digest()
+@arg_digest(config=CONFIG)
 @attributed("numpy", "pyunitwizard")
 def get_correspondences(
-    pharmacophore, feature_inventory, *, point_tolerance="0.10 nm", max_trials=10000
+    pharmacophore,
+    feature_inventory,
+    *,
+    point_tolerance="0.10 nm",
+    max_trials=10000,
+    skip_digestion=False,
 ):
     """Propose chemically compatible, injective essential-site triplets.
 
@@ -85,6 +92,9 @@ def get_correspondences(
         Position tolerance for Point sites.
     max_trials : int, default=10000
         Bound on raw triplet candidate products, including rejected products.
+    skip_digestion : bool, default=False
+        Bypass this operation's argument digestion only for canonical expert
+        inputs. The positive-integer budget guard and child validation remain.
 
     Returns
     -------
@@ -110,6 +120,7 @@ def get_correspondences(
     >>> proposals = get_correspondences(query, inventory, max_trials=10000)
     >>> first_seed = proposals['correspondences'][0]
     """
+    max_trials = digest_max_trials(max_trials)
     evaluator = PoseEvaluator(pharmacophore, point_tolerance=point_tolerance)
     essentials = _essential_anchors(evaluator)
     if feature_inventory is None:

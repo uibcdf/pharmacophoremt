@@ -1,5 +1,17 @@
 # Strategic roadmap
 
+## Correspondence controls implemented — 2026-11-14 local date
+
+[#217](correspondence_argument_controls.md) adds one explicit keyword-only
+control and a closed definition-owned contract. Mandatory native positive-integer
+budget admission precedes query preparation/enumeration during bypass. All 65
+focused controls pass, including analytical product counts/order/completion,
+independent child admission and real cached nm/pm attribution/custody. Original
+baseline snapshots and failures are retained. Disjoint numerical/native and
+coupling source groups pass 194/266 cases, 460 distinct cases. All 27 affected
+distribution controls pass. Next receive the exact owned groups and strict docs.
+Broader #6, alignment/scoring and complete supported/public gates remain separate.
+
 ## Prepared-conformer controls received — 2026-11-14 local date
 
 [#216](conformer_argument_controls.md) receives f39c715 and its exact private

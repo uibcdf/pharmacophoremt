@@ -2,6 +2,11 @@
 
 ## Unreleased — toward 0.7.0
 
+- Add keyword-only `skip_digestion=False` to `screening.get_correspondences()`
+  with a closed, definition-owned contract. A positive-integer `max_trials`
+  remains mandatory during bypass, before query preparation or enumeration;
+  raw-product budgets, seed order and complete/incomplete meanings are preserved.
+
 - Add independent keyword-only digestion controls to `ConformerScreening`
   construction, `evaluate()` and `run()`. Failure-policy validation remains
   mandatory before frame acquisition during bypass. Frame order, per-frame
