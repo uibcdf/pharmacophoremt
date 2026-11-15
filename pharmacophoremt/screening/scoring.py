@@ -10,6 +10,7 @@ from pharmacophoremt._ackredit import attributed
 from pharmacophoremt._private.arg_digestion.argument._contracts import (
     digest_score_method,
 )
+from pharmacophoremt._private.arg_digestion.native_helpers import CONFIG
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 
 
@@ -37,9 +38,9 @@ def _resolve_score_method(evaluator, score_method):
 
 
 @signal(tags=["screening", "ranking"])
-@arg_digest()
+@arg_digest(config=CONFIG)
 @attributed()
-def get_screening_score(result, *, score_method):
+def get_screening_score(result, *, score_method, skip_digestion=False):
     """Read an explicit score from native single-input screening evidence.
 
     ``checked_pose_coverage`` returns the recorded ``fit_value`` of a checked
@@ -55,6 +56,10 @@ def get_screening_score(result, *, score_method):
     Input dictionaries are read without mutation. No molecular access, fitting,
     recognition or new credit for a saved source calculation occurs. Attribution
     records this scoring operation itself, independently of source provenance.
+
+    ``skip_digestion=True`` bypasses this operation's ordinary argument digestion
+    for canonical expert inputs. Native criterion and evidence checks remain
+    mandatory; score_method is still an explicitly required keyword.
     """
     score_method = digest_score_method(score_method)
     if score_method is None:

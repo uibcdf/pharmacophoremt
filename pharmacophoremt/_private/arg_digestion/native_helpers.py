@@ -1,7 +1,7 @@
 """Definition-owned contracts for explicitly migrated native screening helpers.
 
-Keep this list scoped to explicitly migrated public controls. Scoring retains
-its existing contract until its separate migration is qualified.
+Keep this list scoped to explicitly migrated public controls. Other public
+screening tools retain their separate admission and receiving work.
 """
 
 from argdigest import DigestConfig, FunctionContract
@@ -15,6 +15,10 @@ CONTRACTS = [
     ),
     FunctionContract(
         caller="pharmacophoremt.screening.alignment.align_to_pharmacophore",
+        admits="signature",
+    ),
+    FunctionContract(
+        caller="pharmacophoremt.screening.scoring.get_screening_score",
         admits="signature",
     ),
 ]

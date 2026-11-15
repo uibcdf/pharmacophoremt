@@ -2,6 +2,16 @@
 
 ## Unreleased — toward 0.7.0
 
+- Keep operation-local digestion controls out of expanded prepared-run recipes.
+  Plans for placed, rigid and conformer evaluators again construct/reconstruct
+  with native default admission; explicitly supplied or saved reserved controls
+  remain rejected.
+
+- Add keyword-only `skip_digestion=False` to `screening.get_screening_score()`.
+  The criterion remains explicitly required and native evidence checks remain
+  active during bypass. Failed/unscored results, completed negatives, checked
+  pose coverage and seed-only hits retain their existing meanings.
+
 - Reject unsigned overflow before converting ligand/receptor selections and
   explicit feature pairs to signed indices. Preserve valid index order, empty
   pair evaluation and native source/inventory bounds. Selection diagnostics

@@ -3,43 +3,42 @@
 Maintained 2026-11-15 local date; owners LMMV/dprada. Follow the
 [mature pre-1.0 roadmap](roadmap.md), [workstreams](decisions_and_workstreams.md)
 and [capability inventory](capability_inventory.md). The preceding published
-checkpoint is preserved at [945716c](https://github.com/uibcdf/pharmacophoremt/blob/945716cbd2289ba39060abf4195152ae6c910441/devguide/checkpoint.md);
+checkpoint is preserved at [bb1e987](https://github.com/uibcdf/pharmacophoremt/blob/bb1e987727f92018840093b0677c11da0d7838d2/devguide/checkpoint.md);
 [earlier dated history](checkpoint_history_20261114_before_pose_controls.md),
 [earlier pre-tag preparation](checkpoint_history_20261114_before_final_review.md)
 and the [0.6.0 cut record](release_0_6_0_source_cut.md) retain their identities.
 
-## Current increment — selection and explicit-pair indices received toward 0.7.0
+## Current increment — score control and prepared-plan projection toward 0.7.0
 
-[#220/#221](selection_index_bounds.md) receive source **fdeb83e86d2f00ea32ada9e207298ee3be1a6363**
-and exact private wheel `0.6.0+18.gfdeb83e`. The [receipt](evidence/selection_index_bounds_20261115.json)
-records identical serial **272/177/69-case source/owned groups**, 518 distinct
-cases per context including 96 new controls, zero failures/errors/skips. All 245
-payloads/190 source-equal Python bodies verify; each group loads only 172 owned-
-target PHMT modules. Actual SDK support is journalled before work, verified and
-retired for each group. Strict owned docs and relevant reporting/archive/index/
-generated-environment/declared-route/Ruff checks pass (546 formatted files).
-Unchanged 163-case administrative/27-case distribution evidence retains its own
-producer/scope rather than becoming a new execution.
+[#222](screening_score_argument_controls.md) adds one local keyword-only control
+and closed definition-owned admission while score_method remains required. The
+scientific scoring body/private helpers and signal/attribution decorators are
+AST-equal. All 67 new score controls pass, retaining None/zero/coverage/seed-hit
+meaning, native refusals during bypass and actual nm/pm saved custody/new-only
+scoring credit in application-owned sessions.
 
-Only the shared value-contract module changes at runtime: ligand/receptor
-selections and explicit feature pairs refuse unsigned overflow before conversion.
-A private helper preserves order, None/string and native option/source-range
-authority while identifying the actual diagnostic argument. Public scientific
-bodies/signatures/decorators and bypass ownership are unchanged. Real nm/pm
-two-site ionic models retain selected order, radius, score, attribution and source/
-input custody; cached geometry retains ordered pairs and completed-empty meaning.
-Original 94-case baseline (21 failures/73 passes), focused/earlier-main runs and
-exact initial/final guards keep their own identities. Two receptor-overflow
-controls extend the final guard set to 96. Broader #6 remains partial.
+Prepared integration exposes [#223](pending_bugs/prepared_plan_control_projection.md):
+constructor/evaluate default expansion persists the new native skip control,
+which its unchanged saved validator correctly refuses. Three independent public
+witnesses on the previously received 0.6.0+18.gfdeb83e artifact reproduce the defect
+before the score overlay. Excluding the control from the two projection sets
+restores all three native families without relaxing validators/schema/runtime/
+query binding. The expanded 134-case prepared source group and 27 new plan controls
+pass. Final source groups pass 164/166/134 cases: 464 distinct cases including
+94 new controls, zero failures/errors/skips. Exact owned receiving and strict
+docs remain pending. Original failed groups/baselines/guard snapshots stay distinct.
 
-This bounded Linux/Python 3.14.10 receiving uses public ArgDigest 0.17.1/PUW 0.28.1/
-Pandas 3.1.1 and controlled other providers/inherited native extension. Complete
-later-head source/policy/publication, supported installed/public/platform and
-biological/human/scale gates remain separate. This task has no interrupted heavy
-run; earlier alignment staging uncertainty remains with its original receipt and
-has not been relabelled as cleaned.
+Broader #6 and complete supported/source/installed/public/platform/biological/
+human/scale gates remain separate. Shared-prefix/publisher pauses and prior
+staging uncertainty retain their ownership; no stopped work is resumed.
 
 ## Earlier bounded increments
+
+[#220/#221 selection/explicit-pair bounds](selection_index_bounds.md) retain
+[272/177/69-case source/owned receiving](evidence/selection_index_bounds_20261115.json)
+at fdeb83e: 518 distinct cases/context, 96 new controls, 245 payloads/190 equal
+bodies, 172 target-only modules, pre-work SDK journals/retirement and strict docs.
+Original baselines/snapshots and prior staging uncertainty retain their identities.
 
 [#218/#219 alignment/index controls](alignment_argument_controls.md) retain
 [154/193/226-case source/owned receiving](evidence/alignment_argument_controls_20261114.json)
@@ -108,11 +107,12 @@ unchanged. Full installed/public artifact, biological/human/scale acceptance,
 
 ## Next concrete action and resources
 
-Audit get_screening_score public admission before selecting its explicit-control
-implementation. Preserve criterion ownership, failed/unscored evidence, complete
-negatives and molecular-versus-placed-pose meaning. Other public controls remain
-separately tracked under partial #6. Package/hosted-doc publishers stay inactive;
-stopped #148/#165 are not restarted.
+Receive final score/native/prepared source and exact-owned groups, strict docs
+and original evidence before closing #222/#223. Next audit public
+evaluate_feature_correspondence admission while preserving pair identity, units,
+empty completion and native geometry/range authority. Other controls remain
+partial under #6; package/hosted-doc publishers stay inactive and stopped #148/#165
+are not restarted.
 
 Preserve shared-prefix/migration pauses and original native/data identities.
 Heavy work stays serial: one CPU/backend thread, low CPU/I/O priority, finite
@@ -122,4 +122,4 @@ screening-export/run, placed-pose, rigid-search, conformer, correspondence and a
 capsules/targets on 2026-11-28;
 earlier tasks retain their own owners/dates and original staging uncertainty.
 Accepted prior SDK stages retired; original evidence/scientific inputs remain durable.
-This selection task uses a separate 2026-11-29 retention review.
+Selection/score tasks use a separate 2026-11-29 retention review.

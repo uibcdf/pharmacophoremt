@@ -319,13 +319,16 @@ def build_prepared_run_plan(
         evaluation_options=evaluation,
     ).close()
     constructor = _defaults(
-        tool.__init__, (None, query), constructor, {"self", "pharmacophore"}
+        tool.__init__,
+        (None, query),
+        constructor,
+        {"self", "pharmacophore", "skip_digestion"},
     )
     evaluation = _defaults(
         tool.evaluate,
         (None, None),
         evaluation,
-        {"self", "molecular_system", "pose_id", "on_error"},
+        {"self", "molecular_system", "pose_id", "on_error", "skip_digestion"},
     )
     context = {
         "schema": _PLAN_SCHEMA,

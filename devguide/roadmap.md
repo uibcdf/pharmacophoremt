@@ -1,5 +1,17 @@
 # Strategic roadmap
 
+## Scoring control and prepared-plan repair implemented — 2026-11-15
+
+[#222/#223](screening_score_argument_controls.md) retain the scientific score
+body while adding explicit local admission and excluding local controls from
+persisted native defaults. The prepared regression reproduces on the original
+received artifact independently of the score overlay; validators/schema/binding
+remain unchanged. All 67 score/27 plan controls and 134 expanded prepared source
+cases pass. Final source groups pass 164/166/134 cases (464 distinct, including
+94 new controls). Exact-owned groups, strict docs and
+relevant governance/Ruff follow. Broader #6 and full supported/public gates stay
+separate; no new scoring method, schema, tag or publisher.
+
 ## Selection and feature-pair bounds received — 2026-11-15
 
 [#220/#221](selection_index_bounds.md) receive fdeb83e and its exact private
