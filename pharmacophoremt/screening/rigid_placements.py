@@ -4,6 +4,15 @@ from argdigest import arg_digest
 from smonitor import signal
 
 from pharmacophoremt._ackredit import attributed
+from pharmacophoremt._private.arg_digestion.argument._contracts import (
+    digest_correspondences,
+    digest_direction_tolerance,
+    digest_distance_tolerance,
+    digest_max_fits,
+    digest_max_matrix_entries,
+    digest_min_matches,
+)
+from pharmacophoremt._private.arg_digestion.native_helpers import CONFIG
 from pharmacophoremt._private.molsysmt import detached
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 from pharmacophoremt.modeler.aligned_cliques import _limit
@@ -59,7 +68,7 @@ def _fit_feature_mapping(
 
 
 @signal(tags=["screening", "placement", "rigid"])
-@arg_digest()
+@arg_digest(config=CONFIG)
 @attributed("numpy", "molsysmt", "pyunitwizard")
 def get_rigid_feature_placements(
     molecular_system,
@@ -76,6 +85,7 @@ def get_rigid_feature_placements(
     direction_tolerance="30 degrees",
     max_fits=1000,
     max_matrix_entries=1000000,
+    skip_digestion=False,
 ):
     """Fit each supplied mapping through MolSysMT and verify absolute geometry.
 
@@ -106,6 +116,10 @@ def get_rigid_feature_placements(
         Mapping-count bound checked before any fit.
     max_matrix_entries : int, default=1000000
         Assignment matrix bound per post-fit full-inventory matching.
+    skip_digestion : bool, default=False
+        Bypass ordinary argument digestion for canonical expert inputs. Native
+        mapping, capacity and physical checks and independent child admission
+        remain mandatory.
 
     Returns
     -------
@@ -128,6 +142,13 @@ def get_rigid_feature_placements(
     >>> seeds = get_rigid_feature_correspondences(target, source_inventory)
     >>> placed = get_rigid_feature_placements(source, target, seeds['correspondences'], feature_inventory=source_inventory)
     """
+    max_fits = digest_max_fits(max_fits)
+    max_matrix_entries = digest_max_matrix_entries(max_matrix_entries)
+    min_matches = digest_min_matches(min_matches)
+    correspondences = digest_correspondences(correspondences)
+    distance_tolerance = digest_distance_tolerance(distance_tolerance)
+    direction_tolerance = digest_direction_tolerance(direction_tolerance)
+    _limit("rigid_alignment", "scheduled fits", len(correspondences), max_fits)
     _records(reference_inventory)
     source_options = dict(
         selection=selection,
@@ -137,7 +158,6 @@ def get_rigid_feature_placements(
     feature_inventory = _source_inventory(
         molecular_system, feature_inventory, features, source_options
     )
-    _limit("rigid_alignment", "scheduled fits", len(correspondences), max_fits)
     query = from_feature_inventory(reference_inventory, radius=distance_tolerance)
     accepted, rejected = [], []
     for proposal_index, pairs in enumerate(correspondences):

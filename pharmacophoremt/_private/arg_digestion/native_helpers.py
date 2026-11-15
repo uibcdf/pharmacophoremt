@@ -25,6 +25,10 @@ CONTRACTS = [
         caller="pharmacophoremt.screening.feature_geometry.evaluate_feature_correspondence",
         admits="signature",
     ),
+    FunctionContract(
+        caller="pharmacophoremt.screening.rigid_placements.get_rigid_feature_placements",
+        admits="signature",
+    ),
 ]
 
 CONFIG = DigestConfig(

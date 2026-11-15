@@ -7,6 +7,10 @@
   with native default admission; explicitly supplied or saved reserved controls
   remain rejected.
 
+- Add keyword-only `skip_digestion=False` to `screening.get_rigid_feature_placements()`.
+  Mapping, budget/minimum and physical checks remain mandatory, including empty
+  requests; scheduled-fit exhaustion refuses before inventory acquisition.
+  Independent child validation, source custody and placement evidence remain.
 - Add keyword-only `skip_digestion=False` to
   `screening.evaluate_feature_correspondence()`. Native pair injectivity/index
   bounds and physical tolerance checks remain mandatory during bypass, including

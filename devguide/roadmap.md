@@ -1,5 +1,14 @@
 # Strategic roadmap
 
+## Rigid-placement public control implemented — 2026-11-15
+
+[#225](placement_argument_controls.md) adds local explicit admission with six
+existing scientific validators and an earlier scheduled-fit bound. The remaining
+body, shared helpers and child admission retain their authority. Original
+baseline/prototype and corrected test exception expectation retain their
+identities. Final source/exact-owned receiving, strict docs and governance
+precede closure. Broader #6 and complete supported/public gates stay separate.
+
 ## Feature-pair public control received — 2026-11-15
 
 [#224](feature_geometry_argument_controls.md) receives fbb09df and its exact

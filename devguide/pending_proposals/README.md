@@ -6,8 +6,9 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Active (2)
+### Active (3)
 
+- [`placement_argument_controls.md`](placement_argument_controls.md) — [#225](https://github.com/uibcdf/pharmacophoremt/issues/225) — Expose local rigid-placement digestion control with mandatory scientific mapping and capacity admission. *(active, measured)*
 - [`qualify_public_library_workflow.md`](qualify_public_library_workflow.md) — [#108](https://github.com/uibcdf/pharmacophoremt/issues/108) — Qualify reproducible public-library acquisition, preparation and pharmacophore screening. *(active, measured)*
 - [`study_pharmacophore_tools.md`](study_pharmacophore_tools.md) — [#128](https://github.com/uibcdf/pharmacophoremt/issues/128) — Establish a pharmacophore-tool registry and an evidence-based comparison protocol. *(active, measured)*
 
