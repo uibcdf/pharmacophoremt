@@ -7,6 +7,10 @@
   with native default admission; explicitly supplied or saved reserved controls
   remain rejected.
 
+- Add keyword-only `skip_digestion=False` to
+  `screening.evaluate_feature_correspondence()`. Native pair injectivity/index
+  bounds and physical tolerance checks remain mandatory during bypass, including
+  empty evaluation. Ordered geometry, units and completed-empty meaning remain.
 - Add keyword-only `skip_digestion=False` to `screening.get_screening_score()`.
   The criterion remains explicitly required and native evidence checks remain
   active during bypass. Failed/unscored results, completed negatives, checked

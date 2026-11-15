@@ -1,5 +1,14 @@
 # Strategic roadmap
 
+## Feature-pair public control selected — 2026-11-15
+
+[#224](feature_geometry_argument_controls.md) adds explicit local admission and
+three existing mandatory scientific pair/tolerance validators. The geometry
+remainder, shared helpers and public placement/refinement callers stay unchanged.
+Original baseline/prototype identities are retained; final controls, relevant
+source/exact-owned consumer groups, strict docs and governance precede closure.
+Broader #6 and full supported/public gates remain separate.
+
 ## Score control and prepared-plan repair received — 2026-11-15
 
 [#222/#223](screening_score_argument_controls.md) receive 7b01bb5 and its exact

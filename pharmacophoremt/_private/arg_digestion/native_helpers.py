@@ -21,6 +21,10 @@ CONTRACTS = [
         caller="pharmacophoremt.screening.scoring.get_screening_score",
         admits="signature",
     ),
+    FunctionContract(
+        caller="pharmacophoremt.screening.feature_geometry.evaluate_feature_correspondence",
+        admits="signature",
+    ),
 ]
 
 CONFIG = DigestConfig(

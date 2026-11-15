@@ -6,6 +6,12 @@ from smonitor import signal
 
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt._ackredit import attributed
+from pharmacophoremt._private.arg_digestion.argument._contracts import (
+    digest_direction_tolerance,
+    digest_distance_tolerance,
+    digest_feature_pairs,
+)
+from pharmacophoremt._private.arg_digestion.native_helpers import CONFIG
 from pharmacophoremt._private.molsysmt import detached
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 from pharmacophoremt.modeler.aligned_consensus import (
@@ -16,7 +22,7 @@ from pharmacophoremt.modeler.aligned_consensus import (
 
 
 @signal(tags=["screening", "correspondence", "geometry"])
-@arg_digest()
+@arg_digest(config=CONFIG)
 @attributed("numpy", "pyunitwizard")
 def evaluate_feature_correspondence(
     reference_inventory,
@@ -25,6 +31,7 @@ def evaluate_feature_correspondence(
     *,
     distance_tolerance="0.15 nm",
     direction_tolerance="30 degrees",
+    skip_digestion=False,
 ):
     """Evaluate explicit injective pairs without fitting or choosing a matching.
 
@@ -37,6 +44,9 @@ def evaluate_feature_correspondence(
         Out-of-range/repeated indices raise; different kinds are evaluated invalid.
     distance_tolerance, direction_tolerance : quantities
         Inclusive displacement and directed donor/unoriented aromatic-axis limits.
+    skip_digestion : bool, default=False
+        Bypass ordinary argument digestion for canonical expert inputs. Native
+        pair, physical-tolerance and inventory/geometry guards remain mandatory.
 
     Returns
     -------
@@ -57,6 +67,9 @@ def evaluate_feature_correspondence(
     >>> check = evaluate_feature_correspondence(target, source, [[0, 0]])
     >>> valid = check['all_pairs_valid']
     """
+    feature_pairs = digest_feature_pairs(feature_pairs)
+    distance_tolerance = digest_distance_tolerance(distance_tolerance)
+    direction_tolerance = digest_direction_tolerance(direction_tolerance)
     first, second = _records(reference_inventory), _records(feature_inventory)
     if len(feature_pairs) and (
         np.any(feature_pairs[:, 0] >= len(first))
