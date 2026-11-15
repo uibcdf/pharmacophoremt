@@ -2,6 +2,11 @@
 
 ## Unreleased — toward 0.7.0
 
+- Reject unsigned overflow before converting ligand/receptor selections and
+  explicit feature pairs to signed indices. Preserve valid index order, empty
+  pair evaluation and native source/inventory bounds. Selection diagnostics
+  now name the argument actually supplied.
+
 - Add keyword-only `skip_digestion=False` to `screening.align_to_pharmacophore()`.
   Mapping validity and finite, non-collinear fitting anchors remain mandatory
   during bypass; the query and molecular provider keep independent admission.

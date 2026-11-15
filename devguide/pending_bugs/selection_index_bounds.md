@@ -1,14 +1,14 @@
 ---
 summary: Unsigned ligand and receptor atom selections can wrap to negative int64 indices.
 issue: uibcdf/pharmacophoremt#220
-status: open
+status: active
 opened: 2026-11-14
 closed:
 severity: high
 verification: measured
 area: [arguments, selections]
-guard:
-normative:
+guard: tests/test_selection_index_bounds.py
+normative: devguide/selection_index_bounds.md
 blocked_by: []
 supersedes: []
 ---
@@ -38,3 +38,16 @@ binds the original probe/script/output/context/resources in its full archive.
 Only digest_correspondence changes among shared value functions at source
 7025b7d; the probed selection helpers remain baseline-equal. Public molecular
 selection behavior and the fix still require their own receiving.
+
+## Public consumer receiving selected — 2026-11-15
+
+The [owning contract](../selection_index_bounds.md) receives seven ligand routes,
+normal public admission before provider/endpoint access and the complex
+constructor's existing native guard during bypass. The original 82-case guard
+has 17 failures/65 preservation passes; it also demonstrates that five malformed
+receptor selections carry the ligand argument name. One private value helper
+keeps normalization shared while preserving the correct diagnostic owner.
+The 12 real nm/pm ionic modeling cases retain two-site evidence, ordered selected
+atoms, quantities, attribution, score and source/input custody. All 94 focused
+selection/feature-pair controls pass; wider source/exact-owned groups and strict
+docs precede closure. Related feature-pair conversion has independent #221 scope.

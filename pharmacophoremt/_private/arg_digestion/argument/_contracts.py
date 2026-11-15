@@ -406,7 +406,8 @@ def digest_conformer_rmsd_threshold(obj):
     return float(obj)
 
 
-def digest_ligand_selection(obj):
+def _selection_indices(obj, argument):
+    """Preserve explicit index values/order and the diagnostic's argument owner."""
     if obj is None or isinstance(obj, str):
         return obj  # The selection expression is resolved by MolSysMT.
     values = np.asarray(obj)
@@ -417,14 +418,23 @@ def digest_ligand_selection(obj):
         or np.any(values < 0)
     ):
         raise ArgumentError(
-            argument="ligand_selection",
+            argument=argument,
             reason="expected a MolSysMT selection or nonnegative atom indices",
+        )
+    if np.any(values > np.iinfo(np.int64).max):
+        raise ArgumentError(
+            argument=argument,
+            reason="selection atom indices must be representable as nonnegative int64",
         )
     return values.astype(np.int64)
 
 
+def digest_ligand_selection(obj):
+    return _selection_indices(obj, "ligand_selection")
+
+
 def digest_receptor_selection(obj):
-    return digest_ligand_selection(obj)
+    return _selection_indices(obj, "receptor_selection")
 
 
 def digest_color_palette(obj):
@@ -734,6 +744,7 @@ def digest_feature_pairs(obj):
         or values.shape[1] != 2
         or values.dtype.kind not in "iu"
         or np.any(values < 0)
+        or np.any(values > np.iinfo(np.int64).max)
         or len(set(values[:, 0])) != len(values)
         or len(set(values[:, 1])) != len(values)
     ):

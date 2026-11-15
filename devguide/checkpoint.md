@@ -1,49 +1,47 @@
 # Current development checkpoint
 
-Maintained 2026-11-14 local date; owners LMMV/dprada. Follow the
+Maintained 2026-11-15 local date; owners LMMV/dprada. Follow the
 [mature pre-1.0 roadmap](roadmap.md), [workstreams](decisions_and_workstreams.md)
 and [capability inventory](capability_inventory.md). The preceding published
-checkpoint is preserved at [3c14d1f](https://github.com/uibcdf/pharmacophoremt/blob/3c14d1f67299d8dc4945d13f4722c6720130b81a/devguide/checkpoint.md);
+checkpoint is preserved at [945716c](https://github.com/uibcdf/pharmacophoremt/blob/945716cbd2289ba39060abf4195152ae6c910441/devguide/checkpoint.md);
 [earlier dated history](checkpoint_history_20261114_before_pose_controls.md),
 [earlier pre-tag preparation](checkpoint_history_20261114_before_final_review.md)
 and the [0.6.0 cut record](release_0_6_0_source_cut.md) retain their identities.
 
-## Current increment — alignment and correspondence-index receiving toward 0.7.0
+## Current increment — selection and feature-pair index bounds toward 0.7.0
 
-[#218](alignment_argument_controls.md) and [#219](archive/correspondence_index_bounds.md)
-receive source **7025b7df2bd33d26e11c58df7a7593de31095feb** and exact private wheel
-`0.6.0+16.g7025b7d`. The [receipt](evidence/alignment_argument_controls_20261114.json)
-records identical serial **154/193/226-case source/owned groups**, 573 distinct
-cases per context including 91 new controls, zero failures/errors/skips. All 245
-payloads/190 source-equal Python bodies verify; each group loads only 172 owned-
-target PHMT modules. Actual SDK support verifies and retires for each accepted
-group. Strict owned docs and relevant reporting/archive/index/generated-environment/
-declared-route/Ruff checks pass (544 formatted files). Unchanged prior 163-case
-administrative/27-case distribution evidence keeps its original source/scope.
+[#220](selection_index_bounds.md) fixes unsigned ligand/receptor selection
+conversion before signed indexing. One private shared value helper retains
+ordered valid signed/unsigned indices and None/string/native-option authority;
+malformed receptor diagnostics now name receptor_selection. [#221](pending_bugs/feature_pair_index_bounds.md)
+protects explicit feature-pair conversion without changing geometry, empty-input
+completion or native inventory bounds. Runtime changes are confined to the
+shared argument-contract module; public scientific bodies/signatures/decorators
+and existing bypass ownership remain unchanged. Broader #6 is partial.
 
-One local alignment control retains independent children. Mandatory mapping and
-finite/non-collinear anchor guards preserve the remaining scientific body AST;
-shared correspondence conversion now refuses unsigned overflow before casting.
-Proper rotations/reflections, subset/frame/state axes, cached/extracted features,
-nm/pm quantities, actual attribution and source/other-atom/frame custody pass.
-Original baseline, prototype, earlier principal run, guard snapshots and lint
-failure retain their identities in the owning contract/receipt.
+The original 94-case baseline records 21 failures/73 preservation passes. Two
+additional receptor-overflow controls bring the final guards to 96 cases.
+Disjoint source groups pass 272/177/69 cases, 518 distinct cases with zero
+failures/errors/skips. They cover before-provider/endpoint refusal, constructor
+bypass admission, representable boundary/order/empty semantics and real two-site
+nm/pm ionic modeling with attribution/source custody. Reporting/archive/index/generated-environment/declared-route and whole-tree Ruff
+checks pass (546 formatted files). Exact owned-wheel receiving and strict docs
+remain pending.
 
-One owned-mapping attempt was stopped after global swap activity; a quiet-swap preflight with
-sufficient available RAM precedes its separately accepted retry with unchanged limits.
-The original staging path was not journalled, so retirement remains unknown;
-one matching-time candidate lacks ownership proof and is left untouched. Later
-receiving journals staging before work and handles SIGTERM for context retirement.
-See the receipt/contract for exact resource evidence and the bounded limitation.
-
-[#220](pending_bugs/selection_index_bounds.md) remains open for the separately
-probed unchanged ligand/receptor selection helpers; downstream molecular impact
-is unqualified. This is bounded Linux/Python 3.14.10/public ArgDigest 0.17.1/PUW
-0.28.1/Pandas 3.1.1 receiving with controlled other providers/inherited native
-extension. Broader #6 and complete later-head source/installed/public/platform/
-biological/human/scale gates remain separate.
+Preserve original baseline/guard/provider/resource identities, prior unchanged
+administrative/distribution evidence and full supported/public gates. The prior
+alignment run's staging uncertainty remains with its original owner/receipt;
+this task uses owned temporary parents, pre-work stage journals and graceful
+retirement from its first receiving run.
 
 ## Earlier bounded increments
+
+[#218/#219 alignment/index controls](alignment_argument_controls.md) retain
+[154/193/226-case source/owned receiving](evidence/alignment_argument_controls_20261114.json)
+at 7025b7d: 573 distinct cases/context, 91 new controls, 245 payloads/190 equal
+bodies, 172 target-only modules and SDK retirement for accepted groups. Original
+failed/interrupted attempts and the original unknown staging retirement remain
+explicit; immutable prior evidence is not relabelled.
 
 [#217 correspondence controls](correspondence_argument_controls.md) retain
 [194/266-case source/owned receiving](evidence/correspondence_argument_controls_20261114.json)
@@ -105,11 +103,11 @@ unchanged. Full installed/public artifact, biological/human/scale acceptance,
 
 ## Next concrete action and resources
 
-Audit the actual public ligand/receptor-selection consumers under #220 before
-implementing representability guards. Preserve ordered signed/unsigned indices,
-string/None contracts, native option ownership and before-provider refusal. Then
-continue scoring/remaining public controls under partial #6. Package/hosted-doc
-publishers remain inactive; stopped #148/#165 are not restarted.
+Receive observed/geometry source and exact-owned groups, strict docs and original
+evidence before closing #220/#221. Next audit get_screening_score public admission
+while preserving valid ranking, failed/unscored and molecular-versus-pose meanings.
+Other public controls remain separately tracked under #6; package/hosted-doc
+publishers stay inactive and stopped #148/#165 are not restarted.
 
 Preserve shared-prefix/migration pauses and original native/data identities.
 Heavy work stays serial: one CPU/backend thread, low CPU/I/O priority, finite
@@ -117,5 +115,6 @@ limits, pressure/swap/own-family monitoring and 20% physical RAM plus task margi
 available. Capacity is not reserved. Review final-review/tag-delivery,
 screening-export/run, placed-pose, rigid-search, conformer, correspondence and alignment-control
 capsules/targets on 2026-11-28;
-earlier tasks retain their own owners/dates. SDK test staging has retired its
-imports/resources; original published evidence and scientific inputs remain durable.
+earlier tasks retain their own owners/dates and original staging uncertainty.
+Accepted prior SDK stages retired; original evidence/scientific inputs remain durable.
+This selection task uses a separate 2026-11-29 retention review.

@@ -1,5 +1,15 @@
 # Strategic roadmap
 
+## Selection and explicit-pair index safety implemented — 2026-11-15
+
+[#220/#221](selection_index_bounds.md) reject unsigned wrap before int64
+conversion and retain the correct selection diagnostic owner. Public scientific
+bodies/signatures/decorators and existing bypass policies are unchanged. Final
+disjoint source groups pass 272/177/69 cases, 518 distinct cases including 96 new
+controls, zero failures/errors/skips. Exact-owned groups, relevant governance/Ruff
+and strict docs follow. Original 21 failures/73 preservation passes remain intact.
+Broader #6, remaining public controls and supported/public gates stay separate.
+
 ## Alignment and index-bound controls received — 2026-11-14 local date
 
 [#218/#219](alignment_argument_controls.md) receive source 7025b7d and exact
