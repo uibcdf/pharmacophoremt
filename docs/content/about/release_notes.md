@@ -2,6 +2,12 @@
 
 ## Unreleased — toward 0.7.0
 
+- Add keyword-only `skip_digestion=False` to `screening.align_to_pharmacophore()`.
+  Mapping validity and finite, non-collinear fitting anchors remain mandatory
+  during bypass; the query and molecular provider keep independent admission.
+  Reject unrepresentable unsigned correspondence indices before conversion to
+  signed integers, preserving valid signed/unsigned mappings.
+
 - Add keyword-only `skip_digestion=False` to `screening.get_correspondences()`
   with a closed, definition-owned contract. A positive-integer `max_trials`
   remains mandatory during bypass, before query preparation or enumeration;

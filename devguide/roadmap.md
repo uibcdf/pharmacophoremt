@@ -1,5 +1,18 @@
 # Strategic roadmap
 
+## Alignment control and index bounds implemented — 2026-11-14 local date
+
+[#218](alignment_argument_controls.md) adds independent alignment digestion
+control and mandatory native mapping/anchor-geometry guards, preserving the
+scientific remainder and molecular-provider custody. [#219](pending_bugs/correspondence_index_bounds.md)
+fixes unsigned correspondence wraparound before conversion. Final disjoint source
+groups pass 154/193/226 cases, 573 distinct cases including 91 new controls;
+relevant governance/Ruff checks pass. Exact-owned groups and strict docs follow.
+Unchanged selection-helper wraparound
+is separately probed under [#220](pending_bugs/selection_index_bounds.md); actual
+public-consumer impact awaits receiving. Broader #6 and full supported/public
+qualification remain separate.
+
 ## Correspondence controls received — 2026-11-14 local date
 
 [#217](correspondence_argument_controls.md) receives d2facf4 and exact private

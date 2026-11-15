@@ -964,10 +964,11 @@ def digest_correspondence(obj):
         or len(values) < 3
         or values.dtype.kind not in "iu"
         or np.any(values < 0)
+        or np.any(values > np.iinfo(np.int64).max)
     ):
         raise ArgumentError(
             argument="correspondence",
-            reason="expected at least three nonnegative integer (site, feature) pairs",
+            reason="expected at least three nonnegative int64 (site, feature) pairs",
         )
     return values.astype(np.int64)
 

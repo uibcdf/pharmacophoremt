@@ -1,5 +1,15 @@
 # Decisions and active workstreams
 
+## Alignment control and shared index fix — 2026-11-14 local date
+
+[#218](alignment_argument_controls.md) retains independent query/extraction/
+molecular-provider admission and proper CPU/double fitting. Native mapping and
+finite/non-collinear anchor guards enforce documented requirements during bypass.
+[#219](pending_bugs/correspondence_index_bounds.md) fixes unsigned correspondence
+conversion; valid signed/unsigned mappings remain. Final disjoint source groups pass 154/193/226 cases, 573 distinct cases including
+91 new controls; governance/Ruff pass. Exact-owned groups and strict docs are pending. Separate unchanged selection-helper behavior is #220-
+owned. Keep broader #6 partial and all complete supported/public gates separate.
+
 ## Correspondence receiving complete — 2026-11-14 local date
 
 [#217](correspondence_argument_controls.md) receives d2facf4 through identical

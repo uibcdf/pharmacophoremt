@@ -112,6 +112,14 @@ including rejected products; an empty incomplete result does not prove that no
 correspondence exists. This operation proposes seeds without fitting a pose or
 reading the molecular system again.
 
+`screening.align_to_pharmacophore()` exposes the same independent control. Keep
+normal digestion for user-supplied arguments. Even during expert bypass, mappings
+need at least three valid nonnegative integer pairs and non-collinear source and
+target anchors. Molecular fitting still uses MolSysMT's CPU/double route and
+returns a copy; selection, frame and cached-inventory axes must agree. Large
+unsigned indices cannot wrap into negative indices. A cached inventory remains
+the caller's responsibility: matching axis labels do not authenticate its origin.
+
 For native JSON/YAML, PHMT-owned schema/envelope refusals carry `PHMT-E108`
 and remain `ValueError` instances. The existing nonstring `io.load()` filename
 refusal carries `PHMT-E109` and remains a `TypeError`. Scientific value checks

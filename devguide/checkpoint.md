@@ -3,40 +3,43 @@
 Maintained 2026-11-14 local date; owners LMMV/dprada. Follow the
 [mature pre-1.0 roadmap](roadmap.md), [workstreams](decisions_and_workstreams.md)
 and [capability inventory](capability_inventory.md). The preceding published
-checkpoint is preserved at [c7ac96d](https://github.com/uibcdf/pharmacophoremt/blob/c7ac96df8d87aeaf500c247a5c3d1ffc6c174422/devguide/checkpoint.md);
+checkpoint is preserved at [3c14d1f](https://github.com/uibcdf/pharmacophoremt/blob/3c14d1f67299d8dc4945d13f4722c6720130b81a/devguide/checkpoint.md);
 [earlier dated history](checkpoint_history_20261114_before_pose_controls.md),
 [earlier pre-tag preparation](checkpoint_history_20261114_before_final_review.md)
 and the [0.6.0 cut record](release_0_6_0_source_cut.md) retain their identities.
 
-## Current increment — correspondence controls received toward 0.7.0
+## Current increment — alignment admission toward 0.7.0
 
-[#217](correspondence_argument_controls.md) receives source
-**d2facf44dd0ba1bc1e6b203b3fa470518631b573** and private development wheel
-`0.6.0+14.gd2facf4`. The [receipt](evidence/correspondence_argument_controls_20261114.json)
-records identical serial **194-case numerical/native + 266-case coupling groups**,
-460 distinct cases per source/owned context, including 65 new controls, zero
-failures/errors/skips. All 245 payloads/190 source-equal Python bodies verify;
-both groups load only the owned target's 172 PHMT modules. Actual frozen SDK
-support verifies and retires separately per group. Strict owned docs, all 27
-affected distribution controls and reporting/archive/index/generated-environment/
-declared-route/Ruff checks pass. Prior 163-case unchanged administrative-tool
-evidence stays at 00b21a8; the changed resource declaration is checked here.
+[#218](alignment_argument_controls.md) adds keyword-only `skip_digestion=False`
+with the existing definition-owned native-helper contract. Two mandatory guards
+retain valid mapping indices before query/frame work and finite/non-collinear
+source/target anchors before fitting. The remaining scientific body and signal/
+attribution decorators are AST-equal. Query, extraction and actual MolSysMT
+CPU/double fit/copy/get/set calls retain independent admission and source custody.
 
-One keyword-only control retains default child admission. Mandatory positive-
-integer budget normalization precedes native query preparation/enumeration during
-bypass, including empty inventories. The remaining scientific body is AST-equal;
-private geometry helpers and signal/attribution decorators are unchanged.
-Analytical raw-product counts, seed order, partial/complete meaning, physical/
-numerical pruning and real cached nm/pm attribution/custody pass. Exact initial,
-corrected and final guard snapshots and original failed attempts remain linked
-in the owning contract/receipt.
+[#219](pending_bugs/correspondence_index_bounds.md) rejects unrepresentable
+unsigned correspondence indices before int64 conversion, preserving valid signed/
+unsigned mappings. Only that shared value function changes. Original 73-case
+baseline and first-implementation failure/success snapshots remain in the owning
+contract/capsule. Final disjoint principal/mapping/composed source groups pass
+154/193/226 cases, 573 distinct cases including 91 new controls, zero failures/
+errors/skips. Reporting/archive/index/generated-environment/declared-route and
+whole-tree Ruff checks pass (544 formatted files). Exact private-wheel receiving
+and strict owned docs remain pending.
 
-This bounded Linux/Python 3.14.10 receiving uses public ArgDigest 0.17.1/PUW
-0.28.1/Pandas 3.1.1 and controlled other providers/inherited native extension.
-Broader #6 and later-head complete source/policy/publication plus installed/public/
-platform/biological/human/scale gates remain separate.
+The unchanged selection helpers exhibit separate wraparound in a bounded value
+probe, recorded under [#220](pending_bugs/selection_index_bounds.md). Downstream
+molecular selection impact remains unqualified. Broader #6, other public APIs and
+complete supported source/installed/public/platform/biological/scale gates remain
+separate.
 
 ## Earlier bounded increments
+
+[#217 correspondence controls](correspondence_argument_controls.md) retain
+[194/266-case source/owned receiving](evidence/correspondence_argument_controls_20261114.json)
+at d2facf4: 460 distinct cases/context, including 65 new controls, 245 payloads/
+190 equal Python bodies, 172 target-only modules, actual SDK retirement and
+strict owned docs. Original snapshots/failed attempts and provider limits remain.
 
 [#216 prepared-conformer controls](conformer_argument_controls.md) retain their
 [165/307-case source/owned receiving](evidence/conformer_argument_controls_20261114.json)
@@ -92,17 +95,17 @@ unchanged. Full installed/public artifact, biological/human/scale acceptance,
 
 ## Next concrete action and resources
 
-Audit public align_to_pharmacophore admission before selecting its next explicit-
-control implementation. Preserve proper molecular transformation, selection/frame/
-state axes, correspondence guards, quantity policy and source custody. Scoring and
-other APIs remain separately tracked under #6. Package/hosted-doc
-publishers stay inactive; stopped #148/#165 are not restarted.
+Receive the alignment/mapping/composed source and exact-owned groups, strict docs
+and original evidence before closing #218/#219. Then audit actual public ligand/
+receptor selection consumers and bounded signed-conversion refusal under #220.
+Scoring and remaining public APIs stay separately tracked under #6. Package/
+hosted-doc publishers remain inactive; stopped #148/#165 are not restarted.
 
 Preserve shared-prefix/migration pauses and original native/data identities.
 Heavy work stays serial: one CPU/backend thread, low CPU/I/O priority, finite
 limits, pressure/swap/own-family monitoring and 20% physical RAM plus task margin
 available. Capacity is not reserved. Review final-review/tag-delivery,
-screening-export/run, placed-pose, rigid-search, conformer and correspondence-control
+screening-export/run, placed-pose, rigid-search, conformer, correspondence and alignment-control
 capsules/targets on 2026-11-28;
 earlier tasks retain their own owners/dates. SDK test staging has retired its
 imports/resources; original published evidence and scientific inputs remain durable.

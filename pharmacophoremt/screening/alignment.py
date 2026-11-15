@@ -7,15 +7,19 @@ from smonitor import signal
 
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt._ackredit import attributed, credit_criterion
+from pharmacophoremt._private.arg_digestion.argument._contracts import (
+    digest_correspondence,
+)
+from pharmacophoremt._private.arg_digestion.native_helpers import CONFIG
 from pharmacophoremt._private.molsysmt import capability, detached, source_frame
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 from pharmacophoremt.modeler.features import get_features
-from pharmacophoremt.screening.correspondence import _centers_of_sites
+from pharmacophoremt.screening.correspondence import _centers_of_sites, _noncollinear
 from pharmacophoremt.screening.pose_evaluation import PoseEvaluator
 
 
 @signal(tags=["screening", "alignment"])
-@arg_digest()
+@arg_digest(config=CONFIG)
 @attributed("numpy", "molsysmt", "pyunitwizard")
 def align_to_pharmacophore(
     molecular_system,
@@ -26,6 +30,7 @@ def align_to_pharmacophore(
     structure_index=0,
     chemical_state="reference",
     feature_inventory=None,
+    skip_digestion=False,
 ):
     """Rigidly fit selected atoms to matched pharmacophoric feature centers.
 
@@ -48,6 +53,9 @@ def align_to_pharmacophore(
     feature_inventory : dict, optional
         Reuse modeler.get_features output from this same source, selection, state
         and unchanged frame. Axis checks cannot authenticate origin or geometry.
+    skip_digestion : bool, default=False
+        Bypass this operation's ordinary argument digestion for canonical expert
+        inputs. Native mapping/geometry guards and child validation remain.
 
     Returns
     -------
@@ -70,6 +78,7 @@ def align_to_pharmacophore(
     >>> aligned = align_to_pharmacophore(source, query, proposals['correspondences'][0], feature_inventory=inventory)
     >>> placed = aligned['molecular_system']
     """
+    correspondence = digest_correspondence(correspondence)
     from molsysmt.native import Structures
 
     evaluator = PoseEvaluator(pharmacophore)
@@ -122,6 +131,15 @@ def align_to_pharmacophore(
         dtype=float,
     )
     reference_centers = _centers_of_sites(sites)
+    if (
+        not np.isfinite(fit_centers).all()
+        or not _noncollinear(fit_centers)
+        or not _noncollinear(reference_centers)
+    ):
+        raise ArgumentError(
+            argument="correspondence",
+            reason="rigid alignment requires finite, non-collinear source and target anchor centers",
+        )
     point_cloud = Structures(
         coordinates=puw.quantity(
             [np.concatenate((coordinates[indices], fit_centers))], "nm"
