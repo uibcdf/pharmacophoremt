@@ -7,6 +7,11 @@
   with native default admission; explicitly supplied or saved reserved controls
   remain rejected.
 
+- Add keyword-only `skip_digestion=False` to
+  `screening.refine_rigid_feature_correspondences()`. Native policy, mapping,
+  budget/minimum and physical checks remain mandatory, including empty seeds.
+  Earlier minimum-capacity admission preserves per-attempt limits, both greedy
+  orientation policies, step evidence and independent child validation.
 - Add keyword-only `skip_digestion=False` to `screening.get_rigid_feature_placements()`.
   Mapping, budget/minimum and physical checks remain mandatory, including empty
   requests; scheduled-fit exhaustion refuses before inventory acquisition.

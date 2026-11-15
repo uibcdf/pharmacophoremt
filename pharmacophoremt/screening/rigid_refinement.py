@@ -6,6 +6,16 @@ from smonitor import signal
 
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt._ackredit import attributed, credit_criterion
+from pharmacophoremt._private.arg_digestion.argument._contracts import (
+    digest_correspondences,
+    digest_direction_tolerance,
+    digest_distance_tolerance,
+    digest_max_fits,
+    digest_max_matrix_entries,
+    digest_min_matches,
+    digest_orientation_policy,
+)
+from pharmacophoremt._private.arg_digestion.native_helpers import CONFIG
 from pharmacophoremt._private.molsysmt import detached
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 from pharmacophoremt.modeler.aligned_cliques import _limit
@@ -21,7 +31,7 @@ from .rigid_placements import _fit_feature_mapping, _source_inventory
 
 
 @signal(tags=["screening", "refinement", "rigid"])
-@arg_digest()
+@arg_digest(config=CONFIG)
 @attributed("numpy", "molsysmt", "pyunitwizard")
 def refine_rigid_feature_correspondences(
     molecular_system,
@@ -39,6 +49,7 @@ def refine_rigid_feature_correspondences(
     direction_tolerance="30 degrees",
     max_fits=1000,
     max_matrix_entries=1000000,
+    skip_digestion=False,
 ):
     """Grow each supplied mapping and retain its best fully evaluated placement.
 
@@ -70,6 +81,10 @@ def refine_rigid_feature_correspondences(
         raises instead of returning a partial or evaluated-empty result.
     max_matrix_entries : int, default=1000000
         Bound per full-inventory assignment matrix, including dummy columns.
+    skip_digestion : bool, default=False
+        Bypass ordinary argument digestion for canonical expert inputs. Native
+        mapping, policy, capacity and physical checks and independent public
+        child admission remain mandatory.
 
     Returns
     -------
@@ -96,6 +111,14 @@ def refine_rigid_feature_correspondences(
     >>> result = refine_rigid_feature_correspondences(source, target, seeds, orientation_policy='each_step')
     >>> alternatives = result['placements']
     """
+    max_fits = digest_max_fits(max_fits)
+    max_matrix_entries = digest_max_matrix_entries(max_matrix_entries)
+    min_matches = digest_min_matches(min_matches)
+    orientation_policy = digest_orientation_policy(orientation_policy)
+    correspondences = digest_correspondences(correspondences)
+    distance_tolerance = digest_distance_tolerance(distance_tolerance)
+    direction_tolerance = digest_direction_tolerance(direction_tolerance)
+    _limit("rigid_refinement", "minimum scheduled fits", len(correspondences), max_fits)
     first = _records(reference_inventory)
     source_options = dict(
         selection=selection,
@@ -105,7 +128,6 @@ def refine_rigid_feature_correspondences(
     feature_inventory = _source_inventory(
         molecular_system, feature_inventory, features, source_options
     )
-    _limit("rigid_refinement", "minimum scheduled fits", len(correspondences), max_fits)
     # Validate every seed before provider work. Geometry here is not a rejection
     # test because the original inventories need not share a fitted frame.
     for pairs in correspondences:

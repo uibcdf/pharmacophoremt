@@ -1,5 +1,14 @@
 # Strategic roadmap
 
+## Rigid-refinement public control implemented — 2026-11-15
+
+[#228](refinement_argument_controls.md) adds closed local admission and seven
+reused native validators, moving minimum scheduled capacity before inventory
+acquisition. Per-attempt fit bound, greedy loop/step/rollback/best-state semantics,
+shared helpers and independent children remain unchanged. Original baseline/
+prototype identities are retained; source/exact-owned receiving, strict docs and
+relevant governance precede closure. Broader #6/full gates and #227 stay separate.
+
 ## Rigid-placement public control received — 2026-11-15
 
 [#225](placement_argument_controls.md) receives 3f873ea and its exact private
