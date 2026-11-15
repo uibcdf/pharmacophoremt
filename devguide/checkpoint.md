@@ -8,46 +8,26 @@ checkpoint is preserved at [102e9d2](https://github.com/uibcdf/pharmacophoremt/b
 [earlier pre-tag preparation](checkpoint_history_20261114_before_final_review.md)
 and the [0.6.0 cut record](release_0_6_0_source_cut.md) retain their identities.
 
-## Current increment — rigid-refinement public control received toward 0.7.0
+## Current increment — rigid-proposal public control toward 0.7.0
 
-[#228](refinement_argument_controls.md) adds local keyword-only control and closed
-definition-owned admission. Seven reused scientific validators and the earlier
-minimum scheduled-fit bound precede inventory acquisition. The remaining greedy
-body, per-attempt bound and decorators remain AST-equal; shared source/fit helpers
-and independent public child admission remain unchanged.
+[#229](proposal_argument_controls.md) adds explicit keyword-only control and closed
+definition-owned admission to get_rigid_feature_correspondences. Eight reused
+validators keep strategy, physical/minimum and budget/seed domains mandatory before
+inventories, including empty candidates. The remaining scientific body and
+signal/attribution decorators are AST-equal; public children retain admission.
 
-[Receiving](evidence/rigid_refinement_controls_20261115.json) receives source
-79ac7ce3b740ffe1c77a83c11684b45a713e97a3 and exact private wheel `0.6.0+26.g79ac7ce`:
-identical serial **159/131/123/136-case source/owned groups**, **549 distinct cases
-per context including 159 new controls**, zero failures/errors/skips. All 245
-payloads/190 source-equal Python bodies verify, with 172 target-only PHMT modules
-per group.
-Actual immutable SDK support has pre-work journals/checking/import-resource
-retirement; file-relative fixture links also retire. Strict owned HTML docs and
-relevant reporting/archive/index/generated-environment/declared-route/Ruff checks
-pass (551 formatted files). The unchanged focused source group keeps its original
-label, rather than becoming a second execution. Earlier unchanged administrative/
-distribution evidence retains its own producer/scope.
+All 149 final controls pass. Original baseline (143 failures/six preservation
+passes), authored geometry/exception and numerical-tie corrections retain distinct
+guards/output identities. Independent rigid/reflected nm/pm mappings, finite seed
+selection, original PHMT-E107 failures, complete-empty scope, child spies, source
+custody and actual application branch credit pass. The disjoint source groups all pass: 149/25/32/113 cases, 319 distinct. Exact-
+private-wheel receiving, SDK retirement and strict owned docs remain pending.
+This bounded increment does not close #6 or the complete qualification gates.
 
-Frozen donor-policy controls preserve final/each_step fit/step counts, permanent
-blocking, rollback and selected best-state identities under both controls. Fit
-exhaustion during growth and provider failure after a successful step raise
-without partial accepted science. Real nm/pm cached/extraction fits under both
-policies preserve duplicate seeds, selection [2,0,1], frame 1 and chemical state 1,
-independent
-coordinates/counts, other atoms/frames, source/cache quantities and detached
-reports. Actual application sessions/captures credit reached greedy branches;
-completed-empty requests do not credit an unexecuted refinement method.
-
-Original 159-case baseline (155 failures/four preservation passes), 98-case
-control-only prototype (50 failures/48 passes), exact guards/runtime snapshots,
-XML/logs and provider/resource contexts retain their identities. No heavy run is
-interrupted here. Broader #6/full later-head source/policy/publication, supported
-installed/public/platform and biological/human/scale gates remain separate.
-Bounded Linux/Python3.14.10/public ArgDigest0.17.1/PUW0.28.1/Pandas3.1.1 with
-controlled other-provider/inherited-native limits grants no full qualification.
-#227 predictable assignment preflight, original #224 receptor-pilot CPU stop/#9
-recovery and older staging uncertainty retain their owners; no speed claim follows.
+The preceding #228 receiving remains at [its original receipt](evidence/rigid_refinement_controls_20261115.json):
+source 79ac7ce and private0.6.0+26.g79ac7ce, 549 distinct cases/context. No previous
+evidence is promoted to this changed head. #227, original #224 pilot recovery and
+older staging uncertainty retain their owners.
 
 ## Earlier bounded increments
 
@@ -81,10 +61,10 @@ unchanged. Full installed/public artifact, biological/human/scale acceptance,
 
 ## Next concrete action and resources
 
-Audit get_rigid_feature_correspondences public admission next, preserving
-method-specific finite budgets, completion scope and independent proposal/ranking
-children. Other APIs remain partial under #6; #227, publisher pauses and stopped
-#148/#165 stay separate.
+Complete #229 relevant bounded source/exact-owned receiving, strict docs, quality,
+evidence and publication/readback. Then audit get_feature_pair_dissimilarities
+and rank_rigid_feature_correspondences under still-partial #6. #227, publisher
+pauses and stopped #148/#165 stay separate.
 
 Preserve shared-prefix/migration pauses and original native/data identities.
 Heavy work stays serial: one CPU/backend thread, low CPU/I/O priority, finite

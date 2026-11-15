@@ -9,6 +9,17 @@ from smonitor import signal
 
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt._ackredit import attributed, credit_criterion, credit_software
+from pharmacophoremt._private.arg_digestion.argument._contracts import (
+    digest_correspondence_strategy,
+    digest_distance_tolerance,
+    digest_max_cliques,
+    digest_max_graph_nodes,
+    digest_max_matrix_entries,
+    digest_max_trials,
+    digest_min_matches,
+    digest_n_seeds,
+)
+from pharmacophoremt._private.arg_digestion.native_helpers import CONFIG
 from pharmacophoremt._private.molsysmt import detached
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError, CliqueLimitError
 from pharmacophoremt.modeler.aligned_cliques import _limit
@@ -27,7 +38,7 @@ from .feature_neighborhoods import (
 
 
 @signal(tags=["screening", "correspondence", "rigid"])
-@arg_digest()
+@arg_digest(config=CONFIG)
 @attributed("numpy", "pyunitwizard")
 def get_rigid_feature_correspondences(
     reference_inventory,
@@ -41,6 +52,7 @@ def get_rigid_feature_correspondences(
     max_trials=10000,
     n_seeds=None,
     max_matrix_entries=1000000,
+    skip_digestion=False,
 ):
     """Propose injective feature mappings from invariant internal distances.
 
@@ -71,6 +83,9 @@ def get_rigid_feature_correspondences(
         Other families reject a supplied limit. Selection may miss alignments.
     max_matrix_entries : int
         Per-matrix bound for ranked neighborhood comparison.
+    skip_digestion : bool, default=False
+        Bypass this operation's ordinary argument digestion for canonical expert
+        inputs. Native scientific and budget checks and child admission remain.
 
     Returns
     -------
@@ -92,6 +107,14 @@ def get_rigid_feature_correspondences(
     >>> proposals = get_rigid_feature_correspondences(reference, candidate)
     >>> mappings = proposals['correspondences']
     """
+    correspondence_strategy = digest_correspondence_strategy(correspondence_strategy)
+    distance_tolerance = digest_distance_tolerance(distance_tolerance)
+    min_matches = digest_min_matches(min_matches)
+    max_graph_nodes = digest_max_graph_nodes(max_graph_nodes)
+    max_cliques = digest_max_cliques(max_cliques)
+    max_trials = digest_max_trials(max_trials)
+    n_seeds = digest_n_seeds(n_seeds)
+    max_matrix_entries = digest_max_matrix_entries(max_matrix_entries)
     first, second = _records(reference_inventory), _records(feature_inventory)
     if n_seeds is not None and correspondence_strategy != "ranked_triplet_seeds":
         raise ArgumentError(argument="n_seeds", reason="requires ranked_triplet_seeds")

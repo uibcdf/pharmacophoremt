@@ -1,5 +1,14 @@
 # Strategic roadmap
 
+## Rigid-proposal control implemented — 2026-11-15
+
+[#229](proposal_argument_controls.md) adds explicit local control and eight reused
+mandatory native validators; the scientific remainder/decorators and independent
+children remain unchanged. All 149 final controls pass after separately retained
+authored assertion/geometry/numerical-tie corrections. Source/exact-owned consumer
+receiving and strict docs/quality are in progress. #6 and full supported/public
+gates remain partial; no tag/publisher/full remote matrix or speed claim.
+
 ## Rigid-refinement public control received — 2026-11-15
 
 [#228](refinement_argument_controls.md) receives 79ac7ce and its exact private

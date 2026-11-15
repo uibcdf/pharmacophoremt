@@ -33,6 +33,10 @@ CONTRACTS = [
         caller="pharmacophoremt.screening.rigid_refinement.refine_rigid_feature_correspondences",
         admits="signature",
     ),
+    FunctionContract(
+        caller="pharmacophoremt.screening.rigid_correspondence.get_rigid_feature_correspondences",
+        admits="signature",
+    ),
 ]
 
 CONFIG = DigestConfig(

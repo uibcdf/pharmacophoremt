@@ -2,6 +2,12 @@
 
 ## Unreleased — toward 0.7.0
 
+- Add keyword-only `skip_digestion=False` to
+  `screening.get_rigid_feature_correspondences()`. Strategy, positive physical
+  tolerance, minimum and budget/seed domains remain mandatory during bypass.
+  The three finite proposal families, deliberate ranked seed selection, budget
+  failure and independent child validation retain their existing semantics.
+
 - Keep operation-local digestion controls out of expanded prepared-run recipes.
   Plans for placed, rigid and conformer evaluators again construct/reconstruct
   with native default admission; explicitly supplied or saved reserved controls
