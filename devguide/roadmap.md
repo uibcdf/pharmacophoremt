@@ -1,13 +1,18 @@
 # Strategic roadmap
 
-## Rigid-refinement public control implemented — 2026-11-15
+## Rigid-refinement public control received — 2026-11-15
 
-[#228](refinement_argument_controls.md) adds closed local admission and seven
-reused native validators, moving minimum scheduled capacity before inventory
-acquisition. Per-attempt fit bound, greedy loop/step/rollback/best-state semantics,
-shared helpers and independent children remain unchanged. Original baseline/
-prototype identities are retained; source/exact-owned receiving, strict docs and
-relevant governance precede closure. Broader #6/full gates and #227 stay separate.
+[#228](refinement_argument_controls.md) receives 79ac7ce and its exact private
+wheel: [159/131/123/136-case source/owned groups](evidence/rigid_refinement_controls_20261115.json),
+549 distinct cases/context including 159 controls, 245 payloads/190 equal
+bodies, 172 target-only PHMT modules per group, actual SDK journals/retirement, strict owned docs and
+relevant quality. The unchanged focused group keeps its original identity.
+Seven native validators and an earlier minimum scheduled bound retain the
+per-attempt limit, greedy loop/step/rollback/best-state semantics, shared helpers
+and independent children. Actual donor-policy oracles and nm/pm source/report/
+session custody pass; original baseline/prototype evidence remains distinct.
+Next audit get_rigid_feature_correspondences under partial #6. Full supported/
+public gates, #227 and earlier resource uncertainties retain their own owners.
 
 ## Rigid-placement public control received — 2026-11-15
 

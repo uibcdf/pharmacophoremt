@@ -76,3 +76,30 @@ remote matrix/benchmark or speed claim. Heavy work stays serial CPU19/backend1,
 nice19/idle I/O, finite DATA/CPU/wall and own-family RSS/physical reserve/swap/PSI
 monitoring, without allocation/reservation/cgroup/AS cap. Retain task-owned capsule/
 target for 2026-11-29 review; earlier temporary resources keep their own owners.
+
+## Measured receiving — 2026-11-15
+
+[Receiving](evidence/rigid_refinement_controls_20261115.json) receives source
+79ac7ce3b740ffe1c77a83c11684b45a713e97a3 and exact private wheel `0.6.0+26.g79ac7ce`:
+identical serial **159/131/123/136-case source/owned groups**, **549 distinct cases
+per context including 159 new controls**, zero failures/errors/skips. All 245
+payloads/190 source-equal Python bodies verify, with 172 target-only PHMT modules
+per group.
+Actual immutable SDK support has pre-work journals/checking/import-resource
+retirement; file-relative fixture links also retire. Strict owned HTML docs and
+relevant reporting/archive/index/generated-environment/declared-route/Ruff checks
+pass (551 formatted files). The unchanged focused source group keeps its original
+label, rather than becoming a second execution. Earlier unchanged administrative/
+distribution evidence retains its own producer/scope.
+
+Original baseline/prototype and unchanged initial/final guard/runtime snapshots
+stay in the full hash-bound archive. Both controls retain frozen donor-policy
+outcomes, rollback/blocking/best-state/count evidence and source custody. Actual
+cached/extraction nm/pm fits under both policies retain the five public children,
+frame/state/selection, coordinates, duplicates and detached reports. Application-
+owned captures observe each reached policy and no unexecuted empty refinement.
+The per-attempt bound stops before the next provider call; later failure retains
+its original exception without partial accepted results. Current post-fit PHMT-
+E106 allocation protection remains intact; #227 is separate future preflight.
+No heavy operation is interrupted; earlier #224 CPU stop/full-pilot recovery and
+older staging uncertainty keep their original identities and owners.

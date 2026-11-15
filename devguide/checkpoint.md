@@ -8,95 +8,55 @@ checkpoint is preserved at [102e9d2](https://github.com/uibcdf/pharmacophoremt/b
 [earlier pre-tag preparation](checkpoint_history_20261114_before_final_review.md)
 and the [0.6.0 cut record](release_0_6_0_source_cut.md) retain their identities.
 
-## Current increment — explicit rigid-refinement control toward 0.7.0
+## Current increment — rigid-refinement public control received toward 0.7.0
 
-[#228](refinement_argument_controls.md) adds one keyword-only local control and
-closed definition-owned admission. Seven reused native scientific validators and
-an earlier minimum scheduled-fit bound preserve the remaining greedy body,
-per-attempt bound and decorators AST-equal. Shared source/fit helpers stay exact;
-public child tools keep independent admission. Original 159-case baseline (155
-failures/four preservation passes) and 98-case control-only prototype (50 failures/
-48 passes) retain exact guard/runtime/XML/output identities. All 159 final
-controls pass; their unchanged focused group is reused under its original label.
-All source groups pass 159/131/123/136 cases, 549 distinct including 159 new
-controls, zero failures/errors/skips. Exact-owned groups, strict docs and
-governance remain pending.
-Broader #6/full qualification and #227 optimization stay separate. Original #224
-receptor-pilot CPU stop/#9 recovery and older staging uncertainty keep ownership.
+[#228](refinement_argument_controls.md) adds local keyword-only control and closed
+definition-owned admission. Seven reused scientific validators and the earlier
+minimum scheduled-fit bound precede inventory acquisition. The remaining greedy
+body, per-attempt bound and decorators remain AST-equal; shared source/fit helpers
+and independent public child admission remain unchanged.
+
+[Receiving](evidence/rigid_refinement_controls_20261115.json) receives source
+79ac7ce3b740ffe1c77a83c11684b45a713e97a3 and exact private wheel `0.6.0+26.g79ac7ce`:
+identical serial **159/131/123/136-case source/owned groups**, **549 distinct cases
+per context including 159 new controls**, zero failures/errors/skips. All 245
+payloads/190 source-equal Python bodies verify, with 172 target-only PHMT modules
+per group.
+Actual immutable SDK support has pre-work journals/checking/import-resource
+retirement; file-relative fixture links also retire. Strict owned HTML docs and
+relevant reporting/archive/index/generated-environment/declared-route/Ruff checks
+pass (551 formatted files). The unchanged focused source group keeps its original
+label, rather than becoming a second execution. Earlier unchanged administrative/
+distribution evidence retains its own producer/scope.
+
+Frozen donor-policy controls preserve final/each_step fit/step counts, permanent
+blocking, rollback and selected best-state identities under both controls. Fit
+exhaustion during growth and provider failure after a successful step raise
+without partial accepted science. Real nm/pm cached/extraction fits under both
+policies preserve duplicate seeds, selection [2,0,1], frame 1 and chemical state 1,
+independent
+coordinates/counts, other atoms/frames, source/cache quantities and detached
+reports. Actual application sessions/captures credit reached greedy branches;
+completed-empty requests do not credit an unexecuted refinement method.
+
+Original 159-case baseline (155 failures/four preservation passes), 98-case
+control-only prototype (50 failures/48 passes), exact guards/runtime snapshots,
+XML/logs and provider/resource contexts retain their identities. No heavy run is
+interrupted here. Broader #6/full later-head source/policy/publication, supported
+installed/public/platform and biological/human/scale gates remain separate.
+Bounded Linux/Python3.14.10/public ArgDigest0.17.1/PUW0.28.1/Pandas3.1.1 with
+controlled other-provider/inherited-native limits grants no full qualification.
+#227 predictable assignment preflight, original #224 receptor-pilot CPU stop/#9
+recovery and older staging uncertainty retain their owners; no speed claim follows.
 
 ## Earlier bounded increments
 
-[#225 rigid-placement controls](placement_argument_controls.md) retain
-[123/38/131/136-case source/owned receiving](evidence/rigid_placement_controls_20261115.json)
-at 3f873ea: 428 distinct cases/context including 113 controls, 245 payloads/190
-equal bodies, 172 target-only modules, actual SDK journals/retirement, strict owned
-docs and relevant governance. Original baseline/prototype/authored exception
-correction stay distinct; predictable assignment capacity remains #227.
-
-
-[#224 pair-evaluation control](feature_geometry_argument_controls.md) retains
-[143/48/17/132-case source/owned receiving](evidence/feature_pair_controls_20261115.json)
-at fbb09df: 340 distinct cases/context including 83 new controls, 245 payloads/190
-equal bodies, 172 target-only modules and actual SDK journals/retirement. Strict
-owned docs pass. Original baseline/prototype and unsplit CPU-limited receptor-
-pilot attempt retain their identities; full pilot recovery remains #9-owned.
-
-[#222/#223 score controls and prepared-plan projection](screening_score_argument_controls.md)
-retain [164/166/134-case source/owned receiving](evidence/screening_score_controls_20261115.json)
-at 7b01bb5: 464 distinct cases/context including 94 new controls, 245 payloads/190
-equal bodies, 172 target-only modules and actual SDK journals/retirement. Strict
-owned docs pass. Original baselines/guard versions and both installed-harness
-adaptations retain their identities; #6 remains partial.
-
-[#220/#221 selection/explicit-pair bounds](selection_index_bounds.md) retain
-[272/177/69-case source/owned receiving](evidence/selection_index_bounds_20261115.json)
-at fdeb83e: 518 distinct cases/context, 96 new controls, 245 payloads/190 equal
-bodies, 172 target-only modules, pre-work SDK journals/retirement and strict docs.
-Original baselines/snapshots and prior staging uncertainty retain their identities.
-
-[#218/#219 alignment/index controls](alignment_argument_controls.md) retain
-[154/193/226-case source/owned receiving](evidence/alignment_argument_controls_20261114.json)
-at 7025b7d: 573 distinct cases/context, 91 new controls, 245 payloads/190 equal
-bodies, 172 target-only modules and SDK retirement for accepted groups. Original
-failed/interrupted attempts and the original unknown staging retirement remain
-explicit; immutable prior evidence is not relabelled.
-
-[#217 correspondence controls](correspondence_argument_controls.md) retain
-[194/266-case source/owned receiving](evidence/correspondence_argument_controls_20261114.json)
-at d2facf4: 460 distinct cases/context, including 65 new controls, 245 payloads/
-190 equal Python bodies, 172 target-only modules, actual SDK retirement and
-strict owned docs. Original snapshots/failed attempts and provider limits remain.
-
-[#216 prepared-conformer controls](conformer_argument_controls.md) retain their
-[165/307-case source/owned receiving](evidence/conformer_argument_controls_20261114.json)
-at f39c715: 472 distinct cases/context including 74 new controls, 244 payloads/
-189 equal Python bodies, 171 target-only modules, actual SDK retirement per group
-and strict owned docs. Original baseline/snapshots and provider limitations remain.
-
-[#215 rigid-search controls](rigid_argument_controls.md) retain their
-[398-case source/owned receiving](evidence/rigid_argument_controls_20261114.json)
-at 72490a6, preserving native budget/ranking bodies and independent children.
-Its original guard snapshots, exact artifact and provider limits remain.
-
-[#214 placed-pose controls](pose_argument_controls.md) retain their
-[355-case source/owned receiving](evidence/pose_argument_controls_20261114.json)
-at 00b21a8, including 60 controls, real nm/pm and active attribution. Its exact
-artifact, reader-dependency/body-preservation proof and provider limits remain.
-
-[#213](screening_run_argument_controls.md) retains its
-[230-case source/owned receiving](evidence/screening_run_controls_20261114.json)
-at 3050a78, preserving facade cache reset/materialization/native admission and
-the legacy positional control. [#211/#212](screening_export_argument_controls.md)
-retain [370-case source/owned receiving plus 41 minimum-Pandas controls](evidence/screening_export_controls_20261114.json)
-at 9fe608a, preserving cached/Pandas/subclass behavior and correcting the skip
-diagnostic. Their original exact artifacts, contexts and limitations remain.
-
-[#205 symmetric comparison](symmetric_model_comparison.md), native feature
-capture/archive/reconstruction, [prepared screening](prepared_feature_screening_journey.md)
-and [#209 ERalpha receiving](archive/eralpha_controlled_provider_receiving.md)
-retain their owning contracts/receipts. [#206](archive/pandas_dependency_ownership.md)
-retains hard direct Pandas ownership. Deferred [#210](pending_proposals/evaluate_tabular_backends.md)/
-MolSysMT #749 does not select a backend migration.
+The [preceding published checkpoint](https://github.com/uibcdf/pharmacophoremt/blob/102e9d2f33cd98bf613de257bf07252235ca186f/devguide/checkpoint.md)
+retains the earlier increments with their original sources, runs, receipts and
+limitations. Their owning contracts and evidence remain unchanged. The
+[capability inventory](capability_inventory.md), [roadmap](roadmap.md) and
+[workstreams](decisions_and_workstreams.md) own cumulative capabilities and pending
+work; this checkpoint records the current increment and next action.
 
 ## Source-only 0.6.0 and complete-source baseline
 
@@ -121,11 +81,10 @@ unchanged. Full installed/public artifact, biological/human/scale acceptance,
 
 ## Next concrete action and resources
 
-Receive #228 controls and relevant source/exact-owned consumers, strict docs
-and original evidence. Reuse the unchanged focused scientific group under its
-original identity. Then audit get_rigid_feature_correspondences public admission,
-method-specific finite budgets and independent child boundaries. Other APIs stay
-partial under #6; #227, publisher pauses and stopped #148/#165 remain separate.
+Audit get_rigid_feature_correspondences public admission next, preserving
+method-specific finite budgets, completion scope and independent proposal/ranking
+children. Other APIs remain partial under #6; #227, publisher pauses and stopped
+#148/#165 stay separate.
 
 Preserve shared-prefix/migration pauses and original native/data identities.
 Heavy work stays serial: one CPU/backend thread, low CPU/I/O priority, finite

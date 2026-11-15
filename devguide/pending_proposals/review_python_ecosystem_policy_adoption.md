@@ -14,6 +14,20 @@ supersedes: []
 
 # Review Python ecosystem policy adoption
 
+## Rigid-refinement public receiving — 2026-11-15
+
+[#228](../refinement_argument_controls.md) receives 79ac7ce and its exact private
+wheel: [159/131/123/136-case source/owned groups](../evidence/rigid_refinement_controls_20261115.json),
+549 distinct cases/context including 159 controls. Closed local admission keeps
+seven native validators and an earlier minimum scheduled bound; per-attempt
+limits, greedy policy/step/rollback/best-state code and shared helpers remain
+unchanged. Native empty/failure distinctions, frozen donor-policy oracles and
+real cached/extraction nm/pm frame/state/selection/report/session custody pass.
+Payload/body/origin proof, actual SDK retirement, strict docs and relevant quality
+pass. Original focused source identity is reused; baseline/prototype evidence
+remains original. #6 stays partial; bounded proposal admission is next. Complete
+source/installed/public and #227/prior resource recovery remain separately owned.
+
 ## Rigid-placement public receiving — 2026-11-15
 
 [#225](../placement_argument_controls.md) receives 3f873ea and its exact private
