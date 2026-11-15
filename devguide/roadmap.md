@@ -1,17 +1,18 @@
 # Strategic roadmap
 
-## Alignment control and index bounds implemented — 2026-11-14 local date
+## Alignment and index-bound controls received — 2026-11-14 local date
 
-[#218](alignment_argument_controls.md) adds independent alignment digestion
-control and mandatory native mapping/anchor-geometry guards, preserving the
-scientific remainder and molecular-provider custody. [#219](pending_bugs/correspondence_index_bounds.md)
-fixes unsigned correspondence wraparound before conversion. Final disjoint source
-groups pass 154/193/226 cases, 573 distinct cases including 91 new controls;
-relevant governance/Ruff checks pass. Exact-owned groups and strict docs follow.
-Unchanged selection-helper wraparound
-is separately probed under [#220](pending_bugs/selection_index_bounds.md); actual
-public-consumer impact awaits receiving. Broader #6 and full supported/public
-qualification remain separate.
+[#218/#219](alignment_argument_controls.md) receive source 7025b7d and exact
+private wheel: [154/193/226-case source/owned groups](evidence/alignment_argument_controls_20261114.json),
+573 distinct cases per context including 91 new controls, 245 payloads/190 equal
+Python bodies, 172 target-only modules per group and actual SDK retirement for
+accepted groups. Strict owned docs and relevant governance/Ruff pass. Native
+mapping/geometry guards preserve the scientific remainder; unsigned correspondence
+indices cannot wrap negative. Original failed/interrupted attempts and the
+original unknown staging retirement remain explicit. Next audit actual selection
+consumers and before-provider signed-conversion refusal under [#220](pending_bugs/selection_index_bounds.md),
+then remaining scoring/API adoption. Broader #6 and full supported/public gates
+remain separate.
 
 ## Correspondence controls received — 2026-11-14 local date
 

@@ -5,10 +5,11 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (155)
+### Resolved (157)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
+- [`alignment_argument_controls.md`](alignment_argument_controls.md) — [#218](https://github.com/uibcdf/pharmacophoremt/issues/218) — Expose independent alignment digestion control and enforce native mapping geometry. *(resolved, measured)*
 - [`analytical_upper_bound_platform.md`](analytical_upper_bound_platform.md) — [#143](https://github.com/uibcdf/pharmacophoremt/issues/143) — Diagnose the exact upper-bound analytical comparison failure on macOS. *(resolved, reproduced)*
 - [`aromatic_attribution_subprocess_import.md`](aromatic_attribution_subprocess_import.md) — [#48](https://github.com/uibcdf/pharmacophoremt/issues/48) — Aromatic attribution-absence subprocess assumed an eagerly imported screening namespace. *(resolved, measured)*
 - [`association_distance_roundoff.md`](association_distance_roundoff.md) — [#177](https://github.com/uibcdf/pharmacophoremt/issues/177) — Preserve final-accepted boundary candidates in association-graph proposals. *(resolved, reproduced)*
@@ -34,6 +35,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`consensus_support_review.md`](consensus_support_review.md) — [#80](https://github.com/uibcdf/pharmacophoremt/issues/80) — Qualify native consensus support, typed occurrence reuse and controlled input multiplicity. *(resolved, measured)*
 - [`controlled_h5msm1_acquisition.md`](controlled_h5msm1_acquisition.md) — [#207](https://github.com/uibcdf/pharmacophoremt/issues/207) — Align controlled MolSysMT acquisition with immutable H5MSM 1.0 inputs. *(resolved, measured)*
 - [`correspondence_argument_controls.md`](correspondence_argument_controls.md) — [#217](https://github.com/uibcdf/pharmacophoremt/issues/217) — Expose correspondence digestion control while retaining mandatory bounded enumeration. *(resolved, measured)*
+- [`correspondence_index_bounds.md`](correspondence_index_bounds.md) — [#219](https://github.com/uibcdf/pharmacophoremt/issues/219) — Unsigned correspondence indices wrap to negative int64 values before molecular work. *(resolved, measured)*
 - [`coverage_xml_namespace_identity.md`](coverage_xml_namespace_identity.md) — [#141](https://github.com/uibcdf/pharmacophoremt/issues/141) — Preserve package-qualified coverage XML identities for both runtime namespaces. *(resolved, reproduced)*
 - [`define_feature_asset_public_api.md`](define_feature_asset_public_api.md) — [#188](https://github.com/uibcdf/pharmacophoremt/issues/188) — Define the minimal feature-asset API and qualify argument/diagnostic admission. *(resolved, measured)*
 - [`docs_contributor_footer.md`](docs_contributor_footer.md) — [#149](https://github.com/uibcdf/pharmacophoremt/issues/149) — Contributor footer links resolve to a nonexistent path at every documentation depth. *(resolved, measured)*

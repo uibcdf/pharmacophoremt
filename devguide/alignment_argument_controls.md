@@ -69,13 +69,17 @@ motion control includes an explicit subset/frame rotation; its final principal
 group is source-core-final. Earlier principal run and unused-import lint failure
 retain their original snapshots/output.
 
-Receive disjoint serial native, mapping and composed-consumer source groups,
-then identical selections from one exact committed private wheel outside the
-checkout. Verify all payloads/source bodies and owned runtime origins. Actual
-immutable SDK support must stage, verify and retire for each group. Strict owned
-docs and relevant reporting/archive/index/generated-environment/declared-route/
-Ruff checks precede closure. Reuse unchanged distribution/administrative evidence
-with its original source and executed scope; no relabelling as new runs.
+The [receiving receipt](evidence/alignment_argument_controls_20261114.json) receives
+source 7025b7df2bd33d26e11c58df7a7593de31095feb and exact private wheel
+`0.6.0+16.g7025b7d`. Identical serial source/owned principal/mapping/composed groups
+pass 154/193/226 cases, 573 distinct cases per context including 91 new controls,
+zero failures/errors/skips. All 245 payloads/190 source-equal Python bodies verify;
+each group loads only the owned target's 172 PHMT modules. Actual immutable SDK
+support verifies and retires per accepted group. Strict owned HTML docs pass with
+one builder job and notebook execution off. Relevant reporting/archive/index/
+generated-environment/declared-route/Ruff checks pass (544 formatted files).
+Unchanged prior 163-case administrative and 27-case distribution controls retain
+their original sources/scopes, rather than being relabelled as new executions.
 
 Use recorded public ArgDigest 0.17.1/PUW 0.28.1/Pandas 3.1.1 and controlled other
 providers/inherited MolSysMT native extension. Bounded Linux/Python 3.14.10
@@ -84,3 +88,22 @@ biological/human or scale qualification. Broader #6, immutable 0.6.0, publisher/
 shared-prefix pauses and stopped #148/#165 remain separate. Heavy work is serial
 on one CPU/backend thread with low CPU/I/O priority, finite DATA/CPU/wall and
 own-family/reserve/swap/pressure monitoring; capacity is not reserved.
+
+## Resource interruption and temporary support
+
+One original owned-mapping attempt was stopped by the own-family supervisor after
+an observed global swap-out burst (1,057 pages over roughly 0.101 s). Its peak
+RSS was about 498 MiB, available memory about 49.3 GB and memory PSI avg10 zero;
+this does not attribute the system activity to a particular process. The attempt
+is incomplete and never counted as a completed receiving group. A fresh bounded
+preflight observes no active swap in its sampled interval and ample reserve.
+The separately identified retry keeps the same limits and test selection.
+
+The original task launcher did not journal its SDK staging path before work;
+its retirement is unknown. One matching-time candidate lacks ownership proof
+and is left untouched. The task launcher now journals the supported SDK receipt
+before tests, handles SIGTERM for ordinary context retirement and uses task-owned
+temporary parents for subsequent groups. Accepted receiving has its own exact
+retirement proof; do not relabel the original interruption as passing or claim
+its staging was retired. Retain raw capsules/target for 2026-11-28 review and
+preserve foreign/shared resources.

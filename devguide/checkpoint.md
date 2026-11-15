@@ -8,30 +8,40 @@ checkpoint is preserved at [3c14d1f](https://github.com/uibcdf/pharmacophoremt/b
 [earlier pre-tag preparation](checkpoint_history_20261114_before_final_review.md)
 and the [0.6.0 cut record](release_0_6_0_source_cut.md) retain their identities.
 
-## Current increment — alignment admission toward 0.7.0
+## Current increment — alignment and correspondence-index receiving toward 0.7.0
 
-[#218](alignment_argument_controls.md) adds keyword-only `skip_digestion=False`
-with the existing definition-owned native-helper contract. Two mandatory guards
-retain valid mapping indices before query/frame work and finite/non-collinear
-source/target anchors before fitting. The remaining scientific body and signal/
-attribution decorators are AST-equal. Query, extraction and actual MolSysMT
-CPU/double fit/copy/get/set calls retain independent admission and source custody.
+[#218](alignment_argument_controls.md) and [#219](archive/correspondence_index_bounds.md)
+receive source **7025b7df2bd33d26e11c58df7a7593de31095feb** and exact private wheel
+`0.6.0+16.g7025b7d`. The [receipt](evidence/alignment_argument_controls_20261114.json)
+records identical serial **154/193/226-case source/owned groups**, 573 distinct
+cases per context including 91 new controls, zero failures/errors/skips. All 245
+payloads/190 source-equal Python bodies verify; each group loads only 172 owned-
+target PHMT modules. Actual SDK support verifies and retires for each accepted
+group. Strict owned docs and relevant reporting/archive/index/generated-environment/
+declared-route/Ruff checks pass (544 formatted files). Unchanged prior 163-case
+administrative/27-case distribution evidence keeps its original source/scope.
 
-[#219](pending_bugs/correspondence_index_bounds.md) rejects unrepresentable
-unsigned correspondence indices before int64 conversion, preserving valid signed/
-unsigned mappings. Only that shared value function changes. Original 73-case
-baseline and first-implementation failure/success snapshots remain in the owning
-contract/capsule. Final disjoint principal/mapping/composed source groups pass
-154/193/226 cases, 573 distinct cases including 91 new controls, zero failures/
-errors/skips. Reporting/archive/index/generated-environment/declared-route and
-whole-tree Ruff checks pass (544 formatted files). Exact private-wheel receiving
-and strict owned docs remain pending.
+One local alignment control retains independent children. Mandatory mapping and
+finite/non-collinear anchor guards preserve the remaining scientific body AST;
+shared correspondence conversion now refuses unsigned overflow before casting.
+Proper rotations/reflections, subset/frame/state axes, cached/extracted features,
+nm/pm quantities, actual attribution and source/other-atom/frame custody pass.
+Original baseline, prototype, earlier principal run, guard snapshots and lint
+failure retain their identities in the owning contract/receipt.
 
-The unchanged selection helpers exhibit separate wraparound in a bounded value
-probe, recorded under [#220](pending_bugs/selection_index_bounds.md). Downstream
-molecular selection impact remains unqualified. Broader #6, other public APIs and
-complete supported source/installed/public/platform/biological/scale gates remain
-separate.
+One owned-mapping attempt was stopped after global swap activity; a quiet-swap preflight with
+sufficient available RAM precedes its separately accepted retry with unchanged limits.
+The original staging path was not journalled, so retirement remains unknown;
+one matching-time candidate lacks ownership proof and is left untouched. Later
+receiving journals staging before work and handles SIGTERM for context retirement.
+See the receipt/contract for exact resource evidence and the bounded limitation.
+
+[#220](pending_bugs/selection_index_bounds.md) remains open for the separately
+probed unchanged ligand/receptor selection helpers; downstream molecular impact
+is unqualified. This is bounded Linux/Python 3.14.10/public ArgDigest 0.17.1/PUW
+0.28.1/Pandas 3.1.1 receiving with controlled other providers/inherited native
+extension. Broader #6 and complete later-head source/installed/public/platform/
+biological/human/scale gates remain separate.
 
 ## Earlier bounded increments
 
@@ -95,11 +105,11 @@ unchanged. Full installed/public artifact, biological/human/scale acceptance,
 
 ## Next concrete action and resources
 
-Receive the alignment/mapping/composed source and exact-owned groups, strict docs
-and original evidence before closing #218/#219. Then audit actual public ligand/
-receptor selection consumers and bounded signed-conversion refusal under #220.
-Scoring and remaining public APIs stay separately tracked under #6. Package/
-hosted-doc publishers remain inactive; stopped #148/#165 are not restarted.
+Audit the actual public ligand/receptor-selection consumers under #220 before
+implementing representability guards. Preserve ordered signed/unsigned indices,
+string/None contracts, native option ownership and before-provider refusal. Then
+continue scoring/remaining public controls under partial #6. Package/hosted-doc
+publishers remain inactive; stopped #148/#165 are not restarted.
 
 Preserve shared-prefix/migration pauses and original native/data identities.
 Heavy work stays serial: one CPU/backend thread, low CPU/I/O priority, finite

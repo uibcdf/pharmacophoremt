@@ -5,10 +5,6 @@ Queued defects have an owning GitHub issue. See the
 
 <!-- generated: devguide_index -->
 
-### Active (1)
-
-- [`correspondence_index_bounds.md`](correspondence_index_bounds.md) — [#219](https://github.com/uibcdf/pharmacophoremt/issues/219) — Unsigned correspondence indices wrap to negative int64 values before molecular work. *(active, measured)*
-
 ### Partial (1)
 
 - [`full_ci_routes_and_skipped_push_recovery.md`](full_ci_routes_and_skipped_push_recovery.md) — [#9](https://github.com/uibcdf/pharmacophoremt/issues/9) — Complete contributor full-CI routes and skipped-push recovery. *(partial, measured)*

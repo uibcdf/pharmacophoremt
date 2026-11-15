@@ -30,3 +30,11 @@ unrepresentable values and preserve valid ordered signed/unsigned, string and
 None selections. Other integer helpers require a bounded audit; no exhaustive
 inventory is claimed. Add a relevant public-call guard and source/exact-owned
 receiving before closure. Broader #6 and complete qualification remain separate.
+
+## Durable probe record — 2026-11-14
+
+The [alignment receiving receipt](../evidence/alignment_argument_controls_20261114.json)
+binds the original probe/script/output/context/resources in its full archive.
+Only digest_correspondence changes among shared value functions at source
+7025b7d; the probed selection helpers remain baseline-equal. Public molecular
+selection behavior and the fix still require their own receiving.
