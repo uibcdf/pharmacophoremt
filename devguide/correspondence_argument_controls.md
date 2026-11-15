@@ -35,24 +35,28 @@ provider access is added to the cached-inventory tool.
 
 ## Receiving and limits
 
-All 65 new focused controls and disjoint 194/266-case source groups pass, 460
-cases, zero failures/errors/skips. The initial/corrected 65-case baselines each
+The initial/corrected 65-case baselines each
 retain 63 failures/two closed-keyword passes. The initial real-inventory fixture
 incorrectly iterated Pharmacophore; the corrected baseline uses interaction_sites
 and reaches the intended missing-control failure. A misspelled coupling filename
 refused with usage exit4/no cases before the corrected group passed. Exact
 snapshots/original outputs remain retained, without relabelling failed runs.
-All 27 affected distribution controls, reporting/archive/index/generated-
-environment/declared-route checks and whole-tree Ruff pass.
 
-Preserve initial/corrected baseline and final guard snapshots and original
-outputs. Receive focused controls plus serial native numerical/consumer source
-and exact committed-wheel groups with identical selections. Verify all payloads
-and source-equal Python bodies, owned-only runtime origins and actual immutable
-SDK support staging/checking/retirement for each group. Run affected distribution
-controls, strict owned docs and relevant reporting/archive/index/generated-
-environment/declared-route/Ruff checks. Prior unchanged administrative-tool
-evidence stays bound to 00b21a8; the changed resource declaration is checked here.
+The [receiving receipt](evidence/correspondence_argument_controls_20261114.json)
+receives committed source d2facf44dd0ba1bc1e6b203b3fa470518631b573 and exact private
+development wheel `0.6.0+14.gd2facf4`. Identical serial source/owned 194/266-case
+groups pass: 460 distinct cases per context, including all 65 new controls, with
+zero failures/errors/skips. All 245 payloads/190 source-equal Python bodies
+verify. Both groups load only the owned target's 172 PHMT modules. Actual frozen
+SDK support stages, verifies and retires imports/resources separately for each
+group. The source/owned test identities match; original snapshots, failed fixture/
+usage/report-registration attempts and corrections remain in the full archive.
+
+All 27 affected distribution controls and current reporting/archive/index/
+generated-environment/declared-route/Ruff checks pass (542 formatted files).
+Prior unchanged 163-case administrative-tool evidence stays at 00b21a8; it is not
+relabelled as a new execution. The changed resource declaration is received here.
+Strict owned HTML docs pass with one builder job and notebook execution off.
 
 Use authenticated public ArgDigest 0.17.1/PUW 0.28.1/Pandas 3.1.1 with the recorded
 controlled other-provider/inherited-native limits. This bounded Linux/Python

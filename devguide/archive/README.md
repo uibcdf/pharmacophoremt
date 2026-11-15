@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (154)
+### Resolved (155)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -33,6 +33,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`conformer_argument_controls.md`](conformer_argument_controls.md) — [#216](https://github.com/uibcdf/pharmacophoremt/issues/216) — Expose independent conformer-screening controls with mandatory failure-policy admission. *(resolved, measured)*
 - [`consensus_support_review.md`](consensus_support_review.md) — [#80](https://github.com/uibcdf/pharmacophoremt/issues/80) — Qualify native consensus support, typed occurrence reuse and controlled input multiplicity. *(resolved, measured)*
 - [`controlled_h5msm1_acquisition.md`](controlled_h5msm1_acquisition.md) — [#207](https://github.com/uibcdf/pharmacophoremt/issues/207) — Align controlled MolSysMT acquisition with immutable H5MSM 1.0 inputs. *(resolved, measured)*
+- [`correspondence_argument_controls.md`](correspondence_argument_controls.md) — [#217](https://github.com/uibcdf/pharmacophoremt/issues/217) — Expose correspondence digestion control while retaining mandatory bounded enumeration. *(resolved, measured)*
 - [`coverage_xml_namespace_identity.md`](coverage_xml_namespace_identity.md) — [#141](https://github.com/uibcdf/pharmacophoremt/issues/141) — Preserve package-qualified coverage XML identities for both runtime namespaces. *(resolved, reproduced)*
 - [`define_feature_asset_public_api.md`](define_feature_asset_public_api.md) — [#188](https://github.com/uibcdf/pharmacophoremt/issues/188) — Define the minimal feature-asset API and qualify argument/diagnostic admission. *(resolved, measured)*
 - [`docs_contributor_footer.md`](docs_contributor_footer.md) — [#149](https://github.com/uibcdf/pharmacophoremt/issues/149) — Contributor footer links resolve to a nonexistent path at every documentation depth. *(resolved, measured)*

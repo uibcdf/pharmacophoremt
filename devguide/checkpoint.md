@@ -8,27 +8,33 @@ checkpoint is preserved at [c7ac96d](https://github.com/uibcdf/pharmacophoremt/b
 [earlier pre-tag preparation](checkpoint_history_20261114_before_final_review.md)
 and the [0.6.0 cut record](release_0_6_0_source_cut.md) retain their identities.
 
-## Current increment — correspondence controls toward 0.7.0
+## Current increment — correspondence controls received toward 0.7.0
 
-[#217](correspondence_argument_controls.md) adds keyword-only
-`skip_digestion=False` and one definition-owned closed ArgDigest contract to
-`screening.get_correspondences`. The first native guard reuses the positive-
-integer budget validator before query preparation/enumeration, including bypass
-and empty inventories. PoseEvaluator retains independent default admission.
-After that guard the scientific body is AST-equal; private geometry helpers and
-signal/attribution decorators are unchanged.
+[#217](correspondence_argument_controls.md) receives source
+**d2facf44dd0ba1bc1e6b203b3fa470518631b573** and private development wheel
+`0.6.0+14.gd2facf4`. The [receipt](evidence/correspondence_argument_controls_20261114.json)
+records identical serial **194-case numerical/native + 266-case coupling groups**,
+460 distinct cases per source/owned context, including 65 new controls, zero
+failures/errors/skips. All 245 payloads/190 source-equal Python bodies verify;
+both groups load only the owned target's 172 PHMT modules. Actual frozen SDK
+support verifies and retires separately per group. Strict owned docs, all 27
+affected distribution controls and reporting/archive/index/generated-environment/
+declared-route/Ruff checks pass. Prior 163-case unchanged administrative-tool
+evidence stays at 00b21a8; the changed resource declaration is checked here.
 
-All 65 focused controls pass. Disjoint numerical/native and coupling source groups
-pass 194/266 cases, 460 distinct cases with zero failures/errors/skips. Analytical
-controls independently check raw-product counts, seed order
-and complete/incomplete meaning; real cached nm/pm inventories retain attribution
-and input custody. Initial and corrected baseline snapshots/failures remain
-recorded in the owning contract/capsule. All 27 affected distribution controls
-pass, as do reporting/archive/index/generated-environment/declared-route checks
-and whole-tree Ruff (542 formatted files). Exact owned wheel receiving and strict
-owned docs are next; do not treat them as passed yet.
-Broader #6 and complete supported/public/platform/biological/scale gates remain
-separate.
+One keyword-only control retains default child admission. Mandatory positive-
+integer budget normalization precedes native query preparation/enumeration during
+bypass, including empty inventories. The remaining scientific body is AST-equal;
+private geometry helpers and signal/attribution decorators are unchanged.
+Analytical raw-product counts, seed order, partial/complete meaning, physical/
+numerical pruning and real cached nm/pm attribution/custody pass. Exact initial,
+corrected and final guard snapshots and original failed attempts remain linked
+in the owning contract/receipt.
+
+This bounded Linux/Python 3.14.10 receiving uses public ArgDigest 0.17.1/PUW
+0.28.1/Pandas 3.1.1 and controlled other providers/inherited native extension.
+Broader #6 and later-head complete source/policy/publication plus installed/public/
+platform/biological/human/scale gates remain separate.
 
 ## Earlier bounded increments
 
@@ -86,17 +92,17 @@ unchanged. Full installed/public artifact, biological/human/scale acceptance,
 
 ## Next concrete action and resources
 
-Receive the correspondence source/owned groups, affected distribution controls
-and strict docs, then archive #217 with hash-bound original evidence. Next audit
-public alignment admission and preserved molecular transformation/quantity/custody
-contracts; scoring and other APIs remain separately tracked under #6. Package/hosted-doc
+Audit public align_to_pharmacophore admission before selecting its next explicit-
+control implementation. Preserve proper molecular transformation, selection/frame/
+state axes, correspondence guards, quantity policy and source custody. Scoring and
+other APIs remain separately tracked under #6. Package/hosted-doc
 publishers stay inactive; stopped #148/#165 are not restarted.
 
 Preserve shared-prefix/migration pauses and original native/data identities.
 Heavy work stays serial: one CPU/backend thread, low CPU/I/O priority, finite
 limits, pressure/swap/own-family monitoring and 20% physical RAM plus task margin
 available. Capacity is not reserved. Review final-review/tag-delivery,
-screening-export/run, placed-pose, rigid-search, conformer and correspondence-control capsules/targets
-on 2026-11-28;
+screening-export/run, placed-pose, rigid-search, conformer and correspondence-control
+capsules/targets on 2026-11-28;
 earlier tasks retain their own owners/dates. SDK test staging has retired its
 imports/resources; original published evidence and scientific inputs remain durable.

@@ -1,14 +1,16 @@
 # Decisions and active workstreams
 
-## Correspondence public control — 2026-11-14 local date
+## Correspondence receiving complete — 2026-11-14 local date
 
-[#217](correspondence_argument_controls.md) receives one local skip control with
-default child admission and mandatory budget normalization before native query/
-enumeration. Scientific remainder and geometry helpers stay unchanged. The 65
-focused controls and disjoint 194/266-case source groups pass, 460 distinct cases;
-all 27 affected distribution controls pass. Exact-owned groups and strict docs
-follow. Keep original baseline snapshots and broader #6 partial; alignment/scoring
-are separate increments.
+[#217](correspondence_argument_controls.md) receives d2facf4 through identical
+serial [194/266-case source/owned groups](evidence/correspondence_argument_controls_20261114.json):
+460 distinct cases including 65 new controls, 245 payloads/190 equal bodies,
+172 target-only modules per group, actual SDK retirement and strict owned docs.
+All 27 affected distribution controls and relevant governance/Ruff checks pass.
+One local skip control and mandatory native budget guard preserve bounded
+scientific enumeration and independent query admission. Original snapshots,
+failed attempts and prior unchanged-tool evidence keep their identities. Next
+audit public alignment; broader #6 and complete supported/public gates stay open.
 
 ## Prepared-conformer receiving complete — 2026-11-14 local date
 

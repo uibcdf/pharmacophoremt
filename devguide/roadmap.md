@@ -1,16 +1,18 @@
 # Strategic roadmap
 
-## Correspondence controls implemented — 2026-11-14 local date
+## Correspondence controls received — 2026-11-14 local date
 
-[#217](correspondence_argument_controls.md) adds one explicit keyword-only
-control and a closed definition-owned contract. Mandatory native positive-integer
-budget admission precedes query preparation/enumeration during bypass. All 65
-focused controls pass, including analytical product counts/order/completion,
-independent child admission and real cached nm/pm attribution/custody. Original
-baseline snapshots and failures are retained. Disjoint numerical/native and
-coupling source groups pass 194/266 cases, 460 distinct cases. All 27 affected
-distribution controls pass. Next receive the exact owned groups and strict docs.
-Broader #6, alignment/scoring and complete supported/public gates remain separate.
+[#217](correspondence_argument_controls.md) receives d2facf4 and exact private
+wheel `0.6.0+14.gd2facf4`: [194/266-case source/owned groups](evidence/correspondence_argument_controls_20261114.json),
+460 distinct cases per context, including 65 new controls, 245 payloads/190 equal
+Python bodies and 172 owned-target-only modules per group. Actual SDK support
+retires separately; strict owned docs, 27 affected distribution controls and
+relevant governance/Ruff checks pass. Native budget normalization is mandatory
+even during bypass; seed order, complete/incomplete meaning, physical/numerical
+pruning, child admission and scientific remainder are preserved. Original failed
+attempts/snapshots and prior unchanged-tool evidence remain distinct. Next audit
+public alignment admission/transform/axis/custody contracts under partial #6.
+Full supported/public/platform/biological/scale gates remain separate.
 
 ## Prepared-conformer controls received — 2026-11-14 local date
 
