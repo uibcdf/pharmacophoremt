@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (159)
+### Resolved (161)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -115,6 +115,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`prepared_ccd_ligand_validation.md`](prepared_ccd_ligand_validation.md) — [#30](https://github.com/uibcdf/pharmacophoremt/issues/30) — Traceable CCD ideal ligands for native preparation, refinement and consensus controls. *(resolved, measured)*
 - [`prepared_distinct_consensus.md`](prepared_distinct_consensus.md) — [#51](https://github.com/uibcdf/pharmacophoremt/issues/51) — Qualify distinct prepared EST/DES consensus support, empty outcomes and persisted source maps. *(resolved, measured)*
 - [`prepared_end_to_end_workflow.md`](prepared_end_to_end_workflow.md) — [#49](https://github.com/uibcdf/pharmacophoremt/issues/49) — Qualify construction, curation, persistence and placed screening on a public prepared CCD control. *(resolved, measured)*
+- [`prepared_plan_control_projection.md`](prepared_plan_control_projection.md) — [#223](https://github.com/uibcdf/pharmacophoremt/issues/223) — Expanded native digestion defaults enter prepared scientific recipes and make plans reject themselves. *(resolved, measured)*
 - [`prepared_receptor_continuation.md`](prepared_receptor_continuation.md) — [#52](https://github.com/uibcdf/pharmacophoremt/issues/52) — Qualify cached ERalpha receptor projections, exclusions and observed-contact model reconstruction. *(resolved, measured)*
 - [`prepared_receptor_sensitivity.md`](prepared_receptor_sensitivity.md) — [#85](https://github.com/uibcdf/pharmacophoremt/issues/85) — Qualify prespecified sensitivity on the cached prepared ERalpha receptor geometry. *(resolved, measured)*
 - [`prepared_rigid_search_continuation.md`](prepared_rigid_search_continuation.md) — [#50](https://github.com/uibcdf/pharmacophoremt/issues/50) — Qualify saved prepared queries through rigid recovery, selected negatives and frame-budget accounting. *(resolved, measured)*
@@ -151,6 +152,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`rigid_negative_ranking_contract.md`](rigid_negative_ranking_contract.md) — [#63](https://github.com/uibcdf/pharmacophoremt/issues/63) — Define a frame-independent molecular ranking contract for completed rigid negatives. *(resolved, measured)*
 - [`screening_export_argument_controls.md`](screening_export_argument_controls.md) — [#211](https://github.com/uibcdf/pharmacophoremt/issues/211) — Add explicit public digestion controls to cached screening table and CSV export. *(resolved, measured)*
 - [`screening_run_argument_controls.md`](screening_run_argument_controls.md) — [#213](https://github.com/uibcdf/pharmacophoremt/issues/213) — Validate the screening facade run control while preserving native admission timing. *(resolved, measured)*
+- [`screening_score_argument_controls.md`](screening_score_argument_controls.md) — [#222](https://github.com/uibcdf/pharmacophoremt/issues/222) — Expose explicit score digestion control while preserving native evidence and criterion rules. *(resolved, measured)*
 - [`select_saved_work_by_source.md`](select_saved_work_by_source.md) — [#166](https://github.com/uibcdf/pharmacophoremt/issues/166) — Select saved screening work by its exact original source key. *(resolved, measured)*
 - [`select_saved_work_status.md`](select_saved_work_status.md) — [#158](https://github.com/uibcdf/pharmacophoremt/issues/158) — Select saved work by native or pending status through the public reader. *(resolved, measured)*
 - [`selection_index_bounds.md`](selection_index_bounds.md) — [#220](https://github.com/uibcdf/pharmacophoremt/issues/220) — Unsigned ligand and receptor atom selections can wrap to negative int64 indices. *(resolved, measured)*

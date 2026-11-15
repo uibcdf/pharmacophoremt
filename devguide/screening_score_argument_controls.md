@@ -44,13 +44,18 @@ partial-coverage/binary oracles, native refusals during bypass and real generate
 saved checked/hit/no-fit-negative/failure results under nm/pm. Original/final
 guard snapshots, XML/logs and provider/resource contexts retain their identities.
 
-Receive disjoint score/saved/retrospective, native/facade and prepared-run source
-groups and identical case sets from an exact committed private wheel outside
-checkout. Verify payload/source-body/import origins and actual immutable SDK
-support staging with pre-work journals/checking/retirement per group. Strict owned
-docs and relevant reporting/archive/index/generated-environment/declared-route/
-Ruff checks precede closure. Reuse unchanged administrative/distribution evidence
-with its original producer/scope, rather than relabelling it as new execution.
+The [receiving receipt](evidence/screening_score_controls_20261115.json) receives
+source 7b01bb506074b25e1777b5396f30d172642a496f and exact private wheel
+`0.6.0+20.g7b01bb5`: identical serial 164/166/134-case source/owned
+groups, 464 distinct cases per context including 67 score/27 plan controls,
+zero failures/errors/skips. All 245 payloads/190 source-equal Python bodies verify,
+with 172 target-only PHMT modules per group. Actual immutable SDK support is staged under task-owned
+parents, journalled before work, checked and retired per group. Strict owned
+HTML docs pass with one builder job/notebook execution off. Relevant reporting/
+archive/index/generated-environment/declared-route/Ruff checks pass (548 formatted
+files). Unchanged administrative/distribution evidence keeps its original
+producer/scope. Original failed groups/baselines and exact guard versions remain
+in the full hash-bound archive. No heavy execution is interrupted in this task.
 
 This bounded Linux/Python 3.14.10/public ArgDigest 0.17.1/PUW 0.28.1/Pandas 3.1.1 and
 controlled other-provider/inherited-native receiving remains separate from full
@@ -78,3 +83,16 @@ from those two exclusion-set entries, prepared_runs remains AST-equal. Receive
 all three native families with explicit constructor-default admission, no reserved
 keys in recipes, hostile saved controls and actual create/resume/read/recovery.
 Keep the original failed group and original-artifact baseline identities separate.
+
+The installed harness retains an initial fixture-import collection error and a
+second file-relative legacy-fixture failure (133 other cases pass). The final
+harness exposes only copied tests and the actual SDK-owned support path; its
+link and every SDK stage retire. Test/runtime source bytes remain unchanged.
+
+All three prepared native families pass default construction/description and
+independent native reconstruction. Explicit and injected skip controls still
+refuse; actual create/resume/read/recovery consumers pass in both source and
+exact owned contexts. The final constructor-local spy invokes the original
+constructor and checks that no bypass keyword is forwarded; its earlier broad
+digester-spy version retains its original focused run identity. No broken-plan
+schema migration or saved-control admission is introduced.

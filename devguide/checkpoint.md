@@ -8,29 +8,39 @@ checkpoint is preserved at [bb1e987](https://github.com/uibcdf/pharmacophoremt/b
 [earlier pre-tag preparation](checkpoint_history_20261114_before_final_review.md)
 and the [0.6.0 cut record](release_0_6_0_source_cut.md) retain their identities.
 
-## Current increment — score control and prepared-plan projection toward 0.7.0
+## Current increment — score control and prepared plans received toward 0.7.0
 
-[#222](screening_score_argument_controls.md) adds one local keyword-only control
-and closed definition-owned admission while score_method remains required. The
-scientific scoring body/private helpers and signal/attribution decorators are
-AST-equal. All 67 new score controls pass, retaining None/zero/coverage/seed-hit
-meaning, native refusals during bypass and actual nm/pm saved custody/new-only
-scoring credit in application-owned sessions.
+[#222/#223](screening_score_argument_controls.md) receive source **7b01bb506074b25e1777b5396f30d172642a496f**
+and exact private wheel `0.6.0+20.g7b01bb5`. The [receipt](evidence/screening_score_controls_20261115.json)
+records identical serial **164/166/134-case source/owned groups**, **464 distinct
+cases per context including 94 new controls**, zero failures/errors/skips.
+All 245 payloads/190 source-equal Python bodies verify, with 172 target-only PHMT modules per group.
+Actual frozen SDK support is journalled before work, verified and retired per
+group. Strict owned docs and relevant reporting/archive/index/generated-environment/
+declared-route/Ruff checks pass (548 formatted files). Earlier unchanged 163-case
+administrative/27-case distribution evidence keeps its original producer/scope.
 
-Prepared integration exposes [#223](pending_bugs/prepared_plan_control_projection.md):
-constructor/evaluate default expansion persists the new native skip control,
-which its unchanged saved validator correctly refuses. Three independent public
-witnesses on the previously received 0.6.0+18.gfdeb83e artifact reproduce the defect
-before the score overlay. Excluding the control from the two projection sets
-restores all three native families without relaxing validators/schema/runtime/
-query binding. The expanded 134-case prepared source group and 27 new plan controls
-pass. Final source groups pass 164/166/134 cases: 464 distinct cases including
-94 new controls, zero failures/errors/skips. Exact owned receiving and strict
-docs remain pending. Original failed groups/baselines/guard snapshots stay distinct.
+One keyword-only local skip control adds closed definition-owned score admission;
+score_method stays required. The scientific scoring body/private helpers and
+signal/attribution decorators remain AST-equal. Native criterion/evidence guards
+remain mandatory during bypass. Independent None/zero/checked-coverage/seed-hit
+oracles and real nm/pm saved-input custody/new-only scoring credit pass in actual
+application-owned sessions/captures, with no molecular read/fit or source re-credit.
 
-Broader #6 and complete supported/source/installed/public/platform/biological/
-human/scale gates remain separate. Shared-prefix/publisher pauses and prior
-staging uncertainty retain their ownership; no stopped work is resumed.
+Prepared integration independently reproduces #223 on the earlier exact
+0.6.0+18.gfdeb83e artifact for placed, rigid and conformer tools. Two default-
+projection exclusion entries restore prepared recipes without relaxing explicit/
+injected reserved-option refusal, scientific defaults/units, schema, query/
+runtime/compatibility binding or reconstruction. Original score baseline (63
+failures/four preservation passes), prepared group (14 setup errors/25 passes),
+original-artifact three failures and exact guard versions retain their identities.
+Final 67 score/27 plan controls join actual create/resume/read/recovery consumers.
+
+This bounded Linux/Python 3.14.10 receiving uses public ArgDigest 0.17.1/PUW 0.28.1/
+Pandas 3.1.1 and controlled other providers/inherited native extension. Broader #6
+and complete later-head source/policy/publication, installed/public/platform and
+biological/human/scale gates remain separate. No heavy run is interrupted here;
+prior alignment staging uncertainty retains its original receipt and owner.
 
 ## Earlier bounded increments
 
@@ -107,12 +117,10 @@ unchanged. Full installed/public artifact, biological/human/scale acceptance,
 
 ## Next concrete action and resources
 
-Receive final score/native/prepared source and exact-owned groups, strict docs
-and original evidence before closing #222/#223. Next audit public
-evaluate_feature_correspondence admission while preserving pair identity, units,
-empty completion and native geometry/range authority. Other controls remain
-partial under #6; package/hosted-doc publishers stay inactive and stopped #148/#165
-are not restarted.
+Audit evaluate_feature_correspondence public explicit-control admission next,
+preserving pair identity, units, completed-empty evidence and native geometry/
+range authority. Other public controls remain separately tracked under partial
+#6. Package/hosted-doc publishers stay inactive; stopped #148/#165 are not restarted.
 
 Preserve shared-prefix/migration pauses and original native/data identities.
 Heavy work stays serial: one CPU/backend thread, low CPU/I/O priority, finite

@@ -1,16 +1,18 @@
 # Strategic roadmap
 
-## Scoring control and prepared-plan repair implemented — 2026-11-15
+## Score control and prepared-plan repair received — 2026-11-15
 
-[#222/#223](screening_score_argument_controls.md) retain the scientific score
-body while adding explicit local admission and excluding local controls from
-persisted native defaults. The prepared regression reproduces on the original
-received artifact independently of the score overlay; validators/schema/binding
-remain unchanged. All 67 score/27 plan controls and 134 expanded prepared source
-cases pass. Final source groups pass 164/166/134 cases (464 distinct, including
-94 new controls). Exact-owned groups, strict docs and
-relevant governance/Ruff follow. Broader #6 and full supported/public gates stay
-separate; no new scoring method, schema, tag or publisher.
+[#222/#223](screening_score_argument_controls.md) receive 7b01bb5 and its exact
+private wheel: [164/166/134-case source/owned groups](evidence/screening_score_controls_20261115.json),
+464 distinct cases/context including 67 score/27 plan controls, 245 payloads/190
+equal bodies, 172 target-only PHMT modules per group and actual pre-work SDK journals/retirement. Strict
+owned docs and relevant governance/Ruff pass. Scoring preserves scientific bodies,
+evidence meaning and saved-source custody/credit while adding closed local
+admission. Two native default-projection exclusions restore prepared recipes;
+validators/schema/binding and explicit/injected reserved-option refusal remain.
+The original-artifact three-family failure and other original baselines/snapshots
+retain their identities. Next audit evaluate_feature_correspondence public
+admission under partial #6; complete supported/public gates remain separate.
 
 ## Selection and feature-pair bounds received — 2026-11-15
 
