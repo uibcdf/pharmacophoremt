@@ -1,5 +1,13 @@
 # Decisions and active workstreams
 
+## Prepared-conformer argument controls — 2026-11-14 local date
+
+[#216](conformer_argument_controls.md) exposes three controls with independent
+search children and mandatory failure-policy admission. The scientific remainder
+is AST-equal after the one guard. Source passes 74 new controls and two disjoint
+165/307-case groups; exact owned/strict docs are pending. Keep original snapshots,
+partial #6 and prior unchanged-tool evidence distinct from new execution.
+
 ## Rigid-search receiving complete — 2026-11-14 local date
 
 [#215](rigid_argument_controls.md) receives 72490a6 with the same

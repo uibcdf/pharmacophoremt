@@ -14,6 +14,14 @@ supersedes: []
 
 # Review Python ecosystem policy adoption
 
+## Prepared-conformer control implementation — 2026-11-14
+
+[#216](../conformer_argument_controls.md) adds three independent controls and one
+owning failure-policy guard, retaining frame/state/failure/score accounting and
+public search-child admission. All 74 new controls and disjoint 165/307-case source
+groups pass, with real nm/pm, attribution and source custody. Exact owned/strict
+docs remain pending. Broader #6 and full supported/public qualification stay open.
+
 ## Rigid-search public receiving — 2026-11-14 local date
 
 [#215](../rigid_argument_controls.md) receives source 72490a6 and its exact

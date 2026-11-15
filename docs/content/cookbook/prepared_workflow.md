@@ -99,6 +99,11 @@ Its correspondence, alignment and placed-pose children retain their own checks;
 invalid budgets cannot enter enumeration, and incomplete searches retain explicit
 failed/unscored evidence under both ranking methods.
 
+`ConformerScreening` provides the same three controls. A bypass keeps the explicit
+raise/record failure policy and the search child's default checks. Requested frame
+order still breaks ties; recorded frame failures remain visible even when another
+frame proves the maximum score. Partial unresolved evidence remains unscored.
+
 For native JSON/YAML, PHMT-owned schema/envelope refusals carry `PHMT-E108`
 and remain `ValueError` instances. The existing nonstring `io.load()` filename
 refusal carries `PHMT-E109` and remains a `TypeError`. Scientific value checks

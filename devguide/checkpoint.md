@@ -3,34 +3,37 @@
 Maintained 2026-11-14 local date; owners LMMV/dprada. Follow the
 [mature pre-1.0 roadmap](roadmap.md), [workstreams](decisions_and_workstreams.md)
 and [capability inventory](capability_inventory.md). The preceding published
-checkpoint is preserved at [4235a20](https://github.com/uibcdf/pharmacophoremt/blob/4235a20dc69ebaca6169f30b036a1bf6708795b2/devguide/checkpoint.md);
+checkpoint is preserved at [3e773c0](https://github.com/uibcdf/pharmacophoremt/blob/3e773c019b2f33778c568e175176ff2851a47fe7/devguide/checkpoint.md);
 [earlier dated history](checkpoint_history_20261114_before_pose_controls.md),
 [earlier pre-tag preparation](checkpoint_history_20261114_before_final_review.md)
 and the [0.6.0 cut record](release_0_6_0_source_cut.md) retain their identities.
 
-## Current increment — rigid-search public controls toward 0.7.0
+## Current increment — prepared-conformer controls toward 0.7.0
 
-[#215](rigid_argument_controls.md) receives source
-**72490a636470f8daf06de11e537ffd9aa7a75ed4** and private development wheel
-`0.6.0+10.g72490a6`. The [receipt](evidence/rigid_argument_controls_20261114.json)
-records the same **398 selected source/owned cases passing**, including 61 new
-controls. All 244 payloads/189 source-equal Python bodies verify; all 171 loaded
-PHMT modules are owned-target-only. Actual immutable SDK support verifies and
-retires imports/resources. Strict owned docs and relevant reporting/archive/index/
-generated-environment/declared-route/Ruff checks pass. Unchanged administrative
-tooling retains its original 163-case evidence at 00b21a8, with no new run claim.
+[#216](conformer_argument_controls.md) implements three independent keyword-only
+controls on ConformerScreening and one mandatory shared failure-policy guard
+before frame acquisition. Constructor/run bodies and decorators are unchanged;
+the evaluate remainder is AST-equal after excluding only that guard. Public
+RigidPoseSearch children retain default admission and native scientific checks.
 
-Three independent keyword-only controls retain the native bodies/decorators and
-public child admission. Normal/bypass budget validation stays at its owner before
-enumeration/alignment; unproven incomplete searches remain failed/unscored.
-Real nm/pm checked/seeded cases retain attribution, explicit quantities and source
-custody. The original baseline, exact guard snapshots and authored child-count
-correction remain hash-bound. No provider floor, scientific method or schema
-changes. This is bounded Linux/Python 3.14.10 with public ArgDigest 0.17.1/PUW
-0.28.1/Pandas 3.1.1 and identified controlled other providers/inherited native
-extension. Broader #6 and later-head #9/full installed/public gates remain partial.
+All 74 new source controls pass. Serial native/core and facade coupling groups
+pass **165 + 307 = 472 distinct cases**, zero failures/skips; relevant governance
+and whole-tree Ruff checks pass. The original 74-case baseline has 72 failures/
+two passes, and the exact initial/final guard snapshots remain retained.
+Real nm/pm, requested frame order/ties, declared chemical states, criterion-specific
+failure resolution, no-fit negatives, attribution and source custody pass.
+
+Next receive the same groups in one exact committed owned wheel and strict docs
+before closing the bounded issue. Prior unchanged administrative-tool 163-case
+evidence remains bound to 00b21a8. Broader #6 and full source/installed/public
+qualification remain partial.
 
 ## Earlier bounded increments
+
+[#215 rigid-search controls](rigid_argument_controls.md) retain their
+[398-case source/owned receiving](evidence/rigid_argument_controls_20261114.json)
+at 72490a6, preserving native budget/ranking bodies and independent children.
+Its original guard snapshots, exact artifact and provider limits remain.
 
 [#214 placed-pose controls](pose_argument_controls.md) retain their
 [355-case source/owned receiving](evidence/pose_argument_controls_20261114.json)
@@ -75,10 +78,10 @@ unchanged. Full installed/public artifact, biological/human/scale acceptance,
 
 ## Next concrete action and resources
 
-Audit ConformerScreening constructor/evaluate/run explicit controls, preserving
-requested source-frame order, per-frame failure/score accounting and independent
-RigidPoseSearch child admission. Receive independent oracles before selecting
-that next bounded implementation. Retired SDF and other public
+Receive #216's exact committed owned wheel with both disjoint groups and
+strict docs, archive its bounded guard/evidence and keep later-head qualification
+debt explicit. Then audit public get_correspondences admission and budget guards
+before selecting that next bounded implementation; alignment/scoring and other
 APIs remain separate. Package/hosted-doc publishers stay inactive; stopped
 #148/#165 are not restarted.
 

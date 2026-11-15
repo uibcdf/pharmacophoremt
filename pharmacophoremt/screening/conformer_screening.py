@@ -6,6 +6,7 @@ from argdigest import arg_digest
 from smonitor import signal
 
 from pharmacophoremt._ackredit import attributed
+from pharmacophoremt._private.arg_digestion.argument._contracts import digest_on_error
 from pharmacophoremt._private.arg_digestion.native_screening import CONFIG
 from pharmacophoremt._private.molsysmt import capability, detached
 from pharmacophoremt._private.pose_batch import failure_record, run_evaluations
@@ -37,6 +38,9 @@ class ConformerScreening:
         ranking. In seeded_hit mode every negative ties at zero; the first hit
         proves maximum ranking_score even with incomplete enumeration/failed
         other frames. A non-hit with failed frames remains unscored.
+    skip_digestion : bool, default=False
+        Bypass this operation's argument digestion for canonical inputs.
+        Public search children retain their independent default admission.
 
     Notes
     -----
@@ -65,6 +69,7 @@ class ConformerScreening:
         direction_tolerance="30 degrees",
         min_fit_value=0.0,
         search_method="placed_and_triplets",
+        skip_digestion=False,
     ):
         self.search = RigidPoseSearch(
             pharmacophore,
@@ -89,6 +94,7 @@ class ConformerScreening:
         chemical_state="reference",
         pose_id=None,
         on_error="raise",
+        skip_digestion=False,
     ):
         """Return portable per-frame evidence and a definitive molecule score.
 
@@ -106,6 +112,10 @@ class ConformerScreening:
             Molecule identity; conformer_index is its source frame index.
         on_error : {'raise', 'record'}, default='raise'
             Raise on failure, or retain failed frames and continue.
+        skip_digestion : bool, default=False
+            Bypass this operation's argument processing only. The failure policy
+            remains mandatory before acquiring frames, and public search children
+            retain default admission and scientific guards.
 
         Returns
         -------
@@ -124,6 +134,7 @@ class ConformerScreening:
         >>> result = screen.evaluate(prepared_ligand, structure_indices=[2, 0])
         >>> evidence = result['conformers']
         """
+        on_error = digest_on_error(on_error)
         try:
             get = capability("get")
             frames = [
@@ -291,8 +302,19 @@ class ConformerScreening:
 
     @signal(tags=["screening", "conformers", "batch"])
     @arg_digest(config=CONFIG)
-    def run(self, molecular_database, *, on_error="raise", **evaluation_options):
+    def run(
+        self,
+        molecular_database,
+        *,
+        on_error="raise",
+        skip_digestion=False,
+        **evaluation_options,
+    ):
         """Screen inputs once, preserving molecule IDs and per-frame failures.
+
+        skip_digestion is consumed locally; public evaluate calls retain default
+        admission and receive on_error for per-frame handling. Native batch policy
+        and pose-ID ownership checks remain mandatory during bypass.
 
         Examples
         --------

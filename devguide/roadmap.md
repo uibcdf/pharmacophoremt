@@ -1,5 +1,15 @@
 # Strategic roadmap
 
+## Prepared-conformer controls implemented — 2026-11-14 local date
+
+[#216](conformer_argument_controls.md) adds three independent controls and one
+mandatory failure-policy guard before frames. Native scientific remainder,
+frame/state/failure/score accounting and child admission remain. All 74 new
+source controls and disjoint 165/307-case groups pass (472 distinct cases),
+including real nm/pm and attribution. Exact committed owned groups and strict
+docs follow. Prior unchanged-tool evidence stays separate. Broader #6, public
+helpers and full supported/public gates remain open; no tag/publisher/matrix.
+
 ## Rigid-search controls received — 2026-11-14 local date
 
 [#215](rigid_argument_controls.md) receives source 72490a6 and its exact private

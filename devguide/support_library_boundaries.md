@@ -1,5 +1,13 @@
 # Support-library boundaries and receiving limits
 
+## Prepared-conformer controls — 2026-11-14
+
+[#216](conformer_argument_controls.md) reuses existing definition-owned ArgDigest,
+Boolean/reader dependencies and a mandatory shared on_error validator before
+frames. Native constructor/run and evaluate remainder retain their bodies and
+default children. All 74 new source controls and 165/307-case groups pass; exact
+owned receiving and strict docs remain pending. Broader #6 stays partial.
+
 ## Rigid-search explicit controls — 2026-11-14 local date
 
 [#215](rigid_argument_controls.md) receives 72490a6 through the existing

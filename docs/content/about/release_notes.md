@@ -2,6 +2,11 @@
 
 ## Unreleased — toward 0.7.0
 
+- Add independent keyword-only digestion controls to `ConformerScreening`
+  construction, `evaluate()` and `run()`. Failure-policy validation remains
+  mandatory before frame acquisition during bypass. Frame order, per-frame
+  evidence and both score-resolution rules retain their existing meaning.
+
 - Add independent keyword-only `skip_digestion=False` controls to
   `RigidPoseSearch` construction, `evaluate()` and `run()`, preserving child
   admission, search budgets, incomplete-search failures and both ranking methods.
