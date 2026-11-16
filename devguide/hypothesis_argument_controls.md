@@ -72,3 +72,40 @@ RSS/reserve/swap/PSI limits. No supervisor interruption, overlap or machine
 pressure occurs. Current distribution controls pass27. Exact-owned/docs/final
 quality remain pending. This is private task-ceiling recovery, not a provider
 defect, scientific guard relaxation or full qualification.
+
+## Measured receiving — 2026-11-15
+
+[Receiving](evidence/hypothesis_argument_controls_20261115.json) receives source
+38a3ce23331e2436987f94d87832f93fe8402fd6 and exact private wheel `0.6.0+40.g38a3ce2`:
+identical serial **131/216/189/25-case source/owned groups**, **561 distinct cases
+per context including 131 new controls**, zero failures/errors/skips. All 246
+payloads/191 source-equal nongenerated Python bodies verify; all four groups load
+173 target-only PHMT modules. Actual immutable SDK staging has pre-work journals/
+checking and import/resource/both-file-relative-link retirement. Strict owned
+HTML docs, 27 addressable current distribution controls and reporting/archive/
+index/generated-environment/declared-route/Ruff checks pass (560 formatted files).
+Native XML suite counters are retained separately from distinct primary IDs.
+The accepted focused source run retains its original label without reexecution.
+Package/provider footprint and requirements remain unchanged.
+
+The original 131-case baseline has 125 failures/six call-shape catches. Review
+before the implemented run isolates the literal-control probe at discovery;
+initial/reviewed/final guards and their diff remain. Reviewed/final guard bytes
+are equal. All scientific expectations remain; the complete scientific remainder
+after nine native validators/shared count check, all other functions/helpers,
+value contracts and decorators retain their recorded AST/byte identity.
+
+The initial rigid DATA512MiB execution exits1/MemoryError, leaving a zero-byte
+XML stub and no received count. Original log/monitor/stub are retained. The
+unchanged25-case selection passes with DATA1GiB under the same remaining limits;
+all owned groups use DATA1GiB. Every monitored command is serial with no
+supervisor interruption or memory-pressure event. No provider defect is inferred.
+
+Independent support intersections/maximal packages/occurrence reuse/attempted
+extension counts, actual graph/clique/combination failures, original discovery/
+later aggregation exceptions, real nm/pm prepared frame/state/selection/source/
+report custody, default children and application new/reused/empty capture pass.
+Next from_aligned_ligand_cliques, then from_rigid_ligands; broader #6/full gates
+remain partial. [#239](https://github.com/uibcdf/pharmacophoremt/issues/239) records
+a separate source-inspection-only early-infeasibility optimization proposal;
+no changed counts, implementation or performance claim is received here.

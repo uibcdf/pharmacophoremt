@@ -14,17 +14,21 @@ supersedes: []
 
 # Review Python ecosystem policy adoption
 
-## Aligned consensus-hypothesis control in receiving — 2026-11-15
+## Aligned consensus-hypothesis control received — 2026-11-15
 
-[#238](../hypothesis_argument_controls.md) receives 131 new focused source controls.
-Nine reused native validators and the shared count check precede discovery even
-empty/bypassed. The entire scientific remainder, helpers/functions/value contracts
-and decorators remain unchanged; public children keep default admission. Original
-baseline/guard and the reviewed outer-only literal probe remain. Joint-support
-intersection, maximal occurrence packages, exact attempted-extension accounting,
-real nm/pm source/report custody and application capture pass. Broader bounded
-source/exact-owned/docs/quality remain pending before closure. #6/full gates
-retain owners; next from_aligned_ligand_cliques, then from_rigid_ligands.
+[#238](../hypothesis_argument_controls.md) receives 38a3ce2 and its exact private
+wheel: [131/216/189/25-case source/owned groups](../evidence/hypothesis_argument_controls_20261115.json),
+561 distinct cases/context including131 new controls. All246 payloads/191 equal
+bodies,173 target-only modules per group, actual SDK journals/retirement, strict
+owned docs,27 primary distribution controls and relevant quality pass. Nine reused
+native validators/shared count check precede discovery; the entire scientific
+remainder, other helpers/functions/value contracts/decorators and default children
+remain. Original baseline/reviewed probe and unreceived DATA512MiB rigid failure
+remain; the same25-case group passes with DATA1GiB. Joint support, maximal/reused
+occurrences, finite counts/failures, nm/pm source/report custody and capture pass.
+#6/full gates remain; next from_aligned_ligand_cliques, then from_rigid_ligands.
+Separate source-only [#239](https://github.com/uibcdf/pharmacophoremt/issues/239)
+proposes early infeasibility admission without changing current counts.
 
 ## Aligned feature-clique controls received — 2026-11-15
 

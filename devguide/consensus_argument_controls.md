@@ -18,7 +18,7 @@ signature/decorator inventory, not a complete export/inheritance/API audit.
 | get_aligned_feature_matches, get_consensus_sites | Explicit controls and definition-owned admission received here. |
 | from_aligned_ligands | Received under [#234](aligned_model_argument_controls.md); original #233 state remains in its frozen receipt. |
 | get_aligned_feature_cliques | Explicit control received under [#236/#237](clique_argument_controls.md), with its separately owned numerical boundary correction. |
-| get_aligned_consensus_hypotheses | Explicit control implemented under [#238](hypothesis_argument_controls.md); exact-owned receiving pending. |
+| get_aligned_consensus_hypotheses | Explicit control received under [#238](hypothesis_argument_controls.md); scientific remainder and independent children preserved. |
 | from_aligned_ligand_cliques, from_rigid_ligands | Explicit controls still absent; retain subsequent #6 work. |
 
 ## Admission and scientific authority
@@ -139,3 +139,11 @@ unchanged. Next get_aligned_feature_cliques is still absent in the bounded inven
 The table reflects current receiving; original #233/#234 inventories and evidence
 remain unchanged. Next get_aligned_consensus_hypotheses is still missing, followed
 by from_aligned_ligand_cliques and from_rigid_ligands. Broader #6 remains partial.
+
+## Hypothesis inventory continuation — 2026-11-15
+
+[#238](hypothesis_argument_controls.md) receives get_aligned_consensus_hypotheses.
+Current table reflects receiving; all earlier inventories/receipts retain original
+identities. Next from_aligned_ligand_cliques, followed by from_rigid_ligands;
+broader #6 remains partial. Separate #239 proposes a future early feasibility
+bound; no current package/count/scientific definition changes.

@@ -8,7 +8,7 @@ checkpoint is preserved at [998076f](https://github.com/uibcdf/pharmacophoremt/b
 [earlier pre-tag preparation](checkpoint_history_20261114_before_final_review.md)
 and the [0.6.0 cut record](release_0_6_0_source_cut.md) retain their identities.
 
-## Current increment — aligned consensus-hypothesis control toward 0.7.0
+## Current increment — aligned consensus-hypothesis control received toward 0.7.0
 
 [#238](hypothesis_argument_controls.md) adds keyword-only local control and closed
 definition-owned admission to get_aligned_consensus_hypotheses. Nine reused native
@@ -17,23 +17,32 @@ entire scientific remainder, other functions/helpers (including #237's predicate
 and _packages), value contracts and signal/attribution retain AST/byte identity.
 Discovery and per-group aggregation keep independent default admission.
 
-All 131 new focused source controls and disjoint 216/189/25-case consumers pass:
-561 distinct selected cases. Current distribution controls pass27. The original baseline has 125 failures/
-six call-shape catches; original guards/output remain. Before the implemented
-run, review refined the literal-control probe to stop at discovery, isolating
-outer digestion from the independent decorated child. Real-child tests retain
-default admission. Independent shared-support/subset/maximality/occurrence/budget
-answers, original discovery/later aggregation failure, real nm/pm prepared
-frame/state/selection and input/report custody and application captures pass.
+[Receiving](evidence/hypothesis_argument_controls_20261115.json) receives source
+38a3ce23331e2436987f94d87832f93fe8402fd6 and exact private wheel `0.6.0+40.g38a3ce2`:
+identical serial **131/216/189/25-case source/owned groups**, **561 distinct cases
+per context including 131 new controls**, zero failures/errors/skips. All 246
+payloads/191 source-equal nongenerated Python bodies verify; all four groups load
+173 target-only PHMT modules. Actual immutable SDK staging has pre-work journals/
+checking and import/resource/both-file-relative-link retirement. Strict owned
+HTML docs, 27 addressable current distribution controls and reporting/archive/
+index/generated-environment/declared-route/Ruff checks pass (560 formatted files).
+Native XML suite counters are retained separately from distinct primary IDs.
+The accepted focused source run retains its original label without reexecution.
+Package/provider footprint and requirements remain unchanged.
 
-The original rigid consumer DATA512MiB attempt exits1/MemoryError without XML;
-its output remains unreceived. The unchanged25-case group passes with DATA1GiB
-and unchanged CPU/wall/RSS/reserve/swap/PSI limits. No machine pressure or
-supervisor interruption occurs. Exact-private-wheel consumers, strict owned docs
-and final appropriate quality remain pending before closure. #6 and full #9/#10/#23 gates,
-#227 and earlier scientific/metadata/resource/recovery ownership stay separate.
-No tag/publisher/new method/provider floor/native rebuild/shared-prefix change/
-full remote matrix/benchmark or speed claim.
+Independent joint-support/subset/maximality/occurrence/count answers, original
+child/graph/clique/extension failures, real nm/pm prepared frame/state/selection
+and source/report custody and application captures pass. Original125-failure/
+six-catch baseline and initial/reviewed/final guards retain identity. The reviewed
+literal probe isolates outer digestion; independent real children remain tested.
+
+The initial rigid DATA512MiB execution exits1/MemoryError with a zero-byte XML
+stub, no received count. The same unchanged25-case selection passes with
+DATA1GiB under unchanged remaining limits. All monitored commands are serial,
+with no supervisor interruption or machine-pressure event. #6/full #9/#10/#23,
+#227 and prior scientific/metadata/resource/recovery ownership remain. Separate
+[#239](https://github.com/uibcdf/pharmacophoremt/issues/239) is a source-inspection
+optimization proposal; no current counts/definition/performance claim changes.
 
 ## Earlier bounded increments
 
@@ -67,11 +76,10 @@ unchanged. Full installed/public artifact, biological/human/scale acceptance,
 
 ## Next concrete action and resources
 
-Finish #238 source/exact-owned receiving and closure, then receive
-from_aligned_ligand_cliques public control while preserving independent children,
-empty/model distinctions, source/frame/state geometry and alternative models.
-from_rigid_ligands and broader #6/full gates retain their own scope. #227 and
-paused publisher/shared-prefix/benchmark work remain separate.
+Receive from_aligned_ligand_cliques public control next, preserving independent
+children, empty/model distinctions, source/frame/state geometry and alternatives.
+from_rigid_ligands and broader #6/full gates retain their own scope. #239/#227
+and paused publisher/shared-prefix/benchmark work remain separately owned.
 
 Preserve shared-prefix/migration pauses and original native/data identities.
 Heavy work stays serial: one CPU/backend thread, low CPU/I/O priority, finite
@@ -97,3 +105,6 @@ and both links retired. Earlier owners/uncertainties remain unchanged.
 
 Review this #236/#237 capsule/private target on 2026-11-29; actual SDK stages
 and both file-relative links retired. Earlier owners/uncertainties are unchanged.
+
+Review this #238 capsule/private target on 2026-11-29; actual SDK stages and
+both file-relative links retired. Earlier owners/uncertainties remain unchanged.
