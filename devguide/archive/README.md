@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (166)
+### Resolved (167)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -94,6 +94,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`native_schema_and_writer_preparation.md`](native_schema_and_writer_preparation.md) — [#76](https://github.com/uibcdf/pharmacophoremt/issues/76) — Version native schemas and encode pharmacophore exports before destination opening. *(resolved, measured)*
 - [`native_structure_modeler_transition.md`](native_structure_modeler_transition.md) — [#44](https://github.com/uibcdf/pharmacophoremt/issues/44) — Replace the structure modeler's molecular heuristics with explicit cached receptor projections. *(resolved, measured)*
 - [`native_virtual_screening_transition.md`](native_virtual_screening_transition.md) — [#45](https://github.com/uibcdf/pharmacophoremt/issues/45) — Replace implicit legacy screening and validation preparation with explicit prepared-native tools. *(resolved, measured)*
+- [`neighborhood_argument_controls.md`](neighborhood_argument_controls.md) — [#232](https://github.com/uibcdf/pharmacophoremt/issues/232) — Expose independent neighborhood-comparison and ranking controls with mandatory native scientific admission. *(resolved, measured)*
 - [`nonfinite_observation_provenance.md`](nonfinite_observation_provenance.md) — [#35](https://github.com/uibcdf/pharmacophoremt/issues/35) — Undefined aromatic measurements fail consumer quantity provenance serialization. *(resolved, measured)*
 - [`ordinary_documentation_build.md`](ordinary_documentation_build.md) — [#53](https://github.com/uibcdf/pharmacophoremt/issues/53) — Repair the strict whole-site build and unrelated software identity claims. *(resolved, measured)*
 - [`packaging_license_metadata.md`](packaging_license_metadata.md) — [#57](https://github.com/uibcdf/pharmacophoremt/issues/57) — Use SPDX license metadata with a compatible setuptools backend and remove the stale Versioneer manifest entry. *(resolved, reproduced)*

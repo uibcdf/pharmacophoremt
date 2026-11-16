@@ -3,37 +3,55 @@
 Maintained 2026-11-15 local date; owners LMMV/dprada. Follow the
 [mature pre-1.0 roadmap](roadmap.md), [workstreams](decisions_and_workstreams.md)
 and [capability inventory](capability_inventory.md). The preceding published
-checkpoint is preserved at [7630c0f](https://github.com/uibcdf/pharmacophoremt/blob/7630c0fea964456ce5797513642f07ef7241d44c/devguide/checkpoint.md);
+checkpoint is preserved at [f1f4fb5](https://github.com/uibcdf/pharmacophoremt/blob/f1f4fb510b8bed5a2197cc60dc1e4d74db429eed/devguide/checkpoint.md);
 [earlier dated history](checkpoint_history_20261114_before_pose_controls.md),
 [earlier pre-tag preparation](checkpoint_history_20261114_before_final_review.md)
 and the [0.6.0 cut record](release_0_6_0_source_cut.md) retain their identities.
 
-## Current increment — neighborhood/ranking public controls toward 0.7.0
+## Current increment — neighborhood/ranking public controls received toward 0.7.0
 
-[#232](neighborhood_argument_controls.md) adds independent keyword-only controls
-and closed definition-owned admission to comparison/ranking. Two/three reused
-validators respectively retain native physical/budget and mapping/report/seed
-admission, including empty work. Both scientific bodies and signal/attribution
-decorators remain AST-equal; public consumers retain default child admission.
+[#232](neighborhood_argument_controls.md) adds two independent explicit keyword-
+only controls and closed definition-owned contracts. Two comparison and three
+ranking validators retain mandatory native criteria/budget and mapping/report/
+seed admission even for empty work. Both remaining scientific bodies and signal/
+attribution decorators remain AST-equal; public consumers keep default admission.
 
-All 154 final controls pass: independent asymmetric assignment/ranking answers,
-duplicates/ties/selection, original failures, nondefault unit-policy and source/
-report custody, empty axes and actual new/reused/empty method credit. Original
-baseline (142 failures/12 call-shape catches), initial implemented assertion
-correction and final guards retain distinct identities. All disjoint source groups pass: 154/32/174 cases, 360 distinct. Exact-owned
-consumer receiving, strict docs and quality remain pending. #6/full gates remain
-partial and separately owned. A capsule-local nonblocking lock prevents its own
-heavy commands overlapping; it reserves no machine resources.
+[Receiving](evidence/neighborhood_argument_controls_20261115.json) receives
+source 2e0f340991d0ade25709edd04c16284ed83a3865 and exact private wheel `0.6.0+31.g2e0f340`:
+identical serial **154/32/174-case source/owned groups**, **360 distinct cases per
+context including 154 new controls**, zero failures/errors/skips. All 245 payloads
+and 190 nongenerated Python bodies verify; 171/172/172 loaded PHMT modules in the
+respective groups originate only in the owned target (172 across their union). Actual immutable SDK staging has pre-work
+journals, checks and import/resource retirement; both file-relative links retire.
+Strict owned HTML docs and relevant reporting/archive/index/generated-environment/
+declared-route/Ruff checks pass (553 formatted files). The accepted focused source
+group keeps its original run identity without another execution. Prior 27-case
+distribution/support evidence retains source 140c6d2 and its own receipt/scope,
+with 200 current input files verified byte-equal.
 
-The [preceding published checkpoint](https://github.com/uibcdf/pharmacophoremt/blob/f1f4fb510b8bed5a2197cc60dc1e4d74db429eed/devguide/checkpoint.md)
-retains #229/#230 receiving, repaired support and original incidents. Its 319
-cases/context and 27 distribution controls retain their original source/artifact.
-#227, original #224 pilot recovery, older staging uncertainty and stopped work
-retain their owners.
+Independent asymmetric assignment and explicit duplicate/tie/seed-selection answers
+preserve dimensions, costs, counts and completion scope. Original solver failures
+raise without partial output. nm/pm application unit policy, source/report custody
+and actual new/reused/empty method credit pass. Neither helper accesses molecular
+systems or performs fitting; supplied report origin remains the caller's authority.
+
+The original 154-case baseline (142 failures/12 call-shape catches), initial
+implemented run (153 passes/one authored required-input assertion failure) and
+final guards/outputs retain their identities. The corrected assertion supplies a
+canonical first input before testing an absent second argument. Unit-policy
+inspection was reviewed against the supported configure API before execution.
+No scientific algorithm change or provider defect is asserted. All monitored
+commands run serially and none is interrupted; a capsule-local nonblocking lock
+prevents its own overlap without reserving machine resources.
+
+Bounded Linux/Python3.14.10/public support pins/Pandas3.1.1 and controlled other-
+provider/inherited-native receiving does not close #6 or full source/installed/
+public/platform/biological/human/scale gates. #230's support repair, #229's original
+incidents, #227, #224 pilot recovery and older staging uncertainty keep their owners.
 
 ## Earlier bounded increments
 
-The [preceding published checkpoint](https://github.com/uibcdf/pharmacophoremt/blob/7630c0fea964456ce5797513642f07ef7241d44c/devguide/checkpoint.md)
+The [preceding published checkpoint](https://github.com/uibcdf/pharmacophoremt/blob/f1f4fb510b8bed5a2197cc60dc1e4d74db429eed/devguide/checkpoint.md)
 retains the earlier increments with their original sources, runs, receipts and
 limitations. Their owning contracts and evidence remain unchanged. The
 [capability inventory](capability_inventory.md), [roadmap](roadmap.md) and
@@ -63,10 +81,9 @@ unchanged. Full installed/public artifact, biological/human/scale acceptance,
 
 ## Next concrete action and resources
 
-Complete #232 bounded source/exact-owned receiving, strict docs, evidence and
-publication/readback. Then audit from_feature_inventory public admission under
-partial #6, retaining model construction, quantity/source custody and independent
-callers. #227, publisher pauses and stopped #148/#165 stay separate.
+Audit from_feature_inventory public admission next, retaining native model
+construction, quantities/source custody and independent public callers under
+partial #6. #227, publisher pauses and stopped #148/#165 remain separate.
 
 Preserve shared-prefix/migration pauses and original native/data identities.
 Heavy work stays serial: one CPU/backend thread, low CPU/I/O priority, finite
@@ -80,3 +97,6 @@ Selection/score tasks use a separate 2026-11-29 retention review.
 
 Review this #229 task-owned capsule/private target on 2026-11-29; its accepted
 SDK stages and file-relative support links retired. Earlier uncertainty is unchanged.
+
+Review the #232 task-owned capsule/private target on 2026-11-29; accepted SDK
+stages and both file-relative links retired. Earlier owners/uncertainties remain.

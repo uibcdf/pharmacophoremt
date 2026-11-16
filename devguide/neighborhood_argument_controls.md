@@ -56,3 +56,29 @@ implemented and final guards/outputs; no scientific algorithm change resolved
 these test-authoring corrections. Remaining comparison/ranking bodies and
 signal/attribution decorators are AST-equal after their two/three validators.
 Broader source/exact-owned receiving is in progress.
+
+## Measured receiving — 2026-11-15
+
+[Receiving](evidence/neighborhood_argument_controls_20261115.json) receives
+source 2e0f340991d0ade25709edd04c16284ed83a3865 and exact private wheel `0.6.0+31.g2e0f340`:
+identical serial **154/32/174-case source/owned groups**, **360 distinct cases per
+context including 154 new controls**, zero failures/errors/skips. All 245 payloads
+and 190 nongenerated Python bodies verify; 171/172/172 loaded PHMT modules in the
+respective groups originate only in the owned target (172 across their union). Actual immutable SDK staging has pre-work
+journals, checks and import/resource retirement; both file-relative links retire.
+Strict owned HTML docs and relevant reporting/archive/index/generated-environment/
+declared-route/Ruff checks pass (553 formatted files). The accepted focused source
+group keeps its original run identity without another execution. Prior 27-case
+distribution/support evidence retains source 140c6d2 and its own receipt/scope,
+with 200 current input files verified byte-equal.
+
+Native invalid criteria/reports/mappings refuse even empty work. Independent
+asymmetric assignment and explicit duplicate/tie/selection oracles retain costs,
+counts, scope and detached provenance. Original assignment exceptions, nm/pm
+application policy and source custody pass. Actual new/reused/empty application
+captures credit only reached ranking/assignment methods. Both scientific bodies
+and signal/attribution decorators remain AST-equal after the five validators.
+All monitored commands are serial; the capsule lock reserves no machine capacity.
+No heavy operation is interrupted and no provider defect is asserted. Original
+baseline/implemented/final guard identities remain; earlier incidents, complete
+#6 and full qualification retain their own owners.

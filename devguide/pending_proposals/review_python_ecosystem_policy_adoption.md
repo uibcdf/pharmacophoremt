@@ -14,14 +14,19 @@ supersedes: []
 
 # Review Python ecosystem policy adoption
 
-## Neighborhood/ranking controls implemented — 2026-11-15
+## Neighborhood/ranking public controls received — 2026-11-15
 
-[#232](../neighborhood_argument_controls.md) adds two independent explicit controls
-and definition-owned contracts with two/three mandatory native validators. Both
-scientific bodies/decorators retain AST identity. All 154 final controls pass,
-including asymmetric assignment and independent ranking, empty work, invalid
-evidence and custody/credit. Relevant source/exact-owned consumer receiving and
-strict docs/quality are in progress; #6/full qualification remain partial.
+[#232](../neighborhood_argument_controls.md) receives 2e0f340 and its exact private
+wheel: [154/32/174-case source/owned groups](../evidence/neighborhood_argument_controls_20261115.json),
+360 distinct cases/context including 154 controls, 245 payloads/190 equal bodies,
+171/172/172 target-only modules in the respective groups, actual SDK journals/checking/retirement, strict
+owned docs and relevant quality. Two/three reused mandatory validators preserve
+comparison/ranking bodies, defaults, costs/ties/duplicates/selection, unit/source/
+report custody and actual credit. The original focused source group keeps its
+identity; prior unchanged distribution evidence retains producer/scope. Both
+explicit APIs are received locally; #6 and full supported/public gates remain
+partial. Next audit from_feature_inventory; #227 and earlier incidents/recovery
+retain their owners. No tag, publisher or speed claim.
 
 ## Rigid-proposal public control received — 2026-11-15
 
