@@ -14,9 +14,13 @@ from pharmacophoremt._private.arg_digestion.argument._contracts import (
     digest_distance_tolerance,
     digest_feature_inventories,
     digest_feature_inventory,
+    digest_features,
     digest_ligand_ids,
+    digest_ligands,
     digest_max_matrix_entries,
     digest_min_support,
+    digest_radius,
+    digest_reference_index,
 )
 from pharmacophoremt._private.arg_digestion.native_consensus import CONFIG
 from pharmacophoremt._private.molsysmt import detached
@@ -360,7 +364,7 @@ def get_consensus_sites(
 
 
 @signal(tags=["modeling", "consensus", "aligned_ligands"])
-@arg_digest()
+@arg_digest(config=CONFIG)
 @attributed("molsysmt", "pyunitwizard")
 def from_aligned_ligands(
     ligands,
@@ -373,6 +377,7 @@ def from_aligned_ligands(
     radius="0.15 nm",
     max_matrix_entries=1000000,
     name=None,
+    skip_digestion=False,
 ):
     """Build reference-anchored consensus from prepared ligands in one frame.
 
@@ -397,6 +402,10 @@ def from_aligned_ligands(
         Assignment matrix bound per reference/candidate comparison.
     name : str, optional
         Output model name.
+    skip_digestion : bool, default=False
+        Bypass ordinary digestion for canonical expert inputs. Native source,
+        reference, family, support, physical and budget admission remain mandatory;
+        extraction, matching, aggregation and shape children retain validation.
 
     Returns
     -------
@@ -415,6 +424,14 @@ def from_aligned_ligands(
     --------
     >>> query = from_aligned_ligands([{'ligand_id':'a', 'molecular_system':a}, {'ligand_id':'b', 'molecular_system':b}])
     """
+    ligands = digest_ligands(ligands)
+    reference_index = digest_reference_index(reference_index)
+    features = digest_features(features)
+    min_support = digest_min_support(min_support)
+    distance_tolerance = digest_distance_tolerance(distance_tolerance)
+    direction_tolerance = digest_direction_tolerance(direction_tolerance)
+    radius = digest_radius(radius)
+    max_matrix_entries = digest_max_matrix_entries(max_matrix_entries)
     if reference_index >= len(ligands) or min_support > len(ligands):
         raise ArgumentError(
             argument="reference_index/min_support",

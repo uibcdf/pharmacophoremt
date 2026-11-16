@@ -2,6 +2,13 @@
 
 ## Unreleased — toward 0.7.0
 
+- Add keyword-only `skip_digestion=False` to `modeler.from_aligned_ligands()`.
+  Native source/reference/family/support/physical/budget checks remain mandatory
+  before extraction. Reference scope, separate emitted radius, source custody and
+  independent child validation remain. Invalid reference indices now correctly
+  identify `reference_index` in diagnostics; structure-index errors retain their
+  own argument name and both validators preserve their accepted values.
+
 - Add independent keyword-only `skip_digestion=False` controls to
   `modeler.get_aligned_feature_matches()` and `modeler.get_consensus_sites()`.
   Native physical/budget and collection/group/identity/support checks remain

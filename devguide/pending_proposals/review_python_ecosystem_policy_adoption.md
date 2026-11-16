@@ -14,6 +14,15 @@ supersedes: []
 
 # Review Python ecosystem policy adoption
 
+## Aligned-ligand model control implemented — 2026-11-15
+
+[#234/#235](../aligned_model_argument_controls.md) adds the verified next model
+control with eight reused native validators and corrects reference-index diagnostic
+ownership through the existing integer predicate. All 99 final model controls pass
+with unchanged guards and scientific/helper AST; original red runs remain.
+Source/exact-owned receiving and quality are in progress. #6/full gates stay
+partial; get_aligned_feature_cliques is next in the bounded inventory.
+
 ## Aligned matching/site controls received — 2026-11-15
 
 [#233](../consensus_argument_controls.md) receives 694036d and its exact private

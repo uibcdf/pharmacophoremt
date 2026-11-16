@@ -13,6 +13,10 @@ CONTRACTS = [
         caller="pharmacophoremt.modeler.aligned_consensus.get_consensus_sites",
         admits="signature",
     ),
+    FunctionContract(
+        caller="pharmacophoremt.modeler.aligned_consensus.from_aligned_ligands",
+        admits="signature",
+    ),
 ]
 
 CONFIG = DigestConfig(

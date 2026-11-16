@@ -8,50 +8,26 @@ checkpoint is preserved at [c452678](https://github.com/uibcdf/pharmacophoremt/b
 [earlier pre-tag preparation](checkpoint_history_20261114_before_final_review.md)
 and the [0.6.0 cut record](release_0_6_0_source_cut.md) retain their identities.
 
-## Current increment — aligned matching/site controls received toward 0.7.0
+## Current increment — aligned-ligand model control toward 0.7.0
 
-[#233](consensus_argument_controls.md) corrects the stale next action: get_features
-and both reference constructors already have received controls. Its bounded
-ten-function modeling inventory preserves those receipts and identifies genuine
-remaining work. Independent explicit controls and definition-owned admission now
-cover aligned matching and site aggregation, with three/six reused mandatory
-native validators even for empty work. Both scientific bodies/decorators and all
-other module functions/helpers retain AST identity; public consumers keep their
-independent default admission.
+[#234](aligned_model_argument_controls.md) adds a local explicit control and
+closed definition-owned admission to from_aligned_ligands. Eight reused native
+validators precede extraction; scientific body/decorators and other module
+functions/helpers retain AST identity. Children keep independent admission.
 
-[Receiving](evidence/consensus_argument_controls_20261115.json) receives source
-694036d8aa3aa95780439bd6d236284ab53fd86f and exact private wheel `0.6.0+33.g694036d`:
-identical serial **172/17/25/123/159-case source/owned groups**, **496 distinct cases per
-context including 172 new controls**, zero failures/errors/skips. All 246 payloads
-and 191 nongenerated Python bodies verify. The respective groups load
-172/173/173/173/173 target-only PHMT modules (173 in their union). Actual immutable
-SDK staging has pre-work journals/checking and import/resource retirement; both
-file-relative links retire. Existing fresh-reader controls inherit matching
-controlled provider paths; installed readers use the private runtime target.
-Strict owned HTML docs and relevant reporting/archive/index/generated-environment/
-declared-route/Ruff checks pass (555 formatted files). The focused source group
-retains its original run identity without another execution. Current distribution
-controls pass all 27 cases after adding the missing required path for the already
-shipped private module. Metadata source a293518c8f239852ba5e8852d91e1c521b3e94ed
-keeps all 191 runtime bodies and six selected guards byte-equal (197 files), with
-installed-test support and every other manifest field unchanged. Original wheel,
-scientific runs and the initial 26-pass/one-refusal distribution attempt retain
-their identities; no rebuilt-source or full Conda/public qualification is claimed.
+All 99 model controls pass after the original 95-failure/four-call-shape baseline.
+The first implemented run exposed [#235](pending_bugs/reference_index_diagnostics.md):
+six errors named structure_index for reference_index. A shared integer predicate
+now names the owner correctly while retaining both original value domains and
+normalization. Original/direct red guards and initial/final model bytes remain.
+All disjoint source groups pass: 99/189/47/89 cases, 424 distinct. Exact-owned
+consumers, strict docs and closing quality remain pending.
 
-Independent maximum-cardinality, centroid/support/dispersion and donor-vector/
-aromatic-axis controls preserve source ordering, quantities, first-member
-orientation and detached occurrence/frame/state/geometry. Original allocation and
-solver failures remain failures. Actual reused/empty branch credit and nondefault
-nm/pm application policy pass. Neither helper reads or aligns molecular systems.
-
-The original 172-case baseline (158 failures/14 call-shape catches), initial/final
-identical guard bytes and output/provider/resource identities remain. All monitored
-commands are serial and none interrupted; the task-local lock reserves no machine
-capacity. No provider defect, new scientific policy or speed claim is asserted.
-Bounded Linux/Python3.14/public support pins/Pandas3.1.1 and controlled other-
-provider/inherited-native receiving does not close #6 or full source/installed/
-public/platform/biological/human/scale gates. #227, #230 support, #229 incidents,
-#224 recovery, older staging uncertainty and stopped work keep their owners.
+The [preceding checkpoint](https://github.com/uibcdf/pharmacophoremt/blob/593d6097238e4130b131385f46c52ff2c85948e8/devguide/checkpoint.md)
+retains #233's scientific/private-wheel source, separate metadata correction and
+all original run identities. This increment keeps its now-declared footprint.
+The bounded modeling inventory verifies get_aligned_feature_cliques is next.
+#6/full gates and earlier incidents/recovery remain separately owned.
 
 ## Earlier bounded increments
 
@@ -85,11 +61,10 @@ unchanged. Full installed/public artifact, biological/human/scale acceptance,
 
 ## Next concrete action and resources
 
-Receive from_aligned_ligands public argument control next. Its explicit control
-is absent in the bounded modeling inventory; retain reference-anchored hypothesis
-scope, molecular/provider ownership and native assignment/aggregation children.
-The four clique/rigid modeling controls and broader #6/full gates remain separately
-pending. #227, publisher pauses and stopped #148/#165 stay separate.
+Complete #234/#235 bounded source/exact-owned consumers, strict docs, current
+distribution/quality, evidence and publication/readback. Next receive the verified
+missing get_aligned_feature_cliques control, preserving bounded maximal-clique
+semantics and independent consumers. #6/full gates, #227 and paused work remain.
 
 Preserve shared-prefix/migration pauses and original native/data identities.
 Heavy work stays serial: one CPU/backend thread, low CPU/I/O priority, finite

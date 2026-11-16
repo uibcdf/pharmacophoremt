@@ -446,16 +446,18 @@ def digest_color_palette(obj):
     return deepcopy(obj)
 
 
-def digest_structure_index(obj):
+def _nonnegative_integer(obj, argument):
     if (
         isinstance(obj, (bool, np.bool_))
         or not isinstance(obj, (int, np.integer))
         or obj < 0
     ):
-        raise ArgumentError(
-            argument="structure_index", reason="expected a nonnegative integer"
-        )
+        raise ArgumentError(argument=argument, reason="expected a nonnegative integer")
     return int(obj)
+
+
+def digest_structure_index(obj):
+    return _nonnegative_integer(obj, "structure_index")
 
 
 def digest_point_tolerance(obj):
@@ -661,7 +663,7 @@ def digest_distance_tolerance(obj):
 
 
 def digest_reference_index(obj):
-    return digest_structure_index(obj)
+    return _nonnegative_integer(obj, "reference_index")
 
 
 def digest_min_support(obj):
