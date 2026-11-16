@@ -28,6 +28,13 @@ retains #232 receiving, original source/artifact and prior history; its outdated
 from_feature_inventory next action is corrected above. No earlier evidence is
 promoted to this changed source.
 
+Original implementation 694036d receives all 496 scientific cases per source/
+owned context and strict owned docs. A fresh distribution check exposes the new
+private contract module missing from Conda required_paths (26 passes/one refusal).
+Correct that metadata and receive the current distribution guard. The original
+wheel/runtime/guard identities remain; no scientific rerun or rebuilt-source claim
+follows from this metadata-only correction.
+
 ## Earlier bounded increments
 
 The [preceding published checkpoint](https://github.com/uibcdf/pharmacophoremt/blob/f1f4fb510b8bed5a2197cc60dc1e4d74db429eed/devguide/checkpoint.md)

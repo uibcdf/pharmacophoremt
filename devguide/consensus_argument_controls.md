@@ -74,3 +74,22 @@ scientific bodies and signal/attribution decorators remain AST-equal after
 the three/six validators; all other functions/helpers in the module are unchanged.
 Original admission inventories retain their ten-function bounded scope; only the
 two selected signatures change. Broader source/exact-owned receiving is pending.
+
+## Packaging-footprint correction
+
+The original 694036d private wheel receives all five scientific groups and strict
+owned docs. Its new native_consensus module is present and source-equal in the
+wheel, but the source's separate Conda required_paths declaration omitted that
+file. The current distribution guard catches this (26 passes/one refusal).
+Add the missing required path and receive current distribution controls. Preserve
+the original failed check, source/artifact and scientific run identities. This
+manifest is outside the wheel payload; all 191 runtime bodies, selected scientific
+guards, provider inputs and installed-support declaration remain unchanged.
+Keep original scientific/owned results with explicit byte proof across this
+metadata correction, rather than rebuilding or relabelling their source. Current
+Conda/public/platform qualification remains separately unreceived under #9/#10/#23.
+
+The corrected current distribution group passes all 27 cases. Manifest comparison
+proves its only change is the added required path, with installed-test support and
+all other fields unchanged. All 191 runtime bodies and six selected scientific
+guards (197 files) remain byte-equal to the original scientific/artifact source.
