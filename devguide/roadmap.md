@@ -1,13 +1,17 @@
 # Strategic roadmap
 
-## Aligned-ligand model control implemented — 2026-11-15
+## Aligned-ligand model and reference diagnostics received — 2026-11-15
 
-[#234/#235](aligned_model_argument_controls.md) adds the verified next model
-control with eight reused native validators and corrects reference-index diagnostic
-ownership through the existing integer predicate. All 99 final model controls pass
-with unchanged guards and scientific/helper AST; original red runs remain.
-Source/exact-owned receiving and quality are in progress. #6/full gates stay
-partial; get_aligned_feature_cliques is next in the bounded inventory.
+[#234/#235](aligned_model_argument_controls.md) receives 48696d6 and its exact
+private wheel: [99/189/47/89-case source/owned groups](evidence/aligned_model_argument_controls_20261115.json),
+424 distinct cases/context including 99 model/18 diagnostic controls. All 246
+payloads/191 equal bodies, actual SDK journals/retirement, strict owned docs,
+27 current distribution controls and relevant quality pass. Eight native
+validators preserve the remaining model body/helpers and independent children.
+Reference-index errors now name the owner while structure-index behavior stays.
+Original guards/red runs, real nm/pm source/frame/state/model custody and actual
+credit remain. Next get_aligned_feature_cliques; #6/full gates and prior resource/
+metadata/recovery ownership stay separate.
 
 ## Aligned matching/site controls received — 2026-11-15
 

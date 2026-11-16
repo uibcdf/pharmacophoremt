@@ -5,10 +5,11 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (168)
+### Resolved (170)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
+- [`aligned_model_argument_controls.md`](aligned_model_argument_controls.md) — [#234](https://github.com/uibcdf/pharmacophoremt/issues/234) — Expose aligned-ligand model control preserving reference scope, child admission and source custody. *(resolved, measured)*
 - [`alignment_argument_controls.md`](alignment_argument_controls.md) — [#218](https://github.com/uibcdf/pharmacophoremt/issues/218) — Expose independent alignment digestion control and enforce native mapping geometry. *(resolved, measured)*
 - [`analytical_upper_bound_platform.md`](analytical_upper_bound_platform.md) — [#143](https://github.com/uibcdf/pharmacophoremt/issues/143) — Diagnose the exact upper-bound analytical comparison failure on macOS. *(resolved, reproduced)*
 - [`aromatic_attribution_subprocess_import.md`](aromatic_attribution_subprocess_import.md) — [#48](https://github.com/uibcdf/pharmacophoremt/issues/48) — Aromatic attribution-absence subprocess assumed an eagerly imported screening namespace. *(resolved, measured)*
@@ -150,6 +151,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`receptor_hypothesis_pilot.md`](receptor_hypothesis_pilot.md) — [#86](https://github.com/uibcdf/pharmacophoremt/issues/86) — Qualify bounded receptor hypotheses from cached native donor and ring geometry. *(resolved, measured)*
 - [`receptor_projection_sensitivity.md`](receptor_projection_sensitivity.md) — [#83](https://github.com/uibcdf/pharmacophoremt/issues/83) — Qualify the first prespecified analytical receptor projection sensitivity matrix. *(resolved, measured)*
 - [`recognition_producer_oracle.md`](recognition_producer_oracle.md) — [#208](https://github.com/uibcdf/pharmacophoremt/issues/208) — Separate fresh molecular recognition producers from frozen native evidence. *(resolved, measured)*
+- [`reference_index_diagnostics.md`](reference_index_diagnostics.md) — [#235](https://github.com/uibcdf/pharmacophoremt/issues/235) — Attribute invalid reference_index values to reference_index while preserving structure_index admission. *(resolved, measured)*
 - [`refinement_argument_controls.md`](refinement_argument_controls.md) — [#228](https://github.com/uibcdf/pharmacophoremt/issues/228) — Expose local greedy-refinement digestion control while preserving scientific policy and per-attempt bounds. *(resolved, measured)*
 - [`repeated_hydrogen_history_is_not_chemical_mutation.md`](repeated_hydrogen_history_is_not_chemical_mutation.md) — [#39](https://github.com/uibcdf/pharmacophoremt/issues/39) — Separate repeat-H chemical invariance from appended operation history. *(resolved, measured)*
 - [`retire_orphaned_molecular_utilities.md`](retire_orphaned_molecular_utilities.md) — [#46](https://github.com/uibcdf/pharmacophoremt/issues/46) — Retire unused molecular utilities and the name-grouped archival SDF reader. *(resolved, measured)*

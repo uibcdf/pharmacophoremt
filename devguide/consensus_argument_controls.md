@@ -16,7 +16,7 @@ signature/decorator inventory, not a complete export/inheritance/API audit.
 | get_features | Explicit control already received; preserve its contract. |
 | from_feature_inventory, from_ligand | Explicit closed controls already received under #198. |
 | get_aligned_feature_matches, get_consensus_sites | Explicit controls and definition-owned admission received here. |
-| from_aligned_ligands | Explicit control still absent; next after this increment. |
+| from_aligned_ligands | Received under [#234](aligned_model_argument_controls.md); original #233 state remains in its frozen receipt. |
 | get_aligned_feature_cliques, get_aligned_consensus_hypotheses, from_aligned_ligand_cliques, from_rigid_ligands | Explicit controls still absent; retain subsequent #6 work. |
 
 ## Admission and scientific authority
@@ -123,3 +123,10 @@ rejection/orientation answers, original solver/allocation failures, input/report
 custody, nm/pm policy and actual reached-method credit pass. All monitored commands
 are serial and none interrupted. No provider defect or scientific policy change
 is asserted. Full #6 and broader qualification retain their owners.
+
+## Modeling inventory continuation — 2026-11-15
+
+[#234/#235](aligned_model_argument_controls.md) receives from_aligned_ligands and
+corrects reference-index diagnostic ownership. The current table reflects that
+addition; #233's original source/artifact/metadata inventories and archive remain
+unchanged. Next get_aligned_feature_cliques is still absent in the bounded inventory.

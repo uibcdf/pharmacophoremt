@@ -1,0 +1,2535 @@
+{
+  "schema": "pharmacophoremt.aligned-model-controls.receiving@1",
+  "date": "2026-11-15",
+  "issues": [
+    234,
+    235
+  ],
+  "source_commit": "48696d68cc9447f4f478f679d7e3a4bb14a4e749",
+  "scope": "Explicit reference-anchored aligned-ligand model control with eight mandatory native validators; correct reference-index diagnostic ownership. Broader #6 remains partial.",
+  "decision": "Identical disjoint bounded source/exact-owned groups and current distribution controls pass; no tag, publisher, full remote matrix, benchmark or speed claim.",
+  "contract": {
+    "public": "Closed definition-owned keyword-only skip_digestion=False; required/unknown arguments; literal Python True bypass only, NumPy booleans digest. Three public children keep default admission, no blindly forwarded control.",
+    "native": "Reuse ligand/unique-ID collection, reference index, families, minimum support, physical distance/angle/radius and matrix-budget validators before extraction. Keep upper reference/support and classical-only constraints. Each source selection/frame/state stays child/provider-owned.",
+    "science": "Remaining reference-anchored model body and signal/attribution decorators, other module functions/helpers unchanged. Preserve reference-first members, pairwise matching, consensus mean/orientation/support including empty sources, essential/equal-weight sites and detached source geometry. Emitted radius stays independent of dispersion tolerance. No local molecular alignment/preparation or new method.",
+    "failures": "Original later extraction/assignment-budget failures raise without partial models. Unsupported/empty reference scope raises rather than emitting an unusable query.",
+    "diagnostic": "Shared nonnegative integer predicate retains original values/Python-int normalization/error family; reference errors name reference_index, structure errors keep structure_index. All other value contracts unchanged.",
+    "custody": "Actual nm/pm prepared sources retain selection/frame/state, independent expected centers, empty-source support denominators, other atoms/frames, persistence and provenance; narrow emitted radius can reject each otherwise supported input."
+  },
+  "body_preservation": {
+    "baseline_source": "593d6097238e4130b131385f46c52ff2c85948e8",
+    "scientific_body_AST_equal_after_eight_validators": true,
+    "signal_attribution_decorators_AST_equal": true,
+    "all_other_module_functions_helpers_AST_equal": true,
+    "shared_integer_predicate_AST_equal_with_original_structure_label": true,
+    "other_value_contracts_AST_equal": true,
+    "diagnostic_change": "Reference owner names reference_index; structure owner stays structure_index, accepted types/normalization/error family unchanged."
+  },
+  "bounded_modeling_inventory": {
+    "initial": {
+      "scope": "Ten explicitly inspected public modeler reexports only; lexical signature/decorator observations, not complete API/export/inheritance qualification. Earlier received extraction/reference controls retain #196/#198 receipts.",
+      "callables": [
+        {
+          "callable": "get_features",
+          "file": "pharmacophoremt/modeler/features.py",
+          "explicit_skip_digestion": true,
+          "direct_ArgDigest_decorator": true
+        },
+        {
+          "callable": "from_feature_inventory",
+          "file": "pharmacophoremt/modeler/reference_ligand.py",
+          "explicit_skip_digestion": true,
+          "direct_ArgDigest_decorator": true
+        },
+        {
+          "callable": "from_ligand",
+          "file": "pharmacophoremt/modeler/reference_ligand.py",
+          "explicit_skip_digestion": true,
+          "direct_ArgDigest_decorator": true
+        },
+        {
+          "callable": "get_aligned_feature_matches",
+          "file": "pharmacophoremt/modeler/aligned_consensus.py",
+          "explicit_skip_digestion": true,
+          "direct_ArgDigest_decorator": true
+        },
+        {
+          "callable": "get_consensus_sites",
+          "file": "pharmacophoremt/modeler/aligned_consensus.py",
+          "explicit_skip_digestion": true,
+          "direct_ArgDigest_decorator": true
+        },
+        {
+          "callable": "from_aligned_ligands",
+          "file": "pharmacophoremt/modeler/aligned_consensus.py",
+          "explicit_skip_digestion": false,
+          "direct_ArgDigest_decorator": true
+        },
+        {
+          "callable": "get_aligned_feature_cliques",
+          "file": "pharmacophoremt/modeler/aligned_cliques.py",
+          "explicit_skip_digestion": false,
+          "direct_ArgDigest_decorator": true
+        },
+        {
+          "callable": "get_aligned_consensus_hypotheses",
+          "file": "pharmacophoremt/modeler/aligned_cliques.py",
+          "explicit_skip_digestion": false,
+          "direct_ArgDigest_decorator": true
+        },
+        {
+          "callable": "from_aligned_ligand_cliques",
+          "file": "pharmacophoremt/modeler/aligned_cliques.py",
+          "explicit_skip_digestion": false,
+          "direct_ArgDigest_decorator": true
+        },
+        {
+          "callable": "from_rigid_ligands",
+          "file": "pharmacophoremt/modeler/rigid_consensus.py",
+          "explicit_skip_digestion": false,
+          "direct_ArgDigest_decorator": true
+        }
+      ],
+      "baseline_source": "c452678e4376211eaf2d527c72c5107dcad52657",
+      "source_state": "Exact committed implementation source; bounded lexical signature/decorator inventory.",
+      "source": "694036d8aa3aa95780439bd6d236284ab53fd86f"
+    },
+    "final": {
+      "baseline_source": "593d6097238e4130b131385f46c52ff2c85948e8",
+      "scope": "Ten explicitly inspected public modeler reexports only; lexical signature/decorator observations, not complete API/export/inheritance qualification. Earlier received extraction/reference controls retain #196/#198 receipts.",
+      "source_state": "Exact committed model-control and diagnostic source; bounded lexical observations.",
+      "callables": [
+        {
+          "callable": "get_features",
+          "file": "pharmacophoremt/modeler/features.py",
+          "explicit_skip_digestion": true,
+          "direct_ArgDigest_decorator": true
+        },
+        {
+          "callable": "from_feature_inventory",
+          "file": "pharmacophoremt/modeler/reference_ligand.py",
+          "explicit_skip_digestion": true,
+          "direct_ArgDigest_decorator": true
+        },
+        {
+          "callable": "from_ligand",
+          "file": "pharmacophoremt/modeler/reference_ligand.py",
+          "explicit_skip_digestion": true,
+          "direct_ArgDigest_decorator": true
+        },
+        {
+          "callable": "get_aligned_feature_matches",
+          "file": "pharmacophoremt/modeler/aligned_consensus.py",
+          "explicit_skip_digestion": true,
+          "direct_ArgDigest_decorator": true
+        },
+        {
+          "callable": "get_consensus_sites",
+          "file": "pharmacophoremt/modeler/aligned_consensus.py",
+          "explicit_skip_digestion": true,
+          "direct_ArgDigest_decorator": true
+        },
+        {
+          "callable": "from_aligned_ligands",
+          "file": "pharmacophoremt/modeler/aligned_consensus.py",
+          "explicit_skip_digestion": true,
+          "direct_ArgDigest_decorator": true
+        },
+        {
+          "callable": "get_aligned_feature_cliques",
+          "file": "pharmacophoremt/modeler/aligned_cliques.py",
+          "explicit_skip_digestion": false,
+          "direct_ArgDigest_decorator": true
+        },
+        {
+          "callable": "get_aligned_consensus_hypotheses",
+          "file": "pharmacophoremt/modeler/aligned_cliques.py",
+          "explicit_skip_digestion": false,
+          "direct_ArgDigest_decorator": true
+        },
+        {
+          "callable": "from_aligned_ligand_cliques",
+          "file": "pharmacophoremt/modeler/aligned_cliques.py",
+          "explicit_skip_digestion": false,
+          "direct_ArgDigest_decorator": true
+        },
+        {
+          "callable": "from_rigid_ligands",
+          "file": "pharmacophoremt/modeler/rigid_consensus.py",
+          "explicit_skip_digestion": false,
+          "direct_ArgDigest_decorator": true
+        }
+      ],
+      "source": "48696d68cc9447f4f478f679d7e3a4bb14a4e749"
+    },
+    "scope": "Ten directly inspected public modeler reexports only; not complete export/inheritance/API qualification.",
+    "next_missing_control": "get_aligned_feature_cliques"
+  },
+  "source": {
+    "original_group_labels": {
+      "controls": "focused-final",
+      "consensus": "source-consensus",
+      "reference": "source-reference",
+      "indices": "source-indices"
+    },
+    "focused_source_reused_without_reexecution": true,
+    "groups": {
+      "controls": {
+        "tests": 99,
+        "failure": 0,
+        "error": 0,
+        "skipped": 0,
+        "XML": {
+          "bytes": 17438,
+          "sha256": "50048f8a250f6ff58bbd587b6d934ef002471b33a11416613003ea5d446b6ca2"
+        },
+        "case_IDs_sha256": "41c2943e8632c0b48dbc60a3bae6b67f03bb898ee42026c26bd5b0863bea2093"
+      },
+      "consensus": {
+        "tests": 189,
+        "failure": 0,
+        "error": 0,
+        "skipped": 0,
+        "XML": {
+          "bytes": 32659,
+          "sha256": "d5e4aa27ec89c3c1efaffcd85da0974a03ce68444d3861141785606c3b3513f2"
+        },
+        "case_IDs_sha256": "16cfef93afc8450dc41abae02d128b0f9ab0afbb9992b5d190a3a1db87b92c8d"
+      },
+      "reference": {
+        "tests": 47,
+        "failure": 0,
+        "error": 0,
+        "skipped": 0,
+        "XML": {
+          "bytes": 7329,
+          "sha256": "d1827384bf59275b57be48625a30463c176feec7d083113cba436a13a916e369"
+        },
+        "case_IDs_sha256": "bbad18269d84cbdb038b4cf8d3a8db9517f7a03dccedce08984f00ed6ae0834e"
+      },
+      "indices": {
+        "tests": 89,
+        "failure": 0,
+        "error": 0,
+        "skipped": 0,
+        "XML": {
+          "bytes": 15111,
+          "sha256": "59589d834d6c4298a9d7d6e629adcbf372d3d3391819f28c8b8a571c08c2a2ae"
+        },
+        "case_IDs_sha256": "da17b6ea995a4d41171ab09989a9d67c0cc20f27899e03025c4134361cc1669c"
+      }
+    },
+    "distinct_case_count": 424,
+    "groups_disjoint": true,
+    "new_controls": 117,
+    "model_controls": 99,
+    "direct_diagnostic_controls": 18,
+    "provider_contexts": {
+      "controls": {
+        "providers": {
+          "molsysmt": {
+            "origin": "/tmp/phmt-060-consolidation-20261113-a5udv1sv/reader-source/molsysmt/__init__.py",
+            "version": "0+unknown"
+          },
+          "ackredit": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-ackredit/ackredit/__init__.py",
+            "version": "0.11.0+3.g71f7f19"
+          },
+          "depdigest": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-depdigest/depdigest/__init__.py",
+            "version": "0.15.1"
+          },
+          "molsysviewer": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-molsysviewer/molsysviewer/__init__.py",
+            "version": "0.24.0+238.gca7ebea6"
+          },
+          "smonitor": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/smonitor-0.22.1-py_0/site-packages/smonitor/__init__.py",
+            "version": "0.22.1"
+          },
+          "argdigest": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/argdigest-0.17.1-py_0/site-packages/argdigest/__init__.py",
+            "version": "0.17.1"
+          },
+          "pyunitwizard": {
+            "origin": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-capture-20261111-6wh0wkhu/providers-0281/pyunitwizard/__init__.py",
+            "version": "0.28.1"
+          }
+        },
+        "public_files_equal_to_CI_pins": [
+          {
+            "name": "smonitor",
+            "source": "2147c7c641b7cba8a974b193207f686ee3ebe855",
+            "equal_python_files": 40
+          },
+          {
+            "name": "argdigest",
+            "source": "c9c9ee623dab5331fdfa4227bd784dd38620e18b",
+            "equal_python_files": 38
+          },
+          {
+            "name": "pyunitwizard",
+            "source": "2ab37a525ce99728ad8aee846b4a4f7acc4f1b65",
+            "equal_python_files": 83
+          }
+        ],
+        "molecular_source": "05865fbb3ba499d4117d6ba3e1cf55d98a9e239e",
+        "molecular_native_extension": "inherited; original tracked Rust/toolchain bytes equal; not a new installed native package",
+        "pyunitwizard": "0.28.1"
+      },
+      "consensus": {
+        "providers": {
+          "molsysmt": {
+            "origin": "/tmp/phmt-060-consolidation-20261113-a5udv1sv/reader-source/molsysmt/__init__.py",
+            "version": "0+unknown"
+          },
+          "ackredit": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-ackredit/ackredit/__init__.py",
+            "version": "0.11.0+3.g71f7f19"
+          },
+          "depdigest": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-depdigest/depdigest/__init__.py",
+            "version": "0.15.1"
+          },
+          "molsysviewer": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-molsysviewer/molsysviewer/__init__.py",
+            "version": "0.24.0+238.gca7ebea6"
+          },
+          "smonitor": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/smonitor-0.22.1-py_0/site-packages/smonitor/__init__.py",
+            "version": "0.22.1"
+          },
+          "argdigest": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/argdigest-0.17.1-py_0/site-packages/argdigest/__init__.py",
+            "version": "0.17.1"
+          },
+          "pyunitwizard": {
+            "origin": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-capture-20261111-6wh0wkhu/providers-0281/pyunitwizard/__init__.py",
+            "version": "0.28.1"
+          }
+        },
+        "public_files_equal_to_CI_pins": [
+          {
+            "name": "smonitor",
+            "source": "2147c7c641b7cba8a974b193207f686ee3ebe855",
+            "equal_python_files": 40
+          },
+          {
+            "name": "argdigest",
+            "source": "c9c9ee623dab5331fdfa4227bd784dd38620e18b",
+            "equal_python_files": 38
+          },
+          {
+            "name": "pyunitwizard",
+            "source": "2ab37a525ce99728ad8aee846b4a4f7acc4f1b65",
+            "equal_python_files": 83
+          }
+        ],
+        "molecular_source": "05865fbb3ba499d4117d6ba3e1cf55d98a9e239e",
+        "molecular_native_extension": "inherited; original tracked Rust/toolchain bytes equal; not a new installed native package",
+        "pyunitwizard": "0.28.1"
+      },
+      "reference": {
+        "providers": {
+          "molsysmt": {
+            "origin": "/tmp/phmt-060-consolidation-20261113-a5udv1sv/reader-source/molsysmt/__init__.py",
+            "version": "0+unknown"
+          },
+          "ackredit": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-ackredit/ackredit/__init__.py",
+            "version": "0.11.0+3.g71f7f19"
+          },
+          "depdigest": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-depdigest/depdigest/__init__.py",
+            "version": "0.15.1"
+          },
+          "molsysviewer": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-molsysviewer/molsysviewer/__init__.py",
+            "version": "0.24.0+238.gca7ebea6"
+          },
+          "smonitor": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/smonitor-0.22.1-py_0/site-packages/smonitor/__init__.py",
+            "version": "0.22.1"
+          },
+          "argdigest": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/argdigest-0.17.1-py_0/site-packages/argdigest/__init__.py",
+            "version": "0.17.1"
+          },
+          "pyunitwizard": {
+            "origin": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-capture-20261111-6wh0wkhu/providers-0281/pyunitwizard/__init__.py",
+            "version": "0.28.1"
+          }
+        },
+        "public_files_equal_to_CI_pins": [
+          {
+            "name": "smonitor",
+            "source": "2147c7c641b7cba8a974b193207f686ee3ebe855",
+            "equal_python_files": 40
+          },
+          {
+            "name": "argdigest",
+            "source": "c9c9ee623dab5331fdfa4227bd784dd38620e18b",
+            "equal_python_files": 38
+          },
+          {
+            "name": "pyunitwizard",
+            "source": "2ab37a525ce99728ad8aee846b4a4f7acc4f1b65",
+            "equal_python_files": 83
+          }
+        ],
+        "molecular_source": "05865fbb3ba499d4117d6ba3e1cf55d98a9e239e",
+        "molecular_native_extension": "inherited; original tracked Rust/toolchain bytes equal; not a new installed native package",
+        "pyunitwizard": "0.28.1"
+      },
+      "indices": {
+        "providers": {
+          "molsysmt": {
+            "origin": "/tmp/phmt-060-consolidation-20261113-a5udv1sv/reader-source/molsysmt/__init__.py",
+            "version": "0+unknown"
+          },
+          "ackredit": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-ackredit/ackredit/__init__.py",
+            "version": "0.11.0+3.g71f7f19"
+          },
+          "depdigest": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-depdigest/depdigest/__init__.py",
+            "version": "0.15.1"
+          },
+          "molsysviewer": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-molsysviewer/molsysviewer/__init__.py",
+            "version": "0.24.0+238.gca7ebea6"
+          },
+          "smonitor": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/smonitor-0.22.1-py_0/site-packages/smonitor/__init__.py",
+            "version": "0.22.1"
+          },
+          "argdigest": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/argdigest-0.17.1-py_0/site-packages/argdigest/__init__.py",
+            "version": "0.17.1"
+          },
+          "pyunitwizard": {
+            "origin": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-capture-20261111-6wh0wkhu/providers-0281/pyunitwizard/__init__.py",
+            "version": "0.28.1"
+          }
+        },
+        "public_files_equal_to_CI_pins": [
+          {
+            "name": "smonitor",
+            "source": "2147c7c641b7cba8a974b193207f686ee3ebe855",
+            "equal_python_files": 40
+          },
+          {
+            "name": "argdigest",
+            "source": "c9c9ee623dab5331fdfa4227bd784dd38620e18b",
+            "equal_python_files": 38
+          },
+          {
+            "name": "pyunitwizard",
+            "source": "2ab37a525ce99728ad8aee846b4a4f7acc4f1b65",
+            "equal_python_files": 83
+          }
+        ],
+        "molecular_source": "05865fbb3ba499d4117d6ba3e1cf55d98a9e239e",
+        "molecular_native_extension": "inherited; original tracked Rust/toolchain bytes equal; not a new installed native package",
+        "pyunitwizard": "0.28.1"
+      }
+    },
+    "runtime_equal_to_exact_committed_wheel": true
+  },
+  "original_attempts": {
+    "model_baseline": {
+      "tests": 99,
+      "failure": 95,
+      "error": 0,
+      "skipped": 0,
+      "XML": {
+        "bytes": 532874,
+        "sha256": "e8eabe69e6cbd3f0970dfbde18baba8ea4848968ecc29a32464a7948f535a5ca"
+      },
+      "case_IDs_sha256": "41c2943e8632c0b48dbc60a3bae6b67f03bb898ee42026c26bd5b0863bea2093"
+    },
+    "baseline_call_shape_catches": 4,
+    "initial_implemented": {
+      "tests": 99,
+      "failure": 6,
+      "error": 0,
+      "skipped": 0,
+      "XML": {
+        "bytes": 30780,
+        "sha256": "ec3bb2d2503c257d79ad0539b66eaabb9f2a580881dedddb6d69f4b5a37ddb7e"
+      },
+      "case_IDs_sha256": "41c2943e8632c0b48dbc60a3bae6b67f03bb898ee42026c26bd5b0863bea2093"
+    },
+    "diagnostic_baseline": {
+      "tests": 18,
+      "failure": 6,
+      "error": 0,
+      "skipped": 0,
+      "XML": {
+        "bytes": 8611,
+        "sha256": "c8803211cd3f44438584af3ecf9e4ca80f7e4c7208dbc232448e55c21741d1f8"
+      },
+      "case_IDs_sha256": "618cc1535b599a73e122c060efd572dae512af64e888ca05b5007f8c4fb2d41f"
+    },
+    "diagnostic_preservation_passes": 12,
+    "accepted_model_final": {
+      "tests": 99,
+      "failure": 0,
+      "error": 0,
+      "skipped": 0,
+      "XML": {
+        "bytes": 17438,
+        "sha256": "50048f8a250f6ff58bbd587b6d934ef002471b33a11416613003ea5d446b6ca2"
+      },
+      "case_IDs_sha256": "41c2943e8632c0b48dbc60a3bae6b67f03bb898ee42026c26bd5b0863bea2093"
+    },
+    "reason": "Six original public failures correctly exposed PHMT reference_index mislabelling as structure_index; separate direct guard reproduces six wrong-owner failures. No assertion relaxation: initial/final guards byte-equal.",
+    "guards": {
+      "initial_guard.py": {
+        "bytes": 15826,
+        "sha256": "9fc98dd672efe103de57a914352463d95ba3444088fb2c889b0215505afac561"
+      },
+      "final_guard.py": {
+        "bytes": 15826,
+        "sha256": "9fc98dd672efe103de57a914352463d95ba3444088fb2c889b0215505afac561"
+      },
+      "initial_diagnostic_guard.py": {
+        "bytes": 1094,
+        "sha256": "3990b5c3df3d6417fdd8daf3001f45415b9b07554012b84ea28e2d901ccf6479"
+      },
+      "final_diagnostic_guard.py": {
+        "bytes": 1094,
+        "sha256": "3990b5c3df3d6417fdd8daf3001f45415b9b07554012b84ea28e2d901ccf6479"
+      }
+    }
+  },
+  "wheel": {
+    "path": "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/wheels/pharmacophoremt-0.6.0+36.g48696d6-py3-none-any.whl",
+    "bytes": 4590299,
+    "sha256": "891c5e2a3809ef6aada8e3abe077c06632f8fbb8a5bb19f57938e9a8d78a6f53",
+    "version": "0.6.0+36.g48696d6",
+    "verified_payload_files": 246,
+    "source_equal_runtime_Python_bodies": 191,
+    "support_namespace_shipped": false,
+    "published": false,
+    "build_receipt": {
+      "bytes": 51217,
+      "sha256": "64f2f1891a57ba0f35eb674f199aab11e77d2f01050f42c5c5a1cf5134bf20c8"
+    }
+  },
+  "owned_groups": {
+    "controls": {
+      "result": {
+        "tests": 99,
+        "failure": 0,
+        "error": 0,
+        "skipped": 0,
+        "XML": {
+          "bytes": 17438,
+          "sha256": "86ee7784284c4164b51388bf54c71f0c93b12009d4d768597ba56094069b3e27"
+        },
+        "case_IDs_sha256": "41c2943e8632c0b48dbc60a3bae6b67f03bb898ee42026c26bd5b0863bea2093"
+      },
+      "case_IDs_equal_source": true,
+      "runtime_target": "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/temporary-owned-build/phmt-aligned-model-controls-owned-20261115-mijbf2m7/installed",
+      "loaded_PHMT_modules": 173,
+      "target_only_origins": true,
+      "Python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+      "Pandas": "3.1.1",
+      "Pandas_origin": "/tmp/phmt-pandas-ownership-20261113-l5aof6p2/pandas311/pandas/__init__.py",
+      "SDK_commit": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+      "pre_work_journal": {
+        "bytes": 40521,
+        "sha256": "c5beb8ba520ef6a077ac62f9544ebead6362fc27dc42f4957d8a8c8b0f5d379e"
+      },
+      "support_imports_resources_and_both_links_retired": true,
+      "provider_context": {
+        "providers": {
+          "molsysmt": {
+            "origin": "/tmp/phmt-060-consolidation-20261113-a5udv1sv/reader-source/molsysmt/__init__.py",
+            "version": "0+unknown"
+          },
+          "ackredit": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-ackredit/ackredit/__init__.py",
+            "version": "0.11.0+3.g71f7f19"
+          },
+          "depdigest": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-depdigest/depdigest/__init__.py",
+            "version": "0.15.1"
+          },
+          "molsysviewer": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-molsysviewer/molsysviewer/__init__.py",
+            "version": "0.24.0+238.gca7ebea6"
+          },
+          "smonitor": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/smonitor-0.22.1-py_0/site-packages/smonitor/__init__.py",
+            "version": "0.22.1"
+          },
+          "argdigest": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/argdigest-0.17.1-py_0/site-packages/argdigest/__init__.py",
+            "version": "0.17.1"
+          },
+          "pyunitwizard": {
+            "origin": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-capture-20261111-6wh0wkhu/providers-0281/pyunitwizard/__init__.py",
+            "version": "0.28.1"
+          }
+        },
+        "public_files_equal_to_CI_pins": [
+          {
+            "name": "smonitor",
+            "source": "2147c7c641b7cba8a974b193207f686ee3ebe855",
+            "equal_python_files": 40
+          },
+          {
+            "name": "argdigest",
+            "source": "c9c9ee623dab5331fdfa4227bd784dd38620e18b",
+            "equal_python_files": 38
+          },
+          {
+            "name": "pyunitwizard",
+            "source": "2ab37a525ce99728ad8aee846b4a4f7acc4f1b65",
+            "equal_python_files": 83
+          }
+        ],
+        "molecular_source": "05865fbb3ba499d4117d6ba3e1cf55d98a9e239e",
+        "molecular_native_extension": "inherited; original tracked Rust/toolchain bytes equal; not a new installed native package",
+        "pyunitwizard": "0.28.1"
+      }
+    },
+    "consensus": {
+      "result": {
+        "tests": 189,
+        "failure": 0,
+        "error": 0,
+        "skipped": 0,
+        "XML": {
+          "bytes": 32659,
+          "sha256": "417847433fde8b7f0fc5b9e1f008f54c5c2a756014fc938a77cfad0b73c5e178"
+        },
+        "case_IDs_sha256": "16cfef93afc8450dc41abae02d128b0f9ab0afbb9992b5d190a3a1db87b92c8d"
+      },
+      "case_IDs_equal_source": true,
+      "runtime_target": "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/temporary-owned-build/phmt-aligned-model-controls-owned-20261115-mijbf2m7/installed",
+      "loaded_PHMT_modules": 173,
+      "target_only_origins": true,
+      "Python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+      "Pandas": "3.1.1",
+      "Pandas_origin": "/tmp/phmt-pandas-ownership-20261113-l5aof6p2/pandas311/pandas/__init__.py",
+      "SDK_commit": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+      "pre_work_journal": {
+        "bytes": 40522,
+        "sha256": "e027a8b52d3ace7bd37f4fbbb289567f5040177405fd31fa2e96fce327a598d9"
+      },
+      "support_imports_resources_and_both_links_retired": true,
+      "provider_context": {
+        "providers": {
+          "molsysmt": {
+            "origin": "/tmp/phmt-060-consolidation-20261113-a5udv1sv/reader-source/molsysmt/__init__.py",
+            "version": "0+unknown"
+          },
+          "ackredit": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-ackredit/ackredit/__init__.py",
+            "version": "0.11.0+3.g71f7f19"
+          },
+          "depdigest": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-depdigest/depdigest/__init__.py",
+            "version": "0.15.1"
+          },
+          "molsysviewer": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-molsysviewer/molsysviewer/__init__.py",
+            "version": "0.24.0+238.gca7ebea6"
+          },
+          "smonitor": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/smonitor-0.22.1-py_0/site-packages/smonitor/__init__.py",
+            "version": "0.22.1"
+          },
+          "argdigest": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/argdigest-0.17.1-py_0/site-packages/argdigest/__init__.py",
+            "version": "0.17.1"
+          },
+          "pyunitwizard": {
+            "origin": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-capture-20261111-6wh0wkhu/providers-0281/pyunitwizard/__init__.py",
+            "version": "0.28.1"
+          }
+        },
+        "public_files_equal_to_CI_pins": [
+          {
+            "name": "smonitor",
+            "source": "2147c7c641b7cba8a974b193207f686ee3ebe855",
+            "equal_python_files": 40
+          },
+          {
+            "name": "argdigest",
+            "source": "c9c9ee623dab5331fdfa4227bd784dd38620e18b",
+            "equal_python_files": 38
+          },
+          {
+            "name": "pyunitwizard",
+            "source": "2ab37a525ce99728ad8aee846b4a4f7acc4f1b65",
+            "equal_python_files": 83
+          }
+        ],
+        "molecular_source": "05865fbb3ba499d4117d6ba3e1cf55d98a9e239e",
+        "molecular_native_extension": "inherited; original tracked Rust/toolchain bytes equal; not a new installed native package",
+        "pyunitwizard": "0.28.1"
+      }
+    },
+    "reference": {
+      "result": {
+        "tests": 47,
+        "failure": 0,
+        "error": 0,
+        "skipped": 0,
+        "XML": {
+          "bytes": 7329,
+          "sha256": "903437343c3b89d65aa9d1f09b750d30e5a87549f2c6b5b91ae32581f32e90a8"
+        },
+        "case_IDs_sha256": "bbad18269d84cbdb038b4cf8d3a8db9517f7a03dccedce08984f00ed6ae0834e"
+      },
+      "case_IDs_equal_source": true,
+      "runtime_target": "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/temporary-owned-build/phmt-aligned-model-controls-owned-20261115-mijbf2m7/installed",
+      "loaded_PHMT_modules": 171,
+      "target_only_origins": true,
+      "Python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+      "Pandas": "3.1.1",
+      "Pandas_origin": "/tmp/phmt-pandas-ownership-20261113-l5aof6p2/pandas311/pandas/__init__.py",
+      "SDK_commit": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+      "pre_work_journal": {
+        "bytes": 40522,
+        "sha256": "9df1977338f09eb9edd667acfb215a497bdf23909510d252af8d4d6652a07b9a"
+      },
+      "support_imports_resources_and_both_links_retired": true,
+      "provider_context": {
+        "providers": {
+          "molsysmt": {
+            "origin": "/tmp/phmt-060-consolidation-20261113-a5udv1sv/reader-source/molsysmt/__init__.py",
+            "version": "0+unknown"
+          },
+          "ackredit": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-ackredit/ackredit/__init__.py",
+            "version": "0.11.0+3.g71f7f19"
+          },
+          "depdigest": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-depdigest/depdigest/__init__.py",
+            "version": "0.15.1"
+          },
+          "molsysviewer": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-molsysviewer/molsysviewer/__init__.py",
+            "version": "0.24.0+238.gca7ebea6"
+          },
+          "smonitor": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/smonitor-0.22.1-py_0/site-packages/smonitor/__init__.py",
+            "version": "0.22.1"
+          },
+          "argdigest": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/argdigest-0.17.1-py_0/site-packages/argdigest/__init__.py",
+            "version": "0.17.1"
+          },
+          "pyunitwizard": {
+            "origin": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-capture-20261111-6wh0wkhu/providers-0281/pyunitwizard/__init__.py",
+            "version": "0.28.1"
+          }
+        },
+        "public_files_equal_to_CI_pins": [
+          {
+            "name": "smonitor",
+            "source": "2147c7c641b7cba8a974b193207f686ee3ebe855",
+            "equal_python_files": 40
+          },
+          {
+            "name": "argdigest",
+            "source": "c9c9ee623dab5331fdfa4227bd784dd38620e18b",
+            "equal_python_files": 38
+          },
+          {
+            "name": "pyunitwizard",
+            "source": "2ab37a525ce99728ad8aee846b4a4f7acc4f1b65",
+            "equal_python_files": 83
+          }
+        ],
+        "molecular_source": "05865fbb3ba499d4117d6ba3e1cf55d98a9e239e",
+        "molecular_native_extension": "inherited; original tracked Rust/toolchain bytes equal; not a new installed native package",
+        "pyunitwizard": "0.28.1"
+      }
+    },
+    "indices": {
+      "result": {
+        "tests": 89,
+        "failure": 0,
+        "error": 0,
+        "skipped": 0,
+        "XML": {
+          "bytes": 15111,
+          "sha256": "4927bdd02880678d286a415fc3e7e8408e1a86eb0144965e5a5b6017787efcf9"
+        },
+        "case_IDs_sha256": "da17b6ea995a4d41171ab09989a9d67c0cc20f27899e03025c4134361cc1669c"
+      },
+      "case_IDs_equal_source": true,
+      "runtime_target": "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/temporary-owned-build/phmt-aligned-model-controls-owned-20261115-mijbf2m7/installed",
+      "loaded_PHMT_modules": 173,
+      "target_only_origins": true,
+      "Python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+      "Pandas": "3.1.1",
+      "Pandas_origin": "/tmp/phmt-pandas-ownership-20261113-l5aof6p2/pandas311/pandas/__init__.py",
+      "SDK_commit": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+      "pre_work_journal": {
+        "bytes": 40520,
+        "sha256": "d5b659f4b721c9031ffcfe6215b2b6353cb763e23bd08003aadc91f09bc0e054"
+      },
+      "support_imports_resources_and_both_links_retired": true,
+      "provider_context": {
+        "providers": {
+          "molsysmt": {
+            "origin": "/tmp/phmt-060-consolidation-20261113-a5udv1sv/reader-source/molsysmt/__init__.py",
+            "version": "0+unknown"
+          },
+          "ackredit": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-ackredit/ackredit/__init__.py",
+            "version": "0.11.0+3.g71f7f19"
+          },
+          "depdigest": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-depdigest/depdigest/__init__.py",
+            "version": "0.15.1"
+          },
+          "molsysviewer": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-molsysviewer/molsysviewer/__init__.py",
+            "version": "0.24.0+238.gca7ebea6"
+          },
+          "smonitor": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/smonitor-0.22.1-py_0/site-packages/smonitor/__init__.py",
+            "version": "0.22.1"
+          },
+          "argdigest": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/argdigest-0.17.1-py_0/site-packages/argdigest/__init__.py",
+            "version": "0.17.1"
+          },
+          "pyunitwizard": {
+            "origin": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-capture-20261111-6wh0wkhu/providers-0281/pyunitwizard/__init__.py",
+            "version": "0.28.1"
+          }
+        },
+        "public_files_equal_to_CI_pins": [
+          {
+            "name": "smonitor",
+            "source": "2147c7c641b7cba8a974b193207f686ee3ebe855",
+            "equal_python_files": 40
+          },
+          {
+            "name": "argdigest",
+            "source": "c9c9ee623dab5331fdfa4227bd784dd38620e18b",
+            "equal_python_files": 38
+          },
+          {
+            "name": "pyunitwizard",
+            "source": "2ab37a525ce99728ad8aee846b4a4f7acc4f1b65",
+            "equal_python_files": 83
+          }
+        ],
+        "molecular_source": "05865fbb3ba499d4117d6ba3e1cf55d98a9e239e",
+        "molecular_native_extension": "inherited; original tracked Rust/toolchain bytes equal; not a new installed native package",
+        "pyunitwizard": "0.28.1"
+      }
+    }
+  },
+  "owned_distinct_case_count": 424,
+  "owned_runtime_module_union": 173,
+  "administrative": {
+    "new_commands": [
+      [
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      [
+        "devtools/conda_environment.py",
+        "generate",
+        "--check"
+      ],
+      [
+        "devtools/check_dependency_routes.py",
+        "--declared-only"
+      ],
+      [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ]
+    ],
+    "reporting_tests": 3,
+    "archive_tests": 18,
+    "current_distribution_controls": {
+      "tests": 27,
+      "failure": 0,
+      "error": 0,
+      "skipped": 0,
+      "XML": {
+        "bytes": 5007,
+        "sha256": "1c1f7b7956a4c04b1a24940628a5e089b95602091fc7e668ca3652de0f60b867"
+      },
+      "case_IDs_sha256": "18af3b5a4ac062c9eccbb890df3186d9a6ab92f5bfeebfa2ac02aedfcddaa6c4"
+    },
+    "whole_tree_Ruff_lint_format": true,
+    "formatted_files": 557,
+    "unchanged_tooling_support_observation": {
+      "prior_owning_receipt": "devguide/evidence/consensus_argument_controls_20261115.json",
+      "prior_metadata_source": "a293518c8f239852ba5e8852d91e1c521b3e94ed",
+      "scope": "200 tooling/support inputs remain unchanged; current27 distribution controls are independently executed for the new control/diagnostic increment, not borrowed qualification.",
+      "unchanged_files": {
+        ".github/CONTRIBUTING.md": {
+          "bytes": 2753,
+          "sha256": "e5f42c68e193d621c6e3b300dec7e1b3534c5d0c0278f235a6c51cc0aee67fdd"
+        },
+        ".github/DISCUSSION_TEMPLATE/chemical-libraries.yml": {
+          "bytes": 3035,
+          "sha256": "0dda5dbc595f2c8fcb7b354095c9030351b98c0cc822e13fa5e4589f63fdd186"
+        },
+        ".github/DISCUSSION_TEMPLATE/pharmacophore-tools.yml": {
+          "bytes": 3394,
+          "sha256": "eb50fd2f8ae589bfa189e1c46304dbef545bac80f557ffef4143ef193832ca82"
+        },
+        ".github/PULL_REQUEST_TEMPLATE.md": {
+          "bytes": 225,
+          "sha256": "5a694b80bcc024bbf9d110d752b8a36316920628c9e610c0beb8ec33c939b666"
+        },
+        ".github/gh-run-receptor.yaml": {
+          "bytes": 361,
+          "sha256": "2e84c7bc2aab5dff26a356cb8714454dcea40162fbaa8129f5a78b4a36551b59"
+        },
+        ".github/workflows/CI.yaml": {
+          "bytes": 7818,
+          "sha256": "25e86c29846199f622eed8eaad320b39813845ca84b3ee5953939cb5edb5f324"
+        },
+        ".github/workflows/build_and_upload_conda_packages.yaml": {
+          "bytes": 865,
+          "sha256": "18369344a3af440b5a8227469d14641b2f6e3fb7b8d5e52b95cf48ed37233f9a"
+        },
+        ".github/workflows/conda_publication_governance.yaml": {
+          "bytes": 273,
+          "sha256": "353f4080e59d509f922f7e18b426100f523c62f9958044fc9623ce4e30c37d85"
+        },
+        ".github/workflows/feature_reuse_native_qualification.yaml": {
+          "bytes": 6573,
+          "sha256": "89f52d3982408db82961c73a48cfc8c5e1cc01f85d8efbb696f46914bea5d1e0"
+        },
+        ".github/workflows/feature_reuse_resource_probe.yaml": {
+          "bytes": 10577,
+          "sha256": "f983e38a0279eaa0511b7134f22cdf122bae394b936709ab7d0fdb1b79c917a0"
+        },
+        ".github/workflows/molsyssuite-policy.yml": {
+          "bytes": 250,
+          "sha256": "6cc62208156f765ca0456e3bc5f398934263e03afc7063c69afa692c5dafdffd"
+        },
+        ".github/workflows/promote_conda_package.yaml": {
+          "bytes": 1301,
+          "sha256": "2932f0b180896c7d6d8352fb39aed0f2d1cc15dc4f4ff0b2e997c36320de644e"
+        },
+        ".github/workflows/sphinx_docs_to_gh_pages.yaml": {
+          "bytes": 1702,
+          "sha256": "b988063c4cc81fd4532b05ea04724ec8822653b054e101a0da93b0e6702df6f9"
+        },
+        ".github/workflows/test_installed_conda_package.yaml": {
+          "bytes": 799,
+          "sha256": "d6c1713c4241ad3c00128901eab8ce9a4f761398d8e23d4fe863432461c33df0"
+        },
+        "devtools/README.md": {
+          "bytes": 6598,
+          "sha256": "517209aeed34f576b6f7fc41a841aee836a28c102c85ff551cced736a0425e42"
+        },
+        "devtools/README_pip.md": {
+          "bytes": 158,
+          "sha256": "98b80bfdd81c251469529b47f60a51fde7e1b1f62e6931feb1e97df9a676684d"
+        },
+        "devtools/aromatic_interaction_cases.py": {
+          "bytes": 847,
+          "sha256": "7878a03ab99d4d40f7135b64bb5dd64ab934fb5fca3ce41178325d4d5c383dc3"
+        },
+        "devtools/audit_eralpha.py": {
+          "bytes": 1059,
+          "sha256": "70114985ea5dd6e121c486457b97a6a897530da49a94ffe434b94e9c498eb11a"
+        },
+        "devtools/audit_eralpha_receptor.py": {
+          "bytes": 1999,
+          "sha256": "dac1f703edfa7ec92379b589456a4ff9d7e338271da927483eb37a8d1e7b87fd"
+        },
+        "devtools/audit_eralpha_sources.py": {
+          "bytes": 913,
+          "sha256": "978b8070cdd2c614240114c1a7a1257de6bcbfebc71f6498547935fc71ea3d7f"
+        },
+        "devtools/audit_legacy_cliques.py": {
+          "bytes": 550,
+          "sha256": "b36eb75adacb8ee18249f43e0fb4300c9b9dc66b08badefe44376e130fc191c7"
+        },
+        "devtools/benchmark_retrieval_cost.py": {
+          "bytes": 3658,
+          "sha256": "3d4572af4caff31b871bf726b92e4948b86c83f9e302500ff245bedfbd1a8728"
+        },
+        "devtools/benchmark_rigid_consensus.py": {
+          "bytes": 2447,
+          "sha256": "a6834ab79f88ff946998edf27a73c194e71685244256acae4bc9e27190a0e56f"
+        },
+        "devtools/benchmark_rigid_refinement.py": {
+          "bytes": 11533,
+          "sha256": "7372e39a0ec37f2fcee60b70555fbd7e23fc79426f8183582a8f315361fd0339"
+        },
+        "devtools/brd4_label_capacity.py": {
+          "bytes": 11212,
+          "sha256": "d8385731e5604fe0122073457077e89515bf4776ed9603fcbd69072437905560"
+        },
+        "devtools/broadcast_requirements.py": {
+          "bytes": 252,
+          "sha256": "3866f956515e4bd7d9f44b8c9abb290a00b1a3d9affa2c71924cc25e358c1822"
+        },
+        "devtools/ccd_interaction_cases.py": {
+          "bytes": 1236,
+          "sha256": "3e468468fcca2ff82c5be71c5acfff4156dbd108944f18605ab3268dc3fb7bcc"
+        },
+        "devtools/check_dependency_routes.py": {
+          "bytes": 1347,
+          "sha256": "ed265ef9652d0c8c945a1d7745ce232260ea3bf55617c6ef87b45c683b2cb64a"
+        },
+        "devtools/ci_backlog.py": {
+          "bytes": 4675,
+          "sha256": "ebc15804ae9f7884e81731be09ab3c76ed6a9098d9ce8d08b6bb06a567c5fc90"
+        },
+        "devtools/compare_rdkit_bounds.py": {
+          "bytes": 5554,
+          "sha256": "7a03f508e6c802fff49d550e2c157c66f47a6aa38a9f7f5b75895be9bc078b43"
+        },
+        "devtools/compare_rigid_refinement.py": {
+          "bytes": 6400,
+          "sha256": "3787d0eef27602f7e5dc920dac93c45a55c1d92319160f1dd835b018d7856c3c"
+        },
+        "devtools/conda-build/README.md": {
+          "bytes": 13308,
+          "sha256": "33be9bc2fce0d968eeb1d5f5236037cf5ca34da3a39f8a7acb570e855bd50ec8"
+        },
+        "devtools/conda-build/build.sh": {
+          "bytes": 96,
+          "sha256": "17ff1f14706ef9b1e347867dbaaddab0a11e003e4e44a7fedd28261362b6ee13"
+        },
+        "devtools/conda-build/meta.yaml": {
+          "bytes": 1032,
+          "sha256": "797d9de95959957288d33344f11b2660dbf53af4cef9e9783dd7752e03f6d87c"
+        },
+        "devtools/conda-build/release_plan.example.toml": {
+          "bytes": 2293,
+          "sha256": "626b9024d0ffd9a3626da4dea7cd86e8b3e524a4e76e409619fc78cc378e95e9"
+        },
+        "devtools/conda-build/release_plan.toml": {
+          "bytes": 2624,
+          "sha256": "e6f6e656c205a2e27d2cba75f99d00517832b0ad98e7d917cb67229c4533cae6"
+        },
+        "devtools/conda-envs/README.md": {
+          "bytes": 7030,
+          "sha256": "283c0a953e221384ec86352cf7512da427234d998a1c1000089d865ef87f241d"
+        },
+        "devtools/conda-envs/build_env.yaml": {
+          "bytes": 100,
+          "sha256": "b976c3ae173b648c39744d8ee1cb0bcf2e4f217c202ea08a0f864eede636f4bb"
+        },
+        "devtools/conda-envs/create_conda_env.py": {
+          "bytes": 372,
+          "sha256": "4963201f43d40ecd0d59ab038a7a5850b39d48f43f50cce19cf56d8029fe755e"
+        },
+        "devtools/conda-envs/development_env.yaml": {
+          "bytes": 456,
+          "sha256": "7c2a4441824d9470e18a861cdd3081f869169b90ca6aec1a63dffbedbadce6ee"
+        },
+        "devtools/conda-envs/docs_env.yaml": {
+          "bytes": 410,
+          "sha256": "60958373c3d4f1ec2063e9f09306fc1178e9a07dffbde8990e25182c87ef200f"
+        },
+        "devtools/conda-envs/importable_env.yaml": {
+          "bytes": 98,
+          "sha256": "a222906012684dfa747912612b785707d2dc235417873c8bf800d4bf27568499"
+        },
+        "devtools/conda-envs/production_env.yaml": {
+          "bytes": 241,
+          "sha256": "abfcd8b0a8411fafdbca91b818a56ee463e22297babb7141c1b0acd993cc2fc9"
+        },
+        "devtools/conda-envs/public_test_env_py314.yaml": {
+          "bytes": 568,
+          "sha256": "3cb98251b17446ad971600549730634f831b66b22687bd3bff5faa5b244580b2"
+        },
+        "devtools/conda-envs/setup_env.yaml": {
+          "bytes": 89,
+          "sha256": "5ad4624ba24db2b8443d11344a769f2c050992aea6958696fa114eb1a12e0678"
+        },
+        "devtools/conda-envs/test_env.yaml": {
+          "bytes": 739,
+          "sha256": "5509fa82dd77eb5821660c9b4306d9f8226e8a3ad465501944a495754177f5cd"
+        },
+        "devtools/conda-envs/test_env_py313.yaml": {
+          "bytes": 744,
+          "sha256": "9a7bbaac82f2628c4684fa995d716259772a4ec6d66c608123c0cc319f50a354"
+        },
+        "devtools/conda-envs/test_env_py314.yaml": {
+          "bytes": 822,
+          "sha256": "2bea16f8dcb26b5ad63af83102e5a9976e770da6529c5efc1ac15da6d9ed64fc"
+        },
+        "devtools/conda-envs/update_conda_env.py": {
+          "bytes": 372,
+          "sha256": "ad75457f840ae5def254579cceebebecaebe9a013829ea766d038ed151739d75"
+        },
+        "devtools/conda_environment.py": {
+          "bytes": 370,
+          "sha256": "3fda28264a87d32cf632757ef1be65518c4da9d71152fd3a4c8b89ecc6f2b962"
+        },
+        "devtools/dependency_routes.toml": {
+          "bytes": 16464,
+          "sha256": "f73abcaa217c2a2f466e9dd6a971d23140c71127f3e2f0b0b45eae6e68b0820b"
+        },
+        "devtools/devguide_index.py": {
+          "bytes": 3283,
+          "sha256": "85c00d4dc3afbff09f8adf8f96fb80d20c30354a83f6bed337be8c2ba0834e5e"
+        },
+        "devtools/devguide_reports.py": {
+          "bytes": 7000,
+          "sha256": "7c4fea56d1e407968455298c41046d3ff6d41263a73429e78c751b6281ce73e7"
+        },
+        "devtools/diagnose_eralpha_interface.py": {
+          "bytes": 2085,
+          "sha256": "0de0fea7031493412a5a31e29561d2ccf46e8304e5eaad61f02c43f2d0692f2b"
+        },
+        "devtools/environment_tools.toml": {
+          "bytes": 1092,
+          "sha256": "985977357301990caa1d72141d3db6706fa3dbd497074aa3e0f4efa7f639879a"
+        },
+        "devtools/evidence_archive.py": {
+          "bytes": 921,
+          "sha256": "9dbc3e9fe8c5969fcefccd1284f6810ba42f23ac75516813ed28aa863fa1d3a8"
+        },
+        "devtools/exercise_feature_store_workflow.py": {
+          "bytes": 12854,
+          "sha256": "ce539ee9bd0e2382049f29830aafff9016fc2d86ee76a138a369fcd5bc8d1be7"
+        },
+        "devtools/feature_reuse_native_qualification.py": {
+          "bytes": 19290,
+          "sha256": "fb308b7c3c335a718489df80aec65d5120eb4b6e31209b186c077eb0ee71b10a"
+        },
+        "devtools/feature_reuse_plan.py": {
+          "bytes": 11099,
+          "sha256": "62a75e8efb6f366f57351d4ea70e07be1904fe93edccd7a747706de2edee3211"
+        },
+        "devtools/interaction_collection_cases.py": {
+          "bytes": 558,
+          "sha256": "6c11d2babf8963211f336529d1a890f92a24f39d10fdd90d43db5498306c65da"
+        },
+        "devtools/legacy_clique_helpers.py": {
+          "bytes": 426,
+          "sha256": "f93c9e690ee87c4de12d6f2af0a02ae7ccf2a5e86d0dc9ba53179a6b19be9747"
+        },
+        "devtools/prepare_eralpha_hydrogens.py": {
+          "bytes": 462,
+          "sha256": "19195cd732b16b88762eefa2bd2ffd98808783964e8a926e24b771ba99f609ab"
+        },
+        "devtools/prepare_eralpha_interface.py": {
+          "bytes": 798,
+          "sha256": "90166527d712568af555707568eca564474ffd9b995a2462da6244783d61cce9"
+        },
+        "devtools/prepare_eralpha_ligand.py": {
+          "bytes": 1106,
+          "sha256": "e0e4b89fec13ebec6e7616e1c3077e6e2cfd785d7f75d2fef2a39ee5ea0e309b"
+        },
+        "devtools/prepare_pharmer_p1.py": {
+          "bytes": 2707,
+          "sha256": "ce1b793015c6757128c107f0daffe6fb8c5986ca874d08d3ace5a330037404cf"
+        },
+        "devtools/prepared_ccd_ligands.py": {
+          "bytes": 1161,
+          "sha256": "eb82eb876681bad158dc25ebc98a28cee68f427f6e38e40a76b7e93fb1477281"
+        },
+        "devtools/prepared_consensus_workflow.py": {
+          "bytes": 1639,
+          "sha256": "686b3977610c0ddb4f398f1f18b7be60a77b66ff6d31c1e92231bde146435119"
+        },
+        "devtools/prepared_receptor_workflow.py": {
+          "bytes": 2173,
+          "sha256": "2ac8d320ba0287a6893c26b846fe59dd4dbfc476521e014f1050d77d6069946a"
+        },
+        "devtools/prepared_search_workflow.py": {
+          "bytes": 1795,
+          "sha256": "b939e13efd54081a6de1042b16018078015f476ebc34919b361c4cf4c2724e74"
+        },
+        "devtools/prepared_workflow.py": {
+          "bytes": 2771,
+          "sha256": "96b7cb214bfee62dcf4e204a8a90f5ce3629a838b34bd35a58a207299365e0e1"
+        },
+        "devtools/profile_saved_run.py": {
+          "bytes": 14804,
+          "sha256": "15df4ef3ba71f88166c6b011db06a6040e47e02e0417ed6773d379da3637b0d6"
+        },
+        "devtools/qualify_binding_interface_handoff.py": {
+          "bytes": 178,
+          "sha256": "c5458a60ce4dd48a71dcef7bd1550190d9f3e1873d20d1dd1f6bafe80bdb062a"
+        },
+        "devtools/qualify_feature_snapshots.py": {
+          "bytes": 6908,
+          "sha256": "e80fd2e69e1500868b9b96cdf870b7d9122b2589dced9fa6303203ec6b754497"
+        },
+        "devtools/qualify_feature_store.py": {
+          "bytes": 5039,
+          "sha256": "b21f4fea034b8ec7771188ecddcb598df2499d5ed875eff2ce32a77dd504c667"
+        },
+        "devtools/qualify_pharmer_p1.py": {
+          "bytes": 4002,
+          "sha256": "64c50c01adb4e853195ebe823c96447de275422b428bca534349530a67c552d5"
+        },
+        "devtools/qualify_pmapper_controls.py": {
+          "bytes": 4988,
+          "sha256": "8e9033910a26b6eeb688cf7341149a2f972827f41103f9a36b3ed98341e88ee0"
+        },
+        "devtools/qualify_retrieval_controls.py": {
+          "bytes": 2499,
+          "sha256": "f5a93a9fac42baf3b04d1559a0f4952916fc09d8533ef0f2139d77e294b41eb2"
+        },
+        "devtools/qualify_snapshot_retrieval.py": {
+          "bytes": 4226,
+          "sha256": "544f131e2595ec6f3ae40332c85d0d41e00c61c9918d2a0103f8845e3cb8f7c3"
+        },
+        "devtools/qualify_typed_retrieval.py": {
+          "bytes": 4332,
+          "sha256": "04da837af6ddf60202e9f213ec0a48fdb66ddf4736a2ca7bd15c56bc51478790"
+        },
+        "devtools/requirements.yaml": {
+          "bytes": 894,
+          "sha256": "04c61e89ffb0d1287aaaea0175fa7c003cb163dcd24c06e66f5cffcbb6b16b7d"
+        },
+        "devtools/requirements/controlled_suite_dependencies.txt": {
+          "bytes": 740,
+          "sha256": "01da67a8850a436385022063e3ce81cefe82b652b4066ebb0c2039e6cf0d537a"
+        },
+        "devtools/requirements/controlled_suite_dependencies_py314.txt": {
+          "bytes": 740,
+          "sha256": "01da67a8850a436385022063e3ce81cefe82b652b4066ebb0c2039e6cf0d537a"
+        },
+        "devtools/rigid_consensus_cases.py": {
+          "bytes": 570,
+          "sha256": "45f54d0279a683f56ae6ae768e5430fc96d2ace2f3f6b27e6bed48fb7a1b33c1"
+        },
+        "devtools/rigid_refinement_cases.py": {
+          "bytes": 620,
+          "sha256": "b6760f5c10c10daf4b2021fa04e672a6e047da99bca6c5111162742083b416b7"
+        },
+        "devtools/rigid_refinement_workloads.py": {
+          "bytes": 1204,
+          "sha256": "f15fdac92a1130a3971c711f3a500f5736aaf415b7f1241bb65fc7b02b8e76a6"
+        },
+        "devtools/start_dev_env.sh": {
+          "bytes": 390,
+          "sha256": "b57a95f1084b28884e3256bd36f58e158c82c8c92e50ec027386ad79c45d4470"
+        },
+        "devtools/tests/scientific/README.md": {
+          "bytes": 3683,
+          "sha256": "aaeeb3bf52b766f82580363342659a088b2f548d118c438802b23e3f18e04edb"
+        },
+        "devtools/tests/scientific/test_carbonyl_acceptor_receiving.py": {
+          "bytes": 15939,
+          "sha256": "30e368e70334395f238ae9567fdd551cdc159e103db891aa61bdb1fdd0dc4101"
+        },
+        "devtools/tests/scientific/test_public_carbonyl_generation.py": {
+          "bytes": 6403,
+          "sha256": "a804b801244f12115ba6b0ac1eafc4efe0d688f65242b425faceb6c6dd20270e"
+        },
+        "devtools/tests/scientific/test_receptor_contribution.py": {
+          "bytes": 16152,
+          "sha256": "cb16dadaffc9403b850f4b7acbe655a0ff18083f2a4d0a7b0451f4358b68f289"
+        },
+        "devtools/tests/scientific/test_tyr_cardinality.py": {
+          "bytes": 11995,
+          "sha256": "e5f612b61bca7a626247ff3204a633d6f1fdc1b8da3335b3fa58594c9d322529"
+        },
+        "devtools/tests/test_brd4_label_capacity.py": {
+          "bytes": 8710,
+          "sha256": "94d43b535ba001ae38c89469ce558cf4bcad4c4ebf6ae320901fe142f02466a8"
+        },
+        "devtools/tests/test_dependency_classification.py": {
+          "bytes": 3790,
+          "sha256": "3c374a7e954fe08230572db9324c04c9a1754d916b8cc4326b6c4bc4bbe5ae90"
+        },
+        "devtools/tests/test_distribution_contract.py": {
+          "bytes": 31566,
+          "sha256": "da9885db82357420dee3ebd32d5c1a3a82ec5089c8a1f9519270ab41f2cb4eaa"
+        },
+        "devtools/tests/test_docs_navigation.py": {
+          "bytes": 2688,
+          "sha256": "a586d3ff15e6cf75a47c847df3268c91ebe101932d422d525f4988d91b9ec501"
+        },
+        "devtools/tests/test_documentation_build.py": {
+          "bytes": 940,
+          "sha256": "060a159f4aae1332e3d71b4ef2d7e472a372214eba2620e358b01554c7ffdfb6"
+        },
+        "devtools/tests/test_environment_tools.py": {
+          "bytes": 8811,
+          "sha256": "1cae253dba6a9e0787c8548a59d9ea0da3e45cf77291ba753bba4c9de5782636"
+        },
+        "devtools/tests/test_esr1_activity_pilot.py": {
+          "bytes": 25183,
+          "sha256": "4118187d5b800777f5eed5491c92716282a6c051e236645fdb1d20b702855828"
+        },
+        "devtools/tests/test_esr1_binding_methods.py": {
+          "bytes": 5096,
+          "sha256": "1864547a2a3e301eaee873de5c98b3494b3f8f11cfabcb6df018ae2410eba18c"
+        },
+        "devtools/tests/test_esr1_binding_pool2.py": {
+          "bytes": 13466,
+          "sha256": "11dc722f53fdedf01787ba86cd96bfba9ab5f96b961d16e52054594702f71423"
+        },
+        "devtools/tests/test_esr1_binding_readiness.py": {
+          "bytes": 4678,
+          "sha256": "3404c2bdc2b03f7658c0a63f40b7322a80f881151d37823a469684127b41209f"
+        },
+        "devtools/tests/test_esr1_binding_source_qualification.py": {
+          "bytes": 7264,
+          "sha256": "002e360f6cb7926c8aa45ce5079722918e3d94b6e3767be57035d958336f72cc"
+        },
+        "devtools/tests/test_esr1_consensus_declaration.py": {
+          "bytes": 7624,
+          "sha256": "fda5a86d5e46c0bd021d8e373ed78476a571ee5507392326d03dfd93bec13566"
+        },
+        "devtools/tests/test_esr1_consensus_evaluation.py": {
+          "bytes": 12041,
+          "sha256": "11a69082da3e3ea680db9115406d3e27e94df4c206550b9974dad54d6fc0f43a"
+        },
+        "devtools/tests/test_esr1_consensus_training.py": {
+          "bytes": 15470,
+          "sha256": "4985b0678e028b9641a44e8827e67f0aa6bd01abab37eb475855018ca3eac1ea"
+        },
+        "devtools/tests/test_feature_reuse_native_qualification.py": {
+          "bytes": 17651,
+          "sha256": "f5468d8ae70fe0d055fba50123c2c840ecb6585aefd141f9267712fe6c53c80a"
+        },
+        "devtools/tests/test_pubchem3d_receiving_pilot.py": {
+          "bytes": 11588,
+          "sha256": "1b540b25a08a165c92f4e66744176033c331214babfd5fba3ab472425bc13ced"
+        },
+        "devtools/tests/test_reference_run_inspection.py": {
+          "bytes": 19825,
+          "sha256": "f2b44915bcb0e56f70ac604d47e4b9b865b92fba69254e4df94f50baa98d5b37"
+        },
+        "devtools/tests/test_reference_run_store.py": {
+          "bytes": 23950,
+          "sha256": "03b2a18c2e70053aff98659869caaf9ff149f837730a36cd08bcb65879f6905b"
+        },
+        "devtools/tests/test_saved_results_replay.py": {
+          "bytes": 4551,
+          "sha256": "35fbb0c9ba52a40abf9d4fe8881c6ff7279e241ebe393cc9534ca166eb2221f4"
+        },
+        "devtools/validate_aromatic_interactions.py": {
+          "bytes": 3044,
+          "sha256": "a30d81f25d2106f7345c43bc2ca6a2e312d8806a1e6078cf2c107e4e3a6bfadc"
+        },
+        "devtools/validate_ccd_interactions.py": {
+          "bytes": 14641,
+          "sha256": "59deb5565d22c7fe273bfaf953c33d21436203e3c3ac6ecaf6e98a81d5b4776c"
+        },
+        "devtools/validate_eralpha_exclusions.py": {
+          "bytes": 2051,
+          "sha256": "77fa61ee674b7e5890fdd054668344af309dbc355ae9184ca1dcca1ed3c03e53"
+        },
+        "devtools/validate_eralpha_hydrogens.py": {
+          "bytes": 2503,
+          "sha256": "cf419e61454bcefe5b9a7c4c1f1373085255609dda3d2ba9d696290a79f19128"
+        },
+        "devtools/validate_eralpha_interface.py": {
+          "bytes": 2107,
+          "sha256": "64b5ac22fd170b28424f4fc53d208fd78d9a93ba2a421313b83cc03f066a69b0"
+        },
+        "devtools/validate_eralpha_template.py": {
+          "bytes": 2003,
+          "sha256": "0bb3fa5caa45d673aa3ce736f54bf85aefe7274fe5497360d35ed64bf364582c"
+        },
+        "devtools/validate_interaction_composition.py": {
+          "bytes": 8576,
+          "sha256": "f828c1a011f9934a3a729cce784a3408c7ccf0dc27db4f8a0a98ebd24f77aade"
+        },
+        "devtools/validate_ionic_interactions.py": {
+          "bytes": 8975,
+          "sha256": "8cc99a7e38003547d4080cf7b0b546cf7adab4ed341f82de8c86e9e1e7265099"
+        },
+        "devtools/validate_prepared_ccd_ligands.py": {
+          "bytes": 2559,
+          "sha256": "7622405ac6cd5388c9d773b322e2413a5f2927b15c447bc9af77fe9a85b3a1dc"
+        },
+        "devtools/viewer_addon_browser_fixture.ipynb": {
+          "bytes": 1192,
+          "sha256": "e4a080e6ff089d5367203b8b5f61913c42b7c7d1892e6f5f61d234060bda894b"
+        },
+        "devtools/viewer_addon_browser_probe.mjs": {
+          "bytes": 13012,
+          "sha256": "0672d7484b801a12206623d6cf3b1c66f012941da9b5b73e35b7c02010d104b6"
+        },
+        "phmt_test_support/README.md": {
+          "bytes": 6874,
+          "sha256": "2b83e4725de6bc0af272e87654a18cbe3fabff5bb92eb1aa273ec8fa82fff18f"
+        },
+        "phmt_test_support/__init__.py": {
+          "bytes": 74,
+          "sha256": "e7d8385b8913453b4690e55372f4a1937b927dacaf18a625a25a81090ef74bf2"
+        },
+        "phmt_test_support/absence_inputs.py": {
+          "bytes": 5917,
+          "sha256": "2853a9abe9c9a1491323acb2f636b48a2af205c3cf268556a8cfae3e46f5707e"
+        },
+        "phmt_test_support/aromatic_interaction_cases.py": {
+          "bytes": 581,
+          "sha256": "d6cb981aebcc9855cb19e17c876dca33a3241f29d24d05a4a7db99476d4813d1"
+        },
+        "phmt_test_support/audit_eralpha.py": {
+          "bytes": 5018,
+          "sha256": "a27ac8a7dd7537447fd865970fa81ff869f5ca819d553abbf0665d02bf39bf36"
+        },
+        "phmt_test_support/audit_eralpha_receptor.py": {
+          "bytes": 12530,
+          "sha256": "6babf3722a9b962fe88798d0902842f038ab2cecda2497c4fde046cd08a445a2"
+        },
+        "phmt_test_support/audit_eralpha_sources.py": {
+          "bytes": 4843,
+          "sha256": "414e62567b5e9e4c211497662cc96b3e268db0b2f37dc971fe2a5f73f5da30eb"
+        },
+        "phmt_test_support/audit_legacy_cliques.py": {
+          "bytes": 3162,
+          "sha256": "4b9940fcda450e035ffbcd416e80d56674b0b70d3f1875820f35c1245e86b047"
+        },
+        "phmt_test_support/benchmark_cached_generation.py": {
+          "bytes": 14887,
+          "sha256": "165b6ddc6feca62b0004d0f2aad66bd8f334af008a19e077fb7b6289e3333d84"
+        },
+        "phmt_test_support/benchmark_rigid_consensus.py": {
+          "bytes": 13729,
+          "sha256": "30e301fa07b984c30df2e8025a9a84f513347f8cf035dc7c4b4b7f475ebceebc"
+        },
+        "phmt_test_support/binding_interface_handoff.py": {
+          "bytes": 9879,
+          "sha256": "0867e83fd41f3f66bfdd593dae2fad9389b84db30f4952cd28fdf770a20888c8"
+        },
+        "phmt_test_support/carbonyl_acceptor_receiving.py": {
+          "bytes": 24201,
+          "sha256": "d921501d5e2bd929c3fb726256a06b366082ce1d4e251c3f3845bbee40270d3e"
+        },
+        "phmt_test_support/ccd_interaction_cases.py": {
+          "bytes": 5854,
+          "sha256": "f535001ce2ebd292f6c449c7819ac4ba0b916f10791fb1402c60de84ff223cae"
+        },
+        "phmt_test_support/diagnose_eralpha_interface.py": {
+          "bytes": 15494,
+          "sha256": "12765a9f34f8f88b7a4b10d6e8241e8f072aa2209710c3d3b9fe0000722fe0cc"
+        },
+        "phmt_test_support/esr1_activity_pilot.py": {
+          "bytes": 27897,
+          "sha256": "4dfd1bd96326865bb8dda055119e5248b7039ad4b9777d6667236d56f8d1f0d5"
+        },
+        "phmt_test_support/esr1_binding_pool2.py": {
+          "bytes": 14370,
+          "sha256": "0260810da0a89a3e1c0b30fc10dada3737c3f868531a129a4d4b2120d19b0a86"
+        },
+        "phmt_test_support/esr1_binding_readiness.py": {
+          "bytes": 9413,
+          "sha256": "0b9a5cf9472f5ef953d02aae522bf2cda49d714e411db03602f36fd3bf2fa54d"
+        },
+        "phmt_test_support/esr1_binding_source_qualification.py": {
+          "bytes": 8922,
+          "sha256": "60d916500c1af0f8f3e7a468dad948e281dc058193204d8992cece6dbbf4ebae"
+        },
+        "phmt_test_support/esr1_consensus_declaration.py": {
+          "bytes": 10271,
+          "sha256": "c97e86c35ddeaae4715f81b1d1c640955fceb15245ee29b3d86b2a069cc466eb"
+        },
+        "phmt_test_support/esr1_consensus_evaluation.py": {
+          "bytes": 20541,
+          "sha256": "1784c1e341c11c8e2b23fbc11094a2d7f8ae2ab66c10e98b5512fcc364444b5b"
+        },
+        "phmt_test_support/esr1_consensus_readiness_declaration.py": {
+          "bytes": 6149,
+          "sha256": "3e3dcdbcf2fec2c13089bb4d59cf813408413989c7b92486db370cb27bd5163a"
+        },
+        "phmt_test_support/esr1_consensus_training.py": {
+          "bytes": 18227,
+          "sha256": "c39ce9bab4e0b70b95bdc9faaaf0a82ecbe15a3cff218d0f536f473655eaef80"
+        },
+        "phmt_test_support/evidence_archive.py": {
+          "bytes": 4195,
+          "sha256": "abddcfb7f8c4e0253ad852deb789e69d7329191f46745e90f8ca8eaf4f0ae5bb"
+        },
+        "phmt_test_support/feature_archive_export.py": {
+          "bytes": 3474,
+          "sha256": "efdb039e9b6fc1781ffa16230e2561103e4677dbb40b0e17270b556ea900998e"
+        },
+        "phmt_test_support/feature_asset_admission/__init__.py": {
+          "bytes": 1874,
+          "sha256": "69f342cd9fbd4d53260d3ed86c4eae7f9ec910a3c92727b9b7d119fcf4f2250d"
+        },
+        "phmt_test_support/feature_asset_admission/_contracts.py": {
+          "bytes": 3313,
+          "sha256": "db978e4ee0d9c1b6bd80589f845e577c519e204817161babc3d9921b1c1e1eec"
+        },
+        "phmt_test_support/feature_asset_admission/_diagnostics.py": {
+          "bytes": 898,
+          "sha256": "48be42bf9a8fa42c4bb02899f4e941ed7b1748000d537e776f4004d568daafc4"
+        },
+        "phmt_test_support/feature_asset_admission/_smonitor.py": {
+          "bytes": 1527,
+          "sha256": "480e7efb3745f3e67da4f8b0575c10aad86beb498519801c4ef1aa664032da3d"
+        },
+        "phmt_test_support/feature_reuse_experiment.py": {
+          "bytes": 9164,
+          "sha256": "96bba5fcc9a833909760759dcf10b565564e78394da94c9cce3ea613dd0d6f12"
+        },
+        "phmt_test_support/feature_snapshot.py": {
+          "bytes": 13818,
+          "sha256": "1e4ae7deb7a0e815dcefcc7d3698d6f1f13919a887fb9e72d737f7d1bf75dba2"
+        },
+        "phmt_test_support/feature_snapshot_case.py": {
+          "bytes": 5115,
+          "sha256": "e960fc2fa707d76a48e99c81d88a212425cef2e07d93ae396faf8640f9436f03"
+        },
+        "phmt_test_support/feature_store.py": {
+          "bytes": 17677,
+          "sha256": "cdd4801870d9a7ee0ce8d40a74eb4e8f243ab23507661a58556067c43331e291"
+        },
+        "phmt_test_support/feature_store_workflow.py": {
+          "bytes": 13892,
+          "sha256": "ff0e5b69edeb28bed8e555e109281f8bdf5d462e417bc0f631d67b408fd96c1b"
+        },
+        "phmt_test_support/interaction_cases.py": {
+          "bytes": 7641,
+          "sha256": "b802a8d3b7cd8d0227d2d29367f2c2006ed25781027aa766ac291f3cf7cbb8d5"
+        },
+        "phmt_test_support/interaction_collection_cases.py": {
+          "bytes": 241,
+          "sha256": "c19a49dc4e026e33c6b1685766d089c8185346052374b7df8b8dea0ce95a02a4"
+        },
+        "phmt_test_support/legacy_clique_helpers.py": {
+          "bytes": 2333,
+          "sha256": "0c52a32b8ef1e4ebe1fd6fce30de618326fabd779c74f1bf0701638ab3866f14"
+        },
+        "phmt_test_support/pharmer_p1.py": {
+          "bytes": 5429,
+          "sha256": "45f6fcff031a3c412c4a9b833eb0d3dc07b38cb2f23a75bbd05ea224a19bab7d"
+        },
+        "phmt_test_support/pharmer_p1_export.py": {
+          "bytes": 3187,
+          "sha256": "026cb870dd2019a06377bbebb1a474c48aae6d72dc236f5a3f9b60f9293e4c43"
+        },
+        "phmt_test_support/pmapper_controls.py": {
+          "bytes": 9538,
+          "sha256": "e2a735922c43268e613914881a04af4ab910d9e7dbb6bc2e787f757a45cb8e4b"
+        },
+        "phmt_test_support/prepare_eralpha_hydrogens.py": {
+          "bytes": 4167,
+          "sha256": "103c2e6d26495eaf048b135ab5ef76df78d84d947fa56af73682cf8c7d04671b"
+        },
+        "phmt_test_support/prepare_eralpha_interface.py": {
+          "bytes": 8912,
+          "sha256": "efe75a6f7b1b50c7e016a9394048186e64699a9d872373d07005c1efe1e7086a"
+        },
+        "phmt_test_support/prepare_eralpha_ligand.py": {
+          "bytes": 7247,
+          "sha256": "19c979a39fda4a3873dd5889bceefa8982e12070c8f260b593603808d5c087f8"
+        },
+        "phmt_test_support/prepared_ccd_ligands.py": {
+          "bytes": 7427,
+          "sha256": "190c97862cdbc3c84d5673989ba51f630a86fa558b3cbb6bb99d7dfcf809abb2"
+        },
+        "phmt_test_support/prepared_consensus_workflow.py": {
+          "bytes": 8057,
+          "sha256": "8c2abec2ecee1196556fb8c8b1045fce41eb6a0dbc51d496d3073425a963908b"
+        },
+        "phmt_test_support/prepared_library_recovery.py": {
+          "bytes": 599,
+          "sha256": "08f2bcd26b63bb6f2c003a2b333b27499f9fc195edbc2aa301ad0cd9f3a65637"
+        },
+        "phmt_test_support/prepared_library_reference.py": {
+          "bytes": 404,
+          "sha256": "bb92766cdf4f66123ce4f8da88a72f9c84f48691e23ce02b333b3dc40c2a0c06"
+        },
+        "phmt_test_support/prepared_receptor_sensitivity.py": {
+          "bytes": 9758,
+          "sha256": "0ec430a447bfd814793ae80cde2d20459ba6efdedcc4061a56e5fa2978144d6a"
+        },
+        "phmt_test_support/prepared_receptor_workflow.py": {
+          "bytes": 12889,
+          "sha256": "f047589fcebdd9442473c89b0d9618eea99fb651ae0bbac520c379704fe941e1"
+        },
+        "phmt_test_support/prepared_search_workflow.py": {
+          "bytes": 10347,
+          "sha256": "5d987ce1caa26a76db51c3574278719d85a1cf8d5657873fcbf3d19bdf8ec533"
+        },
+        "phmt_test_support/prepared_workflow.py": {
+          "bytes": 18336,
+          "sha256": "3956dce50125ce801246316debfe540317ef3a7902d5b7ae8d4bad71624a39d0"
+        },
+        "phmt_test_support/profile_cached_generation.py": {
+          "bytes": 6995,
+          "sha256": "ccec6d17078b57c6b64c42fce35e1cba12ce5a3bc8cbed79f2415ee5df4750f2"
+        },
+        "phmt_test_support/pubchem3d_receiving_pilot.py": {
+          "bytes": 28067,
+          "sha256": "d9aed488c9610e278b5bfc6b9da3858b476dbf37c8266737f41149703a41d99a"
+        },
+        "phmt_test_support/public_carbonyl_generation.py": {
+          "bytes": 11077,
+          "sha256": "5ced40f034224ca2d7200871a24d3c655384518b0893102a270fbadefe6fe729"
+        },
+        "phmt_test_support/rdkit_bounds_comparison.py": {
+          "bytes": 8899,
+          "sha256": "b08a3b442b4fb858b2a91286a5e5662560cc76667a7bd15366ebf0abefc5f71d"
+        },
+        "phmt_test_support/receptor_contribution.py": {
+          "bytes": 20423,
+          "sha256": "399bd63c7e5f1ab4a75ae6ffe2a102d04c2ab8383d903ce39337eef0e3bf73f6"
+        },
+        "phmt_test_support/receptor_hypothesis_pilot.py": {
+          "bytes": 11044,
+          "sha256": "3bcb640e493ca9aa149b009add179bf8f9a8d26d17f42a46301f3fdfcb90db63"
+        },
+        "phmt_test_support/receptor_sensitivity.py": {
+          "bytes": 10098,
+          "sha256": "020cc9277902d07aa4c0e3339c7bfa278a4f732ec7e9e215fc0dfa2d8e4ad3ef"
+        },
+        "phmt_test_support/reference_run_store.py": {
+          "bytes": 1668,
+          "sha256": "8ef512fee2a166d6542845babea96310e274b6b654d3c9682ce098efa8edc74d"
+        },
+        "phmt_test_support/replay_esr1_saved_results.py": {
+          "bytes": 8088,
+          "sha256": "975f49ab03fb134accb764a59d9cdcadc62a5eb2c0ec630fb3c88129dd643e88"
+        },
+        "phmt_test_support/retrieval_checkpoint.py": {
+          "bytes": 2577,
+          "sha256": "0cfbe551edb0563ce680f2c4e0674333a1768379d7cde0df5aeea9fa4a1d8329"
+        },
+        "phmt_test_support/retrieval_controls.py": {
+          "bytes": 12945,
+          "sha256": "b3c6f1f7eb0b6815234bc1bf752ef298c650dcf404cd08dac7b1bf95f6c314e0"
+        },
+        "phmt_test_support/retrieval_cost.py": {
+          "bytes": 11845,
+          "sha256": "a99c10dc18cc406f96ac261f6ea76e48455580f0480bdfe18493bff086b926db"
+        },
+        "phmt_test_support/rigid_consensus_cases.py": {
+          "bytes": 1960,
+          "sha256": "4465005a1eb25dd7b6da4b93362521ae692e8fba9cd1637989b3fc83adf6f6c7"
+        },
+        "phmt_test_support/rigid_refinement_cases.py": {
+          "bytes": 1715,
+          "sha256": "b8f384ab6058f71c36d33e8d1197161f4c75025d95cefc5b8ff2ca1d55087e17"
+        },
+        "phmt_test_support/rigid_refinement_workloads.py": {
+          "bytes": 2770,
+          "sha256": "292c1237100948d842dacf3268da2d9fe064d945bd43f94bd58d6d3394e2bcf8"
+        },
+        "phmt_test_support/saved_model_reader.py": {
+          "bytes": 1973,
+          "sha256": "25baaf6b218d09e15108809b04739004e471e4e99fd3c5d53f6802775e2b9016"
+        },
+        "phmt_test_support/saved_run_profile.py": {
+          "bytes": 14353,
+          "sha256": "55129524229a5d0316797ca3562a72f69fb0b375433b5babbbf913de8b131135"
+        },
+        "phmt_test_support/search_asset_contract.py": {
+          "bytes": 1643,
+          "sha256": "69df60132d7bd976e96d091380e49b541c594aa46bfaec6bfd18fd32ec659416"
+        },
+        "phmt_test_support/snapshot_retrieval.py": {
+          "bytes": 15579,
+          "sha256": "a71a2d130447592f6d215c2134829ed98b827cb2cf37170159fa117fd0896eb9"
+        },
+        "phmt_test_support/typed_retrieval.py": {
+          "bytes": 12401,
+          "sha256": "43daa1d376c5169ea1c41f898d390cab46e2a2f7d76b7c03a86a5bb65db49569"
+        },
+        "phmt_test_support/tyr_cardinality.py": {
+          "bytes": 11289,
+          "sha256": "a09fc2963b79f668c8c5402dfd3d7c378a9fd8f4dc471547e1c30e9c401af3e6"
+        },
+        "phmt_test_support/validate_aromatic_interactions.py": {
+          "bytes": 10408,
+          "sha256": "ff20aa36de3938757d32a882ec3553cf7423ab57f7fc62fd812816763bbe426c"
+        },
+        "phmt_test_support/validate_eralpha_exclusions.py": {
+          "bytes": 11798,
+          "sha256": "4e199feecf9df45b76dcaa5ea416b2f1cff58c90e3780e50752bd4e7722930ea"
+        },
+        "phmt_test_support/validate_eralpha_hydrogens.py": {
+          "bytes": 8022,
+          "sha256": "5c41b37c843e155f0297a9d5c8f9674a9ad394802c2f7643277fe94572db929f"
+        },
+        "phmt_test_support/validate_eralpha_interface.py": {
+          "bytes": 18112,
+          "sha256": "b7bca94583a82dd80e313ea4bc5ae3e2d59234fa1d5383a9007e16f4e964576d"
+        },
+        "phmt_test_support/validate_eralpha_template.py": {
+          "bytes": 10212,
+          "sha256": "b086a17df01fd0af6c012c4896a9ec7a6e109e3b6d38548d4e692acf232f5ee0"
+        },
+        "phmt_test_support/validate_prepared_ccd_ligands.py": {
+          "bytes": 13852,
+          "sha256": "055c3ea310ab5f75d931bc390797a292c0510b2cecc69fe27a5de400cfbbdb75"
+        },
+        "pyproject.toml": {
+          "bytes": 4072,
+          "sha256": "11cfbf6ef00ff0633e45c184048cbdc5893440ac0e23bd97826b1755c095abdc"
+        },
+        "devtools/conda-build/resources.toml": {
+          "bytes": 49917,
+          "sha256": "b457e30e2c2c5f78aac2c47c5a8ead0e8d2ead0ba9f97654491dacc97f93a980"
+        }
+      }
+    }
+  },
+  "documentation": {
+    "builder": "html",
+    "strict": true,
+    "jobs": 1,
+    "notebook_execution": "off",
+    "owned_runtime_target": "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/temporary-owned-build/phmt-aligned-model-controls-owned-20261115-mijbf2m7/installed",
+    "loaded_PHMT_modules": 178
+  },
+  "commands": {
+    "baseline": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=1073741824",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/logs/baseline.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/test_source.py",
+        "baseline",
+        "tests/test_aligned_model_argument_controls.py"
+      ],
+      "exit_code": 1,
+      "interruption": null,
+      "seconds": 11.533380822977051,
+      "DATA_per_process_bytes": 1073741824,
+      "monitor_receipt": {
+        "bytes": 68739,
+        "sha256": "ada9da5aa491c1f09eb8b97cc55ea74d4598d21444cef1a17d8db8c1a79111b2"
+      },
+      "peak_own_family_RSS_bytes": 298545152,
+      "minimum_available_RAM_bytes": 36638470144,
+      "swap_pages_delta": {
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    "closeout": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/logs/closeout.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/closeout.py"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 6.584571734070778,
+      "DATA_per_process_bytes": 536870912,
+      "monitor_receipt": {
+        "bytes": 39994,
+        "sha256": "15c17c7efc34fb1f3a3baecfcffa331425084f34aae5de73dad12c344e198868"
+      },
+      "peak_own_family_RSS_bytes": 422539264,
+      "minimum_available_RAM_bytes": 41367994368,
+      "swap_pages_delta": {
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    "diagnostics-baseline": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=1073741824",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/logs/diagnostics-baseline.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/test_source.py",
+        "diagnostics-baseline",
+        "tests/test_reference_index_diagnostics.py"
+      ],
+      "exit_code": 1,
+      "interruption": null,
+      "seconds": 2.123991205007769,
+      "DATA_per_process_bytes": 1073741824,
+      "monitor_receipt": {
+        "bytes": 14352,
+        "sha256": "2441276ba18b3fab03251e0d704f403ce2ea36dde18cbfb2504228a67aaa0c51"
+      },
+      "peak_own_family_RSS_bytes": 182403072,
+      "minimum_available_RAM_bytes": 38695976960,
+      "swap_pages_delta": {
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    "distribution-current": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=1073741824",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/logs/distribution-current.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/test_source.py",
+        "distribution-current",
+        "devtools/tests/test_distribution_contract.py"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 11.938375291996635,
+      "DATA_per_process_bytes": 1073741824,
+      "monitor_receipt": {
+        "bytes": 71167,
+        "sha256": "ff22aedbb4ef559321cf899d13aa8ef0c2d6b5483d6523f4a4579fe40824e83b"
+      },
+      "peak_own_family_RSS_bytes": 106770432,
+      "minimum_available_RAM_bytes": 39744208896,
+      "swap_pages_delta": {
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    "docs-owned": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=1073741824",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/logs/docs-owned.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/prepare.py",
+        "docs-owned"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 12.841606077039614,
+      "DATA_per_process_bytes": 1073741824,
+      "monitor_receipt": {
+        "bytes": 76295,
+        "sha256": "5c0fb5888c043a4e761b0d5ae356183d8d09cb94ba24a1f671eb09438567e35c"
+      },
+      "peak_own_family_RSS_bytes": 348168192,
+      "minimum_available_RAM_bytes": 39663349760,
+      "swap_pages_delta": {
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    "evidence-projection": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/logs/evidence-projection.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/receipt.py"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 0.40804443799424917,
+      "DATA_per_process_bytes": 536870912,
+      "monitor_receipt": {
+        "bytes": 4332,
+        "sha256": "7ea87d71cd2bab8db09da9fdc6a8bf317cabdac7b791605940a5b9c8f2d2a7d0"
+      },
+      "peak_own_family_RSS_bytes": 45064192,
+      "minimum_available_RAM_bytes": 41724530688,
+      "swap_pages_delta": {
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    "focused-final": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=1073741824",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/logs/focused-final.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/test_source.py",
+        "focused-final",
+        "tests/test_aligned_model_argument_controls.py"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 11.230152387986891,
+      "DATA_per_process_bytes": 1073741824,
+      "monitor_receipt": {
+        "bytes": 67038,
+        "sha256": "c11ef845719ddcea880e1a68d135a582170756d3f78534ba80816669b7f8e348"
+      },
+      "peak_own_family_RSS_bytes": 295747584,
+      "minimum_available_RAM_bytes": 38604664832,
+      "swap_pages_delta": {
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    "focused": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=1073741824",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/logs/focused.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/test_source.py",
+        "focused",
+        "tests/test_aligned_model_argument_controls.py"
+      ],
+      "exit_code": 1,
+      "interruption": null,
+      "seconds": 11.639339888002723,
+      "DATA_per_process_bytes": 1073741824,
+      "monitor_receipt": {
+        "bytes": 69361,
+        "sha256": "a1173ac38815bb9fd8bc0e84fc51e6667a66c19a135b5a147e6ef7fbe7169175"
+      },
+      "peak_own_family_RSS_bytes": 297476096,
+      "minimum_available_RAM_bytes": 37527621632,
+      "swap_pages_delta": {
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    "format-authoring": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/logs/format-authoring.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "format",
+        "tests/test_aligned_model_argument_controls.py"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 0.10335624602157623,
+      "DATA_per_process_bytes": 536870912,
+      "monitor_receipt": {
+        "bytes": 2597,
+        "sha256": "bce0a22137cf6ccd1fb91ba5ae8a592cb89c9908791d7fe930ce3139aaba4b81"
+      },
+      "peak_own_family_RSS_bytes": 17010688,
+      "minimum_available_RAM_bytes": 37709901824,
+      "swap_pages_delta": {
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    "format-diagnostics": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/logs/format-diagnostics.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "format",
+        "tests/test_reference_index_diagnostics.py"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 0.10340820509009063,
+      "DATA_per_process_bytes": 536870912,
+      "monitor_receipt": {
+        "bytes": 2597,
+        "sha256": "c2e84d314abe0d875c691af4bbd451e760f93a7800f9b3f8ad5042550422a1de"
+      },
+      "peak_own_family_RSS_bytes": 17141760,
+      "minimum_available_RAM_bytes": 38785839104,
+      "swap_pages_delta": {
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    "format-implementation": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/logs/format-implementation.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "format",
+        "pharmacophoremt/modeler/aligned_consensus.py",
+        "pharmacophoremt/_private/arg_digestion/native_consensus.py"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 0.10336373501922935,
+      "DATA_per_process_bytes": 536870912,
+      "monitor_receipt": {
+        "bytes": 2671,
+        "sha256": "2555386eb97e10971a5c8b79fcc28a0299a1cec8263b657f0e0426c877ef11a7"
+      },
+      "peak_own_family_RSS_bytes": 16957440,
+      "minimum_available_RAM_bytes": 37526126592,
+      "swap_pages_delta": {
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    "format-reference-validator": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/logs/format-reference-validator.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "format",
+        "pharmacophoremt/_private/arg_digestion/argument/_contracts.py"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 0.10348766297101974,
+      "DATA_per_process_bytes": 536870912,
+      "monitor_receipt": {
+        "bytes": 2632,
+        "sha256": "f3b05d88833f572e836721984f849d59ac0393cffc1ae42bc603fed2e62fb55a"
+      },
+      "peak_own_family_RSS_bytes": 17014784,
+      "minimum_available_RAM_bytes": 38767718400,
+      "swap_pages_delta": {
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    "owned-build": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/logs/owned-build.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/build_owned.py"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 5.979919026023708,
+      "DATA_per_process_bytes": 536870912,
+      "monitor_receipt": {
+        "bytes": 36533,
+        "sha256": "50fd6d871e34490eee19fac994d24111b7679d56150e24c401568f8666e97254"
+      },
+      "peak_own_family_RSS_bytes": 290295808,
+      "minimum_available_RAM_bytes": 38945542144,
+      "swap_pages_delta": {
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    "owned-consensus": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=1073741824",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/logs/owned-consensus.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/receive_owned.py",
+        "owned",
+        "3.1.1",
+        "consensus"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 9.299427046906203,
+      "DATA_per_process_bytes": 1073741824,
+      "monitor_receipt": {
+        "bytes": 55890,
+        "sha256": "77233c47e1816ed53946dcdf5132a794e81f16936a6d8da5708ca0d08887d4eb"
+      },
+      "peak_own_family_RSS_bytes": 300515328,
+      "minimum_available_RAM_bytes": 40025030656,
+      "swap_pages_delta": {
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    "owned-controls": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=1073741824",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/logs/owned-controls.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/receive_owned.py",
+        "owned",
+        "3.1.1",
+        "controls"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 11.626951078069396,
+      "DATA_per_process_bytes": 1073741824,
+      "monitor_receipt": {
+        "bytes": 69349,
+        "sha256": "15749bd7fc9f39cb012107717b987d8f77d2922b3803360f4e1c93e05c92e081"
+      },
+      "peak_own_family_RSS_bytes": 298459136,
+      "minimum_available_RAM_bytes": 39284527104,
+      "swap_pages_delta": {
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    "owned-indices": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=1073741824",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/logs/owned-indices.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/receive_owned.py",
+        "owned",
+        "3.1.1",
+        "indices"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 16.308849785942584,
+      "DATA_per_process_bytes": 1073741824,
+      "monitor_receipt": {
+        "bytes": 96335,
+        "sha256": "fc55e1f8d75dd97011731711060eedb024f9994ba0c4d48f688042f02b52eb69"
+      },
+      "peak_own_family_RSS_bytes": 515612672,
+      "minimum_available_RAM_bytes": 39424528384,
+      "swap_pages_delta": {
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    "owned-reference": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=1073741824",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/logs/owned-reference.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/receive_owned.py",
+        "owned",
+        "3.1.1",
+        "reference"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 23.584635651903227,
+      "DATA_per_process_bytes": 1073741824,
+      "monitor_receipt": {
+        "bytes": 138496,
+        "sha256": "9ac2340ee45a95d44c705def59205ebf72377bb06f924d49e8ca739b3cc901ca"
+      },
+      "peak_own_family_RSS_bytes": 520413184,
+      "minimum_available_RAM_bytes": 39776137216,
+      "swap_pages_delta": {
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    "quality": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/logs/quality.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/quality.py"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 7.2902135750046,
+      "DATA_per_process_bytes": 536870912,
+      "monitor_receipt": {
+        "bytes": 44106,
+        "sha256": "ce8d7f56fd5f0edb9fc5368ed960dbee00feb71277d0ea52586ed40eaabc5e6c"
+      },
+      "peak_own_family_RSS_bytes": 432828416,
+      "minimum_available_RAM_bytes": 39342415872,
+      "swap_pages_delta": {
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    "ruff-check": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/logs/ruff-check.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 0.10304270905908197,
+      "DATA_per_process_bytes": 536870912,
+      "monitor_receipt": {
+        "bytes": 2539,
+        "sha256": "b923a5967e5ec3da25390266ac2b49c1a620cbcd0abe1bf39cfe669a7e2b307d"
+      },
+      "peak_own_family_RSS_bytes": 17121280,
+      "minimum_available_RAM_bytes": 39464386560,
+      "swap_pages_delta": {
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    "ruff-format": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/logs/ruff-format.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 0.10290903702843934,
+      "DATA_per_process_bytes": 536870912,
+      "monitor_receipt": {
+        "bytes": 2558,
+        "sha256": "766e534db4def416e777f264e9703504ceda55ce433ef8b786de2ca6f84ca60e"
+      },
+      "peak_own_family_RSS_bytes": 17158144,
+      "minimum_available_RAM_bytes": 39422812160,
+      "swap_pages_delta": {
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    "source-consensus": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=1073741824",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/logs/source-consensus.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/test_source.py",
+        "source-consensus",
+        "tests/test_aligned_consensus.py",
+        "tests/test_consensus_argument_controls.py"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 9.514303048956208,
+      "DATA_per_process_bytes": 1073741824,
+      "monitor_receipt": {
+        "bytes": 57117,
+        "sha256": "d34b185511c1a1fc7773dbe9cbe34b8e868628da2fe2e863fcd255a4d791ecbe"
+      },
+      "peak_own_family_RSS_bytes": 298373120,
+      "minimum_available_RAM_bytes": 38649876480,
+      "swap_pages_delta": {
+        "pswpin": 1,
+        "pswpout": 0
+      }
+    },
+    "source-indices": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=1073741824",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/logs/source-indices.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/test_source.py",
+        "source-indices",
+        "tests/test_reference_index_diagnostics.py",
+        "tests/test_alignment_argument_controls.py"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 17.53609518101439,
+      "DATA_per_process_bytes": 1073741824,
+      "monitor_receipt": {
+        "bytes": 103416,
+        "sha256": "f7e77b9d3f795f6cfc81cf67768a7f597cf4a12d8e28147f551dc64b71eaaa9a"
+      },
+      "peak_own_family_RSS_bytes": 510349312,
+      "minimum_available_RAM_bytes": 38296825856,
+      "swap_pages_delta": {
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    "source-reference": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=1073741824",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/logs/source-reference.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/test_source.py",
+        "source-reference",
+        "tests/test_reference_argument_controls.py",
+        "tests/test_modular_rigid_tools.py"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 24.796734589966945,
+      "DATA_per_process_bytes": 1073741824,
+      "monitor_receipt": {
+        "bytes": 145590,
+        "sha256": "3617f0697705d4c425ac5a877e7b6b6aa5b396f09aae04a0e33ce2c56e3bae59"
+      },
+      "peak_own_family_RSS_bytes": 517246976,
+      "minimum_available_RAM_bytes": 38749093888,
+      "swap_pages_delta": {
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    }
+  },
+  "resources": {
+    "preflight": {
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "Slurm": "/usr/bin/srun",
+      "allocation": null,
+      "memory": "MemTotal:       63455508 kB\nMemFree:         5656320 kB\nMemAvailable:   39370664 kB\nBuffers:         4536564 kB\nCached:         43730860 kB\nSwapCached:        24112 kB\nActive:         26121584 kB\nInactive:       26066372 kB\nActive(anon):   11878924 kB\nInactive(anon):  9410728 kB\nActive(file):   14242660 kB\nInactive(file): 16655644 kB\nUnevictable:        8976 kB\nMlocked:            8976 kB\nSwapTotal:       8388604 kB\nSwapFree:        7898548 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              6116 kB\nWriteback:             0 kB\nAnonPages:       3917252 kB\nMapped:          1260212 kB\nShmem:          17363252 kB\nKReclaimable:    3476372 kB\nSlab:            4372924 kB\nSReclaimable:    3476372 kB\nSUnreclaim:       896552 kB\nKernelStack:       19408 kB\nPageTables:        52652 kB\nSecPageTables:      9028 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:    40116356 kB\nCommitted_AS:   27872612 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:      230764 kB\nVmallocChunk:          0 kB\nPercpu:            75456 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:     12288 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:   2324480 kB\nFilePmdMapped:         0 kB\nCmaTotal:              0 kB\nCmaFree:               0 kB\nUnaccepted:            0 kB\nBalloon:               0 kB\nGPUActive:             0 kB\nGPUReclaim:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:     4951840 kB\nDirectMap2M:    55744512 kB\nDirectMap1G:     8388608 kB\n",
+      "load": "3.68 2.98 2.77 5/1196 5\n",
+      "memory_PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=6089550\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=5944798\n",
+      "swap": {
+        "pswpin": 268081,
+        "pswpout": 499407
+      },
+      "estimate": "Strictly serial CPU19/backend1, expected own-family RSS<600MiB,1GiB stop; keep20%physicalRAM+1.5GiB available; finite DATA/CPU/wall; nonblocking task-local lock. No machine allocation/reservation/cgroup/AS cap."
+    },
+    "execution": "Strictly serial CPU19/backend1, nice19/idle I/O; nonblocking capsule-local lock prevents own overlap. Recorded monitored intervals verify no overlap.",
+    "CPU_seconds_per_process": 120,
+    "wall_seconds": 180,
+    "own_family_RSS_stop_bytes": 1073741824,
+    "physical_available_reserve_fraction": 0.2,
+    "additional_margin_bytes": 1610612736,
+    "machine_allocation_reservation_aggregate_cgroup": false,
+    "AS_cap": "not imposed for Git mappings",
+    "shared_prefix_foreign_process_changes": false
+  },
+  "limits": [
+    "Selected Linux/Python3.14.10 source/exact-owned groups only, not full supported source/installed/public/platform/biological/human/scale qualification.",
+    "Public ArgDigest0.17.1/SMonitor0.22.1/PUW0.28.1 and authenticated unchanged Pandas3.1.1; controlled other providers/inherited MolSysMT native extension. Optional Beartype absence warnings retained.",
+    "Native science stays mandatory during outer bypass; source/common-frame identity is caller-owned, no speed or source-authentication claim. #6 remains partial; #9/#10/#23 retain full later-head gates.",
+    "The #235 error-label defect belongs to PHMT shared value contracts, not ArgDigest/provider code. Earlier #233 source/wheel versus metadata identities and all incidents/recovery/stopped work retain owners.",
+    "No tag, publisher, provider floor/native rebuild/shared-prefix change, full remote matrix or benchmark. Immutable 0.6.0 and original run identities remain."
+  ],
+  "raw_capsule": "/tmp/phmt-aligned-model-controls-20261115-odfguqzx",
+  "owned_workspace": "/tmp/phmt-aligned-model-controls-20261115-odfguqzx/temporary-owned-build/phmt-aligned-model-controls-owned-20261115-mijbf2m7",
+  "retention_review": "2026-11-29",
+  "temporary_resources": "Retain owned capsule/private target; actual SDK imports/resources and both file-relative links retire. Earlier owners/dates/uncertainty remain.",
+  "full_evidence": {
+    "path": "aligned_model_argument_controls_20261115.json.gz",
+    "compressed_bytes": 288279,
+    "compressed_sha256": "e01bc2cb216f1aef18c30ab088761d11689b601f29d8b4f63cf61581454d8a05",
+    "uncompressed_bytes": 3134303,
+    "uncompressed_sha256": "d5a26696786286fd667106837edf83f97d208f44ecbc8501096dab0a4013928d"
+  },
+  "closeout_checks": [
+    {
+      "arguments": [
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "arguments": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.631s\n\nOK\n"
+    },
+    {
+      "arguments": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 3.923s\n\nOK\n"
+    },
+    {
+      "arguments": [
+        "review changed Markdown local link destinations"
+      ],
+      "exit_code": 0,
+      "destinations": 770
+    },
+    {
+      "arguments": [
+        "read_archived_evidence; verify every inner file digest"
+      ],
+      "exit_code": 0,
+      "inner_files": 130
+    }
+  ]
+}
