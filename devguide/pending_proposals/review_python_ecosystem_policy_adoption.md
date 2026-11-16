@@ -14,14 +14,20 @@ supersedes: []
 
 # Review Python ecosystem policy adoption
 
-## Aligned matching/site controls implemented — 2026-11-15
+## Aligned matching/site controls received — 2026-11-15
 
-[#233](../consensus_argument_controls.md) corrects #232's stale reference-constructor
-next pointer and records ten inspected modeling signatures. Matching/aggregation
-gain independent explicit controls and three/six mandatory native validators.
-All 172 new controls pass with unchanged guards and scientific body/helper AST.
-Source/exact-owned consumer receiving and strict docs/quality are in progress.
-#6 remains partial; from_aligned_ligands is the verified next missing control.
+[#233](../consensus_argument_controls.md) receives 694036d and its exact private
+wheel: [172/17/25/123/159-case source/owned groups](../evidence/consensus_argument_controls_20261115.json),
+496 distinct cases/context including 172 controls, 246 payloads/191 equal bodies,
+actual SDK journals/checking/retirement, strict owned docs and relevant quality.
+Three/six reused native validators preserve both scientific bodies and remaining
+module helpers/functions. Independent assignment/support/dispersion/orientation,
+source/report custody and actual credit pass. Original guards are byte-equal;
+the required-path-only correction passes 27 fresh distribution controls with
+197 runtime/guard files unchanged; original artifact/run identities remain. The bounded modeling inventory
+corrects #232's stale next pointer: extraction and reference constructors were
+already received. Next from_aligned_ligands; #6/full supported/public gates,
+#227 and prior incidents/recovery remain separate.
 
 ## Neighborhood/ranking public controls received — 2026-11-15
 

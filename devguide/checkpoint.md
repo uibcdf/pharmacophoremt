@@ -3,41 +3,59 @@
 Maintained 2026-11-15 local date; owners LMMV/dprada. Follow the
 [mature pre-1.0 roadmap](roadmap.md), [workstreams](decisions_and_workstreams.md)
 and [capability inventory](capability_inventory.md). The preceding published
-checkpoint is preserved at [f1f4fb5](https://github.com/uibcdf/pharmacophoremt/blob/f1f4fb510b8bed5a2197cc60dc1e4d74db429eed/devguide/checkpoint.md);
+checkpoint is preserved at [c452678](https://github.com/uibcdf/pharmacophoremt/blob/c452678e4376211eaf2d527c72c5107dcad52657/devguide/checkpoint.md);
 [earlier dated history](checkpoint_history_20261114_before_pose_controls.md),
 [earlier pre-tag preparation](checkpoint_history_20261114_before_final_review.md)
 and the [0.6.0 cut record](release_0_6_0_source_cut.md) retain their identities.
 
-## Current increment — aligned matching/site controls toward 0.7.0
+## Current increment — aligned matching/site controls received toward 0.7.0
 
-[#233](consensus_argument_controls.md) corrects the stale next-step pointer:
-get_features and both reference constructors already have received controls.
-The owning document retains a bounded ten-function inventory and links original
-evidence. The actual next missing APIs are aligned matching and site aggregation.
+[#233](consensus_argument_controls.md) corrects the stale next action: get_features
+and both reference constructors already have received controls. Its bounded
+ten-function modeling inventory preserves those receipts and identifies genuine
+remaining work. Independent explicit controls and definition-owned admission now
+cover aligned matching and site aggregation, with three/six reused mandatory
+native validators even for empty work. Both scientific bodies/decorators and all
+other module functions/helpers retain AST identity; public consumers keep their
+independent default admission.
 
-Independent keyword-only controls and a definition-owned native-consensus
-configuration retain three/six reused mandatory validators. All 172 new controls
-pass after the original 158-failure/14-call-shape-catch baseline, with unchanged
-guard bytes. Scientific bodies, signal/attribution decorators and other module
-functions/helpers remain AST-equal. All source groups pass: 172/17/25/123/159 cases, 496 distinct. Exact-owned
-consumers, strict docs and quality are pending. #6/full qualification stay partial. The verified
-next missing control after this pair is from_aligned_ligands.
+[Receiving](evidence/consensus_argument_controls_20261115.json) receives source
+694036d8aa3aa95780439bd6d236284ab53fd86f and exact private wheel `0.6.0+33.g694036d`:
+identical serial **172/17/25/123/159-case source/owned groups**, **496 distinct cases per
+context including 172 new controls**, zero failures/errors/skips. All 246 payloads
+and 191 nongenerated Python bodies verify. The respective groups load
+172/173/173/173/173 target-only PHMT modules (173 in their union). Actual immutable
+SDK staging has pre-work journals/checking and import/resource retirement; both
+file-relative links retire. Existing fresh-reader controls inherit matching
+controlled provider paths; installed readers use the private runtime target.
+Strict owned HTML docs and relevant reporting/archive/index/generated-environment/
+declared-route/Ruff checks pass (555 formatted files). The focused source group
+retains its original run identity without another execution. Current distribution
+controls pass all 27 cases after adding the missing required path for the already
+shipped private module. Metadata source a293518c8f239852ba5e8852d91e1c521b3e94ed
+keeps all 191 runtime bodies and six selected guards byte-equal (197 files), with
+installed-test support and every other manifest field unchanged. Original wheel,
+scientific runs and the initial 26-pass/one-refusal distribution attempt retain
+their identities; no rebuilt-source or full Conda/public qualification is claimed.
 
-The [preceding checkpoint](https://github.com/uibcdf/pharmacophoremt/blob/c452678e4376211eaf2d527c72c5107dcad52657/devguide/checkpoint.md)
-retains #232 receiving, original source/artifact and prior history; its outdated
-from_feature_inventory next action is corrected above. No earlier evidence is
-promoted to this changed source.
+Independent maximum-cardinality, centroid/support/dispersion and donor-vector/
+aromatic-axis controls preserve source ordering, quantities, first-member
+orientation and detached occurrence/frame/state/geometry. Original allocation and
+solver failures remain failures. Actual reused/empty branch credit and nondefault
+nm/pm application policy pass. Neither helper reads or aligns molecular systems.
 
-Original implementation 694036d receives all 496 scientific cases per source/
-owned context and strict owned docs. A fresh distribution check exposes the new
-private contract module missing from Conda required_paths (26 passes/one refusal).
-Correct that metadata and receive the current distribution guard. The original
-wheel/runtime/guard identities remain; no scientific rerun or rebuilt-source claim
-follows from this metadata-only correction.
+The original 172-case baseline (158 failures/14 call-shape catches), initial/final
+identical guard bytes and output/provider/resource identities remain. All monitored
+commands are serial and none interrupted; the task-local lock reserves no machine
+capacity. No provider defect, new scientific policy or speed claim is asserted.
+Bounded Linux/Python3.14/public support pins/Pandas3.1.1 and controlled other-
+provider/inherited-native receiving does not close #6 or full source/installed/
+public/platform/biological/human/scale gates. #227, #230 support, #229 incidents,
+#224 recovery, older staging uncertainty and stopped work keep their owners.
 
 ## Earlier bounded increments
 
-The [preceding published checkpoint](https://github.com/uibcdf/pharmacophoremt/blob/f1f4fb510b8bed5a2197cc60dc1e4d74db429eed/devguide/checkpoint.md)
+The [preceding published checkpoint](https://github.com/uibcdf/pharmacophoremt/blob/c452678e4376211eaf2d527c72c5107dcad52657/devguide/checkpoint.md)
 retains the earlier increments with their original sources, runs, receipts and
 limitations. Their owning contracts and evidence remain unchanged. The
 [capability inventory](capability_inventory.md), [roadmap](roadmap.md) and
@@ -67,10 +85,11 @@ unchanged. Full installed/public artifact, biological/human/scale acceptance,
 
 ## Next concrete action and resources
 
-Complete #233 bounded source/exact-owned consumers, strict docs, evidence and
-publication/readback. Then receive from_aligned_ligands, whose explicit control
-is absent in the recorded inventory. #6/full gates, #227, publisher pauses and
-stopped #148/#165 remain separate.
+Receive from_aligned_ligands public argument control next. Its explicit control
+is absent in the bounded modeling inventory; retain reference-anchored hypothesis
+scope, molecular/provider ownership and native assignment/aggregation children.
+The four clique/rigid modeling controls and broader #6/full gates remain separately
+pending. #227, publisher pauses and stopped #148/#165 stay separate.
 
 Preserve shared-prefix/migration pauses and original native/data identities.
 Heavy work stays serial: one CPU/backend thread, low CPU/I/O priority, finite
@@ -87,3 +106,6 @@ SDK stages and file-relative support links retired. Earlier uncertainty is uncha
 
 Review the #232 task-owned capsule/private target on 2026-11-29; accepted SDK
 stages and both file-relative links retired. Earlier owners/uncertainties remain.
+
+Review this #233 capsule/private target on 2026-11-29; accepted SDK stages and
+both file-relative links retired. Earlier ownership/uncertainty remains unchanged.

@@ -15,7 +15,7 @@ signature/decorator inventory, not a complete export/inheritance/API audit.
 | --- | --- |
 | get_features | Explicit control already received; preserve its contract. |
 | from_feature_inventory, from_ligand | Explicit closed controls already received under #198. |
-| get_aligned_feature_matches, get_consensus_sites | Selected here; explicit controls and definition-owned admission pending receiving. |
+| get_aligned_feature_matches, get_consensus_sites | Explicit controls and definition-owned admission received here. |
 | from_aligned_ligands | Explicit control still absent; next after this increment. |
 | get_aligned_feature_cliques, get_aligned_consensus_hypotheses, from_aligned_ligand_cliques, from_rigid_ligands | Explicit controls still absent; retain subsequent #6 work. |
 
@@ -93,3 +93,33 @@ The corrected current distribution group passes all 27 cases. Manifest compariso
 proves its only change is the added required path, with installed-test support and
 all other fields unchanged. All 191 runtime bodies and six selected scientific
 guards (197 files) remain byte-equal to the original scientific/artifact source.
+
+## Measured receiving — 2026-11-15
+
+[Receiving](evidence/consensus_argument_controls_20261115.json) receives source
+694036d8aa3aa95780439bd6d236284ab53fd86f and exact private wheel `0.6.0+33.g694036d`:
+identical serial **172/17/25/123/159-case source/owned groups**, **496 distinct cases per
+context including 172 new controls**, zero failures/errors/skips. All 246 payloads
+and 191 nongenerated Python bodies verify. The respective groups load
+172/173/173/173/173 target-only PHMT modules (173 in their union). Actual immutable
+SDK staging has pre-work journals/checking and import/resource retirement; both
+file-relative links retire. Existing fresh-reader controls inherit matching
+controlled provider paths; installed readers use the private runtime target.
+Strict owned HTML docs and relevant reporting/archive/index/generated-environment/
+declared-route/Ruff checks pass (555 formatted files). The focused source group
+retains its original run identity without another execution. Current distribution
+controls pass all 27 cases after adding the missing required path for the already
+shipped private module. Metadata source a293518c8f239852ba5e8852d91e1c521b3e94ed
+keeps all 191 runtime bodies and six selected guards byte-equal (197 files), with
+installed-test support and every other manifest field unchanged. Original wheel,
+scientific runs and the initial 26-pass/one-refusal distribution attempt retain
+their identities; no rebuilt-source or full Conda/public qualification is claimed.
+
+The original 158-failure/14-call-shape-catch baseline and final 172-case guard have
+identical source bytes. Matching/aggregation bodies and signal/attribution
+decorators remain AST-equal after three/six reused validators; all other module
+functions/helpers remain unchanged. Independent assignment and centroid/support/
+rejection/orientation answers, original solver/allocation failures, input/report
+custody, nm/pm policy and actual reached-method credit pass. All monitored commands
+are serial and none interrupted. No provider defect or scientific policy change
+is asserted. Full #6 and broader qualification retain their owners.

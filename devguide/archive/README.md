@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (167)
+### Resolved (168)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -32,6 +32,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`complete_reference_argument_controls.md`](complete_reference_argument_controls.md) — [#198](https://github.com/uibcdf/pharmacophoremt/issues/198) — Complete explicit argument controls for native reference-query construction. *(resolved, measured)*
 - [`complex_pdb_feature_recovery.md`](complex_pdb_feature_recovery.md) — [#5](https://github.com/uibcdf/pharmacophoremt/issues/5) — Recover chemical features from PDB complex during pharmacophore extraction. *(resolved, reproduced)*
 - [`conformer_argument_controls.md`](conformer_argument_controls.md) — [#216](https://github.com/uibcdf/pharmacophoremt/issues/216) — Expose independent conformer-screening controls with mandatory failure-policy admission. *(resolved, measured)*
+- [`consensus_argument_controls.md`](consensus_argument_controls.md) — [#233](https://github.com/uibcdf/pharmacophoremt/issues/233) — Expose independent aligned matching and site-aggregation controls while preserving native science and source identity. *(resolved, measured)*
 - [`consensus_support_review.md`](consensus_support_review.md) — [#80](https://github.com/uibcdf/pharmacophoremt/issues/80) — Qualify native consensus support, typed occurrence reuse and controlled input multiplicity. *(resolved, measured)*
 - [`controlled_h5msm1_acquisition.md`](controlled_h5msm1_acquisition.md) — [#207](https://github.com/uibcdf/pharmacophoremt/issues/207) — Align controlled MolSysMT acquisition with immutable H5MSM 1.0 inputs. *(resolved, measured)*
 - [`correspondence_argument_controls.md`](correspondence_argument_controls.md) — [#217](https://github.com/uibcdf/pharmacophoremt/issues/217) — Expose correspondence digestion control while retaining mandatory bounded enumeration. *(resolved, measured)*
