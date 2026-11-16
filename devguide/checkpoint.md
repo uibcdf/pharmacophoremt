@@ -8,45 +8,30 @@ checkpoint is preserved at [593d609](https://github.com/uibcdf/pharmacophoremt/b
 [earlier pre-tag preparation](checkpoint_history_20261114_before_final_review.md)
 and the [0.6.0 cut record](release_0_6_0_source_cut.md) retain their identities.
 
-## Current increment — aligned-ligand model control received toward 0.7.0
+## Current increment — aligned feature-clique control toward 0.7.0
 
-[#234/#235](aligned_model_argument_controls.md) adds explicit local control and
-closed definition-owned admission to from_aligned_ligands. Eight reused native
-validators precede extraction. Its remaining scientific body and decorators,
-other module functions/helpers retain AST identity; three public children keep
-independent default admission. The shared integer predicate preserves its domain/
-normalization/error family while naming reference_index and structure_index
-correctly. All other value contracts remain unchanged.
+[#236/#237](clique_argument_controls.md) adds keyword-only local control and
+closed definition-owned admission to get_aligned_feature_cliques. Seven reused
+native validators precede record/graph work. The remaining scientific body is
+unchanged except for one intentional inclusive-length predicate correction under
+#237: eight machine epsilons of relative threshold roundoff, zero absolute
+allowance. Other functions/helpers/value digesters and signal/attribution remain.
 
-[Receiving](evidence/aligned_model_argument_controls_20261115.json) receives
-source 48696d68cc9447f4f478f679d7e3a4bb14a4e749 and exact private wheel `0.6.0+36.g48696d6`:
-identical serial **99/189/47/89-case source/owned groups**, **424 distinct cases per
-context including 99 model and 18 direct diagnostic controls**, zero failures/
-errors/skips. All 246 payloads/191 source-equal nongenerated Python bodies verify;
-the respective groups load 173/173/171/173 target-only PHMT modules
-(173 in their union). Actual SDK staging has pre-work journals/checking and
-import/resource/both-link retirement. Strict owned HTML docs, 27 current
-distribution controls and reporting/archive/index/generated-environment/declared-
-route/Ruff checks pass (557 formatted files). The accepted focused source run
-keeps its original label without another execution. Package footprint remains
-equal to #233's corrected declaration; all earlier source/metadata identities stay.
+All selected source groups pass: **191/25/189/99 cases**, **504 distinct cases**,
+including 115 control and 76 boundary cases. The original 115-case baseline
+(109 failures/six call-shape catches), first implemented 109-pass/six-failure run
+and 74-case numerical baseline (12 failures/62 passes) retain their identities.
+Four authored diagnostic assertions now check all owned fields while allowing
+SMonitor's source links; the original expected clique/unit cases are unchanged.
+Two added four-epsilon positives protect the declared roundoff margin. Independent
+subset/geometry/limit answers, unsupported-clique counting, original solver
+failure, nm/pm real frame/state/selection and source custody, application
+new/reused/empty credit and default downstream admission pass.
 
-Real nm/pm analytical sources retain selected atom order, frames 1/0 and declared
-state 1, reference-first members, independent centroids and empty-source support
-fractions. Essential/equal-weight shapes, separately narrow emitted radius,
-source coordinates/other atoms/frames, portable model metadata and actual method
-credit pass. Empty reference scope raises even when a pattern exists elsewhere;
-later extraction and assignment failures cannot publish partial accepted models.
-
-Original model baseline (95 failures/four call-shape catches), first implemented
-run (93 passes/six diagnostic failures), direct baseline (six failures/12 passes)
-and unchanged initial/final guards remain. No assertion relaxation: #235 repairs
-the PHMT-owned label, not provider code or scientific algorithms. Every monitored
-command is serial and none interrupted. No speed claim or machine reservation.
-Bounded Linux/Python3.14/public support pins/Pandas3.1.1 and controlled other-
-provider/inherited-native receiving leaves #6 and full #9/#10/#23 gates partial.
-Earlier #233 source/metadata, #230 support, #229 incidents, #227, #224 recovery,
-older staging uncertainty and stopped work retain their original ownership.
+Exact private-wheel receiving, strict owned docs and final appropriate quality
+remain pending before closure. No full later-head CI/public/platform receiving,
+new tag/publisher/native rebuild/shared-prefix change/benchmark or speed claim.
+#6/full #9/#10/#23 and prior scientific/metadata/recovery records retain owners.
 
 ## Earlier bounded increments
 
@@ -80,11 +65,11 @@ unchanged. Full installed/public artifact, biological/human/scale acceptance,
 
 ## Next concrete action and resources
 
-Receive get_aligned_feature_cliques public control next, preserving finite graph/
-clique budgets, maximal-hypothesis scope and independent consumers. The bounded
-modeling inventory verifies it is still missing; the remaining three clique/rigid
-modeling controls and broader #6/full gates retain their own work. #227 and paused
-publisher/shared-prefix/benchmark work remain separate.
+Finish exact-owned receiving and close #236/#237, then receive
+get_aligned_consensus_hypotheses public control, preserving joint-support
+intersection, disjoint occurrence use, finite extension budgets and independent
+children. Two remaining model constructors and broader #6/full gates keep their
+own scope. #227 and paused publisher/shared-prefix/benchmark work remain separate.
 
 Preserve shared-prefix/migration pauses and original native/data identities.
 Heavy work stays serial: one CPU/backend thread, low CPU/I/O priority, finite

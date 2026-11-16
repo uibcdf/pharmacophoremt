@@ -2,6 +2,13 @@
 
 ## Unreleased — toward 0.7.0
 
+- Add keyword-only `skip_digestion=False` to
+  `modeler.get_aligned_feature_cliques()`, keeping native geometry and finite
+  budget checks mandatory. Preserve inclusive distance boundaries across
+  equivalent units with an eight-machine-epsilon relative roundoff allowance
+  and no absolute allowance. Maximal discovery, occurrence mappings and
+  unsupported-clique budget accounting retain their meanings.
+
 - Add keyword-only `skip_digestion=False` to `modeler.from_aligned_ligands()`.
   Native source/reference/family/support/physical/budget checks remain mandatory
   before extraction. Reference scope, separate emitted radius, source custody and

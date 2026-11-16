@@ -9,6 +9,16 @@ from smonitor import signal
 
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt._ackredit import attributed, credit_criterion, credit_software
+from pharmacophoremt._private.arg_digestion.argument._contracts import (
+    digest_direction_tolerance,
+    digest_distance_tolerance,
+    digest_feature_inventories,
+    digest_ligand_ids,
+    digest_max_cliques,
+    digest_max_graph_nodes,
+    digest_min_support,
+)
+from pharmacophoremt._private.arg_digestion.native_consensus import CONFIG
 from pharmacophoremt._private.molsysmt import detached
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError, CliqueLimitError
 from pharmacophoremt.pharmacophore import Pharmacophore
@@ -23,6 +33,15 @@ from .aligned_consensus import (
 from .features import CLASSICAL_FEATURES, DEFINITION, get_features
 
 METHOD = "aligned_maximal_clique_consensus@1"
+_DISTANCE_RTOL = 8 * np.finfo(float).eps
+
+
+def _within_distance(first, second, tolerance):
+    """Inclusive length bound with relative roundoff and no absolute allowance."""
+    separation = float(np.linalg.norm(first - second))
+    return (
+        separation <= tolerance or separation - tolerance <= _DISTANCE_RTOL * tolerance
+    )
 
 
 def _limit(stage, resource, observed, limit):
@@ -45,7 +64,7 @@ def _support_inputs(feature_inventories, ligand_ids, min_support):
 
 
 @signal(tags=["modeling", "consensus", "cliques"])
-@arg_digest()
+@arg_digest(config=CONFIG)
 @attributed("numpy", "pyunitwizard")
 def get_aligned_feature_cliques(
     feature_inventories,
@@ -56,6 +75,7 @@ def get_aligned_feature_cliques(
     direction_tolerance="30 degrees",
     max_graph_nodes=64,
     max_cliques=1000,
+    skip_digestion=False,
 ):
     """Discover all supported maximal feature cliques in a declared common frame.
 
@@ -75,6 +95,9 @@ def get_aligned_feature_cliques(
         Total feature occurrence bound, checked before graph construction.
     max_cliques : int, default=1000
         Bound on all enumerated maximal cliques, including unsupported ones.
+    skip_digestion : bool, default=False
+        Bypass ordinary digestion for canonical expert inputs. Native collection,
+        identity, support, physical and budget admission remain mandatory.
 
     Returns
     -------
@@ -90,13 +113,22 @@ def get_aligned_feature_cliques(
     Maximal is inclusion-maximal, not only the largest clique. This discovers
     site correspondences, not DISCO superpositions or RDP patterns. Graph size
     bounds pair construction and storage; the output bound is not a wall-time
-    limit or an internal NetworkX search-step bound.
+    limit or an internal NetworkX search-step bound. Inclusive distance comparison
+    allows relative floating roundoff up to eight machine epsilons times the
+    length threshold, with no absolute allowance.
 
     Examples
     --------
     >>> result = get_aligned_feature_cliques([get_features(a), get_features(b)], ligand_ids=['a', 'b'])
     >>> groups = result['groups']
     """
+    feature_inventories = digest_feature_inventories(feature_inventories)
+    ligand_ids = digest_ligand_ids(ligand_ids)
+    min_support = digest_min_support(min_support)
+    distance_tolerance = digest_distance_tolerance(distance_tolerance)
+    direction_tolerance = digest_direction_tolerance(direction_tolerance)
+    max_graph_nodes = digest_max_graph_nodes(max_graph_nodes)
+    max_cliques = digest_max_cliques(max_cliques)
     _support_inputs(feature_inventories, ligand_ids, min_support)
     inventories = [_records(inventory) for inventory in feature_inventories]
     occurrences = sorted(
@@ -115,7 +147,7 @@ def get_aligned_feature_cliques(
         one, two = inventories[first[0]][first[1]], inventories[second[0]][second[1]]
         if (
             one["kind"] == two["kind"]
-            and np.linalg.norm(one["center"] - two["center"]) <= distance
+            and _within_distance(one["center"], two["center"], distance)
             and _orientation_cosine(one, two) + _COS_SLACK >= threshold
         ):
             graph.add_edge(first, second)

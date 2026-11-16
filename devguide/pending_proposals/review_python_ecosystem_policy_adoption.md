@@ -14,6 +14,19 @@ supersedes: []
 
 # Review Python ecosystem policy adoption
 
+## Aligned feature-clique controls in receiving — 2026-11-15
+
+[#236/#237](../clique_argument_controls.md) receives 504 distinct selected source
+cases (191/25/189/99), including 115 admission and 76 numerical boundary cases.
+Seven mandatory validators retain native budgets/geometry during bypass; a
+separate intentional distance predicate correction preserves inclusive nominal
+nm/pm boundaries within eight relative machine epsilons, zero absolute margin.
+All other scientific statements/helpers/functions/value contracts remain.
+Original failed guards/results and four corrected authored diagnostic assertions
+remain recorded. Exact-private-wheel/docs/final quality are pending before
+closure. #6/full supported/public gates retain owners; next after receiving is
+get_aligned_consensus_hypotheses, then the two model constructors.
+
 ## Aligned-ligand model and reference diagnostics received — 2026-11-15
 
 [#234/#235](../aligned_model_argument_controls.md) receives 48696d6 and its exact
