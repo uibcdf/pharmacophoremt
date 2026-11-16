@@ -1,5 +1,14 @@
 # Strategic roadmap
 
+## Neighborhood/ranking controls implemented — 2026-11-15
+
+[#232](neighborhood_argument_controls.md) adds two independent explicit controls
+and definition-owned contracts with two/three mandatory native validators. Both
+scientific bodies/decorators retain AST identity. All 154 final controls pass,
+including asymmetric assignment and independent ranking, empty work, invalid
+evidence and custody/credit. Relevant source/exact-owned consumer receiving and
+strict docs/quality are in progress; #6/full qualification remain partial.
+
 ## Rigid-proposal public control received — 2026-11-15
 
 [#229](proposal_argument_controls.md) receives 140c6d2 and its exact private

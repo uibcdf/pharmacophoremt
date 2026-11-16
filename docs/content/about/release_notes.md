@@ -2,6 +2,12 @@
 
 ## Unreleased — toward 0.7.0
 
+- Add independent keyword-only `skip_digestion=False` controls to
+  `screening.get_feature_pair_dissimilarities()` and
+  `screening.rank_rigid_feature_correspondences()`. Native physical/budget and
+  mapping/comparison-report/seed checks remain mandatory, including empty work.
+  Assignment costs, duplicate/tie order, finite selection and provenance remain.
+
 - Add keyword-only `skip_digestion=False` to
   `screening.get_rigid_feature_correspondences()`. Strategy, positive physical
   tolerance, minimum and budget/seed domains remain mandatory during bypass.

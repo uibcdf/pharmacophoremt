@@ -37,6 +37,14 @@ CONTRACTS = [
         caller="pharmacophoremt.screening.rigid_correspondence.get_rigid_feature_correspondences",
         admits="signature",
     ),
+    FunctionContract(
+        caller="pharmacophoremt.screening.feature_neighborhoods.get_feature_pair_dissimilarities",
+        admits="signature",
+    ),
+    FunctionContract(
+        caller="pharmacophoremt.screening.feature_neighborhoods.rank_rigid_feature_correspondences",
+        admits="signature",
+    ),
 ]
 
 CONFIG = DigestConfig(

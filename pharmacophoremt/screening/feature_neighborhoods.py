@@ -7,6 +7,14 @@ from smonitor import signal
 
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt._ackredit import attributed, credit_criterion, credit_software
+from pharmacophoremt._private.arg_digestion.argument._contracts import (
+    digest_correspondences,
+    digest_distance_tolerance,
+    digest_feature_pair_dissimilarities,
+    digest_max_matrix_entries,
+    digest_n_seeds,
+)
+from pharmacophoremt._private.arg_digestion.native_helpers import CONFIG
 from pharmacophoremt._private.molsysmt import detached
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 from pharmacophoremt.modeler.aligned_cliques import _limit
@@ -16,7 +24,7 @@ METHOD = "typed_neighborhood_assignment@1"
 
 
 @signal(tags=["screening", "correspondence", "neighborhood"])
-@arg_digest()
+@arg_digest(config=CONFIG)
 @attributed("numpy", "pyunitwizard")
 def get_feature_pair_dissimilarities(
     reference_inventory,
@@ -24,6 +32,7 @@ def get_feature_pair_dissimilarities(
     *,
     distance_tolerance="0.15 nm",
     max_matrix_entries=1000000,
+    skip_digestion=False,
 ):
     """Compare typed distance neighborhoods without molecular access or fitting.
 
@@ -37,6 +46,9 @@ def get_feature_pair_dissimilarities(
     max_matrix_entries : int
         Bound on each allocated distance, pair or padded neighbor-cost matrix.
         This does not bound cumulative assignment work or elapsed time.
+    skip_digestion : bool, default=False
+        Bypass ordinary digestion for canonical expert inputs. Native physical
+        and budget admission remain mandatory, including empty inventories.
 
     Returns
     -------
@@ -60,6 +72,8 @@ def get_feature_pair_dissimilarities(
     >>> costs = get_feature_pair_dissimilarities(reference, candidate)
     >>> compatible = costs['compatible']
     """
+    distance_tolerance = digest_distance_tolerance(distance_tolerance)
+    max_matrix_entries = digest_max_matrix_entries(max_matrix_entries)
     first, second = _records(reference_inventory), _records(feature_inventory)
     n_first, n_second = len(first), len(second)
     nonempty = bool(n_first and n_second)
@@ -145,10 +159,10 @@ def get_feature_pair_dissimilarities(
 
 
 @signal(tags=["screening", "correspondence", "ranking"])
-@arg_digest()
+@arg_digest(config=CONFIG)
 @attributed("numpy")
 def rank_rigid_feature_correspondences(
-    correspondences, feature_pair_dissimilarities, *, n_seeds=None
+    correspondences, feature_pair_dissimilarities, *, n_seeds=None, skip_digestion=False
 ):
     """Rank supplied three-pair guesses by summed neighborhood dissimilarity.
 
@@ -163,6 +177,9 @@ def rank_rigid_feature_correspondences(
     n_seeds : int or None
         Retain at most this many guesses; None retains every supplied guess.
         This is a scientific selection, not a failed computation budget.
+    skip_digestion : bool, default=False
+        Bypass ordinary digestion for canonical expert inputs. Native mapping,
+        comparison-report and seed-count admission remain mandatory, even empty.
 
     Returns
     -------
@@ -184,6 +201,11 @@ def rank_rigid_feature_correspondences(
     >>> ranked = rank_rigid_feature_correspondences(seeds, costs, n_seeds=20)
     >>> mappings = ranked['correspondences']
     """
+    correspondences = digest_correspondences(correspondences)
+    feature_pair_dissimilarities = digest_feature_pair_dissimilarities(
+        feature_pair_dissimilarities
+    )
+    n_seeds = digest_n_seeds(n_seeds)
     report = feature_pair_dissimilarities
     shape = (report["n_reference"], report["n_candidate"])
     costs = np.asarray(report["costs"], dtype=float).reshape(shape)
