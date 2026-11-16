@@ -1,9 +1,9 @@
 ---
 summary: Preserve inclusive clique distance boundaries across equivalent length units.
 issue: uibcdf/pharmacophoremt#237
-status: active
+status: resolved
 opened: 2026-11-15
-closed:
+closed: 2026-11-15
 severity: medium
 verification: measured
 area: [modeling, consensus, geometry, units]
@@ -36,3 +36,23 @@ Preserve default/bypassed admission, maximality, occurrence ordering, budgets,
 other methods and original failures. Broader comparison-policy consistency is
 not qualified here; #143's historical RDKit fixture issue retains its different
 inputs, source and resolution.
+
+## Resolution — 2026-11-15
+
+[Receiving](../evidence/clique_argument_controls_20261115.json) receives source
+3a405bdc4dda69cbc5f233d55be5e1959a25a5ef and exact private wheel `0.6.0+38.g3a405bd`:
+identical serial **191/25/189/99-case source/owned groups**, **504 distinct cases
+per context including 115 admission and 76 numerical boundary controls**, zero
+failures/errors/skips. All 246 payloads/191 source-equal nongenerated Python bodies
+verify; all four groups load 173 target-only PHMT modules. Actual immutable SDK
+staging has pre-work journals/checking and import/resource/both-link retirement.
+Strict owned HTML docs, 27 current distribution controls and reporting/archive/
+index/generated-environment/declared-route/Ruff checks pass (559 formatted files).
+The accepted focused source group keeps its original label without reexecution.
+Package footprint/provider requirements remain unchanged.
+
+The direct guard retains all 74 original numerical assertions and appends two
+positive margin controls. Nominal inclusive boundaries pass under both input/
+application units at three scales; 32-epsilon negatives and tiny-distance
+negatives remain rejected. The independent original clique oracle also passes.
+No provider defect or general comparison-policy qualification is asserted.

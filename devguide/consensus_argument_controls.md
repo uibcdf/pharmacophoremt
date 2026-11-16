@@ -17,7 +17,7 @@ signature/decorator inventory, not a complete export/inheritance/API audit.
 | from_feature_inventory, from_ligand | Explicit closed controls already received under #198. |
 | get_aligned_feature_matches, get_consensus_sites | Explicit controls and definition-owned admission received here. |
 | from_aligned_ligands | Received under [#234](aligned_model_argument_controls.md); original #233 state remains in its frozen receipt. |
-| get_aligned_feature_cliques | Explicit control implemented under [#236/#237](clique_argument_controls.md); exact-owned receiving pending. |
+| get_aligned_feature_cliques | Explicit control received under [#236/#237](clique_argument_controls.md), with its separately owned numerical boundary correction. |
 | get_aligned_consensus_hypotheses, from_aligned_ligand_cliques, from_rigid_ligands | Explicit controls still absent; retain subsequent #6 work. |
 
 ## Admission and scientific authority
@@ -131,3 +131,10 @@ is asserted. Full #6 and broader qualification retain their owners.
 corrects reference-index diagnostic ownership. The current table reflects that
 addition; #233's original source/artifact/metadata inventories and archive remain
 unchanged. Next get_aligned_feature_cliques is still absent in the bounded inventory.
+
+## Clique inventory continuation — 2026-11-15
+
+[#236/#237](clique_argument_controls.md) receives get_aligned_feature_cliques.
+The table reflects current receiving; original #233/#234 inventories and evidence
+remain unchanged. Next get_aligned_consensus_hypotheses is still missing, followed
+by from_aligned_ligand_cliques and from_rigid_ligands. Broader #6 remains partial.

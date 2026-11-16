@@ -1,0 +1,1545 @@
+{
+  "schema": "pharmacophoremt.clique-controls.receiving@1",
+  "date": "2026-11-15",
+  "issues": [
+    236,
+    237
+  ],
+  "source_commit": "3a405bdc4dda69cbc5f233d55be5e1959a25a5ef",
+  "scope": "One definition-owned public clique control with seven mandatory native validators; one explicitly owned inclusive distance roundoff correction. Broader #6 remains partial.",
+  "decision": "Identical bounded source/exact-private-wheel groups and current distribution/docs/appropriate quality pass; no tag/publisher/full remote matrix/native rebuild/benchmark or speed claim.",
+  "contract": {
+    "public": "Explicit keyword-only skip_digestion=False; closed/required definition-owned admission; literal Python True alone bypasses ordinary digestion. Consumers retain default child admission.",
+    "native": "Seven reused validators for inventory collection, unique identities, support, physical distance/angle and positive graph/clique budgets precede records/graph, including empty bypassed work. Original native record geometry, attainable support/count and limits remain.",
+    "science": "All inclusion-maximal pairwise-compatible groups, distinct-ligand occurrences, source-ID/feature-index ordering, directed donor/unoriented aromatic axes, empty-source evidence and unsupported-clique accounting remain. PHMT-E107 raises complete=False, original solver failure never returns partial accepted groups. max_cliques is an output bound, not a time/internal-search bound.",
+    "numerical_correction": "PHMT#237 intentionally replaces one strict floating edge predicate with inclusive length comparison allowing positive excess <= 8 * binary64 epsilon * tolerance; zero absolute allowance. Ideal inclusive definition retained. Other methods and #143 historical fixture qualification remain separate.",
+    "custody": "Actual nm/pm prepared selection/frame/state and original molecular coordinates/inventories preserved; downstream independent centroid/joint-support results and new/reused/empty application capture pass."
+  },
+  "source": {
+    "original_group_labels": {
+      "controls": "accepted-controls",
+      "cliques": "source-cliques",
+      "consensus": "source-consensus",
+      "model": "source-model"
+    },
+    "focused_source_reused_without_reexecution": true,
+    "groups": {
+      "controls": {
+        "tests": 191,
+        "failure": 0,
+        "error": 0,
+        "skipped": 0,
+        "XML": {
+          "bytes": 30162,
+          "sha256": "8ed76065098ee9c4726f534b3470db1ecfec842c541acde4cb8ba182336d46e8"
+        },
+        "case_IDs_sha256": "5f37e8bc53abcac5d8937ad42999fcf3c77a28a007d8195e46f8f4528c4bb69e"
+      },
+      "cliques": {
+        "tests": 25,
+        "failure": 0,
+        "error": 0,
+        "skipped": 0,
+        "XML": {
+          "bytes": 3546,
+          "sha256": "436cc9e24d2213a920d82d28b0cec3fb85b2f5e787a572f3e961c62f51a57ae8"
+        },
+        "case_IDs_sha256": "8c3f883b45973ce1a098f7f67af4dd1b4582b37f326cbd034cb759bf31fa13b6"
+      },
+      "consensus": {
+        "tests": 189,
+        "failure": 0,
+        "error": 0,
+        "skipped": 0,
+        "XML": {
+          "bytes": 32659,
+          "sha256": "fb58659b4f1ff506df4959be44ae3edf19f3eea640267b2017ec4ff4bbd5afbe"
+        },
+        "case_IDs_sha256": "16cfef93afc8450dc41abae02d128b0f9ab0afbb9992b5d190a3a1db87b92c8d"
+      },
+      "model": {
+        "tests": 99,
+        "failure": 0,
+        "error": 0,
+        "skipped": 0,
+        "XML": {
+          "bytes": 17438,
+          "sha256": "8f4d5426d6e28bc4ac49f74de76db96d8d525c6a08b668110d87a93e1e913222"
+        },
+        "case_IDs_sha256": "41c2943e8632c0b48dbc60a3bae6b67f03bb898ee42026c26bd5b0863bea2093"
+      }
+    },
+    "distinct_case_count": 504,
+    "groups_disjoint": true,
+    "new_controls": 191,
+    "admission_controls": 115,
+    "boundary_controls": 76,
+    "provider_contexts": {
+      "controls": {
+        "providers": {
+          "molsysmt": {
+            "origin": "/tmp/phmt-060-consolidation-20261113-a5udv1sv/reader-source/molsysmt/__init__.py",
+            "version": "0+unknown"
+          },
+          "ackredit": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-ackredit/ackredit/__init__.py",
+            "version": "0.11.0+3.g71f7f19"
+          },
+          "depdigest": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-depdigest/depdigest/__init__.py",
+            "version": "0.15.1"
+          },
+          "molsysviewer": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-molsysviewer/molsysviewer/__init__.py",
+            "version": "0.24.0+238.gca7ebea6"
+          },
+          "smonitor": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/smonitor-0.22.1-py_0/site-packages/smonitor/__init__.py",
+            "version": "0.22.1"
+          },
+          "argdigest": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/argdigest-0.17.1-py_0/site-packages/argdigest/__init__.py",
+            "version": "0.17.1"
+          },
+          "pyunitwizard": {
+            "origin": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-capture-20261111-6wh0wkhu/providers-0281/pyunitwizard/__init__.py",
+            "version": "0.28.1"
+          }
+        },
+        "public_files_equal_to_CI_pins": [
+          {
+            "name": "smonitor",
+            "source": "2147c7c641b7cba8a974b193207f686ee3ebe855",
+            "equal_python_files": 40
+          },
+          {
+            "name": "argdigest",
+            "source": "c9c9ee623dab5331fdfa4227bd784dd38620e18b",
+            "equal_python_files": 38
+          },
+          {
+            "name": "pyunitwizard",
+            "source": "2ab37a525ce99728ad8aee846b4a4f7acc4f1b65",
+            "equal_python_files": 83
+          }
+        ],
+        "molecular_source": "05865fbb3ba499d4117d6ba3e1cf55d98a9e239e",
+        "molecular_native_extension": "inherited; original tracked Rust/toolchain bytes equal; not a new installed native package",
+        "pyunitwizard": "0.28.1"
+      },
+      "cliques": {
+        "providers": {
+          "molsysmt": {
+            "origin": "/tmp/phmt-060-consolidation-20261113-a5udv1sv/reader-source/molsysmt/__init__.py",
+            "version": "0+unknown"
+          },
+          "ackredit": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-ackredit/ackredit/__init__.py",
+            "version": "0.11.0+3.g71f7f19"
+          },
+          "depdigest": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-depdigest/depdigest/__init__.py",
+            "version": "0.15.1"
+          },
+          "molsysviewer": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-molsysviewer/molsysviewer/__init__.py",
+            "version": "0.24.0+238.gca7ebea6"
+          },
+          "smonitor": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/smonitor-0.22.1-py_0/site-packages/smonitor/__init__.py",
+            "version": "0.22.1"
+          },
+          "argdigest": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/argdigest-0.17.1-py_0/site-packages/argdigest/__init__.py",
+            "version": "0.17.1"
+          },
+          "pyunitwizard": {
+            "origin": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-capture-20261111-6wh0wkhu/providers-0281/pyunitwizard/__init__.py",
+            "version": "0.28.1"
+          }
+        },
+        "public_files_equal_to_CI_pins": [
+          {
+            "name": "smonitor",
+            "source": "2147c7c641b7cba8a974b193207f686ee3ebe855",
+            "equal_python_files": 40
+          },
+          {
+            "name": "argdigest",
+            "source": "c9c9ee623dab5331fdfa4227bd784dd38620e18b",
+            "equal_python_files": 38
+          },
+          {
+            "name": "pyunitwizard",
+            "source": "2ab37a525ce99728ad8aee846b4a4f7acc4f1b65",
+            "equal_python_files": 83
+          }
+        ],
+        "molecular_source": "05865fbb3ba499d4117d6ba3e1cf55d98a9e239e",
+        "molecular_native_extension": "inherited; original tracked Rust/toolchain bytes equal; not a new installed native package",
+        "pyunitwizard": "0.28.1"
+      },
+      "consensus": {
+        "providers": {
+          "molsysmt": {
+            "origin": "/tmp/phmt-060-consolidation-20261113-a5udv1sv/reader-source/molsysmt/__init__.py",
+            "version": "0+unknown"
+          },
+          "ackredit": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-ackredit/ackredit/__init__.py",
+            "version": "0.11.0+3.g71f7f19"
+          },
+          "depdigest": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-depdigest/depdigest/__init__.py",
+            "version": "0.15.1"
+          },
+          "molsysviewer": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-molsysviewer/molsysviewer/__init__.py",
+            "version": "0.24.0+238.gca7ebea6"
+          },
+          "smonitor": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/smonitor-0.22.1-py_0/site-packages/smonitor/__init__.py",
+            "version": "0.22.1"
+          },
+          "argdigest": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/argdigest-0.17.1-py_0/site-packages/argdigest/__init__.py",
+            "version": "0.17.1"
+          },
+          "pyunitwizard": {
+            "origin": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-capture-20261111-6wh0wkhu/providers-0281/pyunitwizard/__init__.py",
+            "version": "0.28.1"
+          }
+        },
+        "public_files_equal_to_CI_pins": [
+          {
+            "name": "smonitor",
+            "source": "2147c7c641b7cba8a974b193207f686ee3ebe855",
+            "equal_python_files": 40
+          },
+          {
+            "name": "argdigest",
+            "source": "c9c9ee623dab5331fdfa4227bd784dd38620e18b",
+            "equal_python_files": 38
+          },
+          {
+            "name": "pyunitwizard",
+            "source": "2ab37a525ce99728ad8aee846b4a4f7acc4f1b65",
+            "equal_python_files": 83
+          }
+        ],
+        "molecular_source": "05865fbb3ba499d4117d6ba3e1cf55d98a9e239e",
+        "molecular_native_extension": "inherited; original tracked Rust/toolchain bytes equal; not a new installed native package",
+        "pyunitwizard": "0.28.1"
+      },
+      "model": {
+        "providers": {
+          "molsysmt": {
+            "origin": "/tmp/phmt-060-consolidation-20261113-a5udv1sv/reader-source/molsysmt/__init__.py",
+            "version": "0+unknown"
+          },
+          "ackredit": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-ackredit/ackredit/__init__.py",
+            "version": "0.11.0+3.g71f7f19"
+          },
+          "depdigest": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-depdigest/depdigest/__init__.py",
+            "version": "0.15.1"
+          },
+          "molsysviewer": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-molsysviewer/molsysviewer/__init__.py",
+            "version": "0.24.0+238.gca7ebea6"
+          },
+          "smonitor": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/smonitor-0.22.1-py_0/site-packages/smonitor/__init__.py",
+            "version": "0.22.1"
+          },
+          "argdigest": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/argdigest-0.17.1-py_0/site-packages/argdigest/__init__.py",
+            "version": "0.17.1"
+          },
+          "pyunitwizard": {
+            "origin": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-capture-20261111-6wh0wkhu/providers-0281/pyunitwizard/__init__.py",
+            "version": "0.28.1"
+          }
+        },
+        "public_files_equal_to_CI_pins": [
+          {
+            "name": "smonitor",
+            "source": "2147c7c641b7cba8a974b193207f686ee3ebe855",
+            "equal_python_files": 40
+          },
+          {
+            "name": "argdigest",
+            "source": "c9c9ee623dab5331fdfa4227bd784dd38620e18b",
+            "equal_python_files": 38
+          },
+          {
+            "name": "pyunitwizard",
+            "source": "2ab37a525ce99728ad8aee846b4a4f7acc4f1b65",
+            "equal_python_files": 83
+          }
+        ],
+        "molecular_source": "05865fbb3ba499d4117d6ba3e1cf55d98a9e239e",
+        "molecular_native_extension": "inherited; original tracked Rust/toolchain bytes equal; not a new installed native package",
+        "pyunitwizard": "0.28.1"
+      }
+    }
+  },
+  "owned_groups": {
+    "controls": {
+      "tests": 191,
+      "failure": 0,
+      "error": 0,
+      "skipped": 0,
+      "XML": {
+        "bytes": 30162,
+        "sha256": "1b5840475366a134989f4605b97e16bca3f6a1abe62bae7f76877d6bc197482e"
+      },
+      "case_IDs_sha256": "5f37e8bc53abcac5d8937ad42999fcf3c77a28a007d8195e46f8f4528c4bb69e",
+      "loaded_PHMT_modules": 173,
+      "receiving": {
+        "bytes": 85138,
+        "sha256": "2f1c602946b02c14938463fb4d831d07ce703272f54132a4338e9b827fae3f06"
+      },
+      "stage_entry": {
+        "bytes": 40514,
+        "sha256": "4fa763dbb56758f8b7960823af46263e05d0ebd957dae34c0f31a01e329c015f"
+      },
+      "staged_support_retired": true,
+      "both_file_relative_links_retired": true,
+      "provider_context": {
+        "providers": {
+          "molsysmt": {
+            "origin": "/tmp/phmt-060-consolidation-20261113-a5udv1sv/reader-source/molsysmt/__init__.py",
+            "version": "0+unknown"
+          },
+          "ackredit": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-ackredit/ackredit/__init__.py",
+            "version": "0.11.0+3.g71f7f19"
+          },
+          "depdigest": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-depdigest/depdigest/__init__.py",
+            "version": "0.15.1"
+          },
+          "molsysviewer": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-molsysviewer/molsysviewer/__init__.py",
+            "version": "0.24.0+238.gca7ebea6"
+          },
+          "smonitor": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/smonitor-0.22.1-py_0/site-packages/smonitor/__init__.py",
+            "version": "0.22.1"
+          },
+          "argdigest": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/argdigest-0.17.1-py_0/site-packages/argdigest/__init__.py",
+            "version": "0.17.1"
+          },
+          "pyunitwizard": {
+            "origin": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-capture-20261111-6wh0wkhu/providers-0281/pyunitwizard/__init__.py",
+            "version": "0.28.1"
+          }
+        },
+        "public_files_equal_to_CI_pins": [
+          {
+            "name": "smonitor",
+            "source": "2147c7c641b7cba8a974b193207f686ee3ebe855",
+            "equal_python_files": 40
+          },
+          {
+            "name": "argdigest",
+            "source": "c9c9ee623dab5331fdfa4227bd784dd38620e18b",
+            "equal_python_files": 38
+          },
+          {
+            "name": "pyunitwizard",
+            "source": "2ab37a525ce99728ad8aee846b4a4f7acc4f1b65",
+            "equal_python_files": 83
+          }
+        ],
+        "molecular_source": "05865fbb3ba499d4117d6ba3e1cf55d98a9e239e",
+        "molecular_native_extension": "inherited; original tracked Rust/toolchain bytes equal; not a new installed native package",
+        "pyunitwizard": "0.28.1"
+      }
+    },
+    "cliques": {
+      "tests": 25,
+      "failure": 0,
+      "error": 0,
+      "skipped": 0,
+      "XML": {
+        "bytes": 3545,
+        "sha256": "2fe923d29540dac89d5739a24e0cae193416ee992fec6914eccd376e05c00f90"
+      },
+      "case_IDs_sha256": "8c3f883b45973ce1a098f7f67af4dd1b4582b37f326cbd034cb759bf31fa13b6",
+      "loaded_PHMT_modules": 173,
+      "receiving": {
+        "bytes": 85136,
+        "sha256": "7258c44ec8b5a21dfb6e34b0b6d7edb7f167bdd520a7d7f7edbc7e8165fa89bf"
+      },
+      "stage_entry": {
+        "bytes": 40513,
+        "sha256": "6b5e8a78eec8a189a240569a1b63eb482d95c4598e28b972dec28aae69c19b0a"
+      },
+      "staged_support_retired": true,
+      "both_file_relative_links_retired": true,
+      "provider_context": {
+        "providers": {
+          "molsysmt": {
+            "origin": "/tmp/phmt-060-consolidation-20261113-a5udv1sv/reader-source/molsysmt/__init__.py",
+            "version": "0+unknown"
+          },
+          "ackredit": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-ackredit/ackredit/__init__.py",
+            "version": "0.11.0+3.g71f7f19"
+          },
+          "depdigest": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-depdigest/depdigest/__init__.py",
+            "version": "0.15.1"
+          },
+          "molsysviewer": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-molsysviewer/molsysviewer/__init__.py",
+            "version": "0.24.0+238.gca7ebea6"
+          },
+          "smonitor": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/smonitor-0.22.1-py_0/site-packages/smonitor/__init__.py",
+            "version": "0.22.1"
+          },
+          "argdigest": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/argdigest-0.17.1-py_0/site-packages/argdigest/__init__.py",
+            "version": "0.17.1"
+          },
+          "pyunitwizard": {
+            "origin": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-capture-20261111-6wh0wkhu/providers-0281/pyunitwizard/__init__.py",
+            "version": "0.28.1"
+          }
+        },
+        "public_files_equal_to_CI_pins": [
+          {
+            "name": "smonitor",
+            "source": "2147c7c641b7cba8a974b193207f686ee3ebe855",
+            "equal_python_files": 40
+          },
+          {
+            "name": "argdigest",
+            "source": "c9c9ee623dab5331fdfa4227bd784dd38620e18b",
+            "equal_python_files": 38
+          },
+          {
+            "name": "pyunitwizard",
+            "source": "2ab37a525ce99728ad8aee846b4a4f7acc4f1b65",
+            "equal_python_files": 83
+          }
+        ],
+        "molecular_source": "05865fbb3ba499d4117d6ba3e1cf55d98a9e239e",
+        "molecular_native_extension": "inherited; original tracked Rust/toolchain bytes equal; not a new installed native package",
+        "pyunitwizard": "0.28.1"
+      }
+    },
+    "consensus": {
+      "tests": 189,
+      "failure": 0,
+      "error": 0,
+      "skipped": 0,
+      "XML": {
+        "bytes": 32659,
+        "sha256": "da45c13f991f169f688f1706c1d751dbabf50da2a06cb649f3a40bbfc5cfefa3"
+      },
+      "case_IDs_sha256": "16cfef93afc8450dc41abae02d128b0f9ab0afbb9992b5d190a3a1db87b92c8d",
+      "loaded_PHMT_modules": 173,
+      "receiving": {
+        "bytes": 85140,
+        "sha256": "2e45259419760352376413c3fc863bc98ab0fbf778ab0f63cdaadb6de4f29c65"
+      },
+      "stage_entry": {
+        "bytes": 40515,
+        "sha256": "9e23c2ecf946d6dc82aa73b36c1fbde1a53e245fcdcb6bc111322a829773ffd1"
+      },
+      "staged_support_retired": true,
+      "both_file_relative_links_retired": true,
+      "provider_context": {
+        "providers": {
+          "molsysmt": {
+            "origin": "/tmp/phmt-060-consolidation-20261113-a5udv1sv/reader-source/molsysmt/__init__.py",
+            "version": "0+unknown"
+          },
+          "ackredit": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-ackredit/ackredit/__init__.py",
+            "version": "0.11.0+3.g71f7f19"
+          },
+          "depdigest": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-depdigest/depdigest/__init__.py",
+            "version": "0.15.1"
+          },
+          "molsysviewer": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-molsysviewer/molsysviewer/__init__.py",
+            "version": "0.24.0+238.gca7ebea6"
+          },
+          "smonitor": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/smonitor-0.22.1-py_0/site-packages/smonitor/__init__.py",
+            "version": "0.22.1"
+          },
+          "argdigest": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/argdigest-0.17.1-py_0/site-packages/argdigest/__init__.py",
+            "version": "0.17.1"
+          },
+          "pyunitwizard": {
+            "origin": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-capture-20261111-6wh0wkhu/providers-0281/pyunitwizard/__init__.py",
+            "version": "0.28.1"
+          }
+        },
+        "public_files_equal_to_CI_pins": [
+          {
+            "name": "smonitor",
+            "source": "2147c7c641b7cba8a974b193207f686ee3ebe855",
+            "equal_python_files": 40
+          },
+          {
+            "name": "argdigest",
+            "source": "c9c9ee623dab5331fdfa4227bd784dd38620e18b",
+            "equal_python_files": 38
+          },
+          {
+            "name": "pyunitwizard",
+            "source": "2ab37a525ce99728ad8aee846b4a4f7acc4f1b65",
+            "equal_python_files": 83
+          }
+        ],
+        "molecular_source": "05865fbb3ba499d4117d6ba3e1cf55d98a9e239e",
+        "molecular_native_extension": "inherited; original tracked Rust/toolchain bytes equal; not a new installed native package",
+        "pyunitwizard": "0.28.1"
+      }
+    },
+    "model": {
+      "tests": 99,
+      "failure": 0,
+      "error": 0,
+      "skipped": 0,
+      "XML": {
+        "bytes": 17438,
+        "sha256": "0a86907d28ef9970704bdfe22d1f37ced8ab1dd8335c251511ad4923d897e649"
+      },
+      "case_IDs_sha256": "41c2943e8632c0b48dbc60a3bae6b67f03bb898ee42026c26bd5b0863bea2093",
+      "loaded_PHMT_modules": 173,
+      "receiving": {
+        "bytes": 85132,
+        "sha256": "df6a42b653b64d5925a57746709476ba0e73bcd22cf586750e9396b3d290fb7d"
+      },
+      "stage_entry": {
+        "bytes": 40511,
+        "sha256": "71c987366ebb2f9a5a918857f14fefe0c5bfbe6570115bacea8dd273b9d29c4e"
+      },
+      "staged_support_retired": true,
+      "both_file_relative_links_retired": true,
+      "provider_context": {
+        "providers": {
+          "molsysmt": {
+            "origin": "/tmp/phmt-060-consolidation-20261113-a5udv1sv/reader-source/molsysmt/__init__.py",
+            "version": "0+unknown"
+          },
+          "ackredit": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-ackredit/ackredit/__init__.py",
+            "version": "0.11.0+3.g71f7f19"
+          },
+          "depdigest": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-depdigest/depdigest/__init__.py",
+            "version": "0.15.1"
+          },
+          "molsysviewer": {
+            "origin": "/tmp/phmt-060-receive-20261113-oajb6lg_/installed-molsysviewer/molsysviewer/__init__.py",
+            "version": "0.24.0+238.gca7ebea6"
+          },
+          "smonitor": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/smonitor-0.22.1-py_0/site-packages/smonitor/__init__.py",
+            "version": "0.22.1"
+          },
+          "argdigest": {
+            "origin": "/tmp/phmt-symmetric-comparison-owned-20261113-3i2q_5ol/argdigest-0.17.1-py_0/site-packages/argdigest/__init__.py",
+            "version": "0.17.1"
+          },
+          "pyunitwizard": {
+            "origin": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-capture-20261111-6wh0wkhu/providers-0281/pyunitwizard/__init__.py",
+            "version": "0.28.1"
+          }
+        },
+        "public_files_equal_to_CI_pins": [
+          {
+            "name": "smonitor",
+            "source": "2147c7c641b7cba8a974b193207f686ee3ebe855",
+            "equal_python_files": 40
+          },
+          {
+            "name": "argdigest",
+            "source": "c9c9ee623dab5331fdfa4227bd784dd38620e18b",
+            "equal_python_files": 38
+          },
+          {
+            "name": "pyunitwizard",
+            "source": "2ab37a525ce99728ad8aee846b4a4f7acc4f1b65",
+            "equal_python_files": 83
+          }
+        ],
+        "molecular_source": "05865fbb3ba499d4117d6ba3e1cf55d98a9e239e",
+        "molecular_native_extension": "inherited; original tracked Rust/toolchain bytes equal; not a new installed native package",
+        "pyunitwizard": "0.28.1"
+      }
+    }
+  },
+  "owned_distinct_case_count": 504,
+  "owned_runtime_module_union": 173,
+  "wheel": {
+    "path": "/tmp/phmt-clique-controls-20261115-gayfuhwr/wheels/pharmacophoremt-0.6.0+38.g3a405bd-py3-none-any.whl",
+    "bytes": 4590729,
+    "sha256": "eb41b8328248a85937cc60af5a645b727a484d2a4ed841f5e1ddb8dbc49b1293",
+    "version": "0.6.0+38.g3a405bd",
+    "verified_payload_files": 246,
+    "source_equal_runtime_Python_bodies": 191,
+    "support_namespace_shipped": false,
+    "published": false,
+    "build_receipt": {
+      "bytes": 51092,
+      "sha256": "c056c05466bada2f3cd385f885da2bda9f88d3672e137191cf3e368d0571ad75"
+    }
+  },
+  "body_preservation": {
+    "scientific_body_AST_equal_except_one_distance_predicate_and_seven_validators": true,
+    "other_module_functions_helpers_AST_equal": true,
+    "added_private_helper": "_within_distance",
+    "relative_length_roundoff_allowance": "8 * binary64 epsilon * declared tolerance; zero absolute allowance",
+    "signal_attribution_decorators_AST_equal": true,
+    "value_contracts_byte_equal": true,
+    "control_only_preservation": "control_only_body_preservation.json"
+  },
+  "original_attempts": {
+    "control_baseline": {
+      "tests": 115,
+      "failure": 109,
+      "error": 0,
+      "skipped": 0,
+      "XML": {
+        "bytes": 555146,
+        "sha256": "3d046b07a1aa518d0e833fa76442d82cbfb45599551b4f9063db56bff60bf9ae"
+      },
+      "case_IDs_sha256": "03ecd2de1c9222e8bd3b2e931c45dc9e62bb9dfcfe99f477c54340bfc377aa5a"
+    },
+    "baseline_call_shape_catches": 6,
+    "initial_implemented": {
+      "tests": 115,
+      "failure": 6,
+      "error": 0,
+      "skipped": 0,
+      "XML": {
+        "bytes": 31175,
+        "sha256": "037d386a71e8454340a54a5f0366dc57d3f075b17f30d46c5b10e3355d9a8ae3"
+      },
+      "case_IDs_sha256": "03ecd2de1c9222e8bd3b2e931c45dc9e62bb9dfcfe99f477c54340bfc377aa5a"
+    },
+    "initial_implemented_label_is_historical": "focused-final was the original attempted final run, not the accepted final source group",
+    "boundary_baseline": {
+      "tests": 74,
+      "failure": 12,
+      "error": 0,
+      "skipped": 0,
+      "XML": {
+        "bytes": 31694,
+        "sha256": "185614d63839161e06bf80c09299b99f76f60e14b63abbc6b4d0c5e38ca9d57d"
+      },
+      "case_IDs_sha256": "724f1bd4dc2d1405136a23424fe26acbbd648e683a7b839c5f6f828aa2a07671"
+    },
+    "accepted_final": {
+      "tests": 191,
+      "failure": 0,
+      "error": 0,
+      "skipped": 0,
+      "XML": {
+        "bytes": 30162,
+        "sha256": "8ed76065098ee9c4726f534b3470db1ecfec842c541acde4cb8ba182336d46e8"
+      },
+      "case_IDs_sha256": "5f37e8bc53abcac5d8937ad42999fcf3c77a28a007d8195e46f8f4528c4bb69e"
+    },
+    "guard_adjustments": "Four parameterized diagnostic assertions corrected by checking all five owned fields while permitting SMonitor source links; no expected clique or unit case relaxed. Original 74 boundary guards AST-equal, two positive four-epsilon cases appended.",
+    "control_guard_diff": "--- initial_guard.py\n+++ final_guard.py\n@@ -231,9 +231,10 @@\n             sources, ligand_ids=[\"a\", \"b\"], max_graph_nodes=3, skip_digestion=skip\n         )\n     assert caught.value.code == \"PHMT-E107\"\n-    assert caught.value.extra == dict(\n+    expected = dict(\n         stage=\"feature_graph\", resource=\"nodes\", observed=4, limit=3, complete=False\n     )\n+    assert {key: caught.value.extra[key] for key in expected} == expected\n \n \n @pytest.mark.parametrize(\"skip\", [False, True])\n@@ -253,13 +254,14 @@\n             sources, ligand_ids=[\"z\", \"a\"], max_cliques=2, skip_digestion=skip\n         )\n     assert caught.value.code == \"PHMT-E107\"\n-    assert caught.value.extra == dict(\n+    expected = dict(\n         stage=\"feature_cliques\",\n         resource=\"maximal cliques\",\n         observed=3,\n         limit=2,\n         complete=False,\n     )\n+    assert {key: caught.value.extra[key] for key in expected} == expected\n \n \n @pytest.mark.parametrize(\"skip\", [False, True])\n",
+    "guards": {
+      "initial_guard.py": {
+        "bytes": 17652,
+        "sha256": "fd01ff31e06b7ce203d8c0cf7cbdb485476f57bb67f96436764db7ddd4c0efca"
+      },
+      "corrected_control_guard.py": {
+        "bytes": 17764,
+        "sha256": "7fc84a6504fcb7681d122ba2fd30833ef32ef54c939e51da3ab09f930f681f37"
+      },
+      "final_guard.py": {
+        "bytes": 17764,
+        "sha256": "7fc84a6504fcb7681d122ba2fd30833ef32ef54c939e51da3ab09f930f681f37"
+      },
+      "initial_boundary_guard.py": {
+        "bytes": 2118,
+        "sha256": "9cfce3a78a653c45ca4965f84b68672db56961ffcac71bf5e4c90f7ca261768c"
+      },
+      "final_boundary_guard.py": {
+        "bytes": 2672,
+        "sha256": "db5fa37152345f9b709e414608a5369d86290c2820ba6cf7334db2152a672c98"
+      }
+    }
+  },
+  "bounded_modeling_inventory": {
+    "initial": {
+      "scope": "Ten directly inspected modeling functions; source AST only, not exhaustive export/inheritance audit",
+      "functions": [
+        {
+          "name": "get_features",
+          "module": "pharmacophoremt/modeler/features.py",
+          "explicit_skip_digestion": true,
+          "decorators": [
+            "signal(tags=['modeling', 'features'])",
+            "arg_digest()",
+            "attributed('numpy', 'molsysmt', 'pyunitwizard')"
+          ]
+        },
+        {
+          "name": "from_feature_inventory",
+          "module": "pharmacophoremt/modeler/reference_ligand.py",
+          "explicit_skip_digestion": true,
+          "decorators": [
+            "signal(tags=['modeling', 'feature_inventory'])",
+            "arg_digest(config=CONFIG)",
+            "attributed('pyunitwizard')"
+          ]
+        },
+        {
+          "name": "from_ligand",
+          "module": "pharmacophoremt/modeler/reference_ligand.py",
+          "explicit_skip_digestion": true,
+          "decorators": [
+            "signal(tags=['modeling', 'reference_ligand'])",
+            "arg_digest(config=CONFIG)",
+            "attributed('numpy', 'molsysmt', 'pyunitwizard')"
+          ]
+        },
+        {
+          "name": "get_aligned_feature_matches",
+          "module": "pharmacophoremt/modeler/aligned_consensus.py",
+          "explicit_skip_digestion": true,
+          "decorators": [
+            "signal(tags=['modeling', 'consensus', 'correspondence'])",
+            "arg_digest(config=CONFIG)",
+            "attributed('numpy', 'pyunitwizard')"
+          ]
+        },
+        {
+          "name": "get_consensus_sites",
+          "module": "pharmacophoremt/modeler/aligned_consensus.py",
+          "explicit_skip_digestion": true,
+          "decorators": [
+            "signal(tags=['modeling', 'consensus', 'aggregation'])",
+            "arg_digest(config=CONFIG)",
+            "attributed('numpy', 'pyunitwizard')"
+          ]
+        },
+        {
+          "name": "from_aligned_ligands",
+          "module": "pharmacophoremt/modeler/aligned_consensus.py",
+          "explicit_skip_digestion": true,
+          "decorators": [
+            "signal(tags=['modeling', 'consensus', 'aligned_ligands'])",
+            "arg_digest(config=CONFIG)",
+            "attributed('molsysmt', 'pyunitwizard')"
+          ]
+        },
+        {
+          "name": "get_aligned_feature_cliques",
+          "module": "pharmacophoremt/modeler/aligned_cliques.py",
+          "explicit_skip_digestion": false,
+          "decorators": [
+            "signal(tags=['modeling', 'consensus', 'cliques'])",
+            "arg_digest()",
+            "attributed('numpy', 'pyunitwizard')"
+          ]
+        },
+        {
+          "name": "get_aligned_consensus_hypotheses",
+          "module": "pharmacophoremt/modeler/aligned_cliques.py",
+          "explicit_skip_digestion": false,
+          "decorators": [
+            "signal(tags=['modeling', 'consensus', 'hypotheses'])",
+            "arg_digest()",
+            "attributed('numpy', 'pyunitwizard')"
+          ]
+        },
+        {
+          "name": "from_aligned_ligand_cliques",
+          "module": "pharmacophoremt/modeler/aligned_cliques.py",
+          "explicit_skip_digestion": false,
+          "decorators": [
+            "signal(tags=['modeling', 'consensus', 'aligned_ligands'])",
+            "arg_digest()",
+            "attributed('molsysmt', 'pyunitwizard', model_results=True)"
+          ]
+        },
+        {
+          "name": "from_rigid_ligands",
+          "module": "pharmacophoremt/modeler/rigid_consensus.py",
+          "explicit_skip_digestion": false,
+          "decorators": [
+            "signal(tags=['modeling', 'consensus', 'rigid'])",
+            "arg_digest()",
+            "attributed('numpy', 'molsysmt', 'pyunitwizard', model_results=True)"
+          ]
+        }
+      ]
+    },
+    "final": {
+      "scope": "Ten directly inspected modeling functions; source AST only, not exhaustive export/inheritance audit",
+      "functions": [
+        {
+          "name": "get_features",
+          "module": "pharmacophoremt/modeler/features.py",
+          "explicit_skip_digestion": true,
+          "decorators": [
+            "signal(tags=['modeling', 'features'])",
+            "arg_digest()",
+            "attributed('numpy', 'molsysmt', 'pyunitwizard')"
+          ]
+        },
+        {
+          "name": "from_feature_inventory",
+          "module": "pharmacophoremt/modeler/reference_ligand.py",
+          "explicit_skip_digestion": true,
+          "decorators": [
+            "signal(tags=['modeling', 'feature_inventory'])",
+            "arg_digest(config=CONFIG)",
+            "attributed('pyunitwizard')"
+          ]
+        },
+        {
+          "name": "from_ligand",
+          "module": "pharmacophoremt/modeler/reference_ligand.py",
+          "explicit_skip_digestion": true,
+          "decorators": [
+            "signal(tags=['modeling', 'reference_ligand'])",
+            "arg_digest(config=CONFIG)",
+            "attributed('numpy', 'molsysmt', 'pyunitwizard')"
+          ]
+        },
+        {
+          "name": "get_aligned_feature_matches",
+          "module": "pharmacophoremt/modeler/aligned_consensus.py",
+          "explicit_skip_digestion": true,
+          "decorators": [
+            "signal(tags=['modeling', 'consensus', 'correspondence'])",
+            "arg_digest(config=CONFIG)",
+            "attributed('numpy', 'pyunitwizard')"
+          ]
+        },
+        {
+          "name": "get_consensus_sites",
+          "module": "pharmacophoremt/modeler/aligned_consensus.py",
+          "explicit_skip_digestion": true,
+          "decorators": [
+            "signal(tags=['modeling', 'consensus', 'aggregation'])",
+            "arg_digest(config=CONFIG)",
+            "attributed('numpy', 'pyunitwizard')"
+          ]
+        },
+        {
+          "name": "from_aligned_ligands",
+          "module": "pharmacophoremt/modeler/aligned_consensus.py",
+          "explicit_skip_digestion": true,
+          "decorators": [
+            "signal(tags=['modeling', 'consensus', 'aligned_ligands'])",
+            "arg_digest(config=CONFIG)",
+            "attributed('molsysmt', 'pyunitwizard')"
+          ]
+        },
+        {
+          "name": "get_aligned_feature_cliques",
+          "module": "pharmacophoremt/modeler/aligned_cliques.py",
+          "explicit_skip_digestion": true,
+          "decorators": [
+            "signal(tags=['modeling', 'consensus', 'cliques'])",
+            "arg_digest(config=CONFIG)",
+            "attributed('numpy', 'pyunitwizard')"
+          ]
+        },
+        {
+          "name": "get_aligned_consensus_hypotheses",
+          "module": "pharmacophoremt/modeler/aligned_cliques.py",
+          "explicit_skip_digestion": false,
+          "decorators": [
+            "signal(tags=['modeling', 'consensus', 'hypotheses'])",
+            "arg_digest()",
+            "attributed('numpy', 'pyunitwizard')"
+          ]
+        },
+        {
+          "name": "from_aligned_ligand_cliques",
+          "module": "pharmacophoremt/modeler/aligned_cliques.py",
+          "explicit_skip_digestion": false,
+          "decorators": [
+            "signal(tags=['modeling', 'consensus', 'aligned_ligands'])",
+            "arg_digest()",
+            "attributed('molsysmt', 'pyunitwizard', model_results=True)"
+          ]
+        },
+        {
+          "name": "from_rigid_ligands",
+          "module": "pharmacophoremt/modeler/rigid_consensus.py",
+          "explicit_skip_digestion": false,
+          "decorators": [
+            "signal(tags=['modeling', 'consensus', 'rigid'])",
+            "arg_digest()",
+            "attributed('numpy', 'molsysmt', 'pyunitwizard', model_results=True)"
+          ]
+        }
+      ]
+    },
+    "next_missing_control": "get_aligned_consensus_hypotheses"
+  },
+  "administrative": {
+    "reporting_tests": 3,
+    "archive_tests": 18,
+    "current_distribution_controls": {
+      "tests": 27,
+      "failure": 0,
+      "error": 0,
+      "skipped": 0,
+      "XML": {
+        "bytes": 5007,
+        "sha256": "48f3fc1913a181488b7dfe751506da6f3805218f6138f02cad79f16627167dc0"
+      },
+      "case_IDs_sha256": "18af3b5a4ac062c9eccbb890df3186d9a6ab92f5bfeebfa2ac02aedfcddaa6c4"
+    },
+    "appropriate_quality_commands": [
+      {
+        "arguments": [
+          "devtools/devguide_index.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "output": "Generated report indexes are current.\n"
+      },
+      {
+        "arguments": [
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_reporting_protocol.py"
+        ],
+        "exit_code": 0,
+        "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.733s\n\nOK\n"
+      },
+      {
+        "arguments": [
+          "devtools/conda_environment.py",
+          "generate",
+          "--check"
+        ],
+        "exit_code": 0,
+        "output": "{\n  \"changed\": []\n}\n"
+      },
+      {
+        "arguments": [
+          "devtools/check_dependency_routes.py",
+          "--declared-only"
+        ],
+        "exit_code": 0,
+        "output": "{\"contexts\": [{\"bootstrap_selectors\": [\"python>=3.14,<3.15\", \"setuptools\", \"pytest\", \"pip\", \"pytest-cov\", \"codecov\", \"jupyterlab\", \"sphinx\", \"pydata-sphinx-theme\", \"sphinxcontrib-bibtex\", \"sphinx-remove-toctrees\", \"sphinx-copybutton\", \"sphinx-design\", \"sphinx-favicon\", \"sphinx-tabs\", \"myst-nb\", \"mamba\", \"numpy\", \"pandas>=2.3.3\", \"scipy\", \"nglview\", \"molsysmt\", \"pyunitwizard>=0.28.1\", \"argdigest>=0.17.1\", \"smonitor>=0.22.1\", \"depdigest\", \"rdkit\", \"networkx\", \"PyYAML>=5.1\"], \"environment\": \"devtools/conda-envs/development_env.yaml\", \"final_constraints\": {\"argdigest\": \">=0.17.1\", \"depdigest\": \"\", \"molsysmt\": \"\", \"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"pandas\": \">=2.3.3\", \"python\": \"<3.15,>=3.14\", \"pyunitwizard\": \">=0.28.1\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\", \"smonitor\": \">=0.22.1\"}, \"name\": \"development-3.14\", \"narrowed\": [\"python\"], \"overlays\": [], \"python_minor\": \"3.14\", \"sources\": []}, {\"bootstrap_selectors\": [\"python>=3.11,<3.15\", \"setuptools\", \"jupyterlab\", \"sphinx\", \"pydata-sphinx-theme\", \"sphinxcontrib-bibtex\", \"sphinx-remove-toctrees\", \"sphinx-copybutton\", \"sphinx-design\", \"sphinx-favicon\", \"sphinx-tabs\", \"myst-nb\", \"numpy\", \"pandas>=2.3.3\", \"scipy\", \"nglview\", \"molsysmt\", \"pyunitwizard>=0.28.1\", \"argdigest>=0.17.1\", \"smonitor>=0.22.1\", \"depdigest\", \"rdkit\", \"networkx\", \"PyYAML>=5.1\"], \"environment\": \"devtools/conda-envs/docs_env.yaml\", \"final_constraints\": {\"argdigest\": \">=0.17.1\", \"depdigest\": \"\", \"molsysmt\": \"\", \"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"pandas\": \">=2.3.3\", \"python\": \"<3.15,>=3.11\", \"pyunitwizard\": \">=0.28.1\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\", \"smonitor\": \">=0.22.1\"}, \"name\": \"docs-3.12\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.12\", \"sources\": []}, {\"bootstrap_selectors\": [\"python>=3.11,<3.15\", \"setuptools\", \"numpy\", \"pandas>=2.3.3\", \"scipy\", \"nglview\", \"molsysmt\", \"pyunitwizard>=0.28.1\", \"argdigest>=0.17.1\", \"smonitor>=0.22.1\", \"depdigest\", \"rdkit\", \"networkx\", \"PyYAML>=5.1\"], \"environment\": \"devtools/conda-envs/production_env.yaml\", \"final_constraints\": {\"argdigest\": \">=0.17.1\", \"depdigest\": \"\", \"molsysmt\": \"\", \"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"pandas\": \">=2.3.3\", \"python\": \"<3.15,>=3.11\", \"pyunitwizard\": \">=0.28.1\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\", \"smonitor\": \">=0.22.1\"}, \"name\": \"production-3.14\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.14\", \"sources\": []}, {\"bootstrap_selectors\": [\"python >=3.14,<3.15\", \"pip\", \"setuptools >=77.0.3\", \"versioningit >=2,<3\", \"pytest >=8\", \"pytest-receptor=1.1.0\", \"packaging\", \"numpy\", \"pandas >=2.3.3\", \"scipy\", \"nglview\", \"molsysmt\", \"pyunitwizard>=0.28.1\", \"argdigest >=0.17.1\", \"smonitor >=0.22.1\", \"depdigest\", \"rdkit\", \"networkx\", \"pyyaml >=5.1\", \"molsysviewer ==0.24.0\", \"ackredit ==0.12.0\", \"beartype ==0.22.9\", \"openmm ==8.6.1\"], \"environment\": \"devtools/conda-envs/public_test_env_py314.yaml\", \"final_constraints\": {\"argdigest\": \">=0.17.1\", \"depdigest\": \"\", \"molsysmt\": \"\", \"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"pandas\": \">=2.3.3\", \"python\": \"<3.15,>=3.14\", \"pyunitwizard\": \">=0.28.1\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\", \"smonitor\": \">=0.22.1\"}, \"name\": \"public-test-3.14\", \"narrowed\": [\"python\"], \"overlays\": [], \"python_minor\": \"3.14\", \"sources\": []}, {\"bootstrap_selectors\": [\"python >=3.11,<3.15\", \"pip\", \"setuptools >=68.0\", \"versioningit>=3.0\", \"h5py\", \"numpy\", \"pandas >=2.3.3\", \"networkx\", \"tqdm\", \"matplotlib\", \"openmm\", \"pdbfixer\", \"ambertools\", \"openff-toolkit-base >=0.17.1\", \"openff-units >=0.3.0\", \"mdtraj\", \"mdanalysis\", \"rdkit\", \"parmed\", \"biopython\", \"ipywidgets\", \"py-mmcif >=1.1.1\", \"plotly\", \"anywidget\", \"aiohttp\", \"scikit-learn\", \"beartype\", \"packaging >=23\", \"pint\", \"pydantic\", \"pyyaml>=5.1\", \"scipy\", \"traitlets >=5\", \"nglview\", \"pytest\", \"pytest-receptor=0.6.0\", \"pytest-cov\", \"codecov\", \"pytest-xdist\", \"ruff=0.16.5\"], \"environment\": \"devtools/conda-envs/test_env.yaml\", \"final_constraints\": {\"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"pandas\": \">=2.3.3\", \"python\": \"<3.15,>=3.11\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\"}, \"name\": \"ci-3.11\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.11\", \"sources\": [\"smonitor-base\", \"depdigest-base\", \"pyunitwizard-base\", \"argdigest-base\", \"molsysviewer-base\", \"ackredit-base\", \"molsysmt-base\"]}, {\"bootstrap_selectors\": [\"python >=3.11,<3.15\", \"pip\", \"setuptools >=68.0\", \"versioningit>=3.0\", \"h5py\", \"numpy\", \"pandas >=2.3.3\", \"networkx\", \"tqdm\", \"matplotlib\", \"openmm\", \"pdbfixer\", \"ambertools\", \"openff-toolkit-base >=0.17.1\", \"openff-units >=0.3.0\", \"mdtraj\", \"mdanalysis\", \"rdkit\", \"parmed\", \"biopython\", \"ipywidgets\", \"py-mmcif >=1.1.1\", \"plotly\", \"anywidget\", \"aiohttp\", \"scikit-learn\", \"beartype\", \"packaging >=23\", \"pint\", \"pydantic\", \"pyyaml>=5.1\", \"scipy\", \"traitlets >=5\", \"nglview\", \"pytest\", \"pytest-receptor=0.6.0\", \"pytest-cov\", \"codecov\", \"pytest-xdist\", \"ruff=0.16.5\"], \"environment\": \"devtools/conda-envs/test_env.yaml\", \"final_constraints\": {\"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"pandas\": \">=2.3.3\", \"python\": \"<3.15,>=3.11\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\"}, \"name\": \"ci-3.12\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.12\", \"sources\": [\"smonitor-base\", \"depdigest-base\", \"pyunitwizard-base\", \"argdigest-base\", \"molsysviewer-base\", \"ackredit-base\", \"molsysmt-base\"]}, {\"bootstrap_selectors\": [\"python >=3.11,<3.15\", \"pip\", \"setuptools >=68.0\", \"versioningit>=3.0\", \"h5py\", \"numpy\", \"pandas >=2.3.3\", \"networkx\", \"tqdm\", \"matplotlib\", \"openmm\", \"pdbfixer\", \"ambertools\", \"openff-toolkit-base >=0.17.1\", \"openff-units >=0.3.0\", \"mdtraj\", \"mdanalysis\", \"rdkit\", \"parmed\", \"biopython\", \"ipywidgets\", \"py-mmcif >=1.1.1\", \"plotly\", \"anywidget\", \"aiohttp\", \"scikit-learn\", \"beartype\", \"packaging >=23\", \"pint\", \"pydantic\", \"pyyaml>=5.1\", \"scipy\", \"traitlets >=5\", \"nglview\", \"pytest\", \"pytest-receptor=0.6.0\", \"pytest-cov\", \"codecov\", \"pytest-xdist\", \"ruff=0.16.5\"], \"environment\": \"devtools/conda-envs/test_env_py313.yaml\", \"final_constraints\": {\"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"pandas\": \">=2.3.3\", \"python\": \"<3.15,>=3.11\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\"}, \"name\": \"ci-3.13\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.13\", \"sources\": [\"smonitor-base\", \"depdigest-base\", \"pyunitwizard-base\", \"argdigest-base\", \"molsysviewer-base\", \"ackredit-base\", \"molsysmt-base\"]}, {\"bootstrap_selectors\": [\"python >=3.14,<3.15\", \"pip\", \"setuptools >=68.0\", \"versioningit>=3.0\", \"h5py\", \"numpy\", \"pandas >=2.3.3\", \"networkx\", \"tqdm\", \"matplotlib\", \"openmm\", \"pdbfixer\", \"ambertools\", \"openff-toolkit-base >=0.17.1\", \"openff-units >=0.3.0\", \"mdtraj\", \"mdanalysis\", \"rdkit\", \"parmed\", \"biopython\", \"ipywidgets\", \"py-mmcif >=1.1.1\", \"plotly\", \"anywidget\", \"aiohttp\", \"scikit-learn\", \"beartype\", \"packaging >=23\", \"pint\", \"pydantic\", \"pyyaml>=5.1\", \"scipy\", \"traitlets >=5\", \"nglview\", \"pytest\", \"pytest-receptor=1.1.0\", \"pytest-cov\", \"codecov\", \"pytest-xdist\", \"ruff=0.16.5\"], \"environment\": \"devtools/conda-envs/test_env_py314.yaml\", \"final_constraints\": {\"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"pandas\": \">=2.3.3\", \"python\": \"<3.15,>=3.14\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\"}, \"name\": \"ci-3.14\", \"narrowed\": [\"python\"], \"overlays\": [], \"python_minor\": \"3.14\", \"sources\": [\"smonitor-3.14\", \"depdigest-3.14\", \"pyunitwizard-3.14\", \"argdigest-3.14\", \"molsysviewer-3.14\", \"ackredit-3.14\", \"molsysmt-3.14\"]}], \"installed_check_required\": true, \"package\": \"pharmacophoremt\", \"proof_domain\": \"numeric-release-versions\", \"qualification\": \"declared-only\", \"routes\": [{\"kind\": \"shared-noarch\", \"path\": \"devtools/conda-build/meta.yaml\"}, {\"kind\": \"build-only\", \"path\": \"devtools/conda-envs/build_env.yaml\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/development_env.yaml\", \"purpose\": \"development\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/docs_env.yaml\", \"purpose\": \"documentation\"}, {\"kind\": \"resolved-package\", \"path\": \"devtools/conda-envs/importable_env.yaml\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/production_env.yaml\", \"purpose\": \"production\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/public_test_env_py314.yaml\", \"purpose\": \"test\"}, {\"kind\": \"build-only\", \"path\": \"devtools/conda-envs/setup_env.yaml\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/test_env.yaml\", \"purpose\": \"test\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/test_env_py313.yaml\", \"purpose\": \"test\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/test_env_py314.yaml\", \"purpose\": \"test\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/CI.yaml\", \"sha256\": \"25e86c29846199f622eed8eaad320b39813845ca84b3ee5953939cb5edb5f324\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/build_and_upload_conda_packages.yaml\", \"sha256\": \"18369344a3af440b5a8227469d14641b2f6e3fb7b8d5e52b95cf48ed37233f9a\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/conda_publication_governance.yaml\", \"sha256\": \"353f4080e59d509f922f7e18b426100f523c62f9958044fc9623ce4e30c37d85\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/molsyssuite-policy.yml\", \"sha256\": \"6cc62208156f765ca0456e3bc5f398934263e03afc7063c69afa692c5dafdffd\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/promote_conda_package.yaml\", \"sha256\": \"2932f0b180896c7d6d8352fb39aed0f2d1cc15dc4f4ff0b2e997c36320de644e\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/sphinx_docs_to_gh_pages.yaml\", \"sha256\": \"b988063c4cc81fd4532b05ea04724ec8822653b054e101a0da93b0e6702df6f9\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/test_installed_conda_package.yaml\", \"sha256\": \"d6c1713c4241ad3c00128901eab8ce9a4f761398d8e23d4fe863432461c33df0\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/feature_reuse_resource_probe.yaml\", \"sha256\": \"f983e38a0279eaa0511b7134f22cdf122bae394b936709ab7d0fdb1b79c917a0\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/feature_reuse_native_qualification.yaml\", \"sha256\": \"89f52d3982408db82961c73a48cfc8c5e1cc01f85d8efbb696f46914bea5d1e0\"}], \"schema\": \"molsyssuite.dependency-routes@3\", \"selected_context\": null, \"source_dependencies\": [\"ackredit-3.14\", \"ackredit-base\", \"argdigest-3.14\", \"argdigest-base\", \"depdigest-3.14\", \"depdigest-base\", \"molsysmt-3.14\", \"molsysmt-base\", \"molsysviewer-3.14\", \"molsysviewer-base\", \"pyunitwizard-3.14\", \"pyunitwizard-base\", \"smonitor-3.14\", \"smonitor-base\"], \"source_inputs\": [{\"path\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"reason\": \"Reviewed #207 pip --no-deps manifest: advance only MolSysMT to the explicit H5MSM1.0 reader revision; preserve six other pins and all scientific workflow commands. Frozen #148 admission must refuse this changed input until separately reviewed; #148/#165 remain stopped. Full exact pinned-source receiving remains separate.\", \"sha256\": \"01da67a8850a436385022063e3ce81cefe82b652b4066ebb0c2039e6cf0d537a\"}, {\"path\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"reason\": \"Reviewed #207 pip --no-deps manifest: advance only MolSysMT to the explicit H5MSM1.0 reader revision; preserve six other pins and all scientific workflow commands. Frozen #148 admission must refuse this changed input until separately reviewed; #148/#165 remain stopped. Full exact pinned-source receiving remains separate.\", \"sha256\": \"01da67a8850a436385022063e3ce81cefe82b652b4066ebb0c2039e6cf0d537a\"}], \"source_routes\": [{\"commit\": \"2147c7c641b7cba8a974b193207f686ee3ebe855\", \"id\": \"smonitor-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"smonitor\", \"reason\": \"Published SMonitor0.22.1 correction received by the independent reader under #108/#6: preserve visible coded errors when nested observations are filtered or silenced. Public payload receiving is scoped; exact pinned full source/installed gates remain #9/#10/#23.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/smonitor\"}, {\"commit\": \"13cc73780a7cb645546ae3f396177f98b86a8792\", \"id\": \"depdigest-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"depdigest\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/depdigest\"}, {\"commit\": \"2ab37a525ce99728ad8aee846b4a4f7acc4f1b65\", \"id\": \"pyunitwizard-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"pyunitwizard\", \"reason\": \"Retain existing exact source input; no pin or scientific command change\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/pyunitwizard\"}, {\"commit\": \"c9c9ee623dab5331fdfa4227bd784dd38620e18b\", \"id\": \"argdigest-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"argdigest\", \"reason\": \"ArgDigest 0.17.1 published correction received under #82/#6: preserve literal keywords/source identity and TypeError-compatible native I/O admission. Scientific commands unchanged; whole installed/public closure remains #10/#23.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/argdigest\"}, {\"commit\": \"ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352\", \"id\": \"molsysviewer-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"molsysviewer\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"integration\", \"url\": \"https://github.com/uibcdf/molsysviewer\"}, {\"commit\": \"71f7f1984de1a3925c32d29074784bb553e89bfc\", \"id\": \"ackredit-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"ackredit\", \"reason\": \"Retain existing exact source input; no pin or scientific command change\", \"role\": \"integration\", \"url\": \"https://github.com/uibcdf/ackredit\"}, {\"commit\": \"05865fbb3ba499d4117d6ba3e1cf55d98a9e239e\", \"id\": \"molsysmt-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"molsysmt\", \"reason\": \"Reviewed #207: first explicit H5MSM1.0 reader revision for unchanged native handoff fixtures. Declared PUW floor remains0.28.1; all other controlled provider pins and scientific commands are preserved. Selected interoperability is separate from complete supported-source receiving and public/installed qualification.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/molsysmt\"}, {\"commit\": \"2147c7c641b7cba8a974b193207f686ee3ebe855\", \"id\": \"smonitor-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"smonitor\", \"reason\": \"Published SMonitor0.22.1 correction received by the independent reader under #108/#6: preserve visible coded errors when nested observations are filtered or silenced. Public payload receiving is scoped; exact pinned full source/installed gates remain #9/#10/#23.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/smonitor\"}, {\"commit\": \"13cc73780a7cb645546ae3f396177f98b86a8792\", \"id\": \"depdigest-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"depdigest\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/depdigest\"}, {\"commit\": \"2ab37a525ce99728ad8aee846b4a4f7acc4f1b65\", \"id\": \"pyunitwizard-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"pyunitwizard\", \"reason\": \"Retain existing exact source input; no pin or scientific command change\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/pyunitwizard\"}, {\"commit\": \"c9c9ee623dab5331fdfa4227bd784dd38620e18b\", \"id\": \"argdigest-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"argdigest\", \"reason\": \"ArgDigest 0.17.1 published correction received under #82/#6: preserve literal keywords/source identity and TypeError-compatible native I/O admission. Scientific commands unchanged; whole installed/public closure remains #10/#23.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/argdigest\"}, {\"commit\": \"ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352\", \"id\": \"molsysviewer-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"molsysviewer\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"integration\", \"url\": \"https://github.com/uibcdf/molsysviewer\"}, {\"commit\": \"71f7f1984de1a3925c32d29074784bb553e89bfc\", \"id\": \"ackredit-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"ackredit\", \"reason\": \"Retain existing exact source input; no pin or scientific command change\", \"role\": \"integration\", \"url\": \"https://github.com/uibcdf/ackredit\"}, {\"commit\": \"05865fbb3ba499d4117d6ba3e1cf55d98a9e239e\", \"id\": \"molsysmt-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"molsysmt\", \"reason\": \"Reviewed #207: first explicit H5MSM1.0 reader revision for unchanged native handoff fixtures. Declared PUW floor remains0.28.1; all other controlled provider pins and scientific commands are preserved. Selected interoperability is separate from complete supported-source receiving and public/installed qualification.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/molsysmt\"}]}\n"
+      },
+      {
+        "arguments": [
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_evidence_archive.py"
+        ],
+        "exit_code": 0,
+        "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 4.181s\n\nOK\n"
+      }
+    ],
+    "whole_tree_Ruff_lint_format": true,
+    "formatted_files": 559
+  },
+  "documentation": {
+    "builder": "html",
+    "strict": true,
+    "jobs": 1,
+    "notebook_execution": "off",
+    "owned_runtime_target": "/tmp/phmt-clique-controls-20261115-gayfuhwr/temporary-owned-build/phmt-clique-controls-owned-20261115-8gnwxkhh/installed",
+    "loaded_PHMT_modules": 178
+  },
+  "commands": {
+    "accepted-controls": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/logs/accepted-controls.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/test_source.py",
+        "accepted-controls",
+        "tests/test_clique_argument_controls.py",
+        "tests/test_clique_distance_boundary.py"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 8.09352933196351,
+      "DATA_per_process_bytes": 536870912,
+      "monitor_receipt": {
+        "bytes": 48953,
+        "sha256": "079a197c858b8826bab777a884892ad2340a247d413f189bab4f8e265d6772ab"
+      },
+      "peak_own_family_RSS_bytes": 296964096,
+      "minimum_available_RAM_bytes": 40953274368
+    },
+    "baseline": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/logs/baseline.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/test_source.py",
+        "baseline",
+        "tests/test_clique_argument_controls.py"
+      ],
+      "exit_code": 1,
+      "interruption": null,
+      "seconds": 10.514160607941449,
+      "DATA_per_process_bytes": 536870912,
+      "monitor_receipt": {
+        "bytes": 62936,
+        "sha256": "b254f32f5cdafc0e1f1c2e9bfcd4e99e5e06217af188b1eecf520482f61e4cef"
+      },
+      "peak_own_family_RSS_bytes": 302608384,
+      "minimum_available_RAM_bytes": 42151424000
+    },
+    "boundary-baseline": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/logs/boundary-baseline.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/test_source.py",
+        "boundary-baseline",
+        "tests/test_clique_distance_boundary.py"
+      ],
+      "exit_code": 1,
+      "interruption": null,
+      "seconds": 2.6351035019615665,
+      "DATA_per_process_bytes": 536870912,
+      "monitor_receipt": {
+        "bytes": 17266,
+        "sha256": "48e1decd25408faf15fa64ddf09811c76abe3ac1ff6a70b84b00da69e34b2ea6"
+      },
+      "peak_own_family_RSS_bytes": 183926784,
+      "minimum_available_RAM_bytes": 40709025792
+    },
+    "distribution-current": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=1073741824",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/logs/distribution-current.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/test_source.py",
+        "distribution-current",
+        "devtools/tests/test_distribution_contract.py"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 11.940107151982374,
+      "DATA_per_process_bytes": 1073741824,
+      "monitor_receipt": {
+        "bytes": 71160,
+        "sha256": "10d318b83cb208ba2cabd35b5239506d3add64f714d05fda0c6f4ada1f81326f"
+      },
+      "peak_own_family_RSS_bytes": 106946560,
+      "minimum_available_RAM_bytes": 38890184704
+    },
+    "docs-owned": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=1073741824",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/logs/docs-owned.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/prepare.py",
+        "docs-owned"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 13.439714089035988,
+      "DATA_per_process_bytes": 1073741824,
+      "monitor_receipt": {
+        "bytes": 79891,
+        "sha256": "d64f9063074c41a1848e9c0b57766940a8e60ec32d5a7561b0f7dfac15a5ab19"
+      },
+      "peak_own_family_RSS_bytes": 348364800,
+      "minimum_available_RAM_bytes": 40088403968
+    },
+    "focused-final": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/logs/focused-final.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/test_source.py",
+        "focused-final",
+        "tests/test_clique_argument_controls.py"
+      ],
+      "exit_code": 1,
+      "interruption": null,
+      "seconds": 7.3783106110058725,
+      "DATA_per_process_bytes": 536870912,
+      "monitor_receipt": {
+        "bytes": 44749,
+        "sha256": "54793af082b4b5aa174c94d34f978f93129407e84560eaad12f7253a533b7d0e"
+      },
+      "peak_own_family_RSS_bytes": 297111552,
+      "minimum_available_RAM_bytes": 42229981184
+    },
+    "owned-build": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/logs/owned-build.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/build_owned.py"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 5.981016220990568,
+      "DATA_per_process_bytes": 536870912,
+      "monitor_receipt": {
+        "bytes": 36508,
+        "sha256": "7212200df926d03d82ce464235b1462b3022edc7bb483b73370538341bb271df"
+      },
+      "peak_own_family_RSS_bytes": 290271232,
+      "minimum_available_RAM_bytes": 40817827840
+    },
+    "owned-cliques": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=1073741824",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/logs/owned-cliques.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/receive_owned.py",
+        "owned",
+        "3.1.1",
+        "cliques"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 13.963783725979738,
+      "DATA_per_process_bytes": 1073741824,
+      "monitor_receipt": {
+        "bytes": 82877,
+        "sha256": "c37ad1ba0f6166ba491f15502bf56e869b5b1c48d643f143d5d45cbb596466b6"
+      },
+      "peak_own_family_RSS_bytes": 450392064,
+      "minimum_available_RAM_bytes": 40157802496
+    },
+    "owned-consensus": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=1073741824",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/logs/owned-consensus.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/receive_owned.py",
+        "owned",
+        "3.1.1",
+        "consensus"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 9.914229533053003,
+      "DATA_per_process_bytes": 1073741824,
+      "monitor_receipt": {
+        "bytes": 59430,
+        "sha256": "98e5d659f4d16ca79881287ec4946b2756fc8ebe3ed4d8a2eb1f3313f01dd4ca"
+      },
+      "peak_own_family_RSS_bytes": 300830720,
+      "minimum_available_RAM_bytes": 40146018304
+    },
+    "owned-controls": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=1073741824",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/logs/owned-controls.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/receive_owned.py",
+        "owned",
+        "3.1.1",
+        "controls"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 8.499958880944178,
+      "DATA_per_process_bytes": 1073741824,
+      "monitor_receipt": {
+        "bytes": 51221,
+        "sha256": "72e4e836c115dea7e9967f7a9ea3ba13ca0226aaafe42efa73a6d58ff1807c16"
+      },
+      "peak_own_family_RSS_bytes": 299274240,
+      "minimum_available_RAM_bytes": 40210210816
+    },
+    "owned-model": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=1073741824",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/logs/owned-model.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/receive_owned.py",
+        "owned",
+        "3.1.1",
+        "model"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 12.039635644992813,
+      "DATA_per_process_bytes": 1073741824,
+      "monitor_receipt": {
+        "bytes": 71714,
+        "sha256": "9985d74694b5814cf1ea8636fbf4eef23748072000c4da37b10a8d47a9952015"
+      },
+      "peak_own_family_RSS_bytes": 298766336,
+      "minimum_available_RAM_bytes": 40148742144
+    },
+    "quality-closeout": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/logs/quality-closeout.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/closeout.py"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 6.78122285194695,
+      "DATA_per_process_bytes": 536870912,
+      "monitor_receipt": {
+        "bytes": 41195,
+        "sha256": "f14320f5dea2b47df3b561a55ec71bbbb61f54207d8dd4b95195b140addadc78"
+      },
+      "peak_own_family_RSS_bytes": 438935552,
+      "minimum_available_RAM_bytes": 40330309632
+    },
+    "quality": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/logs/quality.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/quality.py"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 7.499869316001423,
+      "DATA_per_process_bytes": 536870912,
+      "monitor_receipt": {
+        "bytes": 45254,
+        "sha256": "68871391138ca759cdb76ecf89220db68811092683e9741f8931c8bb2b0e191e"
+      },
+      "peak_own_family_RSS_bytes": 421396480,
+      "minimum_available_RAM_bytes": 40658472960
+    },
+    "ruff-check": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/logs/ruff-check.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 0.1030737180262804,
+      "DATA_per_process_bytes": 536870912,
+      "monitor_receipt": {
+        "bytes": 2525,
+        "sha256": "273b6323472a784fec21ea376e12c086c2c5e5fb2a4b036084f85c0d289c8133"
+      },
+      "peak_own_family_RSS_bytes": 14716928,
+      "minimum_available_RAM_bytes": 40825204736
+    },
+    "ruff-format": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/logs/ruff-format.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 0.10294873092789203,
+      "DATA_per_process_bytes": 536870912,
+      "monitor_receipt": {
+        "bytes": 2544,
+        "sha256": "41c23498b4e9ed5b1d42bc82cee4fbe48c005550a17946efa2bfe45f8c74d495"
+      },
+      "peak_own_family_RSS_bytes": 14991360,
+      "minimum_available_RAM_bytes": 40825204736
+    },
+    "source-cliques": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/logs/source-cliques.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/test_source.py",
+        "source-cliques",
+        "tests/test_aligned_cliques.py"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 12.850347813917324,
+      "DATA_per_process_bytes": 536870912,
+      "monitor_receipt": {
+        "bytes": 76427,
+        "sha256": "47ceac3762c0c40863469980abe081989ff97cda7484fccc783083ac54e2f753"
+      },
+      "peak_own_family_RSS_bytes": 447254528,
+      "minimum_available_RAM_bytes": 40923815936
+    },
+    "source-consensus": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/logs/source-consensus.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/test_source.py",
+        "source-consensus",
+        "tests/test_aligned_consensus.py",
+        "tests/test_consensus_argument_controls.py"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 9.201785399927758,
+      "DATA_per_process_bytes": 536870912,
+      "monitor_receipt": {
+        "bytes": 55394,
+        "sha256": "92dfa3cf910af82e103be75f9239e21ac23419d2359ba68e8117fdf97c03e0e0"
+      },
+      "peak_own_family_RSS_bytes": 298328064,
+      "minimum_available_RAM_bytes": 40918999040
+    },
+    "source-model": {
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/logs/source-model.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "/tmp/phmt-clique-controls-20261115-gayfuhwr/test_source.py",
+        "source-model",
+        "tests/test_aligned_model_argument_controls.py"
+      ],
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 11.441736741922796,
+      "DATA_per_process_bytes": 536870912,
+      "monitor_receipt": {
+        "bytes": 68230,
+        "sha256": "b43c76d6926bd9ac10cd39f3cb06643d8761ca7c9b36353674e141e1cde7ddf4"
+      },
+      "peak_own_family_RSS_bytes": 296189952,
+      "minimum_available_RAM_bytes": 40845213696
+    }
+  },
+  "resources": {
+    "preflight": {
+      "/proc/meminfo": "MemTotal:       63455508 kB\nMemFree:         9350260 kB\nMemAvailable:   41720164 kB\nBuffers:         4293736 kB\nCached:         41238576 kB\nSwapCached:        26188 kB\nActive:         14517892 kB\nInactive:       34052772 kB\nActive(anon):    4159684 kB\nInactive(anon): 14854700 kB\nActive(file):   10358208 kB\nInactive(file): 19198072 kB\nUnevictable:        8976 kB\nMlocked:            8976 kB\nSwapTotal:       8388604 kB\nSwapFree:        7870508 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              3000 kB\nWriteback:             0 kB\nAnonPages:       3032908 kB\nMapped:          1208316 kB\nShmem:          15970136 kB\nKReclaimable:    3473956 kB\nSlab:            4372240 kB\nSReclaimable:    3473956 kB\nSUnreclaim:       898284 kB\nKernelStack:       19104 kB\nPageTables:        48952 kB\nSecPageTables:      8960 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:    40116356 kB\nCommitted_AS:   24791176 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:      230556 kB\nVmallocChunk:          0 kB\nPercpu:            76032 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:   2320384 kB\nFilePmdMapped:         0 kB\nCmaTotal:              0 kB\nCmaFree:               0 kB\nUnaccepted:            0 kB\nBalloon:               0 kB\nGPUActive:             0 kB\nGPUReclaim:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:     4951840 kB\nDirectMap2M:    55744512 kB\nDirectMap1G:     8388608 kB\n",
+      "/proc/pressure/memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=6142400\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=5996316\n",
+      "/proc/pressure/cpu": "some avg10=0.00 avg60=0.07 avg300=0.64 total=8518686019\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+      "/proc/loadavg": "1.64 1.57 1.90 1/1177 4\n",
+      "/proc/self/cgroup": "0::/user.slice/user-2001.slice/session-6.scope\n"
+    },
+    "ownership": {
+      "issue": 236,
+      "baseline": "27def3f35c83870ebf25acd24d775331cf7b8f08",
+      "retention_review": "2026-11-29",
+      "scheduler": "Slurm commands present; no current allocation; bounded sinfo socket probe unavailable under sandbox; no allocation or machine reservation claimed",
+      "preserve_prior": true
+    },
+    "monitored_intervals_serial": true,
+    "interruptions": false,
+    "affinity": [
+      19
+    ],
+    "backend_threads": 1,
+    "nice": 19,
+    "IO": "idle",
+    "CPU_seconds_per_process": 120,
+    "wall_seconds": 180,
+    "own_family_RSS_stop_bytes": 1073741824,
+    "physical_available_reserve_fraction": 0.2,
+    "additional_margin_bytes": 1610612736,
+    "allocation_reservation_new_aggregate_cgroup": false,
+    "AS_cap": "not imposed for Git mappings",
+    "foreign_process_shared_prefix_changes": false
+  },
+  "limits": [
+    "Selected Linux/Python3.14.10 source/private-owned receiving only; not full supported source/installed/public/platform/biological/human/scale qualification.",
+    "Public ArgDigest0.17.1/SMonitor0.22.1/PUW0.28.1 and controlled Pandas3.1.1 target; controlled other providers/inherited MolSysMT native extension. Optional Beartype absence warnings retained.",
+    "No new provider floor/native rebuild/shared-prefix change/full remote matrix/tag/publisher/stopped benchmark or speed claim.",
+    "Only the clique numerical predicate is corrected here; broader geometry comparison consistency is not qualified. Prior #233 metadata, #234/#235, #227, #230/#229 incidents/support, #224 pilot recovery and older staging uncertainty retain original owners. Immutable 0.6.0 retains original qualification."
+  ],
+  "raw_capsule": "/tmp/phmt-clique-controls-20261115-gayfuhwr",
+  "owned_workspace": "/tmp/phmt-clique-controls-20261115-gayfuhwr/temporary-owned-build/phmt-clique-controls-owned-20261115-8gnwxkhh",
+  "retention_review": "2026-11-29",
+  "temporary_resources": "Retain task-owned capsule/private target; actual SDK imports/resources/both file-relative links retired; earlier owners/uncertainty unchanged.",
+  "full_evidence": {
+    "path": "clique_argument_controls_20261115.json.gz",
+    "compressed_bytes": 276761,
+    "compressed_sha256": "d1e63c89077ccfbce41849e9bb7cef6652dbd9014e32c0d75516ae6891cb94bd",
+    "uncompressed_bytes": 2925825,
+    "uncompressed_sha256": "98206ff76ea8cd4858dfe60fb54ea5f82505faa379df2cd4e6573ebbb5e097a0"
+  },
+  "closeout_checks": [
+    {
+      "arguments": [
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "arguments": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.680s\n\nOK\n"
+    },
+    {
+      "arguments": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 4.040s\n\nOK\n"
+    },
+    {
+      "arguments": [
+        "review changed Markdown local link destinations"
+      ],
+      "exit_code": 0,
+      "destinations": 779
+    },
+    {
+      "arguments": [
+        "read_archived_evidence; verify every inner file digest"
+      ],
+      "exit_code": 0,
+      "inner_files": 117
+    }
+  ]
+}

@@ -8,30 +8,38 @@ checkpoint is preserved at [593d609](https://github.com/uibcdf/pharmacophoremt/b
 [earlier pre-tag preparation](checkpoint_history_20261114_before_final_review.md)
 and the [0.6.0 cut record](release_0_6_0_source_cut.md) retain their identities.
 
-## Current increment — aligned feature-clique control toward 0.7.0
+## Current increment — aligned feature-clique control received toward 0.7.0
 
 [#236/#237](clique_argument_controls.md) adds keyword-only local control and
 closed definition-owned admission to get_aligned_feature_cliques. Seven reused
-native validators precede record/graph work. The remaining scientific body is
-unchanged except for one intentional inclusive-length predicate correction under
-#237: eight machine epsilons of relative threshold roundoff, zero absolute
-allowance. Other functions/helpers/value digesters and signal/attribution remain.
+native validators precede record/graph work. The scientific body retains AST
+identity except for one intentional inclusive-length predicate correction:
+eight machine epsilons of relative threshold roundoff, zero absolute allowance.
+Other functions/helpers/value digesters and signal/attribution remain.
 
-All selected source groups pass: **191/25/189/99 cases**, **504 distinct cases**,
-including 115 control and 76 boundary cases. The original 115-case baseline
-(109 failures/six call-shape catches), first implemented 109-pass/six-failure run
-and 74-case numerical baseline (12 failures/62 passes) retain their identities.
-Four authored diagnostic assertions now check all owned fields while allowing
-SMonitor's source links; the original expected clique/unit cases are unchanged.
-Two added four-epsilon positives protect the declared roundoff margin. Independent
-subset/geometry/limit answers, unsupported-clique counting, original solver
-failure, nm/pm real frame/state/selection and source custody, application
-new/reused/empty credit and default downstream admission pass.
+[Receiving](evidence/clique_argument_controls_20261115.json) receives source
+3a405bdc4dda69cbc5f233d55be5e1959a25a5ef and exact private wheel `0.6.0+38.g3a405bd`:
+identical serial **191/25/189/99-case source/owned groups**, **504 distinct cases
+per context including 115 admission and 76 numerical boundary controls**, zero
+failures/errors/skips. All 246 payloads/191 source-equal nongenerated Python bodies
+verify; all four groups load 173 target-only PHMT modules. Actual immutable SDK
+staging has pre-work journals/checking and import/resource/both-link retirement.
+Strict owned HTML docs, 27 current distribution controls and reporting/archive/
+index/generated-environment/declared-route/Ruff checks pass (559 formatted files).
+The accepted focused source group keeps its original label without reexecution.
+Package footprint/provider requirements remain unchanged.
 
-Exact private-wheel receiving, strict owned docs and final appropriate quality
-remain pending before closure. No full later-head CI/public/platform receiving,
-new tag/publisher/native rebuild/shared-prefix change/benchmark or speed claim.
-#6/full #9/#10/#23 and prior scientific/metadata/recovery records retain owners.
+Independent maximal-size/subset/physical answers, exact graph/output limits,
+unsupported-clique counting, original solver failure and real nm/pm prepared
+selection/frame/state/source custody pass. Downstream independent centers/joint
+support and default child admission, application new/reused/empty credit pass.
+Original failed guard versions/runs retain identity; four authored diagnostic
+assertions now allow source links while checking every owned field. Numerical
+expectations are preserved; two added positive controls protect the margin.
+All monitored commands are serial and none interrupted; no capacity reservation,
+biological validation or speed claim. Bounded Linux/Python3.14/public support-pin
+and controlled other-provider/inherited-native receiving leaves #6/full #9/#10/#23
+partial. Prior scientific/metadata/resource/recovery ownership remains unchanged.
 
 ## Earlier bounded increments
 
@@ -65,11 +73,11 @@ unchanged. Full installed/public artifact, biological/human/scale acceptance,
 
 ## Next concrete action and resources
 
-Finish exact-owned receiving and close #236/#237, then receive
-get_aligned_consensus_hypotheses public control, preserving joint-support
-intersection, disjoint occurrence use, finite extension budgets and independent
-children. Two remaining model constructors and broader #6/full gates keep their
-own scope. #227 and paused publisher/shared-prefix/benchmark work remain separate.
+Receive get_aligned_consensus_hypotheses public control next, preserving
+joint-support intersection, disjoint occurrence use, finite extension budgets
+and independent children. Two remaining model constructors and broader #6/full
+gates keep their own scope. #227 and paused publisher/shared-prefix/benchmark
+work remain separate.
 
 Preserve shared-prefix/migration pauses and original native/data identities.
 Heavy work stays serial: one CPU/backend thread, low CPU/I/O priority, finite
@@ -92,3 +100,6 @@ both file-relative links retired. Earlier ownership/uncertainty remains unchange
 
 Review this #234/#235 capsule/private target on 2026-11-29; actual SDK stages
 and both links retired. Earlier owners/uncertainties remain unchanged.
+
+Review this #236/#237 capsule/private target on 2026-11-29; actual SDK stages
+and both file-relative links retired. Earlier owners/uncertainties are unchanged.

@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (170)
+### Resolved (172)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -24,6 +24,8 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`carbonyl_acceptor_receiving_plan.md`](carbonyl_acceptor_receiving_plan.md) — [#92](https://github.com/uibcdf/pharmacophoremt/issues/92) — Freeze bounded experimental carbonyl acceptor receiving before evaluation. *(resolved, inspected)*
 - [`catalog_diagnostic_rendering.md`](catalog_diagnostic_rendering.md) — [#2](https://github.com/uibcdf/pharmacophoremt/issues/2) — Restore authored SMonitor catalog messages for PharmacophoreMT diagnostics. *(resolved, measured)*
 - [`ccd_interaction_composition.md`](ccd_interaction_composition.md) — [#37](https://github.com/uibcdf/pharmacophoremt/issues/37) — Validate joint native interaction hypotheses with complete prepared CCD chemical components. *(resolved, measured)*
+- [`clique_argument_controls.md`](clique_argument_controls.md) — [#236](https://github.com/uibcdf/pharmacophoremt/issues/236) — Expose aligned feature-clique control preserving maximality, finite budgets and native geometry. *(resolved, measured)*
+- [`clique_distance_boundary.md`](clique_distance_boundary.md) — [#237](https://github.com/uibcdf/pharmacophoremt/issues/237) — Preserve inclusive clique distance boundaries across equivalent length units. *(resolved, measured)*
 - [`compare_pmapper_screening_stages.md`](compare_pmapper_screening_stages.md) — [#175](https://github.com/uibcdf/pharmacophoremt/issues/175) — Execute source-pinned pmapper and PHMT analytical screening-stage controls. *(resolved, measured)*
 - [`compare_saved_screening_runs.md`](compare_saved_screening_runs.md) — [#147](https://github.com/uibcdf/pharmacophoremt/issues/147) — Compare original labelled cohorts directly across verified saved screening runs. *(resolved, reproduced)*
 - [`compare_typed_distance_retrieval.md`](compare_typed_distance_retrieval.md) — [#178](https://github.com/uibcdf/pharmacophoremt/issues/178) — Compare bounded typed-distance retrieval with exhaustive full-query proposals. *(resolved, measured)*

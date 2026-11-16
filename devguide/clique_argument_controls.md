@@ -72,3 +72,36 @@ claim above is qualified by this one intentional edge predicate replacement.
 Direct scale/input-unit/application-policy and beyond-roundoff negatives protect
 the boundary; two added positive four-epsilon controls protect the stated margin.
 No other method's length predicate or historical #143 evidence is relabelled.
+
+## Measured receiving — 2026-11-15
+
+[Receiving](evidence/clique_argument_controls_20261115.json) receives source
+3a405bdc4dda69cbc5f233d55be5e1959a25a5ef and exact private wheel `0.6.0+38.g3a405bd`:
+identical serial **191/25/189/99-case source/owned groups**, **504 distinct cases
+per context including 115 admission and 76 numerical boundary controls**, zero
+failures/errors/skips. All 246 payloads/191 source-equal nongenerated Python bodies
+verify; all four groups load 173 target-only PHMT modules. Actual immutable SDK
+staging has pre-work journals/checking and import/resource/both-link retirement.
+Strict owned HTML docs, 27 current distribution controls and reporting/archive/
+index/generated-environment/declared-route/Ruff checks pass (559 formatted files).
+The accepted focused source group keeps its original label without reexecution.
+Package footprint/provider requirements remain unchanged.
+
+The original 115-case baseline has 109 failures/six call-shape catches. The first
+implemented run has 109 passes/six failures: four authored diagnostic assertions
+and two real numerical failures. The independent 74-case boundary baseline has
+12 failures/62 passes. Original guards/output remain. Final admission guards
+change only the two diagnostic checks (four parameterized cases), preserving
+all five limit fields while allowing existing SMonitor source links. The original
+74 boundary assertions remain AST-identical; two positive four-epsilon controls
+are appended. No expected clique, unit case or failure branch is weakened.
+
+Seven reused validators preserve native admission. The scientific body retains
+AST identity except for the separately owned #237 edge predicate replacement;
+other module functions/helpers, value digesters and signal/attribution remain.
+Independent subset/maximal-size/direction/axis/threshold answers, exact graph and
+unsupported-clique bounds, original mid-enumeration failure, real nm/pm prepared
+selection/frame/state/source custody, independent downstream centers/joint support
+and reached-only/new/reused application captures pass. Every monitored command
+is serial, with no interruption. No performance or biological validation claim.
+#6 and complete supported source/installed/public/platform gates retain owners.
