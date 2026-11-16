@@ -3,6 +3,12 @@
 ## Unreleased — toward 0.7.0
 
 - Add independent keyword-only `skip_digestion=False` controls to
+  `modeler.get_aligned_feature_matches()` and `modeler.get_consensus_sites()`.
+  Native physical/budget and collection/group/identity/support checks remain
+  mandatory, including empty work. Assignment priorities, support/dispersion,
+  orientation semantics and detached member provenance retain their meanings.
+
+- Add independent keyword-only `skip_digestion=False` controls to
   `screening.get_feature_pair_dissimilarities()` and
   `screening.rank_rigid_feature_correspondences()`. Native physical/budget and
   mapping/comparison-report/seed checks remain mandatory, including empty work.

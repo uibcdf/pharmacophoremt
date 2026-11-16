@@ -1,5 +1,14 @@
 # Strategic roadmap
 
+## Aligned matching/site controls implemented — 2026-11-15
+
+[#233](consensus_argument_controls.md) corrects #232's stale reference-constructor
+next pointer and records ten inspected modeling signatures. Matching/aggregation
+gain independent explicit controls and three/six mandatory native validators.
+All 172 new controls pass with unchanged guards and scientific body/helper AST.
+Source/exact-owned consumer receiving and strict docs/quality are in progress.
+#6 remains partial; from_aligned_ligands is the verified next missing control.
+
 ## Neighborhood/ranking public controls received — 2026-11-15
 
 [#232](neighborhood_argument_controls.md) receives 2e0f340 and its exact private

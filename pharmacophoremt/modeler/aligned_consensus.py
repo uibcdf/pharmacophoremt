@@ -8,9 +8,17 @@ from smonitor import signal
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt._ackredit import attributed, credit_criterion, credit_software
 from pharmacophoremt._private.arg_digestion.argument._contracts import (
+    digest_correspondence_groups,
     digest_direction,
+    digest_direction_tolerance,
+    digest_distance_tolerance,
+    digest_feature_inventories,
     digest_feature_inventory,
+    digest_ligand_ids,
+    digest_max_matrix_entries,
+    digest_min_support,
 )
+from pharmacophoremt._private.arg_digestion.native_consensus import CONFIG
 from pharmacophoremt._private.molsysmt import detached
 from pharmacophoremt._private.smonitor.exceptions import (
     ArgumentError,
@@ -67,7 +75,7 @@ def _orientation_cosine(first, second):
 
 
 @signal(tags=["modeling", "consensus", "correspondence"])
-@arg_digest()
+@arg_digest(config=CONFIG)
 @attributed("numpy", "pyunitwizard")
 def get_aligned_feature_matches(
     reference_inventory,
@@ -76,6 +84,7 @@ def get_aligned_feature_matches(
     distance_tolerance="0.15 nm",
     direction_tolerance="30 degrees",
     max_matrix_entries=1000000,
+    skip_digestion=False,
 ):
     """Match two native inventories already expressed in a common frame.
 
@@ -89,6 +98,9 @@ def get_aligned_feature_matches(
         Maximum directed donor-vector or unoriented aromatic-axis angle.
     max_matrix_entries : int
         Bound on assignment matrix entries, including unmatched dummy columns.
+    skip_digestion : bool, default=False
+        Bypass ordinary digestion for canonical expert inputs. Native physical
+        and matrix-budget admission remain mandatory, including empty axes.
 
     Returns
     -------
@@ -107,6 +119,9 @@ def get_aligned_feature_matches(
     --------
     >>> matches = get_aligned_feature_matches(get_features(reference), get_features(ligand))
     """
+    max_matrix_entries = digest_max_matrix_entries(max_matrix_entries)
+    distance_tolerance = digest_distance_tolerance(distance_tolerance)
+    direction_tolerance = digest_direction_tolerance(direction_tolerance)
     first, second = _records(reference_inventory), _records(feature_inventory)
     n_first, n_second = len(first), len(second)
     entries = n_first * (n_second + n_first) if n_first and n_second else 0
@@ -162,7 +177,7 @@ def get_aligned_feature_matches(
 
 
 @signal(tags=["modeling", "consensus", "aggregation"])
-@arg_digest()
+@arg_digest(config=CONFIG)
 @attributed("numpy", "pyunitwizard")
 def get_consensus_sites(
     feature_inventories,
@@ -172,6 +187,7 @@ def get_consensus_sites(
     min_support=2,
     distance_tolerance="0.15 nm",
     direction_tolerance="30 degrees",
+    skip_digestion=False,
 ):
     """Aggregate explicit pharmacophoric correspondences into supported sites.
 
@@ -192,6 +208,9 @@ def get_consensus_sites(
     direction_tolerance : angle quantity
         Maximum orientation deviation from the first member's donor vector or
         aromatic axis. Reference orientation is retained; no angular mean occurs.
+    skip_digestion : bool, default=False
+        Bypass ordinary digestion for canonical expert inputs. Native collection,
+        group, identity, support and physical admission remain mandatory.
 
     Returns
     -------
@@ -209,6 +228,12 @@ def get_consensus_sites(
     --------
     >>> sites = get_consensus_sites([get_features(a), get_features(b)], [[[0, 0], [1, 0]]], ligand_ids=['a', 'b'])
     """
+    feature_inventories = digest_feature_inventories(feature_inventories)
+    correspondence_groups = digest_correspondence_groups(correspondence_groups)
+    ligand_ids = digest_ligand_ids(ligand_ids)
+    min_support = digest_min_support(min_support)
+    distance_tolerance = digest_distance_tolerance(distance_tolerance)
+    direction_tolerance = digest_direction_tolerance(direction_tolerance)
     if len(feature_inventories) != len(ligand_ids) or min_support > len(ligand_ids):
         raise ArgumentError(
             argument="ligand_ids/min_support",

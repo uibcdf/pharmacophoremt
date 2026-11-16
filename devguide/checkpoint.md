@@ -8,46 +8,25 @@ checkpoint is preserved at [f1f4fb5](https://github.com/uibcdf/pharmacophoremt/b
 [earlier pre-tag preparation](checkpoint_history_20261114_before_final_review.md)
 and the [0.6.0 cut record](release_0_6_0_source_cut.md) retain their identities.
 
-## Current increment — neighborhood/ranking public controls received toward 0.7.0
+## Current increment — aligned matching/site controls toward 0.7.0
 
-[#232](neighborhood_argument_controls.md) adds two independent explicit keyword-
-only controls and closed definition-owned contracts. Two comparison and three
-ranking validators retain mandatory native criteria/budget and mapping/report/
-seed admission even for empty work. Both remaining scientific bodies and signal/
-attribution decorators remain AST-equal; public consumers keep default admission.
+[#233](consensus_argument_controls.md) corrects the stale next-step pointer:
+get_features and both reference constructors already have received controls.
+The owning document retains a bounded ten-function inventory and links original
+evidence. The actual next missing APIs are aligned matching and site aggregation.
 
-[Receiving](evidence/neighborhood_argument_controls_20261115.json) receives
-source 2e0f340991d0ade25709edd04c16284ed83a3865 and exact private wheel `0.6.0+31.g2e0f340`:
-identical serial **154/32/174-case source/owned groups**, **360 distinct cases per
-context including 154 new controls**, zero failures/errors/skips. All 245 payloads
-and 190 nongenerated Python bodies verify; 171/172/172 loaded PHMT modules in the
-respective groups originate only in the owned target (172 across their union). Actual immutable SDK staging has pre-work
-journals, checks and import/resource retirement; both file-relative links retire.
-Strict owned HTML docs and relevant reporting/archive/index/generated-environment/
-declared-route/Ruff checks pass (553 formatted files). The accepted focused source
-group keeps its original run identity without another execution. Prior 27-case
-distribution/support evidence retains source 140c6d2 and its own receipt/scope,
-with 200 current input files verified byte-equal.
+Independent keyword-only controls and a definition-owned native-consensus
+configuration retain three/six reused mandatory validators. All 172 new controls
+pass after the original 158-failure/14-call-shape-catch baseline, with unchanged
+guard bytes. Scientific bodies, signal/attribution decorators and other module
+functions/helpers remain AST-equal. All source groups pass: 172/17/25/123/159 cases, 496 distinct. Exact-owned
+consumers, strict docs and quality are pending. #6/full qualification stay partial. The verified
+next missing control after this pair is from_aligned_ligands.
 
-Independent asymmetric assignment and explicit duplicate/tie/seed-selection answers
-preserve dimensions, costs, counts and completion scope. Original solver failures
-raise without partial output. nm/pm application unit policy, source/report custody
-and actual new/reused/empty method credit pass. Neither helper accesses molecular
-systems or performs fitting; supplied report origin remains the caller's authority.
-
-The original 154-case baseline (142 failures/12 call-shape catches), initial
-implemented run (153 passes/one authored required-input assertion failure) and
-final guards/outputs retain their identities. The corrected assertion supplies a
-canonical first input before testing an absent second argument. Unit-policy
-inspection was reviewed against the supported configure API before execution.
-No scientific algorithm change or provider defect is asserted. All monitored
-commands run serially and none is interrupted; a capsule-local nonblocking lock
-prevents its own overlap without reserving machine resources.
-
-Bounded Linux/Python3.14.10/public support pins/Pandas3.1.1 and controlled other-
-provider/inherited-native receiving does not close #6 or full source/installed/
-public/platform/biological/human/scale gates. #230's support repair, #229's original
-incidents, #227, #224 pilot recovery and older staging uncertainty keep their owners.
+The [preceding checkpoint](https://github.com/uibcdf/pharmacophoremt/blob/c452678e4376211eaf2d527c72c5107dcad52657/devguide/checkpoint.md)
+retains #232 receiving, original source/artifact and prior history; its outdated
+from_feature_inventory next action is corrected above. No earlier evidence is
+promoted to this changed source.
 
 ## Earlier bounded increments
 
@@ -81,9 +60,10 @@ unchanged. Full installed/public artifact, biological/human/scale acceptance,
 
 ## Next concrete action and resources
 
-Audit from_feature_inventory public admission next, retaining native model
-construction, quantities/source custody and independent public callers under
-partial #6. #227, publisher pauses and stopped #148/#165 remain separate.
+Complete #233 bounded source/exact-owned consumers, strict docs, evidence and
+publication/readback. Then receive from_aligned_ligands, whose explicit control
+is absent in the recorded inventory. #6/full gates, #227, publisher pauses and
+stopped #148/#165 remain separate.
 
 Preserve shared-prefix/migration pauses and original native/data identities.
 Heavy work stays serial: one CPU/backend thread, low CPU/I/O priority, finite
