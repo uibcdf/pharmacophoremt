@@ -18,7 +18,8 @@ signature/decorator inventory, not a complete export/inheritance/API audit.
 | get_aligned_feature_matches, get_consensus_sites | Explicit controls and definition-owned admission received here. |
 | from_aligned_ligands | Received under [#234](aligned_model_argument_controls.md); original #233 state remains in its frozen receipt. |
 | get_aligned_feature_cliques | Explicit control received under [#236/#237](clique_argument_controls.md), with its separately owned numerical boundary correction. |
-| get_aligned_consensus_hypotheses, from_aligned_ligand_cliques, from_rigid_ligands | Explicit controls still absent; retain subsequent #6 work. |
+| get_aligned_consensus_hypotheses | Explicit control implemented under [#238](hypothesis_argument_controls.md); exact-owned receiving pending. |
+| from_aligned_ligand_cliques, from_rigid_ligands | Explicit controls still absent; retain subsequent #6 work. |
 
 ## Admission and scientific authority
 

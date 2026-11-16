@@ -3,47 +3,41 @@
 Maintained 2026-11-15 local date; owners LMMV/dprada. Follow the
 [mature pre-1.0 roadmap](roadmap.md), [workstreams](decisions_and_workstreams.md)
 and [capability inventory](capability_inventory.md). The preceding published
-checkpoint is preserved at [593d609](https://github.com/uibcdf/pharmacophoremt/blob/593d6097238e4130b131385f46c52ff2c85948e8/devguide/checkpoint.md);
+checkpoint is preserved at [998076f](https://github.com/uibcdf/pharmacophoremt/blob/998076f08e78ee3aa33140cdf4bdedb72d9b675d/devguide/checkpoint.md);
 [earlier dated history](checkpoint_history_20261114_before_pose_controls.md),
 [earlier pre-tag preparation](checkpoint_history_20261114_before_final_review.md)
 and the [0.6.0 cut record](release_0_6_0_source_cut.md) retain their identities.
 
-## Current increment — aligned feature-clique control received toward 0.7.0
+## Current increment — aligned consensus-hypothesis control toward 0.7.0
 
-[#236/#237](clique_argument_controls.md) adds keyword-only local control and
-closed definition-owned admission to get_aligned_feature_cliques. Seven reused
-native validators precede record/graph work. The scientific body retains AST
-identity except for one intentional inclusive-length predicate correction:
-eight machine epsilons of relative threshold roundoff, zero absolute allowance.
-Other functions/helpers/value digesters and signal/attribution remain.
+[#238](hypothesis_argument_controls.md) adds keyword-only local control and closed
+definition-owned admission to get_aligned_consensus_hypotheses. Nine reused native
+validators and the shared count/attainable-support check precede discovery. The
+entire scientific remainder, other functions/helpers (including #237's predicate
+and _packages), value contracts and signal/attribution retain AST/byte identity.
+Discovery and per-group aggregation keep independent default admission.
 
-[Receiving](evidence/clique_argument_controls_20261115.json) receives source
-3a405bdc4dda69cbc5f233d55be5e1959a25a5ef and exact private wheel `0.6.0+38.g3a405bd`:
-identical serial **191/25/189/99-case source/owned groups**, **504 distinct cases
-per context including 115 admission and 76 numerical boundary controls**, zero
-failures/errors/skips. All 246 payloads/191 source-equal nongenerated Python bodies
-verify; all four groups load 173 target-only PHMT modules. Actual immutable SDK
-staging has pre-work journals/checking and import/resource/both-link retirement.
-Strict owned HTML docs, 27 current distribution controls and reporting/archive/
-index/generated-environment/declared-route/Ruff checks pass (559 formatted files).
-The accepted focused source group keeps its original label without reexecution.
-Package footprint/provider requirements remain unchanged.
+All 131 new focused source controls and disjoint 216/189/25-case consumers pass:
+561 distinct selected cases. Current distribution controls pass27. The original baseline has 125 failures/
+six call-shape catches; original guards/output remain. Before the implemented
+run, review refined the literal-control probe to stop at discovery, isolating
+outer digestion from the independent decorated child. Real-child tests retain
+default admission. Independent shared-support/subset/maximality/occurrence/budget
+answers, original discovery/later aggregation failure, real nm/pm prepared
+frame/state/selection and input/report custody and application captures pass.
 
-Independent maximal-size/subset/physical answers, exact graph/output limits,
-unsupported-clique counting, original solver failure and real nm/pm prepared
-selection/frame/state/source custody pass. Downstream independent centers/joint
-support and default child admission, application new/reused/empty credit pass.
-Original failed guard versions/runs retain identity; four authored diagnostic
-assertions now allow source links while checking every owned field. Numerical
-expectations are preserved; two added positive controls protect the margin.
-All monitored commands are serial and none interrupted; no capacity reservation,
-biological validation or speed claim. Bounded Linux/Python3.14/public support-pin
-and controlled other-provider/inherited-native receiving leaves #6/full #9/#10/#23
-partial. Prior scientific/metadata/resource/recovery ownership remains unchanged.
+The original rigid consumer DATA512MiB attempt exits1/MemoryError without XML;
+its output remains unreceived. The unchanged25-case group passes with DATA1GiB
+and unchanged CPU/wall/RSS/reserve/swap/PSI limits. No machine pressure or
+supervisor interruption occurs. Exact-private-wheel consumers, strict owned docs
+and final appropriate quality remain pending before closure. #6 and full #9/#10/#23 gates,
+#227 and earlier scientific/metadata/resource/recovery ownership stay separate.
+No tag/publisher/new method/provider floor/native rebuild/shared-prefix change/
+full remote matrix/benchmark or speed claim.
 
 ## Earlier bounded increments
 
-The [preceding published checkpoint](https://github.com/uibcdf/pharmacophoremt/blob/593d6097238e4130b131385f46c52ff2c85948e8/devguide/checkpoint.md)
+The [preceding published checkpoint](https://github.com/uibcdf/pharmacophoremt/blob/998076f08e78ee3aa33140cdf4bdedb72d9b675d/devguide/checkpoint.md)
 retains the earlier increments with their original sources, runs, receipts and
 limitations. Their owning contracts and evidence remain unchanged. The
 [capability inventory](capability_inventory.md), [roadmap](roadmap.md) and
@@ -73,11 +67,11 @@ unchanged. Full installed/public artifact, biological/human/scale acceptance,
 
 ## Next concrete action and resources
 
-Receive get_aligned_consensus_hypotheses public control next, preserving
-joint-support intersection, disjoint occurrence use, finite extension budgets
-and independent children. Two remaining model constructors and broader #6/full
-gates keep their own scope. #227 and paused publisher/shared-prefix/benchmark
-work remain separate.
+Finish #238 source/exact-owned receiving and closure, then receive
+from_aligned_ligand_cliques public control while preserving independent children,
+empty/model distinctions, source/frame/state geometry and alternative models.
+from_rigid_ligands and broader #6/full gates retain their own scope. #227 and
+paused publisher/shared-prefix/benchmark work remain separate.
 
 Preserve shared-prefix/migration pauses and original native/data identities.
 Heavy work stays serial: one CPU/backend thread, low CPU/I/O priority, finite

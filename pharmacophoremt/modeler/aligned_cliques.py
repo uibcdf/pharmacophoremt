@@ -15,7 +15,9 @@ from pharmacophoremt._private.arg_digestion.argument._contracts import (
     digest_feature_inventories,
     digest_ligand_ids,
     digest_max_cliques,
+    digest_max_combinations,
     digest_max_graph_nodes,
+    digest_min_sites,
     digest_min_support,
 )
 from pharmacophoremt._private.arg_digestion.native_consensus import CONFIG
@@ -244,7 +246,7 @@ def _packages(groups, ligand_ids, min_support, min_sites, max_combinations):
 
 
 @signal(tags=["modeling", "consensus", "hypotheses"])
-@arg_digest()
+@arg_digest(config=CONFIG)
 @attributed("numpy", "pyunitwizard")
 def get_aligned_consensus_hypotheses(
     feature_inventories,
@@ -257,6 +259,7 @@ def get_aligned_consensus_hypotheses(
     max_graph_nodes=64,
     max_cliques=1000,
     max_combinations=10000,
+    skip_digestion=False,
 ):
     """Aggregate aligned cliques and enumerate maximal jointly supported hypotheses.
 
@@ -276,6 +279,9 @@ def get_aligned_consensus_hypotheses(
         Bounds forwarded to get_aligned_feature_cliques.
     max_combinations : int, default=10000
         Bound on attempted candidate-site extensions, including rejected ones.
+    skip_digestion : bool, default=False
+        Bypass ordinary digestion for canonical expert inputs. Native collection,
+        identity, count, physical and budget admission remain mandatory.
 
     Returns
     -------
@@ -298,6 +304,16 @@ def get_aligned_consensus_hypotheses(
     >>> result = get_aligned_consensus_hypotheses([get_features(a), get_features(b)], ligand_ids=['a', 'b'])
     >>> alternatives = result['hypotheses']
     """
+    feature_inventories = digest_feature_inventories(feature_inventories)
+    ligand_ids = digest_ligand_ids(ligand_ids)
+    min_support = digest_min_support(min_support)
+    min_sites = digest_min_sites(min_sites)
+    distance_tolerance = digest_distance_tolerance(distance_tolerance)
+    direction_tolerance = digest_direction_tolerance(direction_tolerance)
+    max_graph_nodes = digest_max_graph_nodes(max_graph_nodes)
+    max_cliques = digest_max_cliques(max_cliques)
+    max_combinations = digest_max_combinations(max_combinations)
+    _support_inputs(feature_inventories, ligand_ids, min_support)
     discovery = get_aligned_feature_cliques(
         feature_inventories,
         ligand_ids=ligand_ids,

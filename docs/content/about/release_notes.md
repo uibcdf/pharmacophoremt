@@ -3,6 +3,12 @@
 ## Unreleased — toward 0.7.0
 
 - Add keyword-only `skip_digestion=False` to
+  `modeler.get_aligned_consensus_hypotheses()`. Native collection, identity,
+  support/site count, physical and budget checks remain mandatory before
+  discovery. Joint-support intersections, alternative occurrence reuse,
+  maximality and finite extension accounting retain their meanings.
+
+- Add keyword-only `skip_digestion=False` to
   `modeler.get_aligned_feature_cliques()`, keeping native geometry and finite
   budget checks mandatory. Preserve inclusive distance boundaries across
   equivalent units with an eight-machine-epsilon relative roundoff allowance

@@ -14,6 +14,18 @@ supersedes: []
 
 # Review Python ecosystem policy adoption
 
+## Aligned consensus-hypothesis control in receiving — 2026-11-15
+
+[#238](../hypothesis_argument_controls.md) receives 131 new focused source controls.
+Nine reused native validators and the shared count check precede discovery even
+empty/bypassed. The entire scientific remainder, helpers/functions/value contracts
+and decorators remain unchanged; public children keep default admission. Original
+baseline/guard and the reviewed outer-only literal probe remain. Joint-support
+intersection, maximal occurrence packages, exact attempted-extension accounting,
+real nm/pm source/report custody and application capture pass. Broader bounded
+source/exact-owned/docs/quality remain pending before closure. #6/full gates
+retain owners; next from_aligned_ligand_cliques, then from_rigid_ligands.
+
 ## Aligned feature-clique controls received — 2026-11-15
 
 [#236/#237](../clique_argument_controls.md) receives 3a405bd and its exact private
